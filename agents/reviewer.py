@@ -58,6 +58,19 @@ Any number, name, date, percentage, or proper noun in the slide that does NOT ap
 - Specifically watch for: round percentages, growth figures, person/company names not in source.
 → FAIL if a fabricated number, name, or quote is present.
 
+### 9. Sanitization (user's voice stripped)
+Did the model paraphrase the user's specifics into generic corporate filler?
+- Watch for generic phrases the user never used: "industry-leading", "best-in-class", "world-class", "robust", "scalable", "cutting-edge", "synergy", "leverage", "seamless", "mission-critical", "next-generation".
+- Watch for hedging the user did not write: "may", "could", "potentially" replacing definite verbs.
+- Watch for slides that contain ONLY generic phrases when the source had concrete numbers/names/specifics for that topic.
+→ FAIL if a slide reads generic when source content was specific.
+
+### 10. Content wastage (signal discarded)
+Did the deck use what the user provided? The user gave content for a reason.
+- Pre-check lists any `content_wastage` items — distinctive facts from source not appearing anywhere in the deck.
+- If significant facts/names/numbers from the source never made it into any slide, that's a fail.
+→ FAIL if pre-check reports wastage AND those facts would have fit somewhere in the deck.
+
 ## Report format (exact)
 
 ```
@@ -76,7 +89,7 @@ ISSUES TO FIX:
 VERDICT: PASS / FIX NEEDED
 ```
 
-PASS only if: 0 pre-check hard failures AND every slide passes all 8 checks.
+PASS only if: 0 pre-check hard failures AND every slide passes all 10 checks.
 FIX NEEDED if ANY check fails on ANY slide.
 
 Every ISSUES TO FIX line MUST start with `slide N:` so the executor knows where to fix."""
@@ -171,17 +184,19 @@ def reviewer_node(state: dict) -> dict:
         src_excerpt += "\n[...truncated...]"
 
     text_intro = (
-        f"Review the edited PPTX. Apply the 8-point checklist strictly.\n\n"
+        f"Review the edited PPTX. Apply the 10-point checklist strictly.\n\n"
         f"PPTX path: {out}\n"
         f"Edited slide numbers: {edited_slides or 'see edit plan'}\n\n"
         f"{precheck_summary}\n\n"
         f"Visual QA: {visual_status}\n\n"
-        f"--- SOURCE DOCUMENT (for grounding check) ---\n"
+        f"--- SOURCE DOCUMENT (for grounding + sanitization + wastage checks) ---\n"
         f"{src_excerpt}\n"
         f"--- END SOURCE ---\n\n"
-        f"Inspect every slide image against all 8 checks. "
-        f"Use pptx_info to verify shape-level concerns. "
-        f"For check 8: ANY number, name, date, or quote in a slide must be findable in the source above. "
+        f"Inspect every slide image against all 10 checks. "
+        f"Use pptx_info to verify shape-level concerns.\n"
+        f"Check 8 (grounding): any number/name/date/quote in a slide must appear in source.\n"
+        f"Check 9 (sanitization): flag generic corporate filler the user never used — paraphrasing specifics into vagueness is a failure.\n"
+        f"Check 10 (wastage): flag if distinctive facts from source were dropped entirely.\n"
         f"End with VERDICT: PASS or VERDICT: FIX NEEDED."
     )
 

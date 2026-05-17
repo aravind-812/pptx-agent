@@ -38,6 +38,25 @@ PLACEHOLDER_PATTERNS = [
     r"Sample [A-Z]",
 ]
 
+# Generic corporate filler phrases. Flagged ONLY if absent from the user's
+# source document — these signal the model paraphrased specifics into vagueness.
+GENERIC_PHRASES = [
+    "industry-leading", "industry leading",
+    "best-in-class", "best in class",
+    "world-class", "world class",
+    "cutting-edge", "cutting edge",
+    "state-of-the-art", "state of the art",
+    "robust solution", "scalable solution", "innovative solution",
+    "synergy", "synergies",
+    "leverage", "leveraging",
+    "seamless integration", "seamless experience",
+    "next-generation", "next generation",
+    "mission-critical",
+    "best practices",
+    "thought leader", "thought leadership",
+    "value proposition",
+]
+
 
 def load(path: str) -> Presentation:
     return Presentation(path)
@@ -494,34 +513,66 @@ def op_precheck(pptx_path: str, edit_plan: dict, source_document: str = "") -> d
                             ),
                         })
 
-        # 5. Source-grounding check on edit plan text
+        # 5. Source-grounding + sanitization checks on edit plan text
         if source_document:
             src_norm = source_document.lower()
+            src_digits = src_norm.replace(",", "")
             num_pattern = re.compile(r"\b\d[\d,]*\.?\d*\s*%?\b")
+
             for e in edit_plan.get("edits", []):
                 txt = (e.get("text") or "").strip()
                 if not txt:
                     continue
                 slide_no = e.get("slide")
                 shape_name = e.get("shape", "?")
+                txt_lower = txt.lower()
+
+                # 5a. Ungrounded numbers / percentages
                 for m in num_pattern.finditer(txt):
                     token = m.group(0).strip()
-                    # Strip commas for matching, ignore very short ints (e.g. bullet ordering "1.")
                     bare = token.replace(",", "").rstrip("%").strip()
                     if len(bare) < 2 and "%" not in token:
                         continue
-                    # Check whether the digit sequence appears in the source
-                    src_digits = src_norm.replace(",", "")
-                    needle = bare.lower()
-                    if needle not in src_digits:
+                    if bare.lower() not in src_digits:
                         issues.append({
                             "type": "ungrounded_number",
                             "severity": "warn",
                             "detail": (
                                 f"slide {slide_no} / '{shape_name}': '{token}' "
-                                f"not found in source document"
+                                f"not found in source"
                             ),
                         })
+
+                # 5b. Generic corporate filler not in source = sanitization
+                for phrase in GENERIC_PHRASES:
+                    if phrase in txt_lower and phrase not in src_norm:
+                        issues.append({
+                            "type": "sanitization",
+                            "severity": "warn",
+                            "detail": (
+                                f"slide {slide_no} / '{shape_name}': generic phrase "
+                                f"'{phrase}' added by model — user never used it"
+                            ),
+                        })
+
+            # 5c. Content wastage — high-signal source facts that appear nowhere in edits
+            edits_blob = " ".join((e.get("text") or "").lower() for e in edit_plan.get("edits", []))
+            ctx = edit_plan.get("strategic_context", {})
+            for fact in (ctx.get("all_key_facts") or []):
+                if not isinstance(fact, str) or len(fact) < 8:
+                    continue
+                # Extract the most distinctive token (longest word ≥6 chars) from the fact
+                tokens = [w.strip(".,!?:;\"'()") for w in fact.split()]
+                distinctive = [t for t in tokens if len(t) >= 6 and not t.isdigit()]
+                if not distinctive:
+                    continue
+                anchor = max(distinctive, key=len).lower()
+                if anchor not in edits_blob:
+                    issues.append({
+                        "type": "content_wastage",
+                        "severity": "warn",
+                        "detail": f"source fact never used in deck: '{fact[:80]}'",
+                    })
 
     except Exception as exc:
         return {"ok": False, "slide_count": 0, "issues": [], "error": str(exc)}
