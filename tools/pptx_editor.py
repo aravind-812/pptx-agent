@@ -333,9 +333,86 @@ def op_render_png(pptx_path: str, output_dir: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# relayout — constraint-solver based re-distribution for dense slides
+# ---------------------------------------------------------------------------
+def op_relayout_slide(pptx_path: str, slide_idx: int,
+                       shape_order: list[str],
+                       margin_top_emu: int = 457200,
+                       margin_left_emu: int = 457200,
+                       gap_emu: int = 137160) -> dict:
+    """
+    Re-distribute named shapes vertically on a slide using the layout solver.
+    Use after edits change shape heights and other shapes need to reflow.
+
+    shape_order: list of shape names in the order they should stack top→bottom.
+                 Only these shapes are repositioned; others are left alone.
+    margin_top_emu / margin_left_emu / gap_emu: spacing in EMU.
+
+    Reads current heights from PPTX, solves vertical positions, applies set_position.
+    """
+    from .layout_solver import solve
+
+    try:
+        prs = load(pptx_path)
+        if slide_idx < 1 or slide_idx > len(prs.slides):
+            return {"ok": False, "error": f"slide {slide_idx} out of range"}
+
+        slide = prs.slides[slide_idx - 1]
+        slide_w = prs.slide_width
+        slide_h = prs.slide_height
+
+        # Collect target shapes in the requested order
+        by_name = {shape.name: shape for shape in slide.shapes}
+        boxes = []
+        missing = []
+        for name in shape_order:
+            if name not in by_name:
+                missing.append(name)
+                continue
+            shape = by_name[name]
+            if not shape.height:
+                continue
+            boxes.append({"name": name, "h": int(shape.height)})
+
+        if missing:
+            return {"ok": False, "error": f"shapes not found: {missing}"}
+        if not boxes:
+            return {"ok": False, "error": "no valid shapes to lay out"}
+
+        layout = solve(slide_w, slide_h, boxes,
+                       margin_top=margin_top_emu,
+                       margin_left=margin_left_emu,
+                       margin_right=margin_left_emu,
+                       gap=gap_emu)
+
+        # Apply new positions, preserving each shape's original width
+        applied = []
+        for item in layout:
+            shape = by_name[item["name"]]
+            original_left = int(shape.left) if shape.left else item["left"]
+            original_width = int(shape.width) if shape.width else item["width"]
+            msg = op_set_position(prs, slide_idx, item["name"],
+                                  top=item["top"], left=original_left,
+                                  width=original_width, height=item["height"])
+            if msg.startswith("ERROR"):
+                return {"ok": False, "error": msg, "applied": applied}
+            applied.append({
+                "shape": item["name"],
+                "top": item["top"],
+                "height": item["height"],
+            })
+
+        save(prs, pptx_path)
+        return {"ok": True, "applied": applied, "slide": slide_idx}
+
+    except Exception as e:
+        return {"ok": False, "error": str(e)}
+
+
+# ---------------------------------------------------------------------------
 # precheck — deterministic QA before LLM review
 # ---------------------------------------------------------------------------
-def op_precheck(pptx_path: str, edit_plan: dict) -> dict:
+def op_precheck(pptx_path: str, edit_plan: dict, source_document: str = "") -> dict:
     """
     Run deterministic checks on the edited PPTX.
     Returns hard failures that don't need LLM judgement.
@@ -344,6 +421,7 @@ def op_precheck(pptx_path: str, edit_plan: dict) -> dict:
       2. Empty title/heading shapes on edited slides
       3. Empty body shapes that were explicitly edited
       4. Likely text overflow (heuristic: estimated lines vs shape height)
+      5. Source-grounding: numbers/percentages in edits that don't appear in source document
     """
     issues = []
 
@@ -413,6 +491,35 @@ def op_precheck(pptx_path: str, edit_plan: dict) -> dict:
                             "detail": (
                                 f"slide {slide_idx} / '{name}': "
                                 f"~{total_lines} lines estimated, shape is {height_px}px tall"
+                            ),
+                        })
+
+        # 5. Source-grounding check on edit plan text
+        if source_document:
+            src_norm = source_document.lower()
+            num_pattern = re.compile(r"\b\d[\d,]*\.?\d*\s*%?\b")
+            for e in edit_plan.get("edits", []):
+                txt = (e.get("text") or "").strip()
+                if not txt:
+                    continue
+                slide_no = e.get("slide")
+                shape_name = e.get("shape", "?")
+                for m in num_pattern.finditer(txt):
+                    token = m.group(0).strip()
+                    # Strip commas for matching, ignore very short ints (e.g. bullet ordering "1.")
+                    bare = token.replace(",", "").rstrip("%").strip()
+                    if len(bare) < 2 and "%" not in token:
+                        continue
+                    # Check whether the digit sequence appears in the source
+                    src_digits = src_norm.replace(",", "")
+                    needle = bare.lower()
+                    if needle not in src_digits:
+                        issues.append({
+                            "type": "ungrounded_number",
+                            "severity": "warn",
+                            "detail": (
+                                f"slide {slide_no} / '{shape_name}': '{token}' "
+                                f"not found in source document"
                             ),
                         })
 

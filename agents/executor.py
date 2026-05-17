@@ -12,8 +12,9 @@ from langgraph.prebuilt import create_react_agent
 from llm_factory import get_llm
 from tools.wrappers import (
     font_measure, layout_solve, pptx_check_overflow, pptx_info,
-    pptx_remove_slides, pptx_render_png, pptx_set_cell, pptx_set_para,
-    pptx_set_position, pptx_set_text, pptx_spatial_map, pptx_validate,
+    pptx_relayout_slide, pptx_remove_slides, pptx_render_png,
+    pptx_set_cell, pptx_set_para, pptx_set_position, pptx_set_text,
+    pptx_spatial_map, pptx_validate,
 )
 
 SYSTEM_PROMPT = """You are a universal PPTX Execution Agent.
@@ -29,6 +30,7 @@ You receive a JSON edit plan for any PPTX file and apply every change using the 
 - pptx_set_cell: set a table cell (row/col 0-based)
 - pptx_remove_slides: remove slides by comma-separated 1-based indices
 - pptx_set_position: move/resize a shape (EMU: 1 inch = 914400)
+- pptx_relayout_slide: re-distribute shapes vertically on a dense slide using constraint solver
 - pptx_validate: scan for unfilled placeholder strings and report them
 - pptx_render_png: render slides to PNG (requires LibreOffice)
 - font_measure: measure text pixel dimensions
@@ -44,19 +46,24 @@ The template is already copied to the output path. Start at step 1.
    - pptx_check_overflow → if `overflows: false` → pptx_set_text
    - if `overflows: true` → shorten the text → retry until it fits
 4. **Apply all edits** from the plan (set_text, set_cell, set_para as appropriate).
-5. **pptx_validate** at the end. If it reports any unfilled placeholders (patterns like `[X]`, `TODO`, `Enter`, `Sample`, `Lorem`, `Click to edit`), fix them now.
+5. **Re-layout dense slides** — for every slide listed in `dense_slides`:
+   - After editing its shapes, call pptx_info on that slide to get the current shape order (top-to-bottom by Y position).
+   - Call pptx_relayout_slide with the text shapes in vertical order.
+   - This redistributes them with consistent gaps and prevents overlap after text-driven height changes.
+6. **pptx_validate** at the end. If it reports any unfilled placeholders, fix them now.
 
 ## Rules
 - Shape names are case-sensitive — always use the exact name from pptx_info.
 - Only edit slides listed in the plan — do not touch slides not mentioned.
 - EMU: 1 inch = 914400, standard slide = 9144000 × 5143500.
-- If a shape name from the plan is not found, call pptx_info to get the correct name and use the closest match."""
+- If a shape name from the plan is not found, call pptx_info to get the correct name and use the closest match.
+- For dense slides: only include text shapes (not images, decorative lines, or background shapes) in the relayout shape_order list."""
 
 _TOOLS = [
     pptx_info, pptx_spatial_map, pptx_check_overflow,
     pptx_set_text, pptx_set_para, pptx_set_cell,
-    pptx_remove_slides, pptx_set_position, pptx_validate,
-    pptx_render_png, font_measure, layout_solve,
+    pptx_remove_slides, pptx_set_position, pptx_relayout_slide,
+    pptx_validate, pptx_render_png, font_measure, layout_solve,
 ]
 
 _CONFIG = RunnableConfig(recursion_limit=150)

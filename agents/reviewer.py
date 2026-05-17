@@ -12,50 +12,58 @@ from llm_factory import get_llm
 from tools.pptx_editor import op_precheck, op_render_png
 from tools.wrappers import pptx_info, pptx_validate
 
-SYSTEM_PROMPT = """You are a strict Presentation QA Agent. Your job is to catch every issue that would make a slide unusable or unprofessional.
+SYSTEM_PROMPT = """You are a strict Presentation QA Agent. Your job is to catch every issue that would make a slide unusable or untrustworthy.
 
 You receive:
-- Pre-check results (deterministic Python checks already run — trust these as ground truth)
+- Pre-check results (deterministic Python checks — trust as ground truth)
 - Rendered PNG images of the edited slides
+- The source document (for grounding checks)
 - Tools to inspect shape-level text
 
 ## Non-negotiable checks — any single failure = VERDICT: FIX NEEDED
 
-For EACH slide image provided, verify ALL of the following:
+For EACH slide image, verify ALL of the following:
 
 ### 1. Text overflow
-Is any text visibly cut off at the shape boundary? Partially visible last line? Truncated words?
-→ FAIL if yes. Report: "slide N / shape name: text overflow"
+Text cut off at shape boundary? Partially visible last line? Truncated words?
+→ FAIL if yes.
 
 ### 2. Content outside slide bounds
-Any text, shape, or element appearing in the grey area outside the slide rectangle?
+Any text/shape in the grey area outside the slide rectangle?
 → FAIL if yes.
 
 ### 3. Shape overlap hiding content
-Is one shape sitting on top of another, making content behind it unreadable?
+One shape covering another, blocking readable content?
 → FAIL if yes.
 
 ### 4. Invisible text
-Does any text appear to have the same or very similar color to its background (white-on-white, dark-on-dark)?
+Text color same/near-same as background?
 → FAIL if yes.
 
 ### 5. Blank edited slide
-Does a slide that was supposed to be edited appear completely or near-completely empty?
+Edited slide is completely or near-completely empty?
 → FAIL if yes.
 
 ### 6. Visible placeholder text
-Is any placeholder pattern literally visible in the rendered slide? ([X], TODO, Enter, Sample, Lorem, "Client Name", "Date here", etc.)
-→ FAIL if yes. (Pre-check already flags these in XML — confirm visually.)
-
-### 7. Broken layout after structural edit
-After any removal or reordering, are there: orphaned arrows pointing nowhere, missing steps in a numbered sequence, leftover connector lines with no endpoints, gaps where a deleted shape used to be?
+Any `[X]`, `TODO`, `Enter`, `Sample`, `Lorem`, `Click to edit`, `Client Name`, `Date here` visible?
 → FAIL if yes.
 
-## Report format (exact, do not deviate)
+### 7. Broken layout after structural edit
+Orphaned arrows? Missing steps in a numbered sequence? Leftover connectors with no endpoints? Gaps where a removed shape was?
+→ FAIL if yes.
+
+### 8. Source-grounding (trust violations)
+Any number, name, date, percentage, or proper noun in the slide that does NOT appear in the source document?
+- Pre-check already flagged `ungrounded_number` warnings — confirm or escalate to FIX NEEDED.
+- Specifically watch for: round percentages, growth figures, person/company names not in source.
+→ FAIL if a fabricated number, name, or quote is present.
+
+## Report format (exact)
 
 ```
-PRE-CHECK: <passed / N hard failures — list them>
+PRE-CHECK: <passed / N hard failures + N warnings — list them>
 VISUAL QA: <inspected N slides / skipped>
+GROUNDING: <verified / N suspect items>
 
 SLIDE INSPECTION:
 - Slide N: PASS / FAIL — <reason if fail>
@@ -68,10 +76,10 @@ ISSUES TO FIX:
 VERDICT: PASS / FIX NEEDED
 ```
 
-PASS only if: pre-check has 0 hard failures AND every slide image passes all 7 checks.
-FIX NEEDED if: ANY pre-check hard failure OR ANY slide fails ANY of the 7 checks.
+PASS only if: 0 pre-check hard failures AND every slide passes all 8 checks.
+FIX NEEDED if ANY check fails on ANY slide.
 
-Always prefix each ISSUES TO FIX line with `slide N:` so the executor knows which slide to target."""
+Every ISSUES TO FIX line MUST start with `slide N:` so the executor knows where to fix."""
 
 _TOOLS = [pptx_validate, pptx_info]
 _CONFIG = RunnableConfig(recursion_limit=20)
@@ -136,8 +144,15 @@ def reviewer_node(state: dict) -> dict:
     render_dir = str(Path(state.get("work_dir", "runs/work")) / "visual_qa" / deck_id)
     edited_slides = sorted({e.get("slide") for e in edit_plan.get("edits", []) if e.get("slide")})
 
+    # Read source document for grounding checks
+    source_doc = ""
+    try:
+        source_doc = Path(state["transcript_path"]).read_text(encoding="utf-8")
+    except Exception:
+        pass
+
     # ── Step 1: deterministic pre-check (no LLM) ──────────────────────────
-    precheck = op_precheck(out, edit_plan)
+    precheck = op_precheck(out, edit_plan, source_doc)
     precheck_summary = _format_precheck(precheck)
 
     # ── Step 2: render edited slides to PNG ───────────────────────────────
@@ -150,14 +165,23 @@ def reviewer_node(state: dict) -> dict:
         "SKIPPED — LibreOffice not available or render failed. Run tools-only checks."
     )
 
+    # Truncate source doc to keep context bounded (first 6K chars covers most cases)
+    src_excerpt = source_doc[:6000]
+    if len(source_doc) > 6000:
+        src_excerpt += "\n[...truncated...]"
+
     text_intro = (
-        f"Review the edited PPTX. Apply the 7-point checklist strictly.\n\n"
+        f"Review the edited PPTX. Apply the 8-point checklist strictly.\n\n"
         f"PPTX path: {out}\n"
         f"Edited slide numbers: {edited_slides or 'see edit plan'}\n\n"
         f"{precheck_summary}\n\n"
         f"Visual QA: {visual_status}\n\n"
-        f"Inspect every slide image against all 7 checks. "
-        f"Then use pptx_info to verify any shape-level concerns. "
+        f"--- SOURCE DOCUMENT (for grounding check) ---\n"
+        f"{src_excerpt}\n"
+        f"--- END SOURCE ---\n\n"
+        f"Inspect every slide image against all 8 checks. "
+        f"Use pptx_info to verify shape-level concerns. "
+        f"For check 8: ANY number, name, date, or quote in a slide must be findable in the source above. "
         f"End with VERDICT: PASS or VERDICT: FIX NEEDED."
     )
 

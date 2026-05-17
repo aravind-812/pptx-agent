@@ -8,6 +8,7 @@ from .pptx_editor import (
     op_info, op_spatial_map, op_check_overflow,
     op_set_text, op_set_para, op_remove_slides,
     op_set_cell, op_set_position, op_validate, op_render_png, op_precheck,
+    op_relayout_slide,
 )
 from .font_measurer import measure
 from .layout_solver import solve
@@ -120,6 +121,21 @@ def pptx_validate(pptx_path: str) -> str:
     Returns JSON with ok (bool), slide_count, and unfilled_placeholders list.
     """
     return json.dumps(op_validate(pptx_path), indent=2)
+
+
+@tool
+def pptx_relayout_slide(pptx_path: str, slide: int, shape_order_json: str) -> str:
+    """
+    Re-distribute shapes on a dense slide vertically using the constraint solver.
+    Call AFTER editing text on a dense slide if shape heights changed.
+    slide: 1-based.
+    shape_order_json: JSON array of shape names in top-to-bottom order, e.g. '["Title 1","Body 1","Body 2"]'.
+    Only listed shapes are repositioned; others are left alone.
+    Returns JSON with ok + applied positions.
+    """
+    import json as _json
+    order = _json.loads(shape_order_json)
+    return _json.dumps(op_relayout_slide(pptx_path, slide, order), indent=2)
 
 
 @tool
