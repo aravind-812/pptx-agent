@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT Agent — Codemap Playground</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0b0b10;
+    --panel: #13131d;
+    --card: #1a1a28;
+    --border: #2a2a40;
+    --text: #e2e2f0;
+    --muted: #666688;
+    --purple: #8b5cf6;
+    --blue: #3b82f6;
+    --green: #10b981;
+    --amber: #f59e0b;
+    --pink: #ec4899;
+    --gray: #6b7280;
+    --red: #ef4444;
+    --teal: #14b8a6;
+    --indigo: #6366f1;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  .logo { font-size: 18px; font-weight: 700; color: var(--purple); letter-spacing: -0.5px; }
+  .logo span { color: var(--text); }
+  .tagline { color: var(--muted); font-size: 12px; }
+  .legend {
+    margin-left: auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .legend-item { display: flex; align-items: center; gap: 4px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .hint {
+    font-size: 11px;
+    color: var(--muted);
+    background: #ffffff0a;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+
+  /* ── Main Layout ── */
+  .main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* ── Left Sidebar ── */
+  .sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    padding: 12px 0;
+  }
+  .sidebar::-webkit-scrollbar { width: 4px; }
+  .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  .sidebar-section { padding: 0 12px; margin-bottom: 16px; }
+  .sidebar-label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 4px;
+    padding: 0 4px;
+  }
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 11.5px;
+    color: #aaa;
+    transition: all 0.15s;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .sidebar-item:hover { background: #ffffff08; color: var(--text); }
+  .sidebar-item.active {
+    background: #8b5cf620;
+    color: var(--purple);
+    border-color: #8b5cf630;
+  }
+  .sidebar-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+  /* ── Graph Panel ── */
+  .graph-panel {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background: var(--bg);
+  }
+  #graph-svg {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+  }
+  #graph-svg:active { cursor: grabbing; }
+  .zoom-controls {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    display: flex;
+    gap: 4px;
+  }
+  .zoom-btn {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s;
+  }
+  .zoom-btn:hover { background: var(--border); }
+  .graph-hint {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-size: 10px;
+    color: var(--muted);
+    background: var(--card);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+
+  /* ── Code Panel ── */
+  .code-panel {
+    width: 440px;
+    flex-shrink: 0;
+    background: var(--panel);
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .code-panel-header {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .file-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid transparent;
+  }
+  .file-title { font-size: 13px; font-weight: 600; color: var(--text); }
+  .file-desc { font-size: 11px; color: var(--muted); line-height: 1.4; margin-top: 2px; }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 8px 14px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .meta-chip {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    background: #ffffff05;
+  }
+  .meta-chip b { color: var(--text); }
+  .code-scroll {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  .code-scroll::-webkit-scrollbar { width: 4px; height: 4px; }
+  .code-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  pre {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    padding: 14px;
+    white-space: pre;
+    color: #c9d1d9;
+  }
+  /* Syntax highlight colors */
+  .kw { color: #ff79c6; }
+  .str { color: #f1fa8c; }
+  .com { color: #6272a4; font-style: italic; }
+  .fn { color: #50fa7b; }
+  .cls { color: #8be9fd; }
+  .num { color: #bd93f9; }
+  .deco { color: #ffb86c; }
+  .punct { color: #aaa; }
+
+  .empty-state {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    gap: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  .empty-icon { font-size: 36px; }
+  .empty-title { font-size: 14px; color: var(--text); }
+  .empty-sub { font-size: 12px; line-height: 1.5; }
+
+  .deps-section {
+    padding: 10px 14px;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .deps-title { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .deps-row { display: flex; flex-wrap: wrap; gap: 4px; }
+  .dep-chip {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    color: #aaa;
+    background: #ffffff05;
+    transition: all 0.12s;
+  }
+  .dep-chip:hover { background: #ffffff12; color: var(--text); }
+
+  /* SVG styles */
+  .node-group { cursor: pointer; }
+  .node-group:hover .node-rect { filter: brightness(1.2); }
+  .node-rect { rx: 8; ry: 8; }
+  .node-label { font-family: -apple-system, sans-serif; font-size: 11px; fill: #fff; font-weight: 500; pointer-events: none; }
+  .node-sub { font-family: -apple-system, sans-serif; font-size: 9px; fill: rgba(255,255,255,0.55); pointer-events: none; }
+  .layer-label { font-family: -apple-system, sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; fill: rgba(255,255,255,0.2); }
+  .edge { fill: none; stroke-width: 1.5; opacity: 0.5; }
+  .edge-dashed { stroke-dasharray: 4 3; }
+
+  .node-rect.selected { stroke-width: 2; stroke: #fff; filter: brightness(1.3) drop-shadow(0 0 6px rgba(255,255,255,0.3)); }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo">PPT<span>Agent</span></div>
+    <div class="tagline">Codemap Playground — click any node to explore</div>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="dot" style="background:#8b5cf6"></div>Agents</div>
+    <div class="legend-item"><div class="dot" style="background:#3b82f6"></div>Core</div>
+    <div class="legend-item"><div class="dot" style="background:#10b981"></div>Tools</div>
+    <div class="legend-item"><div class="dot" style="background:#f59e0b"></div>Eval</div>
+    <div class="legend-item"><div class="dot" style="background:#ec4899"></div>Frontend</div>
+    <div class="legend-item"><div class="dot" style="background:#6b7280"></div>Entry</div>
+  </div>
+  <div class="hint">⌘+scroll to zoom · drag to pan</div>
+</header>
+
+<div class="main">
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar"></div>
+
+  <!-- Graph -->
+  <div class="graph-panel">
+    <svg id="graph-svg" viewBox="0 0 1100 720"></svg>
+    <div class="zoom-controls">
+      <button class="zoom-btn" id="zoom-in">+</button>
+      <button class="zoom-btn" id="zoom-out">−</button>
+      <button class="zoom-btn" id="zoom-reset" title="Reset view">⌂</button>
+    </div>
+    <div class="graph-hint">click node → view code</div>
+  </div>
+
+  <!-- Code Panel -->
+  <div class="code-panel" id="code-panel">
+    <div class="empty-state" id="empty-state">
+      <div class="empty-icon">🗺️</div>
+      <div class="empty-title">Select a module</div>
+      <div class="empty-sub">Click any node in the graph<br>or an item in the sidebar<br>to view its code and role</div>
+    </div>
+    <div id="code-content" style="display:none; flex-direction:column; height:100%; overflow:hidden;">
+      <div class="code-panel-header">
+        <div style="flex:1; min-width:0;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+            <div class="file-badge" id="file-badge"></div>
+            <div class="file-title" id="file-title"></div>
+          </div>
+          <div class="file-desc" id="file-desc"></div>
+        </div>
+      </div>
+      <div class="meta-row" id="meta-row"></div>
+      <div class="code-scroll">
+        <pre id="code-pre"></pre>
+      </div>
+      <div class="deps-section" id="deps-section"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── Module Data ─────────────────────────────────────────────────────────────
+const MODULES = {
+  'run.py': {
+    label: 'run.py', sub: 'CLI entry', category: 'entry', color: '#6b7280',
+    desc: 'Command-line entry point. Accepts transcript + template paths, invokes the full pipeline via graph.invoke(), saves output PPTX.',
+    role: 'Entry Point', model: '—', cost: '0',
+    deps: ['graph.py', 'llm_factory.py'],
+    code: `#!/usr/bin/env python3
+"""CLI entry point — run the full pipeline on one transcript."""
+import argparse, sys
+from pathlib import Path
+from graph import graph
+from llm_factory import default_provider, planner_model, executor_model
+
+def main():
+    parser = argparse.ArgumentParser(description="PPT Agent: fill a PPTX from a transcript")
+    parser.add_argument("transcript", help="Path to transcript .txt file")
+    parser.add_argument("template",   help="Path to .pptx template")
+    parser.add_argument("--output",   default="output.pptx")
+    parser.add_argument("--provider", default="")
+    args = parser.parse_args()
+
+    provider = args.provider.strip() or default_provider()
+    state = {
+        "transcript_path": args.transcript,
+        "template_path":   args.template,
+        "output_path":     args.output,
+        "work_dir":        str(Path(args.output).parent),
+        "provider":        provider,
+        "planner_model":   planner_model(provider),
+        "executor_model":  executor_model(provider),
+        "edit_plan": {}, "review_verdict": "",
+        "review_issues": [], "fix_attempts": 0,
+    }
+    print(f"Running pipeline — provider={provider}")
+    result = graph.invoke(state)
+    verdict = result.get("review_verdict", "?")
+    print(f"Done. Verdict: {verdict}  →  {args.output}")
+
+if __name__ == "__main__":
+    main()`
+  },
+
+  'backend.py': {
+    label: 'backend.py', sub: 'FastAPI server', category: 'core', color: '#3b82f6',
+    desc: 'FastAPI server with SSE streaming. Exposes /api/generate (pipeline), /api/eval/* (eval flywheel). Bridges browser UI to Python pipeline.',
+    role: 'API Server', model: '—', cost: '0',
+    deps: ['graph.py', 'llm_factory.py', 'eval_agent/benchmark.py', 'eval_agent/auto_improve.py'],
+    code: `# FastAPI backend — Server-Sent Events streaming for LangGraph pipeline
+# Key endpoints:
+#   POST /api/generate       → SSE stream of pipeline run
+#   GET  /api/providers      → available LLM providers
+#   GET  /api/slides/{id}    → rendered PNG slides
+#   GET  /api/download/{id}  → download output PPTX
+#   GET  /api/eval/transcripts → list eval corpus
+#   POST /api/eval/run       → SSE stream of batch eval run
+#   GET  /api/eval/results   → benchmark history
+#   POST /api/eval/improve   → auto-improve: cluster failures → prompt patch
+#   POST /api/eval/apply-patch → human-triggered patch apply
+#   POST /api/eval/calibrate → F1 score vs human labels
+
+@app.post("/api/generate")
+async def generate(template: UploadFile, transcript: str = Form(""), ...):
+    """
+    SSE stream. Events:
+      {"type": "model_info",     "provider": ..., "planner_model": ..., "executor_model": ...}
+      {"type": "node_start",     "node": "extractor"|"planner"|"executor"|"reviewer"}
+      {"type": "thinking"}       # LLM started
+      {"type": "tool_call",      "tool": "...", "args": {...}}
+      {"type": "tool_result",    "output": "..."}
+      {"type": "plan_summary",   "edits": N, "removes": M, "summary": "..."}
+      {"type": "executor_done",  "attempt": N}
+      {"type": "reviewer_done",  "verdict": "PASS"|"FIX NEEDED", "issues": [...]}
+      {"type": "done",           "file_id": "uuid"}
+      {"type": "slides_ready",   "file_id": "...", "count": N}
+      {"type": "error",          "msg": "..."}
+    """
+    # 1. Save template to tmpdir
+    # 2. Parse transcript (text or PDF via tools/pdf_parser.py)
+    # 3. Push events to asyncio.Queue via callback
+    # 4. Run graph in thread pool (run_in_executor)
+    # 5. Render PNG slides via op_render_png (optional preview)
+    # 6. Stream SSE until "done" or "error"
+
+@app.post("/api/eval/run")
+async def eval_run(template: UploadFile, provider: str, transcript_ids: str):
+    """SSE stream of batch eval. Events from eval_agent.benchmark.run_benchmark()."""
+    # Calls run_benchmark(template_path, tx_paths, provider, on_progress=put)
+    # SSE ends on {"type": "eval_done"} or {"type": "error"}
+
+_EVAL_TRANSCRIPTS_DIR = Path(__file__).parent / "eval_transcripts"`
+  },
+
+  'graph.py': {
+    label: 'graph.py', sub: 'LangGraph pipeline', category: 'core', color: '#3b82f6',
+    desc: 'Defines the LangGraph state machine: Extractor→Planner→Executor→Reviewer with conditional fix loop (max 2 attempts). PipelineState TypedDict defines shared state.',
+    role: 'Pipeline Orchestrator', model: '—', cost: '0',
+    deps: ['agents/extractor.py', 'agents/planner.py', 'agents/executor.py', 'agents/reviewer.py'],
+    code: `"""LangGraph pipeline: extractor → planner → executor → reviewer (with fix loop)."""
+from typing import List, Optional, TypedDict
+from langgraph.graph import END, StateGraph
+from agents.executor import executor_node
+from agents.extractor import extractor_node
+from agents.planner import planner_node
+from agents.reviewer import reviewer_node
+
+MAX_FIX_ATTEMPTS = 2
+
+class PipelineState(TypedDict):
+    transcript_path: str       # path to source transcript
+    template_path:   str       # path to PPTX template
+    output_path:     str       # path for output PPTX
+    work_dir:        str       # temp directory
+    provider:        str       # "anthropic" | "openai"
+    planner_model:   str       # e.g. "claude-sonnet-4-6"
+    executor_model:  str       # e.g. "claude-haiku-4-5-20251001"
+    extracted_facts: Optional[dict]  # extractor output (None if short transcript)
+    edit_plan:       dict      # planner JSON output
+    review_verdict:  str       # "PASS" | "FIX NEEDED"
+    review_issues:   List[str] # list of issues from reviewer
+    fix_attempts:    int       # number of fix attempts so far
+
+def _route(state: PipelineState) -> str:
+    if state.get("review_verdict") == "PASS":
+        return "end"
+    if state.get("fix_attempts", 0) >= MAX_FIX_ATTEMPTS:
+        return "end"  # give up gracefully
+    return "fix"
+
+builder = StateGraph(PipelineState)
+builder.add_node("extractor", extractor_node)
+builder.add_node("planner",   planner_node)
+builder.add_node("executor",  executor_node)
+builder.add_node("reviewer",  reviewer_node)
+
+builder.set_entry_point("extractor")
+builder.add_edge("extractor", "planner")
+builder.add_edge("planner",   "executor")
+builder.add_edge("executor",  "reviewer")
+builder.add_conditional_edges("reviewer", _route, {"fix": "executor", "end": END})
+
+graph = builder.compile()
+# Data flow: PipelineState dict passed through all nodes, each returns merged updates`
+  },
+
+  'llm_factory.py': {
+    label: 'llm_factory.py', sub: 'LLM factory', category: 'core', color: '#3b82f6',
+    desc: 'Centralized LLM provider factory. Picks models by role (planner=Sonnet, executor/reviewer=Haiku). Cached get_llm() avoids repeated instantiation.',
+    role: 'LLM Provider', model: '—', cost: '0',
+    deps: [],
+    code: `"""LLM factory — picks provider based on available API keys."""
+# Priority: Anthropic first (higher quality), then OpenAI
+
+ANTHROPIC_MODELS = [
+    {"id": "claude-sonnet-4-6",         "label": "Sonnet 4.6"},  # planner
+    {"id": "claude-opus-4-7",           "label": "Opus 4.7"},
+    {"id": "claude-haiku-4-5-20251001", "label": "Haiku 4.5"},   # executor + reviewer
+]
+OPENAI_MODELS = [
+    {"id": "gpt-4o",      "label": "GPT-4o"},       # planner
+    {"id": "gpt-4o-mini", "label": "GPT-4o mini"},  # executor + reviewer
+]
+
+def default_provider() -> str:
+    """Anthropic first if ANTHROPIC_API_KEY set, else OpenAI."""
+    if ANTHROPIC_KEY: return "anthropic"
+    if OPENAI_KEY:    return "openai"
+    raise RuntimeError("No API key found. Set ANTHROPIC_API_KEY or OPENAI_API_KEY")
+
+def planner_model(provider: str) -> str:
+    """Best reasoning model — used for planning (1 call per run)."""
+    return "claude-sonnet-4-6" if provider == "anthropic" else "gpt-4o"
+
+def executor_model(provider: str) -> str:
+    """Fast cheap model — executor + reviewer + eval judges (many calls)."""
+    return "claude-haiku-4-5-20251001" if provider == "anthropic" else "gpt-4o-mini"
+
+@lru_cache(maxsize=16)
+def get_llm(provider: str, model: str, max_tokens: int = 4096):
+    """Return a cached LangChain chat model."""
+    if provider == "openai":
+        from langchain_openai import ChatOpenAI
+        return ChatOpenAI(model=model, max_tokens=max_tokens)
+    else:
+        from langchain_anthropic import ChatAnthropic
+        return ChatAnthropic(model=model, max_tokens=max_tokens)`
+  },
+
+  'agents/extractor.py': {
+    label: 'extractor.py', sub: 'Haiku · chunk + extract', category: 'agent', color: '#8b5cf6',
+    desc: 'Pre-processes large transcripts (>30K chars) into structured JSON facts. Splits on call boundaries, extracts facts per chunk, merges. Short transcripts skip LLM entirely.',
+    role: 'Pre-processor', model: 'Haiku 4.5', cost: '~$0.001',
+    deps: ['llm_factory.py'],
+    code: `"""Transcript extractor: distils raw sales-call transcripts into structured facts."""
+_SHORT_TRANSCRIPT_CHARS = 30_000  # skip LLM below this — planner handles raw
+_CHUNK_SIZE = 60_000              # chars per chunk for very long transcripts
+
+# Output schema (JSON):
+# {
+#   customer_profile: {industry, size, current_state}
+#   project: {name, scope, phases, out_of_scope}
+#   timeline: [{milestone, date}]
+#   budget: {total, remaining, notes}
+#   stakeholders: [{role, responsibility}]
+#   key_decisions: [str]
+#   modules_features: [str]
+#   pain_points: [str]
+#   success_criteria: [str]
+#   verbatim_highlights: [str]
+#   all_facts: [str]   ← exhaustive: every number, date, name, %
+# }
+
+def extractor_node(state: dict) -> dict:
+    raw = Path(state["transcript_path"]).read_text(encoding="utf-8")
+
+    # Short transcripts: skip extraction — planner handles raw directly
+    if len(raw) <= _SHORT_TRANSCRIPT_CHARS:
+        return {**state, "extracted_facts": {}}
+
+    llm = get_llm(provider, model, max_tokens=4096)
+    chunks = _split_transcript(raw)  # split on ====...==== call boundaries
+
+    extractions = []
+    for chunk in chunks:
+        resp = llm.invoke([sys_msg, HumanMessage(content=chunk)])
+        parsed = _parse_json(resp.content)
+        if parsed:
+            extractions.append(parsed)
+
+    merged = _merge(extractions)  # dedup list keys, merge dict keys
+    return {**state, "extracted_facts": merged}
+
+# Prompt rules:
+# - Extract ONLY what appears in transcript (no inference)
+# - Preserve exact numbers, dates, percentages, proper nouns verbatim
+# - all_facts must be exhaustive
+# - Omit scheduling logistics, smalltalk, hold music`
+  },
+
+  'agents/planner.py': {
+    label: 'planner.py', sub: 'Sonnet · vision + JSON plan', category: 'agent', color: '#8b5cf6',
+    desc: 'Reads transcript/extracted facts + template shape inventory (+ rendered slide thumbnails). Outputs a JSON edit plan with slide-level edits, shape targets, and new text. Uses Sonnet for complex reasoning.',
+    role: 'Planner', model: 'Sonnet 4.6', cost: '~$0.02–0.08',
+    deps: ['llm_factory.py', 'tools/pptx_editor.py'],
+    code: `"""pptx-planner: reads content document + shape inventory, outputs JSON edit plan."""
+# Key principle: EDIT existing template — NOT generating new slides
+# Two failure modes to avoid:
+#   1. Fabrication  — inventing facts not in source → OFF LIMITS
+#   2. Sanitization — paraphrasing specifics into generic safe text → EQUALLY OFF LIMITS
+
+# Edit plan JSON structure:
+# {
+#   "document_summary": "...",
+#   "slides_to_remove": [3, 7],      # slide numbers (1-based) to delete
+#   "delete_shapes": [               # shapes to remove
+#     {"slide": 2, "shape": "Subtitle"}
+#   ],
+#   "edits": [                       # text edits (main payload)
+#     {
+#       "slide": 1,
+#       "shape": "Title 1",
+#       "text": "Q3 Roadmap — Exact verbatim content from source",
+#       "bullets": ["Line 1", "Line 2"]   # optional, for bullet shapes
+#     }
+#   ],
+#   "strategic_context": {
+#     "all_key_facts": ["$2.4M contract", "Q3 2026 go-live", ...]
+#   }
+# }
+
+def planner_node(state: dict) -> dict:
+    llm = get_llm(provider, "claude-sonnet-4-6", max_tokens=32000)
+    shape_info = _slim_inventory(op_info(prs))      # template shape inventory
+    thumbnail_blocks = _render_template_thumbnails(  # optional vision context
+        state["template_path"]
+    )
+
+    # Uses extracted_facts if extractor ran, else raw transcript
+    response = llm.invoke([system_msg, HumanMessage(content=human_content)])
+
+    # Extract JSON from response (handles fenced blocks + truncated output)
+    edit_plan = json.loads(raw_json)
+    return {**state, "edit_plan": edit_plan}
+
+# System prompt key rules:
+# - Preserve user's verbatim phrasing wherever it fits
+# - Keep ALL specifics: numbers, %, dates, names, dollar amounts
+# - Use ALL relevant facts — distribute across deck
+# - NEVER use "industry-leading", "best-in-class", "world-class", etc.`
+  },
+
+  'agents/executor.py': {
+    label: 'executor.py', sub: 'Haiku · 4-phase hybrid', category: 'agent', color: '#8b5cf6',
+    desc: '4-phase hybrid executor: Python preflight → deterministic batch apply → LLM fallback (only for ambiguous shapes) → deterministic finalization. Goal: zero LLM cost on happy path.',
+    role: 'Executor', model: 'Haiku 4.5 (fallback only)', cost: '~$0.002 typical',
+    deps: ['llm_factory.py', 'tools/pptx_editor.py', 'tools/wrappers.py'],
+    code: `"""pptx-executor: hybrid Python+LLM executor for applying edit plans.
+
+Phases:
+  1. Python preflight    — fuzzy-resolve shape names, predict overflow, spatial maps
+  2. Deterministic batch — op_apply_edits_batch: set_text/cell/para in one transaction
+  3. LLM fallback        — ReAct agent ONLY for edits that failed phase 2 (ambiguous shapes)
+  4a. Auto-relayout      — dense slides get op_relayout_slide (no LLM)
+  4b. Placeholder sweep  — op_placeholder_sweep clears leftover [X]/TODO (no LLM)
+  4c. Verification       — op_verify_edits confirms edits took effect (no LLM)
+"""
+
+def executor_node(state: dict) -> dict:
+    edits = edit_plan.get("edits", [])
+
+    # Phase 1: Python preflight (no LLM)
+    resolved, dense_slides, unresolvable_preflight = _run_preflight(edits, out)
+
+    # Phase 2: Deterministic batch apply (no LLM)
+    batch = op_apply_edits_batch(out, resolved)
+    failed_in_batch = [r for r in batch["results"] if not r["ok"]]
+
+    # Phase 3: LLM fallback ONLY if needed
+    needs_llm = unresolvable_preflight + failed_in_batch
+    if needs_llm:
+        _get_agent(provider, model).invoke(
+            {"messages": [HumanMessage(content=fix_prompt)]},
+            config=_CONFIG,  # recursion_limit=60
+        )
+
+    # Phase 4a-4c: finalization (no LLM)
+    _auto_relayout_dense(out, dense_slides, edited_slide_set)
+    op_placeholder_sweep(out, only_slides=sweep_targets)
+    op_verify_edits(out, verify_edits)
+
+    return {**state, "fix_attempts": fix_attempts + 1, "executor_log": phase_log}
+
+# executor_log.phases structure for shape_coverage eval:
+# [{phase: 1, name: "preflight"}, {phase: 2, name: "batch_apply", applied: N, failed: M}, ...]`
+  },
+
+  'agents/reviewer.py': {
+    label: 'reviewer.py', sub: 'Haiku · multimodal QA', category: 'agent', color: '#8b5cf6',
+    desc: 'Multimodal QA agent. Runs deterministic pre-checks (overflow, positions, grounding) then calls Haiku with rendered slide PNGs for visual review. 12 checks covering text overflow, hallucination, sanitization, and content wastage.',
+    role: 'Reviewer', model: 'Haiku 4.5', cost: '~$0.003',
+    deps: ['llm_factory.py', 'tools/pptx_editor.py', 'tools/wrappers.py'],
+    code: `"""layout-reviewer: deterministic pre-check + multimodal LLM QA agent."""
+
+# 12 review checks (any single failure = VERDICT: FIX NEEDED):
+#  1. Text overflow        — text cut off at shape boundary
+#  2. Content outside bounds — text/shape in grey area outside slide
+#  3. Shape overlap         — one shape covering another
+#  4. Invisible text        — text color same as background
+#  5. Blank edited slide    — completely empty after edit
+#  6. Visible placeholder   — [X], TODO, "Click to edit" still visible
+#  7. Broken layout         — orphaned arrows, missing steps in sequence
+#  8. Source-grounding      — number/name/date NOT in source transcript
+#  9. Sanitization          — generic corporate filler the user never used
+# 10. Content wastage       — distinctive facts from source dropped entirely
+# 11. (reserved)
+# 12. Shape misalignment    — boxes/frames visually out of alignment
+
+def reviewer_node(state: dict) -> dict:
+    # Step 1: deterministic pre-check (Python, no LLM)
+    precheck = op_precheck(out)
+    if precheck["hard_failures"] > 0:
+        verdict = "FIX NEEDED"
+
+    # Step 2: render slides to PNG
+    pngs = _render_slides(out)
+    image_blocks = [base64_image_block(png) for png in pngs]
+
+    # Step 3: multimodal LLM review
+    result = _get_agent(provider, model).invoke(
+        {"messages": [HumanMessage(content=[text_intro, *image_blocks])]},
+        config=_CONFIG,
+    )
+
+    # Verdict
+    verdict = "PASS" if "VERDICT: PASS" in last else "FIX NEEDED"
+    return {**state, "review_verdict": verdict, "review_issues": issues}
+
+# pre-check hard failures: placeholder text, ungrounded numbers, shape_position_drift
+# pre-check soft warnings: content_wastage items → escalated by LLM reviewer`
+  },
+
+  'tools/pptx_editor.py': {
+    label: 'pptx_editor.py', sub: '~1340 lines · PPTX ops', category: 'tool', color: '#10b981',
+    desc: 'Core PPTX operation library (python-pptx). ~30 ops: info, apply_edits_batch, set_text, set_cell, delete_shapes, relayout_slide, placeholder_sweep, verify_edits, precheck, validate, render_png.',
+    role: 'PPTX Engine', model: '—', cost: '0',
+    deps: [],
+    code: `"""Core PPTX operations — all python-pptx interactions live here."""
+
+# Key operations:
+#
+# op_info(prs)                     → shape inventory dict per slide
+# op_load(path)                    → load PPTX, returns Presentation
+# op_apply_edits_batch(path, edits) → apply list of set_text/set_cell/set_para in one tx
+# op_set_text(path, slide, shape, text, bullets)
+# op_set_cell(path, slide, shape, row, col, text)
+# op_set_para(path, slide, shape, para_idx, text)
+# op_set_text_autofit(...)         → smart truncation preserving punchline + bullets
+# op_resolve_shape_name(path, slide, partial_name) → fuzzy match
+# op_delete_shapes(path, slide, shape_names)
+# op_remove_slides(path, slide_numbers)
+# op_placeholder_sweep(path, ...)  → replace leftover [X]/TODO with space
+# op_relayout_slide(path, slide)   → auto-redistribute text for dense slides
+# op_verify_edits(path, edits)     → confirm edits took effect
+# op_precheck(path)                → deterministic checks: overflow, grounding, position
+# op_validate(path)                → scan for placeholder patterns → [{slide, shape, text}]
+# op_render_png(path, out_dir)     → LibreOffice → slide*.png files
+# op_spatial_map(path, slide)      → shape position/size map
+# op_check_overflow(path, slide, shape) → text overflow detection
+
+# Shape name resolution:
+#   exact match → case-insensitive → startswith → contains → fuzzy (ratio > 0.6)
+#   returns best match with confidence score
+
+# Batch apply result:
+#   {"applied": N, "failed": M, "results": [{"ok": bool, "error": "...", "index": i}]}
+
+def load(path: str):
+    """Load PPTX and return python-pptx Presentation object."""
+    return Presentation(path)
+
+def op_validate(path: str) -> list:
+    """Return list of shapes with leftover placeholder patterns."""
+    PLACEHOLDER_RE = re.compile(
+        r'\[.*?\]|TODO|Enter\s|Sample\s|Lorem\s|Click to edit',
+        re.IGNORECASE
+    )
+    # Returns: [{"slide": N, "shape": "name", "text": "..."}, ...]`
+  },
+
+  'tools/wrappers.py': {
+    label: 'wrappers.py', sub: 'LangChain tool wrappers', category: 'tool', color: '#10b981',
+    desc: 'Wraps pptx_editor.py ops as LangChain @tool functions for the executor and reviewer ReAct agents. Each wrapper accepts/returns JSON-serializable types.',
+    role: 'Agent Tool Interface', model: '—', cost: '0',
+    deps: ['tools/pptx_editor.py', 'tools/font_measurer.py', 'tools/layout_solver.py'],
+    code: `"""LangChain @tool wrappers — exposes pptx_editor ops to ReAct agents."""
+from langchain_core.tools import tool
+from tools import pptx_editor as pe
+
+# Executor tools:
+@tool
+def pptx_apply_edits_batch(path: str, edits: list[dict]) -> dict:
+    """Apply many edits at once. Preferred over calling set_text in a loop."""
+    return pe.op_apply_edits_batch(path, edits)
+
+@tool
+def pptx_set_text_autofit(path: str, slide: int, shape: str, text: str,
+                           bullets: list[str] = None) -> dict:
+    """Set text with smart truncation — preserves punchline + bullets."""
+    return pe.op_set_text_autofit(path, slide, shape, text, bullets or [])
+
+@tool
+def pptx_resolve_shape(path: str, slide: int, partial_name: str) -> dict:
+    """Fuzzy-match a shape name when plan name doesn't exist."""
+    return pe.op_resolve_shape_name(path, slide, partial_name)
+
+@tool
+def pptx_info(path: str, slide: int = None) -> dict:
+    """Get shape inventory for a slide (or all slides)."""
+    return pe.op_info(pe.load(path), slide)
+
+@tool
+def pptx_validate(path: str) -> list:
+    """Scan for leftover placeholder patterns."""
+    return pe.op_validate(path)
+
+# Also available: pptx_set_cell, pptx_set_para, pptx_delete_shapes,
+# pptx_remove_slides, pptx_relayout_slide, pptx_spatial_map,
+# pptx_check_overflow, pptx_verify_edits, pptx_render_png,
+# font_measure, layout_solve`
+  },
+
+  'tools/pdf_parser.py': {
+    label: 'pdf_parser.py', sub: 'PDF → text', category: 'tool', color: '#10b981',
+    desc: 'Extracts text from PDF uploads using pdfminer.six. Validates that extracted text is meaningful (not just scanned images). Used by backend.py when transcript is uploaded as PDF.',
+    role: 'PDF Parser', model: '—', cost: '0',
+    deps: [],
+    code: `"""PDF text extractor — used when transcript is uploaded as PDF."""
+from pdfminer.high_level import extract_text as pdfminer_extract
+from pdfminer.pdfparser import PDFSyntaxError
+
+def is_pdf_bytes(data: bytes) -> bool:
+    """Check if bytes are a PDF file by magic number."""
+    return data[:4] == b'%PDF'
+
+def extract_pdf_text(pdf_path) -> str:
+    """
+    Extract text from PDF. Raises ValueError if:
+    - pdfminer fails (encrypted / corrupted)
+    - extracted text is < 100 chars (likely scanned image PDF)
+
+    Used in backend.py:
+        if is_pdf_bytes(raw_bytes):
+            transcript_content = extract_pdf_text(pdf_tmp)
+    """
+    try:
+        text = pdfminer_extract(str(pdf_path))
+    except PDFSyntaxError as exc:
+        raise ValueError(f"PDF parse error: {exc}") from exc
+
+    cleaned = text.strip()
+    if len(cleaned) < 100:
+        raise ValueError(
+            "PDF appears to be a scanned image (no extractable text). "
+            "Please provide a text-based PDF or paste the transcript as text."
+        )
+    return cleaned`
+  },
+
+  'tools/layout_solver.py': {
+    label: 'layout_solver.py', sub: 'font-aware layout', category: 'tool', color: '#10b981',
+    desc: 'Font-aware layout solver. Given shape dimensions and text, computes optimal font size and whether content fits. Used by executor to prevent overflow before applying edits.',
+    role: 'Layout Solver', model: '—', cost: '0',
+    deps: ['tools/font_measurer.py'],
+    code: `"""Font-aware layout solver — predicts text fit before applying edits."""
+
+# Solves: given shape width/height + font face + text content,
+#         what's the max font size that fits without overflow?
+
+def solve_layout(
+    text: str,
+    width_pt: float,
+    height_pt: float,
+    font_name: str = "Calibri",
+    min_size: float = 6,
+    max_size: float = 36,
+) -> dict:
+    """
+    Binary search for largest font size where text fits in shape.
+    Returns: {
+        "fits": bool,
+        "font_size": float,    # largest fitting size
+        "overflow_lines": int, # lines that would be cut
+        "confidence": float,
+    }
+    """
+    # Uses font_measurer.measure_text() for accurate per-character widths
+    # Accounts for: word wrap, line spacing, padding margins
+    # Exposed via tools/wrappers.py as @tool layout_solve for LLM agents`
+  },
+
+  'eval_agent/runner.py': {
+    label: 'runner.py', sub: 'eval pipeline runner', category: 'eval', color: '#f59e0b',
+    desc: 'Calls graph.invoke() directly to run the full pipeline for one (transcript, template) pair. Captures final PipelineState and extracts PPTX text. All evals run after pipeline completes.',
+    role: 'Eval Runner', model: '—', cost: '= pipeline cost',
+    deps: ['graph.py', 'llm_factory.py', 'eval_agent/extract_pptx_text.py'],
+    code: `"""Eval runner: calls graph.invoke() directly and captures full PipelineState."""
+
+def run_eval_case(
+    transcript_path: str,
+    template_path: str,
+    provider: str = None,
+    run_dir: str = None,
+) -> dict:
+    """
+    Returns:
+    {
+      state:          final PipelineState dict (includes edit_plan, executor_log,
+                      review_verdict, extracted_facts)
+      pptx_text:      {"slide_1": {"ShapeName": "text"}, ..., "all_text": "..."}
+      transcript_id:  stem of transcript filename (e.g. "transcript_01")
+      output_path:    path to generated PPTX (or None on failure)
+      duration_sec:   float
+      error:          str | None
+    }
+
+    NOTE: evals run AFTER pipeline fully completes (final PPTX produced).
+    The pipeline's own fix loop (reviewer→executor→reviewer) runs to completion first.
+    """
+    state = {
+        "transcript_path": str(transcript_path),
+        "template_path":   str(template_path),
+        "output_path":     output_path,
+        "provider":        provider,
+        "planner_model":   planner_model(provider),
+        "executor_model":  executor_model(provider),
+        "edit_plan": {}, "review_verdict": "",
+        "review_issues": [], "fix_attempts": 0,
+    }
+
+    final_state = graph.invoke(state)   # ← full pipeline including fix loop
+
+    if Path(output_path).exists():
+        pptx_text = extract_pptx_text(output_path)  # slide text extraction
+
+    return {"state": dict(final_state), "pptx_text": pptx_text, ...}`
+  },
+
+  'eval_agent/benchmark.py': {
+    label: 'benchmark.py', sub: 'batch runner + JSONL', category: 'eval', color: '#f59e0b',
+    desc: 'Batch benchmark runner. Iterates N transcripts, runs all 6 evals, fires SSE progress events, writes results to eval_agent/results/benchmark.jsonl. Called by backend.py /api/eval/run.',
+    role: 'Batch Orchestrator', model: '—', cost: '= N × pipeline + eval cost',
+    deps: ['eval_agent/runner.py', 'eval_agent/scenarios.py', 'eval_agent/evaluations/*'],
+    code: `"""Batch benchmark runner: runs all evals across N transcripts → pass rate table + JSONL."""
+
+EVAL_NAMES = [
+    "placeholder",     # deterministic — free
+    "shape_coverage",  # deterministic — free
+    "faithfulness",    # LLM (Haiku) — ~$0.001
+    "hallucination",   # LLM (Haiku) — ~$0.001
+    "sanitization",    # LLM (Haiku) — ~$0.001
+    "completeness",    # semi-deterministic + LLM — ~$0.0005
+]
+
+def run_benchmark(
+    template_path: str,
+    transcript_paths: list[str],
+    provider: str,
+    on_progress: Callable = None,   # SSE callback → backend.py
+) -> dict:
+    """
+    SSE events via on_progress:
+      {"type": "eval_start",           "total": N, "run_id": "abc12345"}
+      {"type": "eval_transcript_start","id": "01", "index": 1, "total": N}
+      {"type": "eval_transcript_done", "id": "01", "results": {eval: result}, ...}
+      {"type": "eval_done",            "pass_rates": {eval: 0.0–1.0}, "run_id": "..."}
+
+    Output → eval_agent/results/benchmark.jsonl (one JSON record per run)
+    Returns: {run_id, pass_rates, details, timestamp}
+    """
+    for transcript_path in transcript_paths:
+        scenario = generate_scenario(transcript_path, provider)  # cached
+        run_result = run_eval_case(transcript_path, template_path, provider, run_dir)
+        eval_results = run_all_evals(run_result, transcript_path, scenario, provider)
+
+    pass_rates = {name: pass_counts[name] / total for name in EVAL_NAMES}
+    # → {placeholder: 0.95, shape_coverage: 0.91, faithfulness: 0.78, ...}
+
+# Results file: eval_agent/results/benchmark.jsonl
+# Each line: {run_id, timestamp, pass_rates, details: [{transcript_id, evals, duration_sec}]}`
+  },
+
+  'eval_agent/scenarios.py': {
+    label: 'scenarios.py', sub: 'ground truth extraction', category: 'eval', color: '#f59e0b',
+    desc: 'One-time LLM extraction of ground-truth fixtures from transcripts. Cached to eval_agent/scenarios/{id}.json. Used by faithfulness eval to know expected facts.',
+    role: 'Ground Truth Generator', model: 'Haiku 4.5', cost: '~$0.0005 (one-time)',
+    deps: ['llm_factory.py'],
+    code: `"""Scenario generator: LLM extracts ground-truth fixtures from transcripts."""
+
+# Output schema:
+# {
+#   "expected_facts":     ["$2.4M total contract", "43 sites", "Q3 2026 go-live"],
+#   "critical_numbers":   ["$2.4M", "43", "2026"],
+#   "forbidden_phrases":  ["industry-leading", "best-in-class"],
+#   "key_names":          ["Acme Corp", "Sarah Chen"],
+#   "tone":               ["confident", "direct"],
+#   "expected_topics":    ["implementation timeline", "budget allocation"]
+# }
+
+def generate_scenario(
+    transcript_path: str,
+    provider: str,
+    force: bool = False,  # set True to regenerate even if cached
+) -> dict:
+    """
+    Generate (or load cached) scenario for a transcript.
+    Cached to: eval_agent/scenarios/{transcript_id}.json
+
+    One-time cost: ~$0.0005 per transcript (Haiku)
+    Subsequent runs: free (read from JSON cache)
+    """
+    cache_path = _SCENARIO_DIR / f"{transcript_id}.json"
+    if cache_path.exists() and not force:
+        return json.loads(cache_path.read_text())
+
+    resp = llm.invoke([SystemMessage(SCENARIO_SYSTEM), HumanMessage(transcript)])
+    scenario = json.loads(resp.content)
+    cache_path.write_text(json.dumps(scenario, indent=2))
+    return scenario`
+  },
+
+  'eval_agent/evaluations/base.py': {
+    label: 'evaluations/base.py', sub: 'EvalResult + judge harness', category: 'eval', color: '#f59e0b',
+    desc: 'EvalResult dataclass and run_binary_judge() harness. All 4 LLM evals call run_binary_judge(). Expects {"passed": bool, "reasoning": str, "confidence": float} JSON from Haiku.',
+    role: 'Eval Base', model: 'Haiku 4.5', cost: '~$0.001 per call',
+    deps: ['llm_factory.py'],
+    code: `"""EvalResult dataclass + binary LLM judge harness."""
+
+@dataclass
+class EvalResult:
+    eval_name:  str
+    passed:     bool
+    reasoning:  str
+    confidence: float = 0.5     # 0.0 = uncertain, 1.0 = certain
+    details:    dict  = field(default_factory=dict)
+
+    def to_dict(self) -> dict: ...
+
+JUDGE_SYSTEM = """You are a strict binary quality judge for AI-generated PowerPoint presentations.
+Answer with ONLY a JSON object on a single line. No markdown, no extra text.
+Format: {"passed": true/false, "reasoning": "one sentence", "confidence": 0.0-1.0}"""
+
+def run_binary_judge(
+    eval_name:    str,
+    system_prompt: str,
+    user_prompt:   str,
+    provider:      str = None,
+) -> EvalResult:
+    """
+    Call Haiku as binary pass/fail judge.
+    Model: executor_model(provider) → Haiku 4.5 / gpt-4o-mini
+    max_tokens: 256 (just need one JSON line)
+
+    Fallback: if JSON parse fails, keyword scan for "true"/"false"
+    """
+    resp = llm.invoke([SystemMessage(system_prompt), HumanMessage(user_prompt)])
+    data = json.loads(extract_json(resp.content))
+    return EvalResult(
+        eval_name=eval_name,
+        passed=bool(data["passed"]),
+        reasoning=str(data["reasoning"])[:400],
+        confidence=float(data["confidence"]),
+    )`
+  },
+
+  'eval_agent/evaluations/faithfulness.py': {
+    label: 'faithfulness.py', sub: 'LLM · key facts in PPTX?', category: 'eval', color: '#f59e0b',
+    desc: 'Binary eval: do key facts from transcript appear in PPTX? Uses scenario.expected_facts (pre-extracted) if available. PASS = major facts represented; FAIL = significant facts completely absent.',
+    role: 'Faithfulness Eval', model: 'Haiku 4.5', cost: '~$0.001',
+    deps: ['eval_agent/evaluations/base.py'],
+    code: `"""Faithfulness eval: key facts from transcript appear in PPTX?"""
+
+# PASS if: all major facts, numbers, names, decisions appear in PPTX
+# FAIL if: significant facts completely absent (small omissions OK)
+
+def evaluate_faithfulness(
+    transcript:   str,
+    pptx_all_text: str,
+    scenario:     dict,        # from scenarios.py — has expected_facts
+    provider:     str = None,
+) -> EvalResult:
+    expected_facts = scenario.get("expected_facts", [])
+    # Uses pre-extracted facts if available, else asks LLM to infer from transcript
+
+    user = (
+        f"SOURCE TRANSCRIPT (first 3000 chars):\\n{transcript[:3000]}\\n\\n"
+        f"EXPECTED KEY FACTS (pre-extracted):\\n{facts_block}\\n\\n"
+        f"PPTX SLIDE TEXT (all slides):\\n{pptx_all_text[:4000]}\\n\\n"
+        f"QUESTION: Do the key facts from the transcript appear in the PPTX?"
+    )
+    return run_binary_judge("faithfulness", _SYSTEM, user, provider)`
+  },
+
+  'eval_agent/evaluations/hallucination.py': {
+    label: 'hallucination.py', sub: 'LLM · invented facts?', category: 'eval', color: '#f59e0b',
+    desc: 'Binary eval: does PPTX contain numbers, names, or dates NOT in the source transcript? PASS = all facts grounded; FAIL = fabricated specifics detected.',
+    role: 'Hallucination Eval', model: 'Haiku 4.5', cost: '~$0.001',
+    deps: ['eval_agent/evaluations/base.py'],
+    code: `"""Hallucination eval: PPTX contains numbers/names NOT in source transcript?"""
+
+# PASS if: every specific (number, %, name, date, dollar amount) in PPTX
+#          appears somewhere in the source transcript
+# FAIL if: PPTX contains fabricated specifics not in source
+
+def evaluate_hallucination(
+    transcript:    str,
+    pptx_all_text: str,
+    provider:      str = None,
+) -> EvalResult:
+    user = (
+        f"SOURCE TRANSCRIPT:\\n{transcript[:4000]}\\n\\n"
+        f"PPTX SLIDE TEXT:\\n{pptx_all_text[:3000]}\\n\\n"
+        f"Check every number, percentage, dollar amount, date, person name, and company name "
+        f"in the PPTX. Does each one appear in the source transcript?\\n"
+        f"PASS if all specifics are grounded in source.\\n"
+        f"FAIL if the PPTX contains invented specifics not present in source."
+    )
+    return run_binary_judge("hallucination", _SYSTEM, user, provider)`
+  },
+
+  'eval_agent/evaluations/sanitization.py': {
+    label: 'sanitization.py', sub: 'LLM · generic filler?', category: 'eval', color: '#f59e0b',
+    desc: 'Binary eval: did the agent replace the user\'s specific content with generic corporate filler? Pre-checks against known forbidden phrases, then LLM judge for subtle sanitization.',
+    role: 'Sanitization Eval', model: 'Haiku 4.5', cost: '~$0.001',
+    deps: ['eval_agent/evaluations/base.py'],
+    code: `"""Sanitization eval: generic filler phrases used that user never wrote?"""
+
+_FORBIDDEN = [
+    "industry-leading", "best-in-class", "world-class", "cutting-edge",
+    "robust", "scalable", "synergy", "leverage", "seamless", "innovative",
+    "next-generation", "mission-critical", "game-changing", "paradigm shift",
+    "holistic", "dynamic", "proactive", "strategic alignment",
+]
+
+def evaluate_sanitization(
+    transcript:    str,
+    pptx_all_text: str,
+    provider:      str = None,
+) -> EvalResult:
+    # Pre-check: fast scan for known forbidden phrases
+    found = [p for p in _FORBIDDEN if p.lower() in pptx_all_text.lower()]
+    if found:
+        return EvalResult(
+            eval_name="sanitization", passed=False, confidence=0.95,
+            reasoning=f"Forbidden generic phrases found: {found[:3]}",
+        )
+
+    # LLM judge for subtle sanitization (vague language, hedging, specifics→generics)
+    return run_binary_judge("sanitization", _SYSTEM, user, provider)`
+  },
+
+  'eval_agent/evaluations/completeness.py': {
+    label: 'completeness.py', sub: 'semi-det · key facts used?', category: 'eval', color: '#f59e0b',
+    desc: 'Semi-deterministic eval: are >80% of edit_plan.strategic_context.all_key_facts present in the PPTX? String matching first, LLM judge if borderline (50-80% match rate).',
+    role: 'Completeness Eval', model: 'Haiku 4.5 (borderline only)', cost: '~$0.0005',
+    deps: ['eval_agent/evaluations/base.py'],
+    code: `"""Completeness eval: all_key_facts from edit_plan used in deck?"""
+
+# Checks edit_plan.strategic_context.all_key_facts (planner's identified facts)
+# vs pptx_all_text (what actually made it into slides)
+
+def evaluate_completeness(
+    state:         dict,     # PipelineState — has edit_plan
+    pptx_all_text: str,
+    provider:      str = None,
+) -> EvalResult:
+    facts = (state.get("edit_plan", {})
+             .get("strategic_context", {})
+             .get("all_key_facts", []))
+
+    if not facts:  # planner didn't extract facts → can't evaluate
+        return EvalResult("completeness", passed=True, reasoning="No key facts in plan", confidence=0.5)
+
+    # String matching phase
+    present = sum(1 for f in facts if _fact_in_pptx(f, pptx_all_text))
+    ratio = present / len(facts)
+
+    if ratio >= 0.80:  # clearly passing
+        return EvalResult("completeness", passed=True, reasoning=f"{ratio:.0%} of facts present", confidence=0.9)
+    if ratio < 0.50:   # clearly failing
+        return EvalResult("completeness", passed=False, reasoning=f"Only {ratio:.0%} of facts present", confidence=0.85)
+
+    # Borderline (50–80%) → LLM judge
+    return run_binary_judge("completeness", _SYSTEM, user, provider)`
+  },
+
+  'eval_agent/evaluations/placeholder.py': {
+    label: 'placeholder.py', sub: 'deterministic · free', category: 'eval', color: '#f59e0b',
+    desc: 'Deterministic eval (no LLM). Calls op_validate() to scan for leftover placeholder patterns: [X], TODO, "Enter", "Sample", "Click to edit", etc. PASS = none found.',
+    role: 'Placeholder Eval', model: 'None (deterministic)', cost: '$0',
+    deps: ['tools/pptx_editor.py'],
+    code: `"""Placeholder eval — deterministic, no LLM, zero cost."""
+from tools.pptx_editor import op_validate
+from eval_agent.evaluations.base import EvalResult
+
+def evaluate_placeholder(output_path: str) -> EvalResult:
+    """
+    PASS if: no placeholder patterns found in output PPTX
+    FAIL if: any [X], TODO, "Enter", "Sample", "Click to edit", etc. remain
+
+    Uses op_validate() which scans with PLACEHOLDER_RE pattern.
+    Returns: [{slide: N, shape: "...", text: "..."}]
+    """
+    if not output_path or not Path(output_path).exists():
+        return EvalResult("placeholder", passed=False,
+                         reasoning="No output file", confidence=1.0)
+
+    hits = op_validate(output_path)
+    if not hits:
+        return EvalResult("placeholder", passed=True,
+                         reasoning="No placeholder patterns found", confidence=1.0)
+
+    return EvalResult(
+        "placeholder", passed=False, confidence=1.0,
+        reasoning=f"{len(hits)} placeholder(s): {hits[0]['text'][:50]}...",
+        details={"hits": hits},
+    )
+
+# CLI: python -m eval_agent.evaluations.placeholder <pptx_path>`
+  },
+
+  'eval_agent/evaluations/shape_coverage.py': {
+    label: 'shape_coverage.py', sub: 'deterministic · free', category: 'eval', color: '#f59e0b',
+    desc: 'Deterministic eval (no LLM). Reads executor_log.phases to compute applied/total edit ratio. PASS = ≥90% of planned edits applied successfully in phase 2.',
+    role: 'Shape Coverage Eval', model: 'None (deterministic)', cost: '$0',
+    deps: [],
+    code: `"""Shape coverage eval — deterministic, reads executor_log, zero LLM cost."""
+from eval_agent.evaluations.base import EvalResult
+
+def evaluate_shape_coverage(state: dict) -> EvalResult:
+    """
+    PASS if: batch_apply phase applied ≥ 90% of planned edits
+    FAIL if: < 90% applied (many shapes fell through to LLM fallback or failed)
+
+    Reads: state.executor_log.phases → finds phase with name="batch_apply"
+    """
+    executor_log = state.get("executor_log", {})
+    phases = executor_log.get("phases", [])
+
+    batch_phase = next(
+        (p for p in phases if p.get("name") == "batch_apply"),
+        None
+    )
+
+    if not batch_phase:
+        # No log → executor didn't run → still count as pass (no edits needed?)
+        return EvalResult("shape_coverage", passed=True,
+                         reasoning="No executor log found", confidence=0.3)
+
+    applied = batch_phase.get("applied", 0)
+    total   = batch_phase.get("total",   0)
+
+    if total == 0:
+        return EvalResult("shape_coverage", passed=True,
+                         reasoning="No edits in plan", confidence=1.0)
+
+    ratio = applied / total
+    passed = ratio >= 0.90
+    return EvalResult(
+        "shape_coverage", passed=passed, confidence=0.95,
+        reasoning=f"{applied}/{total} edits applied ({ratio:.0%})",
+        details={"applied": applied, "total": total, "ratio": ratio},
+    )`
+  },
+
+  'eval_agent/calibrate.py': {
+    label: 'calibrate.py', sub: 'F1 vs human labels', category: 'eval', color: '#f59e0b',
+    desc: 'Computes precision/recall/F1 for each LLM eval judge vs human labels. Flags eval as "untrusted" if F1 < 0.85. Human labels saved to eval_agent/human_labels/{eval}.json.',
+    role: 'Calibrator', model: '—', cost: '0',
+    deps: ['eval_agent/benchmark.py'],
+    code: `"""Calibrate LLM eval judges: compare vs human labels → F1 score."""
+
+def calibrate(eval_name: str, human_labels: list[dict]) -> dict:
+    """
+    Args:
+        eval_name:     one of EVAL_NAMES
+        human_labels:  [{"transcript_id": "01", "passed": true}, ...]
+
+    Returns:
+    {
+        "eval_name":   "faithfulness",
+        "n_samples":   20,
+        "precision":   0.87,
+        "recall":      0.91,
+        "f1":          0.89,
+        "trusted":     true,    # F1 >= 0.85
+        "confusion":   {"tp": 15, "fp": 2, "fn": 1, "tn": 2},
+        "disagreements": [{"transcript_id": "07", "human": true, "llm": false}]
+    }
+
+    Workflow:
+    1. Manual: label 20 transcripts per eval with true/false
+    2. Run calibrate() → get F1
+    3. If F1 < 0.85: iterate on judge system prompt
+    4. If F1 < 0.85 after iteration: upgrade that eval to Sonnet
+    """
+    latest = load_latest_results()  # from benchmark.jsonl
+    # Match human labels to LLM judge results by transcript_id
+    # Compute TP, FP, FN, TN
+    # trusted = f1 >= 0.85
+
+def save_human_labels(eval_name: str, labels: list[dict]) -> None:
+    """Save human labels to eval_agent/human_labels/{eval_name}.json."""`
+  },
+
+  'eval_agent/auto_improve.py': {
+    label: 'auto_improve.py', sub: 'Sonnet · prompt surgeon', category: 'eval', color: '#f59e0b',
+    desc: 'Clusters failures from latest benchmark run, sends to Sonnet for a targeted prompt patch suggestion. NEVER auto-applies — saves to staged_patches/ for human review. apply_patch() is human-triggered.',
+    role: 'Auto Improver', model: 'Sonnet 4.6', cost: '~$0.05 per improve call',
+    deps: ['eval_agent/benchmark.py', 'llm_factory.py'],
+    code: `"""Auto-improve: cluster failures → Sonnet suggests prompt patch → human review."""
+
+# NEVER auto-applies — always requires human approval
+# Patch files: eval_agent/staged_patches/{patch_id}_{eval_name}.json
+
+def auto_improve(eval_name: str, provider: str = None) -> dict:
+    """
+    1. Load latest benchmark.jsonl
+    2. Extract all FAIL cases for eval_name
+    3. Read current SYSTEM_PROMPT from agents/planner.py
+    4. Send to Sonnet: failures + current prompt → suggest targeted patch
+    5. Save patch to staged_patches/ (NEVER auto-apply)
+
+    Returns:
+    {
+        "patch_id":        "abc12345",
+        "eval_name":       "faithfulness",
+        "affected_cases":  7,
+        "patch_text":      "When the source contains explicit timeline milestones...",
+        "insert_after":    "## Workflow",
+        "reasoning":       "7/44 cases fail because planner drops timeline slides...",
+        "affected_pattern":"Timeline facts not appearing in output deck",
+    }
+    """
+    failures = cluster_failures(eval_name)  # [{transcript_id, reasoning, confidence}]
+    current_prompt = _read_current_prompt() # reads SYSTEM_PROMPT from planner.py
+    suggestion = sonnet.invoke([failures + current_prompt])
+    patch_path = _PATCHES_DIR / f"{patch_id}_{eval_name}.json"
+    patch_path.write_text(json.dumps(patch_record))
+
+def apply_patch(patch_id: str) -> dict:
+    """
+    Apply an approved patch to agents/planner.py.
+    Creates backup first. NEVER called automatically — human triggers via:
+    POST /api/eval/apply-patch (EvalLab Improve tab → "Apply" button)
+    """
+    shutil.copy(_PLANNER_PATH, backup_path)  # backup first
+    new_content = current.replace(insert_after, insert_after + "\\n" + patch_text)
+    _PLANNER_PATH.write_text(new_content)`
+  },
+
+  'frontend/App.jsx': {
+    label: 'App.jsx', sub: 'React root', category: 'frontend', color: '#ec4899',
+    desc: 'Root React component. Manages provider selection, tab state (Pipeline | Eval Lab), and renders the pipeline UI or EvalLab based on active tab.',
+    role: 'Frontend Root', model: '—', cost: '0',
+    deps: ['frontend/EvalLab.jsx'],
+    code: `// App.jsx — Root React component
+// Two tabs: "pipeline" (main generate UI) and "evallab" (Eval Lab flywheel)
+
+import EvalLab from './EvalLab'
+import { Brain, FlaskConical, ... } from 'lucide-react'
+
+export default function App() {
+  const [providers, setProviders] = useState([])
+  const [selProvider, setSelProvider] = useState('')
+  const [appTab, setAppTab] = useState('pipeline')  // "pipeline" | "evallab"
+  const [streaming, setStreaming] = useState(false)
+  const [events, setEvents] = useState([])
+  const [fileId, setFileId] = useState(null)
+  // ... transcript, template, slides state
+
+  // Tab bar:
+  const TABS = [
+    { id: 'pipeline', label: 'Pipeline', icon: Brain },
+    { id: 'evallab',  label: 'Eval Lab', icon: FlaskConical },
+  ]
+
+  // SSE streaming — /api/generate → events array
+  const handleGenerate = async () => {
+    const es = new EventSource('/api/generate')
+    es.onmessage = ({ data }) => {
+      const ev = JSON.parse(data)
+      setEvents(prev => [...prev, ev])
+      if (ev.type === 'done')   setFileId(ev.file_id)
+      if (ev.type === 'slides_ready') fetchSlides(ev.file_id)
+    }
+  }
+
+  return (
+    <div>
+      <header>
+        {/* Tab bar */}
+        {TABS.map(t => <TabBtn key={t.id} {...t} active={appTab === t.id} />)}
+      </header>
+      {appTab === 'evallab' && (
+        <EvalLab providers={providers} selProvider={selProvider} ... />
+      )}
+      {appTab === 'pipeline' && (
+        <PipelineUI ... />  // transcript upload, provider select, SSE log, slide preview
+      )}
+    </div>
+  )
+}`
+  },
+
+  'frontend/EvalLab.jsx': {
+    label: 'EvalLab.jsx', sub: 'Eval Lab UI · 4 tabs', category: 'frontend', color: '#ec4899',
+    desc: '4-tab Eval Lab UI. Run tab: batch eval with live progress. Results tab: benchmark history heatmap. Calibrate tab: human label interface + F1. Improve tab: Sonnet patch suggestions + diff viewer.',
+    role: 'Eval Lab Frontend', model: '—', cost: '0',
+    deps: ['frontend/App.jsx'],
+    code: `// EvalLab.jsx — Eval Lab UI (4 tabs)
+// Props: providers, selProvider, setSelProvider
+
+export default function EvalLab({ providers, selProvider, setSelProvider }) {
+  const [tab, setTab] = useState('run')   // "run"|"results"|"calibrate"|"improve"
+  const TABS = [
+    { id: 'run',       label: 'Run',       icon: PlayIcon },
+    { id: 'results',   label: 'Results',   icon: BarChart2 },
+    { id: 'calibrate', label: 'Calibrate', icon: FlaskConical },
+    { id: 'improve',   label: 'Improve',   icon: Wand2 },
+  ]
+
+  // Run tab state:
+  const [template, setTemplate] = useState(null)    // UploadFile
+  const [corpus, setCorpus] = useState([])          // 44 transcripts from /api/eval/transcripts
+  const [selected, setSelected] = useState(new Set())
+  const [running, setRunning] = useState(false)
+  const [progress, setProgress] = useState({})      // {transcript_id: eval_results}
+  const [passRates, setPassRates] = useState({})    // live-updating pass rate grid
+
+  // Run tab:
+  // - Upload template .pptx
+  // - Select transcripts (chips for all 44, or select subset)
+  // - "Run Benchmark" button → POST /api/eval/run (SSE)
+  // - Live progress bar + per-transcript pass/fail grid
+  // - Pass rate summary: {placeholder: 95%, shape_coverage: 91%, ...}
+
+  // Results tab:
+  // - Dropdown to select benchmark run (by date/run_id)
+  // - Pass rate summary cards
+  // - Heatmap table: rows=transcripts, cols=eval_names, cells=PASS/FAIL
+  // - Click cell → expand reasoning text
+
+  // Calibrate tab:
+  // - Select eval type
+  // - List first 20 transcripts with Pass/Fail buttons
+  // - Submit → POST /api/eval/calibrate → show F1 score + confusion matrix
+
+  // Improve tab:
+  // - Select eval type showing failures
+  // - "Generate Prompt Patch" → POST /api/eval/improve → Sonnet suggestion
+  // - Show patch_text, insert_after, reasoning, affected_pattern
+  // - "Apply" button → POST /api/eval/apply-patch (human-triggered only)
+  // - "Discard" button → dismiss patch
+}`
+  },
+};
+
+// ─── Graph Layout ────────────────────────────────────────────────────────────
+const NODES = [
+  // Entry points
+  { id: 'run.py',               x: 80,  y: 40,  w: 110, h: 36 },
+  { id: 'backend.py',           x: 220, y: 40,  w: 130, h: 36 },
+
+  // Core
+  { id: 'graph.py',             x: 120, y: 130, w: 130, h: 36 },
+  { id: 'llm_factory.py',       x: 280, y: 130, w: 140, h: 36 },
+
+  // Agents
+  { id: 'agents/extractor.py',  x: 30,  y: 225, w: 118, h: 36 },
+  { id: 'agents/planner.py',    x: 163, y: 225, w: 110, h: 36 },
+  { id: 'agents/executor.py',   x: 287, y: 225, w: 116, h: 36 },
+  { id: 'agents/reviewer.py',   x: 416, y: 225, w: 116, h: 36 },
+
+  // Tools
+  { id: 'tools/pptx_editor.py', x: 155, y: 318, w: 140, h: 36 },
+  { id: 'tools/wrappers.py',    x: 308, y: 318, w: 120, h: 36 },
+  { id: 'tools/pdf_parser.py',  x: 28,  y: 318, w: 115, h: 36 },
+  { id: 'tools/layout_solver.py', x: 440, y: 318, w: 140, h: 36 },
+
+  // Eval layer
+  { id: 'eval_agent/runner.py',        x: 640, y: 130, w: 130, h: 36 },
+  { id: 'eval_agent/benchmark.py',     x: 640, y: 218, w: 140, h: 36 },
+  { id: 'eval_agent/scenarios.py',     x: 500, y: 218, w: 128, h: 36 },
+
+  // Eval evaluations
+  { id: 'eval_agent/evaluations/base.py',         x: 500, y: 310, w: 132, h: 36 },
+  { id: 'eval_agent/evaluations/faithfulness.py', x: 500, y: 360, w: 132, h: 36 },
+  { id: 'eval_agent/evaluations/hallucination.py',x: 500, y: 410, w: 144, h: 36 },
+  { id: 'eval_agent/evaluations/sanitization.py', x: 658, y: 360, w: 130, h: 36 },
+  { id: 'eval_agent/evaluations/completeness.py', x: 658, y: 410, w: 130, h: 36 },
+  { id: 'eval_agent/evaluations/placeholder.py',  x: 658, y: 310, w: 128, h: 36 },
+  { id: 'eval_agent/evaluations/shape_coverage.py',x:800, y: 310, w: 152, h: 36 },
+
+  // Calibrate + improve
+  { id: 'eval_agent/calibrate.py',    x: 800, y: 218, w: 140, h: 36 },
+  { id: 'eval_agent/auto_improve.py', x: 800, y: 130, w: 148, h: 36 },
+
+  // Frontend
+  { id: 'frontend/App.jsx',     x: 640, y: 40,  w: 110, h: 36 },
+  { id: 'frontend/EvalLab.jsx', x: 766, y: 40,  w: 136, h: 36 },
+];
+
+const EDGES = [
+  // Entry → core
+  { from: 'run.py',     to: 'graph.py',    color: '#6b7280' },
+  { from: 'backend.py', to: 'graph.py',    color: '#3b82f6' },
+  { from: 'backend.py', to: 'llm_factory.py', color: '#3b82f620', dashed: true },
+
+  // graph → agents
+  { from: 'graph.py', to: 'agents/extractor.py', color: '#8b5cf6' },
+  { from: 'graph.py', to: 'agents/planner.py',   color: '#8b5cf6' },
+  { from: 'graph.py', to: 'agents/executor.py',  color: '#8b5cf6' },
+  { from: 'graph.py', to: 'agents/reviewer.py',  color: '#8b5cf6' },
+
+  // agents → tools
+  { from: 'agents/planner.py',  to: 'tools/pptx_editor.py', color: '#10b98150', dashed: true },
+  { from: 'agents/executor.py', to: 'tools/pptx_editor.py', color: '#10b98150', dashed: true },
+  { from: 'agents/executor.py', to: 'tools/wrappers.py',    color: '#10b98150', dashed: true },
+  { from: 'agents/reviewer.py', to: 'tools/pptx_editor.py', color: '#10b98150', dashed: true },
+  { from: 'agents/reviewer.py', to: 'tools/wrappers.py',    color: '#10b98150', dashed: true },
+  { from: 'backend.py', to: 'tools/pdf_parser.py', color: '#10b98150', dashed: true },
+  { from: 'tools/wrappers.py', to: 'tools/layout_solver.py', color: '#10b98130', dashed: true },
+
+  // agents → llm_factory
+  { from: 'agents/extractor.py', to: 'llm_factory.py', color: '#8b5cf640', dashed: true },
+  { from: 'agents/planner.py',   to: 'llm_factory.py', color: '#8b5cf640', dashed: true },
+  { from: 'agents/executor.py',  to: 'llm_factory.py', color: '#8b5cf640', dashed: true },
+  { from: 'agents/reviewer.py',  to: 'llm_factory.py', color: '#8b5cf640', dashed: true },
+
+  // backend → eval
+  { from: 'backend.py',              to: 'eval_agent/benchmark.py',  color: '#f59e0b60', dashed: true },
+  { from: 'backend.py',              to: 'eval_agent/auto_improve.py', color: '#f59e0b60', dashed: true },
+
+  // eval pipeline
+  { from: 'eval_agent/benchmark.py', to: 'eval_agent/runner.py',    color: '#f59e0b' },
+  { from: 'eval_agent/benchmark.py', to: 'eval_agent/scenarios.py', color: '#f59e0b60', dashed: true },
+  { from: 'eval_agent/benchmark.py', to: 'eval_agent/evaluations/base.py', color: '#f59e0b60', dashed: true },
+  { from: 'eval_agent/runner.py',    to: 'graph.py',                color: '#f59e0b60', dashed: true },
+
+  // eval → evaluations
+  { from: 'eval_agent/evaluations/base.py', to: 'eval_agent/evaluations/faithfulness.py', color: '#f59e0b30', dashed: true },
+  { from: 'eval_agent/evaluations/base.py', to: 'eval_agent/evaluations/hallucination.py', color: '#f59e0b30', dashed: true },
+  { from: 'eval_agent/evaluations/base.py', to: 'eval_agent/evaluations/sanitization.py', color: '#f59e0b30', dashed: true },
+  { from: 'eval_agent/evaluations/base.py', to: 'eval_agent/evaluations/completeness.py', color: '#f59e0b30', dashed: true },
+
+  // calibrate + improve
+  { from: 'eval_agent/benchmark.py',     to: 'eval_agent/calibrate.py',    color: '#f59e0b60', dashed: true },
+  { from: 'eval_agent/benchmark.py',     to: 'eval_agent/auto_improve.py', color: '#f59e0b60', dashed: true },
+  { from: 'eval_agent/auto_improve.py',  to: 'agents/planner.py',          color: '#ef444460', dashed: true },
+
+  // frontend
+  { from: 'backend.py',          to: 'frontend/App.jsx',     color: '#ec489960', dashed: true },
+  { from: 'frontend/App.jsx',    to: 'frontend/EvalLab.jsx', color: '#ec4899' },
+];
+
+// ─── Category Colors ──────────────────────────────────────────────────────────
+function nodeColor(id) {
+  const m = MODULES[id];
+  return m ? m.color : '#6b7280';
+}
+
+function nodeFill(id) {
+  const c = nodeColor(id);
+  return c + '30';
+}
+
+// ─── Syntax Highlighter ───────────────────────────────────────────────────────
+function highlight(code) {
+  return code
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    // Comments
+    .replace(/(#[^\n]*)/g, '<span class="com">$1</span>')
+    .replace(/("""[\s\S]*?""")/g, (m) => '<span class="com">' + m + '</span>')
+    // Decorators
+    .replace(/(@\w+)/g, '<span class="deco">$1</span>')
+    // Keywords
+    .replace(/\b(def|class|import|from|return|if|else|elif|for|in|not|and|or|None|True|False|raise|try|except|with|as|await|async|yield|pass|break|continue|lambda|global|nonlocal)\b/g, '<span class="kw">$1</span>')
+    // Class names (capitalized words)
+    .replace(/\b([A-Z][a-zA-Z0-9_]+)\b/g, '<span class="cls">$1</span>')
+    // Function calls (word followed by ()
+    .replace(/\b([a-z_][a-z_0-9]+)(?=\s*\()/g, '<span class="fn">$1</span>')
+    // Strings
+    .replace(/("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*'|`[^`]*`)/g, '<span class="str">$1</span>')
+    // Numbers
+    .replace(/\b(\d+\.?\d*)\b/g, '<span class="num">$1</span>');
+}
+
+// ─── SVG Graph ────────────────────────────────────────────────────────────────
+let selectedNode = null;
+let transform = { x: 0, y: 0, scale: 1 };
+let dragging = false;
+let dragStart = { x: 0, y: 0 };
+
+const svg = document.getElementById('graph-svg');
+const svgNS = 'http://www.w3.org/2000/svg';
+let gRoot; // main group with transform
+
+function buildGraph() {
+  svg.innerHTML = '';
+
+  // Defs for arrowheads
+  const defs = document.createElementNS(svgNS, 'defs');
+  ['#6b7280','#8b5cf6','#3b82f6','#10b981','#f59e0b','#ec4899','#ef4444'].forEach(color => {
+    const marker = document.createElementNS(svgNS, 'marker');
+    const id = 'arrow-' + color.replace('#','');
+    marker.setAttribute('id', id);
+    marker.setAttribute('viewBox', '0 0 10 10');
+    marker.setAttribute('refX', '8');
+    marker.setAttribute('refY', '5');
+    marker.setAttribute('markerWidth', '6');
+    marker.setAttribute('markerHeight', '6');
+    marker.setAttribute('orient', 'auto');
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', 'M 0 0 L 10 5 L 0 10 z');
+    path.setAttribute('fill', color);
+    path.setAttribute('opacity', '0.6');
+    marker.appendChild(path);
+    defs.appendChild(marker);
+  });
+  svg.appendChild(defs);
+
+  gRoot = document.createElementNS(svgNS, 'g');
+  gRoot.setAttribute('id', 'root-group');
+  svg.appendChild(gRoot);
+
+  // Layer labels
+  const labels = [
+    { x: 8, y: 22, text: 'PRODUCTION PIPELINE' },
+    { x: 495, y: 22, text: 'EVAL FLYWHEEL' },
+    { x: 636, y: 22, text: 'FRONTEND' },
+  ];
+  labels.forEach(({ x, y, text }) => {
+    const t = document.createElementNS(svgNS, 'text');
+    t.setAttribute('x', x); t.setAttribute('y', y);
+    t.setAttribute('class', 'layer-label');
+    t.textContent = text;
+    gRoot.appendChild(t);
+  });
+
+  // Divider lines
+  [[490, 20, 490, 470], [632, 20, 632, 100]].forEach(([x1,y1,x2,y2]) => {
+    const line = document.createElementNS(svgNS, 'line');
+    line.setAttribute('x1', x1); line.setAttribute('y1', y1);
+    line.setAttribute('x2', x2); line.setAttribute('y2', y2);
+    line.setAttribute('stroke', '#ffffff10'); line.setAttribute('stroke-width', '1');
+    line.setAttribute('stroke-dasharray', '4 4');
+    gRoot.appendChild(line);
+  });
+
+  // Background zones
+  const zones = [
+    { x: 4, y: 28, w: 582, h: 345, color: '#ffffff03', label: '' },
+    { x: 494, y: 28, w: 468, h: 444, color: '#f59e0b05', label: '' },
+  ];
+  zones.forEach(({ x, y, w, h, color }) => {
+    const rect = document.createElementNS(svgNS, 'rect');
+    rect.setAttribute('x', x); rect.setAttribute('y', y);
+    rect.setAttribute('width', w); rect.setAttribute('height', h);
+    rect.setAttribute('fill', color); rect.setAttribute('rx', '12');
+    gRoot.appendChild(rect);
+  });
+
+  // Edges
+  EDGES.forEach(edge => {
+    const fromNode = NODES.find(n => n.id === edge.from);
+    const toNode   = NODES.find(n => n.id === edge.to);
+    if (!fromNode || !toNode) return;
+
+    const x1 = fromNode.x + fromNode.w / 2;
+    const y1 = fromNode.y + fromNode.h;
+    const x2 = toNode.x + toNode.w / 2;
+    const y2 = toNode.y;
+
+    const strokeColor = edge.color.length > 7 ? edge.color.substring(0, 7) : edge.color;
+    const arrowId = 'arrow-' + strokeColor.replace('#','');
+
+    const path = document.createElementNS(svgNS, 'path');
+    const midY = (y1 + y2) / 2;
+    const d = `M ${x1} ${y1} C ${x1} ${midY} ${x2} ${midY} ${x2} ${y2}`;
+    path.setAttribute('d', d);
+    path.setAttribute('stroke', edge.color);
+    path.setAttribute('stroke-width', '1.5');
+    path.setAttribute('fill', 'none');
+    path.setAttribute('opacity', '0.6');
+    if (edge.dashed) path.setAttribute('stroke-dasharray', '4 3');
+    if (document.getElementById(arrowId)) {
+      path.setAttribute('marker-end', `url(#${arrowId})`);
+    }
+    gRoot.appendChild(path);
+  });
+
+  // Nodes
+  NODES.forEach(node => {
+    const mod = MODULES[node.id];
+    const color = mod ? mod.color : '#6b7280';
+    const label = mod ? mod.label : node.id;
+    const sub   = mod ? mod.sub   : '';
+
+    const g = document.createElementNS(svgNS, 'g');
+    g.setAttribute('class', 'node-group');
+    g.setAttribute('data-id', node.id);
+    g.style.cursor = 'pointer';
+
+    // Background rect
+    const rect = document.createElementNS(svgNS, 'rect');
+    rect.setAttribute('x', node.x); rect.setAttribute('y', node.y);
+    rect.setAttribute('width', node.w); rect.setAttribute('height', node.h);
+    rect.setAttribute('rx', '8'); rect.setAttribute('ry', '8');
+    rect.setAttribute('fill', color + '25');
+    rect.setAttribute('stroke', color);
+    rect.setAttribute('stroke-width', '1.2');
+    rect.setAttribute('class', 'node-rect');
+    rect.setAttribute('data-id', node.id);
+    g.appendChild(rect);
+
+    // Label
+    const text = document.createElementNS(svgNS, 'text');
+    text.setAttribute('x', node.x + node.w / 2);
+    text.setAttribute('y', node.y + (sub ? 14 : 20));
+    text.setAttribute('text-anchor', 'middle');
+    text.setAttribute('fill', '#e2e2f0');
+    text.setAttribute('font-size', '11');
+    text.setAttribute('font-weight', '600');
+    text.setAttribute('font-family', '-apple-system, sans-serif');
+    text.textContent = label;
+    g.appendChild(text);
+
+    if (sub) {
+      const subText = document.createElementNS(svgNS, 'text');
+      subText.setAttribute('x', node.x + node.w / 2);
+      subText.setAttribute('y', node.y + 26);
+      subText.setAttribute('text-anchor', 'middle');
+      subText.setAttribute('fill', 'rgba(255,255,255,0.45)');
+      subText.setAttribute('font-size', '9');
+      subText.setAttribute('font-family', '-apple-system, sans-serif');
+      subText.textContent = sub;
+      g.appendChild(subText);
+    }
+
+    g.addEventListener('click', () => selectNode(node.id));
+    gRoot.appendChild(g);
+  });
+
+  applyTransform();
+}
+
+function applyTransform() {
+  if (gRoot) {
+    gRoot.setAttribute('transform', `translate(${transform.x}, ${transform.y}) scale(${transform.scale})`);
+  }
+}
+
+function selectNode(id) {
+  selectedNode = id;
+
+  // Update SVG selection
+  document.querySelectorAll('.node-rect').forEach(r => r.classList.remove('selected'));
+  document.querySelectorAll(`.node-rect[data-id="${id}"]`).forEach(r => r.classList.add('selected'));
+
+  // Update sidebar
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === id);
+  });
+
+  // Update code panel
+  showModule(id);
+}
+
+function showModule(id) {
+  const mod = MODULES[id];
+  const empty = document.getElementById('empty-state');
+  const content = document.getElementById('code-content');
+
+  if (!mod) { empty.style.display='flex'; content.style.display='none'; return; }
+
+  empty.style.display = 'none';
+  content.style.display = 'flex';
+
+  // Badge
+  const badge = document.getElementById('file-badge');
+  const catLabels = {agent:'Agent',core:'Core',tool:'Tool',eval:'Eval',frontend:'Frontend',entry:'Entry'};
+  badge.textContent = catLabels[mod.category] || mod.category;
+  badge.style.background = mod.color + '25';
+  badge.style.borderColor = mod.color + '60';
+  badge.style.color = mod.color;
+
+  document.getElementById('file-title').textContent = mod.label;
+  document.getElementById('file-desc').textContent = mod.desc;
+
+  // Meta
+  const metaRow = document.getElementById('meta-row');
+  metaRow.innerHTML = [
+    mod.role  ? `<div class="meta-chip"><b>Role:</b> ${mod.role}</div>` : '',
+    mod.model ? `<div class="meta-chip"><b>Model:</b> ${mod.model}</div>` : '',
+    mod.cost  ? `<div class="meta-chip"><b>Cost/run:</b> ${mod.cost}</div>` : '',
+  ].join('');
+
+  // Code
+  document.getElementById('code-pre').innerHTML = highlight(mod.code);
+
+  // Deps
+  const depsSection = document.getElementById('deps-section');
+  if (mod.deps && mod.deps.length > 0) {
+    depsSection.innerHTML = `
+      <div class="deps-title">Dependencies</div>
+      <div class="deps-row">
+        ${mod.deps.map(d => `<div class="dep-chip" onclick="selectNode('${d}')">${d}</div>`).join('')}
+      </div>`;
+    depsSection.style.display = 'block';
+  } else {
+    depsSection.style.display = 'none';
+  }
+}
+
+// ─── Sidebar ─────────────────────────────────────────────────────────────────
+function buildSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const categories = [
+    { id: 'entry',    label: 'Entry Points', color: '#6b7280' },
+    { id: 'core',     label: 'Core',         color: '#3b82f6' },
+    { id: 'agent',    label: 'Agents',       color: '#8b5cf6' },
+    { id: 'tool',     label: 'Tools',        color: '#10b981' },
+    { id: 'eval',     label: 'Eval Flywheel',color: '#f59e0b' },
+    { id: 'frontend', label: 'Frontend',     color: '#ec4899' },
+  ];
+
+  sidebar.innerHTML = '';
+  categories.forEach(cat => {
+    const mods = Object.entries(MODULES).filter(([, m]) => m.category === cat.id);
+    if (!mods.length) return;
+
+    const section = document.createElement('div');
+    section.className = 'sidebar-section';
+    section.innerHTML = `<div class="sidebar-label" style="color:${cat.color}88">${cat.label}</div>`;
+
+    mods.forEach(([id, mod]) => {
+      const item = document.createElement('div');
+      item.className = 'sidebar-item';
+      item.dataset.id = id;
+      item.innerHTML = `
+        <div class="sidebar-dot" style="background:${cat.color}"></div>
+        <span>${mod.label}</span>
+      `;
+      item.addEventListener('click', () => selectNode(id));
+      section.appendChild(item);
+    });
+
+    sidebar.appendChild(section);
+  });
+}
+
+// ─── Pan & Zoom ───────────────────────────────────────────────────────────────
+function initPanZoom() {
+  svg.addEventListener('mousedown', e => {
+    if (e.target.closest('.node-group')) return;
+    dragging = true;
+    dragStart = { x: e.clientX - transform.x, y: e.clientY - transform.y };
+    svg.style.cursor = 'grabbing';
+  });
+
+  svg.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    transform.x = e.clientX - dragStart.x;
+    transform.y = e.clientY - dragStart.y;
+    applyTransform();
+  });
+
+  svg.addEventListener('mouseup', () => { dragging = false; svg.style.cursor = 'grab'; });
+  svg.addEventListener('mouseleave', () => { dragging = false; svg.style.cursor = 'grab'; });
+
+  svg.addEventListener('wheel', e => {
+    e.preventDefault();
+    const rect = svg.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const delta = e.deltaY > 0 ? 0.9 : 1.1;
+    const newScale = Math.max(0.3, Math.min(3, transform.scale * delta));
+    transform.x = mx - (mx - transform.x) * (newScale / transform.scale);
+    transform.y = my - (my - transform.y) * (newScale / transform.scale);
+    transform.scale = newScale;
+    applyTransform();
+  }, { passive: false });
+
+  document.getElementById('zoom-in').addEventListener('click', () => {
+    transform.scale = Math.min(3, transform.scale * 1.2);
+    applyTransform();
+  });
+  document.getElementById('zoom-out').addEventListener('click', () => {
+    transform.scale = Math.max(0.3, transform.scale / 1.2);
+    applyTransform();
+  });
+  document.getElementById('zoom-reset').addEventListener('click', () => {
+    transform = { x: 20, y: 30, scale: 1 };
+    applyTransform();
+  });
+}
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+buildSidebar();
+buildGraph();
+initPanZoom();
+
+// Initial transform — center the graph with some padding
+transform = { x: 20, y: 30, scale: 1 };
+applyTransform();
+</script>
+</body>
+</html>

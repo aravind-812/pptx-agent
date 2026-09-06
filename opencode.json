@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md", "README.md"],
+  "permission": {
+    "bash": {
+      "*": "ask",
+      "python3 *": "allow",
+      "python *": "allow",
+      "pip *": "allow",
+      "pip3 *": "allow",
+      "npm *": "allow",
+      "curl *": "allow",
+      "lsof *": "allow",
+      "pkill *": "allow",
+      "kill *": "allow",
+      "cp *": "allow",
+      "ls *": "allow",
+      "mkdir *": "allow",
+      "open *": "allow"
+    },
+    "webfetch": "allow",
+    "websearch": "allow"
+  }
+}

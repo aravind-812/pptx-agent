@@ -1,0 +1,810 @@
+# Customer 12 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 7
+
+
+====================================================================================================
+Title: ABC Corp EQMS Next Steps with Customer 12
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1290.24
+====================================================================================================
+[TIMESTAMP] Speaker 014: Taking it and getting healthy and
+[TIMESTAMP] Speaker 014: Same it. Hit me.
+[TIMESTAMP] Speaker 014: Anyways.
+[TIMESTAMP] Speaker 014: Thank. We could work from home.
+[TIMESTAMP] Speaker 014: Because when you're sick, you got to get in the car and drive 30 minutes to work and then be around other people and you're dying and I won't complain anymore. What how was your new years? Did you do anything fun?
+[TIMESTAMP] Speaker 255: It was good. No, I was in the area for most of it was the gloomy in [LOCATION] with all the
+[TIMESTAMP] Speaker 014: Where are you?
+[TIMESTAMP] Speaker 255: In the area Redwood City side.
+[TIMESTAMP] Speaker 014: Okay. I'm in the city of orange, Southern [LOCATION].
+[TIMESTAMP] Speaker 255: Yeah. That one was it raining for you guys? It's been raining out to your company yesterday.
+[TIMESTAMP] Speaker 014: Yeah. I went to it's funny. I went to Vegas and I thought that it would be sunny over there and I wouldn't miss the rain, but it was raining just as bad over there.
+[TIMESTAMP] Speaker 014: So anyways. Well, glad to talk to you. So tell me I was going through some of the notes and I didn't see any proposals sent out to you. Did you did anyone ever send you a proposal in the past before I was your account manager?
+[TIMESTAMP] Speaker 255: No, I think the only thing that was sent to me was like the demo to like, yeah, those demos and kind of like there was another one that was sent me like a calculation of ROI recently. I think after our conversation, I think I got another one from [PERSON]. But nothing like no proposals or anything from yeah.
+[TIMESTAMP] Speaker 014: Okay. And it also said that you're looking to implement a cms Q1? Is that still the case or things of
+[TIMESTAMP] Speaker 255: Cms, like evaluation Q1 and then implementation would be like, I would say another 3 to 4 months after that. Okay. Hopefully we get like, budgeting, Q1, Q2 early Q2 and then we walk through that.
+[TIMESTAMP] Speaker 014: No problem. Yeah, there's seriously there's there's no rush. Yeah, take. I'll take the ride with you as long as you need to take it and help you in any way I can and help strategize with you. Have you downsize your choices yet? Do you have 3 in mind 2 in mind? Have you said well, we love ABC Corp so much.
+[TIMESTAMP] Speaker 255: Yeah, no. So ABC Corp, like I said, I think compliance question Arena are like what I'm looking at right now. Okay. Mainly because I like the fact that you have like a mix of quality supply management and everything that's like um
+[TIMESTAMP] Speaker 255: Currently, I'm looking for something that we can scale, like later because we are a startup. So maybe we start small and then scale. We want the software to scale along with [COUNTRY] in a way. Um
+[TIMESTAMP] Speaker 014: Under Energy, are you? is it oil and gas? Or what where do you where would you
+[TIMESTAMP] Speaker 255: Please sustainable better Energy.
+[TIMESTAMP] Speaker 014: That better Energy.
+[TIMESTAMP] Speaker 255: Okay. Yeah.
+[TIMESTAMP] Speaker 014: Gotcha.
+[TIMESTAMP] Speaker 014: So why don't we do this? What are you first of all, what are your next steps? What do you need from me? And other?
+[TIMESTAMP] Speaker 255: I would like to have like a demo. I would like I call a few I don't know usually like a one or demo or something which like, I know I've seen all the I've personally looked at those tools and I'll send it to a few of my colleagues, but I think it's just like if possible, if we have like a few people from my our company my company out here in a room that we could kind of go ahead and just walk through an entire demo. And I do really think your demos like that are online are really good, but I just
+[TIMESTAMP] Speaker 014: Personalized.
+[TIMESTAMP] Speaker 255: Exactly. It's good to kind of just like have everyone look at that and make sure because I feel like they'd still prefer to have like someone like going through it and then having questions in person, like in a meeting. Yeah. Again do
+[TIMESTAMP] Speaker 014: You have an ERP by any chance or no?
+[TIMESTAMP] Speaker 255: No, not yet.
+[TIMESTAMP] Speaker 014: No ERP.
+[TIMESTAMP] Speaker 255: Okay. Like those things that they're working on this quarter along with an [SOFTWARE_VENDOR] and stuff like that. So those are all things that are kind of being evaluated, I would say.
+[TIMESTAMP] Speaker 014: All right. No problem.
+[TIMESTAMP] Speaker 014: And what would you say as far as when we set up a demo and we could do that today. We could pick a day, yeah. And get your team on there as well. And I would bring out and that is qualified for your sector. Yeah. What are the things that are really important? because when we do demos, it's really easy those product tours are really great, but they're mostly out of the box, right? Yeah. And I don't think you need that again. I think what's really important is to focus on some of your challenges and maybe some of the impacts that are happening are things falling through the cap cracks with caps? Not good for aces. So you don't have to tell me today, but if you want to tell me today what you really what's really important to you on a demo and that way we can customize it for you and drill down.
+[TIMESTAMP] Speaker 255: By mostly just focus on quality request, you know? the overview of having see an issue on the line going through a change control or going through a copper, like maybe the copper process and then say that initiates a change control and how that would be documented, how that kind of integrates to document management, like an SOP change training change, kind of how that would go through the process and make sure like this kind of makes it a lot more like the implementation, very straightforward and like more
+[TIMESTAMP] Speaker 255: Robust and like the framework is much better than what we have right now. I just want to kind of like, have that showcase. I would say quality request would be like the main one. I know that's the module that we are interested in from the start. I would say that's kind of the main like, current one that I would say is most relevant. Got it. And it's nice that I like because I remember like when we spoke, we had like, that all those modules that are available. It's nice to go over that, but like, I'm okay with like, focusing on quality request as a whole, kind of how it all integrates together. Okay.
+[TIMESTAMP] Speaker 014: And if you want
+[TIMESTAMP] Speaker 014: You can write write to me and talk to your team and ask them, what's important to them, what they'd like to see as well.
+[TIMESTAMP] Speaker 255: I have spoken to them and I think it's the same thing. It's more yeah, it will be the same thing. Because if this kind of like flow works I'm guessing like the other things would literally either integrate into this because I feel like quality right now has like the most number of like modules or like, sectors where you're actually looking at different things. In terms of you have a document aspect, you have training aspect, you have approvals and everything and as well as audits in there. So I would say for [COUNTRY] that would be like the start thing and then say eventually if we go to supplier and stuff like that, there may be a few people who are interested in that. I just feel like we are, we would need some time to get to like the supplier [PRODUCT_SUITE] kind of module if that makes sense. As a team, it would be nice to like, learn about it, but I think quality would be like the focus of a demo at the moment.
+[TIMESTAMP] Speaker 255: I don't know. I think we lost connection.
+[TIMESTAMP] Speaker 255: Are you still there? Yes, I am. I think that's like, sorry, the internet is kind of like
+[TIMESTAMP] Speaker 014: Oh, my gosh. It happens to me all the time. I have spectrum and it's the worst. So it is me hang on just plug in my ethernet maybe that'll help.
+[TIMESTAMP] Speaker 014: All right. Let's we're not gonna focus on supplier this next demo, correct?
+[TIMESTAMP] Speaker 255: Yeah. I wouldn't focus on supplier. I think we can do more from the quality aspect and like internally. And then eventually, that's something that's interested. I feel like that's a module that ACS on. But I'm just like I would just like, do one module, this time and most quality because I know that's the one that we would that we're looking at for. I so
+[TIMESTAMP] Speaker 014: Yeah. Absolutely. Let me just pull pull this up.
+[TIMESTAMP] Speaker 014: When you're mentioning [PRODUCT_SUITE], we have like 20 20 different modules inside of that. So let me just pull this up. Hmm.
+[TIMESTAMP] Speaker 014: Can you see my screen yet?
+[TIMESTAMP] Speaker 255: Yes, I can.
+[TIMESTAMP] Speaker 014: All right. So here's here's quality plus when you get it, you get all these everything that's in purple, correct? And you want to just focus on maybe like the I so 9,001 modules in the beginning. All right. Great. Is there anything in audits that you'd want to see? That's important to you.
+[TIMESTAMP] Speaker 255: Yeah. Like someone flag something during an audit implementation of that kind of how that would go making sure people like fall through the actions. Um
+[TIMESTAMP] Speaker 255: And like, tracking of those actions, kind of like till till it's closed out. I think that would be nice. And that's I think I don't know if you'll already have, like a flow and I think it's kind of relevant. But it would be like something if there was some kind of audit and like, the flow in case I don't know. If that my thing. My thought process is like, if there's an audit or like, some kind of data deviation, that's kind of flagged in this. And then someone works on it. So there's like a cape and then you have actions, whatever and see if there is some kind of decision from that capital for a change control how that would look like you'd go through the change control process. If that needs you to do a like document change.
+[TIMESTAMP] Speaker 255: How easily does that integrate into all these approvals for the document training, change trainings and kind of? That's what I'm thinking. So that way you get I know that like 20 modules and you may not be able to go through all of those, but it's like sure. As long as we kind of go from like, one flow to the other and we kind of have all that is what I'm
+[TIMESTAMP] Speaker 014: Thinking so you want to start with the cap moving on up until an audit. And then if there was a change needed document change and training, okay. That's easy. I mean, not for me. I can't show you that, but my can I always say
+[TIMESTAMP] Speaker 255: Sorry, sorry, sorry. Sorry. I'm thinking that would be like a decent like, [PERSON] along with some time for conversation and then maybe like some of my team members may get a few other things up. But that's more like for our kind of, like internal like, information of like what all we would look at later.
+[TIMESTAMP] Speaker 014: Yeah. No, that's great. And we can go on the fly too. So someone even yourself says, hey, can we see this? Can you show [COUNTRY] this? That's fine. We love that. Okay. The more interactive you are the better and just so you can see what you need to see, right? I don't want to bore you to death in an hour demo and like, all right, Speaker 014 let's show [COUNTRY] what we actually need to see this time. That's what we're gonna focus on. And let's look at our calendars.
+[TIMESTAMP] Speaker 255: Okay. Yeah.
+[TIMESTAMP] Speaker 014: Sorry about my stuff. He knows.
+[TIMESTAMP] Speaker 255: Good.
+[TIMESTAMP] Speaker 014: I wouldn't have any suggestions, any verbal things you can recommend. Oh, my gosh.
+[TIMESTAMP] Speaker 255: For timing, right? let me see. I'm just trying to look up everyone's calendar that I would maybe have like people I would invite along with. I'm just looking at everyone's calendar because
+[TIMESTAMP] Speaker 014: Of course.
+[TIMESTAMP] Speaker 255: Uh
+[TIMESTAMP] Speaker 255: Then
+[TIMESTAMP] Speaker 255: It's getting
+[TIMESTAMP] Speaker 014: To and you're a pretty small company, right? You have how many employees right now?
+[TIMESTAMP] Speaker 255: We are like, 40 and some on but like, getting to fifty, maybe.
+[TIMESTAMP] Speaker 014: Okay. But you're always growing though, right? Yeah.
+[TIMESTAMP] Speaker 255: Would these be like [LOCATION] time or, yeah?
+[TIMESTAMP] Speaker 014: Well, [LOCATION] for you and I they're out on on the east coast or so.
+[TIMESTAMP] Speaker 255: Okay. The 2 options. I mean, if it has to be next week, then thinking there is
+[TIMESTAMP] Speaker 255: Next week kind of is like slightly difficult, but I'm thinking we can do to. So 19th is pretty free for everyone at the moment. So that's 19. Yeah. Okay. I could do.
+[TIMESTAMP] Speaker 255: Sorry. Where did you say the others will get it like that.
+[TIMESTAMP] Speaker 014: Well, they're out on the east coast, so it's 3 hours, that's fine. So whatever time
+[TIMESTAMP] Speaker 255: You closed like I can see 2 30 to 3 30 pretty free or I can also do 11 to 12 Pacific, right? Yeah, Pacific.
+[TIMESTAMP] Speaker 014: Yeah. Let's do 11 for. So for them, it would be 2:00 o'clock.
+[TIMESTAMP] Speaker 255: Correct. Because the other one I think would be their lunch time that's like a 9 30 to 10 thirty, but I think that will be lunch time for a lot of people.
+[TIMESTAMP] Speaker 014: Oh, then it doesn't matter. They don't don't worry about that.
+[TIMESTAMP] Speaker 255: Okay. Yeah. That would also work. Maybe not let's just stick with 11:00 o'clock. Yes, I can give you another day as well, if you think that's like
+[TIMESTAMP] Speaker 014: Right now, this is perfect.
+[TIMESTAMP] Speaker 255: Okay. Cool. 11 to 12 then on the 19th would work well.
+[TIMESTAMP] Speaker 014: All right. What I'll do is I will add you. Yeah. And then you could forward this to your team.
+[TIMESTAMP] Speaker 255: Correct.
+[TIMESTAMP] Speaker 014: Yeah. And
+[TIMESTAMP] Speaker 014: There we go. All right. I'll send this off.
+[TIMESTAMP] Speaker 014: Is there anything else and then after after the demo, we can talk about a proposal. Let's make sure that you like what you see and correct. And then we can go from there.
+[TIMESTAMP] Speaker 255: Yeah, because I think from there I can just confirm like what all modules you'd be interested in because I'm guessing that changes the price point. Um
+[TIMESTAMP] Speaker 014: And no, no, no. Though you're gonna pay one price for all those modules. If you ever want to add supplier another yeah. Suite, then it would cost more. But yeah, when you just pay one fee a year for a [PRODUCT_SUITE] and you get all those modules, so. Okay. Okay. Now you're not going to implement all those right away. You're gonna pick like 2 or 3 that you want to train on and we'll implement those. You can always implement them yourself. Afterwards, we'll train you on that and or you can have [COUNTRY] implement implement. With that said, let me stop me.
+[TIMESTAMP] Speaker 014: Perfect. Is there anything oh, I do want to talk to you. Do you have executive sponsorship? Have you has your C suite team said yes? They agree that you need a cms system or they don't even know about
+[TIMESTAMP] Speaker 255: This yet. No, no, no. They do agree and I will have my manager sitting in all these meetings as well. So. Okay, good. They are aware of these demos. And the question is we need to like at least have like, 3 demos. That's usually like our way of evaluation. We have like 2 to 3 demos. And that's why I'm like, trying to get those out this quarter have like, some kind of comparison of like, what we want as a company. See where that kind of and then have the budget allocation in terms of like because that ranges, I feel like everyone's pricing slightly differently. And so at the moment, it's more like I do like the tours that I kind of went through with compliance questions. So I've mentioned that one and Arena I have used before. I'm trying to kind of at least have those 2 out this quarter make sure everyone's reviewed them, see what they like, what what kind of functionality do we want? Because I feel like we can go back and forth for a while I kind of don't want to like, have more than 3 different companies. The 4 companies that I'm evaluating. It's
+[TIMESTAMP] Speaker 014: Very it's very overwhelming. And one thing that you mentioned earlier was scalability. Yeah, we're enterprise grade. We have over 500 employees so we can handle the scale and also we're built on the [CRM_PLATFORM] platform. Yeah, which is very scalable. It's very flexible and configurable. So if there's anything you need to change, you can do that yourself or have [COUNTRY] make those changes. I'm sorry, I think I'm even losing my voice.
+[TIMESTAMP] Speaker 255: No, it's all good. I yeah. I don't take a lot of time, but yeah, they are aware and um, in terms of like, the budgeting. And I think the only thing that get that would get pushed back would be implementation depending on like, how quickly and like, when we can like release funds as needed. That would be a decision that will come from them, for sure.
+[TIMESTAMP] Speaker 014: Timeline, how fast we can implement you.
+[TIMESTAMP] Speaker 255: No. Time is how fast can we kind of give the PO back also to you?
+[TIMESTAMP] Speaker 255: Yeah. Like and that implementation. I feel like that's maybe part of like the decision of like, oh, can we do it in 3 months and like, that kind of would push the decision in a way. But the idea is to evaluate this quarter and kind of see because we know we're missing a few things, but it's just like we're trying to see what kind of works best with the current systems that we have that.
+[TIMESTAMP] Speaker 255: Kind of won't be so much of a lift in terms of training and you know, that's something easy. If we have to implement
+[TIMESTAMP] Speaker 014: Yeah. Well, we have 2 different type of also implementations. We have something called rapid start, which is out of the box. So if you're looking that you wanna you want to be up and running by may, let's just say or June rapid start, maybe a way to go. Because it's out of the box implementation plus training, right? But if there's things like you went through the product tours, if there's something that you see oh, we've got to make these changes before we launch. Yeah, then then you can make those changes yourself or we could scope it out and you would pay [COUNTRY] to to make those changes for you, but that would take a little bit longer
+[TIMESTAMP] Speaker 255: Yeah. In terms of like, customization, right? That's kind of customization. Yeah. Yeah. And I think I'm hoping like, that's the thing. I'm like, hoping we if we have the modules and we know kind of what it looks like. We always can have like an overview of what we like. And then likely I'm hoping there isn't like, much customization that's like a little bit with quality. I feel like there's like, very it's kind of wide scope. Then it's based on your product quality issues or like, kind of what you're looking for. But that's kind of something that if we are trained on it, I think we could
+[TIMESTAMP] Speaker 255: Get implemented a little quicker in my
+[TIMESTAMP] Speaker 014: Opinion. Yeah. I think what's important is that out of the box we're ready is already 9,001. Our system the way the workflow goes, it's it keeps it'll you'll stay in compliance with the way it's set up already. But a lot of people will take it first and get the rapid start go through everything and say, okay, we can make these adjustments to do what we have out of the box. But then you may say, you know what we're gonna need another a second approval in this workflow, right? That we may not have. Yeah. Those are easy changes.
+[TIMESTAMP] Speaker 255: Okay. Okay.
+[TIMESTAMP] Speaker 014: So but I like the fact that you go out of the box and you just make those discoveries as you go. Yeah, right. Because you just don't know until you have it in in your hands in your lap. Okay. Is there anything else?
+[TIMESTAMP] Speaker 255: No. I think that's like the main thing that I wanted to speak to you about. So if you like if we have like a demo lined up and if you send me an invite, whatever anytime soon, I'll try and send it out as soon as possible. So that everyone's calendar is blocked out. Will
+[TIMESTAMP] Speaker 014: Be set will be set while I'm looking forward to meeting your team and seeing you again and have a great couple of weeks until we meet again. Yeah, and don't get that cold.
+[TIMESTAMP] Speaker 255: Whatever you do. Okay. I get better.
+[TIMESTAMP] Speaker 014: I will do you you live in that place where the trees are really big?
+[TIMESTAMP] Speaker 255: No. That's it's called redid city, but it doesn't have exactly not. It's not exactly like, you know. Oh, it's not exactly there. It's called Redwood City for like. It's still on the base side, it's not like towards SCO or like, things that you have. Yeah, yeah.
+[TIMESTAMP] Speaker 014: I've never I never been over there that's one of my bucket list. I want to check it out.
+[TIMESTAMP] Speaker 255: It's really good. You should go like
+[TIMESTAMP] Speaker 255: Yeah.
+[TIMESTAMP] Speaker 014: Alright. Well, have a great day. We'll talk soon.
+[TIMESTAMP] Speaker 014: Thank you for your time today. I appreciate it.
+[TIMESTAMP] Speaker 255: You too. Bye, bye. Bye.
+
+
+====================================================================================================
+Title: ABC Corp Next steps with Customer 12
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1254.48
+====================================================================================================
+[TIMESTAMP] Speaker 014: So
+[TIMESTAMP] Speaker 014: I think you're on mute. Good afternoon or okay. Morning, Speaker 255?
+[TIMESTAMP] Speaker 255: Going it's going
+[TIMESTAMP] Speaker 014: Like the glasses?
+[TIMESTAMP] Speaker 014: Thank you. I can never find the right one.
+[TIMESTAMP] Speaker 014: I can never find the right glasses for myself.
+[TIMESTAMP] Speaker 255: I know kind of makes me happy though every few years to change it out.
+[TIMESTAMP] Speaker 014: Hey, you know what you have something to look forward to. I know every 2 years.
+[TIMESTAMP] Speaker 014: Time it's February 20 28.
+[TIMESTAMP] Speaker 014: How's it going for you? It's going well. I'm uh
+[TIMESTAMP] Speaker 014: I I'm very distracted here. I have a little dog again and it's not he just left the room, but he's very distracting. I can't get much work done working from home. It's either I have to play with my dog or go to the refrigerator. It's not good.
+[TIMESTAMP] Speaker 014: You go to capture and you have a cap. Yeah. You get to work at the office. So it's yeah, I love working from home, but it's yeah, it's not fun. It's distracting. Yeah. Had that issue to. Yeah, but then I work at an office. Yeah. And I'm a social guy. So I talk to people. So I get more work done here at home shockingly. I don't know. I don't even know if I'm getting worked on here. So anyways, well, thank you for joining and would love some feedback and see what are next steps for you. Would you like does it make sense to put a proposal together? Or does it make sense to say Speaker 014? Thank you, but no, thank you. Good. Bye.
+[TIMESTAMP] Speaker 014: Okay.
+[TIMESTAMP] Speaker 255: So no. No, honestly. So I will tell you where I'm at in terms of. I think we like, the demo. And I think the team really like the interface and everything. There are a few things that I was thinking. I like basically I owe you in terms of like, I think I can like, get a small proposal ready for not proposal, but like, I would like a proposal of kind of cost estimates because I think that's gonna be a factor for [COUNTRY] at the moment. And I want to just give you a kind of I want to know what do what details would you need to give [COUNTRY] a ballpark ballpark mark of cost is it just users or do I need to emphasize how many red rides? How many just read or like training related kind of modules I would need. I mean, in terms of module sorry, we only do quality right now, but then maybe a proposal where I would be like, hey, if I'm doing quality and something. So I may just want. What I need and it may not need. It may not be like a full kind of do like a full thing, but it could be like, oh, this is ballpark estimates based on what we pick like an annual because I think all of these are annual cost, correct?
+[TIMESTAMP] Speaker 014: They are. So
+[TIMESTAMP] Speaker 255: I think I just I would need that as a kind of next step because then for [COUNTRY] it would be. Okay. Is this even within because I know I spoke about 10 users and use it as you're looking at the cms things. It's gonna be very difficult to just start with ten, right? And I'm pretty sure I can just do 10. I think it's gonna be a lot more. Just because of like if we're switching to a cms, I think we have to have like, a lot more document control. Everyone who's gonna be training needs to be on it in a way. Um
+[TIMESTAMP] Speaker 014: How many employees do you have total?
+[TIMESTAMP] Speaker 255: So we are at say like full time we are at like, almost 45 to 50 at the moment?
+[TIMESTAMP] Speaker 014: And you would like all of them at some point to train on on SOPs at some point and
+[TIMESTAMP] Speaker 255: I would say off the thing. There are some office people who may not need this. So then, maybe like you'll just have a manager function for some groups. But I would say easily all the engineers and the technician team would be on this, which makes it almost like, 30 odd or 30 or more in a week.
+[TIMESTAMP] Speaker 014: 30 or 30 that would actually be using the system and the rest would be like a read only? Yeah. Okay. So so what I'll do is I'll put together um
+[TIMESTAMP] Speaker 014: A pre quote well at least a proposal for you and it'll have at least 2 admins. That's what we recommend. Yeah. To have someone who is 2 people that are have the ability to go on the back end, make all the changes assigned, yeah. Assigned who's doing what and then you have the rest or at least 30
+[TIMESTAMP] Speaker 014: 30 or so as full users. And then the rest is read only, right? Approximately yes. We can change around. I'll send you it can all be recorded.
+[TIMESTAMP] Speaker 255: Let me do this let me actually send you an email because I'll try and get those numbers out, like this next 2 days. Try to get kind of an estimate from Speaker 131 as well as like what he sees at the moment as maybe a first step and then maybe a second step. So we can have like if we start this and we eventually add on, this is what it could look like. Sure. Let me get you those numbers. So that like, it's a little bit like, kind of makes it a little bit sense of maybe we'll think of like which users and then so you would like to know number of users number of read and right and some just only read, right? That's kind of what I
+[TIMESTAMP] Speaker 014: Yeah. I'll send you our user group, okay. License types. So you can have that. And then I'll also send you if I haven't already the the product suites, all the modules that
+[TIMESTAMP] Speaker 255: Yeah. Send that
+[TIMESTAMP] Speaker 014: You send that. So you want so we'll just stick with [PRODUCT_SUITE], right? Exactly. Yeah. Later.
+[TIMESTAMP] Speaker 255: Correct. I have a section where I'll be like it's only quality request and then if we have to do an add on, I may just have can you give me a ballpark estimate? But I will like look at that and kind of like so that would be like, oh, if we kind of scale with the system, this is what it's gonna
+[TIMESTAMP] Speaker 014: Look like. Got it. And last time I talked to you prior to the demo you talked about. You were looking at Arena, I believe. Correct, correct? Yeah. So are we the last 2 that you're looking at? Or is there anyone else that is in the ball ballpark?
+[TIMESTAMP] Speaker 255: We are. So it's just like mostly those 2. I know I also spoke to Intelex, but again, it's a question of like, Intelex doesn't have pm functionality at the moment. And because we're looking to scale accordingly. Yeah. We are trying not to look at that. I would say like compliance questions because the interface is a lot more. It's like a much larger platform. The interface is like preferred in terms of usability based on what we've seen.
+[TIMESTAMP] Speaker 014: ABC Corp has better user ability.
+[TIMESTAMP] Speaker 255: Yeah. Just the interface as well, right? Got it. Trying to just kind of figure out like that and that's why I want. That's why we actually wanted to see the modules as well because it's like, oh, as we scale what will have everything that we look that we need at the moment and and you
+[TIMESTAMP] Speaker 014: Go ahead. I'm sorry.
+[TIMESTAMP] Speaker 255: No, no, go ahead.
+[TIMESTAMP] Speaker 014: So you don't have a budget, your executive sponsor or executive team, have they given you a full budget yet for cms or not yet?
+[TIMESTAMP] Speaker 255: No. The thing with that is like, it's gonna be a lot based on our general funding that comes in, so it'll be coming in through the quarter. So that's why it will be like likely the idea is that we will know if the proposal that I sent or like the cap limit that I'm like, okay, this is that's why I kind of need like a ballpark estimate because it's like I can go to them. I already spoke to them about like, hey, the range is obviously above 25 to 40 K. Is the range that I gave and they told me to go ahead and talk. Like go ahead with the demos. So that's kind of the range that I gave. But then that was based on like maybe like minimum function, minimum users, right? and as we like, have that if I have that kind of proposal of this is maybe what we start with and this is how we grow. This is like that's on me, I think for the next like, few months, like this month, I would say. And then the idea. Would be by the third quarter. We'd know like the release of funds and how that will go. Because like I would say any purchase or anything that's it's not gonna happen this quarter, for sure.
+[TIMESTAMP] Speaker 014: That's okay.
+[TIMESTAMP] Speaker 255: Yeah, that's gonna be
+[TIMESTAMP] Speaker 014: There's no rush, yeah.
+[TIMESTAMP] Speaker 255: So the idea is this quote pick a thing that we like and that it fits like our usability and function? and then kind of like get that going for, hey, when we get funding and as we get funding, that is a pre
+[TIMESTAMP] Speaker 014: Allocation. Got it. So funding comes third quarter for you for your yeah, your team, correct? Yeah. Okay. And that's around.
+[TIMESTAMP] Speaker 014: That's around July. I would say
+[TIMESTAMP] Speaker 255: Exactly. So I think like, end of quarter would be like, hey, this is what we are at. This is where we have in terms this is the money that we're thinking. This is gonna be like in terms of because it is an annual cost. So we need to just make sure. It's different because it's not of one time purchase at the moment, right? and so based on that, we will be like we so the idea is we give them a proposal and then if it's a hard no, if it's a hard no, I think we know by this quarter. And then as if it's like, oh, yeah, we will go on, but may take time by the third quarter, either mid quarter or end of quarter. We should have like, a definite PO in
+[TIMESTAMP] Speaker 014: Got it. You ever done a a business case or an ROI based on quality yet?
+[TIMESTAMP] Speaker 255: Correct. We have not I did look at the ROI for the link that was sent and I did try putting it in just to see oh, like because it did show me how much I would save and everything. Um
+[TIMESTAMP] Speaker 255: It did say like, it gave me a value in the hundreds of thousands, I think. Yeah. I am just like I think I just put like estimate numbers of SOPs and stuff like that. And I think like from our end, just as we like, we're looking at these demos, there's a lot of cleaning up that we need to do. Also just to help you all even during this implementation phase to make it an easier thing, we need to clean up our documentation, right? and that's what we are trying to do. This quarter. It's like trying to like, standardize on our end, what needs to be like an OP what needs to be in more construction, what needs to go into training in a way so that like, we can like give you all the framework of what we'd want, sure and how that would fit in. So I think that's currently what we're working on internally.
+[TIMESTAMP] Speaker 014: You're gonna see it's such a game changer. Yeah. As far as efficiencies, go, especially if you get audited, right? You have external and internal audits. We've seen a 75% increase of time and efficiency with audits, which if you do the the cost of quality, how many thousands of dollars, does that save you in time or taking people off the line and you know, you mentioned documents and I'm not trying to be sales whatsoever. This is I've been in this industry for 9 years and just talking to my customers. And this is what my customers always. Tell me. Is that like some of my like Ali Ali vitamins was a customer in the past that I had and do you know that company?
+[TIMESTAMP] Speaker 255: I do not.
+[TIMESTAMP] Speaker 014: But so so they were it was they make the gummy item. And so
+[TIMESTAMP] Speaker 014: Yeah. You'll see all. So they had a couple of major problems. One was efficiency with audits. It would take them almost 2 to 3 weeks to finish an audit because they were on excel spreadsheets and they couldn't find certain documents, right? It was just pretty hellish. And then it went down to 2 days. Yeah, exactly. Yeah. Yeah. And also the other thing. You don't make labels. But there's companies that we have that send out bad labels, right? Because they don't have a digital process in place or the right approval process in place. Yeah. Something falls to the cracks that can cost company, hundreds of thousands of dollars. So those are the things you wanna. You want to think about. How long what are if you're if you're giving a cap assignment to somebody, right? You send them an email and it falls to the cracks, they don't see the email because they just got bombarded by 20 other emails and then a week later, you like, hey, [PERSON], what happened with that? The cap number one, 58. Uh, what are you talking about? Those are things that are very costly, right? Yeah, if you put those things together and the ROI and you show that to the executive team, it doesn't matter if it's 70,000 40,000 50 60 10,000. Whatever it is. It's gonna make sense because executives don't look at numbers. They're gonna be like, oh, my. That's expensive, right? And you may get turned down. Yeah. Whether if it's Arena or [COUNTRY] or anyone else. Yeah.
+[TIMESTAMP] Speaker 014: Because they don't know what they're paying for, right? Yeah. And you may or may not know this I'm just telling you because it's just in my experience of what I've seen and I've had to get approvals for software in the past and I've been shut down because I didn't have that prepared. Yeah so if you know all those numbers, it's very powerful again, whether it's [COUNTRY] or anyone else.
+[TIMESTAMP] Speaker 255: So no. And I think that's where I'm at. I personally think it's I think we need it. I think it's more a question of like and I that's my that's gonna come on me and Speaker 131 where we are like gonna have to figure out our case and that's why I just need like I know eventually we can always I know there's like a possibility where once we have hey, this is what we can do and we can't budge more than this budget. I'm pretty sure we can have that conversation. Yeah. I think right now, it's also for [COUNTRY] to figure out because we're just like, kind of all over the place at the moment. And we're trying to figure out our approval process. We're trying to figure out what that flow is gonna look like. And it really helped to see the demo, right? Because I think it makes it a lot easier. But it's and that's the thing I do think it was like a really good demo as a showcase. Okay. And I may like, call if I need some more support to like make my case. I may like, have like, more info me, ask you for some more information.
+[TIMESTAMP] Speaker 255: But I'm hoping like in the next like at least in the next few days. I get okay, this is what it's gonna be based on user type. And then kind of get that because I don't think there's gonna be a lot of push back as long as we have a plan of this is kind of how we're gonna implement and how this really helps. But it's more like how are we gonna scale then? Is it gonna be very small and then we scale slowly? and then kind of how would that look like in terms of PO? So like say if we start with 20 and then we know we need another 20 by the end of the year how would that look? Yeah. And that's the reason I think I just like I'm that's what I needed. I just needed to confirm with you. If yeah, it is by user types. I can give you that division and I can also give you hey was like in a year if I want these other modules, what would that look like?
+[TIMESTAMP] Speaker 014: Absolutely. Yeah. Whatever you need. And I always believe in taking it, slow with software in the beginning. We may have talked about that in the past. Yeah. You don't want to overwhelm your 50 employees because they have their process in place and they're comfortable, right? Everyone's in their comfortable place. And now you're shoving a new software down their throats. Yeah, and they have to go oh, my, what do I do? I'm not I don't like this. But the nice thing is that you have to look at it is if these employees just started and then you had software in place, they had to get, they had to use it, no matter what, right? It's always tough for it's always tougher for adoption. But and just know it's actually very simple too. As far as you mentioned, workflows and processes and approvals. Everything in our system is configurable so what I recommend is rapid start which is out of the box. Just take we've set up a formula that works. That's keeps you in compliance, right? It's in compliant with so and [REGULATOR], but you're not [REGULATOR] your your battery, yeah. Your manufacturers, but you can always make changes. You can always say well, we need a second approval for this particular non conformance or whatever. What are there any major impacts? If you don't get a system in place within a year? Are there a major impact that can happen financially or anything else or losing losing suppliers?
+[TIMESTAMP] Speaker 255: I think yeah. It would be like more customer impact, right? I think just like because it would be part of the auditing process to look at our documentation and our kind of reaction to any
+[TIMESTAMP] Speaker 014: Company could potentially lose a supplier. Yeah. Yeah. And what would that cost you?
+[TIMESTAMP] Speaker 255: Yeah. It would be based on whether it comes from a pilot line or from our end line. So that would be based on the
+[TIMESTAMP] Speaker 014: Scheme, would it be in the 100 thousand? It could be? Yeah. Okay. And those are the things too. You want to put in your cost of quality, one of the impacts that'll really be helpful. But anyways, I won't bore you. I will send you, yes. I will send you the user types then then send me what you want as far as. I mean, I think I have a pretty good idea and I'll start the pricing model and get that ready to go and then I can make the adjustments and then I'll get it out to you in a couple of days and sounds good.
+[TIMESTAMP] Speaker 255: I will try and send the email out for sure this week. I can just give you like a overall look like kind of what. Yeah.
+[TIMESTAMP] Speaker 014: I think as a stop. Yeah. And then let's have a let's have a followup meeting maybe in
+[TIMESTAMP] Speaker 014: A week or 2
+[TIMESTAMP] Speaker 255: Okay.
+[TIMESTAMP] Speaker 014: See how about the week of February 9th and we can just talk about pricing or whatever you need to talk about for next steps. And maybe it's just hey, Speaker 014 let's we don't need to talk for another 3 months and then we'll set up another meeting whatever. So
+[TIMESTAMP] Speaker 014: But how is Tuesday the 10th Tuesday ten?
+[TIMESTAMP] Speaker 014: Yeah. I
+[TIMESTAMP] Speaker 255: Want to just make sure that Speaker 131 is in that leading, just okay. I'm also just
+[TIMESTAMP] Speaker 014: Checking his calendar. Sure. Tuesday and you guys and you don't need validation, right?
+[TIMESTAMP] Speaker 255: For what I'm doing? Yeah. Oh, no, I think I yeah. But I think he may have like, more follow up questions regarding budget because he would be like first approval and then it will be CTO approval. So it just like he has a better idea, but I'm trying to sync with him this week on the cost. So I think I would like him to be there for the proposal.
+[TIMESTAMP] Speaker 014: Of course. Um
+[TIMESTAMP] Speaker 255: But yeah, I think if we could do 10 am
+[TIMESTAMP] Speaker 255: On
+[TIMESTAMP] Speaker 014: Let me so yeah. Where are you again?
+[TIMESTAMP] Speaker 255: Pacific we are. I
+[TIMESTAMP] Speaker 014: Got it.
+[TIMESTAMP] Speaker 255: So I don't know sometime between 10 to 12 on Tuesday that. On the 10th
+[TIMESTAMP] Speaker 014: Would I have 11:00 am available?
+[TIMESTAMP] Speaker 255: Okay. Yeah, that would work.
+[TIMESTAMP] Speaker 014: Is that good? All right. Yeah. I'll send you an invite and then you could just forward that. Yeah. Perfect. All right. I'll send you the information today. Get back to me on users. Yeah. And then I'll get you out a proposal in a couple of days. Yes. Okay. Cool. Awesome. Is there anything else? Any other questions?
+[TIMESTAMP] Speaker 255: No. That's
+[TIMESTAMP] Speaker 014: Most of it was that a lot. So was that a lot for one day?
+[TIMESTAMP] Speaker 014: Good. It's good.
+[TIMESTAMP] Speaker 255: Lot of documents.
+[TIMESTAMP] Speaker 014: Well, I try to keep it fun. You can have fun at work.
+[TIMESTAMP] Speaker 014: Seriously. All right. Well, you have a great day and
+[TIMESTAMP] Speaker 014: You too. Have a good one. Bye.
+
+
+====================================================================================================
+Title: ABC Corp Update & Next Steps with Customer 12
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 973.4
+====================================================================================================
+[TIMESTAMP] Speaker 014: Hey, Speaker 255.
+[TIMESTAMP] Speaker 255: Hey, Speaker 014
+[TIMESTAMP] Speaker 014: Happy Monday. I can't hear you. Oh, hold on. I can't hear you.
+[TIMESTAMP] Speaker 014: Oops.
+[TIMESTAMP] Speaker 255: Can you hear me now now? I can okay. Cool. Happy Monday.
+[TIMESTAMP] Speaker 014: Happy Monday.
+[TIMESTAMP] Speaker 255: Okay. I think I made a mistake. I should have like maybe send you an email, but I kinda forgot. But I think this could be a short call, but I would like to schedule something by this week, which would be a more formal quote review is what I'm thinking. I did go in the numbers and I think we are ready to go ahead. I do think the team likes ABC Corp a lot. Okay. And it seems like they like that thing that you have partners like you have the flexibility to do like, product cms. And eventually may be scared to safety. Not yet. Sure about how we do that. If that's something we want to do, but it's nice to have the full suite. Got it.
+[TIMESTAMP] Speaker 014: Okay. No, that's great. And do you have the approval from security it?
+[TIMESTAMP] Speaker 255: In terms of it, we just had like Speaker 083 who was on the call for now. And like, that seemed like I kind of reviewed all the numbers with the team that was there. I think they wanted to like, maybe have like, more brief conversation and I just they didn't have time specifically because it was a little last minute on Friday when I met with the rest of the team. But that's why I was like, maybe I can just go through everyone's calendar and see what works this week if that's kind of a decent option and then we can just do a more formal quote review.
+[TIMESTAMP] Speaker 014: I can put together a proposal based on which which option you like best and go over that with you. And we can go over the numbers and
+[TIMESTAMP] Speaker 255: Yeah. That's I think that's the thing. And then I can just look for a date that kind of works for most. Most of [COUNTRY] because I know I gave you a few options and I think what they were trying to get from that. And I think that's maybe still a question is like if we kind of get like 40 or 50 licenses for whoever we have right now, kind of that 38 ten, which I had. And then but now it's only quality, but then we want product later. What's that cost going to be or sometimes a 70 want not even scale safety? Yeah. And obviously, I think that may be more conversations about possible discounts all that. I think that could come out from this conversation. But in general, there's like, good consensus to go ahead.
+[TIMESTAMP] Speaker 014: What's the timeline now? Is it still Q4?
+[TIMESTAMP] Speaker 255: It's still like Q3 or 3 hopefully. Yeah. The idea is to get this. If we have a formal code and everything this thing, the idea is to get it this quarter to C suite to have hey, this is the budget allocation that we need. And then kind of take that forward.
+[TIMESTAMP] Speaker 014: So the so your C suite are the final decision makers on this, correct? Okay. Is there a
+[TIMESTAMP] Speaker 014: Particular name and title that is in charge.
+[TIMESTAMP] Speaker 255: It will be our CTO.
+[TIMESTAMP] Speaker 255: Yeah. And [PERSON] is another person. So [PERSON] and Speaker 131 would be the first level approval, which for sure will be there in the next meeting. Okay. Um
+[TIMESTAMP] Speaker 014: What is [PERSON]? It's [PERSON], right? What's his title?
+[TIMESTAMP] Speaker 255: He is kind of our staff program manager. Okay. And he has these budget budget allocation. So like, the budget could come out from his team allocation. Got it. Okay. That's kind of how it's gonna be in a way. So that's the reason I just wanted to make sure. We had a few people because they may have different questions and I did show them the brief numbers that you gave and it was like, okay, I think we should it's something we need to consider but like, I don't think they were very shocked by the numbers, if that's what it is. So
+[TIMESTAMP] Speaker 014: Competitive as possible. So yeah. But you know trying to compare apples to apples, right in the industry.
+[TIMESTAMP] Speaker 255: Yeah. And I do think I think a big consensus was they really like the UI and everything from ABC Corp. And the fact that it kind of has most of the modules that as we scale it may actually be like one system was essentially moving from your end there. And so that was kind of a big selling point I would say. Okay. And I was just looking at the numbers and I did have the difference between like one like quest like, one module if like one suite or module, whatever you say, like how much that is, but I think those were some questions that came up and I was like, it looks like it's a 20 k difference between yeah.
+[TIMESTAMP] Speaker 014: And I'll have all that prepared. So I'll let you know what how from each each product suite, how much each one's cost on our next call. Is there anything that would prevent you all from from moving Q1 this quarter or Q2? Is it just budget or
+[TIMESTAMP] Speaker 255: It's mostly budget allocation, honestly.
+[TIMESTAMP] Speaker 014: Budget allocation.
+[TIMESTAMP] Speaker 255: Yeah. Yeah. Okay. And that's gonna be a quarterly thing. So the idea is this quarterly kind of how we could use case and able to sell it? Well, I think
+[TIMESTAMP] Speaker 014: All right. We're looking most likely what's realistic? Either Q2 or Q3, correct? I
+[TIMESTAMP] Speaker 255: Would yeah. I think if this quota, we can get in like, hey, this is this is the main person we're looking at. We have I would say just to be transparent, it's like between you and Arena right now. I know Arena has pm function. The main reason is because you have cms and pm. So and those are the 2 right now that we are like actually we know that we'd have use off in the next couple of years and not next couple of months. So that's okay.
+[TIMESTAMP] Speaker 014: Like [COUNTRY] over Arena at this point. Yeah. Okay.
+[TIMESTAMP] Speaker 255: I do think the like because I think you'll have a different like platform I do think the UI is like a little bit more used friendly.
+[TIMESTAMP] Speaker 014: Nice. I love it. Are you on do you have [CRM_PLATFORM] CRM? I forgot.
+[TIMESTAMP] Speaker 255: Not yet.
+[TIMESTAMP] Speaker 014: No. Okay. Is that something you're looking to get in the future?
+[TIMESTAMP] Speaker 255: CRM is something that yes, the operations team is looking at, but I'm not sure what the effect.
+[TIMESTAMP] Speaker 014: Yet. Okay. And as far as migration, data, migration, so that's not included, but are you planning on do you have an it team that can do that yourself? Or would you want [COUNTRY] to do that?
+[TIMESTAMP] Speaker 255: We both. Help with that. And my question is that part of the implementation? It's
+[TIMESTAMP] Speaker 014: Not okay. Yeah, I would have
+[TIMESTAMP] Speaker 255: The implementation we would have to. Would that
+[TIMESTAMP] Speaker 014: Training and implementation is part of that. Okay. So
+[TIMESTAMP] Speaker 014: Implementation, there's I'll give you the cost right now. So yeah. We have 2 ways of implementing we have something called rapid start. And then we also have one where we'd have to scope out. If you'd want to configure anything. Right, we would have to set up that call with our team and your team to understand those needs. And then it's $2,000 per module for training. So most people out of the box will choose, I mean, you get all the whatever you get every all the modules in [PRODUCT_SUITE] or plum or what if you choose. But for implementation, you choose, two, three, four, 5 as many as you like to be trained on, that will be implemented first. You will understand how to implement after that. So any other of those modules you can implement yourself. And if you ever want [COUNTRY] to implement those modules, you can request that and we'll just there's a cost for [COUNTRY] to do that after that. Does that all does that make sense?
+[TIMESTAMP] Speaker 255: Yeah, that makes sense. It's like for like if I'm just doing document control, that would be 2 k versus and then if I add on and I do caps and stuff like that's not okay. Okay. Yeah, that's fine.
+[TIMESTAMP] Speaker 014: I go in rapid start is 4,000. Okay. Okay. That's out of the box. I personally highly recommend going with rapid start instead of configuring out of the box. It's very easy to go from out of the box to configuring later. Once you see the process and the workflows because if you go too soon, it's very difficult to go backwards.
+[TIMESTAMP] Speaker 255: Yeah, no. I
+[TIMESTAMP] Speaker 014: And also save you on on save you on budget, but more importantly, besides, budget, just in my experience. Go with rapid start for now and see because everything that we've done is for compliance and regulations. Yeah, it's made for that. It's made to be in compliance with [REGULATOR]. And so etcetera. So and you may look at it and go oh, my, this is perfect. This works in our workflow, but if not, you can write all those things down and say, hey, these are the things that need to be changed. You can configure these yourself yeah. We train you and there's also the university knowledge that you can go into. And you'll you can see how to do everything yourself or you can have [COUNTRY] and hire [COUNTRY] to do those things. Okay. So
+[TIMESTAMP] Speaker 255: That's fine. I think. Yeah, I think as long as maybe you have that differentiation and I also think rapid step maybe the way to go because we may not do as much past my patient right now, in my opinion. The only thing that I guess is in terms of data migration. I would like to know if that's if we needed that support, what would that look like in terms of a cost thing? So that could be just an add on
+[TIMESTAMP] Speaker 014: Usually usually we charge 1 50 an hour. Okay. It's and but I'm not in charge of that. So if you do want to get on a call with [PERSON] and our team leader on that, be more than happy to schedule that. So you can he can give you all the answers before we even have the the essential
+[TIMESTAMP] Speaker 014: Call for the sow.
+[TIMESTAMP] Speaker 255: I think if you put that in right now, I think that works. Just like just I mean I don't know if I want to call right now. I was just like, give me an estimate of what that's gonna look like because
+[TIMESTAMP] Speaker 014: I just if we want to have a next step call with yeah, just just for questions about
+[TIMESTAMP] Speaker 014: Okay. And then we can and if everything sounds good. We can set up another sow with you and your team.
+[TIMESTAMP] Speaker 255: Okay. Good. No, that's fine. That works. I'm thinking I don't know what works for you for like, the full team call. But if you have the
+[TIMESTAMP] Speaker 014: Proposal overview.
+[TIMESTAMP] Speaker 255: Yeah.
+[TIMESTAMP] Speaker 014: Yeah. Let's look at our calendars.
+[TIMESTAMP] Speaker 255: Um
+[TIMESTAMP] Speaker 255: Because we could do
+[TIMESTAMP] Speaker 255: Let me see.
+[TIMESTAMP] Speaker 255: I don't know. Looks good for [COUNTRY] if that works for you, sure.
+[TIMESTAMP] Speaker 014: What I'm free after 10:00 a.m. Pacific standard time.
+[TIMESTAMP] Speaker 255: Okay. Cool. Anytime after 10 30 to 12 looks good for the rest of the team because I can just put it, please pull
+[TIMESTAMP] Speaker 014: Is 11:00 o'clock? Okay. Yeah. Yeah. Okay.
+[TIMESTAMP] Speaker 255: But that'd be 11 to
+[TIMESTAMP] Speaker 255: 11 to 12 or 11 to 11 30.
+[TIMESTAMP] Speaker 014: Oh, I think just 11 11 30 should be enough time.
+[TIMESTAMP] Speaker 255: Okay. Great. Um
+[TIMESTAMP] Speaker 014: And you let me just put this in here.
+[TIMESTAMP] Speaker 014: And you can forward this correct to your team would [PERSON] or be part of that. I mean yeah, [PERSON].
+[TIMESTAMP] Speaker 255: Yeah. [PERSON] would be there. Speaker 131 would be there it would literally be everyone from the whoever.
+[TIMESTAMP] Speaker 255: You can just I can just forward. I can forward that be. Okay.
+[TIMESTAMP] Speaker 014: Okay.
+[TIMESTAMP] Speaker 255: Cool.
+[TIMESTAMP] Speaker 255: Yeah. And if we had to have a conversation with
+[TIMESTAMP] Speaker 255: The I do think right now, I don't know. We have a few SOPs, but we are also figuring out what we want and the cms system. So it becomes difficult for me to even have that conversation of like, oh I could have a brief conversation with your manager or like, I don't know who yeah. Who you kind of spoke about regarding the data transfer.
+[TIMESTAMP] Speaker 014: Yeah. The data migration. Yeah. Yeah.
+[TIMESTAMP] Speaker 255: Yeah. I think you can
+[TIMESTAMP] Speaker 014: Also, send me questions. If you just email me your questions about data migration. Yeah, I'll send it over to him. He'll answer it and I'll send it back so we don't have to set up another meeting.
+[TIMESTAMP] Speaker 255: Yeah. That sounds good. I think that looks. And I know you already gave me the suite and I think the way I and I just want to clarify that because that's how I added the user types. I think I had like, process read and write for many of them, which is like, maybe 38 or something. Which anyone has access to like the main one that I had the last
+[TIMESTAMP] Speaker 014: Option 2 and option 3 you had 38 full users, yes. Right, which which one are you looking?
+[TIMESTAMP] Speaker 255: That you want me thinking option to. Okay. Kind of full overview. Most of our engineers would have access to that. Okay. And and then we and like, few people have admin access. The admin will have full process full access, right? And additional. So that gives [COUNTRY] like, 41 40 kind of users and then the 10 would be people who just need to read, but don't have to approve anything, but kind of have
+[TIMESTAMP] Speaker 014: But they yes, they have, but they have access to read and respond, not just read only.
+[TIMESTAMP] Speaker 255: So and also do the trainings and everything?
+[TIMESTAMP] Speaker 014: Correct. Okay. Yeah. Yeah. And then the basic the process basic they can only read
+[TIMESTAMP] Speaker 255: Okay. Yeah. But no
+[TIMESTAMP] Speaker 014: Basic for sure. Yeah. I will put together a proper proposal and is it important to you in the proposal? There is the the monthly cost of each license. Does that make a difference? I could send it to you or not. It's up to you.
+[TIMESTAMP] Speaker 255: I don't know if you're doing yearly. I'm okay with yearly. Okay. Like
+[TIMESTAMP] Speaker 014: I'm very transparent. So whatever you need you just let me know. If okay. The fact I'll present the proposal to you and then I'll send it over. And if you need anything else, I'm more than happy to copy it. Okay. Okay.
+[TIMESTAMP] Speaker 014: I think that said anything else on your end.
+[TIMESTAMP] Speaker 255: No. That was mostly what I had. I just wanted to make sure we had yeah. I could just let you know that I do think we want to go forward. Just thank you for being you
+[TIMESTAMP] Speaker 014: I appreciate it. Well, I'm excited. I look I I'm excited that you've basically, sort of chose up chosen [COUNTRY] for now. And we're excited to partner with you whenever that time comes. So if we can make it sooner, great. If not, it'll be Q3.
+[TIMESTAMP] Speaker 255: Yeah. Sounds good. Thank you. The flexibility.
+[TIMESTAMP] Speaker 014: All right. So now absolutely we'll talk soon. I'll see you on Thursday, for sure. Okay. You too. Bye. Bye.
+[TIMESTAMP] Speaker 255: Bye.
+
+
+====================================================================================================
+Title: ABC Corp Next Steps with Customer 12
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1758.75
+====================================================================================================
+[TIMESTAMP] Speaker 255: Morning! Hello!.
+[TIMESTAMP] Speaker 255: Good morning!.
+[TIMESTAMP] Speaker 255: Can you guys hear? Me? I do not. We do do not. Not.
+[TIMESTAMP] Speaker 255: Can you hear me?
+[TIMESTAMP] Speaker 255: Can you hear me? Give?
+[TIMESTAMP] Speaker 014: Me a thumbs up if you can hear me.
+[TIMESTAMP] Speaker 255: Hello? Okay. Okay. Hi. Maybe it works. This way. It's okay. Yeah. Can hear it's fine.
+[TIMESTAMP] Speaker 255: Is yours now? Yep. Okay. Oh, my.
+[TIMESTAMP] Speaker 014: I love technology. It's so advanced that I can't even get the microphone on on my end.
+[TIMESTAMP] Speaker 255: Should have AI do it. Yeah.
+[TIMESTAMP] Speaker 014: I'm getting a little creeped out with AI. These days. I'm seeing videos that are just so real and it doesn't make sense and it's scaring me.
+[TIMESTAMP] Speaker 255: Yeah. I?
+[TIMESTAMP] Speaker 014: Think, I think, by the way, hi, guys. I. [PERSON]'t know if we've met. I'm Speaker 014, the [PERSON] executive. What's your name?
+[TIMESTAMP] Speaker 255: I'm I'm Speaker 131. Speaker 131, I'm the manager for manufacturing here. Good to meet you.
+[TIMESTAMP] Speaker 014: Oh, you too, Speaker 131.
+[TIMESTAMP] Speaker 255: I'm Speaker 165. I was on a call a while ago. I don't know. Yep. I remember Speaker 165. I'm the data team.
+[TIMESTAMP] Speaker 014: Yeah, I just don't think I saw the face. I just saw the
+[TIMESTAMP] Speaker 014: Letters on the screen. And hey, Speaker 255, good. Seeing you again. Thank you.
+[TIMESTAMP] Speaker 255: All right, back at you.
+[TIMESTAMP] Speaker 014: No, I was saying, I think with AI, there should be disclosures,
+[TIMESTAMP] Speaker 255: Right? Right? Would think, yes. You.
+[TIMESTAMP] Speaker 014: Would think they would say, all right, this is AI. This is an AI Speaker 039. Anyways, well, glad to see you all and meet you, Speaker 131. So, we're here today. Just to talk about next steps. And any questions you may have. And I know, one of the questions you may have is on your pricing model. And I know that you gave me 3 process administrators, administrative 38 process users and 10 process light users. I did change that. I actually made it better for you all. So I took off the light users. I gave you 10 more actually 11 more process.
+[TIMESTAMP] Speaker 014: Users. I gave you one for free and I we discounted it to keep you at 50. So it gives you more flexibility with your users. Users. And you also have access control and you can give them any kind of access that you want. When they're a full process user. But. Now, they have more flexibility and you have flexibility. And if you want the old way, back, I can change it. Back. And I'll still keep it at the price. Of 50. I won't change. That. But I did give you a discount, a little over like $3,600 to give you the full process users.
+[TIMESTAMP] Speaker 255: Okay, so everyone would be like full process users. So. Basically they'd have read write access.
+[TIMESTAMP] Speaker 014: They'd have, and you could still change any kind of access. You have access control. So. If there's like, 10 of them still that you don't want to have the ability to edit, you can change that for them. But this gives you more, again, more flexibility and gives them more rights. If you wanted to. Have them have more rights. Rights. But again, I can change it back to the old way if you want, and I'll keep it at the same price. But. This is more advantageous, I think.
+[TIMESTAMP] Speaker 255: And what would be different in the admin users? Sorry what the admin can just change access for everyone else? What's different in the admin versus
+[TIMESTAMP] Speaker 014: A The admin person? Can do everything. An admin can edit, they can initiate, they can change, They could actually configure the system. Okay. So, if you wanted to change the workflows, the admins can do that. The admins, have all power to do anything.
+[TIMESTAMP] Speaker 014: The full process users don't have that power to configure the system.
+[TIMESTAMP] Speaker 255: Okay. One of the things that I wanted to understand is, you Oh,
+[TIMESTAMP] Speaker 255: Know, maybe to start, yeah, thanks for trying to work with [COUNTRY] on the pricing and cost model, but I'm curious as people are getting on ramped with ABC Corp, how long is that process typically?
+[TIMESTAMP] Speaker 014: It's very quick. So we have you as rapid start implementation, which is out of the box. Implementation. Implementation. So, So. We'll get you up and running probably under 2 months or less. We've seen, I mean if you wanted, let's see what we have. And by the way, I put in for training, I just put in 3. Usually. People start with 3 or 4. I have document management, training, and change management. That could be changed for training. So if you want to pick and I'm not going to pick your particular three, but pick the mode, the top 3 that you want implemented first. First. But it's very fast. So what happens is that once you guys decide that you want to sign and move forward, I will have a handoff meeting with my CSM team to go over. Everything. I'll send you guys a list of questions that you'll fill out for me, that I will relay that to the KICK, your project management team. And then after that, I will set up a KICKOFF call with you guys and our project management team and they'll go over the process. But it's very quick. It happens. I mean, by the time you sign in the kickoff call, it's usually about a 2 week. Period. And then after that, it goes very fast for about a month and a half. Now, the only thing that could change that timeline is you guys. Maybe you have an audit that comes up or someone's going on vacation during that.
+[TIMESTAMP] Speaker 014: Time. That delay delays any implementation, but we've seen under 2 months. Yeah.
+[TIMESTAMP] Speaker 014: Okay. And. Also the nice thing about out of the box, and I was telling Speaker 255 this, I think about a week ago, is that with out of the box, you can get everything set up, you can go through the processes, and then if you see anything that needs to be changed, Well, one, we're going to train you on configuration, configuration. But you can either hire [COUNTRY] to do those. We charge, 150 an hour for services, and we can do the configurations or you guys can do those configurations.
+[TIMESTAMP] Speaker 014: Did I answer your question?
+[TIMESTAMP] Speaker 255: Yeah, you did. One of Okay. The things I'm asking is because we ran this by the leadership. Team. Team, The feedback. We got was from our side, too. We want to be ready for this software as a company, maturity wise, but we're not quite there. Yet. I think it will help that.
+[TIMESTAMP] Speaker 255: We have this kind of chicken and the egg. This will help [COUNTRY] get [COUNTRY] in compliance, but we're also just from a process perspective, not quite ready for this. And we're trying to think about of how we can get creative and work with you, Speaker 014, on timing for billing. For example, like when we first are on ramping this we're not going to be quite ready to use it. And so I think the idea of paying for it when we're still in the setup phase was kind of a difficult pill to swallow. Sure. And then also, I think even for [COUNTRY], [COUNTRY], we're trying to understand when we start, even after the kind of 2 month on ramp with ABC Corp, I bet, we'll have kind of just, I bet.
+[TIMESTAMP] Speaker 255: We'll have some of the admins only doing things for a while. So I'm curious to understand, too, how long are the pricing for No, that's a all the users? Valid question and
+[TIMESTAMP] Speaker 014: I do get that a lot. So it's a net 15. I can talk to them when the time is ready. Right on a little longer, but it's not just when you're paying for our team to help to support the implementation as well. That's all part of it. And. So our implementation is also separate of what they get billed to do the job. They need to do to get you guys up and running. But again, it's all negotiable. I'll talk to the team when the time is right. Unless you want me to, if you want to negotiate that right now and I can talk to my executive executive team. Team on that. What. Are you thinking?
+[TIMESTAMP] Speaker 255: So currently there's an implementation cost of 10k and then there's the 50k kind of subscription cost. And I understand we'll be using hours from your side. So if we can figure out like, maybe an implementation cost and the start and then kind of only work on the subscription cost later after we We have some like level of confidence from our side for the users being trained? I think maybe that would be a start?
+[TIMESTAMP] Speaker 014: Yeah, again, a very valid question. We're a very big company. We have over 500. Employees. So as far as confidence goes, we are one of the top. [ANALYST_FIRM]. Just rated [COUNTRY] number one. So we're very good at customer. Support. Support and service and getting you guys up and running. So as far as feeling, I mean, we have plenty of references too. If you need those. But again, I have no problem talking to my team. All, they can either say is, yes we can extend it or no. That's just an honest answer. I don't know what they'll say, but I will I could say they'd like to just pay the 10K up front for support and then the 50K once they go live. But again, that's very vague.
+[TIMESTAMP] Speaker 014: Because again, what if you guys go on vacation or there's an audit or something happens with your team and there's that delay, right? So. We also have to be fair to the other companies that sign up with [COUNTRY] as well.
+[TIMESTAMP] Speaker 255: Yeah. Yeah. And.
+[TIMESTAMP] Speaker 014: We have to be consistent with that.
+[TIMESTAMP] Speaker 255: Well, yeah, we definitely appreciate if you can make the ask. That puts you in a hard position, but I'm sure you've done it. Plenty of times successfully. No,
+[TIMESTAMP] Speaker 014: No problem. Asking. Absolutely. I feel like I'm the real estate agent. I have to ask. Yeah.
+[TIMESTAMP] Speaker 255: Yeah, because I think on our side, we're maybe Speaker 255 mentioned this, but we're a series A company, so we're still quite small.
+[TIMESTAMP] Speaker 255: Hopefully raise another round, hopefully. And I think at that point it will really help ease the pain of spending. More money. But I think until then. We want to try to defer what we can. Yeah,
+[TIMESTAMP] Speaker 014: 100%. I'm right there with you. I've started a company before and I get that. So what I think you were saying your Q3 right when you're gonna get the budget allocation, out?
+[TIMESTAMP] Speaker 255: Speaker 255? Yes, and I guess like that may change only based on pricing and like, because we do like the software. And. So the idea was if we can start on like some level of training or implementation earlier, it would be nice. And then it's like budget may get allocated in bits. So
+[TIMESTAMP] Speaker 014: You're saying you could start sooner than later? We could. As long as the pain payment thing can be restructured to help you guys out. Correct. Correct. I think that may motivate them to help you. Let me be creative with them. In the perfect world for you guys, what is your best case scenario for budget wise, just so I can get back to them? Are you saying you can do 10 grand up front used for implementation? And then 50 a month later, 2 months later, what's your idea?
+[TIMESTAMP] Speaker 255: And 50 is the annual cost for the license. I mean, if there's even creativity around breaking up that costs into bits or deferring as late into the year as possible. Okay. And That would be... Yeah, I get it. Let.
+[TIMESTAMP] Speaker 014: Me see what I can do. Wish me luck.
+[TIMESTAMP] Speaker 255: I
+[TIMESTAMP] Speaker 014: Mean, I personally would help you any way I can. I just don't have that authority. But I 100%. Would love to be able to take care of you all and make this more affordable. So let me see what I can do. Do you guys have any other questions?
+[TIMESTAMP] Speaker 255: I think we were also wondering like as we in the future, maybe go past 50 seats and we're adding mid year during the middle of the billing cycle, how does it is it a pro rate or is there like a certain number of seats we would need to add at a time?
+[TIMESTAMP] Speaker 014: There is. Hang on one second.
+[TIMESTAMP] Speaker 014: To my pricing model.
+[TIMESTAMP] Speaker 014: Let's see, full users. What else is users? Do we have you at right now?
+[TIMESTAMP] Speaker 014: Can you give me one second? I'm looking up.
+[TIMESTAMP] Speaker 255: Yeah, no, we have one.
+[TIMESTAMP] Speaker 014: Yeah, when you get to 100, it goes down.
+[TIMESTAMP] Speaker 014: It goes from 50 to 99, then 100 to 249, then 250, it drops. Drops. What are you all thinking as far as how is your growth rate right now with employees? Like by next year, how many employees do you think you'll have?
+[TIMESTAMP] Speaker 255: Really depends on the funding. Okay. So.
+[TIMESTAMP] Speaker 014: Normally your price would be $66 per full user, but we brought it down to $50. So we've already discounted you guys. You're definitely past the 100 to 249 rate, right? Now.
+[TIMESTAMP] Speaker 255: Yeah, I guess what?
+[TIMESTAMP] Speaker 014: I mean. But again, everything is like we can, when the time is right, we have no problem working out numbers for you guys and helping you out. Are you a non profit? No.
+[TIMESTAMP] Speaker 255: Okay. Sorry, maybe just to clarify. You're.
+[TIMESTAMP] Speaker 014: Definitely not. We want want to be a non profit.
+[TIMESTAMP] Speaker 255: To pay more profit Okay. This year. So we have 49 process users on the quote. Let's say we need to add a 50th process. User in November or something. What. Does that look like? Okay, what is that?
+[TIMESTAMP] Speaker 014: Per month,
+[TIMESTAMP] Speaker 255: Yep. And these.
+[TIMESTAMP] Speaker 014: Are, by the way, we're partnered with [CRM_PLATFORM] for [CRM_PLATFORM]. A Our system's built on the [CRM_PLATFORM] platform. And they actually are the ones that price [COUNTRY] out. Okay. So anytime that we are have to negotiate on price, we have to go to them.
+[TIMESTAMP] Speaker 255: I see. Are.
+[TIMESTAMP] Speaker 014: You on [CRM_PLATFORM]?
+[TIMESTAMP] Speaker 014: No. For CRM or? No. Okay. And. You don't have to be. So when the time comes, we'll set you up with your [CRM_PLATFORM], and [CRM_PLATFORM] organization. ID. We're going to set you up with your environments.
+[TIMESTAMP] Speaker 014: So you don't have to have [CRM_PLATFORM].
+[TIMESTAMP] Speaker 255: Okay. And additionally, if like, I know we spoke about this in like your demo quotes if we had to add [PRODUCT_SUITE] to this, would that change the per user price or is it just an add on for that?
+[TIMESTAMP] Speaker 014: Full model? It's an add on price for a suite.
+[TIMESTAMP] Speaker 255: Okay. How much is that roughly?
+[TIMESTAMP] Speaker 014: For product suite, for PLM, that's $25,000 a year. Okay.
+[TIMESTAMP] Speaker 255: And I
+[TIMESTAMP] Speaker 014: Can probably help you shave off.
+[TIMESTAMP] Speaker 255: A price on that. It would be helpful too. If that's what you can give up. It's gonna be helpful too if there's... Of course, absolutely. In a price.
+[TIMESTAMP] Speaker 014: Whenever you guys are ready, what I recommend is take the slow, right? Just. Get to know the system. Nothing wrong with adding on anything, but I think right now is not obviously the right time. And adoption is very important for you and your team. If you don't have adoption, then this is all a failure, right? So it has to be a user friendly and easy. Easy. And then once you're you and your staff, all your users have it down, then you want to take the next step. And. Now you can go to product suites or safety suite or whatever supplier suites that you want.
+[TIMESTAMP] Speaker 255: But
+[TIMESTAMP] Speaker 014: I will definitely work with you on price on that.
+[TIMESTAMP] Speaker 255: One other question I had I don't know. Is there any potential discount or price lock in if we were to do a multi year commitment?
+[TIMESTAMP] Speaker 014: Well, it's already a 3 year commitment.
+[TIMESTAMP] Speaker 255: Okay. So.
+[TIMESTAMP] Speaker 014: Okay. But I can ask, were you saying like a 5 year, perhaps?
+[TIMESTAMP] Speaker 255: I think 3 is probably, yeah. I.
+[TIMESTAMP] Speaker 014: Would recommend three,
+[TIMESTAMP] Speaker 255: For For sure. Sure.
+[TIMESTAMP] Speaker 255: Be AIs in 3 years anyway.
+[TIMESTAMP] Speaker 014: Well, we have, you guys, we have an incredible AI. We have 80 use cases that you'll be able to use in our new version. And again, we were just voted number one by [ANALYST_FIRM] as best AI as well. Oh, nice. Yeah, I'll send you guys that report. Okay. But we beat out everybody as far as for QMS and AI, right? Now. But yeah, it's really cool. So are any one of you guys handling training for your team?
+[TIMESTAMP] Speaker 255: I don't know. I know. Yeah. All of [COUNTRY]. Okay. How. Would you normally,
+[TIMESTAMP] Speaker 014: How would you normally create a training from your, like an SOP?
+[TIMESTAMP] Speaker 014: Would you literally have to just create your own questionnaire from that?
+[TIMESTAMP] Speaker 255: Yeah, yeah. A lot of it is like observation, kind of lab training at the moment. Yeah, like an approved trainer, watches them and signs them on. Okay. They can do the thing, yeah. Yeah.
+[TIMESTAMP] Speaker 014: Well, and you can use AI and even you can even use ChatGPT. But the problem is that you need a closed loop system to create anything within your system just to stay in compliance. Are you what regulations are you under?
+[TIMESTAMP] Speaker 014: Is it [STANDARD_BODY]? Are you certified or do you not have to be certified?
+[TIMESTAMP] Speaker 255: Eventually, it will be [STANDARD_BODY] but not right now.
+[TIMESTAMP] Speaker 014: Not, right. Now. Are there any impacts if you're not certified? Will you lose clients if you're not certified?
+[TIMESTAMP] Speaker 255: Yeah, potentially.
+[TIMESTAMP] Speaker 014: Okay. Well, the good news. Is that out of the box, our system will help you. It's. Not that we won't help you get certified, but it's formulated under regulations. So. It'll be a lot easier process when the time comes to get your 9100. Certification. We're also, So [STANDARD_BODY] 9001 certified as well. I could send you guys the certification when needed.
+[TIMESTAMP] Speaker 255: Yeah. What.
+[TIMESTAMP] Speaker 014: Was I going to bring up about? Oh, with AI, we have as far as Kappas, if you're doing your 5 Ys requirements, our AI will help you do that for you. Thank you. It'll make recommendations.
+[TIMESTAMP] Speaker 014: It's going to really change your ROI. Completely, your efficiencies. It's hard to see that now without having a system in place, but, and you guys get audited?
+[TIMESTAMP] Speaker 255: Yeah, we will. We will,
+[TIMESTAMP] Speaker 014: Yeah. You will, okay. So we have some companies that saved 70% of time. Time from an audit. Some of them go to like a week to 2 weeks of getting an audit down to a day. Just getting off spreadsheets, you'll see a massive change. But anyways, any other questions? I know we're coming up to the end of the hour.
+[TIMESTAMP] Speaker 255: Yeah, I guess from like an integration with the rest of our systems. Systems. Standpoint. We're not currently on [CRM_PLATFORM] and we might not be. And I saw on your website. It says you have an API. I wasn't able to find any public documentation. I don't know if maybe that's fine. Yeah, what are
+[TIMESTAMP] Speaker 014: You looking to integrate?
+[TIMESTAMP] Speaker 255: Down the line potentially ERP? Or if we end up standing up the PLM function, functionality and [PRODUCT_SUITE], right? That might need to go talk to our MES.
+[TIMESTAMP] Speaker 014: Yeah so there's a couple things we have all the documentation for integration. You can either what we normally do is we can have a scoping call with you and your IT team and you of course and we'll give you a price of what it costs to integrate. We have we integrate with all ERP systems. We MES, ERP, [ERP_SYSTEM], PDQ, TL. No, I'm kidding. But no, we've done it all. Or you can integrate yourself. So we'll give you all that documentation. If you have an IT team that, you want to save some money there.
+[TIMESTAMP] Speaker 255: Yeah, it would probably be me doing the API integrations.
+[TIMESTAMP] Speaker 255: It would just be, I guess, maybe that's something we get once we start our subscription. It be helpful to take a
+[TIMESTAMP] Speaker 014: Look Yeah, I at the software. Think you should, again, probably wait 6 months before you start integrating anything. Again, take it, slow. And then, and there's nothing wrong with getting a scope of work anytime you want during that process. We could set that up. We can even set it up before you sign the agreement, if you want. Want, I could set up with our team and your team and just so you can get an idea of budget, what it would cost to integrate, but we would, but you don't have an ERP yet, right? You didn't purchase it.
+[TIMESTAMP] Speaker 255: Right, yeah, we don't have one and we're currently still trialing MES. Yeah, so I
+[TIMESTAMP] Speaker 014: Think once you guys finally figure out which one you're going to get, then we can set up that meeting anytime. Again, either before you sign or after you sign.
+[TIMESTAMP] Speaker 255: Okay, great. But there's no extra charge for access to the API? No.
+[TIMESTAMP] Speaker 255: Well, yeah. And.
+[TIMESTAMP] Speaker 014: If I'm wrong, I apologize. I've only been here, 8 months, but from what I know, there shouldn't be a charge for an API. Just. If you guys are going to do that there's a charge if we're gonna do it for you. Right, Yeah. But yeah. That's a I'll ask, let me just verify, just so I'm not putting my foot in my mouth and.
+[TIMESTAMP] Speaker 255: Yeah, and if we if there is any documentation on like, API access, like from which we can kind of do, if you can send [COUNTRY] some documentation if it's publicly Yeah, yeah, available. Sure.
+[TIMESTAMP] Speaker 014: Okay. No problem. Anything else?
+[TIMESTAMP] Speaker 255: And so
+[TIMESTAMP] Speaker 014: I'm going to speak to my team today. So are you, so you're saying you could sign potentially this week, next week. If there is some sort of structure laid out? So I want to make sure when I talk to my team, I'm letting them know.
+[TIMESTAMP] Speaker 255: Yeah, we were told like by March we could sign this coming coming month. Month. Month. March? Yeah. Okay.
+[TIMESTAMP] Speaker 014: Got it. All right. I will get back to you. Why don't we...
+[TIMESTAMP] Speaker 014: Into
+[TIMESTAMP] Speaker 255: March. Into March. Yeah, like mid March or...
+[TIMESTAMP] Speaker 255: This is awesome.
+[TIMESTAMP] Speaker 014: Yeah. I'll even say I'll tell them mid March to April 1st, like in that range.
+[TIMESTAMP] Speaker 255: I know sometimes they'll come back and be like, hey, if you can sign before March oh, we only have a few days. Do.
+[TIMESTAMP] Speaker 014: Yeah. That. Well, look, if they give me an exceptional deal for you and they say if you guys can sign this week, I'm going to present it to you and you can say yes or no. I don't want there to be any pressure on your side to make a fast decision or not. So just let's just be transparent. I'll do the best I can. And if there's any delays because of budget, that's okay, too. We want to get you guys up and running as soon as possible, but let's make sure that I. [PERSON]'t want you guys to feel stressed about money. That's the last thing. That company needs to worry. About. So, let's just do the best we can and I'll see what they say.
+[TIMESTAMP] Speaker 255: Thanks, Speaker 014. Okay.
+[TIMESTAMP] Speaker 014: And anything else?
+[TIMESTAMP] Speaker 255: No, that's good.
+[TIMESTAMP] Speaker 014: All right, well, cool, I will get to work. Work. With you. Wish me luck and pleasure seeing you all. We'll talk. Soon. Oh, Speaker 255, why don't we schedule, give me, it shouldn't take me long, but why don't we schedule another call and then I can give you an update on pricing. Structure. Let's see. Sure. Let's go. Let's see. Today is the 24th.
+[TIMESTAMP] Speaker 014: All right. How is Friday too. Soon? Monday?
+[TIMESTAMP] Speaker 255: I'm good with Friday, if you get
+[TIMESTAMP] Speaker 014: Something. Yeah, if I have anything sooner, I'll email you.
+[TIMESTAMP] Speaker 255: Sure.
+[TIMESTAMP] Speaker 014: But, alright, so is 9am good for you or 9.30 again?
+[TIMESTAMP] Speaker 255: Sure. Like 9am works, I think. Okay. Alright.
+[TIMESTAMP] Speaker 014: Sounds good. Alright.
+[TIMESTAMP] Speaker 014: We'll talk to you all soon. Nice meeting everyone again. Again. Speaker 131, nice meeting you for the first time. Speaker 165 and Speaker 255, we'll talk to you soon.
+[TIMESTAMP] Speaker 255: Thank you. All right. Bye, everybody. Bye.
+
+
+====================================================================================================
+Title: ABC Corp & Customer 12 Payment Plan Discussion
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1085.1
+====================================================================================================
+[TIMESTAMP] Speaker 255: Hello.
+[TIMESTAMP] Speaker 014: Except.
+[TIMESTAMP] Speaker 255: Except on this. This way.
+[TIMESTAMP] Speaker 255: We're just trying to add the room and technical issues.
+[TIMESTAMP] Speaker 014: No worries. Take your time.
+[TIMESTAMP] Speaker 255: I guess that works. Okay. It's fine. Hey Speaker 131. Sorry Speaker 014, I was trying to invite our conference room.
+[TIMESTAMP] Speaker 014: Oh, we can
+[TIMESTAMP] Speaker 014: There's no rush. You have 30 seconds. I.
+[TIMESTAMP] Speaker 255: Think it's because you have another meeting on it. If you don't add that. In, I think I can just put this thing. If you remove your meeting. Yeah.
+[TIMESTAMP] Speaker 255: Think so. Maybe?
+[TIMESTAMP] Speaker 255: It's mid editing now.
+[TIMESTAMP] Speaker 014: Funny. Technology feels like it's moving so fast, but yet they still make it very difficult for [COUNTRY].
+[TIMESTAMP] Speaker 014: Yes.
+[TIMESTAMP] Speaker 255: Okay. And refresh. Now… Okay, let me see. Okay, now... It's not there. But it's still. Yeah, that's okay. Okay, it's fine. You can see you on the mixed stream. You can still turn on the camera. Okay,
+[TIMESTAMP] Speaker 014: Much better. So. Is there anyone else joining?
+[TIMESTAMP] Speaker 255: No, yes.
+[TIMESTAMP] Speaker 014: Okay, thank you for coming on. Today. This will be a quick call. So the last email that I sent to you. That was approved by my CEO and Executives, and [CRM_PLATFORM]. [CRM_PLATFORM]. They said they can do net 60 and hopefully we can move that forward. If it makes sense to move forward this month and we'll still do the second phase of October. So the first phase 60 days would be 36 and change and then October would be 26 and change whatever that is for the remaining balance. Does that make sense to move forward on that?
+[TIMESTAMP] Speaker 255: Maybe. Well, that's what I want to talk to you today.
+[TIMESTAMP] Speaker 014: Okay.
+[TIMESTAMP] Speaker 255: Yeah. Do
+[TIMESTAMP] Speaker 014: You want me to bring on the VP of Sales. If you have any questions about because I can't make any final decisions myself?
+[TIMESTAMP] Speaker 255: Yeah, no problem. I think we just want to discuss a little bit today, Speaker 014. I know I've been trying to get updates last week. So just kind of between [COUNTRY].
+[TIMESTAMP] Speaker 255: We're providing a little bit with exec team here with just timing of fundraising and everything. So it feels like the, right now, the feedback is that the amount is high. And so I think there's 2 scenarios. I mean, one is either we wait a month or 2 to potentially kick this off, you mid Q2 know, or I think we need to look at options of reducing the license count.
+[TIMESTAMP] Speaker 255: If that's a way for [COUNTRY] to get the amount lower. I know we want to, I mean, Speaker 255 and I are eager to kind of get this kicked off because we are going to be on the line for getting this scaled up all of our quality systems. Systems. And. So we're just trying to figure out how we get that to everyone aligned. That's a priority. And. So it's either, I think how it's looking like here is either we have to wait until Q2 to do this.
+[TIMESTAMP] Speaker 014: So you're saying the end of April to
+[TIMESTAMP] Speaker 255: Potentially, tentatively I think that maybe is the best timing. Timing.
+[TIMESTAMP] Speaker 014: Yeah, the only problem is the ask as far as the net pay, the finance, they don't usually do that. That's the hard part of this whole thing. And. So we had to go back to [CRM_PLATFORM] and negotiate this with them as well. Because we're partnered with them. And no matter what we do, even if it's a net and you don't pay [COUNTRY] until October on the second phase, we have to pay [CRM_PLATFORM] upfront for everything. Everything. So that's how it works with [COUNTRY]. So. It's not an easy ask and that's why it's tough to be a little bit more flexible on arrangement on this.
+[TIMESTAMP] Speaker 255: Yeah, yeah, I totally understand. I think from our side. Too, I think from the financial perspective, the finance gets disconnected from all the quality things and just kind of looking at the numbers. And there's some hesitance, right? Now, I think, to cut a PO for 60K. And I think that is kind of the bottom line.
+[TIMESTAMP] Speaker 014: It's 50.
+[TIMESTAMP] Speaker 255: Or sorry, 50K.
+[TIMESTAMP] Speaker 014: Oh, well, it's right. 60 with implementation. Plus implementation, right.
+[TIMESTAMP] Speaker 255: It would be a total 60K PO
+[TIMESTAMP] Speaker 014: That we need.
+[TIMESTAMP] Speaker 255: To be approved right now from [COUNTRY], even though the payment is spread out.
+[TIMESTAMP] Speaker 255: That's what a we're fighting. Really good point. Here. And. So I think the path is looking. We have to potentially delay a month to where we're feeling more confident about the burn rate.
+[TIMESTAMP] Speaker 014: Yeah. Let me bring on Speaker 035 if that's okay. I told him to be on hold just in case so we can discuss this. Again, I I can't make any decisions, but let me see if I can bring them in.
+[TIMESTAMP] Speaker 014: Hang on one second. Okay, I'm going to text them.
+[TIMESTAMP] Speaker 014: I believe you met Speaker 035 before.
+[TIMESTAMP] Speaker 014: Hey, Speaker 035. Hey, Speaker 035. Thanks for coming on.
+[TIMESTAMP] Speaker 035: Good day.
+[TIMESTAMP] Speaker 255: Trying to.
+[TIMESTAMP] Speaker 255: To try to make it work. Trying to make it a good day.
+[TIMESTAMP] Speaker 035: For [COUNTRY]. Me too. So how can I be of help?
+[TIMESTAMP] Speaker 255: Yeah. So I was just updating Speaker 014 here. Our…I'd say the main feedback here is really kind of nothing on the ABC Corp. Side. It's just more about like, trying to stay conservative on our
+[TIMESTAMP] Speaker 255: Think we've mentioned before, right we're an early stage startup and so I think there's the hesitance is around quality and operations needs aside where Speaker 255 and I are trying to represent from the finance. Side cutting a 60k PO is a tall order, right?
+[TIMESTAMP] Speaker 255: Now. For the team. So we are trying to figure out the best path forward just from our side Speaker 255 and I need this. But it's either looking like we just hold off a month and wait to sign this. Okay. Or we might have I think another approach, which we've not really, really broached with the finance and execs here is if the PO amount is smaller. And. So I don't know if that looks like a reduced number of licenses to start and then we add on more later. But I think really, right now it's just I think the exec team is kind of removed from the need or the understanding that we need this
+[TIMESTAMP] Speaker 255: And the I think the PO amount is a big amount to cut right now, which is kind of the bottom line. And so can
+[TIMESTAMP] Speaker 035: Can Speaker 014 can you take me through it or show me anything I'm sorry if I'm coming up. So it's
+[TIMESTAMP] Speaker 014: So the last thing was we're giving them a 2 phase approach. We're doing the 13 licenses, yeah.
+[TIMESTAMP] Speaker 035: I know can chance. You can bring it up. Yeah, we can look at at it. Now, there are 2 components, obviously. One is services. And one is the software. Are we primarily focused on trying to impact the software?
+[TIMESTAMP] Speaker 014: Yeah. So the first phase, yes, we're putting the licenses.
+[TIMESTAMP] Speaker 014: Right.
+[TIMESTAMP] Speaker 035: So this question really is to Speaker 131 and Chanel is that if you add these 2 together, right, so initially we have 26K and we have, is it the total of, there must be something below this,
+[TIMESTAMP] Speaker 014: Right? It's here, just this, number 2. So here's the second phase of 23,938.
+[TIMESTAMP] Speaker 035: So the second, you're not cutting a PO for the full amount, right? You're cutting a PO, you would be cutting a PO for 26 plus the am I right, the 10K,
+[TIMESTAMP] Speaker 014: [PERSON]? Yes, correct.
+[TIMESTAMP] Speaker 035: All right. And are you adding the 23 on now and saying that they have to cut a P.O. For the whole thing?
+[TIMESTAMP] Speaker 014: No. No, they don't have to cut a P.O. For that. This is to Speaker 131. I'm just trying to clarify how he sees this.
+[TIMESTAMP] Speaker 255: I think we're seeing it as
+[TIMESTAMP] Speaker 255: Cutting a P.O. For the whole thing. I don't see a scenario where we do the implementation and the 26K and not continue.
+[TIMESTAMP] Speaker 035: Okay. So, the 26K is a minimal amount, right? There's not much I can do there. Are you indicating that we should remove the 23918 and not make that a part of the committed purchase and make that an add on when you think you're ready for it? I'm trying to get, what is the ask here from you? I need to hear from you. So I can focus on that. What can I do to help?
+[TIMESTAMP] Speaker 255: A good point. I have not thought about that. What you just described. I think I in my mind, once we're in, we're doing it. And so. Because
+[TIMESTAMP] Speaker 035: You're talking about cutting a P out for the whole thing. I think I told you the pricing that you have really is based on the full amount. But if I can help you get started. And we have to take that out because a P.O. Needs to be cut against the full amount, even though it won't be invoiced for that second component until closer to the end of the year, I want to make this as easy as I can. That $26,000, it's a hard number. We have thinned that down as much as possible. Possible. And I know you said that you may not even use the 10 right up front, right? You said, I think if I go back in my memory, you were indicating the team is really small to start with.
+[TIMESTAMP] Speaker 255: Yeah, we probably need more on the 3 administrators for the first quarter. Yeah.
+[TIMESTAMP] Speaker 035: So, if I could look at there has to be a minimum number of process. Users. If I can thin that down to five, does that help? Is that? What we're trying to do? Do? Or is removing the commitment, does that get you to a lower PO amount, right? Now, with the understanding that as you grow, you can add more?
+[TIMESTAMP] Speaker 255: I'd say it's both of what you just said.
+[TIMESTAMP] Speaker 035: All right.
+[TIMESTAMP] Speaker 255: Yeah, you offered both. I think that's kind of what I'm trying my best here. This is not not a negotiation, negotiation. Negotiator. Tactic. I think we're trying to get this across the line here to not have to use Excel spreadsheets for the next couple quarters.
+[TIMESTAMP] Speaker 035: Speaker 131, let Speaker 014 and I go to work on this afternoon. And let [COUNTRY] suggest something to you that gets you to a lower price point for your initial PO. And we will park the commitment off the side and just that becomes a non committal. And you can grow as you expand. The team. We will give you a cost to add users. We'll include that. Right. So you're not guessing. And then you can just add users. We Have to Add them in, in, especially if we're pricing them.
+[TIMESTAMP] Speaker 035: Very low, we have to add them in fives. I've been told ten, but let's just cut it down to 5 because I don't want to make this difficult. So we're going to take the, we're going to take, keep the 3 administrators, knock the process users down to 5. I don't know what that's going to look like, but it's definitely going to lower the cost. And then we will just remove the 39 users plus the 5 we take from the first phase. Phase. And. Then you're just left with an initial software, buy, the implementation fees, and then we'll make sure you have an established cost to add users as you grow.
+[TIMESTAMP] Speaker 035: Do you think that gets [COUNTRY] to the same place that do you think that optimizes our situation? Because I'm not sure what else I can do.
+[TIMESTAMP] Speaker 255: Yeah, no, I feel like that does. I think that wasn't really in my mind as one of the options coming into this conversation. Okay. All.
+[TIMESTAMP] Speaker 035: Right. Well,
+[TIMESTAMP] Speaker 255: I do feel like that'll be hopefully enough momentum on our side.
+[TIMESTAMP] Speaker 035: Well, great. Minds think alike. So let's let [COUNTRY] put pen to paper, so to speak, and let's get it back to you and then let's reconvene.
+[TIMESTAMP] Speaker 255: Okay. That sounds good.
+[TIMESTAMP] Speaker 014: Speaker 014, do you want to set up another call for tomorrow morning?
+[TIMESTAMP] Speaker 255: Yeah, let's do that.
+[TIMESTAMP] Speaker 035: Excellent. Absolutely. I think we're going to have something in front of you that would be palatable that you can then go out and in confidence and get a good ask out there and maybe get approved.
+[TIMESTAMP] Speaker 255: Yeah. Okay. That sounds good.
+[TIMESTAMP] Speaker 014: Let's just take a look at our calendars, really quick.
+[TIMESTAMP] Speaker 035: You have my calendar, Speaker 014, so I'm going to drop because I was in the middle of something. You got it. But we are flexible, here. We would like to do business with you. We would like to help you achieve what you're are looking looking for. Let's see what this next version looks like. And we'll go from
+[TIMESTAMP] Speaker 255: There. Thank you. Thanks, Speaker 035.
+[TIMESTAMP] Speaker 035: Thank you, Samil. Thank you, Speaker 131.
+[TIMESTAMP] Speaker 255: Thanks.
+[TIMESTAMP] Speaker 014: Bye. Okay. So. Let just take a look at his calendar, too.
+[TIMESTAMP] Speaker 014: All right. Tomorrow, I don't think it would be a very long call. How is either like 9:00 a.m. I am.
+[TIMESTAMP] Speaker 255: Yeah 9:00 a.m. Is good or even 9
+[TIMESTAMP] Speaker 014: 30. Yeah Speaker 035 can't do 9. 30. Okay. Let's do 9. Or we have a 10 available. No let's do 9 then. All right I'll send you an invite and hopefully this will work for y'all. Glad. We brought him on. Yeah hopefully that makes you feel a little bit at ease.
+[TIMESTAMP] Speaker 255: Yes, thank you for
+[TIMESTAMP] Speaker 014: Being very flexible. Absolutely. Absolutely. Right. Well, I take yoga.
+[TIMESTAMP] Speaker 014: Are you, I forgot, you're in Alameda, [LOCATION]? Where? Are you at? Yes, we are. Alameda, right? That's North, right? Northern [LOCATION]?
+[TIMESTAMP] Speaker 255: Yeah. Okay. That's the area. Got.
+[TIMESTAMP] Speaker 014: It. Okay. All right. Great. Well, thank you. All. We'll see you in the morning. Okay? We'll put some stuff together. We'll give you some options. Okay. All right. Take care. Thank you. Bye.
+
+
+====================================================================================================
+Title: ABC Corp pricing options with Customer 12
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 437.51
+====================================================================================================
+[TIMESTAMP] Speaker 014: Hey, Cheneal and Speaker 131. Hey.
+[TIMESTAMP] Speaker 014: Yeah. Apologize. Speaker 035 couldn't make it on the call this morning.
+[TIMESTAMP] Speaker 014: No problem. And don't be sad. All right. So we still have to go back to [CRM_PLATFORM] based on getting your approval first with the cutting Cutting. Everything in, well, cutting the users in half and just doing the first phase phase for now. It would just bring it down to 23K. So not a substantial change 3 grand change. So I don't know if that's a major difference for you. But it would also, again, just based on your commitment by, if you can get it in by April. 15th, we still have to go back to [CRM_PLATFORM] to get approval. But what are your thoughts?
+[TIMESTAMP] Speaker 017: This is cutting that 39 down half? Or was this that 10 users?
+[TIMESTAMP] Speaker 014: Yeah, it's going down to 5 users and then it's still the implementation. So it would be 33. So
+[TIMESTAMP] Speaker 017: 33k that's like 23, 4, 5 users, 3 admins. Correct. And implementation and training. The previous one with 10 users. And if we do the normal plan would be 10 users and implementation. And so that would be 26 plus 10K. So that would be 36 total.
+[TIMESTAMP] Speaker 017: Not a major difference. Yeah. 10, users. I don't know if it's making... Yeah.
+[TIMESTAMP] Speaker 014: You would be getting the users actually pretty quickly. This is RapidStart out of the box. Yeah. So you'd have the user access probably within 2 weeks after kickoff. Okay.
+[TIMESTAMP] Speaker 014: Okay. And then they would be able to do... Speaker 035 told me the most on that would be a 30 net for the... For just the first phase. So.
+[TIMESTAMP] Speaker 017: No longer the 16 net is no longer The 16 possible.
+[TIMESTAMP] Speaker 014: Net was based on the 2 phases to help you financially. There. Yeah. But you tell me what you want. So I can go back to them and say this is what they'd they'd like to to do. Do. So. If we get some sort of commitment from you guys, then I can go for the ask. Ask.
+[TIMESTAMP] Speaker 017: Yeah.
+[TIMESTAMP] Speaker 014: There's nothing off the table.
+[TIMESTAMP] Speaker 017: Yeah. Yeah, I met with the Head of Finance weekly. Yesterday. We have another meeting set up at 1030 today to talk through and see what we can move forward. With. But you're saying we've got to the 15th to take a call. I told them we didn't call today, but hopefully that helps. Helps on our side.
+[TIMESTAMP] Speaker 014: Well, if you're doing the full 60, know, we could push for the end of April. I'll ask for that and then my Speaker 035 will have to go back to [CRM_PLATFORM] just to get an extension. Yeah. Yeah. And sorry that we have to go through [CRM_PLATFORM].
+[TIMESTAMP] Speaker 014: But it's not the worst. It's not the worst case scenario, but you know, they're pretty flexible. They've always been really good. So yeah.
+[TIMESTAMP] Speaker 014: So what are your thoughts? What are you what is your best scenario in your minds? What have you talked about that you would like?
+[TIMESTAMP] Speaker 017: I mean for me the 10 down 5 users and say 3,000 doesn't mean think much for
+[TIMESTAMP] Speaker 014: So.
+[TIMESTAMP] Speaker 017: I'm thinking I'd be more comfortable with just the 150s commitment, but I guess it kind of makes a difference. A cash flow perspective. If it's net 30, then if we did the 2 phase, we're at net 60.
+[TIMESTAMP] Speaker 017: Yeah, I think those would be the 2 options we could talk to them about. Yeah,
+[TIMESTAMP] Speaker 014: So yeah, why don't you have your meeting with the finance team and find out what your options, What's control for you, guys? Let me know know. As soon as you have that meeting and then I'll go back to Speaker 035 and just tell them what you're comfortable with and see if we can make that work and move forward. Okay. Yeah. I want this to be as easy as possible for you guys. I'm rooting for you. I've worked for many startup companies and it's exciting and it's also challenging at the same.
+[TIMESTAMP] Speaker 014: Same time. Time, time. Especially when it comes to budgeting. But, the ROI, I can easily say the ROI will be in your benefit with quality within about 7 months, and in 9 months. You'll see a return on investment just based on efficiencies alone. Yeah.
+[TIMESTAMP] Speaker 014: So, anyways, is there anything else?
+[TIMESTAMP] Speaker 017: So sorry, on. I just wanted you to repeat. You said we get the users likely like 2 weeks into after implementation, like one to 2 weeks, right?
+[TIMESTAMP] Speaker 014: Well, it'll probably happen within 2 weeks after the kickoff call, maybe even sooner, because it is the box that we're setting you up. With. So I can verify how quickly you'll get them, but you should get them very quickly. Okay,
+[TIMESTAMP] Speaker 017: Yeah, I just wanted to confirm. I just don't think the 5 to 10 tables is making a big difference, right? Now. Yeah. I'd rather it would be better to have more users and stuff, if like, it's going to be rapid start and going to get [COUNTRY] online.
+[TIMESTAMP] Speaker 014: Correct, yeah. Like.
+[TIMESTAMP] Speaker 017: 13 users roughly. Yeah. Like this coming, if this gets through. Yeah. Okay. Okay.
+[TIMESTAMP] Speaker 014: Okay. Right, let's talk, you just want to email me, Speaker 255, today or tomorrow after your meeting?
+[TIMESTAMP] Speaker 017: Yeah, hopefully we can get back to you.
+[TIMESTAMP] Speaker 014: Okay. Yeah, and if there's still that option for the the 2 phase, let me know as well, and that still stands, of course.
+[TIMESTAMP] Speaker 017: Okay. Thank you. All right.
+[TIMESTAMP] Speaker 014: Thanks, both of you. Bye, Speaker 131. Bye, Speaker 255. Thank
+
+
+====================================================================================================
+Title: ABC Corp & Customer 12 Kickoff meeting
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 2370.3
+====================================================================================================
+[TIMESTAMP] Speaker 014: Hi, Speaker 255. Hi, Speaker 197. Hello.
+[TIMESTAMP] Speaker 197: Good afternoon.
+[TIMESTAMP] Speaker 014: Good morning. Oh, it's morning to you? Good morning. I'm still jealous of the people in the future. Your day's almost over. Chanel and I are our days are just getting started. In Pacific time zone? Pacific. Yeah, where are
+[TIMESTAMP] Speaker 197: You, Speaker 197? In [LOCATION].
+[TIMESTAMP] Speaker 014: Okay. Hi, my Philly.
+[TIMESTAMP] Speaker 189: Hi, everyone.
+[TIMESTAMP] Speaker 197: Hello. No.
+[TIMESTAMP] Speaker 014: Chanel is Speaker 083 and Speaker 131 coming. Yeah.
+[TIMESTAMP] Speaker 255: Everyone.
+[TIMESTAMP] Speaker 014: Oh, everyone's there?
+[TIMESTAMP] Speaker 255: Yeah, it's just the room. Sorry.
+[TIMESTAMP] Speaker 014: Oh, you don't have your Speaker 039 on, so I didn't know. Hey, everybody. Hi.
+[TIMESTAMP] Speaker 255: It's on my laptop at the moment. I'm trying to just invite the room from the... Okay. You said people. Is it because they only... Leave the meeting and then come back and make your audio. The room. Yeah, just do that. Oh, yeah? Get this Yeah. Meeting. It's a different... Okay. Me… We'll be right back. Okay, just a moment. No worries.
+[TIMESTAMP] Speaker 189: I'm trying to will good weather by wearing good weather clothing. I.
+[TIMESTAMP] Speaker 197: Think it's a good idea.
+[TIMESTAMP] Speaker 189: That's like, all right, maybe if I wear short sleeves, it'll actually be warm.
+[TIMESTAMP] Speaker 189: So far, I need, probably gonna return my sweater after this. Call. We let her in? All right, there. We
+[TIMESTAMP] Speaker 189: Customer 12 team. Are you there now?
+[TIMESTAMP] Speaker 255: I think it's like doing that for my
+[TIMESTAMP] Speaker 255: Sorry, it's the same thing.
+[TIMESTAMP] Speaker 255: Yeah, click that.
+[TIMESTAMP] Speaker 189: I'm just happy. It's just not [COUNTRY] that goes through this.
+[TIMESTAMP] Speaker 189: Click The speaker? This.
+[TIMESTAMP] Speaker 255: Sorry, what's that? Under, in their audio. Settings, it's only solved one of the issues, but at the very top… Oh, a new bar. Oh, you think it works? It almost hit the audio. I don't know. Speaker 165's trying to join directly from that. Yeah, I think that may be….
+[TIMESTAMP] Speaker 255: Yes. Yeah, I think I got you in.
+[TIMESTAMP] Speaker 014: There you are.
+[TIMESTAMP] Speaker 014: What's up, Team Customer 12? I did
+[TIMESTAMP] Speaker 188: It.
+[TIMESTAMP] Speaker 188: Sanctuary.
+[TIMESTAMP] Speaker 014: See why they're all smiling? Because they're in [LOCATION]. That's right. We understand, right?
+[TIMESTAMP] Speaker 189: It's
+[TIMESTAMP] Speaker 014: Not snowing.
+[TIMESTAMP] Speaker 014: And it's snowing here in a week.
+[TIMESTAMP] Speaker 014: Yeah, my filly's in Toronto, everyone. Everyone. So she's... Yeah, I just, just telling
+[TIMESTAMP] Speaker 189: You how you're getting sorted out, I'm wearing short sleeves because I'm trying to will good weather by doing like dressing it. For the good weather. But I've already had to reach my sweater. Twice. So don't be surprised if I go into stealth mode and I'm wearing a blanket. So.
+[TIMESTAMP] Speaker 014: And also, I apologize. And normally, normally, we get the kickoff call within about 2 weeks after an agreement. But I did, I was on vacation. I apologize.
+[TIMESTAMP] Speaker 188: Hmm. Was
+[TIMESTAMP] Speaker 189: Great.
+[TIMESTAMP] Speaker 014: So anyways, alright, so before we get started, let's do some quick introductions. Team Customer 12 and Speaker 255, why don't you get started and just go around the room and then we'll introduce ourselves and then I'll hand it over to my filly, who will get the kickoff started.
+[TIMESTAMP] Speaker 188: Sure. Hi, I'm Speaker 255. I've been talking to Speaker 014 for the past past few, months. Few weeks. I work in Quality Engineering here at Customer 12. Nice to meet you all.
+[TIMESTAMP] Speaker 188: Hi, I'm Speaker 083. I lead the data team here at Customer 12 and also do some of my team in cybersecurity.
+[TIMESTAMP] Speaker 188: Speaker 131, I manage manufacturing, here. And I have Simone, to learn I'm a data engineer here and I do a lot of the work with document.
+[TIMESTAMP] Speaker 014: Great. Thank you all. Speaker 197, why don't you start for [COUNTRY]?
+[TIMESTAMP] Speaker 189: So Speaker 014, we do have an intro.
+[TIMESTAMP] Speaker 014: Okay. I knew that. I was testing my team. They're very All right. Good.
+[TIMESTAMP] Speaker 189: Well, thank you. All for introducing yourselves. We might just I had a little bit of trouble hearing, sorry, the gentleman on the right. Can you repeat what your role is? Yes.
+[TIMESTAMP] Speaker 188: Yes. Speaker 131.
+[TIMESTAMP] Speaker 189: Speaker 131. And I didn't catch.
+[TIMESTAMP] Speaker 188: You. Speaker 034. I'm a senior manager on manufacturing. Right now, yeah, oversee a lot of the processes that would utilize document control and also quality.
+[TIMESTAMP] Speaker 189: Perfect. Thank you for repeating that. Yeah, I was.
+[TIMESTAMP] Speaker 188: I'm.
+[TIMESTAMP] Speaker 189: Not next to you, but I feel.
+[TIMESTAMP] Speaker 188: Like my body's still waking up. All.
+[TIMESTAMP] Speaker 189: Right, well, thank you all for introducing yourselves.
+[TIMESTAMP] Speaker 189: And we're really excited to be working with you. We will introduce ourselves in a minute. I'll just do a quick rundown of what to expect in today's kickoff call. So we'll now that we know who you are, we'll let [COUNTRY] let you know who we are and I'll walk through the start journey and we'll take a quick look at your SOW to make sure that we're all aligned and have the same information. And. Then we'll be giving you some action items that you can get going right away. And. Then we'll look at your proposed schedule of your upcoming activities in the program for the modules and all the next steps. So I'll get this started. Name is Maithili Vishwanathan, so again, it's Maithili, and I'm the Rapid Start Program Manager. And. So I oversee the program and the entire life cycle of it from your onboarding through to your training, through your go live and then maintenance mode. Because after you go. Live, we need to make sure everything's working. And then if you want to expand your usage of ABC Corp, we go through the cycle. Again. Again. So I make sure that all of that is a seamless journey for you. And part of this journey with you will be your project manager and your solutions consultant. So I'd like to pass it over to [PERSON], who is your project manager. [PERSON], can you introduce yourself, please?
+[TIMESTAMP] Speaker: Sharmathli, thank you. Hey guys, my name is Speaker 260. Speaker 191. I am Rabshar project. Manager. I will be working with you guys on this implementation. And I'll be your main point of contact for anything or everything you need for this project. Thank you.
+[TIMESTAMP] Speaker 189: Over to you, Speaker 197.
+[TIMESTAMP] Speaker 197: Yeah. Hi, everyone. I am Speaker 197 Tsanjasi. I'm Solution, Architect and Consultant and I will be helping you to implement ABC Corp and I'm looking forward to start.
+[TIMESTAMP] Speaker 189: Part of our little Rapid Start program and our small, but mighty team includes our training team who you will meet when you do your module training. And we are under the Customer Success Department and our Senior Vice President is Speaker 093 Murlieder. So I report to him. So we make sure that your journey is seamless. Beginning to no end, right? So. It's an ongoing if we look at the loop de loop life cycle, we're there for you. All right. So speaking. Of, we have this, what we call the rapid start journey. So. Right now, we're in step one over here. I changed. My mouse to be purple.
+[TIMESTAMP] Speaker 189: So it's actually visible. Again, willing the good flowers for of spring that have yet to arrive, purple. So what we'll, so we're, part of this kickoff is to share with you our proposal for the timeline and everything. We have training that we have on the calendar. That [PERSON] will share more with you when we get to that stage. We will create environments for you. Now as a [ORG] customer of ours, you will be getting an unlimited edition of [CRM_PLATFORM], which includes includes the a partial copy sandbox that we'll be calling the upgrade sandbox. So you get to see all the previews of upgrades and everything.
+[TIMESTAMP] Speaker 189: So we will manage and own that sandbox, but that's where all the patches, releases. All of that gets put in first so that you can play around look around. And then your training environment is actually a partial copy sandbox.
+[TIMESTAMP] Speaker 189: For those of you are in the [CRM_PLATFORM] world, that means that there can be data data in the in it. It won't be a standard developer sandbox that is empty with some bare bones so that you get the most out of your training. And then through your expert sessions with Speaker 197, when it's time for that. You, of course, will have developer sandboxes as part of your contract, which you can use as you need to. So we'll be sending all of that for you while you go in through your training training. And part of your training includes certification assessments.
+[TIMESTAMP] Speaker 189: And while that is happening, the environments will also be provisioned in a way so that when you start meeting with Speaker 197, she can walk you through everything. After your training, you have all this information. What do you do with this information? So Speaker 197 will guide you through all the setup and everything in that partial. Sandbox. So it's a pretty good reflection of what your production will be. And, if you have validation, and even if you don't, we have collateral available so that you can download because it's all out of the box. So the IQs, OQs, PQs available and we will share that with you.
+[TIMESTAMP] Speaker 189: So that in case someone ever asks, this is validated, you like download it and say, well, yes, it is. So all that is just a button click away for you once you're given access, which Speaker 260 will do.
+[TIMESTAMP] Speaker 189: Part of the journey with you is your end user training. So we have guides that are already available and Speaker 260 and Speaker 197 will show you how to download them. They're available as Word documents. So you don't have to reinvent the wheel because everything is set up out of the box. So you take what we're able to give you and then you can rebrand it, add a little bit of your color to it and any internal notes to it that you're not creating something from scratch. So I know a lot of times work instructions and end user guides sound like a beast that you really don't want to be tackling, but we've made it as easy as possible for you. And it has images and diagrams. And So that's why it's customer led and ABC Corp supported.
+[TIMESTAMP] Speaker 189: Because if you have other users at your company that you need to onboard, after you do your training, that empowers you to train them and they will have all these guides that you will have ready for them. When you are ready for your Go, Live, Speaker 197 will be working with you for like a readiness. Checklist. I would encourage you to have some of your internal action items as part part of that of so that it's all like there's ABC Corp checklists, but also internally, you're aligned that these are the actions you're going to take on your GoLive. Then. Once you're live, you unlock the access to our support team and you can submit support.
+[TIMESTAMP] Speaker 189: Tickets. And I will always be aware of what those are along with Speaker 260 and Speaker 197 so that if there's something we need to help you with after GoLive, we at least know what's going on. Then you go into what we call maintenance mode, right? So the going live and then continuing your journey. And what we do is we automatically patch your system. So we use that full copy sandbox as a preview. So we'll share the release, notes, say here's what's getting improved. Approved. And then we also do automatic upgrades.
+[TIMESTAMP] Speaker 189: So twice a year we have have a major release, we call it Summer, so this year's will be Summer 26 and then we have a minor release which will be called Summer, Winter 26. You'll be first in line to get the latest upgrades as well, you'll get a notification. So, we maintain your system, but we also help you maintain yourselves within the system so that you're using the system to its maximum capacity. So that is the wrap. Start journey. Does. Anyone have any questions? So far?
+[TIMESTAMP] Speaker 189: No.
+[TIMESTAMP] Speaker 189: And when we share this [PRESENTATION_SOFTWARE] with you know, you can snapshot this because this is how we will always work together. And when we do meet down the road again, I will always reference this because we also take your feedback. And you know, if there's there's something we need to add in our journey as a sub step. We're here to listen to you.
+[TIMESTAMP] Speaker 189: All right. Let's look at the fun stuff. The contracts I mean I couldn't make it prettier maybe I'll put a flower pot there for the next time. Contract.
+[TIMESTAMP] Speaker 188: Discussion. So.
+[TIMESTAMP] Speaker 189: To confirm, you've purchased our [PRODUCT_SUITE] suite of products, which includes ABC Corp AI. So it comes pre installed along with embedded analytics, which is a very powerful tool. And the modules in scope are currently documents, training, and change management.
+[TIMESTAMP] Speaker 189: That's what we have. Does that align to what you have?
+[TIMESTAMP] Speaker 188: Yes, that was the tree that we initially planned. Wanted to recall that's what we wanted to stay with. Yeah. Was. There, there was another one we were thinking about, right? The one that we were thinking about was like the equipment module, like the equipment one, rather than change management, possibly, but that was for the equipment too.
+[TIMESTAMP] Speaker 189: So the current scope that you have signed is for these 3. 3. So if there's interest in another module after we go live with these three, Speaker 014 can definitely work with you on that. Okay.
+[TIMESTAMP] Speaker 188: Okay. Yes, I think that works.
+[TIMESTAMP] Speaker 189: All right. So one thing that will happen after this call is we'll give you access to our customer. Portal. So it's accessible via a URL. If you go to our website, this will be unlocked for you so that you can see all the neat things. So right now you won't have access, but when Speaker 260 gives you this access, you can go to the Winner25, which is the version that you will be on. And. Then we have all these various help buttons. That will take you to the different documentation. So Speaker 260 will be walking you through this when you have your weekly stand ups with him. Him.
+[TIMESTAMP] Speaker 189: And this is where you'll have also the end user guides available that you can convert into Word documents and use for your internal purposes. All right. So part of our journey begins with having you do some work within the ABC Corp system in terms of reviewing. So one of the action items that we have for you is to look at the modules. You're implementing. I know that you had demos in the sales calls and things like that. But now that you're here we have a view for you to look at. So. You can select the 3 modules that you have and you can always come back to it.
+[TIMESTAMP] Speaker 189: Later. So just to make sure that it's almost like what to expect and when you're starting your training. Just as a reminder.
+[TIMESTAMP] Speaker 189: Thing that we need you to do is to actually get into [CRM_PLATFORM]. Now, ABC Corp is an app that sits within [CRM_PLATFORM] as a managed package. So the engine is and it's still still [CRM_PLATFORM]. So to make sure that [CRM_PLATFORM]. What that means, what that is, our amazing training team has put together a custom trail mix. So to make sure that, you know what that means, what that is, our amazing training team has put together. A custom trail mix mix. So in [CRM_PLATFORM], if you go, if you're from the [CRM_PLATFORM] world or if you don't know the [CRM_PLATFORM], world, they call everything a trail mix and all of that. So we have a ABC Corp trail mix for you, a beginner one and an admin level one. So this will also be shared with you and we would need you to complete these before you commence your
+[TIMESTAMP] Speaker 188: Module.
+[TIMESTAMP] Speaker 189: Training. They don't take too long, but they're very specific. Make sure that you are ready to use the system.
+[TIMESTAMP] Speaker 189: Great.
+[TIMESTAMP] Speaker 189: So now the fun stuff again, I guess. All of it's fun, the more detailed information. I'm going to pass this part over to [PERSON]. [PERSON], is your audio okay? He's having some challenges today as we all do with team.
+[TIMESTAMP] Speaker: Exactly. Do you hear me okay?
+[TIMESTAMP] Speaker 189: Yes, go ahead.
+[TIMESTAMP] Speaker: Alright. Alright. So I will cover the schedule and I'll try to go high level. So we have milestones and then certain tasks under those milestones. First one is initiation, which covers the kickoff which we have, right?
+[TIMESTAMP] Speaker: Now. Post kickoff, I'll be sending you the information, like the recording of this meeting, the presentation which we are showing you, access to the customer, portal. I mean, I'll be raising the access to the customer portal and I'll be informing you. You will be, all of you will be getting the email notification from our customer support team and they will, I mean, you just need to validate your email ID address. And then set the password. Also the trail mixes links, I will share those as well in the email so that you can review those before the training starts. The next is the execution phase, which involves training and being certified on those trainings.
+[TIMESTAMP] Speaker: And then we have the expert session set with Speaker 197. She's our solution architect and will invest time to identify the data set that you have to load in the sandbox.
+[TIMESTAMP] Speaker: These are the dates for the training, doc, train and change, May 12th till 14th for doc, for train, May 19th till 21th for change, June 2nd till 4th. So if everybody is aligned and is okay, then I will share the registration links afterwards for all these trainings.
+[TIMESTAMP] Speaker: By the way I just wanted to know that who are the 2 people will be getting certified for these trainings because we give certification for doc, train and change.
+[TIMESTAMP] Speaker 188: Would it be 2 or 3 people, I mean, I'm the other one, 3 admins. Just confirming, is it just 2 people who get certified?
+[TIMESTAMP] Speaker 189: Yeah, so the contract says 2 resources.
+[TIMESTAMP] Speaker 188: Okay, so then it would be me, Speaker 255, and then I guess Simone.
+[TIMESTAMP] Speaker 188: You wanted to continue having some management cardouts or documentation? Yeah, I wouldn't be like... Yeah, I wouldn't necessarily be overdone for the future forever. I'm not sure if I would have question. Just this one. Okay, I'm not speaking. Yeah, this is, yeah, so that would be Simone and me.
+[TIMESTAMP] Speaker 189: So, Chanel and Speaker 307?
+[TIMESTAMP] Speaker 188: Simone. Simone, sorry.
+[TIMESTAMP] Speaker 188: I do have one request. I think…so the trainings, these are going to be like active calls, the 19th, 20th, and 21st. Is that how it works?
+[TIMESTAMP] Speaker 189: So, Speaker 260, do you want to speak to how the training, the duration, the timing of each
+[TIMESTAMP] Speaker: Yeah these are like 3 days and per day there will be 3 hours of session for doc, train, and change.
+[TIMESTAMP] Speaker 188: Yeah, okay.
+[TIMESTAMP] Speaker 189: It's 3 hours a day to be certified.
+[TIMESTAMP] Speaker 188: It's 2 people getting paid without being. Oh, I have a request for the 21st. If we could change that specifically to any other date, like to 22nd or any... Oh, that's a Friday event. So this is the Thursday, 21st to Thursday. I think that daily. We already have a goal.
+[TIMESTAMP] Speaker 189: We'll have to look internally. So we have fixed schedules because they're not one on one, it's a group training. So we have this schedule. So right now, it's the 19th, 20th and 21st. And you're saying you can't do the 21st?
+[TIMESTAMP] Speaker 188: Yes, yes. I won't be able to do the 21st.
+[TIMESTAMP] Speaker 189: So only one of you can't do it or both of you?
+[TIMESTAMP] Speaker 188: I should be able to do it. Yeah, just one of [COUNTRY]. So if I will.
+[TIMESTAMP] Speaker 189: That's better, I mean, if one of you can still do the 21st, then we need to just figure out how to get Speaker 255 caught up and certified for the last session, right?
+[TIMESTAMP] Speaker 188: Yeah, I think that works. I think I can even try and do that offline or something. If anything, if that's better for everyone's schedule.
+[TIMESTAMP] Speaker 188: Okay.
+[TIMESTAMP] Speaker 189: Yeah, Speaker 260 can work with our training team to figure out an option, but as long as one of you is certified in that time, frame because the tests and everything happens on that third session. So, we can come up with something for you.
+[TIMESTAMP] Speaker 189: Thanks for letting [COUNTRY] know in advance. I actually appreciate it because the last thing we want is you to sign up and say, oh, I can't do this. So we'll figure this out now since we have time.
+[TIMESTAMP] Speaker: Thank you.
+[TIMESTAMP] Speaker: Right, All right. I'll continue. So the next part is Customer 12. Internal, Rollout, Go, Live, Preparation. So this involves developing curriculum for your users, your staff, so that you can train them. So you can utilize the material shared by the training team during your training. Training. Sessions. You will have the recordings, you will have the presentation, documents and everything. You can refer that and use that. Also, you will have access to the customer portal. We have end user.
+[TIMESTAMP] Speaker: Guides. You can take the SNP and prepare your material from the end user. Guides. So it has navigation paths and everything in detail. So once you have have access to the customer portal, you can explore and
+[TIMESTAMP] Speaker: Guide you further how you can take benefit of customer portal going forward. The next is the go live. I mean based on the plan?
+[TIMESTAMP] Speaker: This is what we foresee. And then there will be post go live, which has 2 There are 2 action items. [SUPPORT_PROGRAM] and then support and CSM. Handoff. So [SUPPORT_PROGRAM] is for 2 weeks. So once you are fully live in the system, we'll provide you 2 weeks of additional office hours or expert consulting hours. Sessions. So you can like let [COUNTRY] know if you need additional support. We'll provide you that support in the [SUPPORT_PROGRAM] duration. And then we hand off you as a for member of the system. Doc, train and change for these 3 modules to a dedicated customer success.
+[TIMESTAMP] Speaker: Manager. We'll educate. You, how you can create the tickets in case you need help afterwards, when you are live. If there is an issue. How, you can raise the ticket, how you can understand what is the criticality of the ticket and everything. We'll educate you on that. And dedicated customer success manager will be there with you, which will be me per the schedule that we see. And like, even after you go live, you face any issues you have any challenges. Your point of contact will be me. Feel free to reach out to me whenever you want I'll be there to support you.
+[TIMESTAMP] Speaker: Thank you.
+[TIMESTAMP] Speaker 188: Sorry, can I clarify, we had 3 admin seats, but then the training is for two, and so does that mean a third person would have admin access and need to be trained internally, but Simone and Chanel could train the third admin?
+[TIMESTAMP] Speaker 189: Yeah, so the training is 2 and then third admin can be trained internally and follow along with the materials. Materials. It's just certification is for 2 resources.
+[TIMESTAMP] Speaker 189: And we can also look at that internally. So Speaker 014, maybe we can connect on that as well. Because I believe you can have…sometimes. We do have a seat available for someone to observe, but not all the time because they do get full. But, you
+[TIMESTAMP] Speaker 014: Know, know, typically what Yeah, that's what I know, that you can observe. You just can't get certified.
+[TIMESTAMP] Speaker 188: Okay. Because that would be nice, I think, is to have another person observe, even if they don't get certified.
+[TIMESTAMP] Speaker 188: And this certification uses a ABC Corp branded certification?
+[TIMESTAMP] Speaker 189: Correct. So you need the certification to be able to use the system and unlock the expert sessions with Speaker 197.
+[TIMESTAMP] Speaker 189: Because it tests your knowledge of the fundamentals to make sure that you know, because if anything needs if there's something missed or you need additional support, it helps [COUNTRY] identify that right away so that you're not using a product that you're unsure of yet.
+[TIMESTAMP] Speaker 188: Okay. I just I feel like there's like a mismatch. Between them. Like if we're getting 3 admin seats is that normal to have the number of seats mismatch the number of?
+[TIMESTAMP] Speaker 189: Yes. So for, I'll give you an example. We have a customer that have 15 admin and 2 sat in the training for certification.
+[TIMESTAMP] Speaker 188: Okay. Got it. Okay.
+[TIMESTAMP] Speaker 188: Just confirming, we still want that to monitor, so [PERSON], or would you want [COUNTRY] to? Thank you. Someone that can also. Yeah. Just observe the class, okay. So then I, at least if it's for helping with expert sessions in the future. I mean yeah. I think it's really good for
+[TIMESTAMP] Speaker 189: And then all of you can attend the expert sessions. Okay. No limit. There's no limit on all 4 of you can attend the expect expert sessions, sessions. Right? So it adds any, closes. Any gaps there might
+[TIMESTAMP] Speaker 189: Okay. With the, speaking of the expert sessions, since there is a small gap, between you have the doc management and training. Management that information will be fresh. So we will unlock the expert sessions to you as soon as those 2 are completed so that you can work with Speaker 197 in a dynamic nature rather than waiting until all the training is done, so that you start using the system and start setting up doc training.
+[TIMESTAMP] Speaker 189: Because your admin training is one of the last ones. But we don't want you to have to, like one of the modules is necessary in order to do the admin training. Because when we do admin without the context is difficult. So we want to make sure that the expert sessions are available available to you. That's why it's set as a longer duration because it overlaps with the completion of training management and make sure that you have it for the span. And. Then when Trither meets with you for the weekly stand ups, which are 15 minute. Check ins where you go through all of this, he'll share more about the timeline and duration of those sessions. Like a certain number of hours and then we'll make sure that they're consumed in an appropriate way. So like once a week week to begin with because you were just getting out of training, but then at a certain point, we'll wrap it up to 2 times a week and even 3 if needed so that the system can be used sooner rather than later.
+[TIMESTAMP] Speaker 189: Right. So we'll fill in the times. We didn't have the times available yet from the training team, but they know that you are located located in on the Speaker 298, the coast. So we sometimes we have sessions that span a couple of time zones and sometimes they're 8 to 11:00 a.m, eastern. We would not offer that to you. [PERSON]'t
+[TIMESTAMP] Speaker 188: Worry. But.
+[TIMESTAMP] Speaker 189: These dates are correct. It's just we'll have to update the start time, which Speaker 260 will give you when he emails you.
+[TIMESTAMP] Speaker 188: Okay. Cool. It'll be the same thing. I think there's like a few time clashes, but I think one of [COUNTRY] would be able able to to make it. It's the same thing with the first few things. As we get the times kind of ready. We can send an email out with like a few of our time clashes.
+[TIMESTAMP] Speaker 189: So [PERSON] will work with you on that one on one to make sure. So the stand ups will begin as soon as possible. Right? So after this he'll reach out to you to schedule. That. So you're meeting with him once a week for 15. Minutes. Minutes. You can square all that away.
+[TIMESTAMP] Speaker 188: Yeah. OK, sounds good. Thank you.
+[TIMESTAMP] Speaker 189: So he'll, like you said, he'll be your point of contact. He'll make sure that we're in this together, right? So. If you look here, you have your portal Speaker 039. Look at the portal. Look at the Speaker 039 product tours. Complete the trailheads, which are individually called trail. Mixes. And. Then we'll create your environments. You'll have your stand up. Calls. You'll get your training and certification done, which we support you with. And in essence, you've kind of already identified who your system [CRM_PLATFORM]. Admins, are. There's the 3 of you, right? So we'll just [PERSON] will make sure that's documented.
+[TIMESTAMP] Speaker 189: And you'll have your expert sessions with Speaker 197 and then we'll do your production preparation, which is all anything that you need to do internally. And you'll see see here go live is a collaborative thing. So we're here with you. Sorry, this check mark should be on our side. My mistake. You are not creating. The environments. We are. I will fix that before this gets sent to you.
+[TIMESTAMP] Speaker 188: You're like, what do you mean? So?
+[TIMESTAMP] Speaker 189: We will work this together and we will grow your use of ABC Corp CFO. And help you throughout your journey. And our next step is to share all this collateral with you and update and make some corrections to the typos that we have. And Speaker 260 will be in touch with you regularly.
+[TIMESTAMP] Speaker 189: Any questions?
+[TIMESTAMP] Speaker 188: Here is regarding the links that are going to be sent out to give [COUNTRY]. Access. Access. I know we have a few admins, and I think we have eventually 4 process users. I know there are 4 of [COUNTRY] in the room, right? Now.
+[TIMESTAMP] Speaker 188: Would the links only be sent out to the admins, right? Now, or how does that look? Sorry.
+[TIMESTAMP] Speaker 189: So we can send it out. Go ahead, Speaker 260.
+[TIMESTAMP] Speaker: Are you talking about the customer portal access link?
+[TIMESTAMP] Speaker 188: Correct.
+[TIMESTAMP] Speaker: So you can share the list of users that you want me to add in the customer. Portal. I'll raise the [PROJECT_SYSTEM] ticket accordingly. If you do not have that list ready with you, right? Now, it's okay. I'll raise the ticket for the users which are there on this call.
+[TIMESTAMP] Speaker 188: Thank you. You're welcome. And once we started getting logged into [CRM_PLATFORM], [CRM_PLATFORM], do we have the ability to set up a single sign on or anything like that?
+[TIMESTAMP] Speaker 189: We'll get to that during the expert sessions, but yeah, we will give you access to the environment after a certain time. So in the training, you'll be using a Playorg. So we will, in terms of SSO, I'll have to review the scope, but you can set that up on your end. End We would just need to be able to know what that is.
+[TIMESTAMP] Speaker 189: Because when we're doing the installs and everything, after we do hand that to you and especially for GoLive, I would recommend putting that in place after because we have multiple team or individuals logging in as our, we have a, what we call a ABC Corp support user. It's an alias. So we can have that discussion. Speaker 197 would have that with you, but that would be at the time of the expert sessions. Because that's when the environment is officially given to you.
+[TIMESTAMP] Speaker 188: That's good.
+[TIMESTAMP] Speaker 188: Who's excited?
+[TIMESTAMP] Speaker 188: Yeah. Yes!?
+[TIMESTAMP] Speaker 014: Only one.
+[TIMESTAMP] Speaker 014: That's all we need. We only need one person on the team to be excited, right now. And it'll grow. Grow. I know. [PERSON]'t be overwhelmed. I've heard.
+[TIMESTAMP] Speaker 189: What Speaker 014 said. Repeat that, Speaker 014.
+[TIMESTAMP] Speaker 014: What's that?
+[TIMESTAMP] Speaker 189: I said maybe you need to repeat that question. Maybe we didn't hear you. Maybe. No, I think we did.
+[TIMESTAMP] Speaker 014: No, we're so excited to have you all on board. And I know, don't be overwhelmed. It's always it's like starting a new job, right? You're always a little nervous, but then after 2 to 3 weeks, it kind of you're gonna catch on to it. So give yourself a break. [PERSON]'t be hard on yourself and just take the journey one day at a time and you'll get there. And. You've got a great team on our side. Trust. Me, they're really good. They're also very responsive. I know that for a fact, my filly is probably the best. She's the most responsive person on this team. So. She's excellent. So, you've
+[TIMESTAMP] Speaker 189: You've got some. Thanks, Speaker 014. You.
+[TIMESTAMP] Speaker 014: Can send me the cookies later. Okay?
+[TIMESTAMP] Speaker 189: It's like the kind of thing where someone was in a meeting and they're like, oh, this person is really smart. Like you're just sending them off. What does that
+[TIMESTAMP] Speaker 014: Mean? Yeah, now you have to be
+[TIMESTAMP] Speaker 188: Responsive. Now.
+[TIMESTAMP] Speaker 014: You have to be, right? You can't wait 3 days to respond. Thank.
+[TIMESTAMP] Speaker 189: You. Thank you so much. Absolutely.
+[TIMESTAMP] Speaker 014: Throw her under the bus. It's been brought to you by Speaker 014. No, but do you have any other questions before we, sign go ahead? Off today?
+[TIMESTAMP] Speaker 188: No, I do very good.
+[TIMESTAMP] Speaker 014: Okay. Well, thank you. Again. And, Speaker 260 and MyPhilly will stay in touch. I'm always a contact if you have any questions or in the future you need any other products or users. I'm the guy you talk to on that. Even if you have any issues obviously go to your project management team first. But if there's any escalation, you're always welcome to reach out to me and I'll do everything I can to escalate whatever issue there is. So with that said, we're grateful to have you on board and thanks to our team as well for joining today and we'll talk to you all soon.
+[TIMESTAMP] Speaker 188: Thank you. Thank.
+[TIMESTAMP] Speaker 197: You, Thank you, everybody. Everyone. Thanks, everyone. Have a good one. Okay, bye bye. Bye bye.
+
+---
+Client resource profile: Migration-heavy project team.
+Client project resource guidance: Assume client resources are weighted toward data/file ownership: client PM, legacy data owner, migration verification lead, quality approver, IT/file repository owner, and process SMEs for sample-load review. ABC Corp should expect iterative data sign-off and clearly assigned owners for extract, mapping, cleansing, and production verification.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

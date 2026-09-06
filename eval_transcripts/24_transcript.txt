@@ -1,0 +1,912 @@
+# Customer 24 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 5
+
+
+====================================================================================================
+Title: QMS RapidStart Project Kickoff: ABC Corp & Customer 24
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 2371.84
+====================================================================================================
+[TIMESTAMP] Speaker 139: So
+[TIMESTAMP] Speaker 101: So when we hello have hello. Hi, everything Speaker 219 will welcome, be able to and
+[TIMESTAMP] Speaker 219: How's it's good? It going?
+[TIMESTAMP] Speaker 101: Pretty good. It's very cold here in [LOCATION] [LOCATION], but I'm not gonna complain because I know where you are might be a little bit colder.
+[TIMESTAMP] Speaker 219: I walked outside this morning. I was like, nope, turnaround.
+[TIMESTAMP] Speaker 101: I normally go for a morning, walk at 6:00 am and this is one of those days. I said not today. It dropped 30 degrees. It's not worth it overnight.
+[TIMESTAMP] Speaker 219: Yeah. I mean, that's the way I was talking to someone else. Got to love Texas. It's like you'll be up in your nineties and the next thing it'll be thirties the next day and then who knows and then you have snow. And then I mean, it's such a like a jack and system here. It's so weird.
+[TIMESTAMP] Speaker 101: Well, I think my colleague Speaker 139 can probably relate because she's in Texas also probably a different part. Yeah. Yeah.
+[TIMESTAMP] Speaker 139: Yes.
+[TIMESTAMP] Speaker 101: I'm sorry. Oh.
+[TIMESTAMP] Speaker 139: Sorry. We're in Texas [PERSON].
+[TIMESTAMP] Speaker 219: We're in the DFW area. We're Erin.
+[TIMESTAMP] Speaker 139: You're I'm San [PERSON]. So we're a year 35 rivalry for mark and Colby and for all that.
+[TIMESTAMP] Speaker 219: Stuff. All right. I lived in San [PERSON] for 3 years. I actually I did my doctor at university of Texas. So I lived in Austin for three, 4 years. And then I did they had this thing where you do rotations. And if you get your rotation in San [PERSON], you have to do your last 2 years there instead of one. So I ended up moving to San [PERSON]. It was eye opening to say the least.
+[TIMESTAMP] Speaker 139: It was different how long ago was that?
+[TIMESTAMP] Speaker 219: I moved to fort worth in 2,014 from San [PERSON] and then we moved to [PERSON] about
+[TIMESTAMP] Speaker 219: 5 years ago before we got married and then been here since
+[TIMESTAMP] Speaker 139: The since. Okay. And your whole team is in Dallas or in the earning area or is everybody spread out?
+[TIMESTAMP] Speaker 219: No. One pharmacy is in
+[TIMESTAMP] Speaker 219: It's called [LOCATION]. It's like a suburb of a [LOCATION] and then we have another pharmacy in [LOCATION]. And then of course, we have the one in [LOCATION] and the one in [LOCATION] as well.
+[TIMESTAMP] Speaker 139: Got it. Well, very nice to meet you.
+[TIMESTAMP] Speaker 219: Too.
+[TIMESTAMP] Speaker 101: And I see we have a couple of other folks that have joined [COUNTRY]. Vania, welcome. Hi, Speaker 244 is good to have you here.
+[TIMESTAMP] Speaker 119: Hello? Hello.
+[TIMESTAMP] Speaker 101: Are we waiting for [PERSON] or anyone else from the team to join and I believe [PERSON] [PERSON]? Yes, he did.
+[TIMESTAMP] Speaker 219: Let me text them both really quick. Okay. [PERSON] and
+[TIMESTAMP] Speaker 219: Your campaign.
+[TIMESTAMP] Speaker 219: The
+[TIMESTAMP] Speaker 219: All right. Just texting, both. Let's see.
+[TIMESTAMP] Speaker 101: Well, the 2 that are absolutely critical. Are you Speaker 219 and Speaker 241 who are gonna be the administrators of the system, but I'm glad to see that Vania is here. And I would love if [PERSON] can join and anyone else from the team that would like to kind of listen in to the official kick off today. So let me know when we can get started.
+[TIMESTAMP] Speaker 219: Like I said, I just texted him. Let's give just 2 more minutes and then if not, we can kind of move from there.
+[TIMESTAMP] Speaker 101: Absolutely.
+[TIMESTAMP] Speaker 139: So Speaker 219 while we're waiting, I'm gonna kill time by asking you with the latest news of the Dallas person getting hired by the matrix. Is that a good thing a bad thing? Did you see it? And it was like all over.
+[TIMESTAMP] Speaker 219: Yeah, it's a good thing. People want him gone ever since he traded Luca and then tried to justify it by saying oh, no, we're better off without him.
+[TIMESTAMP] Speaker 139: We're
+[TIMESTAMP] Speaker 219: We've proven that so far. Haven't we
+[TIMESTAMP] Speaker 139: Yeah. Yeah.
+[TIMESTAMP] Speaker 219: Not very smart. I mean, I don't know what he thought was gonna happen after that.
+[TIMESTAMP] Speaker 139: Yeah, that take everybody by surprise. Honestly, that was the strangest shakeup
+[TIMESTAMP] Speaker 139: But I mean
+[TIMESTAMP] Speaker 219: I have problems with that. I mean, same thing happened with Mica Speaker 209 and I don't know where like, we can't come to understand and we traded into Green Bay. It's like what the
+[TIMESTAMP] Speaker 139: That upset me more than anything. So I am a Dallas cowboys fan. So the more I'm not really
+[TIMESTAMP] Speaker 139: I got my win b and spurs over here, but Speaker 184 Speaker 209. Yes, that was very sad.
+[TIMESTAMP] Speaker 219: I went to a lot of spurs games and then lots of I would make it a habit of going to one map spurs game a year just because it was always a good game. But I went to um
+[TIMESTAMP] Speaker 219: To finals games when they played the heat the first time and then I was at the the clincher game which is amazing. Yeah. So
+[TIMESTAMP] Speaker 139: When a kickoff was Dallas and the spurs.
+[TIMESTAMP] Speaker 139: That would have been in Dallas, right? A couple of next year. Maybe we'll have to plan better. Yeah.
+[TIMESTAMP] Speaker 219: Yeah. It's just timing everything out as the problem.
+[TIMESTAMP] Speaker 139: Yeah, I know.
+[TIMESTAMP] Speaker 219: Speaker 119 just texted. She said she's wrapping up a an interview with a sterile compounding pharmacies. She said just give me a couple of minutes. So I guess she's she is planning on getting on. Okay.
+[TIMESTAMP] Speaker: And I texted [PERSON] as well, but not getting anything back. So
+[TIMESTAMP] Speaker 219: Yeah.
+[TIMESTAMP] Speaker 219: I haven't seen anything yet. He just got off of a meeting that I was on as well. I don't know if he got called into something else or not. But
+[TIMESTAMP] Speaker 139: We'll share the recording to let me record these calls so we can always share it afterwards and then if he can't be on the call today, he can go and watch the recording later and ask questions. Um
+[TIMESTAMP] Speaker 219: Yeah. Perfect. That makes it easier.
+[TIMESTAMP] Speaker 101: So maybe we could start with introductions, what do you think Speaker 139?
+[TIMESTAMP] Speaker 101: And that way we can give some time to Speaker 119 and or [PERSON] to join the call. But in the meantime, as you said, we are recording today's call and we'd be happy to share it that. Anything that was missed can be reviewed. I'll start the call off. I you know, I'm really excited to get to this point with Customer 24. And you know, part of the journey has been very quick in in evaluating ABC Corp and mostly because of [PERSON] prior experience with ABC Corp that empower pharmacy. That is kind of really led the way for your organization to adopt ABC Corp. So really excited to get you started in the rapid start program. I you know, going forward, I will still be your point of contact for all commercial related. It is items that you might need. And of course, I'm here to support you throughout the entire process. So feel free to reach out to me, but I'm going to hand it over to Speaker 139 known as Speaker 139 is going to head up the from the project management. Side, she's going to be your point of contact and she's going to run through the [PRESENTATION_SOFTWARE] presentation today.
+[TIMESTAMP] Speaker 101: So I'll hand it over to her and she has a process that she's gonna go through and allow everybody to introduce themselves. So with that Speaker 139 I'll just hand it over to you.
+[TIMESTAMP] Speaker 139: Okay. Thanks Speaker 101. But before we get started with me, can we meet Speaker 219 and Speaker 241 and Speaker 085. Officially, I know you generally in the area you told me, but you Speaker 219 are you my main point of contact or who? I don't know who's doing what?
+[TIMESTAMP] Speaker 219: Cara and I work in 2 different areas. I don't want to speak for Speaker 241. I believe, Speaker 241 you're pretty much out of the lab and we're in the pharmacy section. So it's 2 different areas. So I think we're both gonna be points of contact. Okay. If I'm wrong, Speaker 244, please. Correct me because I haven't been known to be wrong quite a few times.
+[TIMESTAMP] Speaker: No, I think that's correct. I'm not in the same state. So it'll probably be good to touch base with both of [COUNTRY]. I'll help implement and we'll give you some more specific info on the site where we're implementing it a
+[TIMESTAMP] Speaker 139: Very nice to meet you. And what and where are you? Sir what state are you in?
+[TIMESTAMP] Speaker: I'm in Colorado.
+[TIMESTAMP] Speaker 139: You're in Colorado. Okay. Then you're used to the cold all the time, maybe? I don't know.
+[TIMESTAMP] Speaker: Yeah. It's a little warmer than usual right now, but it definitely gets cold.
+[TIMESTAMP] Speaker 139: Okay. Well, very nice to meet you and via okay. Where tell me about you?
+[TIMESTAMP] Speaker: Hi. Yes. On the controller. Also in Colorado. So I work with Speaker 244 and I think I'm just kind of helping [PERSON] facilitate from a financial perspective. I know Customer 24 has gone through some transitions and he's plugging me in with the different pharmacies. So kind of a power user. But I think Speaker 244 and Speaker 219 are obviously the lead kind of behind the scenes and we're gonna probably duplicate this with axon in the next few weeks. So kind of just trying to help in any way. I can very nice to meet everybody.
+[TIMESTAMP] Speaker 139: Very nice to meet you. Thank you, Speaker 085. So my name is Speaker 139 ones and I am the project manager that will be helping you get implemented with. So I'm very excited to meet you. I'm gonna ask our team to introduce themselves as well. Speaker 312 do you want to go next?
+[TIMESTAMP] Speaker 312: Yeah. Hi, everybody. I'm Speaker 312 price. So I'm the upgrade manager. I'll be working with Speaker 260 to make sure that all of your um
+[TIMESTAMP] Speaker 312: Sorry, doing too many things. All your sand boxes are ready to go for your testing.
+[TIMESTAMP] Speaker 312: Excellent.
+[TIMESTAMP] Speaker 139: You refer.
+[TIMESTAMP] Speaker 139: Thank you, Speaker 139. Hey everyone. My name is trigger Speaker 241.
+[TIMESTAMP] Speaker: I am a project manager. I am working with Speaker 139 and Speaker 138 on rapid start projects. Like Speaker 312 said for this project I have limited role, I'll be responsible for creating the sandbox. And once that done be good to go to explore and add all the closed user groups in the sandbox over to Speaker 138. Thank you.
+[TIMESTAMP] Speaker: Oh, hi, everyone. This is Speaker 138 here. I'm also one of the project manager in the rapid start. So I'm working with Speaker 139 and ride and I'm very much.
+[TIMESTAMP] Speaker 215: New to the
+[TIMESTAMP] Speaker 139: Organization when I have a couple of products in my plate. So looking forward to working with you all.
+[TIMESTAMP] Speaker 139: Okay. Mohamed. Yeah, hi everyone. This is Speaker 186 had. I'm leading the testing, validation and automation.
+[TIMESTAMP] Speaker 186: So I'll be helping you to explain the validation process explaining the validation deliverables and see if you have any request with regards to that process. Thank you. Nice to meet you if you want.
+[TIMESTAMP] Speaker 186: Speaker 197
+[TIMESTAMP] Speaker 197: Oh, you're on. Mute.
+[TIMESTAMP] Speaker 197: Hello. I'm sorry. So I'm Speaker 197 at San Speaker 126. I will be working with you closely to implement this project and I also have implemented with empower. So I'm very aware I'm pharmacies from [REGION]. So I've been working with ABC Corp for 7 years and I will just help you. I'm looking forward to help and implement this project.
+[TIMESTAMP] Speaker 139: Thank you, Speaker 197. So this is our C team and we're gonna all be working together to make sure Customer 24 is implemented with everything that you guys are looking for. So we've already done introductions and now they'll just go into the scope here. So from the contract talking with Speaker 101 and looking at what you guys have. It looks like you purchased a cms subscription and we are going to do some validation for you. There's 5 modules that you signed up for. That's documents, training, change. Lab investigations and cap a management. 2 folks will be attending each training class and you also got 32 hours of technical and solution support as needed. Does that look right to you?
+[TIMESTAMP] Speaker 219: So yes.
+[TIMESTAMP] Speaker: Yeah. Guys request to the lab investigations.
+[TIMESTAMP] Speaker 139: Say that I'm sorry, I missed that question.
+[TIMESTAMP] Speaker: Has been Speaker 219? Did you guys request the lab investigations?
+[TIMESTAMP] Speaker 219: That might have been something [PERSON] requested. I can verify
+[TIMESTAMP] Speaker: That might have been a carry over from [COUNTRY] trying to implement it here at the laboratory. So we might want to double check with [PERSON] on the modules.
+[TIMESTAMP] Speaker 219: Yeah, we can definitely do that. Yeah. I think that was carried.
+[TIMESTAMP] Speaker: Over because we were ready to launch here. So if that's not needed for you guys Speaker 219, we should probably remove that.
+[TIMESTAMP] Speaker 101: Well that has already been invoiced and paid for. So it's something that you can push out whenever you're ready to take the class.
+[TIMESTAMP] Speaker 101: Now, you can also we can talk about swapping it out for maybe another of the modules, but we can kind of take that offline if you want and have that conversation. And I'm sure Speaker 139 is gonna review the schedule and when that's gonna be available. So starting with document training and changes, probably where you're gonna go first and then we can talk about the lab investigation what you want to do with that.
+[TIMESTAMP] Speaker 101: So let's definitely have that conversation.
+[TIMESTAMP] Speaker: We can look at it. Sounds good.
+[TIMESTAMP] Speaker 101: Okay. All right. Oh, there's [PERSON].
+[TIMESTAMP] Speaker 139: [PERSON]. Okay.
+[TIMESTAMP] Speaker 101: Hi, Speaker 119, welcome.
+[TIMESTAMP] Speaker 139: Hey, Joe. Okay. So here is our scope. We'll look at. The lab investigations AMA said if we need to push it out to later or we need to swap it for another module. I'm sure we can pick that without any real issues. So we'll continue going and we'll put that down as a follow up item for later, but aside from that, is any is there any other questions on the scope? Does it look right? Is there anything that I'm missing that we should include?
+[TIMESTAMP] Speaker 219: Looks good. We're concerned about the pharmacy and this documentation and training, obviously.
+[TIMESTAMP] Speaker 219: And cap.
+[TIMESTAMP] Speaker 139: Okay.
+[TIMESTAMP] Speaker 139: What we'll have others that we can share with you too. And if the lab investigations is something for a swap, there's several other modules that we can choose at the never time. But we will we'll continue the rapid start program is it's supposed to be fast. So one of the things is it's all out of the box configurations and configurations are needed. It's something that's after you've already been implemented with out of the box. Modules that we have here. I will be available for you. We will create the production in sandbox environments that's Speaker 312 and the you've met intend configurations during implementation, the customer portal. I will get you access to the customer portal and make sure you have that. There is some homework that we will go into a little further on the next slide. The hands on training workshops will be available. That's our training itself. And then after you've gone through the training, we will meet with Speaker 197 to go through office hours and make sure your implementation is set up the way that you guys are looking for it to be. So this pretty much what our rapid start is supposed to be click it's supposed to be fast, it's supposed to once you get through your training, we can get you going, do you have a specific date that you're looking for to be live by with these modules and to be using the system?
+[TIMESTAMP] Speaker 119: December 1st.
+[TIMESTAMP] Speaker 219: [ERP_SYSTEM].
+[TIMESTAMP] Speaker 139: December 1st. Like after Thanksgiving December 1st?
+[TIMESTAMP] Speaker 139: Yeah. This Thanksgiving.
+[TIMESTAMP] Speaker: Yeah, at least the training management model rolled out by then if I understand.
+[TIMESTAMP] Speaker 139: Okay.
+[TIMESTAMP] Speaker 119: Specifically for. The reason I say December 1st is when we're onboarding a bulk of our staff and right now, keeping track of the training is extremely tedious. So even if it's just the training part that we go live with
+[TIMESTAMP] Speaker 119: The December 1st, I'm thinking about all the other stuff. We can definitely manage through. But if we're able to do that training portion of it, just fantastic.
+[TIMESTAMP] Speaker 139: Okay. Training by December 1st. Let's. Okay. I need to go to the next. There's another slide in here with the project plan that has dates in there and I need to see when training is, but this is good. Good to know, but we'll keep going through so we're taking notes of what it is that I will need to follow up with you on after this. And we'll go through this presentation then. We'll talk after. So training. Okay. Good December 1st. Thank you.
+[TIMESTAMP] Speaker 139: Okay. Here is our escalation matrix. I'm Speaker 139 you can come to me with any issues, concerns, items, discussions that we want to talk about. If you need to escalate my boss. Jim, who is not on this holiday he's offer veterans day. He would be our next point of contact and I'm sure you'll be meeting him eventually, anyway. So he's he's good. If Jim is not able to help with what it is that's needed. Then we have our senior management VP, professional services, amit and then go is our senior leadership. He's a senior VP for customer success. So here's and I'll share this presentation with you after our call too, just so you'll have all this information, but here, in case you need it's our escalation matrix.
+[TIMESTAMP] Speaker 139: Customer portal. So this I mentioned on the other slide we'll get you access to this portal. And this is where the knowledge basis, this is if you need to open a ticket, if you need to see validation, this is like the beginning to everything. Once you get in here and have access, you can have them reviewing all the things that we have available to offer for you. I will get that set up for you'll get an e mail when the email comes in. It's important that you activate your access right away because it is time sensitive and it would delay things if it's not responded to timely. Homework mentioned these are the product tours. So once you have access to the customer portal, you can go here and see all the different modules and different offerings we have available for you guys. There is a password and again, I'll send an email with all this information for you. But the password will get you into the portal to these product tours and you can have fun in your spare time reviewing them and seeing what else could be beneficial for your company.
+[TIMESTAMP] Speaker 139: We also ask that you look at the trial [CRM_PLATFORM] trial, mixes. There's 2 different items here, but each of them have a lot of good information. So you're not familiar with [CRM_PLATFORM] or all that it has to offer. We do highly suggest that you go through these and just look at them just to get familiar with what's coming.
+[TIMESTAMP] Speaker 139: And then this is where the fun happens. This is our project timeline. It is a strong man hat. It is something that we try to follow as closely. This is where here today we're talking, but when you and I start meeting offline, we'll have more in depth conversation. The pm introduction. That's what we're doing now. Project kickoff is today also I will be reaching out to schedule some stand up meetings with you. We'll do these weekly, 15 minute calls. We do need to schedule your validation call with Speaker 186 and his team. So that way we can um
+[TIMESTAMP] Speaker 139: Are you able to see my slide? I can see my presentation, right? Please tell me you can. Okay. Yes.
+[TIMESTAMP] Speaker 139: Something here that said I'm sharing your slide. Sorry. Okay. So yes. This is our timeline. There is we'll set up the sandbox is actually we've already started that process. So we'll get some hours set up with Speaker 197 so she can come in here and kind of get that going for you guys. We do have this is a schedule we have at this moment and you can see that training is not scheduled until December 8th. I don't recall and maybe Speaker 055. You can look while we're online here, but is there a training starting this week or next week?
+[TIMESTAMP] Speaker 139: Will look well, we'll follow up on it, but this is a training schedule we have at this moment. And if you want to be live and using training by December 1st, I mean, the training at this moment has not available until December 8. So I will follow up and look and see what we can do about training sooner for the training management. But we do have change starting next week on the 17th if you're open to that and can attend it.
+[TIMESTAMP] Speaker 119: Yeah. I'm sorry. You mentioned [CRM_PLATFORM]. So is that part of the
+[TIMESTAMP] Speaker 119: Package as well.
+[TIMESTAMP] Speaker 101: ABC Corp is natively built on [CRM_PLATFORM], [CRM_PLATFORM] cloud platform that we're built on and what we're doing is stand up.
+[TIMESTAMP] Speaker 101: Okay. We're gonna stand up the platform and that's part of what Speaker 260 is doing. He is going to load the applications into the platform. So you're gonna have access to those modules, but of course, you need to implement them and you need to know how to use them. You need to know how to add users and that's what the training is gonna go for. And typically with with document training and change. Usually documents will go first because most of the training is based off of SOPs and work instructions, right? You need to have your documents set up before you move into the training management module. Now, of course we can restructure that for your timeline, but it's really gonna be a benefit if you take the training for document management first and then training management. But Speaker 139, you've been doing this longer. So I'll revert to you on that.
+[TIMESTAMP] Speaker 139: Yeah. I mean, we do like our customers to start with documents, but sometimes that's just not always an option. So if they want to start with training, if training or train management is we do do that. But really documents would be ideal and then change is. So yes, those are the 3 and as of right now, these are the dates we have. But we can we'll revisit that and look and see if there's something else if you want training to go first. Just not sure. Yeah.
+[TIMESTAMP] Speaker 119: I mean, configurations of [CRM_PLATFORM] [CRM_PLATFORM] is a pretty good system. That's what I'm used to. So I feel better overall about the I didn't know that so. Yeah, thank you.
+[TIMESTAMP] Speaker 101: And we are natively built. So if you've worked with any of the development tools creating any configurations or reports or views, things of that nature is gonna be the same look and feel
+[TIMESTAMP] Speaker: Is it important for the configuration phase of the training to have the documents in place? Or is that just kind of a typical
+[TIMESTAMP] Speaker: Structure you would follow?
+[TIMESTAMP] Speaker 101: So Speaker 244, let me just jump in real quick. Speaker 139 there there the migration of documents. If you have documents that need to be migrated, we'll show you that. We'll walk you through the CSV file how to get all of your metadata, but there are no actual configuration. So you're gonna go straight out of the box with the solution that we demonstrated.
+[TIMESTAMP] Speaker: Yeah. I remember you guys talking about. We can kind of Customer 24 the trainings to documents. And I know that will probably set up. But is it an issue if we go with training first, we might just go up go on the back end and do that linking if that's possible to do training before documents.
+[TIMESTAMP] Speaker 139: So Speaker 197 Speaker 197 will be Speaker 197 is your solutions consultant and she's amazing and I don't want to over speak. But she's the one that can help you with that setup.
+[TIMESTAMP] Speaker 139: When we get to office hours and so she'll be able to to help, is there anything you can add to that?
+[TIMESTAMP] Speaker 197: So do we need faster to have the sandbox?
+[TIMESTAMP] Speaker 197: To
+[TIMESTAMP] Speaker 197: To give access to the sandbox.
+[TIMESTAMP] Speaker 139: While we're talking about training right now for training because they want to be like a training by December 1st. So we need to see if we have training available to offer before December 1st. But the question is, yeah.
+[TIMESTAMP] Speaker 139: There's no configuration. So linking the documents, I mean, are they able to do that?
+[TIMESTAMP] Speaker 197: Linking in what are you mean? Like the document numbers or just migrating?
+[TIMESTAMP] Speaker 197: What do you mean? Like in
+[TIMESTAMP] Speaker 139: Speaker 241 that was saying that.
+[TIMESTAMP] Speaker: Yeah. So from what I understood from previous meetings the only connection, I know of between the documents model and the training model is that you might be able to associate documents with the training. So that's the only thing that came up in my mind as to why there might be an issue with doing training before documents.
+[TIMESTAMP] Speaker 197: So they go together Speaker 241 to answer your question, training cannot go without documents because you cannot train users. If you don't have documents. So they go together and I don't know how many documents you have, but we have to have first document in the system. So in order to add the training to them.
+[TIMESTAMP] Speaker: Okay. A requirement that we do documents for training.
+[TIMESTAMP] Speaker 197: Yeah. Both. They for me they are together if they go live together. So and I can help if you want to go faster, for example, I can help if you want Speaker 139, I'm willing to help maybe to train them also, but I don't know. So because the training will start in December 8th.
+[TIMESTAMP] Speaker 101: So
+[TIMESTAMP] Speaker 101: If I may ask Speaker 197 Speaker 197, can they set up training and just have the training records for the employees? Just set up the training records so that there's it's not attached to documents, but they can at least put their employees training, historical information and
+[TIMESTAMP] Speaker 197: No, without documents. We yeah. You cannot do that without having documents in the system because the training it's related to a document.
+[TIMESTAMP] Speaker 119: So we have the training document.
+[TIMESTAMP] Speaker 197: Yeah.
+[TIMESTAMP] Speaker 119: Yeah. The documentation for the training.
+[TIMESTAMP] Speaker 197: Yes. How many documents you have? May I ask you? Like
+[TIMESTAMP] Speaker 119: Um
+[TIMESTAMP] Speaker 119: Right. Now, just off the top of my head, maybe about 20 something overall, maybe a little bit more than
+[TIMESTAMP] Speaker 197: 20 something so it's not a lot, so it's perfect.
+[TIMESTAMP] Speaker 219: It'll. It'll increase once we do more.
+[TIMESTAMP] Speaker 197: To start
+[TIMESTAMP] Speaker 219: That's just for star once we start doing non star and grow.
+[TIMESTAMP] Speaker 197: Yeah. But it's a good start because 27 it's nothing like in ABC Corp. It's like you can upload documents. So instead of migrating to make it more complex, 20 seven, you can upload some of you can upload start uploading and I can help you just showing you how to upload and then add the training.
+[TIMESTAMP] Speaker 197: To the document.
+[TIMESTAMP] Speaker 197: So do you have any other training that is not referring to document or all your trainings are referring to document?
+[TIMESTAMP] Speaker 119: It probably refer to documents.
+[TIMESTAMP] Speaker 197: Okay. Good. Yeah, because in ABC Corp is the same so everything is connected.
+[TIMESTAMP] Speaker 197: So I just wanted to make sure. So if you want I can help you. So Speaker 139 this is just my help. I can help them if they need to go a little bit faster. So I can start maybe training a little bit early.
+[TIMESTAMP] Speaker 197: And focus on the up how to upload documents and to add training to them. So they can maybe go live with document training faster. This is my
+[TIMESTAMP] Speaker 139: I like it. I think if you guys are gonna be available later this week. Maybe Wednesday or Thursday afternoon we can meet with you because Speaker 197 has already started the sandbox for [COUNTRY] too. So we can get that sandbox set up with this group and then talk training documents to
+[TIMESTAMP] Speaker 197: Yeah, I can meet on Monday next week. So if you are available, yeah.
+[TIMESTAMP] Speaker 197: Monday, next week. Yeah. We can start a little bit faster than with training team. So this is just to help you get going and to make you live faster. Since you are yeah, ready for it, but also you need to work and to understand CT faster.
+[TIMESTAMP] Speaker 197: To be ready to go live.
+[TIMESTAMP] Speaker: Here.
+[TIMESTAMP] Speaker 139: Okay. So before we hang up and let everybody go, we can figure out Monday, schedule so that gives [COUNTRY] time to get you all the homework and get you set up with your customer portal and make sure you have all the things you need before we start meeting with Speaker 197. But yes, that's let's we'll get you on the fast track here. So this is the strong I had. Again, I'll update some dates on here and you have any questions on the slide?
+[TIMESTAMP] Speaker 139: Okay.
+[TIMESTAMP] Speaker 139: Oops.
+[TIMESTAMP] Speaker 139: All right. So meetings and cadences, this is we talked a little bit about it. So kickoff meeting that's today. We've met the team we're gonna wish everyone good luck. Because this is gonna be a lot of fun. Implementation is always fun. It's always a little hard, but we get through it together. So I'm excited to get it started. Validation meeting. We'll get that scheduled with Speaker 186 and his team. So that way we can go through that process with you and you guys are aware of what where to find everything and how to use it office hours. So that's where meeting with Speaker 197. That's gonna be considered office hours. That's where we'll talk. And she'll help you set up your functions, the way you want them to be in in the system and then the weekly stand up meeting. So those are just 15 minute meetings that I will meet with Speaker 219 and Speaker 241 and Speaker 119. If you want to be a part of it, you guys let me know who's part of our weekly stand ups. We'll pick a day and time that works and we'll just have it regularly. To get feedback, see what's working, not working. If you have something coming up that is gonna impact the rollout, then we need to know that too. So that's really what this is and this is our program.
+[TIMESTAMP] Speaker 219: You can please keep Speaker 119 on these communications as well.
+[TIMESTAMP] Speaker 139: Absolutely.
+[TIMESTAMP] Speaker 139: Thank
+[TIMESTAMP] Speaker 101: You
+[TIMESTAMP] Speaker 101: Anora has provided some times in the chat. I don't know if you want to cover that and see if while the team's availability maybe get let's get that scheduled.
+[TIMESTAMP] Speaker 139: Okay. So
+[TIMESTAMP] Speaker 139: Speaker 197 what you think in an hour from does any
+[TIMESTAMP] Speaker 139: Between 1 and 3:00 eastern time on Monday?
+[TIMESTAMP] Speaker 219: Central
+[TIMESTAMP] Speaker 197: It's 12:00 central.
+[TIMESTAMP] Speaker 139: Yeah. 12 to 2:00 central time.
+[TIMESTAMP] Speaker 219: To yeah. I don't know what does yours look like Speaker 241 and Speaker 119, I can do noon.
+[TIMESTAMP] Speaker 219: So
+[TIMESTAMP] Speaker 101: For the meetings with Speaker 197, that's just going to be Sarand Speaker 219. This is for the actual training. We'll keep Speaker 119 on communications whenever there's a group meeting. But typically, this is gonna be only for the 2 that are gonna go through this certification program.
+[TIMESTAMP] Speaker: That time works. Fine for me.
+[TIMESTAMP] Speaker 219: Sorry, what was that?
+[TIMESTAMP] Speaker: That time works.
+[TIMESTAMP] Speaker 219: Noon central, yeah.
+[TIMESTAMP] Speaker 219: Let's just do that then.
+[TIMESTAMP] Speaker 197: Okay. And if you have a document just maybe we can test any documents, word documents. You can provide me. You can maybe upload here or during the meeting, but I would like to have a word document and if you have a header and footer preference maybe you can provide me with that. So we can keep going
+[TIMESTAMP] Speaker 139: What send me what you want and when I send everything to the group, I will include that information that way. Okay. Yeah. So
+[TIMESTAMP] Speaker 197: At least we can be ready for Monday.
+[TIMESTAMP] Speaker 139: Absolutely.
+[TIMESTAMP] Speaker 101: And Speaker 244, [PERSON] Speaker 119 these meetings will be recorded. So you will be able to review those recordings and that way, [PERSON], you can take a look at it and there's any questions you can refer refer back to Speaker 219 or Speaker 241
+[TIMESTAMP] Speaker 101: Good.
+[TIMESTAMP] Speaker 139: It looks like a lot of good things are already happening. So I'm excited to get started with you guys. Do you all have any questions for [COUNTRY], for me?
+[TIMESTAMP] Speaker 219: Ready to get this started. It's definitely gonna make our lives a lot easier once we can.
+[TIMESTAMP] Speaker 219: Take it off of paper.
+[TIMESTAMP] Speaker 219: Absolutely be a lot happier.
+[TIMESTAMP] Speaker 197: Yes. Yeah, yeah. Very
+[TIMESTAMP] Speaker 101: Definitely. Your audits will go a lot smoother.
+[TIMESTAMP] Speaker 197: Exactly. Especially for quality team. It's gonna be very helpful. So yeah.
+[TIMESTAMP] Speaker 219: Yeah. It's gonna help since we're gonna try to do it across all the pharmacies. It's gonna be nice to be able to yes, run things separately, but also be able to run things together at the same time as well. We can have a streamlined overall compliance department.
+[TIMESTAMP] Speaker 101: And
+[TIMESTAMP] Speaker 197: Sorry.
+[TIMESTAMP] Speaker 101: I was gonna say I'll just echo what Speaker 139 I mentioned earlier regarding the trail mixes. These are [CRM_PLATFORM] trailhead trainings that are going to help you understand how [CRM_PLATFORM] works and really taking a look at that before you meet with Speaker 197 or before any of the classrooms is going to help you get a kind of leg up, right? To get a better understanding if you haven't worked with [CRM_PLATFORM] before. It will definitely reinforce the trainings. If you've already worked with it in the past then is just familiarize you a little bit more with it.
+[TIMESTAMP] Speaker 197: And I wanted to add one more thing since we were talking about the lab investigation and you might need and I don't know your processes, but and can cap in sec. They are very close. They work closely together. So maybe it's just you might think about if you want to add and instead of lab investigation, non confirm a
+[TIMESTAMP] Speaker 101: Good point. Thank you, Speaker 197. And Speaker 241 or Speaker 119 [PERSON] whoever. We can have that conversation. After you go through the the training of document training and change. If you want to swap those around move them around, take it at a later point we can have that discussion.
+[TIMESTAMP] Speaker 197: Okay. Then I will see you on Monday. Okay, bye. Bye team. Nice meeting you.
+[TIMESTAMP] Speaker 139: Thank you. Thanks, everybody.
+[TIMESTAMP] Speaker 139: I'll be sending you have a great day.
+[TIMESTAMP] Speaker 101: Thank you. Bye.
+
+
+====================================================================================================
+Title: Customer 24 - Office Hours - Go Live cont.
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1198.01
+====================================================================================================
+[TIMESTAMP] Speaker 139: So
+[TIMESTAMP] Speaker 139: Hi, everybody. Good morning.
+[TIMESTAMP] Speaker 119: Hello.
+[TIMESTAMP] Speaker 139: In
+[TIMESTAMP] Speaker 139: Morning, hello. Hello. I see a lot of new names that I do not recognize. So hi, everybody. I'm Speaker 139
+[TIMESTAMP] Speaker 139: And Speaker 197 is here with me. I'm Speaker 197.
+[TIMESTAMP] Speaker 139: We're gonna get you guys set up is Speaker 241 or Speaker 119 going to be on this call I see Speaker 219 here.
+[TIMESTAMP] Speaker 119: Yeah. [PERSON] and there are some other
+[TIMESTAMP] Speaker 119: Members, yes. Hi, good morning. My name is Speaker 044 Cruz and I'm the new senior.
+[TIMESTAMP] Speaker 139: Speaker 191 of quality. I just started last week. This is we number 2 for me. Oh, well, welcome. Thank you.
+[TIMESTAMP] Speaker 119: Nice to meet you. Nice meeting you.
+[TIMESTAMP] Speaker 160: And I'm [PERSON] and I'm the new senior director of technical operations. I've been here 2 weeks more than Bridseida.
+[TIMESTAMP] Speaker 119: We have some new members. Okay. Good. Good welcome, my name.
+[TIMESTAMP] Speaker 160: Is there based Speaker 298 I am the new director of operations and site leader for Customer 24 the
+[TIMESTAMP] Speaker 119: Dallas location. Okay. Nice. To meet you.
+[TIMESTAMP] Speaker 139: Even busy hiring everybody.
+[TIMESTAMP] Speaker 139: Busy.
+[TIMESTAMP] Speaker 119: Looks like it was a busy. Yeah, busy start of the year, but it's good.
+[TIMESTAMP] Speaker 139: You are exactly. Nice. Definitely easy.
+[TIMESTAMP] Speaker 160: Yeah, there. Exactly.
+[TIMESTAMP] Speaker 219: Thank for the help.
+[TIMESTAMP] Speaker 219: And
+[TIMESTAMP] Speaker 119: Also implementing is not gonna be easy, so it's good.
+[TIMESTAMP] Speaker 219: Yeah. We're I think we're just about there.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 139: I see Speaker 119 has joined and I'm not sure is Speaker 241 gonna be able to make it on today's call if you guys know.
+[TIMESTAMP] Speaker 139: Anybody
+[TIMESTAMP] Speaker 119: I'm not sure. I haven't heard from her. I was gonna reach out to her for something else this morning. I can reach out to her and see. But I think we can she'll probably when she gets a second, I can text her while the call is going on.
+[TIMESTAMP] Speaker 139: Okay. Good. Well then let me I'm gonna share this with you. Many of there she is. Let's see one of the discussions today was to talk and see how how fast we can be live in these modules. So with a bunch of new folks, I'm not sure what everybody knows or does not know when it comes to what we're doing here. So here is a straw man at this is what we shared at kickoff. Hey, Speaker 244, I see you joined. In here, I don't always do a great job of putting complete, but you can look at the 100% here. This basically is the timeline of what we're doing to make sure you guys are going live and to be where you want to be when ready. So we've done a lot of this already the kickoff and everything is something that I still need to do with you guys is schedule your validation call and your stand up meeting. Okay. These are things that Speaker 241 you and I you've talked about this, so we need to get this on the calendar soon. Um but when you come down here, we've already completed all the training. So now it's just a matter of completing office hours and making sure you guys are set up the way you want your production environment to be. And that's where Speaker 197 comes in. So I know Speaker 119 and Speaker 241 and Speaker 219. Prior to the holidays we were working on making you guys live in training if I recall. And that's where we were and then training continued and that's where we are at this point.
+[TIMESTAMP] Speaker 139: We haven't started phase 2 items. We're still up here with phase one. So with all that Speaker 197 at one time the question was how soon could they be live in documents, training and change? I said they could be live as quickly or as slowly as they want. And we would go from there. So with your expertise Speaker 197 and in doing this as often as you have what is your part in Speaker 241? If I'm saying something wrong, please jump in and correct me.
+[TIMESTAMP] Speaker 119: So it depends. How many? first it depends, I think Customer 24. They do not want to migrate documents. This is my understanding. So they want to start insecure adding documents, is that correct?
+[TIMESTAMP] Speaker: Yeah. I don't think we're gonna have too many so we can just upload the ones that we need right now.
+[TIMESTAMP] Speaker 119: Upload documents. Okay. It depends. How many documents and training you want to upload to SQL because giving you a permission to go in production for me. It's very easy. Because I can as soon as you are ready, I can give you the permission. So I can do just to go through some go live checklist to make sure everything is set up and I can give you access to production, but it's all about how much or how many data you have to put in ABC Corp and how long it's gonna take to put that data in ABC Corp in order you to start because going live. It's also using the system. So you have to have something to to start using it.
+[TIMESTAMP] Speaker 119: So we have some training documents and their corresponding so Speaker 241 I uploaded a bunch of SOPs into the shared drive that you made for the purposes of the go live in between the training documents and some of the SPs. I think on the initial count
+[TIMESTAMP] Speaker 119: Should be about maybe 20 thirty, maybe just a little bit more documents.
+[TIMESTAMP] Speaker 119: Yes. It's very, very small amount. Yeah. Yeah. It's not within a day. They can go and see you. Okay. This is a good news. So documents, it's good. But do you want to train people in those documents in again? Yes. Okay. Yes. And that it's easy because this is the easiest part. If you don't, don't need to migrate anything, then we can upload Speaker 241 or whoever. It's in document can upload the document and approve the document. And then after they are approved, you can change the date as an admin, you can change the date, putting the date, the existing date of the document and you can write in the description that this is just uploading in the new application. So it's just like showing that you are uploading. Then I can deactivate a rule that you can make some changes in the dates because you want maybe next review date and other dates to be updated. So
+[TIMESTAMP] Speaker 119: This you can do within one or 2 days. And then the system automatically will generate the training. So we have to create a job function and I can show you maybe how to create the job function and add the personnel to a job function. And then we can go live how I see it within one week to 2 weeks. We can go live
+[TIMESTAMP] Speaker 119: Okay. Yeah. Cool. That's great. Because and then as where
+[TIMESTAMP] Speaker 119: Creating and implementing new documents, we can just upload it based on the job function and the training and all that. Yeah. Yeah, I think document is very easy. We just give access and permission to people that are going to actually add the documents. And those users are going to upload the content of the document and assign approvals. So you can decide whether you want to create as a quality team, do you want to create approvals in advance? So the document owners, it's easy. They don't need to to worry because you have the step one to already created or do you want the owners document owners to put manually. It's going to approve the document. So this is another thing that we have to think about the approval metrics and then document number. It's important thing because um
+[TIMESTAMP] Speaker 119: Maybe you have the existing document number and in SQL we have like out of the box. It's based on the document category, for example, SPs as you mentioned. So it's gonna be SP, zero, zero, one, it's gonna start
+[TIMESTAMP] Speaker 119: So this is another thing document numbering. And it's gonna be the revision in ABC Corp. It 0 0 1. But if you 1 0 1 or just one, we can make that change. It's easy change. I can show you how to make, but today I would like maybe to discuss about go live checklist, which is gonna cover most of these things.
+[TIMESTAMP] Speaker 119: And then we can discuss about also uploading the documents. Probably you are familiar because you have been through the training and you mentioned I don't know one of you mentioned that you already started to upload some documents, SPs or you set in [DOCUMENT_SYSTEM]. Yeah. Copies of the
+[TIMESTAMP] Speaker: SPs that we need. It looks like real quick. A couple of things I see here on the documents are the header on the ones uploaded are a bit different than the header we set up review. Yes.
+[TIMESTAMP] Speaker 119: Yes. We did a few revisions on the templates since the last time we've been here. So I will upload the
+[TIMESTAMP] Speaker 119: The new template. I think I revised just Speaker 197 might need to
+[TIMESTAMP] Speaker: Update the yeah, header.
+[TIMESTAMP] Speaker 119: Yeah. I mean, when we give her access to everything she will. See the update. No, I don't know. Does Speaker 197 have access to the shared drive. The [DOCUMENT_SYSTEM]. No, I don't know. Okay.
+[TIMESTAMP] Speaker 119: I can do whatever you
+[TIMESTAMP] Speaker: Prefer if you want to have access to our [DOCUMENT_SYSTEM]. Yeah.
+[TIMESTAMP] Speaker 119: Just give me access and the Customer 24 if you can.
+[TIMESTAMP] Speaker: Okay. And then we I also don't see document IDs on these guys if you want to assign those
+[TIMESTAMP] Speaker 119: Speaker 119. Yeah, we will.
+[TIMESTAMP] Speaker 119: We will um
+[TIMESTAMP] Speaker 119: So let me um
+[TIMESTAMP] Speaker 119: For the document ID. Does because that's different from our version numbers, right? So
+[TIMESTAMP] Speaker 119: Yeah, document ID. I think you're referring to document number.
+[TIMESTAMP] Speaker 119: Yeah. My question is, do they have to have like
+[TIMESTAMP] Speaker 119: A number or just a title assigned to them. But does it have to be like, an actual number, like numeric?
+[TIMESTAMP] Speaker 119: I think that's usually it's so p 0 0 one, for example, start. Yeah, that's what I'm saying. So we have the version number. So I think we're saying the same thing. Okay. Yeah, version gets different version is different. Because the number of the document so you have the number what is the number? Yeah.
+[TIMESTAMP] Speaker 119: Like each one. So you don't have the document number. I don't see it. I see maybe use the auto numbering if you would prefer to. Yeah, yeah. We can probably just do it. Based in like in a bec order the one. Yeah. Okay. Okay. Yeah. It's just a random number. You can use, for example, as p 0 0 1 so it's just a random. It's not very important, especially since we have other important data like departments you can put or business division. You can put other data that are very important. So document number is gonna be just sequential how many SOPs for example, you have and it's you're gonna see how many based on the number
+[TIMESTAMP] Speaker 119: And the in the beginning you mentioned you didn't need a logo. So I saw the logo. So do you want to add the logo? Yes, in the head? Yes. If you can provide me with the logo, so I can add the logo and do you need I have just title document number, effective, date and revision. Do you need any other information like department that is important in the header?
+[TIMESTAMP] Speaker 119: Um
+[TIMESTAMP] Speaker 219: But like, topic these are our compounding SOPs, kind of keep them separated. Do you think we need that?
+[TIMESTAMP] Speaker 119: It would we would on the time what's because we're doing it by job function, right? So on the business division, I don't know, yeah. Business division versus business. Yeah. Yeah. It's all just says pharmacy.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 119: So we can make some changes. And I was having issues with my shared screen. So I'm gonna try today to use like, sharing screen and everything. But if I have issues again and I don't know where this issue is coming, but in team maybe we have to use [SOFTWARE_VENDOR] meet. But let me share my screen and hopefully it's gonna work. Let me know if you can see
+[TIMESTAMP] Speaker 219: This works, just blank.
+[TIMESTAMP] Speaker 119: It's just blank.
+[TIMESTAMP] Speaker 139: Yeah.
+[TIMESTAMP] Speaker 139: In order to the whole time you've been talking, you've been frozen we can see the blue square around showing it to you talking, but you're just frozen. Yeah.
+[TIMESTAMP] Speaker 119: And I don't know. My internet is good. So I don't know. I didn't even have time to check with the it because I have back to back meetings. Yeah, I didn't have time to. Yeah, to check what is going on, but I check my internet. It's good. So it looks like something is going on on my side, but [SOFTWARE_VENDOR] meet it's working. So if you don't mind, I can send you a Customer 24.
+[TIMESTAMP] Speaker 119: Maybe that works. Yeah, yeah. Sorry about that.
+[TIMESTAMP] Speaker 119: So here's the Customer 24
+[TIMESTAMP] Speaker 139: You pain in the chat?
+[TIMESTAMP] Speaker 119: Yeah, I think I did. Yeah, I got it. So
+[TIMESTAMP] Speaker 119: Is it opening or no?
+[TIMESTAMP] Speaker 139: I don't know.
+[TIMESTAMP] Speaker 119: Very weird just a moment. I will do it again. Now, meeting.
+[TIMESTAMP] Speaker 119: You just have to copy and paste it like a
+[TIMESTAMP] Speaker 119: [PERSON], yeah.
+[TIMESTAMP] Speaker 219: Yeah. I've got to open to
+[TIMESTAMP] Speaker 139: Yeah, I got it too. All right. Are we dropping off this call?
+[TIMESTAMP] Speaker 119: Yeah, I think so. So the second one I think guided me joining so. Okay. I see you in the sorry about that.
+[TIMESTAMP] Speaker 139: Thanks Joe. Okay.
+[TIMESTAMP] Speaker 139: Bye.
+
+
+====================================================================================================
+Title: Customer 24- Go Live related
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3157.77
+====================================================================================================
+[TIMESTAMP] Speaker 139: Everybody, how are you all today? Great? And you Speaker 139, sorry for about yesterday, we didn't have the meeting in our kind. Oh, I know.
+[TIMESTAMP] Speaker 139: My gosh. I watched this meeting, right? Did I have one of you did? No. We didn't have it. That's why I didn't even reply the email until the night because when I saw Brissita's email, I was like maybe she's talking about this meeting. But then when I looked at the emails, I was like, and I went back to my calendar, I was like, did I miss something? I went back to my emails, nothing. That is so strange because look, I mean I sent it here. I'll show you
+[TIMESTAMP] Speaker 139: You guys hey Speaker 197. So this was yesterday yesterday's meeting. So y'all did not get this is what you're telling me. No, no, that is so I mean these are your I have your emails I don't know. That is very strange. Yeah. Okay. We can one right. We can use this one. No, it's a separate.
+[TIMESTAMP] Speaker 139: Separate one because [PERSON], right? Yeah, [PERSON]. He didn't make it today, right? Yeah, well, he said he got validation. Today, you're going to do office hours, so Speaker 197's going to help you guys go live with training and get your SOPs. So they're signed. And so that's what today's meeting is. We'll have to reschedule. The validation meeting. I'm just not sure why. I can help a little bit in validation, but not
+[TIMESTAMP] Speaker 139: Not as much as Mohamed. Okay. And for the validation, we need Lissandra. So you need to ask for the validation, Lissandra. Overall. And ABC Corp. Yeah. It's a validation of the system. So it's more like yeah, it's a system. Okay.
+[TIMESTAMP] Speaker 139: For validation. Okay. So it's mostly, they are going to talk about IQs, OQs, PQs if you need to change something. So this kind of we have in the knowledge portal, we have a very detailed validation portal. So there are a lot of information and the person, like Mohamed, is going to show in details he's going to talk about that. Thank you.
+[TIMESTAMP] Speaker 139: Where to find the information to show that you have everything you need. So, I know, I had shared with you, Speaker 139, that Speaker 241 was kind of out of the loop temporarily, but she's going to be back next. Week. So I wonder if we can push the meeting with [PERSON] to next week when Speaker 241 starts, just because Bridseida and I, yes, will remain fully involved in the process, As far as that's definitely.
+[TIMESTAMP] Speaker 139: Dedicated person, it's still Speaker 241. It's still Speaker 241? Well, then let's wait until next. Week. We don't have to do it. This week. No, I'm fine with that. Because we need Speaker 241. You need Speaker 241. Okay. Well, then what I'll do is Monday, I'll send an email to the 3 of you asking when can we meet so we can get Muhammad's schedule. So, we'll work on that next week. Today we're going to work on training documents for Speaker 119. She's ready to get
+[TIMESTAMP] Speaker 139: Get it done in the system, not have to manually do it, so it's going to be a good thing. Let me start the recorder and then you guys can take over. One quick moment here, please. Okay, so you'll need to unmute yourselves when you're ready.
+[TIMESTAMP] Speaker 139: Right, you should be able to unmute yourselves and we can talk and get started here. Okay. So, as you know, I've been out of pocket for a couple of weeks here and we're playing catch up now. And so I don't recall if you guys have met with Speaker 197.
+[TIMESTAMP] Speaker 139: While I was out or not, but I know today's focus is going to be on training and getting that set up. So I know we did that a little bit earlier, I guess in December and some in January. So I'll let you guys take over from here. I. [PERSON]'t know if you want to share your screen, Speaker 119, or if Speaker 197, but you guys can. So we just want to look at training documents, right? Now.
+[TIMESTAMP] Speaker 139: Now. Okay. So I'm asking. Yeah, yeah. But you want to focus. Like to like what is your next step to go live with the training record? Training. Everything with training. I would prefer. If before we go live with those training, documents, we go live with the SOPs that are related to the training documents.
+[TIMESTAMP] Speaker 139: Documents. Yeah. That makes sense because you cannot go with training before having SOPs. So. What we need to do, it, I would recommend because I don't think you have a lot of SOPs. I don't know how much you have. Oh. We've been working on. It. We have significant number now. Okay good, good for you. So. Are you good in my grading documents? And
+[TIMESTAMP] Speaker 139: We can, because I want to make sure that, so my question is when I do the initial migration, is it, am I dropping it into the buckets for the different job. Groups? You know how each job group, or am I just migrating all the documents then I will now? Wow.
+[TIMESTAMP] Speaker 139: Documents. [PERSON]'t worry about because even though if you want to add the training step, what we can do when we have the documents, we can add in the job function, the documents required for training. So, it's easy in that way. And then you complete the training, but it's a step by step. You have to have first the document, you have to have the job function in the system, you have to have the personal assigned to the job.
+[TIMESTAMP] Speaker 139: A job function in order to have the documents, then that they need to be trained. It's a step by step process to do all this and then completing the training. So first you add before you activate your users, you add the training and then you complete the training requirement and then you activate the user. So they don't see the bunch of training in there. Because you want...
+[TIMESTAMP] Speaker 139: Sorry to cut you, Speaker 197. We were trying to do first. The core procedure. We don't have... We have the execution for operation procedure, but the procedure for doing change, control, document management in ABC Corp, we need to write those so people are trained to and they know how to complete training in ABC Corp. So, do you have something that we can use to create those?
+[TIMESTAMP] Speaker 139: Those as well? So the best, some customer I saw they are using the work instruction, but not in so details. So they use work instruction and user guides as an SOP, but end user guides, it's very detailed, so you don't need to use all of that, but you can export to Word and you can use a part of it. For example, I saw Ask Speaker 279 from Empower.
+[TIMESTAMP] Speaker 139: She was very good in doing this. I know. I work with her closely. Yeah. So ask her. She might help because I saw like she was using some information, not everything, but she was using some of the information and combining as an SOP to look like more like, yeah. And so Speaker 279, yeah, she was very good. So I think she will help. She left. Empower. Yeah. Oh, she left?
+[TIMESTAMP] Speaker 139: Left? So whoever is in her place, I think they have it. They have it in the system. But if you give me those libraries, I know what she did. I'm pretty sure I can do it. I. Just need to know where they are and then I can use those to create. So you need to the do you have access to the knowledge portal?
+[TIMESTAMP] Speaker 139: Yet. I know I have in the sandbox, right, but not to the portal. Okay, let me check. Maybe that. You know what, [PERSON]? I can get you access to the portal because you don't have access to it? Let me see. Okay. Speaker 119, you do, right? You have access to the portal. I was going to ask that because
+[TIMESTAMP] Speaker 139: Think the last meeting we had I was having trouble signing on to the because we're going to be using the active site. Not the sandbox right? Yeah so do you can you go to ABC Corp.com? Let's check your app. Speaker 197 I'm sorry. I just want to make sure I'm excited to get for [PERSON]. If we need to do it for Speaker 119 too. We can. If you want to share your screen so we can see what you're doing.
+[TIMESTAMP] Speaker 139: Can share my screen. Okay. All right. Yeah, Speaker 241, go to like, pull up another browser and go to ABC Corp.com. So we can see if you have access to the portal.
+[TIMESTAMP] Speaker 139: I'm trying to use one of the links. And then if you go up to the top, you see where it says support and contact. I mean that's how I do it. Speaker 197 may have a different way, right? There. Yeah, click on that. Yeah, this one. Yeah. Let me see. Okay, so put in your email. I don't recall if I gave you access or not,
+[TIMESTAMP] Speaker 139: Not because it's been a moment, but I think Speaker 119 should have access to this. And I did. But the last call where Speaker 241 was on it and Speaker 241 was able to log in I wasn't able to log in. But let's see and I also changed computers. So maybe I just need to reset my password.
+[TIMESTAMP] Speaker 139: Okay, let me reset my password and see. No. Okay, [PERSON], I'll put in a request for you. I don't recall, honestly, if I did for you or not. I think you were coming on board, right? When I was leaving. Yeah. And then I haven't been here, so let me put in a request for you. Yeah. Okay. And just heads up, when I put in the request, you're going to get an email from our support team as you can. Oh, okay.
+[TIMESTAMP] Speaker 139: Soon as you get that email, try to go in there and set it up because it is time sensitive and it will restrict your access. In my favorite, yeah. Yeah, okay. So I'm in now. Do you still want me to share my screen? No, if you got into the customer, portal, I'm okay with that. I, just wanted to make sure you had access. Okay. Okay, so I'll put in the request for it. Okay. Thank you, guys. Thank you.
+[TIMESTAMP] Speaker 139: You. Yeah, and when you get the access, then you can search for training. For example, for each module. We have a lot of information. And then you can type in end user guides. So there is where you can find more information. And you can ask also in Empower Someone, just to help you with one SOP, for example, for training or documents. So you can start with training and document first and then with others. And you can create a
+[TIMESTAMP] Speaker 139: Course, you can also create a [PRESENTATION_SOFTWARE] presentation, or you can use if you, oh, do you know what you can use? You can use the [PRESENTATION_SOFTWARE] presentation from the training. Team. Yeah. I think they provide, and you can simplify, because I think the training team is more complicated, they have a lot of slides. So you can simplify that. So you're saying it's under Knowledge Portal, right?
+[TIMESTAMP] Speaker 139: Portal, yeah, they have updated, it looks a little bit different. So, they have updated, but it's under implementation, go, did you click on something? End User Guides, yeah, it's good, here. So, End User Guides, so you can go in training or document version, the latest version.
+[TIMESTAMP] Speaker 139: Summer and Winter 2025. And it's going to show end user guides and you can export. I don't know if you can. Yeah, I think you cannot export, but I can export To give you a Word document. But Benuno, click on the Customer 24, end user, guide, this one?
+[TIMESTAMP] Speaker 139: Second one, Control Doc. It's all right. They are similar, template and Control Doc. So here, I can export it for you, the End User Guide, because I think, yeah, you can.
+[TIMESTAMP] Speaker 139: At my screen. It's scary. I have so many windows. Open. Yeah, good. So you have this now. Okay. So you can use, but this is very detailed. So you can simplify. Yes. Yes. But it's going to help you because it's, you don't need to write. Yep. And then you can upload in ABC Corp and make it current.
+[TIMESTAMP] Speaker 139: Current. So even if you want as a control document or as a course, you can use as a course. Because for training purposes, you are. So for the light users, even for the users that will be initiating documents and approving documents, I found previously that it's helpful to literally go through the process, screen record, and it's just easier.
+[TIMESTAMP] Speaker 139: That way versus having people go and yes, we'll still have like the word document, like we saw, but it's easier to screen record and have someone because I think when we were doing our ABC Corp training just seeing the process happen was easier than reading the information that they gave [COUNTRY]. Yeah, and you can do a classroom training and do that with a sharing screen.
+[TIMESTAMP] Speaker 139: So everybody can take their computer, for example, and sign in. You can give access to the ABC Corp Training. First. So I will suggest the main user to have access to ABC Corp Training instead of testing in production, something to make mistakes or something. So during the training, they can log in the ABC Corp Training environment and while you are training them and showing, so first they can read and understand the SOP, for example. And then they can log in the ABC Corp Training environment. And while you are training them and showing, so first they can read and understand the SOP, for example, and then
+[TIMESTAMP] Speaker 139: You can do a classroom when they can sit like on like, they can use the system and you can explain them in more detail. I think that is the best way. And if you need help from my side, I can be in the meeting just to help if you need a backup, like just if somebody is stuck, for example, getting error or something and I can help with the user.
+[TIMESTAMP] Speaker 139: Users. So just to make it easier, yeah, for you. I can help. So, and this way, I think it's going to be easier, but in the meantime, we can focus. So you, whoever is an admin, you can start uploading or migrating documents in production. So we can do the setup in production.
+[TIMESTAMP] Speaker 139: So we don't need to waste time. So somebody's working on the training, somebody's working on migrating documents, so at least we can move forward in that direction. Yeah, that's what we want on Speaker 241. And we want to wait for her because all the documents for [LOCATION] will give it to her and she was going to change it. To migrate or to make changes and then they can migrate. Yeah, [PERSON], I already started working on doing that. I think.
+[TIMESTAMP] Speaker 139: There were just a few that I have not made changes on because I didn't know that Speaker 241 was coming back until yesterday or something, Tuesday, something like that. Yeah, and another question she asked me, I forgot about the training. She had some questions, specific questions, Speaker 241 or you Speaker 119? Probably me. So, yeah, I know someone asked,
+[TIMESTAMP] Speaker 139: Specific question about training, but I just couldn't think about it. It was a training related, I remember. Yeah, so what it was But I was going is that... To focus on that today, yeah, if we can elaborate, yeah. Yeah, so I was asking if the training documents, whether it's in PDF or Word format, if they were able to for each person let's see.
+[TIMESTAMP] Speaker 139: I'm conducting a training for someone, like Markup online, those training, documents. Yes, and I think our conclusion was that it will be possible, we'll still need to print it. Out. We can still hit complete the same way we would read and acknowledge the SOPs, but as far as marking up the training documents for the different steps,
+[TIMESTAMP] Speaker 139: Person went through, you said we wouldn't be able to. Yeah, I remember now. Yeah, it was like you wanted something online to do. Like a checkbox. Like to hit a checkbox. Checkbox. Maybe can be done in secure forms, but that is a different module that we need to elaborate.
+[TIMESTAMP] Speaker 139: But in training and control document, no. Yeah, because you were saying we would have to pretty much reformat all the documents and I was like, yeah. Yeah, probably, yeah. But. Do you want to at least to start, I can do like a go live checklist to go through in production? Maybe to give I'm? Not sure if I gave you access to production. Let me check if someone from
+[TIMESTAMP] Speaker 139: From your, if you have access. So at least we can start from there by giving access to production. And then you can start updating picklist. For example, you would say that you can start updating some information in production while you are doing also other don't want to add, but at least to move forward fast.
+[TIMESTAMP] Speaker 139: Faster. So you already have, you see, Speaker 119 and Speaker 241 and yeah, so I gave you access. So you already have access in production. So production is this one. It doesn't say a ABC Corp Training. Sandbox. It's Customer 24 to my [CRM_PLATFORM]. Setup. So this is your production. When you see this, it's production. When you see a ABC Corp Training sandbox,
+[TIMESTAMP] Speaker 139: Is your sandbox. You see the difference? ABC Corp Training and the production, it doesn't say ABC Corp Training. In URL, you see the difference. So this is production. [PERSON]'t confuse this too. So production, it doesn't say anywhere sandbox or ABC Corp Training. So this is ABC Corp Training. Sandbox. It's very clear. So this is the sandbox.
+[TIMESTAMP] Speaker 139: Play around here, but in production, when you are in production, you have to make sure whatever and we can do. I have a go live checklist open here, so we can go through some steps. So at least to make sure that we are, this is a setup before going live. So I put here in progress, Customer 24. Pharmacy, like you are going to add other users, the licenses and stuff.
+[TIMESTAMP] Speaker 139: Stuff like that. So I think we added department and document. Categories. You see we are done with those. And you can check other things, but on the business unit I don't think you are going to add right now. You didn't mention. Approval, metrics. I don't know. I put an A, so it looks like you are not adding approval metrics, right?
+[TIMESTAMP] Speaker 139: Now. And the box can discuss, yeah. But what you can do, right? Now, you see a lot of things are done. So we can do like header and footer if you want. Today. Libraries are done. So header and footer and then I see here. Job function and personnel. You can start creating.
+[TIMESTAMP] Speaker 139: Because this is very important. So I don't know if you can start creating job function. If you already know or you need Speaker 241. So when she comes back, I don't know if you can start, but you can add job function. And even if you don't add it in production, you can add in ABC Corp Training and we can test over there. Yeah, we can add the job functions because I think we can add the job functions because I think we can add the job functions.
+[TIMESTAMP] Speaker 139: Think we were the ones that told Speaker 241 what the job functions were. But before we do all that, let's say, because I want to be sure when I'm, if I wanted to migrate a document, I don't, I migrated into the right place. But I thought before we even migrated any documents, we were going to make sure that it was formatted properly, because remember how we had to change,
+[TIMESTAMP] Speaker 139: Some of the formatting and the header? Yeah, but you can test 2 documents, for example, you can migrate 2 documents and you can just remove header and footer for 2 documents. So what you can do, you can test the migration and then I have to make sure the migration utility is installed. I'm not sure if we installed anything.
+[TIMESTAMP] Speaker 139: Anything. Let me check installed packages. What we have here. And in what version are you? 15 I think you are in version 1504. So we have 1504. Yeah you don't have the migration utility so we can work also on that.
+[TIMESTAMP] Speaker 139: Yeah, before we do migration, utility, I would like, so are you interested first to test migration or to give you, to do some go live setup in production? So what is your priority?
+[TIMESTAMP] Speaker 139: Do you want first to test migration in ABC Corp Training or do you want me to do like to update some of the setup in production for co life? Let's set up the set it up in ABC Corp Training? First. Migration? Yes, the migration first. And... So here.
+[TIMESTAMP] Speaker 139: Here I have a document that I can use. And the same thing, whatever I'm doing here. No, I don't know.
+[TIMESTAMP] Speaker 139: Does not look. You're like mine looks nothing like yours. Is that it? Yes. I know that feeling very well. So this is a document for is a package document migration utility. And since you are in version 15, this is the latest version. So I'm just going to what I'm going to do is this is just the package. It's like a package and this is the, again.
+[TIMESTAMP] Speaker 139: Download the zip file, but I think I have to have it. Let me if
+[TIMESTAMP] Speaker 139: You see it's asking me in ABC Corp Training. So I go and I choose that file. So this is how we install the document migration. So this is the
+[TIMESTAMP] Speaker 139: This file and And we can wait a few minutes until the status is succeed. So this is how we install the CCC for Document Migration Utility. And it's a package. So I don't need to do much, but if everything goes well, it's gonna show here.
+[TIMESTAMP] Speaker 139: Succeed means that it's installed. If it fails, like then I have to check why it's But at least I'm going to try to do this and then I can provide I am not sure if I provide you with the document migration steps and also with have.
+[TIMESTAMP] Speaker 139: Document migration. I provide you with this document. For example, you can put revision 1, revision, 1 here, SOP 001, SOP 002. This is the document number, this is the revision, this is the
+[TIMESTAMP] Speaker 139: Description. If you want to put the previous document number. This here in the description, you can put previous document, And the field name is description. And what you can do, you can search with both the previous document number and you can search with the new numbering system. This is the Department of
+[TIMESTAMP] Speaker 139: Department, you can put quality QA, quality assurance or any other department based on the SOP. Speaker 197, can you send me the Customer 24 for... Because it looks like I don't have the Customer 24 to the production per se, only to the sandbox for training. So... Could you just send it in the chat?
+[TIMESTAMP] Speaker 139: So you need the login, how to login? Oh, to try. Yeah, just to try. I want to make sure that I have Try login. A login. I know, I need the Customer 24. All I'm seeing is the training. The, Customer 24. This one? Oh, this one? Yes.
+[TIMESTAMP] Speaker 139: Yeah, but you can log in if the username and password. I know my username and password, but I need the Customer 24. Okay, okay. Yeah, yeah. Okay, let me send it Maybe it's gonna help you too. And. If you cannot then I can reset the because I don't think I've ever logged into the live.
+[TIMESTAMP] Speaker 139: Iteration, only the sandbox. Maybe, yeah. I think the first time when I created the users, you did, but maybe I'm wrong. I don't know.
+[TIMESTAMP] Speaker 139: As I was mentioning here, these are like some of the steps here. You don't need to change. These are like has to be the same exactly how they are here. So you leave it as they are for all control, document, control document, draft, control document release, because they aren't going to be like for all documents. And the status of the document, even though it's approved. And
+[TIMESTAMP] Speaker 139: And current first, you need to leave all for all current documents draft. And after we run the code, you can put import current. If it's the current document, if it's approved and all of this that I marked with yellow, you need to leave as they and you can start filling out before. Speaker 241 comes back to the
+[TIMESTAMP] Speaker 139: Back. For example, you can start filling out this sheet because it's going to be helpful. And then you will have the files from her and this sheet because this sheet is going to take some time to fill out because it's going to take some time because you have to put the date approved, effective, date, rolled, controlled, documents, and it's going to take time. So for that reason, I would suggest you can start working on this.
+[TIMESTAMP] Speaker 139: Sheet and then yeah. So I'm looking for so [CRM_PLATFORM] use specific date format. So and here it's the so you can use the date format that.
+[TIMESTAMP] Speaker 139: Based on the control document. And, if you don't have all the dates, you can put the same. Date. For example, issued and approved can be if you don't have all the dates. And here is the auto. If you want the automatically to convert to PDF, you leave it as auto. And for some documents, if you don't need to convert to PDF, you leave as disabled. This is CQPortrait. And this is important. Is that file name?
+[TIMESTAMP] Speaker 139: With extension. So extension is DOCX for example. So this is migration. And also we have some migration steps. I can provide you with some and if you already have experience, then you can test. And these are some steps.
+[TIMESTAMP] Speaker 139: Steps here that you can use and I can prepare if you want I can set up for you to test the migration. If you want. I can set up the ABC Corp train because there is some setup you need to do first. You need the first step we are doing, right? Now. Install, Document, Migration, Utility. Then it's Prepare. Excel, File. So you need to prepare for 5 documents.
+[TIMESTAMP] Speaker 139: Documents for testing. The, Excel file is this one. I can send it. Did I send it to you? I'm not sure if I send it Those documents. Did I? Yeah, and even if you sent it to [COUNTRY], Speaker 241, put it in her [DOCUMENT_SYSTEM] that we don't have access to anymore. Yeah. Okay, so you don't see it.
+[TIMESTAMP] Speaker 139: Filled out quite a bit of information. Unfortunately, that information is... Well, hopefully Speaker 241 is able to get it back. I think she can just work with our internal IT here to see. Because we filled out for the validation in Excel. We filled out quite a bit of information already. Or maybe it was for the GoLive checklist. Yeah, probably. Yes, maybe it's a good day.
+[TIMESTAMP] Speaker 139: You see this is installed means that succeeded means that it is installed. The package. So. Now, what we need to do that we need to follow some steps here. And I usually go step by step. First, let me make sure you have the right permission set in ABC Corp Training. So. Can we go back one just a little bit? So if I were
+[TIMESTAMP] Speaker 139: To install the documents. Migration tool, right? Now, I'm in production. Yes, I'm in production. Let me share my screen. You don't need to install. I can do it for you on the installation. Oh, Okay. So for the, yeah, I would say, I would
+[TIMESTAMP] Speaker 139: Will do, so what you need to do, you need to make sure the other steps, for example, the steps here, from here you start, from preparing the Excel, file, and even this, whatever I'm going to do, right? Now, it's just kind of training for you and you can do it in production. But I'm helping you with all of the steps.
+[TIMESTAMP] Speaker 139: Steps. So when you do the migration, it's going to be easy. You are going to just migrate and run this code. This is the code that makes migration from draft to current. So after all documents are migrated, you have to run this code and this code makes the document current. So, and I'm going to help you here in ABC Corp Training. So while doing, for example,
+[TIMESTAMP] Speaker 139: First thing is the permissions that you have to have the specific permission. So Speaker 119, are you going to try to do like the person you are the person that you're going to do? actual migration? I feel like which was Speaker 244. But not today, but who's going to do like Speaker 244 is going to do or you? Oh yeah, yeah. So it's gonna be, yeah, it's definitely gonna be Speaker 244 and I. Okay. So, okay.
+[TIMESTAMP] Speaker 139: I'm asking to give you permission. You should have specific permissions to do the migration. Not all the users can do the migration. So you have to have an ad in. So, yes, Speaker 241 and I, did you want permission to migrate documents in? Or I can do it for you. It's not like, it's up to you. You can add me and I can help.
+[TIMESTAMP] Speaker 139: Help, definitely. Yeah, if you need. My help, I can back. You up. Yeah. So I'm adding just the permission set and we have to remove this permission because some of them can cause some issues. So after you are done migration, we have to revert all this changes back because these are only for migration. Whatever I'm doing right? Now, it's just to help you migrate documents.
+[TIMESTAMP] Speaker 139: Documents. So for admin. It's you can have this permission, this is just the admin functionality, but batch user migration user and this you don't So I am just trying to see if everything Terminology and
+[TIMESTAMP] Speaker 139: This is the and I'm gonna give also to Just in case and whoever is uploading the file that person needs also to migrate documents. So needs to be the system will know or will see like, who is doing.
+[TIMESTAMP] Speaker 139: This is first is the migration and okay. The for her I think you are not the system admin. So you cannot do Brice Silda. You can help with other stuff, maybe to upload or to change some update some information in the spreadsheet, but not to do the actual Yeah.
+[TIMESTAMP] Speaker 139: Yeah, it doesn't let event So. Another thing is, it's the, so the first step is updating. The file, the CSV file, then is I'm going through the steps, the permission set and then it's the, object manager in the [PERSON] layout. So we need to make sure.
+[TIMESTAMP] Speaker 139: To change for the system admin, the [PERSON] layout. So for system administrator, we change the [PERSON] layout to document, migration [PERSON] layout. So instead of control document, it's a different [PERSON]. Layout. And now I come to the document migration [PERSON] layout.
+[TIMESTAMP] Speaker 139: Layout. And all the fields that you need to migrate, we need to have in this [PERSON] layout. So I need to make sure most of the fields that I included in CSV files are included. And ask me question if you need some explanation, what I'm doing right? Now. Is just a setup before actually testing.
+[TIMESTAMP] Speaker 139: Testing. So, Speaker 197, would it be helpful? For... Oh my. ...to maybe send you one test document to see when you... If you have uploaded, what it will look like? Yeah. Yeah. Okay.
+[TIMESTAMP] Speaker 139: What I'm doing, you see all the fields that are grayed out, so document number, so all the fields that I think they need to be here, we make sure that they are in [PERSON] migration. Layout. So we are not missing any fields. So do you need the next review date to migrate or no?
+[TIMESTAMP] Speaker 139: I come again and check the steps. So I added this permission set. I updated. The [PERSON] layout. I think I did just I need to deactivate this to validation rule. So this
+[TIMESTAMP] Speaker 139: These are some type of setup that needs to be done.
+[TIMESTAMP] Speaker 139: And it's So I'm just deactivating these 2 rules for migration. Okay. So this is the setup that needs to be done. So So any questions? Do you have any questions?
+[TIMESTAMP] Speaker 139: Think Speaker 119 stepped away for a moment, Speaker 197. Okay. Yeah, I think there was a call that I'm looking for in the chat. Now I don't see it. Okay, okay. It's all right. So we can wait for her. And then if she wants something else, I just want to check what we have in static.
+[TIMESTAMP] Speaker 139: All right, yeah, I think I saw, but now it, oh, here, yeah, it's in the chat. So yeah, she's got a call. So. This is, I was just going to ask if we are going to use this, thing. So, I.
+[TIMESTAMP] Speaker 139: I'm not sure if you're sharing your screen. I just I see all of that. I don't see anything. You don't see anything? I see you with Prishant's background. There you are. There it is. Yes.
+[TIMESTAMP] Speaker 139: Have a call in 15. Minutes. I'm on back to back calls. Today. Yeah, oh, my goodness. Yeah, me I'm just doing some setup. So while waiting.
+[TIMESTAMP] Speaker 139: So at least can pick up when they come back. And I'm going to check here in ABC Corp Training if we have changed something.
+[TIMESTAMP] Speaker 139: They don't want a watermark.
+[TIMESTAMP] Speaker 139: Updating
+[TIMESTAMP] Speaker 139: Speaker 197, I'm gonna do my connections to get the procedure. But as soon as I get the access also to the portal I can write them up. Hey, Britt, I did already...
+
+
+====================================================================================================
+Title: Customer 24 - Office Hours - Go Live cont.
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3464.68
+====================================================================================================
+[TIMESTAMP] Speaker 119: Hi Speaker 119, happy Monday.
+[TIMESTAMP] Speaker 119: Good morning.
+[TIMESTAMP] Speaker 139: How was your weekend?
+[TIMESTAMP] Speaker 119: It was good. Oh, Joy. Yours?
+[TIMESTAMP] Speaker 139: It was too fast.
+[TIMESTAMP] Speaker 119: It was. It really was.
+[TIMESTAMP] Speaker 139: It's not enough time to really get to do all the stuff I want to do, which is just pick up my house and wash and put
+[TIMESTAMP] Speaker 119: Things away. Yeah. That kind of thing.
+[TIMESTAMP] Speaker 139: Speaker 197 just sent [COUNTRY] a message that she's going to be on in just a little bit. I think she had another call right before our call.
+[TIMESTAMP] Speaker 119: Yeah, said she also couldn't join as well. So.
+[TIMESTAMP] Speaker 139: Okay. That's okay. I know you're the one that's working. All this and getting it going. So you're the one we need and it looks like hopefully you think things are going good and moving in the right direction for
+[TIMESTAMP] Speaker 119: You guys. Hmm. It is. And the sooner we can get, get this implemented the better because it's right now I'm having to compile all training documentation manually I'm doing it as we speak, because we need it for some of our insurance liability stuff and I'm like, oh my, it's a nightmare.
+[TIMESTAMP] Speaker 139: Yeah. Well, let's, well, I mean, what word are you looking for at this? Point? I know, Speaker 197's been working with you for the training, right? And. So I know you sent the [DOCUMENT_SYSTEM]. I don't recall if she was able to get in there. So let's, we'll stay focused on that and get you live as soon as possible. I mean, is there one other, what specifically do you need? Because? She can go into the system and give you access to production and get it going. Well,
+[TIMESTAMP] Speaker 119: The thing is, even when we go live, right, people will need time to go in and go and read and acknowledge all these things so that we can generate the reports electronically. So even if we go live, this minute, it wouldn't help with like what I'm compiling, right? Now. So, but that's fine. But at least next year, it wouldn't be like such a manual process as it is this year.
+[TIMESTAMP] Speaker 139: Absolutely. Yeah, you're right. You're right. Yeah, it's hard. There's so much to do. And. If you're the only person involved doing all of it or trying to get it done, it makes it more complicated for sure.
+[TIMESTAMP] Speaker 119: Hmm.
+[TIMESTAMP] Speaker 119: So will Speaker 197 be our primary as far as for the full document migration or is there like somebody else?
+[TIMESTAMP] Speaker 139: No, Speaker 197 is the solutions consultant that will help you for docs, training,
+[TIMESTAMP] Speaker 119: And anything
+[TIMESTAMP] Speaker 139: QMS, she'll be able to help with.
+[TIMESTAMP] Speaker 119: There she is. Hello, sorry about that. Hello, hello. How are you doing? Good girl. How's everyone today? It's Monday. I know. That's over half.
+[TIMESTAMP] Speaker 139: A day through Monday now, so that's
+[TIMESTAMP] Speaker 119: Promising. Yeah. Yeah. But hopefully. It's a nice week. Okay. Hopefully. It's a nice week.
+[TIMESTAMP] Speaker 139: It's cold here where I am. It is so cold. I was not expecting. I mean, they said it was coming. Coming, but I just because they say it's going to be nighty at noon and 35, 40 in the evening it doesn't always happen, but it happened last night. So.
+[TIMESTAMP] Speaker 119: It's cold. Yeah, I sure did. Here it got so cold that I felt like I had frostbites. I was like, what is going on? It was like almost in the 20s this morning.
+[TIMESTAMP] Speaker 139: Oh, okay. Where are you at again? Remind me.
+[TIMESTAMP] Speaker 119: We're in Dallas. Dallas is really cool. Cold. Well,
+[TIMESTAMP] Speaker 139: Yes. Well, we didn't get no, but it's still cold. And last night when the storm came, I mean, there was no rain. It was just gusts of wind. I mean, I can hear stuff flying all over the place. And the crazy thing, here, it's bulk pickup. This week. So everybody had all their stuff on the grass. My husband went to work this morning and he's like, the yard, the street, do not go out. There. It needs to be cleaned up because it was a mess just... Everywhere.
+[TIMESTAMP] Speaker 119: No, that's scary. I almost got blown away. Today physically blown away this morning.
+[TIMESTAMP] Speaker 139: I believe it. Speaker 197, you have no idea the gust of wind is crazy. And like where she is and where I am, I mean, there's like hours and hours in between, but it was
+[TIMESTAMP] Speaker 119: Just insane. Yeah, and I'm My.
+[TIMESTAMP] Speaker 197: Friend.
+[TIMESTAMP] Speaker 119: The wind was like, My husband had to hold me in place. I was literally being like, so we were downtown this morning. He was dropping me off. I guess we were in a wind tunnel, so it made it even worse. And he just started blowing me. Back. I started moving back.
+[TIMESTAMP] Speaker 197: Flori Pyke, Oh, my
+[TIMESTAMP] Speaker 139: Gosh. And I think that's a good reason when you're like, really going against
+[TIMESTAMP] Speaker 197: Them. I mean,
+[TIMESTAMP] Speaker 119: I knew I was small, but that was just so scary. I didn't realize how tiny time I was until that moment. I almost got blown away. This morning, ladies. Literally. Oh my.
+[TIMESTAMP] Speaker 139: Wow. You see, that is scary. That is scary because you don't want to be able, you want to be able to stand your ground and not be blown away.
+[TIMESTAMP] Speaker 119: I know. No. I was even holding on to my Roli laptop. Bag. It was moving both of [COUNTRY] away. And good thing. My husband didn't drive off yet. So he now held on to me. He now pushed me into the bus.
+[TIMESTAMP] Speaker 197: Oh my.
+[TIMESTAMP] Speaker 139: Good. Well, I'm glad he was there to help get you on.
+[TIMESTAMP] Speaker 119: The bus. It was so funny. It was the funniest thing. Everybody was laughing. It wasn't funny. I didn't think it was funny. I almost got blown away. Now I can laugh about it, but in that moment I was like, this is literally how I go. This is yours, how? It's literally gone.
+[TIMESTAMP] Speaker 139: A mini tornado picking you up and twirling you away.
+[TIMESTAMP] Speaker 119: Yeah. All
+[TIMESTAMP] Speaker 139: Right, I'm going to start the recording here and then we can get started. Let's see. All right, you'll have to unmute yourselves when you are ready.
+[TIMESTAMP] Speaker 139: All right, you should be good to
+[TIMESTAMP] Speaker 119: Go.
+[TIMESTAMP] Speaker 139: Speaker 197, we were talking before you came on and just focusing on training and docs and how soon we could
+[TIMESTAMP] Speaker 197: Be live. I think, let me check if I give Speaker 119 access.
+[TIMESTAMP] Speaker 139: I guess she gave you access.
+[TIMESTAMP] Speaker 119: To the, was it a [DOCUMENT_SYSTEM] or a folder with her documents in
+[TIMESTAMP] Speaker 139: There?
+[TIMESTAMP] Speaker 197: I think we were thinking, yeah, Speaker 119 has access, Speaker 241 and Bridseida has access to production.
+[TIMESTAMP] Speaker 119: Okay, yes, I have access to production. We all.
+[TIMESTAMP] Speaker 197: Have access. So did we, can you remind me if we test migrating. Are you thinking to migrate documents? So I think we also tested here. So the last time we had one issue, you. Remember that I told you like, check. If you can test again, your migration, if it's working or not. But we migrated those documents and maybe we can test. But there was an issue issue. With the file or file name or something.
+[TIMESTAMP] Speaker 119: Yeah, but I think we fixed it. We fixed it just before the last call. I've got to what was wrong with.
+[TIMESTAMP] Speaker 119: Oh, we didn't do the upload before.
+[TIMESTAMP] Speaker 197: Oh we didn't.
+[TIMESTAMP] Speaker 197: The thing. Yeah, I remember now. So the files were not there. And yeah. But. So what we can do, if you want to go live faster, so we can test in production, 5 documents, the same thing to do in production. If you want today or another day, but we can do start with 5 documents. Then after that, you can do the mass.
+[TIMESTAMP] Speaker 197: Application. Upload 100, 200 how much you have. But you have to work, Speaker 119, you have to work on this file. I cannot like, so you have to work on your documents to remove header and footer to include the cover, the [PERSON] numbering, and you have to fill out the sheet. You have to work on this to go live. So it's more on you like migration than on me.
+[TIMESTAMP] Speaker 119: Me. I see. So the header and footer has to be taken out of all the documents?
+[TIMESTAMP] Speaker 197: So yeah, let me show you what you need to do. If. You really want to go live. Fast, you need to work on 2 things. Let me share my screen. Yeah, or somebody can help. I don't know if somebody can help, maybe 2 or three, you can use somebody else. To help you can focus on the migration spreadsheet and somebody else can focus on removing header and footer. So this is the migration test, I think, or this is the import test. Let me see.
+[TIMESTAMP] Speaker 197: Is
+[TIMESTAMP] Speaker 197: The one we used. So you need to work on this spreadsheet. So this is important for you for production. Production. So you can create one with 5 documents, like this. And. Then you can create another one with hundreds of documents, but you have to start working on this. If you want to migrate. Documents. So if you have this spreadsheet, ready, then I can help. But without this spreadsheet, I cannot help much
+[TIMESTAMP] Speaker 197: Because you have to put like the files hmm. Have to be ready to move documents to production. So what I did with one of the client, so I helped her with 5 documents in testing and 5 documents in production, but now she's doing by herself. So you have to be able to understand the migration. So you can do it by yourself. This is the reason why I told you have to test it by yourself because you are going to do it by yourself. I can help you with five, but you have for example, example 700 or more. So that is what where it comes.
+[TIMESTAMP] Speaker 197: You have to be ready to do this. So do you have any question on this spreadsheet first? Do you have any question on this? Because this is important because No, I you
+[TIMESTAMP] Speaker 119: Are... Think I remember. Yeah. Everything. I think I remember. How to, yeah.
+[TIMESTAMP] Speaker 197: Okay, so do you have this spreadsheet? I? Just want to make sure you have handy. Can do.
+[TIMESTAMP] Speaker 119: You pulled it from the [DOCUMENT_SYSTEM], right? Okay, give me one second. Let me get to that [DOCUMENT_SYSTEM].
+[TIMESTAMP] Speaker 119: Where was it under? Was it under Customer 24?
+[TIMESTAMP] Speaker 119: Trying to find it. I mean the [DOCUMENT_SYSTEM], let's see. Why did I save it?
+[TIMESTAMP] Speaker 119: Is on the ABC Corp go live, right?
+[TIMESTAMP] Speaker 197: No. Can you share your screen?
+[TIMESTAMP] Speaker 119: Yeah.
+[TIMESTAMP] Speaker 197: Because I don't see the [DOCUMENT_SYSTEM].
+[TIMESTAMP] Speaker 119: Do I.
+[TIMESTAMP] Speaker 197: Have access to your [DOCUMENT_SYSTEM]?
+[TIMESTAMP] Speaker 119: I do. You do. I mean, this is the [DOCUMENT_SYSTEM]. Remember I gave you guys access to ABC Corp. Migration, documents. I believe I shared should it. Hmm.
+[TIMESTAMP] Speaker 119: Cause since this was
+[TIMESTAMP] Speaker 119: I was able to share it to you both, right? Cause Speaker 197, you said you were able to get it. Let's see if, um...
+[TIMESTAMP] Speaker 197: Because I cannot log in in your share.
+[TIMESTAMP] Speaker 119: Yeah, I know. I shared. It though. I shared it for external users. Let's see.
+[TIMESTAMP] Speaker 197: It's called [LOCATION], I think. This is where you invited me. [LOCATION].
+[TIMESTAMP] Speaker 197: Okay, yeah, I think you.
+[TIMESTAMP] Speaker 119: Have access? Yeah,
+[TIMESTAMP] Speaker 197: Yeah, I have access. So I have access to this. Folder. I think it's [LOCATION] something.
+[TIMESTAMP] Speaker 119: Quality Pharmacy, yeah.
+[TIMESTAMP] Speaker 197: Yeah. [LOCATION] Quality Pharmacy. Yeah.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 197: This is and GoLive. In GoLive, you have the migration training and the steps.
+[TIMESTAMP] Speaker 119: Where is the actual Excel document for the files?
+[TIMESTAMP] Speaker 119: I thought I saved it here. Yeah,
+[TIMESTAMP] Speaker 197: But the actual document is this one,
+[TIMESTAMP] Speaker 119: Go live, ABC Corp go live,
+[TIMESTAMP] Speaker 197: Customer 24 migration, ABC Corp train. There are 5 of them. I think you saved every time.
+[TIMESTAMP] Speaker 119: ABC Corp
+[TIMESTAMP] Speaker 197: Go Live. Linked pharmacy migration. So this is the...
+[TIMESTAMP] Speaker 119: Okay, I'm changing it to CQPE pharmacy migration.
+[TIMESTAMP] Speaker 197: Yeah, okay. So now you need to work on one, say, with 5 documents, and then the other one, maybe you start working on a 100 or 200 document.
+[TIMESTAMP] Speaker 197: Spreadsheet. Spreadsheet. Then this, do you see my screen or no? You're sharing. Let me share my screen. So your documents need to be on this format. And when you are ready we can just try in production. So the documents need to be like no header. And footer. Like. No, header, no, footer and [PERSON] numbering included in the This is exactly how they have.
+[TIMESTAMP] Speaker 197: Because we are going to use the header and footer from our… Okay.
+[TIMESTAMP] Speaker 119: So just take out the header. So right. Now, the [PERSON] number is the footer. So you're saying delete the footer instead? Incest?
+[TIMESTAMP] Speaker 197: No, no, leave the footer with [PERSON] numbering.
+[TIMESTAMP] Speaker 119: Okay. Yeah,
+[TIMESTAMP] Speaker 197: This is exactly how they look. Leave the footer.
+[TIMESTAMP] Speaker 119: And it has to be on that side?
+[TIMESTAMP] Speaker 197: No, you can put it in the middle. It doesn't matter. So in your case, probably you need just the header to
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 197: And leave the space for the header. So you can start 1.5 or something, because I think this is one inch. You can start here somewhere. So it doesn't overlap.
+[TIMESTAMP] Speaker 197: Okay. So this is what you need to do before going live. And you, somebody is going to help you probably because I don't think you're going to do it by yourself. But you can save your documents. You have to have also you have to decide because most of the clients they have documents in PDF. PDF. So I. [PERSON]'t know if you already have the documents in your content, like original content.
+[TIMESTAMP] Speaker 119: No, they are mostly in Word.
+[TIMESTAMP] Speaker 197: In Word? Okay, very good. So we need in Word.
+[TIMESTAMP] Speaker 197: Because the system is going to convert to PDF. So you don't need to worry about the PDF. Okay. So you need to have any word, that is good. Let's do the next meeting. Let's try in production. To upload. So. Right now. This meeting, I'm going to use time to check the go live checklist because I want to make sure we finish the go live checklist before starting migration. So I am going to just open this. Just check if we have completed everything just to make sure. So.
+[TIMESTAMP] Speaker 197: Alton numbers. Says that it has to be done by you. And in progress. Creating users, I don't know, you have to think also, if the document owners, you want to include document, owners, the real document owners in the here in the spreadsheet. Do you see the record owners? So. If you have to to have the users in the system, they don't need to be active, but they have to be in the system.
+[TIMESTAMP] Speaker 197: So you have to decide if you want to put your ownership yourself for now and later change, or do you want to put the real owner's name over there, record owner, while filling out this?
+[TIMESTAMP] Speaker 197: You know? Because.
+[TIMESTAMP] Speaker 119: The owner of
+[TIMESTAMP] Speaker 197: The document,
+[TIMESTAMP] Speaker 119: Who is
+[TIMESTAMP] Speaker 197: Owning the document.
+[TIMESTAMP] Speaker 119: Guess for now, I can just put myself.
+[TIMESTAMP] Speaker 197: Okay. So you can put yourself and then yeah, your name. And and then then you later, you can put yourself. Later can make changes. And how many documents can you remind me? How many documents, do you have?
+[TIMESTAMP] Speaker 119: I think just a little bit over 100. So if
+[TIMESTAMP] Speaker 197: You don't want to go Speaker 119 with migration, you can upload. Maybe it's easy for you to upload. Documents. So. You can let me know. Some customers... Sorry, what did you?
+[TIMESTAMP] Speaker 119: Say? I didn't understand what you said. So,
+[TIMESTAMP] Speaker 197: Okay. So the difference between migration and uploading, you have to do manually to add. Instead of using the migration tool, filling out the spreadsheet, you can go ahead in production and upload. Upload. Sometimes if you have 100 documents, it's faster to do that, to go and to add the document. For example, just let me show you. If it's SOP 10. So in ABC Corp, it's going to be SOP 10 because automatically it's going to show, but in your case, in your previous auto numbering, it's going to be ADM 20 or something. So there are 2 options. Since you don't have a lot of documents, you can also, and you told me that [LOCATION] is ready and you can say, okay, just an example, [LOCATION], SOP1, just an example. So you put the vision, you don't have this work. Site, [LOCATION] quality. You see, SOP. We select SOP. And here. You can put ADM, an example, or quality for ADM. SOP 0020. Just an example. This is the previous auto numbering, and the auto numbering?
+[TIMESTAMP] Speaker 197: It's going to show in ABC Corp starting from SOP 001. Now you upload the document as I mentioned with no header. So in your case, it's just no header.
+[TIMESTAMP] Speaker 197: And just send it for official a simple approval and somebody's going to approve. For example, one person is going to upload documents and send it to you for approval and you are just going to approve and make it current. So this way you can do 20 to 30 per day documents. Uploading. It's much faster than filling out the spreadsheet. I found out the users, which they don't know the migration or it's hard for you to understand. Migration. This goes faster. Within less than a week. You will have all your documents.
+[TIMESTAMP] Speaker 197: Yeah, I think.
+[TIMESTAMP] Speaker 119: I'll go for this one. Because you see how easy it just to upload.
+[TIMESTAMP] Speaker 197: The content you create and you write just a simple approval because you know, already it's approved. You are just approving in ABC Corp, you can write a comment approving in ABC Corp, that's it. Like you are kind of just, and you can change the date, the real date of the document after you approved and after you are done, you can change the date of the document. But it's so easy to clients. Create that are doing this are going faster than migration, to tell the truth. It's a much faster approach.
+[TIMESTAMP] Speaker 197: Because in order to understand the migration, it takes time. And this and that. And I can tell that you are busy. So sometimes this way looks like harder, but I'm telling you it's easier.
+[TIMESTAMP] Speaker 119: I see that it's easier because that's trying to even fill out out the Excel. The gaps in the gaps that are sheet is going to be a lot.
+[TIMESTAMP] Speaker 197: It's a lot. People think that it's not time consuming. It's time consuming. You have to check everything because it's going to fail if you don't check. So now here, you are like, okay, I am done. I can submit for approval. That's it.
+[TIMESTAMP] Speaker 197: So I would say if you go with this so I continue. Change the [PERSON] layout. Because right now [PERSON] layout is migration [PERSON] layout in ZitioTrain. And so I think this way maybe it's going to work better or faster for you.
+[TIMESTAMP] Speaker 197: You see when it's migration, So [PERSON] layout, it slows down.
+[TIMESTAMP] Speaker 197: Let me check the document that I just created.
+[TIMESTAMP] Speaker 197: Working so
+[TIMESTAMP] Speaker 197: I created a document or something.
+[TIMESTAMP] Speaker 197: Created a
+[TIMESTAMP] Speaker 197: And then yeah, this is uploading submitting for approval, somebody is approving and that's it. I would suggest. So once Speaker 244 or [PERSON] to create and upload documents, so they can send it to you for approval. So you are dealing just with the final check and approve. So you can train one of them to do this. So who is in charge of [LOCATION]?
+[TIMESTAMP] Speaker 119: I can probably designate someone over there and give them access. So this portion of uploading is, can you? Anybody can do. I know, I was just saying like if I can send them a screen recording of it will be easier to.
+[TIMESTAMP] Speaker 197: Yeah, if they, but I would like them to be in the meeting, at least in one meeting. Oh, it's so... Because they are going to do in production, so I
+[TIMESTAMP] Speaker 119: [PERSON]'t want to In. Production, do it. I see. Okay, I think we can... It's still
+[TIMESTAMP] Speaker 197: Easy, but yeah. Or you can train them. We have
+[TIMESTAMP] Speaker 119: Office hours tomorrow, right? So...
+[TIMESTAMP] Speaker 197: Do we have? I don't
+[TIMESTAMP] Speaker 119: Know.
+[TIMESTAMP] Speaker 139: I'm checking, let me see. Think it may be. Our stand up call. Yeah, stand up call, sorry. Yeah, it's a 15 minutes hour.
+[TIMESTAMP] Speaker 197: Yeah, this is our office hour. But. If you want to have another meeting, we can have Thursday. Yeah, because
+[TIMESTAMP] Speaker 119: Right. Now, because I'm missing the actual [LOCATION] meeting to be in. This call. So, I wouldn't be able to tell them to come to this one. So tomorrow, Speaker 197, do you have availability? Let me check.
+[TIMESTAMP] Speaker 197: Let me check if I have.
+[TIMESTAMP] Speaker 197: At 12? Yeah, are you meeting with Speaker 139 at 12?
+[TIMESTAMP] Speaker 197: Yes. So after Speaker 139, so maybe after you discuss or do you want to use that time for discussing?
+[TIMESTAMP] Speaker 119: Yeah, Speaker 139, if you don't mind, coming, use that time. Maybe extend the meeting to 30 minutes instead of 15.
+[TIMESTAMP] Speaker 139: Yeah, so let me do that because right now, Speaker 197, just so you know, it's 12:00 central time. So.
+[TIMESTAMP] Speaker 197: It's 11.
+[TIMESTAMP] Speaker 139: So it would be, you're an hour ahead of me. So I think it's 1:00 your time, right? 12:00 central. So it would be 1:00 o'clock your time.
+[TIMESTAMP] Speaker 197: One o'clock till 1.30.
+[TIMESTAMP] Speaker 139: Yeah. Can you do that?
+[TIMESTAMP] Speaker 197: Right now? Yes. Yeah. One to one thirty, yes.
+[TIMESTAMP] Speaker 139: I'm going to add you on here then as an invitee. I'm changing the time from 12 to 12.30 and I am going to remove where it says stand up and I'm going to put office hours.
+[TIMESTAMP] Speaker 119: And
+[TIMESTAMP] Speaker 139: That way, everyone will have this.
+[TIMESTAMP] Speaker 119: And, let's see. Could you invite...
+[TIMESTAMP] Speaker 119: Putting their email in here. No, no. Give me one sec.
+[TIMESTAMP] Speaker 119: This person also.
+[TIMESTAMP] Speaker 119: Let's see
+[TIMESTAMP] Speaker 119: Yeah. [PERSON] at.
+[TIMESTAMP] Speaker 139: Pacificcompounding.com.
+[TIMESTAMP] Speaker 119: Okay. Okay.
+[TIMESTAMP] Speaker 139: Okay.
+[TIMESTAMP] Speaker 139: She's gonna be like, who's this person sending me emails and invites?
+[TIMESTAMP] Speaker 119: I'll tell her.
+[TIMESTAMP] Speaker 139: Okay, great. Speaker 244 is still on this invite with her [SYSTEM]. Labs. I'm going to take her off. Any word on her yet? Nothing yet?
+[TIMESTAMP] Speaker 119: Oh, nothing yet.
+[TIMESTAMP] Speaker 139: Okay. Okay. Are we going to use this time to continue with episodes? Othasara's room. Is there anyone else to include on the invite?
+[TIMESTAMP] Speaker 119: I think that's it for now. The thing is if we're taking off the head down, it makes it significantly easier because a lot of those SOPs are applicable across all our pharmacies. So I just need to figure out who at LINC and who at the LINC, other 2 pharmacies can help with the upload.
+[TIMESTAMP] Speaker 119: So I guess my question too, is there a way as to where uploading is? Because right now it's per site. So So sometimes, okay, something like, I don't know, training documents, right? They are the same. When I say training, okay, let me pick one Hand Hygiene and Garving, SOP is the same throughout all the pharmacies. So, can we do one upload for all the pharmacies? Is there a way to, when I'm doing the upload, Speaker 197, to select all the locations?
+[TIMESTAMP] Speaker 197: Yeah, yeah, you can select the upload, the location No, I mean
+[TIMESTAMP] Speaker 119: Like for instead of one location at a time, can you do 4 locations at a time?
+[TIMESTAMP] Speaker 197: No.
+[TIMESTAMP] Speaker 119: Okay, okay.
+[TIMESTAMP] Speaker 197: One document for 4 location? No.
+[TIMESTAMP] Speaker 119: Okay, it has to be one at a time.
+[TIMESTAMP] Speaker 197: Okay. So are you using the same document in 4 location?
+[TIMESTAMP] Speaker 119: Yes.
+[TIMESTAMP] Speaker 197: So there are a few documents, not all of
+[TIMESTAMP] Speaker 119: Yeah, not all of them. But.
+[TIMESTAMP] Speaker 197: You can say, all location, create one pick list, all locations.
+[TIMESTAMP] Speaker 197: So those documents that are all location, you can say all location. You know what I mean? Yeah, when you go.
+[TIMESTAMP] Speaker 119: To select the site. Yeah.
+[TIMESTAMP] Speaker 197: Yeah, so do you want me to show?
+[TIMESTAMP] Speaker 119: Yes, please.
+[TIMESTAMP] Speaker 197: Yeah, so for example, let me go to the setup.
+[TIMESTAMP] Speaker 197: If you have SOPs or policies that belong to all locations, I think the best option would be, for example, you are using site, I think,
+[TIMESTAMP] Speaker 197: You see how you have [TRAINING_SYSTEM], you have a [LOCATION] Customer 24, so one of your sites can be all locations, what I'm thinking, and your site can be all. Locations.
+[TIMESTAMP] Speaker 197: Like this. And we can remove this just. Or you can put Customer 24, [LOCATION] and others. You can also name it.
+[TIMESTAMP] Speaker 119: If you want.
+[TIMESTAMP] Speaker 197: But when you create the documents that belongs to all locations, you are selecting the site or location.
+[TIMESTAMP] Speaker 197: Does it make sense?
+[TIMESTAMP] Speaker 119: So all locations, how will it know to put in, so it will put it in each location for sure? Or, oh, so you mean when the people need to access it, they need to go under all locations?
+[TIMESTAMP] Speaker 197: We can create the site or location site. Or you don't like that?
+[TIMESTAMP] Speaker 119: Because then there'll be confusion. People will say they can't find documents. That's fine. We can upload it one site at a time.
+[TIMESTAMP] Speaker 197: Yeah, one site at a time. Yeah, I think that is the best if you don't agree with all
+[TIMESTAMP] Speaker 119: Yeah. So I know this is, you said you are going to change how it appears in production so that it would be easier to upload the layout you said.
+[TIMESTAMP] Speaker 197: So just to remove the header before uploading, you have to tell the users to remove the header.
+[TIMESTAMP] Speaker 119: No, no. You said in ABC Corp. You were going to adjust the layout of something. Something to make it easier for upload in production. Oh yeah,
+[TIMESTAMP] Speaker 197: I changed. In production, it's already good.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 197: So what we can do in production, this is your production, so you can create a user for the new user, but first I will create in ABC Corp Training because I don't want, she's not trained yet, so she has to upload documents here.
+[TIMESTAMP] Speaker 119: Okay. Okay. So,
+[TIMESTAMP] Speaker 197: Let's create, give me the username, or you can create because you are an admin. Do how to create a user?
+[TIMESTAMP] Speaker 119: I don't think I've done that.
+[TIMESTAMP] Speaker 197: You can, what you need is just, because you are going to create users, so you need to learn how to create users. Users. So you need first name, last name, and you need the email.
+[TIMESTAMP] Speaker 119: Email,
+[TIMESTAMP] Speaker 197: Her email, and username is going to be .[TRAINING_SYSTEM]. Like for example this is the email and you are going to use .[TRAINING_SYSTEM]. And then here you're going to
+[TIMESTAMP] Speaker 197: Select the platform, platform user, and then that's it. You get permission set, so I can help you with that. But. Do you want to try to create a user while I'm here?
+[TIMESTAMP] Speaker 119: Yes, let me log in. In.
+[TIMESTAMP] Speaker 197: Okay, yeah, try.
+[TIMESTAMP] Speaker 119: It seems like for some reason, my password will work for ABC Corp Training, it will work one week and then I have to change it like the next next week. Week.
+[TIMESTAMP] Speaker 119: Do why?
+[TIMESTAMP] Speaker 197: No, you have to ask your ITs because I think it's internally.
+[TIMESTAMP] Speaker 119: Oh, okay.
+[TIMESTAMP] Speaker 197: Because, they have some policies or something that they make you, but do you have access to ABC Corp Training? Or you just need to... I mean...
+[TIMESTAMP] Speaker 197: Hmm.
+[TIMESTAMP] Speaker 119: So I have access to production, but it looks like I need to reset my username for, I mean my password for ABC Corp Training.
+[TIMESTAMP] Speaker 197: You need a password? Path? So do you want me to...
+[TIMESTAMP] Speaker 119: Let me see. So the username for ABC Corp Training, it has ABC Corp Training at the end, right?
+[TIMESTAMP] Speaker 197: Yes.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 119: I said it sends me an email to reset my password, but I don't see any email yet.
+[TIMESTAMP] Speaker 197: Okay, let me reset and check.
+[TIMESTAMP] Speaker 197: Your email now?
+[TIMESTAMP] Speaker 119: Yeah. Go.
+[TIMESTAMP] Speaker 119: I think I may be in production, not ABC Corp Training.
+[TIMESTAMP] Speaker 119: Think I'm in the sandbox.
+[TIMESTAMP] Speaker 119: Can I share my screen with you?
+[TIMESTAMP] Speaker 197: Yes, of course.
+[TIMESTAMP] Speaker 119: This is... Am I in production or ABC Corp Training?
+[TIMESTAMP] Speaker 197: You are in production.
+[TIMESTAMP] Speaker 119: Yeah, I'm in production. How do I... Can I get to ABC Corp Training from here?
+[TIMESTAMP] Speaker 197: Yeah, go to the setup.
+[TIMESTAMP] Speaker 119: This one...
+[TIMESTAMP] Speaker 119: I don't know why, for some reason, my, um...
+[TIMESTAMP] Speaker 119: I was trying to add [PERSON] under ABC Corp Admin.
+[TIMESTAMP] Speaker 197: No, you cannot add. Go to the setup. Not ABC Corp Admin, setup.
+[TIMESTAMP] Speaker 119: Setup?
+[TIMESTAMP] Speaker 119: Yeah. Go
+[TIMESTAMP] Speaker 197: To the sandbox. Quick, no, quick find. Do you want to log in in the sandbox? Sandbox? And Thank you.
+[TIMESTAMP] Speaker 197: Then log in in your what I just sent you an email, you can log in also or is that
+[TIMESTAMP] Speaker 119: What I just did this I'm confused?
+[TIMESTAMP] Speaker 119: I see. I think it resets both the actual production and this is for the... Okay.
+[TIMESTAMP] Speaker 119: So can I modify somebody's access?
+[TIMESTAMP] Speaker 197: Yeah, of course. You can do anything. Not from here. Go to the users.
+[TIMESTAMP] Speaker 119: Go
+[TIMESTAMP] Speaker 197: To the user with permission set.
+[TIMESTAMP] Speaker 197: Go to the Users, click on Users, Users, click again on [PERSON],
+[TIMESTAMP] Speaker 119: And
+[TIMESTAMP] Speaker 197: Scroll down. What, do you want to do? Do you want to remove the license?
+[TIMESTAMP] Speaker 119: The license? No, no, I. Just want to make him like a light user, something.
+[TIMESTAMP] Speaker 197: A light user? Okay, edit, remove the system admin, because he doesn't need a system admin. License, right? Yeah.
+[TIMESTAMP] Speaker 119: Edit which?
+[TIMESTAMP] Speaker 197: One? Edit, edit the whole [PERSON]. Because I, yeah, and then the permissions set. Remove the license, [CRM_PLATFORM] license,
+[TIMESTAMP] Speaker 197: Select the platform, the last one,
+[TIMESTAMP] Speaker 197: And save it.
+[TIMESTAMP] Speaker 197: Okay, and save.
+[TIMESTAMP] Speaker 197: And then let's remove the permissions.
+[TIMESTAMP] Speaker 197: Okay. Okay, you are good. Cancel this.
+[TIMESTAMP] Speaker 197: Now, this is good. Scroll down. The permission set. Where are the permission sets?
+[TIMESTAMP] Speaker 197: Permission set group, the third one, edit assignments.
+[TIMESTAMP] Speaker 197: And now give base permission set and document viewer. So he doesn't need anything, Base, see, base, go scroll up.
+[TIMESTAMP] Speaker 197: And the document viewer access. Scroll down slowly. Talking on the viewer. And. Does he need to be owner or
+[TIMESTAMP] Speaker 119: No. Or.
+[TIMESTAMP] Speaker 197: You can give light user, you see ABC Corp light user PSG? That one below admin? Yeah, that.
+[TIMESTAMP] Speaker 197: Now he's a light user and you have an extra admin license so you can use for someone someone else. Else. Else. Okay.
+[TIMESTAMP] Speaker 119: Let me add [PERSON].
+[TIMESTAMP] Speaker 197: Yeah, now create her. Do you want to make [PERSON] admin in ABC Corp Training or no?
+[TIMESTAMP] Speaker 119: No. Okay.
+[TIMESTAMP] Speaker 119: So many windows open.
+[TIMESTAMP] Speaker 119: User license. So which one would she be because she needs to be able to upload documents?
+[TIMESTAMP] Speaker 197: [CRM_PLATFORM] platform. Everybody.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 197: And flow user, enable flow, user and CRM content. You see below flow user?
+[TIMESTAMP] Speaker 197: Enable. And you see CRM content? User. Here. It's a little bit over there and update her time zone.
+[TIMESTAMP] Speaker 119: Where, is that time?
+[TIMESTAMP] Speaker 119: I don't see time zone.
+[TIMESTAMP] Speaker 197: No, no, scroll down.
+[TIMESTAMP] Speaker 197: Sound is the time zone.
+[TIMESTAMP] Speaker 119: Okay. Yeah. She's in the Pacific time.
+[TIMESTAMP] Speaker 197: So changing. They.
+[TIMESTAMP] Speaker 119: Are Pacific. They are Pacific.
+[TIMESTAMP] Speaker 197: Okay. Save. They are in.
+[TIMESTAMP] Speaker 119: [LOCATION]. Yeah. What is this? Receive approval request email.
+[TIMESTAMP] Speaker 197: If she's in approval. Approval. Okay. Now you have to let her know she is going to receive an email. Yeah. So scroll down and give permissions that scroll down.
+[TIMESTAMP] Speaker 197: Give her permissions at base, not over there. And not here, cancel. In permissions at groups. It's easier.
+[TIMESTAMP] Speaker 119: Let me show you a sad SetGroup, group.
+[TIMESTAMP] Speaker 119: Estoration, Base.
+[TIMESTAMP] Speaker 197: And, what else do you want to give her?
+[TIMESTAMP] Speaker 197: Only Document Owner?
+[TIMESTAMP] Speaker 119: No, it wouldn't be. Well, maybe Document Approver.
+[TIMESTAMP] Speaker 197: Okay, give her.
+[TIMESTAMP] Speaker 197: Approver, Owner.
+[TIMESTAMP] Speaker 119: And Document Your.
+[TIMESTAMP] Speaker 197: She's not going to own Document? Documents?
+[TIMESTAMP] Speaker 119: No.
+[TIMESTAMP] Speaker 119: Because I did all their SOPs for them, so they don't really like, as PIC, she'll approve the documents if there's anything, but I mean, maybe let me just give her a document owner and if I need to change it, then I'll I'll just give it to you. Change it. Document on that. And save. So what does flow user, like you said, I should enable flow user?
+[TIMESTAMP] Speaker 197: For other modules, for control. Document, you have to make sure CRM content is enabled. But flow user is necessary, for instance, in Kappa, so we don't forget that. I always want to hit the user I activate. Because it's easy then if they have some issue or we have to find out what was the
+[TIMESTAMP] Speaker 119: Okay, let me make a note of that. Okay. So always select a full user. Okay.
+[TIMESTAMP] Speaker 119: Yeah, I'm content and you said I should always go to permission says group assignments to grant permission.
+[TIMESTAMP] Speaker 119: Well, she's only right now, she's only in ABC Corp Training, right? She's not in production.
+[TIMESTAMP] Speaker 197: Yes, it's not. You can create the same thing. You can create in production.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 119: So, Bays. Viewer.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 119: So I'll let her know that she has a, she should create her account and then I guess when we meet tomorrow, we can go over how to do this. Those uploads again with her in the meeting.
+[TIMESTAMP] Speaker 197: Okay. Even.
+[TIMESTAMP] Speaker 119: Though I think I can... So for this meeting, I know... So the recordings for each of our meetings where are they in case? I need to reference them?
+[TIMESTAMP] Speaker 119: I will.
+[TIMESTAMP] Speaker 139: Send them to you, Speaker 119.
+[TIMESTAMP] Speaker 119: Okay, yeah. Just... Yeah, just... I may not need to reference the whole thing because I want to create an actual Sure is. SPSC, SOP for on how to use, ABC Corp and upload documents. And I wanted to like, incorporate those just a snippet of like, Speaker 197, when you would show me like just now how you showed me how to do the upload instead of using the migration just that snippet. Do you understand what I'm saying?
+[TIMESTAMP] Speaker 139: Did.
+[TIMESTAMP] Speaker 119: Yeah. Okay. Yeah. You should
+[TIMESTAMP] Speaker 139: Also have those recordings from the training sessions you had too with the training.
+[TIMESTAMP] Speaker 119: Team. Oh yeah, that's true. That's true. Actually. I can use those instead. And I can always do it and just screen record. My computer. Yes. While I'm doing it actually. That will probably be easier.
+[TIMESTAMP] Speaker 139: And you also have the [PRESENTATION_SOFTWARE] from the training itself. In that. Same when you go into that [MEETING_SYSTEM] where the training was held, that's where the recording is in the [PRESENTATION_SOFTWARE] for that training. So that way you can you could take that training and download it and put your logo on it and start changing it to fit what you want it to be in your office.
+[TIMESTAMP] Speaker 119: Yeah. I need to go back and check. Because one thing I noticed when we were doing the training sessions, was that the instructions on the [PRESENTATION_SOFTWARE] and on those Word documents. Like for when we're doing those exercises, the instructions were different. From what we actually did majority of the time. Like you can follow the instructions. I know. Because I've been asked Speaker 244, I was like, Speaker 244, am I the only one getting confused? She was like, no, the, instructions are not matching. What we're actually doing. Oh, no. So, yeah. So I think some of those instructions maybe were from maybe like an older version of stuff.
+[TIMESTAMP] Speaker 197: I don't know. Yes, they are. They are not.
+[TIMESTAMP] Speaker 119: Right? Okay. Yes. Okay.
+[TIMESTAMP] Speaker 119: Because if it's one thing I can like if you give me like a document step by step, I will follow it. But I was like, this is not working. So I kept can, on getting confused and I was like, oh, my, this is so bad.
+[TIMESTAMP] Speaker 139: Oh, my gosh. Well, yeah, that's not good. Okay. Well, I will send you the recordings from the last office hours. We've had, the last couple of ones. That way you have all of them with you and you can use those as well.
+[TIMESTAMP] Speaker 119: Yeah. Yeah. But [PERSON] will be on the meeting tomorrow and we'll see. I'll try to recruit a few more people at our other sites sites. Because this is going to be a big task. So I need as many hands as possible. Once again, thank you. So much. We'll see you tomorrow. Thank you, Speaker 197. I appreciate you. Yes. Thank you, Speaker 139.
+[TIMESTAMP] Speaker 197: Tomorrow, yeah, we can discuss. Okay. Bye bye.
+[TIMESTAMP] Speaker 119: For now. Thanks, everyone.
+
+
+====================================================================================================
+Title: Customer 24 - [ORG]
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1812.31
+====================================================================================================
+[TIMESTAMP] Speaker 139: Hi, good. Morning, Muhammad.
+[TIMESTAMP] Speaker 186: Good morning. Happy Friday.
+[TIMESTAMP] Speaker 139: Happy Friday. TDIF. How are you doing?
+[TIMESTAMP] Speaker 119: All good. How are you?
+[TIMESTAMP] Speaker 139: Good. Good. Thank you. Much better. Now. You like it? It's like, come on, I'm here. Wake up.
+[TIMESTAMP] Speaker 119: Yeah, a little bit of energy. Yeah. Just like,
+[TIMESTAMP] Speaker 139: You know. It's the year of the horse, right? The red horse, I think, with the [COUNTRY] calendar when it said it was the year of the horse. And when that happened I'm like I mean those look like big horses coming behind me to just get ready for what's coming. So I don't know. That was my thought.
+[TIMESTAMP] Speaker 139: Hi, Michele. Hi, Michele.
+[TIMESTAMP] Speaker 189: Hi. I just popped on to just say, hi and introduce myself to the customer and then I'll hop.
+[TIMESTAMP] Speaker 139: Oh, good. And there she is.
+[TIMESTAMP] Speaker 186: Right.
+[TIMESTAMP] Speaker 139: Here we go.
+[TIMESTAMP] Speaker 139: Hello. Good morning, Speaker 119. How. Are you today?
+[TIMESTAMP] Speaker 119: Good morning.
+[TIMESTAMP] Speaker 139: Good
+[TIMESTAMP] Speaker 119: Morning. Happy Friday.
+[TIMESTAMP] Speaker 139: Happy Friday. We made it. We made. It. I know you've met, Muhammad, I think, at least one time. Yeah. But I don't think you've met Speaker 182 yet. Not yet.
+[TIMESTAMP] Speaker 189: She
+[TIMESTAMP] Speaker 139: Hopped on to meet you and oh, a here's [PERSON], couple of. Good deal, okay. So she hopped on to meet you guys at Customer 24 and she is our Rapid Start Program. Manager. So I will let her introduce herself and then y'all can have a moment before we get started.
+[TIMESTAMP] Speaker 119: No problem. Hi.
+[TIMESTAMP] Speaker 189: Everyone. Hi Speaker 119, [PERSON] and is it Alia or Alia?
+[TIMESTAMP] Speaker 119: Talia.
+[TIMESTAMP] Speaker 189: Talia, nice to meet you. Is Mythli. I'm the RapidStart, Program Manager. So I I'm overseeing the entire RapidStart journey because it's like a little circle, right? you do your implementation, you have all your training, you go live, and then we go into a maintenance mode, and then you might have another phase. So. It's this like, this beautiful little cycle that happens. And I this role was created to ensure that our customers are successful, not just from the implementation standpoint, but in their entire journey with ABC Corp longstanding and to make sure that you're getting what you need out of
+[TIMESTAMP] Speaker 189: Our program. So I wanted to come on and I want to take away from your validation because I know that's very critical and from Mohamed. I'm going to just put a face to the name that you might see in emails. And to let you know that I'm here for you guys. Guys as the program manager to make sure that your journey with [COUNTRY] is successful.
+[TIMESTAMP] Speaker 119: Awesome. Awesome. So when we go live, well, technically we're live, already. We started. Uploading, documents. So I guess. What kind of support would you be providing for [COUNTRY]?
+[TIMESTAMP] Speaker 189: Oh, absolutely. So the change, there's no change per se in how things are going. Going. So once you're live, a customer success manager will be so that whatever was discussed with you, that doesn't change. What's different. Is in the back end, and you might see emails from me where I've said this is to notify you that your production is going to be patched. Part of the rapid start program is maintenance. So we maintain your system on the back end. So, we do push updates. So when at whatever there's a patch, we encourage you to review the release notes in our portal and Speaker 139 can redirect you to that area of our customer portal and I'm happy to share that. To keep up with all the changes and any enhancements that we're doing.
+[TIMESTAMP] Speaker 189: We automatically push the latest updates to your sandboxes and then production. And then we also do automatic upgrades twice a year so that you're in the version of ABC Corp. The current version of ABC Corp is Winter 2025, which is called 15.5 or 15.6. And I didn't check quickly. What version are they on, Speaker 139? I apologize. I think.
+[TIMESTAMP] Speaker 139: They're on 15.6.
+[TIMESTAMP] Speaker 189: 1508, right? Yeah. So you're half version behind. And so I'll be there's very minor changes, but we want to make sure that you always have the latest version of ABC Corp and that's part of the cycle. So you will still and then should you do another module, we go through the journey again. We have a project manager, a solutions consultant and then you go through the training and so on. But the maintenance and upkeep is always there.
+[TIMESTAMP] Speaker 189: So for you, the only difference right now is that we're pushing the patches and upgrade. And then for upgrades, we notify you, work on a timeline, because when we do the production, upgrade, there would be a downtime, right? So we can't use ABC Corp, so that is coordinated.
+[TIMESTAMP] Speaker 119: Okay. Okay.
+[TIMESTAMP] Speaker 189: During your journey or during any time, during anything. I'm here for you to ask any questions because I oversee the whole program. To make sure that your needs are being met and that the program is working for.
+[TIMESTAMP] Speaker 119: Okay, sounds good.
+[TIMESTAMP] Speaker 189: Can you share a little bit about who each of you are and your role and then I'll hop off?
+[TIMESTAMP] Speaker 119: Okay, my name is Speaker 119. I'll be able to connect.
+[TIMESTAMP] Speaker 189: Separately later too. Yeah,
+[TIMESTAMP] Speaker 119: That's fine. I'm the Senior Speaker 191 of Compliance for the Pharmacy Network. So we have 4 pharmacies under our network and counting. Even though. I'm in charge of compliance, I wear different hats. Right now I'm acting as our, I guess, as needed, ABC Corp implementation manager, right? Now.
+[TIMESTAMP] Speaker 189: She's
+[TIMESTAMP] Speaker 139: Wearing all hats, right? Now. I was going to say,
+[TIMESTAMP] Speaker 189: I think they're very similar because I was wearing all all hats. Hats. Too, I get you. Yeah, yeah.
+[TIMESTAMP] Speaker 119: So, um….
+[TIMESTAMP] Speaker 189: The 4 pharmacies are under you right now as well? Wow. Yes.
+[TIMESTAMP] Speaker 119: Yeah, all 4 pharmacies. So, but I work. Pretty much my role aligns across. Not just compliance, quality operations as well.
+[TIMESTAMP] Speaker 119: So, yeah, that's pretty much it. I don't want to bore you guys. It's a lot. Well But I'm meeting with lawyers all day when I'm not doing ABC Corp stuff. So that's
+[TIMESTAMP] Speaker 189: Fun. So what you should tell people is do everything except code things or maybe you do.
+[TIMESTAMP] Speaker 189: Well thanks for introducing yourself. Speaker 119. It's nice to meet you.
+[TIMESTAMP] Speaker 119: Yeah, it's nice to meet you too.
+[TIMESTAMP] Speaker 189: And who is [PERSON] and Alia?
+[TIMESTAMP] Speaker 119: Hi. Hi, good. Morning. I'm [PERSON]. I'm the pharmacist in charge over at [LOCATION], Quality Pharmacy, and I'm just here to help Speaker 119 out and do whatever she needs help with.
+[TIMESTAMP] Speaker 189: So everything. I love it.
+[TIMESTAMP] Speaker 119: [PERSON] is great.
+[TIMESTAMP] Speaker 139: She's been really, really good. Yes.
+[TIMESTAMP] Speaker 189: Nice to meet you, [PERSON].
+[TIMESTAMP] Speaker 139: And then Alia.
+[TIMESTAMP] Speaker 119: Is one of our pharmacy managers here at the Customer 24? Pharmacy. We have 2 pharmacies in Texas, so she's one of the pharmacy managers at our bigger pharmacy, that's the Customer 24, that we're going live with. ABC Corp first at. So. She's just been helping me. She's currently one of the document approvers and owners. So she's helping me proofread majority of the documents and upload them into ABC Corp. She's been really helpful. I think she started helping me maybe less than 3 weeks ago, and she's pretty much helped [COUNTRY] get to where we are, where we can say, okay, by this date, we're able to fully go live with ABC Corp at LINC. So, yeah, she's been very, very impactful to all our efforts. In a short time.
+[TIMESTAMP] Speaker 189: That's fantastic. You guys are like a well oiled machine. I really love this. Okay. Yeah. Well, nice to meet you, all. And I will be in touch over email so that we can sort of have a moment. And. Thank you, Muhammad and Speaker 139, for letting me steal 5 minutes of your meeting. But I'll leave you to it. You can talk about all the required things for your pharmaceutical business needs. Needs. And we'll talk to you soon. Soon. Have a great rest of your day and weekend.
+[TIMESTAMP] Speaker 119: Thank you. All right. Take care. Bye. Bye.
+[TIMESTAMP] Speaker 139: Surprise.
+[TIMESTAMP] Speaker 139: She's really good. She was just promoted to Rapid. Start, Program, Manager, gosh, April, 1st, I think. And so she's coming in and meeting all of our customers going through. This program. So yes, it was nice. It was nice. She was able to make it. This morning. So. Thank you for the introductions.
+[TIMESTAMP] Speaker 119: Yeah, that's fine. Okay. Are you.
+[TIMESTAMP] Speaker 139: Ready to get started with validation?
+[TIMESTAMP] Speaker 119: We are.
+[TIMESTAMP] Speaker 186: Okay. All right. So nice to meet you. Everyone. And. Let me introduce. Also myself briefly. So this is Muhammad Hamad, the Speaker 191 of Validation and Automation in ABC Corp.
+[TIMESTAMP] Speaker 186: Ago, but I have like 14 years of experience in the same position. So I'll be introducing today. The process of verification and validation, explaining the process end to end, starting from requirement through validation, as well as I will be explaining the validation deliverables and explain also. How can you leverage the validation that we do in ABC Corp. For yourself? So, let me share my screen and take it from there.
+[TIMESTAMP] Speaker 139: What, Mohamed, let me start the recorder while you're doing that. Just so we can have it, just in case. Okay, hold on.
+[TIMESTAMP] Speaker 139: All right. It should. You'll have to unmute yourselves when you're ready. You should be able to get in now.
+[TIMESTAMP] Speaker 139: Right, again, Can I know if
+[TIMESTAMP] Speaker 186: You see my screen? Yes?
+[TIMESTAMP] Speaker 186: All right, so let me start by explaining briefly. The SDLC process. So in ABC Corp, we follow the Agile methodology, specifically, the Scrum framework, which means that we have multiple Scrum team.
+[TIMESTAMP] Speaker 186: Product owner, the development team, which includes developers, testers as well as documentation team members and Scrum Master. So the process starts from the product team who owns the backlog, they determine what will be including in each release, prioritize that backlog based on you priority know, priorities, and accordingly, we decide what will be included in each release. So we have 2 releases.
+[TIMESTAMP] Speaker 186: Every year. We have that release trend, so we have a fixed schedule for each release. So based on the timeline, we define what will be included in each release based on priority and based on the number of sprints that we will have in each release.
+[TIMESTAMP] Speaker 186: Speaker 175 stand up meeting, daily scrum meeting. So that the team update about the progress, communicate, their obstacles, the scrum master try to facilitate the process for them, raise any concerns, risks, and the sprint normally lasts between 2 to 4 weeks. That's the cycle of each sprint. And at the end of each sprint, we do a demo in order for the stakeholders and the product team in order to show them what was implemented in that sprint. And if that was like, up to their expectations and we collect the feedback so that we consider it in the next sprints.
+[TIMESTAMP] Speaker 186: So that we make sure that we have that incremental drill rebels in the right or according to the right expectations by the end of each sprint.
+[TIMESTAMP] Speaker 186: Now, if we want to drill down more on the verification and the validation process, which is part of that SDLC.
+[TIMESTAMP] Speaker 186: It starts from requirements and it goes through the validation until we complete the project So the first phase is to receive the requirements that are prepared as I mentioned by the product team.
+[TIMESTAMP] Speaker 186: They create those requirements, also, specify the risk of each requirement. They have their guidelines in order to know how to specify the risk for each requirement. And then they assign them to [COUNTRY], to the validation team, in order to review and approve. Once those requirements are approved, they will be translated into user stories. That includes detailed acceptance criteria to be assigned to the development team, to the scrum team in order to develop and to test during the verification phase. So for each user story.
+[TIMESTAMP] Speaker 186: It will also include the impact assessment for each change. So that impact assessment will define any indirect impacted areas because of that change. So that we consider that as well in the regression. Testing. And, then all the development and testing activities will take place normally in the sprint. Sprints to do the development, the testing for each user story, including the regression, the impact assessment. We keep doing that sprint after.
+[TIMESTAMP] Speaker 186: Sprint until we complete the entire scope of the release. Once that complete, we reach to a phase that is called Release. Candidate, RC, which is also the code freeze, means that no more code changes are allowed after this.
+[TIMESTAMP] Speaker 186: Phase. So the code is stabilized, the release scope is complete, and by that time we do the final round of testing, which is the validation now. So the first round was on the user's story level, which we call it, the verification, and now after the RC we do the final round of testing, which is the validation. Implementation. That phase starts by preparing the validation environments by following the IQs, execute them officially based on the good documentation practices, take the evidences, and once those IQs are approved, we use those environments in order to execute the test.
+[TIMESTAMP] Speaker 186: Cases. Also based on the best documentation practices, we execute the OQs and all the test cases based on the risk. And. If we find any defects during this phase, We have a process process that I can explain, but briefly, that process is about fixing.
+[TIMESTAMP] Speaker 186: Always the critical and high risk bugs issues. And for the medium and low, we have the option either to fix them or to defer them based on other factors, like the impact, like the timeline of the project, and so on. Once all the defects are resolved and all the cases are fully executed with past results, we start to prepare the validation or to finalize the validation deliverables, specifically, the summary report at this phase, and do the signatures and upload it to the customer. Portal. And. That will be the final step before announcing the completion of the release, which is a milestone that we call the GA, the general availability. Any questions questions? So far before I move forward?
+[TIMESTAMP] Speaker 119: Thank you.
+[TIMESTAMP] Speaker 186: All right. Let's see what is the approach that we follow for validation. So we follow actually the GAM 5 guidelines, specifically.
+[TIMESTAMP] Speaker 186: The second edition, which supports the Software, Assurance, the CSA approach from [REGULATOR]. So those guidelines, provide risk based approach for validating the computerized systems, ensuring that they meet the intended use and complies with the regulatory requirements. So that under the GAM 5 guidelines there are multiple categories. So our system actually belongs to category 4, 4. Which is specifically for configurable system that can be tailored to specific needs through configuration without changing the source code. And. That's what we actually provide in NCQ. Our system can be configured based on your needs without the need to change any code. So we belong to Category 4. So we validate the system based on out of the box configurations.
+[TIMESTAMP] Speaker 186: So if you don't have any plan to do any additional configurations, you don't need to do any further validation. So we will be providing you with the validation package as an evidences that you can use and provide to [REGULATOR] when you get any audits because the system is validated based on that. If you have any plan in the future to do any additional configurations, configuration, you would be in need just to do validation for the additional configurations using PQs and URSs. But since you are a Rapid Start customer, so you will be using the system as an out of the box, which means that you didn't need to do any further validation than the one that will be provided to you. So, definitely we follow the model. Which means that for the validation that we provide IQs to improve the installation steps, we provide OQs to prove the requirements that are listed in the FRSs. So, let's see now what we actually provide and how you can access the validation deliverables. If you go to ABC Corp, website, So I'll open it from here here from this Customer 24.
+[TIMESTAMP] Speaker 186: All, right from this website. Let's get back to the slide. You go to support and then to ABC Corp Knowledge Portal. So if you go to support
+[TIMESTAMP] Speaker 186: And then to ABC Corp Knowledge Portal.
+[TIMESTAMP] Speaker 186: Then you go to validation and validation script. Repo. So there is a category here called validation. And. Then actually here we have like some information which are similar to the ones that I explained, the remodel, what we follow and so on. But you You need to go to the Customer 24 of validation script repo and then choose your version. Version. So we have here validation script repo.
+[TIMESTAMP] Speaker 186: You click over that, you will find all the versions. So since you will be on 15.5 or 15.6, so that means it's winter 25. If we go here, you will find all the deliverables. Provide validation assessment for 21CFR, Part 11 assessment and the European version, the Annex 11 assessment.
+[TIMESTAMP] Speaker 186: And we provide OQs actually the OQ protocol which explains the guidelines to execute the OQs and we provide for each module, the OQs and the FRSs. So if we select, let's say any module, for example, if we take the document management.
+[TIMESTAMP] Speaker 186: Under the document management, you will see all the OQs that validate that module. In addition to the FRS that explains all the requirements for that module the traceability between the requirements and the OQs is included inside the FRS itself. So if we open the FRS, see that as an example example.
+[TIMESTAMP] Speaker 186: As you can see, for each requirement. We list, let's see, yeah.
+[TIMESTAMP] Speaker 186: So we list for each requirement. We have an ID for the requirement, the description for the requirement, what is the risk level, and when it was introduced? Because the FRS is a cumulative document. And then what is the OQ actually that validate that requirement. Based on the CSA approach. We validate the high risk requirements. Sometimes. We also include medium and low if they overlap with the high risk requirement, but otherwise the medium and low, we rely on the verification rather than redoing or retesting them in the validation phase. So in the validation, all the OQs specifically covers the high in addition to medium and low.
+[TIMESTAMP] Speaker 186: If they overlap with the high risk requirements. So, as you see here, this OQ for example, number 3 mapped to this requirement, which is number 3240. So. If we see that OQ number, 3, you get back here to the same [PERSON] that we had it open here. I would will like find the to OQ, say, OO3. So if you open that OQ,
+[TIMESTAMP] Speaker 186: You will find all the details, what is the objective of that OQ, what exactly the functionality that it will cover, again, traceability with the requirement and explain any prerequisite data that will require for the cases data or users, user access and so on. Then the test steps to verify all the needed scenarios. For each scenario, definitely we mention what is the result, if it is as expected or not, if it is pass or fail and the initials and the execution date?
+[TIMESTAMP] Speaker 186: And we mention here a reference for the objective evidence. So for the first step, for example, the objective evidence is called attachment one, for the second one, attachment 2 and so on. We can find them at the end of the OQ. At the end here. You will find the mapping at the top in the header. So this screenshot relates to step 1 and the number of the attachment is 1. So. You can see the screenshot here. Same for the second attachment, the third attachment and so on. And we have for sure all the pre execution and post execution approvals using [E_SIGNATURE_SYSTEM] as well. So you will have the same.
+[TIMESTAMP] Speaker 186: For each of the modules that were part of that release. That's pretty much it for what we provide for validation and for the process. So I'm ready now to take questions or if you need to drill down more on any of the areas I explained.
+[TIMESTAMP] Speaker 119: No, so my question is, so would we need to do that for each and every upload or no?
+[TIMESTAMP] Speaker 119: Upload? Like every document upload, would we need to like, go through this validation process or would it just be to test?
+[TIMESTAMP] Speaker 119: The form you had open? Is that something for [COUNTRY] to complete or no?
+[TIMESTAMP] Speaker 186: Which.
+[TIMESTAMP] Speaker 119: Form? Okay. You're done already? Okay.
+[TIMESTAMP] Speaker 186: Yeah. All of what I showed you is already done by [COUNTRY]. Okay. And you have access to them because they exist in our portal and where we I showed you how you can access that from support then knowledge portal. And then you go to validation, you will find all those documents. So if you just download them, that's the validation package for that release. So when you know, are asked like to show any evidences about the validation when you get any audit or something, you can show those documents because that's the validation for the out of the box system that you would be using. Using.
+[TIMESTAMP] Speaker 119: Okay. All right.
+[TIMESTAMP] Speaker 119: Okay.
+[TIMESTAMP] Speaker 119: And so when we start, so our light users are going to have access to production, may, Let me see here. I think May... Maybe...
+[TIMESTAMP] Speaker 119: I love the calendar.
+[TIMESTAMP] Speaker 119: Starting May 3rd. So what, I guess, kind of supports. Would we be able to get from you once they have access to production, May 3rd? I'm?
+[TIMESTAMP] Speaker 186: Speaker 139, from validation, the package is already there because you will be getting a release that is already complete, which means the validation is also complete and available in the portal. Other kinds of support? So Speaker 139?
+[TIMESTAMP] Speaker 139: Yeah, I'm not sure. So the validation, what [PERSON] said, everything's already out there for you to go and use and pull as you need to have your validation support. If. That's what you're talking about, if you're talking about like, once you're live on May 3rd and you're using the system and you need help from somebody like, I don't know, like a Speaker 197, right? Because. Y'all meet with Speaker 197 for office. Is that what you're talking about? Like after your live? Yes. Okay, so let me tell you this. I have been wearing 2 hats. I am the project manager for RapidStart to help you guys get onboarded, implemented. But. My other hat is Senior Sure. Customer Success Manager and that is what will happen. Once you are live in.
+[TIMESTAMP] Speaker 139: The system, we will introduce you to the support team. So if something happens and you need to open a ticket, we have support available for you guys to be able to get that resolved. At the same time, you will be introduced to a Customer Success. Manager. [PERSON]'t think it's going to be me, but it could be me, which would be nice because I already know you guys and we work well together, but I can't promise that. So you would meet another CSM. Who would then have weekly, not weekly, monthly or bi weekly, whatever you want, cadence calls, like you and I meet weekly right? Now, you'll be able to determine, well, I don't think we need to meet weekly. We can do 30 minutes once a month.
+[TIMESTAMP] Speaker 139: Or every 2 weeks, whatever works for you and your CSM will be able to arrange that and talk through whatever things that need to be discussed on your monthly case. Cadence calls. So we will never leave you. And I tell all my customers this, which sometimes gets me into trouble. But once you're my customer, you're always my customer is how I look at it. And. So if something comes up and you're needing help and you're not getting your answers, you can always reach out to me. I'm still here.
+[TIMESTAMP] Speaker 119: Good, good. All right. Well, this is, I guess, an ongoing journey. And hopefully keeps going smoothly. Smoothly as it has all this time. So, yeah,
+[TIMESTAMP] Speaker 139: I've been doing great. I mean, honestly, you're moving, you're getting your work done. When Speaker 197 is giving you homework, you're doing it and coming back prepared with questions. So, I mean, really, you are on the right path to getting this completed. So, if you need anything, Speaker 119, please let me know because we want to be successful with you. So,
+[TIMESTAMP] Speaker 119: Let me. Yeah. Yeah. Okay. All right. Sounds good. Thank you so much, [PERSON]. It was
+[TIMESTAMP] Speaker 186: Nice. And if you get into any other questions after the call, please reach out and definitely I'd be glad to help.
+[TIMESTAMP] Speaker 119: Thank you. Have a
+[TIMESTAMP] Speaker 186: Weekend.
+[TIMESTAMP] Speaker 119: Thank you. All right. You too. Thanks, everybody. Take care.
+[TIMESTAMP] Speaker 139: Have a good weekend.
+[TIMESTAMP] Speaker 119: Bye bye. Thanks.
+
+---
+Client resource profile: Small focused deployment team.
+Client project resource guidance: Assume a small customer project team where individuals cover multiple roles: one project lead, one quality/process owner, one IT/admin contact, one validation approver, and limited SMEs. Proposal should avoid implying a large dedicated team and should call out timely decisions/reviews as a dependency.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

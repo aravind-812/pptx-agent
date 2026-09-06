@@ -1,0 +1,1240 @@
+# Customer 21 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 6
+
+
+====================================================================================================
+Title: ABC Corp/Customer 21 | Phase 3 - Complaints - Demo/Walkthrough
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3904.32
+====================================================================================================
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker: Definitely question.
+[TIMESTAMP] Speaker 058: Hey, good afternoon. One, good afternoon.
+[TIMESTAMP] Speaker 058: I know people are joining in uh
+[TIMESTAMP] Speaker 058: There are a few declines as well. I know holiday season is around the corner. But Speaker 044, if you want [COUNTRY] to start the recording and go ahead and get started. Please let [COUNTRY] know.
+[TIMESTAMP] Speaker: Yeah. I think we can go and get started. Yeah, sure.
+[TIMESTAMP] Speaker 058: Let me start the recording.
+[TIMESTAMP] Speaker 058: And before we start, I just wanted to give a quick up
+[TIMESTAMP] Speaker 058: Quick recap of the face of the implementation that is going to happen. I'll not spend much time, but I just wanna quickly show you the plan. So this the overall project is split into 4 phases. We have completed phase one and phase 2. And today we are kicking off phase 3. So in phase three, there are 2 modules. One is complaints and the other one is audits. And phase 4 is also upcoming, which is supplier and supplier portal.
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker 058: Again, I don't want to spend time on explaining the implementation methodology, but just to give you a quick recap we are doing the system walkthrough right now in today's and Thursday session. Where you will be seeing out of the box complaints module. And after you get back from the Christmas new year holidays, we'll start off with audits. So all of you here will also get access to the system where you can go and review it. Go through the different screens and provide [COUNTRY] with any inputs or changes that you would like to be done again. We want you to use the system as much out of the box. But again we can tailor it to your processes and whatever you would the changes that you want to make. With that said Speaker 044, do you want anything to add?
+[TIMESTAMP] Speaker 058: Might be on mute.
+[TIMESTAMP] Speaker: I was just getting unmute there. Yeah, for the [PERSON] and team along with this, again, pay close attention to how the system system works. It's a little bit of a combination demo and a little bit of training and we'll be pulling team together to really start talking about internal process and how this is going to fit in. And then we can provide that information back to ABC Corp for how we need to configure the system for our needs.
+[TIMESTAMP] Speaker 058: Thanks Speaker 044. Yeah.
+[TIMESTAMP] Speaker: And also, like to say guys I know around [PERSON] and Cassandra in this call today. There's a key members of this module implementation. So I know it's gonna be a recording, but hopefully they can join [COUNTRY] on Thursday. And I know we have [PERSON] here, [PERSON] and uh
+[TIMESTAMP] Speaker: [PERSON] so
+[TIMESTAMP] Speaker: Hopefully, you guys you can be some points of this presentation to the wasn't missing today, but that definitely run like, [PERSON] and Cassandra key members of this complaint module that need to interact with the rest of [COUNTRY] in quality to make sure we implement the right module the right system, right? For what we're trying to do. So, yeah.
+[TIMESTAMP] Speaker: Yeah. All right.
+[TIMESTAMP] Speaker 058: It's gonna be a 4 to 5 month journey until we go live. And also, we have factored integration with [SUPPORT_SYSTEM] for complaints, which will be coming up shortly. And I forgot to introduce myself for the folks who are new. My name is [PERSON] works. And I'll be the project manager for this project. And along with me, I have Speaker 247 will be the solution and functional consultant. She'll be leading the demo. So I'll turn it over to Speaker 247. And again, if you have any questions please feel free to stop [COUNTRY] in between or put questions in the chat with that said Speaker 247.
+[TIMESTAMP] Speaker 247: Go ahead yeah sure so good afternoon team and let me start with the screen sharing and please again as Speaker 058 said stop me anytime I don't pay that much of attention to the chat unless when my demo has been completed so feel free to stop me with your questions and the key attendees whoever is not attending let them know Speaker 055 like if they have questions after the recording or so if they have questions they can reach out to me for any follow up or any any other questions you know and also Speaker 044 about the email if you can save a couple of minutes after this meeting we can talk about that
+[TIMESTAMP] Speaker 247: Okay. Thank you. Let me share my screen. And today I'm going to go in details about the and I'll start from the workflow and more into the details that what each field does and stuff like that because I've already get a demo on that. So. That's that is my plan. Let me know if you want anything else. Okay. Thank you.
+[TIMESTAMP] Speaker: If I make a comment for you, yeah. Any for the team, well, one thing especially the customer service people I want to make sure you understand is that we're not trying to replace [SUPPORT_SYSTEM], right? Although some of the steps here will look similar to you as to what's happening at [SUPPORT_SYSTEM], that's not the goal, right? The goal is to integrate these 2 systems in a way that through this module, we can track 2 complaints that will initiate corrective action within within our system within Customer 21, right? It's very key for [COUNTRY] to understand that. It's not one of the other it's how can integrate those 2 systems to to be able to get what we're looking for, right? Because again, as you all know, no matter what we'll do internally, it's the voice of the customer that will try to capture that will tell [COUNTRY] really how we how do as an organization, right? So and that's why this particular module. I mean, everything is critical, but this is to me personally, one of the most critical ones. Because will help [COUNTRY] be more successful with understanding the voice of the consumer and taking the necessary actions internally to to correct issues, right? I just wanna make sure everybody understands that. And as we go through the process as Speaker 058 indicated in the beginning, this pre at what the tool looks like today, right?
+[TIMESTAMP] Speaker: Of course, you might need to be excited, but ideally as we go through this presentation let's all pay attention that. Although we have a process that we think works today. Let's be open minded so to speak and understand what the value of this tool is really because again
+[TIMESTAMP] Speaker: People ABC Corp do this for a living, right? They develop all these modules and tools based on a number of different industries and companies. And then the idea of presenting something like this out of the box is like, this will work for, let's say, 80% of the business, right? Of course, there's some uniqueness to every business, but let's keep that in mind as we go through this presentation and make sure that we understand the pros and cons. So
+[TIMESTAMP] Speaker: All right. Please go ahead. That's all I had to say.
+[TIMESTAMP] Speaker 247: Okay. Thank you so much for them from this. So the Sue complaint module this solution. It also integrates just to give you a heads up and it also integrates with the other module and the secure modules, for the example. It includes the to
+[TIMESTAMP] Speaker 247: And other processes as well. Okay. The way it starts. You can see this is a content stage and this is a content workflow for this version 14 point one the way content workflow starts. So the content reporter who creates a content and surely in the in my demo later on how we can create there are a couple of ways we can create the complete. So content reporter, we create a complete and then content reporter submits the content and this content starts in draft status. This is all status. So then
+[TIMESTAMP] Speaker 247: The complete owner also, access the access the from the content from the queue. And then, this is where I am talking. So the content owner after this submission. So complete owner access the content from the queue and we have all the tasks and complete owner and then families has been defaulted task side. So complete owner assigns on the content steps to that particular or relevant users. And also content owner takes the ship and initiates the content.
+[TIMESTAMP] Speaker 247: What happened after that, the content through the open status?
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: So so I have a question, yes. What's the trigger?
+[TIMESTAMP] Speaker: To define the difference between [SUPPORT_SYSTEM] complaint and what gets entered here. And then how does it get transferred from [SUPPORT_SYSTEM] into this system?
+[TIMESTAMP] Speaker 247: So we need to have some set up integration to do this to bring the complaints to from there to secure module. We need to have some integration. I don't need to talk about that.
+[TIMESTAMP] Speaker: Yeah. I'll jump in there. Speaker 307. You're weeks ahead of where we're at right now today. So that's part of the project plan. But we're not there yet.
+[TIMESTAMP] Speaker 247: It's so
+[TIMESTAMP] Speaker: Just to give you an idea. Speaker 307, not every complaint in [SUPPORT_SYSTEM] will make it to ABC Corp.
+[TIMESTAMP] Speaker: Okay. But like, yeah, that's something that we have to develop a for the process, right? Which complaints make it all the way here and what the filter filtering mechanism to do that. Well, there's already a system in place and that's why I was asking. Have you done a current state and then future state to see how they I know it all integrates and I know how the current process works. I get an email saying, hey, you need to look at this. But what determines that though. The process in in [SUPPORT_SYSTEM] that's been set up. The okay. The quality reports. Okay. That doesn't change your side. I don't think that's happening on the [ORG] side. So we have to part of this exercise projects integrate.
+[TIMESTAMP] Speaker: Yeah. So so let's let let's see. Continue the demo here. Speaker 307, I think the short story is current state still needs to be defined as part of the project. Yes. And that's where that exists. And we do need to do that. The intention here is just to understand how Sue works out of the box.
+[TIMESTAMP] Speaker 247: Okay. Okay. So by the way, when the in this state when the content owner taking the ownerships and it's in the queue, I'm talking about that time if you are part of the queue. And when you are taking the ownership, you get the notification that okay. One complaint is waiting for you to take the ownership. You get the notification for that. So after that, when we're here, we already take the ownership and initiating our complaint. It moves to that in progress stage. Okay. The complaint state assigned and execute required scripts if applicable and all the required steps. Okay. So complete states, assignees log like, sample activities logs. Although like, if you put in samples, if any product history, views, those kind of tasks whatever has been assigned or whatever has been predefined task would be performed at this stage in progress stage. Okay. And the competent state assignee completes, all this task and it can be the same users. It can be a different users, depend on that. And then on part of this also the investigation.
+[TIMESTAMP] Speaker 247: So the investigation owner who will complete the investigation, that was like, why what? why that issues happen? Whatever that issues like investigation owner that completes the investigation. Okay. If when everything has been completed the checks, if they're based on this investigation and everything system will check. If there any regulatory reports are required, I believe that is not the case for new case. Is mostly is the license customers that is a real and then this stage required. And then the ability one submits a board and all kinds of things and those tasks and needs to be completed. And if it is a no, it move to that verification stage. And then what happened content owner, verifies the complaint state completion that will get all the stuff that's been completed in proper way and how it should be in that time. The content owner also. Verifies that is close. Your review, whether close your review is required or not. It closer if it's not required, it proceeds to close closure and if it is a required stage, then the complete owner as the content that close the review only thing. Is that here? The complete owner cannot be the reviewer.
+[TIMESTAMP] Speaker 247: So complete owner cannot perform that close to task. It has to be someone else who can perform that close duty. And then the system takes it. That complaint is approved. If it is rejected, the complaint needs to be, please start it. Otherwise, if everything is good, it goes to the content closed and I can close the complete and state should be closed and that the competence stage will be also close. That's pretty much the workflow and in between also in between any time during investigation or before investigation, who the owner takes the ownership. Anytime if it is related to or if it is required to escalate to cap the complete owner, definitely escalate to cap it and you after taking that. Okay. That is the that is a pretty much the workflow of that contract. Any questions?
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: I'm going to go to that. Um
+[TIMESTAMP] Speaker 247: Secure then let me just close this one.
+[TIMESTAMP] Speaker 247: Okay. How even create your complaint, there are a couple of ways. This is mostly for the process users. You can go to the
+[TIMESTAMP] Speaker 247: Open this um
+[TIMESTAMP] Speaker 247: Okay. You can go to the miscue [PERSON].
+[TIMESTAMP] Speaker 247: Maybe I'm gonna do
+[TIMESTAMP] Speaker 247: My secure [PERSON]. And from here
+[TIMESTAMP] Speaker 247: You see report an issue from here?
+[TIMESTAMP] Speaker 247: You can create a template. This is mostly for the process users. Okay.
+[TIMESTAMP] Speaker 247: So this is one way you can create your complaint.
+[TIMESTAMP] Speaker 247: And then that way you can create our complete, which is a regular way. You can go to our own pace and from there, we can go to the complaints here and create a new
+[TIMESTAMP] Speaker 247: Okay. So here, you can choose your account if it is required for the contact you can write your description onto your origin reporting. When this content has been reported point this issue has been offered. And when you are aware of that, these 3 kids can be the same date. But you report it cannot be that before on you edit. Then those kind of addition to will have in this country of origin. You can choose from your country of origin description as reported the description. Reporting is there. And this is the initial description. You can add right there.
+[TIMESTAMP] Speaker 247: Here is a lot serial number. This is the part which product you are complaining about. Okay. If you need to upload any files, upload your file standing, any any questions?
+[TIMESTAMP] Speaker 247: Okay. It's create a company.
+[TIMESTAMP] Speaker 247: Okay. If you choose your contact, your account and company will be automatically populated. Here is your uh
+[TIMESTAMP] Speaker 247: Enter your policy. I'm going to choose the [COUNTRY].
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: I'm reporting on this today, but it happened on this day and I'm aware of the this issue on the same day. This is a part creating this complaint about
+[TIMESTAMP] Speaker 247: Where is the part? I don't have any files to be uploaded at this moment. And this is a very created screen is very simple. So the complaint can be created and with very few information and then I would say
+[TIMESTAMP] Speaker 247: So complaint was created and you can see your ad account contact and everything has been populated right there. And it's in the draft stage. And my next stage is some week for triage. And since I'm the I have created this template, I'm reporting this template for. So I'm the owner at this moment. And here you can see description as reported. And here this is the description. There's a if I edit this, let me show it to you.
+[TIMESTAMP] Speaker 247: This description is reported. I cannot edit this one, but this is the initial description. You cannot edit this, but this is the detailed description of this issue, which can be edited later on and added also added edited. You can do all this description, which is the title description, but the description as reported cannot be edited out of the box. Okay. This is your primary product. This is your part. If you have other information brand name, catalog, number model, number, any, any of this is relevant for you, software versions, manufacturing date, you can add all of this if you have any complaint code already were aware of that. You can add this for this. I just created one complaint code for this which is this and for this you can also have the severity of this complaint. How severe or you can add this content quality quantity that how many product or how many devices it has an issue with or invent the feedback from the customer. You can add something here.
+[TIMESTAMP] Speaker 247: Here, this associated items if you know that this is your primary items at this moment by default. If you have multiple items, you can add right there. You can click on new and you can add other items from here, for example.
+[TIMESTAMP] Speaker 247: Okay. And you can save it. If you want to add any comment, you can do this and you can see if you want to make it primary, you need to check this and send it.
+[TIMESTAMP] Speaker 247: So it will be added as a primary product. Okay. If you have any manufacturing information, if you are aware of, you can add this here. This is your manufacturing information, but not not not your information. Okay. If you have any source case, you can add there.
+[TIMESTAMP] Speaker 247: Any any questions here?
+[TIMESTAMP] Speaker 247: Okay. This is the additional information. If you like to use also or add the other information. You can also add here, complaint report type that what kind of complaint it is. This is adverse event, customer dissatisfaction or product quality. I can add this or in offer and before dealing after news. Not determine if you have knowledge of this
+[TIMESTAMP] Speaker 247: You can use this
+[TIMESTAMP] Speaker 247: You can add the title.
+[TIMESTAMP] Speaker 247: Of the complaint.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: And then see since I change this one, the primary product also here is this
+[TIMESTAMP] Speaker 247: Is changed. Okay. And I'm going to say this
+[TIMESTAMP] Speaker 247: This is my workflow. At this moment, there is no competence steps.
+[TIMESTAMP] Speaker 247: Nothing is there now? I need to I have to submit for that.
+[TIMESTAMP] Speaker 247: So again, I'm doing it as a report out of this complaint. So you can see this is my complaint quantity. Reported operate data and check all the information and you're going to save it.
+[TIMESTAMP] Speaker 247: So as our workflow if you remember it when I'm saving this
+[TIMESTAMP] Speaker 247: As a reporter.
+[TIMESTAMP] Speaker 247: So my like, reported on task that's been done. Now. Now, you get a notification as a if you are part of this queue, which is secure, pumpkin default queue. And the owner at this moment is secure content default queue. And since I am part of this skill, I also have this notification then perform the triage. So initially I submitted for triage and now, I need I can perform that triage it because I'm part of this queue and I need to complete that triage. And let me show it to you when you submitted for the triage on the task or on the compliance steps. You have been initially created. It will show up, right there. Okay.
+[TIMESTAMP] Speaker 247: And here in this stage, when you take the ones. And in this stage, when you all these tasks or compliance steps in the draft status, you have the ability to delete it. Add new tasks or edit this and the task you see there is no assignee, you can assign that proper user or key. Okay.
+[TIMESTAMP] Speaker 247: So for example, I said like the this is the on the issue origin in [COUNTRY]. Maybe this one is not relevant for this. So in that case, what I'm going to do and we'll delete this task.
+[TIMESTAMP] Speaker 247: State health Canada, we do remote this one too and pm is not relevant, but I need to
+[TIMESTAMP] Speaker 247: So I'm removing or deleting it steps from here. So at this moment I have 6 steps here and and why I can do this because these are a status. Now, when I complete my, let me take the ship and complete that.
+[TIMESTAMP] Speaker 247: And again, please stop me any time. If you
+[TIMESTAMP] Speaker 247: Have if you have any questions, okay.
+[TIMESTAMP] Speaker 247: And you see this being does not have any assigned users? I need to give you a
+[TIMESTAMP] Speaker 247: Message that okay. You need to assign that task. I like to show it to you also. So in that case and since Ted is not required, I will remove that too.
+[TIMESTAMP] Speaker 247: Okay. Let me just refresh my [PERSON] and you can see my status is still in a street?
+[TIMESTAMP] Speaker 247: Okay. Now, I would compare my that
+[TIMESTAMP] Speaker 247: So now, for all the tasks, all the steps there are assigned users. So I should not be getting any it message for this.
+[TIMESTAMP] Speaker 247: And you can see I'm successfully completed my triage and now you see the ownership has changed to seeking support a year. Okay.
+[TIMESTAMP] Speaker 247: And just to clear make it clear that the since I'm the reporter and I'm right now I'm the owner don't get confused with that if someone is the report or someone else other than secure support is the reporter and then it goes through the queue. And if after the secure support at the ownership then you'll see the changes from someone else, some other users to that queue. And then when it takes ownership, will change that change the name or change the username. Okay. So now can see the workflow. So from that status to now change the status to that open, right? So an complete also moves to that open status and this stage is in progress at this moment. So on the company will do the complete only perform on that secure task, which has been in that makes this action and that open activities. So perform investigation manufacturing incident report is that. So in this stage, if I like to delete this
+[TIMESTAMP] Speaker 247: I cannot delete it. So open state cannot let it. But just to let you know. So my mistake if you have uh
+[TIMESTAMP] Speaker 247: Forgot to delete anything. So just not required or if you have certain states for every each and every complaint and for some steps is not required a relevant for a compliant, you can do edit this even in this stage. When the steps are open. And you see this applicable tech mark, you can just unchecked these and save it. They need to
+[TIMESTAMP] Speaker 247: Remote from your task list. You can see second test, number, five, 5 or 4. Okay. And now it's 4 or 4. So on this task is on, okay, this is an ad and the open stage. Okay. I have created a few specs just to show it to you that how things are being done. So for example, like liquid samples, this is a very simple task. So basically, you already posting samples from the client and which are defective. So helping to investigate so I was going to say, okay, and we bursting samples.
+[TIMESTAMP] Speaker 247: I'm asking requesting for 6 different examples from that line. You can write as much as you want. Okay. And send it. You'll basically document all these and what else you can do.
+[TIMESTAMP] Speaker 247: Although there is no task, but you can create a task for this. Otherwise, from here when you receive the sample from your customer, you see this log sample activities, you can
+[TIMESTAMP] Speaker 247: You can definitely add there that. Okay. What's your activity you received? You can is there any location? You can add there from these to these. We just say performed by home perform day and you can add on that. Okay. I have basic and you can document in that with your log activities. Okay. You can do that. Now, let me show it to you that is connect to cap. So here we can escalate to cap and at any time, okay.
+[TIMESTAMP] Speaker 247: And also, if this is after taking the initiative you see it's not a relevant complete we can forward it also. Okay.
+[TIMESTAMP] Speaker 247: Let's do some. I also created some secure test just for an example, which let me show to you also.
+[TIMESTAMP] Speaker 247: We can do it as relevant for your case. These are just script for which will help you to what steps or what is required is for. Does the new program report and change up to tech logic software. I just come up with some some sample questions. But yeah, we can execute or we can create a different script to execute to come up with something else. Okay. So
+[TIMESTAMP] Speaker 247: To say this and you can see your response and if you want to add any comment even say, it is please it is.
+[TIMESTAMP] Speaker 247: Going to do something like that is a liquid. Yes.
+[TIMESTAMP] Speaker 247: And does this change impact product people, yes? And like this you can have your own script to reach to some kind of conclusion whether what is required and what is not and you can see your response and if there is important, you can see that. Okay.
+[TIMESTAMP] Speaker 247: And it and under here
+[TIMESTAMP] Speaker 247: You can see this is I did not show to. So here you can see the investigation has been created as part of this and completion date since we have not completed the completion date has not been created. Um
+[TIMESTAMP] Speaker 247: Let me and here is a workflow. These 2 states we have completed and we have 2 more steps to go. This is a manufactured actual incident report. Again, I have created something we can take a look. This is another decision tree. And also, can you can a decision tree on here if you have something else to. Okay.
+[TIMESTAMP] Speaker 247: So this is another example, what is the date and time of the incident? Um
+[TIMESTAMP] Speaker 247: If you want to add a new comment, you can add it right there.
+[TIMESTAMP] Speaker 247: Is where
+[TIMESTAMP] Speaker 247: Outcome of the impact of the incident. It could be major minor based on that. You can decide that. Okay. One needs to be done, you know? So how many similar incidents have occurred, maybe and this will be okay. Are you aware of some other incidents similar so you can add that? And that will again
+[TIMESTAMP] Speaker 247: Help you to reach the decision, you know.
+[TIMESTAMP] Speaker 247: And this is just this is 3 execution is complete. I have I just created the 4 questions just to show it to you that you can create something like that and let's finish
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay. Let me show it to something else. Product history view.
+[TIMESTAMP] Speaker 247: Let me create another task, so I can show it to
+[TIMESTAMP] Speaker 247: So as I said in this stage, we cannot delete anything, but we can edit and add tasks here. Okay. And edit what edit assign?
+[TIMESTAMP] Speaker 247: It will populate in a bit since I have added the analytic task.
+[TIMESTAMP] Speaker 247: Okay. This product history.
+[TIMESTAMP] Speaker 247: So here you can see this is our primary model product and we're we're working on that. We're investigating this. You can see this that we needed. It was you can search for that. Okay. Local number, whether this local number had any issues. It will show up right there here. You can see all the caps there. Um
+[TIMESTAMP] Speaker 247: Here is the inspection related to that product. It will show up right there. This is your change order. Anything related to this
+[TIMESTAMP] Speaker 247: Okay. You can search for all these. Okay. I'm searching. Is this
+[TIMESTAMP] Speaker 247: So here, I created this cap up for this part. So you can see when I search for this cap up, it will show up here that this cap has been created for this product one. Okay. There's no inspection. We change on that, but the cap is there. Okay. This is the reality product review.
+[TIMESTAMP] Speaker 247: There is not yet created. And this is the product history checklist, how we do this?
+[TIMESTAMP] Speaker 247: This is the these are the questions. And again, this will help you to reach to the decision. That's it, basically. So let's click on the view on. You can go one by one or if you click on the view on, it will help you to do all this at the same time. Okay.
+[TIMESTAMP] Speaker 247: So here was there is it in any part of the process?
+[TIMESTAMP] Speaker 247: No.
+[TIMESTAMP] Speaker 247: So you can even see that. Um
+[TIMESTAMP] Speaker 247: This kind of portion. So we'll help you to again, these to the decision. Will all inspection?
+[TIMESTAMP] Speaker 247: And if you also add any notes relevant to this question, it's okay.
+[TIMESTAMP] Speaker 247: Save. And here, we can complete this.
+[TIMESTAMP] Speaker 247: And you need to add that summary by this?
+[TIMESTAMP] Speaker 247: Let's say completed. This is your status and relevant observation. If you have any, you can say yes. And this
+[TIMESTAMP] Speaker 247: And then you can see
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Have you can see
+[TIMESTAMP] Speaker 247: This is the product details. And if you go there, we can see what is that? Uh
+[TIMESTAMP] Speaker 247: What has been done and what has been documented, right? Okay. And the last step is that performing investigation?
+[TIMESTAMP] Speaker 247: So, if you have any defect value, we can add it right there, that effect value. You can add right there.
+[TIMESTAMP] Speaker 247: Is a root cause
+[TIMESTAMP] Speaker 247: Just want to say these
+[TIMESTAMP] Speaker 247: These is as same as a cap on completely there.
+[TIMESTAMP] Speaker 247: If you
+[TIMESTAMP] Speaker 247: Any uh
+[TIMESTAMP] Speaker 247: During this first release
+[TIMESTAMP] Speaker 247: On tickets, do we have
+[TIMESTAMP] Speaker 247: One one to 3 sixty, if you have any failure code, you can add it right there to say this
+[TIMESTAMP] Speaker 247: And this value code also has a defect failure, severity?
+[TIMESTAMP] Speaker 247: Okay. And I'm going to say this
+[TIMESTAMP] Speaker 247: Action plans. So here only difference is there for when you create your action plans is not going to give you any action plan tasks for that. So it's basically when you complete you have your action plan and you can complete this. You can just say, okay, I have this corrective action plans. Um
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Maybe you just assign someone else and you just here and you just document this, okay. This has been completed when it has been completed and completed by
+[TIMESTAMP] Speaker 247: You can save it.
+[TIMESTAMP] Speaker 247: And then
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: And the conclusion.
+[TIMESTAMP] Speaker 247: You can choose this conclusion. I'm going to choose this at this moment and I need to see
+[TIMESTAMP] Speaker 247: Okay. Let me just refresh it.
+[TIMESTAMP] Speaker 247: So you can see right now. So verification has been completed and now it's asking for perform a closure to the owner. And also I like to point out some things. So we have 2 associated items and I have since I have documented this one as a primary one. So I completed the investigation for this one if you like to perform any other investigation or if you like to document any other investigation. You can definitely do this from here or when you are creating any defect or failure. From here, you can you can add these from here and you can create another investigation for other parts to and that is that is possible. And again, you can choose to escalate your cap at this moment also, I can show to you
+[TIMESTAMP] Speaker 247: That's how we create the cap up.
+[TIMESTAMP] Speaker 247: Here I'm not going to choose anything. I'm going to choose okay. For this side.
+[TIMESTAMP] Speaker 247: And save it.
+[TIMESTAMP] Speaker 247: It will create a cap for this product.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: And in the under the reference tab, you can see this is your complaint number tackle this into
+[TIMESTAMP] Speaker 247: Reference on this. Okay.
+[TIMESTAMP] Speaker 247: Let's go back to the complaint. So here, we can do on this. Again, regulatory it is if it is required or relevant, then you can use this ability part if you need to report to anyone. But if it is not relevant for your case, you can just on this part. This is your reference, any related complete, you can just had any belated competence here. I like to add in conference, for example, if I add. Okay. This content is
+[TIMESTAMP] Speaker 247: Related to this and different types, how it is related. You can have it. Okay.
+[TIMESTAMP] Speaker 247: Not at that. When everything is done, you can close your close your company because as a complete owner, all the tasks. So this is how to close your complaint.
+[TIMESTAMP] Speaker 247: So here you can choose your resolution, like whether it's a complaint that the duplicate is an inquiry feedback, you can choose your resolution. I want to choose content at this moment.
+[TIMESTAMP] Speaker 247: Here is my conclusion code.
+[TIMESTAMP] Speaker 247: If they can include your review, as I said we have to choose some other users if I choose myself here and say, okay, I'm closing the
+[TIMESTAMP] Speaker 247: Closing the contact and save it.
+[TIMESTAMP] Speaker 247: On donor cannot be close, but the same complaint. You get this
+[TIMESTAMP] Speaker 247: Okay. Maybe choose.
+[TIMESTAMP] Speaker 247: As user closing complete. So basically you cannot it your own tasks or own work. So I'm going to save this.
+[TIMESTAMP] Speaker 247: And now you can say platform review this. This task has been opened for that this season. Okay.
+[TIMESTAMP] Speaker 247: Okay. So basically, when that user will get the notification and will perform the review. We look into everything and see, okay, this has been done. Everything has been performed properly. Okay. Those task has been completed. If the user reviewer is completely satisfied with approval. I will show you if it is rejected, it's approved. It will move to this, but if it is rejected, let me show it to your different.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay. You can see this has been closure requested. And
+[TIMESTAMP] Speaker 247: And let me go
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: You can see submit for rework and right now I'm logged in a secure support again and asking for is, how do you is this? We can just pull it come here and click on that instant.
+[TIMESTAMP] Speaker 247: We start in my company.
+[TIMESTAMP] Speaker 247: And also, when you are researching your complaint, if you have to add any new information to investigation or anything like that, you always have that option too. So this is the investigation. Let me show to you that too.
+[TIMESTAMP] Speaker 247: This is your investigation, which is in the close stage, right? If you have to add anything on here, you can reopen your investigation.
+[TIMESTAMP] Speaker 247: So, it will ask you to okay, data collection new information. I'm able to say, okay, take a portion. I need to collect some data. Okay. I'm going to save it.
+[TIMESTAMP] Speaker 247: So quickly so after you in that stage, we can do this
+[TIMESTAMP] Speaker 247: And here in the complaint stage, you can see when you open your investigation.
+[TIMESTAMP] Speaker 247: Task perform the solution so you can go from there.
+[TIMESTAMP] Speaker 247: The mixed
+[TIMESTAMP] Speaker 247: Branded.
+[TIMESTAMP] Speaker 247: Investigation. Okay. And see
+[TIMESTAMP] Speaker 247: Okay. Now, then do the closure again?
+[TIMESTAMP] Speaker 247: And again, you are doing it as a
+[TIMESTAMP] Speaker 247: Compared to owner.
+[TIMESTAMP] Speaker 247: Is
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: Stick western.
+[TIMESTAMP] Speaker 247: Okay. You can see again, but from review here and I'm logging as that user event.
+[TIMESTAMP] Speaker 247: And this time I'm okay with everything and here is my new evaluation. This is my investigation.
+[TIMESTAMP] Speaker 247: Okay. Everything is fine. Okay. As a reviewer, I will go upload this.
+[TIMESTAMP] Speaker 247: Okay. Now closed.
+[TIMESTAMP] Speaker 247: And I go to know about security duration user.
+[TIMESTAMP] Speaker 247: And you can see the competent report has been closed.
+[TIMESTAMP] Speaker 247: Okay. And here
+[TIMESTAMP] Speaker 247: You can see all this invest. All these fields has been populated with this with the information, like the confusion code. I have added the resolution is complain. The gap has been created with this local review done by this closed by this closer comments. Okay. Everything has been opted with that. Okay. That's that is pretty much it. Let me know if you have any questions and can even do you think this one here and do the same?
+[TIMESTAMP] Speaker: So Speaker 015 are some of those fields that you showed [COUNTRY] within like, the decision tree? Or I think there was the product history sort of questionnaire that you went through, those questions and those fields are those all configurable by [COUNTRY]?
+[TIMESTAMP] Speaker 247: Or does it I did it for you guys. Just referred to you. Uh
+[TIMESTAMP] Speaker: Can you show [COUNTRY] where can you show [COUNTRY], kind of where you would go in and do that? Yes.
+[TIMESTAMP] Speaker 247: Yes. Let me show to you. So here here
+[TIMESTAMP] Speaker 247: You can do all this from the C.
+[TIMESTAMP] Speaker 247: Here you can see all this task, right?
+[TIMESTAMP] Speaker 247: So this one you can see there's one another manufacturing incident report. I showed you this
+[TIMESTAMP] Speaker 247: And this is the question I created for you. This is the answer type. Okay. Okay. If you go to the secure task, you can see and you can hold on
+[TIMESTAMP] Speaker 247: You can search with the
+[TIMESTAMP] Speaker 247: This has to be related to the complaint. Okay. So search with the like a record time complaint and even see these are the tasks and you can create any tasks from here. It's all you have to do click on new content management step. Okay. Click on next.
+[TIMESTAMP] Speaker 247: And then task name. We do this, just for example
+[TIMESTAMP] Speaker 247: Is task. Okay. Transact to workflow. You see this that way when you created this task and if you want to transfer to workflow, that means when you submit for triage, whether it will go there or not. That's defined by this box. Okay. Okay. So here is a step allow, as you see, since you choose the report type complete is automatically the task type and the decision tree sample requires tasks. I choose whatever is required. Okay. Step the step thing if it is a one to like, you can define your tables. So if you have any default assignee, you can choose from here. Okay. Otherwise, to give you that message as I showed you that who will be performing that task. Okay. And task type I showed you. From here.
+[TIMESTAMP] Speaker 247: These allow these 2 test tag. Um
+[TIMESTAMP] Speaker 247: Script. Okay. And see
+[TIMESTAMP] Speaker 247: And then so from here, dynamic simple, I always dynamic questions. So I always the dynamic questions. So that's you start creating here, dynamic questions, new question, number, text and I choose your category. Okay. From there.
+[TIMESTAMP] Speaker 247: And if you have any any questions let me
+[TIMESTAMP] Speaker 247: Do this
+[TIMESTAMP] Speaker: And you can turn these on and off to or how do these for which ones pull through to the workflow.
+[TIMESTAMP] Speaker 247: Yes. Yes. And only thing you have to remember suppose you created a complaint. Okay. And then you just remove that checklist. What I showed you press one to workflow or not, then it won't work. Okay. Right. We work for the complete are created after that.
+[TIMESTAMP] Speaker: Got it. Yep. Yeah. And so just for the job orders team, this is to update or create those project list that she showed that populate by default. So this is more of an admin task not something you guys would do every day, but I just wanted to see how this was done. So
+[TIMESTAMP] Speaker 247: And all the hierarchical codes, like differences and all this that. This is from from here. Okay. And that is what I showed you. That is this test point I just created just to show it to you that. We can use that and you can create your severity from there.
+[TIMESTAMP] Speaker 247: Okay. Any any other questions or anything anyone any feedback?
+[TIMESTAMP] Speaker 058: Yeah. I think that should be something I know we are at time. So thank you so much. Continue on Thursday. And let me stop the recording and Speaker 044. If you want to stay on to look at the support ticket, that will be great the others to
+[TIMESTAMP] Speaker: thank you for the next call. We'll continue from this point on or what will be the yeah, the agenda.
+[TIMESTAMP] Speaker 058: From this point on yes.
+[TIMESTAMP] Speaker: Okay. Is there more to cover with complaints?
+[TIMESTAMP] Speaker 247: Or are you I was thinking like my perception was that we gather some requirements on what you guys think of what you at least think preliminarily that this needs to be changed. And this is what is aligned with those process. Something like that kind of discussion. Because pretty much what I have about the complaint I have covered. And if you have any questions or anything I can answer on the excel
+[TIMESTAMP] Speaker: We should Speaker 055 maybe tomorrow we can discuss that in our weekly touch point. Okay. Because I'm not sure that we're I mean, seeing this I'm not sure that we're quite ready to start talking about configurations and customizations yet.
+[TIMESTAMP] Speaker: Yeah. Let's talk tomorrow.
+[TIMESTAMP] Speaker: I don't know what your thoughts are, but that's kind of where I'm at. We're probably a little bit behind on this, but I don't know the so not that I think it puts [COUNTRY] too far behind, but I'm not I'm just not sure. We'd be ready for that on Thursday.
+[TIMESTAMP] Speaker 058: Yeah, let's review that tomorrow.
+[TIMESTAMP] Speaker: Okay. Sounds good.
+[TIMESTAMP] Speaker: Yeah. So tomorrow, yeah, thank you, guys.
+[TIMESTAMP] Speaker 058: Yeah. I think Speaker 247 we can maybe look at the those permission sets.
+[TIMESTAMP] Speaker 247: Yeah. I'm just looking for the
+
+
+====================================================================================================
+Title: ABC Corp/Customer 21 | Phase 3 - Audit Module- Demo/Walkthrough
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3653.56
+====================================================================================================
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: It's with a couple of names and then we can start the meeting.
+[TIMESTAMP] Speaker 247: Hi, Speaker 058.
+[TIMESTAMP] Speaker 058: Hi, everybody.
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker 058: Do. I think we have most
+[TIMESTAMP] Speaker 058: 70% of the attendees join Speaker 044. Should we go ahead and get started?
+[TIMESTAMP] Speaker: Yeah. Go ahead and get started. Yeah, sure.
+[TIMESTAMP] Speaker 058: Okay. Yeah. The plan is to continue where we left off last week on the audit module. So again, to be a demo and you can ask questions if you have an in between
+[TIMESTAMP] Speaker 058: And as we complete this, we will go into like, internally, you can do the discovery and come back and do our requirements gathering. That is when we'll tailor the system to your needs. But right now, it will be purely out of the box.
+[TIMESTAMP] Speaker 058: Um
+[TIMESTAMP] Speaker 058: So Speaker 015, I think I can get started before that. Let me start the recording.
+[TIMESTAMP] Speaker 247: Yes, please.
+[TIMESTAMP] Speaker 058: Yeah. I think it was on go ahead. So Speaker 015.
+[TIMESTAMP] Speaker 247: Oh, chat.
+[TIMESTAMP] Speaker 247: Okay. So last almost finished the audit workflow. So we had reached the response stage when offered. So to keep things moving, I created another audit that kind of mimics this the first one we created and I will continue working on the last one I created and I'll show you both of them. And I also investigate what most is the [PERSON] and finally able to resolve that too. So let me share my screen and we go from there.
+[TIMESTAMP] Speaker 247: And please let me know when you get to.
+[TIMESTAMP] Speaker: We can see it.
+[TIMESTAMP] Speaker 247: Okay. Thank you. So um
+[TIMESTAMP] Speaker 247: This is the audit. We're working on it last week. And we got started here on the response and the moment we're closing the response and of the responses getting created. So finally I was able to find the list and get it close it. And when I closed it to the implementation stage and we have one action item there. And then I completed those action items today. And then finally and the other 2 action items from the other findings.
+[TIMESTAMP] Speaker 247: Okay. There are 2 findings here. One from the one which had the issues that is the finding number this team. This one has the issues. So I
+[TIMESTAMP] Speaker 247: Resolve this issue. And then it's moved to that closure stage. And then the next stage is that close the audit? But I created another audit which is also from the audit program we showed to you. I created this audit.
+[TIMESTAMP] Speaker 247: Which is
+[TIMESTAMP] Speaker 247: In this right.
+[TIMESTAMP] Speaker 247: So we can see it's the same criteria. So I created this audit program, which has no scope. That means no criteria document attached.
+[TIMESTAMP] Speaker 247: This is the internal audit has been created which right now in a complete status and
+[TIMESTAMP] Speaker 247: This audit program is in the improved stage. And if I go to this audit
+[TIMESTAMP] Speaker 247: Which is audit number fourteen?
+[TIMESTAMP] Speaker 247: We manually added the audit criteria and then the lead auditor find these findings from this audit checklist, which is unread. And then from there, we have the response which has already been approved state. Let me show it to you. What's the responses?
+[TIMESTAMP] Speaker 247: A minor point, which has a calibration issue and the it's the same response. We which we have in the audit 30. Okay.
+[TIMESTAMP] Speaker 247: And this is another one.
+[TIMESTAMP] Speaker 247: We need to which is a major when we need to
+[TIMESTAMP] Speaker 247: Get investigation. Okay.
+[TIMESTAMP] Speaker 247: And the owner is security integration user, which is also mimic the
+[TIMESTAMP] Speaker 247: Order thing. So we closed both of them and we had this many action items. Okay.
+[TIMESTAMP] Speaker 247: And now, if you see we need to close these action items and I need to log in as secure integration, users. And also you can see why it's being assigned to the security integration users. Because the audit contact is secure, integration users. Okay?
+[TIMESTAMP] Speaker 247: Go to login. Is that quality contact right now?
+[TIMESTAMP] Speaker 247: And also if you we can find this suppose if you go to this finding
+[TIMESTAMP] Speaker 247: This is an audit finding.
+[TIMESTAMP] Speaker 247: And you can see if you go to this finding, you can see an upcoming and overdue. You have this 2 action items, which needs to be completed by secure integration users and also um
+[TIMESTAMP] Speaker 247: And see the secure AI. Again, if there are similar findings. If you click on this, it will search for the similar reports and will show up that what has been done is a finding time. Is this like, reoccur? It will show up when it happened, how many able to have when it's created and one distance it?
+[TIMESTAMP] Speaker 247: And again for finding 12 if I could go there.
+[TIMESTAMP] Speaker 247: You can see the same thing. There is no, since this is a minor findings and only the responses required there is no investigation and no action items required for this one. Okay.
+[TIMESTAMP] Speaker 247: And you can see upcoming and overdue. No activities case. So and again, if you click on that, I search for that similar ACS and ensure that how many this kind of finding type minor finding type. Similar type has happened before. Okay.
+[TIMESTAMP] Speaker 247: Now login as
+[TIMESTAMP] Speaker 247: The user
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Now, in here, you can see I can go from here and complete my action items. Or I can go to this findings.
+[TIMESTAMP] Speaker 247: And go there.
+[TIMESTAMP] Speaker 247: And the actions.
+[TIMESTAMP] Speaker 247: On view more. And you can see these are my upcoming and overdue actions for this audit finding. Okay.
+[TIMESTAMP] Speaker 247: So how do you complete this? You click on that?
+[TIMESTAMP] Speaker 247: And you can see status is not started at this moment.
+[TIMESTAMP] Speaker 247: And from here, we can complete complete this task. Okay.
+[TIMESTAMP] Speaker 247: It's moved back to that.
+[TIMESTAMP] Speaker 247: And we do have any any questions.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Do you have any questions? Let me know if you have any questions. Okay.
+[TIMESTAMP] Speaker 247: So here, when you complete your actions, you say, okay, this is your description. This is near completion date. And for how you complete your actions. When you complete that task, you come here, basically and you just document that you have completed. So
+[TIMESTAMP] Speaker 247: He is the date. This is the date you have completed. If you have any sign up moment, you can add that which is not required at this moment, but the date is required and you can see purpose of the patient is accomplishing action and again, save it.
+[TIMESTAMP] Speaker 247: We roll back here.
+[TIMESTAMP] Speaker 247: Next one and again. And if you need extra time, you can request extension from here.
+[TIMESTAMP] Speaker 247: For example, suppose and I need to add new justification for extension. And this is your reposted due date only criteria for your requested. Due date should be the day, the actual due date for the task. It has to be later than that. For this one, my due date is 20. If I say. Okay, my requested due date from 19 or from then it will give give me and it has to be from going to one month. Okay. And justification, we have a justification for why we're asking for the extension. They need to be extended automatically. Okay.
+[TIMESTAMP] Speaker 247: And how many times you have extended or requested for the extension, it will be reported right there.
+[TIMESTAMP] Speaker 247: Yeah. This is the cause why this task has been assigned to you is the action plan. Okay. And otherwise, if you don't need the nicest extension, you can just come here and complete. We have updated your training plan for this case. And then again in just add your completion date and if you need to add any files so you can add it from right there and save it.
+[TIMESTAMP] Speaker 247: So all your action plan, the same and if you go back there, you can see these are all ready the status from open, now scan 2 already. So the same for other 2.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: The system
+[TIMESTAMP] Speaker 247: Speaker 184.
+[TIMESTAMP] Speaker 247: This is your boss.
+[TIMESTAMP] Speaker 247: And just to let you know for one in case you can create multiple action plans.
+[TIMESTAMP] Speaker 247: Same thing, completion date.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: I come back here.
+[TIMESTAMP] Speaker 247: So now you can see my status is complete, stage is ready for closure. This is my findings. Model complete. This is my response. They're all closed now.
+[TIMESTAMP] Speaker 247: Here is my action plan. Now they are all closed. Okay.
+[TIMESTAMP] Speaker 247: I don't have any reference at this moment.
+[TIMESTAMP] Speaker 247: Now, again, I'm going to log out as security. Integration users. Okay.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay. So right now I'm logged in as secure support.
+[TIMESTAMP] Speaker 247: I'm logged in as secure support and my needs with that on the at the closure. So this is a closure stage and the I'm the lead auditor here. I dev on the audit for the close and system also checks, whether it can be closed. If closure criteria admit they close activity can do. Okay. And the process will. So I'm going to close it from here.
+[TIMESTAMP] Speaker 247: So here, when I'm closing the over date, it was quite unlock. The any follow up is required. If I select this one and select a follow up date, then what we have another all of audit review created. And this needs to be from that date onwards that you need to work on that audit as a follow up. Okay. Other ones. What will happen if I don't do anything? No, follow up is required. Answer this doing nothing and save it will just started. I can here if I go back here. Um
+[TIMESTAMP] Speaker 247: Back to the this one audit 30
+[TIMESTAMP] Speaker 247: This is also closure stage. I can show it to you believe.
+[TIMESTAMP] Speaker 247: So, suppose, I don't do anything. I'm just going to save it because I'm okay with this audit and I'm going to save this one.
+[TIMESTAMP] Speaker 247: And you can see this is in a closure stage.
+[TIMESTAMP] Speaker 247: So now we can see stage is closed status is closed and I'm going to save it. Refresh it.
+[TIMESTAMP] Speaker 247: So everything is now closed. Okay. Nothing. Nothing else has happened. Okay. Now, if I go back here and I for this audit, which is audit fourteen, which we just close all the action plans, completed all the action plans. And I said, okay, I need a follow up. So I select this one follow up prepared all update. I'm saying. Okay. I need I'm going to follow up on 20th. Okay. And then the reference audit. If I have any reference audit, I can add, I can
+[TIMESTAMP] Speaker 247: And you can see it just showed that completed to post. You can add if you have any reference audit, you can add that audit right there. Otherwise, you can just save it.
+[TIMESTAMP] Speaker 247: So what will happen it will close this audit. Okay.
+[TIMESTAMP] Speaker 247: And you can see if I go to the reference.
+[TIMESTAMP] Speaker 247: Here.
+[TIMESTAMP] Speaker 247: So if you if I go in the details [PERSON] and see there is a audit for [PERSON] as a paid into. Okay.
+[TIMESTAMP] Speaker 247: And
+[TIMESTAMP] Speaker 247: When I go through that
+[TIMESTAMP] Speaker 247: Only taking
+[TIMESTAMP] Speaker 247: And here we can see
+[TIMESTAMP] Speaker 247: Audit 50
+[TIMESTAMP] Speaker 247: Has been created, which is in a planning stage and audit type, this need auditor, audit category. It will be the list of the things you need to add here. Your start date is from one twenty, that is your all of audit has been created right there and you can see in into it is tied there.
+[TIMESTAMP] Speaker 247: Okay. It's linked to that audit because it's been created from there. Okay. Do you have any questions here?
+[TIMESTAMP] Speaker 247: And if you don't have any questions, so basically the flow is from we plan the audit and then schedule it, then we are confirming the audit. Okay. Maybe we planned it for month of February, but we are starting the audit from actually this to yes.
+[TIMESTAMP] Speaker 288: I for this part, I don't have any question, but previous one when you create the checklist, I have a question. Do you want to ask it right now or are we asking at the end of the meeting? So is it possible to instead of creating each then for the checklist is saying a question in one main box? Just attach one the whole checklist as a one document to got it?
+[TIMESTAMP] Speaker 247: Yeah. That's the normal process. Only reason, I haven't shown that way because last time last week, if you embed it correctly I was asked that if we plan the audit from the audit program and at that time, if you don't have the checklist or questions ready. So show it in that way. So that's the reason I have not added the checklist. But otherwise this is already in a planning stage. Otherwise from the audit program or from any any audit add up audit, how you're going to do it. I already have a couple of audit criteria. Where I have added the questions. So for example you see this audience criteria document where you already have the questions and that criteria document needs to be in that stage and that it can be used multiple times. And not only that suppose. You are using the same audit criteria documents where have you have listed, maybe 20 questions. Okay. And then you want to for particular or that particular audit, you need 2 more questions or find more questions, what you can do add the audit criteria document to the audit and add 5 more questions in the scope.
+[TIMESTAMP] Speaker 247: And that doesn't change these criteria documents, for example. This one okay. I will be sure to
+[TIMESTAMP] Speaker 247: And here you can see the start date and the end it has been played out, which we can will be marking that okay. This is my start date. And while we go to confirm the audit, okay. Here is audited contact and then this is [PERSON] and if you have a new site, maybe smart onsite and it
+[TIMESTAMP] Speaker 247: And wait
+[TIMESTAMP] Speaker 247: Checklist.
+[TIMESTAMP] Speaker 247: Okay. And
+[TIMESTAMP] Speaker 247: Here you can follow up audit or something and then add something here. If you have a parent or otherwise, you just save it.
+[TIMESTAMP] Speaker 247: So audit, you can see audit has been created. And here is your audit trial to do at this moment. You won't see anything, but the moment you're going to submit your audience. It will show up. Right there. Okay. Um
+[TIMESTAMP] Speaker 247: And you can see this auto close option. If we select this one. So when we just close the audit, when you completed all the steps, it will automatically get closed. You don't have the option to follow up or anything. So that's why it's better to not to select this one.
+[TIMESTAMP] Speaker 247: Now I want to submit this.
+[TIMESTAMP] Speaker 247: [PERSON] initiative, my order.
+[TIMESTAMP] Speaker 247: This is Ben started. I can say, okay, this 15 and this is when I started.
+[TIMESTAMP] Speaker 247: And it doesn't matter if we start from January 1st.
+[TIMESTAMP] Speaker 247: And you see the moment we initiated our audit. My check is appeared here. Okay.
+[TIMESTAMP] Speaker 247: And now, if you see, okay. These are the checklist coming from the audit contain a document, but I need few more questions. What you can do. You just click on this and add your questions manually for this model. And that doesn't change here this time. And you can have one to be in your documents also and and go from there. Okay. Any any other questions?
+[TIMESTAMP] Speaker: So you have to I'm sorry, go ahead. Oh, go ahead. Speaker 288 finish up.
+[TIMESTAMP] Speaker 288: No, I just ask questions you go ahead. Please Speaker 044.
+[TIMESTAMP] Speaker: Well, what I was gonna ask. So Speaker 015, is could you show [COUNTRY] a scenario where essentially because I see [COUNTRY] running into this situation, right? We didn't really have an audit plan. There was no plan to do an audit. It's sort of last minute, whatever the reason is, basically a situation where I created a checklist in my notebook I went out and did the audit and now that I've done with the audit, what I want to do is, I just want to record that. I did the audit. I want to record my findings and then escalate those non conformance or those findings to cap. What's the simplest minimal amount of input into the system? I would have to use to track an audit and complete an audit. Could you kind of walk [COUNTRY] through one of those? Like I said, almost a
+[TIMESTAMP] Speaker: Speed run, if you will. Like what's what's kind of the minimum that you could put in?
+[TIMESTAMP] Speaker 247: The suppose just let me
+[TIMESTAMP] Speaker 247: Suppose, maybe I have a major finding. Okay.
+[TIMESTAMP] Speaker: So so what I have to create the audit first.
+[TIMESTAMP] Speaker 247: You have to have an audit to go for like, you are able to document this right to audit. Otherwise you always have the option to create a cap directly.
+[TIMESTAMP] Speaker: Right. Yeah.
+[TIMESTAMP] Speaker 247: But do you like to maybe
+[TIMESTAMP] Speaker: Yeah. What I'd like to record, right? I still want to record the audit because maybe I don't have any findings, right? I want to just record the audit. Yes.
+[TIMESTAMP] Speaker 247: So, that's why you need to have audit and then you have a finding right there. And okay. I'm just saying, okay, cap
+[TIMESTAMP] Speaker 247: Finding just one example. Okay.
+[TIMESTAMP] Speaker 247: This um
+[TIMESTAMP] Speaker 247: And then you have when you are doing this also you can what you can do here. You can see when you have a major finding automatically is the investigation required, but
+[TIMESTAMP] Speaker 247: If it is a critical, the cap is required. Okay. You can do that or you can select a critical one and then save it.
+[TIMESTAMP] Speaker 247: Oh, outside
+[TIMESTAMP] Speaker 247: Let's choose this.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: And then from there when you let's wait, it's coming
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: And also, you can use this guide. I mean
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: And I'm going any
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: I'm not submitting because you don't have that approval process, just save it.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: And your investigation part will be within cap. Okay.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Give a
+[TIMESTAMP] Speaker 247: Minute.
+[TIMESTAMP] Speaker 247: [PERSON] one [HR_SYSTEM].
+[TIMESTAMP] Speaker 247: Okay. Complete audit.
+[TIMESTAMP] Speaker 247: Now, I'm going to issue the audit.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay. Now, again, I'm not
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: I
+[TIMESTAMP] Speaker 247: I have to take to this user has hopefully has the cap in on
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Nice.
+[TIMESTAMP] Speaker 247: And
+[TIMESTAMP] Speaker 247: So here you can see this. So you have the option, whether you like to create a new CPA or you're going to use the cap already been created. Okay.
+[TIMESTAMP] Speaker 247: Suppose, I want to create a new cap.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay. So here um
+[TIMESTAMP] Speaker 247: All right. Let's save it.
+[TIMESTAMP] Speaker 247: And then another thing you have to make sure that the users you see this, which cap you have to make sure the user whoever is performing this all the permission sets with the cap. So now I'm going to the cap is 1 32 is
+[TIMESTAMP] Speaker 247: So this
+[TIMESTAMP] Speaker 247: So you can see what the who's the owner. This is plumbing needs best action.
+[TIMESTAMP] Speaker 247: Okay. You need to initiate this. You need to perform the content and you do the things what you need to do your investigation and everything. And then when you are all done, then you go back to our response, select this and submit your response. Okay. And then it will be all done.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: That's the easiest way to perform your gap through the audit.
+[TIMESTAMP] Speaker 247: We just need to select that. We completed doing estimation and action plan, so you need to complete everything about that.
+[TIMESTAMP] Speaker 247: Yes, sorry. I don't see the hands of the time.
+[TIMESTAMP] Speaker 288: No problem.
+[TIMESTAMP] Speaker 247: That's just
+[TIMESTAMP] Speaker 288: Interrupt your the explanation, please.
+[TIMESTAMP] Speaker 247: Interrupt me that's easier, please.
+[TIMESTAMP] Speaker 288: Yeah. My question is all of this is actually recording from auditor. What if the audit he wants to respond to this the checklist that we send it to him?
+[TIMESTAMP] Speaker 288: I mean, is it because all of this is happening that I mean, outside of the system, you do your audit. You get you send your checklist. Probably you have the audit audit meeting with the person or in by Speaker 039 or by in person. And then you actually record whatever you write it down yourself. But what if we use this system to actually the audit answer back the audit? Is it possible I mean, is the system is utilized for that?
+[TIMESTAMP] Speaker 247: So your lead auditor or who is auditing the system or anything like the auditor doesn't have access to the system. That's what you need.
+[TIMESTAMP] Speaker 288: No, no, no. So these are the record the auditor actually made for an audit that happened or will happen.
+[TIMESTAMP] Speaker 288: Can we use the system the ABC Corp to actually perform execute an audit and audit respond back through the system to the audit?
+[TIMESTAMP] Speaker 247: So for that for internal audit definite, you can do that because if an internal audit, your auditor has that SCO system, right?
+[TIMESTAMP] Speaker 288: Right. The audit you see the checklist and then when he's gonna respond back
+[TIMESTAMP] Speaker 247: And to give the notification also
+[TIMESTAMP] Speaker 247: Like body content, get the notification the moment uh
+[TIMESTAMP] Speaker 288: Would you please to create a scenario for the audit and see what he's he's gonna see and how we respond?
+[TIMESTAMP] Speaker 247: Yes. Let me show it to you one more time if you remember it. So
+[TIMESTAMP] Speaker 247: Here. I don't we don't have the checklist initially, right when
+[TIMESTAMP] Speaker 247: Okay. So wait. Suppose the lead auditor created the checklist. Okay. And then checklist and after that lead audited perform the audit and also
+[TIMESTAMP] Speaker 247: Documented the findings and then lead auditor. What little detail does lead to.
+[TIMESTAMP] Speaker 288: Believe the audit you have to log in as audit to to see what I'm talking.
+[TIMESTAMP] Speaker 247: No. Let me come back to sorry. I'm sorry. No problem. So here. So lead auditor is working on that up to this. Audit contact has no role here. Okay. So lead auditor is performing that and looking at the checklist, performing the audit, lead auditor has findings. And then lead auditor is doing what lead auditor generating this report. This is the report. Okay.
+[TIMESTAMP] Speaker 247: You don't have any approval process. So so lead order, what lead it does remember there is a state complete audit, so lead to complete the audit step and then you see
+[TIMESTAMP] Speaker 247: While I do this also there is a while completing the audit, it shows the report. So that means need or let the report generated legal it send that one to boom.
+[TIMESTAMP] Speaker 247: This audit contact. So audit contact get notified. If one is if audit contact logged into the assistant audit contact, we have notification here. Okay. You have a notification if I'm this task?
+[TIMESTAMP] Speaker 247: Notification audit contact will have email notification waiting for that. What sent by that lead auditor with this report that you need to wait on these findings. Yes. So
+[TIMESTAMP] Speaker: So just and I think this will clarify your question too, Speaker 288, when as we're going through the demo, when she jumps out and logs in as C integration user, that's the audit she's responding as the audit. It gets sometimes confusing when we jump back and forth for permission rights. But yeah, to your to I think to further answer your question, yeah. After the finding the audit could be assigned. That can be a user in the system in joy. For phase 4. Once we get to supplier integration, we can actually add the supplier contacts in and we can issue those. If we're doing a supplier audit, we can issue those findings to the suppliers.
+[TIMESTAMP] Speaker 288: No, my purpose of the question was the auditor himself answer back, not [COUNTRY] that to log into whatever the finding is.
+[TIMESTAMP] Speaker: Correct. Yes. So so when you assign the supplier doesn't
+[TIMESTAMP] Speaker 288: Have access to this supplier doesn't have the access to to
+[TIMESTAMP] Speaker: Phase in phase four, they will have access to it. They do not right now.
+[TIMESTAMP] Speaker 288: Oh, wow.
+[TIMESTAMP] Speaker: Yes. In phase four, we will add a supplier contact. And essentially for this audit record, it'll be just like they worked for Customer 21 or they'll be able to come into this audit record and audit or update and change the things that they're assigned to change.
+[TIMESTAMP] Speaker 288: They have access to it. Okay. Thank you.
+[TIMESTAMP] Speaker 247: Any any other sheets?
+[TIMESTAMP] Speaker 247: I know this is kind of this audit module. This is kind of complicated, because within the audit you have the findings finding has its own owner finding has its own task response actions. All this. So it's kind of complicated and I'm the one who's showing this as a lead anger or also as a add contact. And that's why I created a separate audit contact and even like because if I'm the auditor same user is already contacted, that will even make it more confusing that who's doing what. So normally finding has a different owner and the workflow the actual is someone else or a list of approvals for plan approval or audit report, approvals or response approval required or audit needs to be avoided that has another Speaker 055 for that. So it's a complicated process because within that workflow, you have workflow finding has its own investigation then it is required. It goes to the cape and moves to the cap investigation and all so, yes. So
+[TIMESTAMP] Speaker 247: Please feel free to reach out to me. If you have questions, confusion and I'll try to answer invest on my capability.
+[TIMESTAMP] Speaker 247: Any any other question?
+[TIMESTAMP] Speaker 247: And do you know how to add criteria documents just asking?
+[TIMESTAMP] Speaker: I have not tried it yet, but I
+[TIMESTAMP] Speaker: Have an idea.
+[TIMESTAMP] Speaker 247: So here's your audit criteria document. And why when you create this audit Cority there is as simple as any other control documents. Um
+[TIMESTAMP] Speaker 247: Just to touch base on this because we have to
+[TIMESTAMP] Speaker 247: Work on that. So here just for
+[TIMESTAMP] Speaker 247: You can choose any document category. If it would be for all sites or anything, you can add your distractions and just save it.
+[TIMESTAMP] Speaker 247: And again, the action itself or the required field, if anything else is required and I have not added it will give me the error. Okay, you have not added this.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Security.
+[TIMESTAMP] Speaker 247: An opening.
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: Okay. And here's the criteria requirements. You can add it to this one by one. But I normally prefer like one or 2 documents patients are fine, but I normally prefer to use this.
+[TIMESTAMP] Speaker 247: Did I import recent?
+[TIMESTAMP] Speaker 247: And from here, this import questions from here, but the criteria documents.
+[TIMESTAMP] Speaker 247: I do not have permissions. Okay. But from the custom objects for the criteria documents just create a CSV file and just upload their questions. That is not easier. All you need this because you are adding the questions for this control document decided. That's it. That's the easiest way to use this. And this of the things are seen as central document or other way. You can just add it through this one by one that's very time consuming. And here you can choose your result type only result type. We should not add that is the audit result, because the audit result, we use it for
+[TIMESTAMP] Speaker 247: When
+[TIMESTAMP] Speaker 247: When we lose the audit for
+[TIMESTAMP] Speaker 247: Closing or some other things. So this is the one we don't use it, but Indiana is on [PERSON] you can use it or anything else. Okay. That's the way we added that on the question. And then I go to the app release and parents that it has to parents just so we can
+[TIMESTAMP] Speaker 247: Oh, I'm logged in as security users. That's why I don't have the permissions. Okay. Got it.
+[TIMESTAMP] Speaker 247: And again, if it if you have to use it, you have to add in for this.
+[TIMESTAMP] Speaker 247: Any any questions?
+[TIMESTAMP] Speaker 247: If you don't have any questions so we can close the call and Speaker 044. We can stay for a couple of minutes because from 3:00 o'clock, I have another meeting.
+[TIMESTAMP] Speaker: Okay. Thank you, everybody.
+[TIMESTAMP] Speaker 247: If you have any other questions, let me know. Please, thank you.
+[TIMESTAMP] Speaker 247: To stop the reporting.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: We're going to talk about that, like
+[TIMESTAMP] Speaker 247: Yeah.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker: Okay. We tried some yesterday and day before I think overall it works. I just had a couple of those last follow up questions on that. So if you so with the automation change that we talked about when you're on the disposition tab
+[TIMESTAMP] Speaker 247: Let's go to that disposition. Okay. Yeah.
+[TIMESTAMP] Speaker: Yeah. It won't it'll still show the assignee is whoever the original assignee was correct. Yeah, which is fine. That's okay. It doesn't need to change it. I'm okay with that. I just wanted to know what would show there because I thought you'd mentioned that they were gonna replace this category with something else and I wasn't
+[TIMESTAMP] Speaker 247: The developers suggesting since the will show the Q Q one. And the signing will be something else. So they're testing that hide this column here. So it will be confusing.
+[TIMESTAMP] Speaker: Okay. Because right now when we change it doesn't show the
+[TIMESTAMP] Speaker 247: [PERSON]'t show, because as you can see in platform user, right? And if I go there, you see skew. But it's maybe not this one. It's the
+[TIMESTAMP] Speaker 247: It's the
+[TIMESTAMP] Speaker 247: Taking
+[TIMESTAMP] Speaker 247: Okay. Let's try this.
+[TIMESTAMP] Speaker 247: Oh, no. From here. I cannot do it. I have here. Remember, I did it. So from here, you can see this is [PERSON], but it won't show up right there. That's why so it will be kind of confusing. So that's why they are suggesting that we can hide this one and do we have and you can see that it's just when you add the disposition, it automatically change from status from draft to open, right?
+[TIMESTAMP] Speaker: Yep.
+[TIMESTAMP] Speaker 247: But if that is because the disposition report is not checked, that's why
+[TIMESTAMP] Speaker 247: If this is checked, when you submit an Apple, then the status will change. Okay.
+[TIMESTAMP] Speaker 247: So you have to keep that in mind. So that's why they're trying to more leaning towards through hiding this column. So there'll be no confusion between this and this.
+[TIMESTAMP] Speaker: Okay. Okay. Gotcha. And that's what the developer stuff that we would need to do is gonna do. It's gonna allow it to show that person over in the next best action then, right? Because right now it doesn't show that is that means
+[TIMESTAMP] Speaker 288: Correct. Okay.
+[TIMESTAMP] Speaker 247: The batch do you remember we talked about the batch. So we have at this moment, we have Sue we have 5 5 badges, right?
+[TIMESTAMP] Speaker 247: Yes. A branch 5 5 branches, I believe, right?
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker 247: Yeah. They will name the the queue or you can name the queue in such a way. So it will easily even like distinguish that which branch is for what. Yep. Okay. Is that okay. This disposition is for this queue and you can like, the owner can assign that disposition queue to whatever branch is relevant for that. And only those users assigned to that queue, they will get the notification. Okay. And all of them will get the notification and all of them, they have the next best action. The moment, any of them will work on that task then the notification on the next best action will be born from all of them.
+[TIMESTAMP] Speaker: Yeah. It'll change to their own name. Yep.
+[TIMESTAMP] Speaker 247: Yes. That's how it will work.
+[TIMESTAMP] Speaker: Yeah. Okay. One question. Then, how do
+[TIMESTAMP] Speaker: So when I assign the disposition, then do we need to do anything different? Do we have to create it, draft it and then go in and reassign it? Or does it automatically reassign to that queue?
+[TIMESTAMP] Speaker 247: So all you have to do when you are disposition, the add to the I think when you are adding to the instead of a user, you are adding to the cube
+[TIMESTAMP] Speaker 247: Okay. Based on your branch. Okay. Not to the user. Okay.
+[TIMESTAMP] Speaker: Yeah. Because right now the disposition form when you open it doesn't give you the option for queues. It only allows you to select users. So yeah.
+[TIMESTAMP] Speaker 247: Okay. So here
+[TIMESTAMP] Speaker 247: We're talking you're talking about this, right? Yep. Yep. So here is automatically the assignee is there that time. It will be you can assign to a queue and this branch is branch like that.
+[TIMESTAMP] Speaker: Yup. Yup.
+[TIMESTAMP] Speaker 247: You choose the key
+[TIMESTAMP] Speaker: Yeah. As long as the person selecting the right queue knows what queue they're selecting, it'll it'll get assigned. Okay.
+[TIMESTAMP] Speaker 247: Perfect. Okay.
+[TIMESTAMP] Speaker 288: We want to do
+[TIMESTAMP] Speaker: Yeah. Okay. Can you let [COUNTRY] know what the and maybe I'll have to have a quick discussion with Speaker 058. I just noticed the last project report he sent out. I've burned a pretty good amount of budget. So I want to make sure that I'm covered here with this so
+[TIMESTAMP] Speaker 247: Okay. Let me talk to them. Developer first I try to talk to him tonight and he can first he has testing it, right? They know you, I
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: So I'll talk to him and then I'll get back to
+[TIMESTAMP] Speaker 247: You and the Speaker 058 bot. So you guys can talk
+[TIMESTAMP] Speaker: Sounds good.
+[TIMESTAMP] Speaker 247: And also, you can go from the smart, so I guess yeah. Because to approve it there, right?
+[TIMESTAMP] Speaker: Through the
+[TIMESTAMP] Speaker 247: Or no. I need to check because it came from the support it. Yeah. I forgot at this moment, did I created from the smart sheet I believe from the smart sheet. So you if there how much was the estimation because you have it there, too?
+[TIMESTAMP] Speaker: Okay. I can look at the smart sheet too.
+[TIMESTAMP] Speaker 247: Thank you. Have any other questions. Please let me know.
+[TIMESTAMP] Speaker: Okay. Sounds good.
+[TIMESTAMP] Speaker 247: I need to do another meeting.
+[TIMESTAMP] Speaker: You thank you.
+[TIMESTAMP] Speaker 288: Bye. Bye.
+
+
+====================================================================================================
+Title: ABC Corp/Customer 21 | Phase 3 - Audit Module- Demo/Walkthrough
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 4960.8
+====================================================================================================
+[TIMESTAMP] Speaker 058: Hey,. Hey, Speaker 044.
+[TIMESTAMP] Speaker 058: Give [COUNTRY] a couple of minutes going.
+[TIMESTAMP] Speaker 058: It's Speaker 015.
+[TIMESTAMP] Speaker 247: Hello, good.
+[TIMESTAMP] Speaker 288
+1 Speaker 288: Afternoon, everybody.
+[TIMESTAMP] Speaker 247: Good afternoon.
+[TIMESTAMP] Speaker 058: Afternoon.
+[TIMESTAMP] Speaker 247: I can start now on.
+[TIMESTAMP] Speaker 247: Trying to minutes.
+[TIMESTAMP] Speaker 058: Wait. But Speaker 044 if you would like [COUNTRY] to go ahead and get started, we can now recording is on
+[TIMESTAMP] Speaker: We could maybe give it another minute for [PERSON] and Speaker 055 to see if any one of them can join. Sure. Not a problem.
+[TIMESTAMP] Speaker: Yeah. And again, our plan today is to
+[TIMESTAMP] Speaker 058: Start the audit module requirements.
+[TIMESTAMP] Speaker 247: And Speaker 044 after the audit requirements gathering session if you can stay a couple of minutes. So I'll discuss about some
+[TIMESTAMP] Speaker 247: Other things. Is that okay. Yep. Okay. Thank you. Yup.
+[TIMESTAMP] Speaker: All right. Why don't we go ahead and get started?
+[TIMESTAMP] Speaker 058: Yeah. Sure. Sure. Yes. I said the plan is to start with the audit module requirements configuration needs, reviewing and workflow changes. So that's a plan for today. So Speaker 015, go ahead.
+[TIMESTAMP] Speaker 247: Okay. Then do you have any list? How we're going to proceed today?
+[TIMESTAMP] Speaker 058: You might be on mute.
+[TIMESTAMP] Speaker 247: Yes.
+[TIMESTAMP] Speaker: Yeah, I am sorry. Yeah. I do have a short list that we can kind of walk through. We I've spent a little bit of time. I'm not I haven't really connected up with too many others but I do have a short list we can start with anyways today.
+[TIMESTAMP] Speaker 247: Okay. Please. Let me know when you can see my screen.
+[TIMESTAMP] Speaker: Yup. I can see it.
+[TIMESTAMP] Speaker 247: Okay. Let's start from here. Or do you want me to start from the audit or audit program where you like me to start?
+[TIMESTAMP] Speaker: Most of my questions to start with are from the audit. So okay.
+[TIMESTAMP] Speaker: I think we can start there. Um
+[TIMESTAMP] Speaker: These are probably not in a very good order, but I'll see if I can kind of on the fly here, put them in order. The first kind of thing that I found we needed is if the I believe it's the audit category is product.
+[TIMESTAMP] Speaker: I'd like to add a field where we can select select a part number if that's doable.
+[TIMESTAMP] Speaker 247: Okay. If we choose a product and you like to add the product, just like we did in the C and we're planning to do in the complete, right? Yep.
+[TIMESTAMP] Speaker: Yep. Okay.
+[TIMESTAMP] Speaker 247: Okay. Let's see. Let me
+[TIMESTAMP] Speaker 247: Let me take a hold on that. So when choosing give me a moment.
+[TIMESTAMP] Speaker 247: So audit category
+[TIMESTAMP] Speaker 247: Let me just add a note booking. Yeah.
+[TIMESTAMP] Speaker 247: And um
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: You want to see the pot and part number also or just the part.
+[TIMESTAMP] Speaker: Yeah. The part and part number.
+[TIMESTAMP] Speaker 247: Part and part number. What about the branch?
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Yeah. We can choose the branch to and follow that same filtering logic that we're using on C and compliance and everything else, if that makes it easier. Okay.
+[TIMESTAMP] Speaker 247: It's not easier what you would like to see. That's the
+[TIMESTAMP] Speaker: That's yeah.
+[TIMESTAMP] Speaker 247: Way, we like to investigate that, how we would do it. Okay. This is one of the audit which is in you can see the object categories product. Okay. And
+[TIMESTAMP] Speaker 247: This is the this
+[TIMESTAMP] Speaker 247: To see.
+[TIMESTAMP] Speaker 247: Okay. We don't have we're not adding parts here.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: So a product thing.
+[TIMESTAMP] Speaker 247: And
+[TIMESTAMP] Speaker 247: Branch.
+[TIMESTAMP] Speaker 247: Part number, if that can be possible. Okay.
+[TIMESTAMP] Speaker 247: And I have a related questions about this.
+[TIMESTAMP] Speaker 247: All of your product or part is it coming from or filtering out based on the brand? Or is there any part of product which is not part of or coming from from the brand?
+[TIMESTAMP] Speaker: All of our parts have a branch assigned to them, yes.
+[TIMESTAMP] Speaker 247: Okay. So branch should be for complaint also branch should be a required, fill in that case or option.
+[TIMESTAMP] Speaker: It can be optional.
+[TIMESTAMP] Speaker 247: Okay. Because we did not talk about that. What about here in the audit category? How do you want your branch part and part number is coming from part. So we not worried about part number, but branch and part, if it is possible, do you want it as a required thing or optional thing?
+[TIMESTAMP] Speaker: It can be optional. Yeah. We were using it as a way to filter the parts. So we weren't having to scroll through the list of multiple branches for parts.
+[TIMESTAMP] Speaker 247: Okay. Yeah.
+[TIMESTAMP] Speaker 247: Okay. And all bases, a branch. Okay.
+[TIMESTAMP] Speaker: Unless anybody else on the call feels differently, I mean, you guys feel free to speak up.
+[TIMESTAMP] Speaker: So if we think it should be required, then then, you know
+[TIMESTAMP] Speaker 247: And suppose we can do this where you want those parts branch part and part number to be visible in the create [PERSON].
+[TIMESTAMP] Speaker 247: Somewhere here.
+[TIMESTAMP] Speaker: Yeah. And that open space is fine. Okay. Uh
+[TIMESTAMP] Speaker 247: Okay. That's fine. And I will go to the let's ask me asking. Okay. And what about the details and edit?
+[TIMESTAMP] Speaker 247: The details switch by one thing.
+[TIMESTAMP] Speaker: Oh. Um
+[TIMESTAMP] Speaker: In the information section is fine. Somewhere in there. I'm not too too picky with where, but maybe in that top section someplace.
+[TIMESTAMP] Speaker 247: Details under details. Yeah. Okay. And
+[TIMESTAMP] Speaker 247: And if we edit it will be same as create. Will that be okay? Yeah. Okay.
+[TIMESTAMP] Speaker: That's fine.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 247: Okay. Um
+[TIMESTAMP] Speaker 247: What is the next one?
+[TIMESTAMP] Speaker: One second here.
+[TIMESTAMP] Speaker: Taking a note for something remember to ask. Okay. So
+[TIMESTAMP] Speaker: Do one
+[TIMESTAMP] Speaker: So we'd also under the information section. Um
+[TIMESTAMP] Speaker: This can just be an open field that we're gonna call. Uh
+[TIMESTAMP] Speaker: I guess for right now, we'll call it project number.
+[TIMESTAMP] Speaker: Yeah. Sometimes new suppliers may be audited as part of a specific engineering project. I've also got some other ways that we're gonna use this for product audits that are gonna be tied to a project. Yeah, it would just be a text field called project number.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker: And it can be optional.
+[TIMESTAMP] Speaker: And the same thing it can be in that information section.
+[TIMESTAMP] Speaker 247: Here. And same for the details and the edit. So if we edit it will be appear here. And if we in the details [PERSON]
+[TIMESTAMP] Speaker 247: It will be someone here. Is that's okay. Okay. Okay. Good.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: All right.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: So I think that is all I had for creating or initiating a new audit everything else. Now, I think has to happen. It happens after. We start the audit. So okay.
+[TIMESTAMP] Speaker 247: And are we are planning still planning to use the audit program and stuff?
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: As an option. So so for this one, let's not use the audit program because I think we're gonna probably do a little bit of both. I think there's gonna be situations where we'll have an audit program and I think there's gonna be somewhere we don't but my question specifically are when we don't have an audit program. So so maybe we'll move this one forward without it.
+[TIMESTAMP] Speaker 247: Okay. Yeah, that's it. No problem.
+[TIMESTAMP] Speaker: So I'm sorry. Yeah, I would also have this one wouldn't have any criteria. So we're basically starting with no, no audit program. No criteria.
+[TIMESTAMP] Speaker 247: That's fine. Yeah.
+[TIMESTAMP] Speaker 247: And here you can see your standards can be you can multi select suppose you want so on 21 server.
+[TIMESTAMP] Speaker 247: It can be multi select. This is your plan here.
+[TIMESTAMP] Speaker 247: Audit format, maybe onsite and period. Maybe you can search Q1
+[TIMESTAMP] Speaker 247: Instead of a specific month started and ended at this moment will be grayed out. Here, this is your audit contact.
+[TIMESTAMP] Speaker 247: It would be the same as like normally someone else. But um
+[TIMESTAMP] Speaker 247: So so department. Do you want to remove the region here?
+[TIMESTAMP] Speaker: Yeah. The region yeah. The region we can remove
+[TIMESTAMP] Speaker 247: So I do region.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Division here is a mandatory field. So if you don't use it, we choose any or we can make it as a default value as any. Okay. I think
+[TIMESTAMP] Speaker: That doesn't the org division doesn't that have a list of values?
+[TIMESTAMP] Speaker: That should be populated with that.
+[TIMESTAMP] Speaker 247: I don't see it here. I know the org site we have the panel and
+[TIMESTAMP] Speaker: Let me I'm just gonna go into
+[TIMESTAMP] Speaker: Look at non conformance. So real quick.
+[TIMESTAMP] Speaker 247: If you have it, I can add those values in this division.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: Then taking you
+[TIMESTAMP] Speaker: Yeah. We're using org division business unit and region. Yeah. And those all should have uh
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker: Yeah. Those should have dropdown values. I believe. Okay. Yeah.
+[TIMESTAMP] Speaker 247: I'll check in the other other ads and I'll bring those values here. Okay. Right now, I see only these sites so here in the audit or division is a mandatory one. And then you can choose your sites and description.
+[TIMESTAMP] Speaker 247: Okay. In policy, you can set it up right now or you can set it up later. If you have any approval metrics, you can set it, add it right there. If you have any parent audited, you can choose from here or otherwise. You can save it. Again, remember the auto close. If you choose this it will ask when you complete all your tasks, it will just close the audit. So I always suggest do not check this one. So it will give you the option. After you close all the tasks, it will give you the option, whether it's required in follow up or anything. Okay. Okay. I'm going to say this and if I miss something, they need to ask you that, okay. You need to add this value or something?
+[TIMESTAMP] Speaker: That list of standards is that is that something we can modify and change? Or is that something we need you guys?
+[TIMESTAMP] Speaker 247: To do add the senders. Okay. All right.
+[TIMESTAMP] Speaker: We'll take care of that then we need to. Okay. So once we're in here
+[TIMESTAMP] Speaker: If you click on the audit checklist.
+[TIMESTAMP] Speaker: And then you go to a new audit checklist.
+[TIMESTAMP] Speaker: So after you create this in that table, there's a field called scope description, but it's always blank and it only populates if it's from the audit program, just curious if that can be
+[TIMESTAMP] Speaker: So if you want to go through and add an audit checklist
+[TIMESTAMP] Speaker 247: Items, it's created one. Just
+[TIMESTAMP] Speaker 247: Which one is
+[TIMESTAMP] Speaker 247: Clicks.
+[TIMESTAMP] Speaker 247: This is the checklist. I'm just creating one at this moment. Okay. Now, I'm going to submit for next day. Okay.
+[TIMESTAMP] Speaker: Submit for the
+[TIMESTAMP] Speaker: Instant.
+[TIMESTAMP] Speaker 247: To initiate my audit.
+[TIMESTAMP] Speaker 247: So basically, we are just making sure everything is, right? And you are going to confirm your the start date and the end date. So remember, this is the audit type. This is your audit category start date. Remember we said Q1, you can see the plan period. So it's confirming that. Okay. I can only first 2 in the march. Okay. Audit contact is this and you are initiating the audit? Okay. And at this moment you can select something else someone else, but already contact if you get to choose a revision or change it to someone else, you get to do all this here. Okay.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 247: And I'm going to save it.
+[TIMESTAMP] Speaker: Okay. I think now it's when you click on the audit checklist.
+[TIMESTAMP] Speaker: Is that where it shows it? Where did I see that? There's somewhere where it shows a scope description and it doesn't come through unless you have a criteria document?
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 247: Me.
+[TIMESTAMP] Speaker: But I don't remember where that was, no. I should have taken a screenshot, I guess.
+[TIMESTAMP] Speaker 247: Yeah, let me know. Okay, we have seen this. So right now, you can see this is in progress, execution. Secure support is a lead auditor. So this is the execution stage. So that means the lead audit is supposed to perform the audit. Okay. So lead audit can
+[TIMESTAMP] Speaker 247: Work on the audit from here. Okay. And or richer can offline audit coming from the criteria and Tom, he can even that.
+[TIMESTAMP] Speaker 247: This is the offline one. Okay.
+[TIMESTAMP] Speaker 247: And here you can attach your you can say pass fail or escape you add your national at here. If you want to add any objective evidence, you can add it. There. Here is your findings. You can add your findings, click on add like that. You can do this or you have the other options where you can do it from the rapid. Okay. Let's do it from here. For this one. I'm gonna fail it. And then I will do and say, let me see.
+[TIMESTAMP] Speaker 247: And then you can add some objective evidence and from here or you can book the findings and say, okay, you're finding type is critical or major. Okay.
+[TIMESTAMP] Speaker: Okay. Let's
+[TIMESTAMP] Speaker 247: Try try critical.
+[TIMESTAMP] Speaker: So I have this on my list because I got a couple of questions. Yeah. If you select critical, does that automatically escalate it to a cap?
+[TIMESTAMP] Speaker 247: It will guide you for that. It is suggested for that. Okay. Okay.
+[TIMESTAMP] Speaker: I see Speaker 288's got a question.
+[TIMESTAMP] Speaker 247: Yeah, please.
+[TIMESTAMP] Speaker 288
+1 Speaker 288: I want to discuss about something that together with the
+[TIMESTAMP] Speaker 288
+1 Speaker 288: We discussed yesterday. I mean in is 9,001. There are 2 kind of the NCR and the third one I never seen, which is minor and major. And the major is always like, critical. So either we can combine this critical with the major or I don't know because the in is 9,001 audit. There is no critical and major are both the same.
+[TIMESTAMP] Speaker 288
+1 Speaker 288: If this let let [COUNTRY] know what is the different reaction of the C between these 2 category critical and major? I stand about the minor.
+[TIMESTAMP] Speaker 288
+1 Speaker 288: Or maybe talk about all 3 3 categories. So
+[TIMESTAMP] Speaker 247: Speaker 288. Like depending on the finding type I can show you where it's coming from. Let me go to the another pocket. So
+[TIMESTAMP] Speaker 247: If I to to son's point, what can we have major minor event of?
+[TIMESTAMP] Speaker 247: So that's what I'm trying to see. When we have major or minor. Let's go to the finding. Let's see if I have any findings. Okay.
+[TIMESTAMP] Speaker 247: Okay. So here you can see this is a new finding, this is a different audit. Okay. And there's no finding at this moment. But I can show you something. This is a finding type right here, is the critical one if I choose the critical.
+[TIMESTAMP] Speaker 247: Based on your findings, you see the policy automatically. It will ask you to cap required. Okay.
+[TIMESTAMP] Speaker 247: Now, I'm choosing made, it will say the investigation is required by default.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 247: Those are the things that are different. Okay. Now, I'm going to choose minor, okay. Now, you can see the responses required. You get to choose something else also. Okay. Now, it's minor responses required, but still I want investigation or I want some other actions you get to choose. Your policy based on whatever is relevant for you. But this is what system does based on your finding type. And if it is fine, it's just observation. Then it says nothing that this is just an observation. I don't want anything to do, but I'm still stating my observation. Okay. Is it clear?
+[TIMESTAMP] Speaker: Yeah. And I think where we're going this is timely discussion, right? Because I think what we're what we were thinking is we with major I think we only want to do I major and minor. We don't want to do critical because we think that's gonna confuse people. But we like the workflow of critical as opposed to just doing investigation.
+[TIMESTAMP] Speaker 288
+1 Speaker 288: It's actually major and critical be the same and essentially the same things. Yes. Yes. Yes.
+[TIMESTAMP] Speaker 247: So in this for this finding, do you want me to finding time as major or digital?
+[TIMESTAMP] Speaker: No. So so I think you're I'm not sure we're on the same [PERSON]. So if you go back to your audit where you were creating that finding, right? When you select major
+[TIMESTAMP] Speaker: Right. Now, your policy down below.
+[TIMESTAMP] Speaker: Defaults to capital required, right?
+[TIMESTAMP] Speaker: So or no major is investigation critical.
+[TIMESTAMP] Speaker 247: Investigation pretty cap.
+[TIMESTAMP] Speaker: Right. What we're saying is we want major the policy for a major non conformance to be cap a required. Okay.
+[TIMESTAMP] Speaker: And we can just get rid of critical because we don't really use that terminology.
+[TIMESTAMP] Speaker 247: Okay. That's fine. Yeah. And you want to remove and what about the minor so minus should be the investigation real quick?
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: So good question, Speaker 288.
+[TIMESTAMP] Speaker 288
+1 Speaker 288: No, no. That's a good one. Minor be the sponsor needed. And also, I mean, if this audit real audit from the ISA, minor and major both of them has a comp, major has to be response in a certain time because the system failed. But if we want to categorize them as whatever we have here major minor and only for information or recommendation, maybe it's better at it for of um
+[TIMESTAMP] Speaker 288
+1 Speaker 288: Yeah, yeah. We want to see the critical and major I mean, the critical whatever critical right now has transfer that power that authority to major.
+[TIMESTAMP] Speaker: Yeah. So so a couple of things one this is the reminder. This is for recording and documenting our internal audits. If they are major findings from cms audits, they're probably just gonna go right to the cap system separately. I would think but I think the question that we had so Speaker 015, if you want to show [COUNTRY]. So the difference guys is right now, when you select minor, you just have to can you show [COUNTRY] how you would respond to a minor? Non conformance first and just bear with me, you know?
+[TIMESTAMP] Speaker 247: Just response required. So basically, you do when this is a response required. So you say, okay, how many days the due date or number of days required for your response? So it says suppose something is missing? Okay. I have penetrate that. This is my response. So you just say I have done this kind of like that.
+[TIMESTAMP] Speaker: Right. And that's what I want you because I don't know, Speaker 288 Speaker 055 if you guys understand the difference between this response required or investigation required. Because investigation required is maybe it's a little it requires a little bit more than just responding to the audit.
+[TIMESTAMP] Speaker: And I can if we want to kind of table that
+[TIMESTAMP] Speaker 288
+1 Speaker 288: Response probably is a product paragraph that you filled in and on a box and investigation probably is the use of 5 is or any other tools.
+[TIMESTAMP] Speaker: What you and I have time to Morrow. So why don't we talk through this a little bit. So so for right now, so Speaker 015 will leave it as is other than making them the major goals to cap, right? And we close with critical as far as what we do with minor. I'll we'll make a decision on that tomorrow after we talk through it a little bit because and we can explain the differences and work through that.
+[TIMESTAMP] Speaker 247: So at this moment, the critical will be gone and from the finding time, right?
+[TIMESTAMP] Speaker: Yes.
+[TIMESTAMP] Speaker 247: Okay. Did we give me one second?
+[TIMESTAMP] Speaker 247: Finding type.
+[TIMESTAMP] Speaker 247: I
+[TIMESTAMP] Speaker 247: I
+[TIMESTAMP] Speaker 247: Should be
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Okay. That's fine. Okay. I'm going to choose critical here. So you get to see what happened because we're going to mimic.
+[TIMESTAMP] Speaker 247: Major is critical, right?
+[TIMESTAMP] Speaker: Gotcha.
+[TIMESTAMP] Speaker 247: Okay. You can also attach files right there? Okay. And you can submit your phone
+[TIMESTAMP] Speaker 247: I
+[TIMESTAMP] Speaker 247: Do time.
+[TIMESTAMP] Speaker 247: Me.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: And also, I like to show you something
+[TIMESTAMP] Speaker 247: First of all. And you saw that on the offline audit, you get to do the same from the API audit?
+[TIMESTAMP] Speaker 247: Where you can see everything together, you're finding your checklist, all of them together.
+[TIMESTAMP] Speaker 247: Like that. Okay. I'm gonna cancel it right now.
+[TIMESTAMP] Speaker 247: And what else you can do simple this is your finding, right? You created that one from paid audit or audit offline after that. Also, you can
+[TIMESTAMP] Speaker 247: Edit this. So this is what you have done critical. You can choose to assign it from here also. You can add your questions. This is your all and stuff, but here it's not showing what is required. But from here also, you can get to choose what is in one this for findings. If you choose something else, you get to choose the other policy on here. I definitely can do it before you submit this. Okay. Okay.
+[TIMESTAMP] Speaker 247: That is another option. So this is the you'll find a time and it
+[TIMESTAMP] Speaker 247: Just does
+[TIMESTAMP] Speaker 247: An investigation is part of the number of days.
+[TIMESTAMP] Speaker 247: Done. Now, I'm going to generate link.
+[TIMESTAMP] Speaker: And then when you get this report when the report generates, I got a question on the report, yes. So as soon as it comes up here
+[TIMESTAMP] Speaker 247: Do you like to customize your report?
+[TIMESTAMP] Speaker 247: Is a report. Um
+[TIMESTAMP] Speaker: So the question I had in the report, I think there's a section called executive summary.
+[TIMESTAMP] Speaker: Is it up just a little bit? I can only see a little bit. Yeah, that executive summary.
+[TIMESTAMP] Speaker: No matter what I did. Whether I went through an audit program or just an individual nothing ever populates in that field. So I'm wondering where that would populate from and what that is.
+[TIMESTAMP] Speaker 247: This one I have to take a look. Okay. I am not really sure about this one. To somebody let me take a note and I
+[TIMESTAMP] Speaker: Will get back to. Okay. Yeah, I didn't know if there was a tab, some place I was supposed to fill in or whatever, but it didn't seem to matter what I did. It always was blank. So
+[TIMESTAMP] Speaker: I assume it's kind of a high level audit summary of positive things, negative things, et cetera, and people you talk to. But um
+[TIMESTAMP] Speaker 247: Yeah. That and get back to you. And do you have any plan to like customize this report or anything? You can do this using this option. You can download and add this report to you. If you have any template or anything you can download and customize, like
+[TIMESTAMP] Speaker 247: Do you download it? And then you have launching this one and then you can use your template for that. And then
+[TIMESTAMP] Speaker 247: You can upload your template with the file, you can use that option too. Okay. All you have to do then unchecked one. Okay.
+[TIMESTAMP] Speaker 247: Try that option to if we want to.
+[TIMESTAMP] Speaker 247: Okay. Now, since you're not using this accrual process, I'm going to save this
+[TIMESTAMP] Speaker 247: Now, again, as a lead auditor, I'm going to complete it and he should
+[TIMESTAMP] Speaker 247: Report
+[TIMESTAMP] Speaker 247: Change it. So
+[TIMESTAMP] Speaker 247: Let's see. I'm not sure about this whether we can change it at this moment.
+[TIMESTAMP] Speaker 247: By default, it goes to that already and that
+[TIMESTAMP] Speaker 247: So fancy you finding it at the open status right now. Oh, no. So it was from Speaker 044. Okay. And we will in Speaker 044.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Again, say this is finding, which is in our graph that
+[TIMESTAMP] Speaker 247: And you can see this is the report and you need to be your response. So when you are bending your response audit contact okay. It says start okay. Click on that. Being a response.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 247: It will give you the option either you can link to a cap or you can create a cap. Okay. Cool. Okay.
+[TIMESTAMP] Speaker 247: So I think we have already have open cap for this reason.
+[TIMESTAMP] Speaker 247: And if I create a new cape
+[TIMESTAMP] Speaker 247: 7. Next
+[TIMESTAMP] Speaker 247: Okay. I'm going to say.
+[TIMESTAMP] Speaker 247: Okay. And you can see this is 1 30 three, right? I can
+[TIMESTAMP] Speaker 247: Go to get
+[TIMESTAMP] Speaker 247: You can see here is my cap.
+[TIMESTAMP] Speaker 247: And I need to complete everything from here.
+[TIMESTAMP] Speaker 247: And then
+[TIMESTAMP] Speaker 247: I can close like, I can close this gap and then I can be my sub bit by this fault. Okay. Let's see. I'll quickly. I can finish it.
+[TIMESTAMP] Speaker 247: Let's see, let's say is
+[TIMESTAMP] Speaker 247: The
+[TIMESTAMP] Speaker 247: 2. Okay.
+[TIMESTAMP] Speaker 247: Some expected completion date.
+[TIMESTAMP] Speaker 247: Here, you can choose your product or process if you like. If you do you have anything and then you save it.
+[TIMESTAMP] Speaker 247: So we don't have any
+[TIMESTAMP] Speaker 247: Okay. Good.
+[TIMESTAMP] Speaker 247: No, where to choose the policy containment is not required at this moment in distribution required.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Okay. This one is on
+[TIMESTAMP] Speaker 247: New
+[TIMESTAMP] Speaker 247: Since I have deactivated the policy, it's an Apple all metrics is not required. And let me just this one.
+[TIMESTAMP] Speaker 247: So you can just get to see how
+[TIMESTAMP] Speaker 247: Quickly, I can send and go back to the audit itself.
+[TIMESTAMP] Speaker 247: Okay. For investigation.
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Action plan, we need at least the collective.
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: So
+[TIMESTAMP] Speaker 247: Okay. My administration has been completed.
+[TIMESTAMP] Speaker 247: Now I will do submit the investigation.
+[TIMESTAMP] Speaker 247: Okay. No. Nothing responds.
+[TIMESTAMP] Speaker 247: They be doing the
+[TIMESTAMP] Speaker 247: Implementation.
+[TIMESTAMP] Speaker 247: I will apply data.
+[TIMESTAMP] Speaker 247: Remove
+[TIMESTAMP] Speaker 247: Is
+[TIMESTAMP] Speaker 247: In play this
+[TIMESTAMP] Speaker 247: And you can see you can complete it from here or when is the task so you can complete it from here to
+[TIMESTAMP] Speaker 247: Okay. Both of my implementation plan has been the action plan completed.
+[TIMESTAMP] Speaker 247: Now, I've been to summary my implementation.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Campa.
+[TIMESTAMP] Speaker 247: See
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: I'm back here.
+[TIMESTAMP] Speaker 247: Platform.
+[TIMESTAMP] Speaker 247: Pending have anything in the audit finding right there. The auditor response anything here.
+[TIMESTAMP] Speaker: No. I think we were good with the findings. All that made sense. Okay.
+[TIMESTAMP] Speaker 247: 8.
+[TIMESTAMP] Speaker 247: Report
+[TIMESTAMP] Speaker 247: Onsite pending?
+[TIMESTAMP] Speaker: I think it's because you're still logged in as me?
+[TIMESTAMP] Speaker 247: Yeah. Log in.
+[TIMESTAMP] Speaker: Log out.
+[TIMESTAMP] Speaker 247: I'm just making sure I have nothing to do as Speaker 044. Okay. So now, I'm going to review it.
+[TIMESTAMP] Speaker 247: And I can see that this is a cap on link that has been closed.
+[TIMESTAMP] Speaker 247: I can see
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Refining give fine responses this platform.
+[TIMESTAMP] Speaker 247: And I closed again.
+[TIMESTAMP] Speaker 247: Now then seeing the closure stage.
+[TIMESTAMP] Speaker 247: And if we choose the auto close one in this moment, it gets close to take okay. Do you have any more? you can see the finding has been closed response is now closed.
+[TIMESTAMP] Speaker 247: There is no actions right there because we did not do anything part of this audit findings. We did it in the cap. So there's no actions right there. And our next best action is a conclusion when you get to choose that if you need any follow up audit or not. Okay. Yeah.
+[TIMESTAMP] Speaker 247: So do we have any more requirements for that?
+[TIMESTAMP] Speaker: I don't have any more for audits. That's all I had. So I do have a couple for audit program. I don't know if we want to do that next week or schedule some more time for that. I think there's a few people have to drop. So
+[TIMESTAMP] Speaker 247: We can in that case, we can do it next.
+[TIMESTAMP] Speaker 247: Suggest
+[TIMESTAMP] Speaker 247: Is on mute in that case. And I have a couple of questions about the complaints. Do you want to delete that?
+[TIMESTAMP] Speaker: Sure. Oh.
+[TIMESTAMP] Speaker 247: So the pages close dates.
+[TIMESTAMP] Speaker 247: Of so should I turn out the recording? Yeah, please. You can
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Okay. Um
+[TIMESTAMP] Speaker 247: So Speaker 044.
+[TIMESTAMP] Speaker 247: One question I already have answered that is the whether all the parts are part of the branch that portion has been answered. And when I was writing the requirements for the part, I was also thinking that if you for any complaint, if you have more than one associated parts to that complaint and you'd like to add it right there, do you want your part number?
+[TIMESTAMP] Speaker 247: Added to any column right there to add any another column which will show the next to the part that this is the part number.
+[TIMESTAMP] Speaker: Yeah. That would yeah. That would be great.
+[TIMESTAMP] Speaker 247: Because that's what I thought that might be helpful. Yeah.
+[TIMESTAMP] Speaker 247: So and anyhow your part is going to show up right there. Do you still want your part number somewhere here?
+[TIMESTAMP] Speaker 247: Under the part or how do you want that if you want a column here?
+[TIMESTAMP] Speaker: Well, so so here you have I guess the way I
+[TIMESTAMP] Speaker: Understood this to work, right? So typically what the way our process is going to work is we're going to get a complaint on the part number you have listed in primary product there, right? The associated items are gonna be like
+[TIMESTAMP] Speaker: Different versions of a similar product. So they're gonna have different part numbers.
+[TIMESTAMP] Speaker: So it does probably need to be in both spots, right? Or does this part that you have listed in primary? Does it automatically pull into this table down below? Yeah. Oh, okay.
+[TIMESTAMP] Speaker 247: Yes, you see this? Okay. Do you want me to create one complete quickly and you can see
+[TIMESTAMP] Speaker: Sure. Yeah. Okay.
+[TIMESTAMP] Speaker 247: Okay. Give me one second.
+[TIMESTAMP] Speaker 247: And again just to let you know, I'm talking to develop a late about this account contact and company about this part if we can hide it. Because again, he is also agreeing with me that if we can like if we reconfigure this piece, that will be a problem for the supplier. Yeah, because this is related to our link to different [PERSON]. So we are looking into this. So okay.
+[TIMESTAMP] Speaker: Yeah. And like I said, we were good with that if we just hide it and create new fields. Yeah. That
+[TIMESTAMP] Speaker 247: And here without using that also, we can definitely we can create a complaint, right? Um
+[TIMESTAMP] Speaker 247: Complaint
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: Part number. Okay.
+[TIMESTAMP] Speaker 247: And
+[TIMESTAMP] Speaker 247: And this one also we can default the second default default values, [COUNTRY]. Okay.
+[TIMESTAMP] Speaker: That would probably be helpful. Yeah. Yeah.
+[TIMESTAMP] Speaker 247: You can even try that. I can do this for you. The so we don't have to select every single time.
+[TIMESTAMP] Speaker: Yeah. That's gonna be the bulk of ours, is [COUNTRY]. So
+[TIMESTAMP] Speaker 247: Yes. So, suppose, I'm choosing this part at this moment. Okay.
+[TIMESTAMP] Speaker 247: And um
+[TIMESTAMP] Speaker 247: So here is your part this is your part family showing up right there, right? Yep.
+[TIMESTAMP] Speaker 247: Associated item diving. Okay.
+[TIMESTAMP] Speaker: Yeah. Then we probably don't need it in that primary section being it. Shows it automatically moves to the associated items.
+[TIMESTAMP] Speaker 247: Yeah. Yeah. We can do you want me to. Do you want me to look into that option then? Like here adding 2 more columns if we can, like item and then branch part part number, yeah.
+[TIMESTAMP] Speaker 247: So if you choose
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Something.
+[TIMESTAMP] Speaker 247: Different
+[TIMESTAMP] Speaker 247: On
+[TIMESTAMP] Speaker 247: Say
+[TIMESTAMP] Speaker 247: So I just show up right there, right? And also last time we're talking about the model number, remember
+[TIMESTAMP] Speaker 247: Yeah. If you like, we already have a field called model number.
+[TIMESTAMP] Speaker 247: You can use that for some other purposes to
+[TIMESTAMP] Speaker 247: Model number
+[TIMESTAMP] Speaker 247: If you want to use this link for some other purposes, you can use it.
+[TIMESTAMP] Speaker 247: Okay. Okay. I just wanted to show you that. So yeah, this is what I was talking about. And then like, okay, maybe here in this area. And again, this area will be redundant for this purposes. So if we choose add 2 columns. So
+[TIMESTAMP] Speaker 247: Branch part. And part number will show up right there for all the associated items will be adding in because no matter what it by default, it will be the primary partner complain. Complicated for the rep right there.
+[TIMESTAMP] Speaker 247: So that is what I was thinking when I was writing this one.
+[TIMESTAMP] Speaker: Okay. Yeah. No, I'm that works for me. I'm okay with that.
+[TIMESTAMP] Speaker 247: And also why we're creating the investigation over there. Also the part, do you need to see the branch and the part number there too? Or is just here?
+[TIMESTAMP] Speaker: I think just here.
+[TIMESTAMP] Speaker 247: You see, this is a complaint. Yeah. I open this [PERSON]. Because of this reason, we have this is a complaint investigation, right?
+[TIMESTAMP] Speaker 247: So here we have the part family and part yeah. This is this should be okay, right?
+[TIMESTAMP] Speaker: Yeah, this should be fine.
+[TIMESTAMP] Speaker 247: Okay. I just wanted to make sure that okay.
+[TIMESTAMP] Speaker 247: No problem.
+[TIMESTAMP] Speaker 247: And I I know you have the in the smart sheet, I have created 5 of them at this moment. And your name is right there.
+[TIMESTAMP] Speaker 247: The part one is still incomplete. Incomplete mind is still there. I thought I'll ask you about this and then I'll add a couple of lines for that for the requirements. But anyhow, like if you have some time, please review this and if you see okay. If I missed anything, please let me know. Okay. Okay. Yep.
+[TIMESTAMP] Speaker 247: Okay. That's it from my side at this moment.
+[TIMESTAMP] Speaker: Okay. Did you ever have a chance to look at? I'd sent you the email on the disposition task ownership error that we were getting?
+[TIMESTAMP] Speaker 247: I thought I had sent you an for that, right?
+[TIMESTAMP] Speaker: I didn't see one. You responded saying it seemed to work, but then I said, well, in our production environment, let me see what you said here. I'll find your email.
+[TIMESTAMP] Speaker 247: Let me see.
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: Production, I have not tried yet, so
+[TIMESTAMP] Speaker: Okay. Yeah.
+[TIMESTAMP] Speaker 247: Production, I have not run, but okay. But it should be yes. But it should be that. No. Such first of all, there's no such configuration. That's the first workaround, right?
+[TIMESTAMP] Speaker: Yeah, absolutely. That's why we thought it was odd that it didn't work because there shouldn't have been any need for any special configuration. So
+[TIMESTAMP] Speaker 247: Yeah. And in the since we're talking so in the production what I'm even? what I'm allowed to do because I'm very skeptical about doing anything in production. Um
+[TIMESTAMP] Speaker: Let me see.
+[TIMESTAMP] Speaker: So if you
+[TIMESTAMP] Speaker: If you go to that let me make sure it's still open.
+[TIMESTAMP] Speaker 247: That is the reason I asked for the permissions and
+[TIMESTAMP] Speaker: All these yeah. Let me just see what
+[TIMESTAMP] Speaker: I got to remember what number I sent you.
+[TIMESTAMP] Speaker 247: Here's the hold on let me find out that. Okay. I have that email, should I bring it?
+[TIMESTAMP] Speaker 247: It's right there in s three, 49 and
+[TIMESTAMP] Speaker: So let me just make sure that one's still open. Okay. Because it might not be
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: And brand, 68 is temporarily on hold the automation one. So do you still want to wait for 67 or
+[TIMESTAMP] Speaker 247: Do you want to get line what do you want?
+[TIMESTAMP] Speaker: What we're let's get through this one first and then we'll come back to that. Okay. Okay. Um
+[TIMESTAMP] Speaker: Yeah. So so that first NC 3 49. You can go into the disposition task and try to reassign ownership to that queue name disposition, assign if you want to do it now, we can do it now if you have a few minutes.
+[TIMESTAMP] Speaker 247: Okay. Let me
+[TIMESTAMP] Speaker 247: See.
+[TIMESTAMP] Speaker: That way if you run into any questions before you do something, we can
+[TIMESTAMP] Speaker 247: Yeah. Very, very skeptical.
+[TIMESTAMP] Speaker 247: I understand.
+[TIMESTAMP] Speaker 247: This one?
+[TIMESTAMP] Speaker: Okay. And then if you want to log in as the owner there
+[TIMESTAMP] Speaker 247: Go ahead. Okay. Let's run.
+[TIMESTAMP] Speaker: Okay. So basically, what we're doing is we were just going to the disposition
+[TIMESTAMP] Speaker: Opening it up.
+[TIMESTAMP] Speaker: And then just clicking on the icon next to change owner.
+[TIMESTAMP] Speaker: Is disposition assignee is the queue that we've got set up?
+[TIMESTAMP] Speaker 247: This switch this one, right? Yep. Okay. And change on it.
+[TIMESTAMP] Speaker: Change owner uh
+[TIMESTAMP] Speaker 247: To take that action on the
+[TIMESTAMP] Speaker 247: Contact
+[TIMESTAMP] Speaker 247: Is okay. I need to check. Uh
+[TIMESTAMP] Speaker 247: I'll take the whether and he's the owner of this.
+[TIMESTAMP] Speaker 247: In C, right? Have the
+[TIMESTAMP] Speaker 247: Task assigning permission set, right?
+[TIMESTAMP] Speaker: He should. Yeah.
+[TIMESTAMP] Speaker 247: It is part of the 2 members.
+[TIMESTAMP] Speaker: He's he is not part of the queue. Does he need to be
+[TIMESTAMP] Speaker 247: Like um
+[TIMESTAMP] Speaker 247: Uh
+[TIMESTAMP] Speaker 247: In the queue.
+[TIMESTAMP] Speaker 247: They are members, right?
+[TIMESTAMP] Speaker: Yes. Yeah.
+[TIMESTAMP] Speaker: Because it works when I do it.
+[TIMESTAMP] Speaker 247: Okay.
+[TIMESTAMP] Speaker 247: Okay. Let's check on that then.
+[TIMESTAMP] Speaker: Yeah. He has task assignees. Assigned is permissions. So
+[TIMESTAMP] Speaker 247: I'll
+[TIMESTAMP] Speaker: I'll see a task task owner, right? And see task owner.
+[TIMESTAMP] Speaker 247: If I did?
+[TIMESTAMP] Speaker 247: See it as a platform user.
+[TIMESTAMP] Speaker 247: I need work.
+[TIMESTAMP] Speaker 247: Let's see transformation.
+[TIMESTAMP] Speaker 247: Um
+[TIMESTAMP] Speaker 247: Only difference. I see here.
+[TIMESTAMP] Speaker 247: The task I have created and yours.
+[TIMESTAMP] Speaker 247: Supported objects.
+[TIMESTAMP] Speaker: But why would I be because I can do it if I have a non conformance that's been assigned to me as an admin, I can do it.
+[TIMESTAMP] Speaker 247: That
+[TIMESTAMP] Speaker 247: Just thinking
+[TIMESTAMP] Speaker 247: Location in
+[TIMESTAMP] Speaker 247: There will be the this permission so
+[TIMESTAMP] Speaker 247: I'm right. Now, I'm Adobe, right? You know
+[TIMESTAMP] Speaker 247: I can see
+[TIMESTAMP] Speaker 247: And document permission sets? Okay.
+[TIMESTAMP] Speaker 247: I
+[TIMESTAMP] Speaker 247: Can I add the continent there and see?
+[TIMESTAMP] Speaker 247: I need to ask you this. Do you let let you know do you allow me to add any permission sets to just to chat?
+[TIMESTAMP] Speaker 247: Okay. Yeah. You can see by the date that what function it I have added, right?
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker: You can add whatever you need to to his to see if you can make it work.
+[TIMESTAMP] Speaker 247: Cheap with the compare with the platform uses that. Is there any permissions which is lacking?
+[TIMESTAMP] Speaker 247: What is it would be
+[TIMESTAMP] Speaker 247: The it's definitely there's no configuration needed. So if I can do it in security
+[TIMESTAMP] Speaker 247: What's using? What permission is the shipping not to do that?
+[TIMESTAMP] Speaker 247: I take on that and leave back to you. Okay. Okay.
+[TIMESTAMP] Speaker 247: Thank you, Speaker 044.
+[TIMESTAMP] Speaker: All right. Yeah. Thank you.
+[TIMESTAMP] Speaker: Thank you.
+[TIMESTAMP] Speaker: Bye.
+[TIMESTAMP] Speaker: Thanks,.
+
+
+====================================================================================================
+Title: Updated ABC Corp/Customer 21 Implementation Steering Committee (phase 3)
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 849.15
+====================================================================================================
+[TIMESTAMP] Speaker 102: So
+[TIMESTAMP] Speaker: Hey. Good afternoon. How are you?
+[TIMESTAMP] Speaker 102: Good. Thanks, Speaker 055. Hello. Everyone.
+[TIMESTAMP] Speaker: I'm not sure if uh
+[TIMESTAMP] Speaker: Let's see who [PERSON] is joining. I don't know if we'll find out if scary will join.
+[TIMESTAMP] Speaker 102: Yeah. I know we're just a moment early, so. We'll give everyone another minute or so to jump on.
+[TIMESTAMP] Speaker: I'm not sure if my boss [PERSON] will be joining [COUNTRY] today. Um
+[TIMESTAMP] Speaker: We'll start at about 1:30 our time here. So
+[TIMESTAMP] Speaker: Sounds like a number of people are on to today, must be the day before Valentine everybody buying flowers or something.
+[TIMESTAMP] Speaker 102: That's right.
+[TIMESTAMP] Speaker 102: Preparation work.
+[TIMESTAMP] Speaker: To you, man. I think guys only once a year.
+[TIMESTAMP] Speaker: Here [PERSON] good.
+[TIMESTAMP] Speaker: All right. I think we've got everybody ready to go.
+[TIMESTAMP] Speaker 102: Great. Well, if we're ready to go, I'll go ahead and start sharing. Um
+[TIMESTAMP] Speaker 102: My plan for the agenda for the day was just to go through kind of the same deck that went through last time with this team, can everyone see my screen?
+[TIMESTAMP] Speaker: As before you start I don't think either 10 or Speaker 249 have mentioned before, maybe a quick introduction.
+[TIMESTAMP] Speaker 102: Oh, yeah. By all means, yeah. Thank you. So my name is Speaker 102, ER, I am the new project manager for Customer 21 with ABC Corp. I've been with Q for the last 5 years or so. I've been mainly involved with larger, inter skill project implementations. But I've also done some of the smaller ones and middle market here and I see that Sue and Tom have joined on. So thank you for joining guys. We're just getting started and doing a quick intro. I'm taking this project over from. has been asked to lead a larger enterprise project. And I'm excited for his advancement in his career and the lot of work that involves. So I'm happy to be here with the team and help you guys through where we are with with Customer 21. So I know I've been working with Speaker 044 and the team over the last couple of weeks. So I've got a pretty good introduction, but I'm sure there's more to learn as we grow. So I'll just start there. Any questions?
+[TIMESTAMP] Speaker 102: No. Nice to meet you again. I think we didn't get a chance to meet you the couple.
+[TIMESTAMP] Speaker 215: Of weeks.
+[TIMESTAMP] Speaker 102: Ago, maybe when you first did the transition earliest. I did. So it's nice to see you again. Great. Welcome.
+[TIMESTAMP] Speaker 102: Thank you. It seems like a great team to be here with
+[TIMESTAMP] Speaker 102: Okay. Yeah. My plan for the agenda today was really to just go through the kind of the same things that went over last time, just kind of keep the ball rolling. I think you guys have a good process in place and just wanted to make sure that everyone here on this team as well apprised of where we are with a current project phases and timelines upcoming milestones, any issues and risks and decisions that this team needs to be made aware of. I'll just pause there and see if that's an okay agenda for this group today.
+[TIMESTAMP] Speaker: Yeah, I think that makes sense. I think that's what we went through with [PERSON]. So. Yeah, and if something comes up any questions, we'll go from there. Great.
+[TIMESTAMP] Speaker 102: Thank you. The first slide here, this is this just comes from our weekly project report and I just wanted to kind of briefly go over this the and I know this is kind of a larger slide here, but general information, we talk about budget where we are with consumption where we are milestones. Obviously, we're here in complaints and audit module phase 3 of the project. Um
+[TIMESTAMP] Speaker 102: I don't think there's any questions about upcoming milestones or where we are. We are really in this requirement gathering and requirement definition phase here, part of phase 3. As far as budget, we're at 60% consumed. We've got some time left. We're just kind of continuing to move through that. And I think the team is within our budget there. So no issues there that I'm aware of. As far as what happened this last week and upcoming activities for next week, really we've kind of gone through the base overview of the audit and complaints module. What we're moving forward with is creation of any requirements. And so Speaker 015, I know, is and Speaker 044 have been well involved in. Lining out those items in the RM sheet and making sure that we understand what those requirements are, getting them approved and moving on to the next stage of development. So that's kind of where we're at within the project. I'll just pause there for a moment. Any questions or comments?
+[TIMESTAMP] Speaker 102: Okay.
+[TIMESTAMP] Speaker 102: Oops. And then I skipped a couple of slides here. And then really these items, risks and issues for mitigation. I think these were closed. So I think I might take these off, but I know these were low impact. I think they were discussed with before. And then the requirements summary. This comes out of the requirements that have been captured from our smart sheet program. And we can go into detail of those if we need to. But next slide, again, this is a project timeline overview. We're here in phase 3. We're a February 8th. We're kind of creating these requirements in smart sheet. We have this review of the pm. Really we're looking to get these reviewed and approved by first part of March. And then we want to go into configuration any migration items and UA t testing and release. It looks like we're targeted for this phase to go live. Looks like around July 4th. Is that right?
+[TIMESTAMP] Speaker: Yeah. Yeah. I actually I think yeah. I mean my opinion where we're at. I think we're maybe even a little ahead of schedule. So I think we might even be a little early. Yeah.
+[TIMESTAMP] Speaker 102: Yeah, I agree with that Speaker 044. Keep sliding through these things. So again, this is another depiction. This comes from the project plan of where we are in phase 3 before we move on into phase 4. So so upcoming activities we've got really the rpm gathering and requirements approval of estimates, any development. No real issues and risks or items, I think for this team to to review. But I did want to pause here and see if there's any decisions that this team needs to make. I think we're we had an initial discussion as far as migration last week. Thanks. Speaker 044 for getting that set up. Not sure if there's any other issues that we should be aware of as we kind of March through towards the next milestone.
+[TIMESTAMP] Speaker: Speaker 044 our internal team met today about the migration, right, for the customer complaints. Is that what is referring to
+[TIMESTAMP] Speaker: Yeah. So so we did meet earlier this week to talk through kind of what was needed, what Customer 21 would have I guess maybe the late breaking news for you is a smaller team that's more focused on the complaints. We've kind of looked at our process, looked at how we're gonna use things and we have kind of decided. I don't want to say it's we're not gonna do migration, but we're thinking we might hold off on it for right now. We just think that the system if we migrate it with [SUPPORT_SYSTEM] we had planned, we just feel like it's gonna overwhelm [COUNTRY] and it's not really
+[TIMESTAMP] Speaker: It keeps [COUNTRY] from using ABC Corp for what it really works. Best at which is deep diving into those key complaints researching them and understanding what's happening and if we to start pulling in a bunch of stuff from from our [SUPPORT_SYSTEM] system we're just gonna end up with a duplicate of that system and we don't want that. So maybe in the future, we may come up with some enhancements that I think would have to come in on the [SUPPORT_SYSTEM] side and we might look at it again. I don't want to say we're not doing it, but right now we're kind of figuring out how our how this looks like or what this looks like without without data migration. So that might help to shorten the project as well. So
+[TIMESTAMP] Speaker 102: Yeah. Thank you for that information Speaker 044. I'm glad to hear that.
+[TIMESTAMP] Speaker: Yeah we're I wouldn't say we're not gonna do it we're just we're pausing to take some more time to think about it so we got a little background to work too and then we'll come up with a plan so
+[TIMESTAMP] Speaker 102: Okay. Yeah. Well, that makes sense to me. Any other items that this team should be aware of?
+[TIMESTAMP] Speaker: I don't think there's anything else. Is that just just like the only one that Speaker 044 mention and that's most the probabilities you won't be doing it. But yeah, we still exploring that and go on and then
+[TIMESTAMP] Speaker: We try to be effective in what we do, right? Not just dumping data and for the sake of dumping data, right? Yeah.
+[TIMESTAMP] Speaker 102: Yeah, that makes sense. Yeah. Okay.
+[TIMESTAMP] Speaker: Any any input from you guys will reach out for sure between Speaker 044 and Speaker 288. So um
+[TIMESTAMP] Speaker: Yeah. I think maybe just something else to add for the team that Customer 21 is we've asked for is we are working on as we as an organization are on our compliance journey. We've reached out to inquire about possibly looking at the calibration module within ABC Corp and then also the inspections. Um
+[TIMESTAMP] Speaker: One of the tools that we're currently using that exists outside in a access database is our what we call our product test plans and test logs where we do a lot of our product testing. And we're possibly looking for a solution for that as well. I don't know if that would be inspections. We've also actually looked at using audits and some of the customizations that we've asked for audits. Could potentially support that in a future state. So not really part of the project plan per se. But maybe that is something that we're going to explore further as we get down the road.
+[TIMESTAMP] Speaker 102: Yeah. Thank you for bringing that up Speaker 044. I know I sent over the kind of the end user guides for that equipment inspection modules, but it might be worth I asked Speaker 015 to see if she could take a look at that. Maybe Tom do you know if there's an se or somebody who might be able to give them a brief demo that we could tag on some of this need and maybe just answer their needs? Yeah. No, I could absolutely. I can lean on leave for that. So by all
+[TIMESTAMP] Speaker: Means we'd be happy to support that.
+[TIMESTAMP] Speaker: Excellent.
+[TIMESTAMP] Speaker: Yeah. The the equipment module guys it's a Speaker 044 indicators part of the major initiative within the compliance cms compliance to have a group wide calibration program, right? And definitely the equipment module of ABC Corp offers that ability. So of course we're making progress in developing the internal process to begin with, right? And then we utilize the module as a tool to to to manage that process. So
+[TIMESTAMP] Speaker 102: All right. Sounds good.
+[TIMESTAMP] Speaker 102: Thanks. So, Speaker 044, maybe I'll work with you and Tom will get Lee involved and see if we can get a brief demo set up to see if that'll meet your needs or I give you some more information there. Okay.
+[TIMESTAMP] Speaker: Yeah. Sounds good. Like I said, I think we're just looking for a brief demo. A little bit of question and answer a 2 way communication on that. You know. So I don't think it should be doesn't have to be anything too, too. Laborious at this point. So we're a little ways away and I don't think it's like an urgent need. So whenever we can find some time to fit it in. I think we're okay with that.
+[TIMESTAMP] Speaker 102: No, thank you.
+[TIMESTAMP] Speaker 102: Well, if there's not anything else, I'm all in favor of keeping meeting short on a Friday. So when everybody get back to their Valentine's day duties, I guess
+[TIMESTAMP] Speaker: Thank you, Speaker 102.
+[TIMESTAMP] Speaker 102: Thank you, everyone. Thanks everybody. Bye. Bye.
+
+
+====================================================================================================
+Title: Updated ABC Corp/Customer 21 Implementation Steering Committee (phase 3)
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 865.54
+====================================================================================================
+[TIMESTAMP] Speaker 102: It is Friday indeed.
+[TIMESTAMP] Speaker 121: This is my last meeting of the day.
+[TIMESTAMP] Speaker 102: Great.
+[TIMESTAMP] Speaker 121: Yes.
+[TIMESTAMP] Speaker 102: I'm hoping this is my last one too.
+[TIMESTAMP] Speaker 121: I
+[TIMESTAMP] Speaker 102: Know we're a couple minutes early, so we'll give folks a minute to jump on here.
+[TIMESTAMP] Speaker 102: Hopefully, everyone has some nice weather in store for the weekend and good activities or relaxation plans.
+[TIMESTAMP] Speaker 284: Are actually expecting rain, which we sadly need. So I'm good for a rainy weekend. Weekend.
+[TIMESTAMP] Speaker 102: Yeah, we I'm in the same spot, too. We could use a little bit of rain, but I don't think we have any in the forecast. Yeah, we are
+[TIMESTAMP] Speaker 284: In a severe drought. Situation. So I think we've had much since Thanksgiving.
+[TIMESTAMP] Speaker 102: So it's Hi, Tom. Thanks for joining. Hi, Speaker 102. How are you? Good, thanks.
+[TIMESTAMP] Speaker 102: Speaker 055, thanks for joining.
+[TIMESTAMP] Speaker: Hey, Speaker 102. Yeah, hi, Speaker 055.
+[TIMESTAMP] Speaker: How are you, Speaker 055? Good, good. Just busy, busy here.
+[TIMESTAMP] Speaker: Speaker 102, I don't think [PERSON] or Speaker 249 will be joining [COUNTRY]. I just got a notification earlier from them that they might not be able to join [COUNTRY]. Today. So, let's see, who else are we waiting for?
+[TIMESTAMP] Speaker 102: I think the only other person might be Speaker 044. And is that him? That's [PERSON]. [PERSON]? Great.
+[TIMESTAMP] Speaker: Looks.
+[TIMESTAMP] Speaker 102: Like Speaker 044 accepted. So maybe we'll give him just another minute.
+[TIMESTAMP] Speaker 102: While we wait for him, I can go ahead and bring up my screen here. Hopefully. You guys can all see that.
+[TIMESTAMP] Speaker: Yes. Yeah. Great.
+[TIMESTAMP] Speaker 102: Thank you.
+[TIMESTAMP] Speaker 284: Speaker 102, did you record? Are you recording this?
+[TIMESTAMP] Speaker 102: Oh, I see the recorder is on, but I'll start the recording.
+[TIMESTAMP] Speaker 284: I don't know if it's flipped on because Tom or
+[TIMESTAMP] Speaker 102: Yeah, that girl tends to follow [COUNTRY] around.
+[TIMESTAMP] Speaker: Think you get on, Speaker 102.
+[TIMESTAMP] Speaker 102: Okay, Speaker 055, thanks for letting [COUNTRY] know. Know. So, just so everyone aware, a couple of housekeeping items. First. Just want to check with this group. If we go through the agenda for your feedback, afterwards. But, as far as the agenda, I want to go through is kind of high level project phases and timelines, upcoming activities, any issues and risks and any decisions needed from this group. I think we have a pretty good poll on this. We're doing this. Every other week. I've had a request from Sue. We were kind of talking back and forth earlier. If we could maybe change the time of this. And then the question I had was,
+[TIMESTAMP] Speaker 102: Is this meeting useful? Every other week? Do we want to change the frequency? We've gone through a couple of these now. Is it better. Once a month? just I'd get some feedback from you. I know. It seems like we go through things weekly, but I'm more entrenched in the project than others might be, so I want to make sure that we keep everyone abreast of any changes or decisions needed. So maybe I'll just pause there.
+[TIMESTAMP] Speaker: Do you have any recommendations as far as time, Speaker 102, and the frequency from what you guys did with other clients in the past?
+[TIMESTAMP] Speaker 102: I've seen it. I'm happy to craft it. However, we want. And maybe, Sue, you might have some input there, but I'm happy to do this once a month, every other week. What makes most sense for Customer 21 is what I would say. I'm not one to have meetings for meetings. I think we can be efficient and do the best we can, but whatever makes sense. And I see, Speaker 121, you have your hand up.
+[TIMESTAMP] Speaker 121: Hey, yeah, I was just noticing that we're missing. Some pretty key cute people that should be a part of this conversation. So my recommendation personally as we this is what we do on another project that I'm on is when we are missing, especially when it comes to this level, we should probably just have an understanding of if we don't have the right people, enough of the right people, we should probably reschedule. I see Speaker 249 and [PERSON] as 2 not here and I see those as being the right people. That's my 2 cents.
+[TIMESTAMP] Speaker 121: Yeah, the
+[TIMESTAMP] Speaker: Question I asked, too, yeah, correct. So I was going to take it back to them within the team to propose anything that you guys might have, but we can't wait until the next meeting when they're part of this meeting. That's fine with me also.
+[TIMESTAMP] Speaker 102: Okay.
+[TIMESTAMP] Speaker: And then time change, you said time, change what you mean you have any preference what is something that might work best for you? Because? Again, we have to find time for the execs, right?
+[TIMESTAMP] Speaker 102: Yeah, correct. And I think that's probably the main driver is the key folks who need this information. So I don't know if this time was agreed on with [PERSON]. Previously, want to keep to this time or if we need to adjust the time. But that would be my input. I'd love to have Sue involved. So she's impressed of any changes. And Tom, I think your input's good on the ABC Corp side. But, you know.
+[TIMESTAMP] Speaker: Can you, if you don't mind, can you send [COUNTRY] a proposal? And then when we meet next time for those 2 items? And at least both Speaker 249 and [PERSON] will have something to look at and we'll try to work around their schedule, of course. But I mean some that works for everybody. So if you guys have some ideas, please, communicate, and then we can finalize next steps in the next meeting or if we can do it via email I don't know. But at least we have something to look at.
+[TIMESTAMP] Speaker 102: I'll send a couple times after the meeting. It's a summary.
+[TIMESTAMP] Speaker 121: Perfect. Okay. Yeah, that'd be great. Then I I'll can circle back with them and just see if those times work for them. And then I can also ask them in the event of their absence. Because I don't, I think you guys schedule this meeting, so you probably don't have a line of sight, right? Unless one of [COUNTRY] has told you availability.
+[TIMESTAMP] Speaker 121: That's correct. All right. Yeah. So yeah, let me, if you could just send [COUNTRY] some times You can just send that to Speaker 055 and myself. That'd be great. And then I can circle with [PERSON] and Speaker 249 to see one, if they have availability for those times and two, how they would like [COUNTRY] to handle going forward, if they can't be here, if they want [COUNTRY] to still have the meeting or to push it out.
+[TIMESTAMP] Speaker 102: Yeah. Appreciate that.
+[TIMESTAMP] Speaker 121: Sure.
+[TIMESTAMP] Speaker 102: Great. Well, let's just kind of go through the agenda here then for today. I know we're usually pretty quick on this, but again, this is the weekly project status report that was sent out over the last week. So just to briefly go through this with everyone, we are here in phase 3 with complaints and audits. Currently, we are actually ahead of schedule as far as active milestones and what's happened this last week and what we have growing going up. On for the next week. So we're doing well as far as budget consumed and what's available to [COUNTRY].
+[TIMESTAMP] Speaker 102: And also as far as where we are within the active milestones. So where we are at currently with complaints and audits is really we have all the RTM requirements approved from the Customer 21 side. So. Thank you very much to Speaker 044. And the team for getting those done. We're at now is ABC Corp has drafted most of those CDs or actually all of those CDs for our config review. We're reviewing. All of them have an initial estimate in the RTM. Sheet. And there's, I think, one that we just needed some information back on from SyAnthony and our internal development team on their estimate, one or 2. 2. Probably 95% of them there. And then we'll look for Speaker 044 and the Customer 21's team final approval of those estimates before we move forward with development. So. That's really where we're at within the project.
+[TIMESTAMP] Speaker 102: Schedule. So if you look, this is kind of a timeline view of where we're at. We're here at February 22nd. Really. What we're talking about here is reviewing the estimates of with the customer. So we're actually kind of at this. We're in reviewing the requirements and estimates with the customer these kind of activities here. So we're a good couple of weeks ahead of schedule I would say once we get approval of those estimates, we can begin development and configuration. So that's kind of where we're at right now within the project timeframe.
+[TIMESTAMP] Speaker 102: And this is again, kind of a percentage complete view of the same milestones within phase 3. So I'll just pause there. Any questions from this team about where we're at in the project?
+[TIMESTAMP] Speaker: Do you see any risks, Speaker 102? Anything from you guys perspective?
+[TIMESTAMP] Speaker 102: No, really I think we're moving forward with audit and complaints as you know, in in line with good out of the box practices I think Customer 21's done a good job of working to that I know. We had some discussions about docs and training and how we can kind of streamline the system there. So we've got some forward path I think there with Speaker 288 and the team. So that's good I know Tom we talked with you about some other things on the side.
+[TIMESTAMP] Speaker 102: And that's the only risk that I would say is if something something is going to be able to outside do with the team. Of our control or something comes in that we're not really planning for within the certain project phase that we want to address, then that would be the only risk that I have. But I don't see anything right now to cause that risk. Okay. Sounds.
+[TIMESTAMP] Speaker: Good. Thanks.
+[TIMESTAMP] Speaker 102: Yeah. Thanks, Speaker 055.
+[TIMESTAMP] Speaker 102: So again, oh, let me go back to our project. Activities. So again, this is kind of a review of what we just talked through. We're done with the requirements. Draft for complaints and audits in this phase. The upcoming items, we're going to finalize the estimations from our development team and ABC Corp internal team, and then we'll have the approval of those estimates from the Customer 21, that's Speaker 044. And the team. I know we've got some of those already in the RTM. [PROJECT_SYSTEM]. [PROJECT_SYSTEM]. So Speaker 044 can begin taking a look at some of those estimates that we have there.
+[TIMESTAMP] Speaker 102: And then we'll go down the road of requirements, development and further testing. So. That's really where we're at. No issues. Like we talked about, not really. Any risks. I don't think we need any decisions from this executive team at the moment. Unless this team has something that we want to discuss here, that we should be aware of.
+[TIMESTAMP] Speaker: I don't have anything, Speaker 102, like you said, Speaker 044 is with Shona. They've done a good job collaborating and work directly with ABC Corp. It looks like Speaker 044, joined. I don't know if Speaker 044 has any other inputs or anything, but I'm good.
+[TIMESTAMP] Speaker 102: Great. Well, thanks, Speaker 044. Appreciate, it. If there's not anything else, then I'll go ahead and send a follow up note to this team about maybe some proposed, times and we can circle back on frequency of this meeting if and any further changes if we want to make them to this steering committee group.
+[TIMESTAMP] Speaker: Okay. Very good, Speaker 102. Appreciate it.
+[TIMESTAMP] Speaker 102: All right.
+[TIMESTAMP] Speaker 284: Sounds good. Thank you. Thanks everyone.
+[TIMESTAMP] Speaker 102: For your time, today. Have a great Friday and a good weekend. You too. Thank you. You too. Bye bye.
+[TIMESTAMP] Speaker 284: Thank you.
+
+
+====================================================================================================
+Title: Updated ABC Corp/Customer 21 Implementation Steering Committee (phase 3)
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1119.59
+====================================================================================================
+[TIMESTAMP] Speaker 284: There, Speaker 288.
+[TIMESTAMP] Speaker 284: Good afternoon. Sorry, I was eating. My lunch. I'll join you later.
+[TIMESTAMP] Speaker 102: No problem. Enjoy your lunch for a minute. Give everyone. A couple moments to join. Join. I know we're early.
+[TIMESTAMP] Speaker 284: Hi, Sue.
+[TIMESTAMP] Speaker 284: Hi, gentlemen.
+[TIMESTAMP] Speaker 102: How, are you doing today?
+[TIMESTAMP] Speaker 284: Good. Thursday.
+[TIMESTAMP] Speaker 102: Yes, yes. We're getting closer to the end of the week for sure.
+[TIMESTAMP] Speaker 102: Well, you are right on time. I know, Speaker 288 and I are here, but we'll wait for the other folks who need to join for this call.
+[TIMESTAMP] Speaker 284: Perfectly fine. I'm just running from one meeting to the next. Next. So a chance to breathe is nice.
+[TIMESTAMP] Speaker 102: I hope you have some nice spring weather there where you're at.
+[TIMESTAMP] Speaker 284: Spring? Call, it summer. It's supposed to be 87 this afternoon. Oh,
+[TIMESTAMP] Speaker 102: You're already into into it.
+[TIMESTAMP] Speaker 284: Oh, yeah. I mean, it's [LOCATION]. What. Do you want?
+[TIMESTAMP] Speaker 284: It's 60 and people are whining. So, but today it's supposed to be in the high 80s.
+[TIMESTAMP] Speaker 284: It will be nice.
+[TIMESTAMP] Speaker 102: Well, that sounds good.
+[TIMESTAMP] Speaker: Hi, everybody. Sorry for being late. There. I don't know where the rest of the Customer 21 crew is.
+[TIMESTAMP] Speaker 102: Speaker 249, thanks for joining.
+[TIMESTAMP] Speaker 284: Maybe they're outdoors enjoying nice weather. If you were having it there? I don't know.
+[TIMESTAMP] Speaker: Yeah. Well, I see sun, which is always good. Considering up here in Wisconsin, we've gotten killed with a bunch of crazy storms. The last few days. So.
+[TIMESTAMP] Speaker 284: Oh, you, yeah. I remember those days in [LOCATION]. So. Very happy where I am.
+[TIMESTAMP] Speaker 102: Well, Speaker 249, thanks for joining. Yeah, normally, I know I've had calls pretty routinely with Speaker 044 and Speaker 055 and the rest of the project team. Speaker 288's been on many of those calls, but I'm not sure who else you want to wait. For. I'm happy to go through the deck. We have prepared for this meeting with you or whoever else needs to join. I.
+[TIMESTAMP] Speaker: Would say go ahead and dive in. In. I mean, I would definitely, I was expecting more of my, the rest of Speaker 288's crew and the rest of my peer group on the quality leadership team side, but I don't, I want to be sensitive to time, so let's go ahead and dive in.
+[TIMESTAMP] Speaker 102: Yeah, great. Well, I don't have a ton to share today, but let me share my screen and we can get started and maybe other folks will join [COUNTRY] as we get going here. Let me just move this out of the way a little little bit. Bit.
+[TIMESTAMP] Speaker 102: So I know, it's been a couple of months since we have had a chance to meet with this larger group. Like I was mentioning, I know, Speaker 044 and [PERSON] and Speaker 055 and others are on weekly or daily calls with [COUNTRY]. And. So we have a pretty good touch point. This agenda, I know we do this about Once a month or so. So, but we'll just kind of review where we are with project phases, upcoming activities, any issues and risks and decisions or support needed from the steering committee. So. That's kind of what we have as a standing agenda. Anything that you would like to see addressed? Speaker 249, anything else?
+[TIMESTAMP] Speaker: Speaker 249, Kahneman, Jr.: No, I think this is great. Now, obviously, I will maybe not obviously, but I do read through all of the weekly updates that get sent. Out. So I'd like to thank think you for your I've got a decent pulse on status from those updates as well.
+[TIMESTAMP] Speaker 102: Yeah, great. I'm glad you're seeing those come across. And. So that's kind of where we'll start is kind of just an overview of our, just the last weekly status report. And that kind of gives you kind of a good feeling of where we're at as far as budget and milestones. And so I was just going to take a minute and go through some of that and make sure that everyone was on the same [PERSON]. If you had any questions, happy to talk through those with the team now. So right now, what we're looking at for this phase of the project, phase three, which is, let's see, this actually got flipped.
+[TIMESTAMP] Speaker 102: Around. It's complaints and audit is what we're focusing on. We're probably about 80% complete is where we're at here. And we're moving through that. As far as budget goes. We've consumed 19,000 of the targeted, 37,000 for this phase. So we're a little over halfway through, about halfway through the budget. Oops, let me go back here through the budget that we have for this phase. So we're marching, right? Along. I think we're doing pretty good. As far as where we line up. With. So you see we've consumed, maybe about half of the budget and we're about 80%.
+[TIMESTAMP] Speaker 102: Complete. So we're probably a little bit ahead of schedule, which is good. News. So I always like to share that with the team. Here. Any questions about budget and kind of where we are completeness wise before I dive into kind of milestones and some of the tasks that the team's working on?
+[TIMESTAMP] Speaker 284: Not familiar. Me. I'm good. Great.
+[TIMESTAMP] Speaker 102: So, as far as our project plan and where we are with milestones, here in Phase. 3, we're kind of in this configuration portion. You see we're here mid April. That's what this dotted line represents. And. What we've completed to date are in the configuration. Some of these first items. Where we've done an initial demo to the Customer 21 project. Team. We've got I'd say 90% of the development done. We got a little bit of feedback from Speaker 044 and the team.
+[TIMESTAMP] Speaker 102: So we're working on, essentially, just addressing that feedback and then we'll be looking to deploy any of those changes, out, verify it, and then move forward with official UAT and testing and training. So that's pretty much where we're at in a nutshell for upcoming activities into May and June. We also, I know we talked about this probably at the last steering committee meeting, but we've confirmed that migration is not needed as part of this phase. So we may gain a little bit of time there. Center. Had that targeted for one of the activities in this phase. So we'll be pulling some of these activities.
+[TIMESTAMP] Speaker 102: Forward. We'll just jump right into UAT and validation and training folks and getting them ready to go with the system. So. That's kind of where we are at as far as activities. And. This is just essentially another view of that with the percentage complete and statuses noted on the side. So first was kind of a timeline view with the Gantt chart. And then we have these, this view of the project. Plan. And. These are both just pulled out of [PROJECT_SYSTEM], so the team should have access to this as a working document. If you'd like, we can pull that up. So, I'll pause there.
+[TIMESTAMP] Speaker: Quick question, and actually it was very visible on the last Gantt chart based view, but one of the things you had said, and I've seen this in the status reports, just confirming, is that section of activity around migration? Related efforts, kind of middle to the bottom of the [PERSON] there. It sounds like we've confirmed. We don't need to do those activities. So all the rest of the work that's for training in UAT, that part of the project plan, I'm assuming, and you said this, will all now then be pushed up forward by 3 weeks or so, if I'm understanding, unless we're going to take a 3 week hiatus. So, does that mean the whole schedule accelerates by 3 weeks? And we're actually going to target a go live 3 weeks weeks or sooner, which would be mid June or so? Or am I misconstruing that?
+[TIMESTAMP] Speaker 102: No, that's a valid question. And I discussed that with Speaker 044 a little earlier in the week. And I think what we're going to do is be pulling some of these activities. Forward. And Speaker 044 mentioned that in previous phases in non conformance and CAPA, they actually took a little bit longer during UAT. And testing. So. We do want to pull these items forward and potentially target an earlier.
+[TIMESTAMP] Speaker 102: Go live. If we can. But I think the wise thing to do is just let's see how the testing goes as we begin it. If, we can pull I'd hate to pull it forward and then push it back another week later. After we find out that we're getting additional feedback feedback. Or problems with testing. So. That was the feedback that Speaker 044 gave the team. Let's take a look at training. If we can pull up for testing. What I'd like to do is pull it forward. Obviously, I think an earlier go live is good news for the team, but I think we'll just kind of monitor that and do what we can there.
+[TIMESTAMP] Speaker: Got it. So use it as buffer, opportunistically pull forward the go live if we can. Can. Yeah. Okay. And is there, and this is probably a question more for, Speaker 083 and Speaker 055 and [PERSON], but I was just wondering, are there any other business activities, I'm just thinking of all the stuff that's going on in our world, our normal day jobs, that would influence whether we keep it, kind of that first week of July, that's the date I think we're targeting, or if there's anything else going on, that would be good or bad, if we were able to pull it forward into June, anything else that the project planning team needs to be thoughtful about here?
+[TIMESTAMP] Speaker: Well, considering everything, Speaker 249, as a matter of fact, Speaker 083, myself, and the team, including Mith from the Camping Watercraft, will be meeting, I think, tomorrow. Yeah. So, to kind of like discuss this whole project. Approach as far as planning. But at this point, we don't see Anything Changing?
+[TIMESTAMP] Speaker: But again, to your point,
+[TIMESTAMP] Speaker: It's a person to be going live earlier than expected. So we'll commence the phase 4 implementation of this project when that occurs so.
+[TIMESTAMP] Speaker: Speaker 249, I'm looking at like we talked about right? I think there's 2 portion of this in my head. I see a good progress on process flow, functionality, function. But then not in adoption throughout the organization.
+[TIMESTAMP] Speaker: Plus the training and everything else. So, at some point Speaker 055 mentioned, we're kind of needing to make sure we're just not creating a bunch of flowcharts, right? That it's functional, but then people can't use, right? And then I also got to step back and make sure I can scale this up across all organizations. So we got some fine tuning to do, but right now, like Speaker 055 said, we're leaving everything be until we deep dive into some of these modules and process flows and better understand it.
+[TIMESTAMP] Speaker: That makes makes complete sense. And as you and I talked about Speaker 083 in our meet and greet I think might be putting an enterprise hat on, you can't see my hands, I'm kind of putting my camera off, but I'm kind of putting my enterprise hat on here. I think that's absolutely critical that we assess and explore. How do we ensure we drive adoption across all functions, all team that need to utilize the platform, all business, units, all cross, functional team. So I'm glad that you guys are sinking your teeth into those details.
+[TIMESTAMP] Speaker: Yes, and I've been engaging the other business units and saying you need to look at this. And Speaker 055 and I talked about almost addressing each module. I call it module for lack of a better word, word. As an ECN, right? So everybody approves it. My concern is, and this is something for CU, if later on, what I'm used to is if we have to change the flow and the process, it creates a bunch of orphan records because they don't follow that new process. And then now I can't scale it across the organization. So we just got to go back back. And better understand all of that.
+[TIMESTAMP] Speaker 102: And let me I know this is kind of the next slide, but let me just note that I think one of the key items, I know I don't have any issues or risks noted here, but one of these things that we have talked about recently is adoption and making sure that the Customer 21 team is buying into ABC Corp. That's one of the risks I think that I would just highlight here is just that we would hate to see any churn. And. So we want to make sure that the process is streamlined as much upfront as possible. I think the project team has done a pretty good job of that. But let's continue this discussion around user.
+[TIMESTAMP] Speaker 102: Adoption. Want to see a good user adoption rate and a implementation within the Customer 21 team there. So
+[TIMESTAMP] Speaker 102: Okay. Again, this is a this slide I think we've kind of talked through this already upcoming activities that we have coming out.
+[TIMESTAMP] Speaker 102: We'll finish up the requirement development with where we are now in in our development environment. So we should be able to finalize that development and then deploy a confirmed final package for UAT and validation. And then we'll move forward with the next milestones, which include training and UAT and validation. And. So maybe as part of that training we can take a deeper dive into some of this adoption and what we can do to really bring folks on board with ABC Corp. Okay. Okay. Issues and risks. There's nothing that we have noted right now.
+[TIMESTAMP] Speaker 102: Besides the one that I we just talked about verbally. I think we just want to drive a high adoption rate and good use of ABC Corp within the Customer 21. Team. So anything that the project support or sponsorship team can do here to help drive that would probably be helpful.
+[TIMESTAMP] Speaker 102: Questions or other questions from the steering committee? I'm not aware of anything else that we need decisions from the steering committee on, but if there's anything that the team would like to address, I think that's pretty much where we're at today. If we have any further questions. So, like I mentioned, this is pretty quick and easy presentation, but happy to take any feedback or discuss. Any other questions that the team has? Has.
+[TIMESTAMP] Speaker: Nothing else for me. I appreciate the conversation on next steps with adoption and kind of thinking enterprise wide as well. So that's great. Obviously, the team on this phase of the work is making good progress. So always nice to see. We have the possibility and options of accelerating GoLives if possible.
+[TIMESTAMP] Speaker 102: Yeah, great. Thank you.
+[TIMESTAMP] Speaker: And to that point, Speaker 249, I mean, we made with Speaker 102 and the team. Weekly so it's not like we do our own thing and they don't know what's happening. So we're in constant communication with the team and yeah. And we'll talk to them whenever we have any questions Speaker 044 Speaker 042 has done a great job leading this project. And of course with Speaker 288 on our team, he's supporting the whole initiative. So yeah, we're getting there, but adoption is a main thing. And we work working together. Towards our goal as well. So, and by the way, [PERSON] has been a great, great support of our team. So, from your group. So, we appreciate that.
+[TIMESTAMP] Speaker: Great. Right. Well, thanks, everybody. Have a good day.
+[TIMESTAMP] Speaker 284: Yeah. Thank you. Take care. Thank you everyone. Bye. Bye.
+
+---
+Client resource profile: Integration and IT-led customer model.
+Client project resource guidance: Assume a technically engaged customer team with client PM, IT/platform owner, security/SSO owner, integration/API owner, reporting/analytics contact, and business SMEs. Technical dependencies, environment access, and interface testing should be explicitly assigned to client-side owners.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

@@ -3,7 +3,7 @@
 
 Usage:
   python run.py --transcript transcripts/01.txt \
-                --template pptx_templates/ABC\ Corp\ Template.pptx \
+                --template "pptx_templates/ABC Corp Template.pptx" \
                 --out runs/output_01.pptx
 """
 import argparse
@@ -13,6 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from graph import graph
+from llm_factory import default_provider, executor_model, planner_model
 
 
 def main() -> None:
@@ -21,16 +22,30 @@ def main() -> None:
     ap.add_argument("--template", required=True, help="Path to base PPTX template")
     ap.add_argument("--out", required=True, help="Output PPTX path")
     ap.add_argument("--work-dir", default="runs/work", help="Work directory for temp files (PNGs etc)")
+    ap.add_argument("--provider", default="", help="LLM provider: anthropic or openai (default: auto-detect from env)")
     args = ap.parse_args()
 
     Path(args.work_dir).mkdir(parents=True, exist_ok=True)
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
 
+    transcript_path = args.transcript
+    from tools.pdf_parser import is_pdf, extract_pdf_text
+    if is_pdf(transcript_path):
+        txt_path = Path(args.work_dir) / "transcript.txt"
+        txt_path.write_text(extract_pdf_text(transcript_path), encoding="utf-8")
+        transcript_path = str(txt_path)
+
+    provider = args.provider.strip() or default_provider()
+
     result = graph.invoke({
-        "transcript_path": args.transcript,
+        "transcript_path": transcript_path,
         "template_path": args.template,
         "output_path": args.out,
         "work_dir": args.work_dir,
+        "provider": provider,
+        "planner_model": planner_model(provider),
+        "executor_model": executor_model(provider),
+        "extracted_facts": None,
         "edit_plan": {},
         "review_verdict": "",
         "review_issues": [],

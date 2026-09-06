@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT Agent — Flow Chart</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #F4F6FF;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(167,139,250,0.10) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(248,113,113,0.07) 0%, transparent 40%),
+    radial-gradient(circle at 50% 10%, rgba(52,211,153,0.06) 0%, transparent 35%);
+  min-height: 100vh;
+  padding: 28px 32px 52px;
+  color: #1e293b;
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+.page-header { text-align: center; margin-bottom: 30px; }
+.page-header h1 {
+  font-size: 1.75rem; font-weight: 800; letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed, #db2777);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.page-header p { color: #64748b; font-size: 0.86rem; margin-top: 6px; }
+
+/* ── Two-column grid ─────────────────────────────────────── */
+.flow-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ── Column ──────────────────────────────────────────────── */
+.flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; }
+
+.col-header {
+  font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.4px;
+  padding: 7px 20px; border-radius: 20px; margin-bottom: 14px;
+  width: 100%; text-align: center;
+}
+.col-prod { background: #EEF2FF; color: #3730a3; border: 1.5px solid #C7D2FE; }
+.col-eval { background: #FDF2F8; color: #9d174d; border: 1.5px solid #F9A8D4; }
+
+/* ── Centre bridge column ────────────────────────────────── */
+.bridge-col {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; padding-top: 50px;
+  position: relative;
+}
+.bridge-arrow {
+  writing-mode: vertical-lr; transform: rotate(180deg);
+  font-size: 0.58rem; color: #99F6E4; font-weight: 700;
+  letter-spacing: 1px; white-space: nowrap;
+  background: #F0FDFA; border: 1px solid #99F6E4; border-radius: 6px;
+  padding: 8px 3px; margin-top: 280px;
+}
+
+/* ── Terminal pill ───────────────────────────────────────── */
+.terminal {
+  padding: 8px 28px; border-radius: 30px;
+  font-size: 0.8rem; font-weight: 700; text-align: center; width: 80%;
+}
+.t-start { background: #D1FAE5; color: #065f46; border: 2px solid #34D399; }
+.t-end   { background: #D1FAE5; color: #065f46; border: 2px solid #34D399; }
+.t-ship  { background: #FEF3C7; color: #92400e; border: 2px solid #F59E0B; font-size: 0.88rem; }
+
+/* ── Connector arrow ─────────────────────────────────────── */
+.conn { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 1px 0; }
+.conn-line { width: 2px; height: 13px; background: #CBD5E1; }
+.conn-arrow {
+  width: 0; height: 0;
+  border-left: 6px solid transparent; border-right: 6px solid transparent;
+  border-top: 8px solid #CBD5E1;
+}
+.conn-tag {
+  font-size: 0.57rem; font-weight: 600; font-family: monospace;
+  background: #EEF2FF; border: 1px solid #C7D2FE; color: #4338CA;
+  padding: 1px 7px; border-radius: 4px; margin: 2px 0;
+}
+
+/* ── Process step card ───────────────────────────────────── */
+.step {
+  width: 100%; border-radius: 12px; padding: 11px 13px;
+  display: flex; align-items: flex-start; gap: 9px;
+  border: 1.5px solid;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  cursor: default;
+}
+.step:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
+
+.step-icon  { font-size: 1.15rem; flex-shrink: 0; padding-top: 1px; }
+.step-body  { flex: 1; min-width: 0; }
+.step-title { font-size: 0.84rem; font-weight: 600; }
+.step-sub   { font-size: 0.69rem; color: #64748b; margin-top: 2px; line-height: 1.4; }
+.step-badge {
+  font-size: 0.61rem; font-weight: 700; padding: 3px 8px; border-radius: 8px;
+  white-space: nowrap; flex-shrink: 0; align-self: flex-start; margin-top: 1px;
+}
+
+/* Step themes */
+.s-input  { background: #EEF2FF; border-color: #C7D2FE; font-size:0.81rem; font-weight:500; color:#3730a3; justify-content:center; padding:10px 14px; }
+.s-haiku  { background: #FFFBEB; border-color: #FDE68A; }
+.s-haiku  .step-badge { background: #FDE68A; color: #92400e; }
+.s-sonnet { background: #F5F3FF; border-color: #DDD6FE; }
+.s-sonnet .step-badge { background: #DDD6FE; color: #5b21b6; }
+.s-det    { background: #EFF6FF; border-color: #BFDBFE; }
+.s-det    .step-badge { background: #BFDBFE; color: #1e40af; }
+.s-runner { background: #F0FDFA; border-color: #99F6E4; }
+.s-runner .step-badge { background: #99F6E4; color: #134e4a; }
+.s-bench  { background: #FFF7ED; border-color: #FDBA74; }
+.s-bench  .step-badge { background: #FDBA74; color: #9a3412; }
+.s-output { background: #F0FDF4; border-color: #86EFAC; justify-content:center; text-align:center; font-weight:600; font-size:0.83rem; color:#065f46; padding:10px; }
+
+/* ── Decision diamond ────────────────────────────────────── */
+.decision-wrap { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 5px 0; }
+.diamond {
+  width: 88px; height: 88px; transform: rotate(45deg); border-radius: 6px;
+  border: 2px solid; display: flex; align-items: center; justify-content: center;
+}
+.diamond-text { transform: rotate(-45deg); font-size: 0.7rem; font-weight: 700; text-align: center; line-height: 1.3; padding: 4px; }
+.d-fix   { background: #FFF1F2; border-color: #F87171; }
+.d-fix   .diamond-text { color: #dc2626; }
+.d-meta  { background: #FFFBEB; border-color: #F59E0B; }
+.d-meta  .diamond-text { color: #92400e; }
+.d-human { background: #F5F3FF; border-color: #A78BFA; }
+.d-human .diamond-text { color: #5b21b6; }
+
+/* ── Branch split after decision ─────────────────────────── */
+.branches { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; margin-top: 4px; }
+.branch   { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.btag     { font-size: 0.67rem; font-weight: 700; padding: 3px 12px; border-radius: 10px; }
+.btag-yes { background: #D1FAE5; color: #065f46; }
+.btag-no  { background: #FEE2E2; color: #dc2626; }
+
+/* ── Fix loop note ───────────────────────────────────────── */
+.fix-note {
+  background: #FFF1F2; border: 1.5px dashed #F87171; border-radius: 10px;
+  padding: 10px 11px; font-size: 0.69rem; color: #b91c1c; font-weight: 500;
+  text-align: center; width: 100%; line-height: 1.6;
+}
+
+/* ── Branch plain note ───────────────────────────────────── */
+.branch-note {
+  font-size: 0.69rem; color: #475569; background: white;
+  border: 1px dashed #CBD5E1; border-radius: 8px;
+  padding: 9px 11px; text-align: center; line-height: 1.6; width: 100%;
+}
+
+/* ── Bridge note under eval runner ──────────────────────── */
+.bridge-tag {
+  font-size: 0.66rem; color: #0f766e; background: #F0FDFA;
+  border: 1px solid #99F6E4; border-radius: 8px;
+  padding: 5px 10px; text-align: center; width: 100%; margin: 3px 0;
+}
+
+/* ── 6 evals block ───────────────────────────────────────── */
+.evals-block {
+  width: 100%; background: white;
+  border: 1.5px solid #E0E7FF; border-radius: 12px; padding: 11px 13px;
+}
+.evals-title {
+  font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+  color: #64748b; margin-bottom: 9px; text-align: center;
+}
+.evals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.eval-item {
+  border-radius: 8px; padding: 7px 9px;
+  font-size: 0.72rem; font-weight: 500; text-align: center; border: 1px solid;
+}
+.e-det  { background: #EFF6FF; border-color: #BFDBFE; color: #1e40af; }
+.e-llm  { background: #FDF2F8; border-color: #F9A8D4; color: #9d174d; }
+.e-semi { background: #FFFBEB; border-color: #FEF08A; color: #713f12; }
+.evals-legend {
+  display: flex; gap: 6px; margin-top: 9px; justify-content: center; flex-wrap: wrap;
+}
+.evals-legend span {
+  font-size: 0.6rem; padding: 2px 8px; border-radius: 5px; border: 1px solid;
+}
+
+/* ── Meta-improve ────────────────────────────────────────── */
+.meta-section {
+  max-width: 1200px; margin: 22px auto 0;
+  background: linear-gradient(135deg, #fff5f5 0%, #fff7ed 55%, #fffbeb 100%);
+  border: 2px dashed #FCA5A5; border-radius: 20px; padding: 18px 22px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  animation: fadeUp 0.35s ease 0.25s both;
+}
+.meta-header {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 14px;
+}
+.meta-header h3 {
+  font-size: 0.74rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; color: #dc2626;
+}
+.meta-note { font-size: 0.67rem; color: #9ca3af; }
+.meta-flow { display: flex; align-items: stretch; }
+.ms {
+  background: white; border: 1.5px solid #FED7AA; border-radius: 12px;
+  padding: 10px 12px; text-align: center; flex: 1;
+  transition: transform 0.12s ease;
+}
+.ms:hover { transform: translateY(-2px); }
+.ms.sonnet { border-color: #DDD6FE; background: #F5F3FF; }
+.ms.ok     { border-color: #86EFAC; background: #F0FDF4; }
+.ms .icon  { font-size: 1.25rem; margin-bottom: 4px; }
+.ms .lbl   { font-size: 0.75rem; font-weight: 600; color: #1e293b; }
+.ms .sub   { font-size: 0.62rem; color: #64748b; margin-top: 3px; line-height: 1.35; }
+.marr      { display: flex; align-items: center; padding: 0 4px; font-size: 1.1rem; color: #f87171; flex-shrink: 0; }
+.meta-footer {
+  text-align: center; margin-top: 11px; font-size: 0.68rem; color: #94a3b8; font-style: italic;
+}
+
+/* ── Calibration note ────────────────────────────────────── */
+.calib-note {
+  width: 100%; background: #FAFAFA; border: 1px dashed #CBD5E1;
+  border-radius: 8px; padding: 7px 10px; font-size: 0.67rem; color: #64748b;
+  text-align: center; line-height: 1.55; margin-top: 4px;
+}
+
+/* ── Animations ──────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.flow-col { animation: fadeUp 0.35s ease both; }
+.flow-col:first-child  { animation-delay: 0.05s; }
+.flow-col:last-child   { animation-delay: 0.15s; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>PPT Agent — Flow Chart</h1>
+  <p>Left: single production run &nbsp;·&nbsp; Right: eval flywheel across 44 transcripts &nbsp;·&nbsp; Bottom: meta-improve loop</p>
+</div>
+
+<div class="flow-wrapper">
+
+  <!-- ── LEFT: Production Run ─────────────────────────────── -->
+  <div class="flow-col">
+    <div class="col-header col-prod">⚡ Production Run — Single Transcript</div>
+
+    <div class="terminal t-start">▶ START</div>
+
+    <div class="conn">
+      <div class="conn-line"></div><div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-input">📄 Transcript &nbsp;+&nbsp; 📊 PPTX Template</div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">raw text · template file</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-haiku">
+      <span class="step-icon">🔍</span>
+      <div class="step-body">
+        <div class="step-title">Extractor</div>
+        <div class="step-sub">Pull structured facts, names, numbers, dates from raw transcript text</div>
+      </div>
+      <span class="step-badge">Haiku</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">extracted_facts JSON</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-sonnet">
+      <span class="step-icon">🗺️</span>
+      <div class="step-body">
+        <div class="step-title">Planner</div>
+        <div class="step-sub">Reads shape inventory + slide thumbnails → creates JSON edit plan with evidence per edit</div>
+      </div>
+      <span class="step-badge">Sonnet</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">edit_plan JSON</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-haiku">
+      <span class="step-icon">⚙️</span>
+      <div class="step-body">
+        <div class="step-title">Executor</div>
+        <div class="step-sub">set_text · set_cell · delete_shapes · placeholder sweep (replaces with space, not empty)</div>
+      </div>
+      <span class="step-badge">Haiku</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">executor_log</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-det">
+      <span class="step-icon">🔬</span>
+      <div class="step-body">
+        <div class="step-title">Pre-check (deterministic · free)</div>
+        <div class="step-sub">Text overflow · ungrounded numbers · table cell overflow · shape drift · remaining placeholders</div>
+      </div>
+      <span class="step-badge">$0</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">precheck_result</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-haiku">
+      <span class="step-icon">🔎</span>
+      <div class="step-body">
+        <div class="step-title">Reviewer</div>
+        <div class="step-sub">10-point QA: visual PNG · overflow · grounding · sanitization · layout · hallucination</div>
+      </div>
+      <span class="step-badge">Haiku</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div><div class="conn-arrow"></div>
+    </div>
+
+    <!-- Decision: PASS? -->
+    <div class="decision-wrap">
+      <div class="diamond d-fix">
+        <div class="diamond-text">VERDICT<br>PASS?</div>
+      </div>
+    </div>
+
+    <div class="branches">
+      <!-- YES branch -->
+      <div class="branch">
+        <span class="btag btag-yes">✅ YES</span>
+        <div class="conn"><div class="conn-line"></div><div class="conn-arrow"></div></div>
+        <div class="step s-output">
+          ✅ Edited PPTX<br>
+          <span style="font-size:0.67rem;opacity:0.75;font-weight:400;">faithful · grounded · QA-passed</span>
+        </div>
+        <div class="conn"><div class="conn-line"></div><div class="conn-arrow"></div></div>
+        <div class="terminal t-end">⏹ END</div>
+      </div>
+      <!-- NO branch -->
+      <div class="branch">
+        <span class="btag btag-no">❌ NO</span>
+        <div class="fix-note">
+          ↩ Re-execute<br>
+          <strong>flagged slides only</strong><br><br>
+          Max <strong>2 attempts</strong><br>
+          → back to Executor<br><br>
+          After 2 attempts:<br>
+          output anyway +<br>
+          reviewer warnings attached
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CENTRE: bridge column ────────────────────────────── -->
+  <div class="bridge-col">
+    <div class="bridge-arrow">← EVAL RUNNER CALLS PIPELINE →</div>
+  </div>
+
+  <!-- ── RIGHT: Eval Flywheel ─────────────────────────────── -->
+  <div class="flow-col">
+    <div class="col-header col-eval">🔬 Eval Flywheel — 44 Transcripts</div>
+
+    <div class="step s-input">📁 44 Transcripts &nbsp;+&nbsp; N PPTX Templates</div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">corpus</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-haiku">
+      <span class="step-icon">🎯</span>
+      <div class="step-body">
+        <div class="step-title">Scenario Generator</div>
+        <div class="step-sub">Extract ground truth: expected_facts · forbidden_phrases · critical_numbers · tone (run once per transcript, then cached)</div>
+      </div>
+      <span class="step-badge">Haiku · 1×</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">scenarios/{id}.json</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-runner">
+      <span class="step-icon">🏃</span>
+      <div class="step-body">
+        <div class="step-title">Eval Runner</div>
+        <div class="step-sub">graph.invoke() per transcript → captures full PipelineState + output PPTX text</div>
+      </div>
+      <span class="step-badge">Direct</span>
+    </div>
+
+    <div class="bridge-tag">⬅ invokes full Core Pipeline (left) for each transcript</div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">state + pptx_text</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="evals-block">
+      <div class="evals-title">6 Binary Evaluations (parallel)</div>
+      <div class="evals-grid">
+        <div class="eval-item e-det">☑️ Placeholder Check</div>
+        <div class="eval-item e-det">📐 Shape Coverage</div>
+        <div class="eval-item e-llm">🎯 Faithfulness</div>
+        <div class="eval-item e-llm">🚫 Hallucination</div>
+        <div class="eval-item e-llm">🎭 Sanitization</div>
+        <div class="eval-item e-semi">✓ Completeness</div>
+      </div>
+      <div class="evals-legend">
+        <span style="background:#EFF6FF;border-color:#BFDBFE;color:#1e40af;">🔵 Deterministic · $0</span>
+        <span style="background:#FDF2F8;border-color:#F9A8D4;color:#9d174d;">🔴 Haiku judge · ~$0.003</span>
+        <span style="background:#FFFBEB;border-color:#FEF08A;color:#713f12;">🟡 Semi-det</span>
+      </div>
+    </div>
+
+    <div class="calib-note">
+      Calibrate each LLM judge: label 20 cases by hand → compute F1.<br>
+      F1 &lt; 0.85 on any eval → swap that eval to Sonnet only. Keep rest on Haiku.
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div>
+      <span class="conn-tag">6 × EvalResult (passed, reasoning, confidence)</span>
+      <div class="conn-line"></div>
+      <div class="conn-arrow"></div>
+    </div>
+
+    <div class="step s-bench">
+      <span class="step-icon">📊</span>
+      <div class="step-body">
+        <div class="step-title">Benchmark</div>
+        <div class="step-sub">Aggregate pass rates per eval · append to benchmark.jsonl · live heatmap in EvalLab UI</div>
+      </div>
+      <span class="step-badge">Agg</span>
+    </div>
+
+    <div class="conn">
+      <div class="conn-line"></div><div class="conn-arrow"></div>
+    </div>
+
+    <!-- Decision: pass rate ok? -->
+    <div class="decision-wrap">
+      <div class="diamond d-meta">
+        <div class="diamond-text">All evals<br>≥ 90%?</div>
+      </div>
+    </div>
+
+    <div class="branches">
+      <!-- YES → ship -->
+      <div class="branch">
+        <span class="btag btag-yes">✅ YES</span>
+        <div class="conn"><div class="conn-line"></div><div class="conn-arrow"></div></div>
+        <div class="terminal t-ship">🚢 MVP Ready</div>
+        <div style="font-size:0.67rem;text-align:center;color:#64748b;margin-top:6px;line-height:1.6;">
+          Loop <strong>ends</strong> here.<br>
+          Eval harness remains as<br>regression guard only.
+        </div>
+      </div>
+      <!-- NO → meta-improve -->
+      <div class="branch">
+        <span class="btag btag-no">❌ NO</span>
+        <div class="branch-note">
+          Identify worst eval<br>
+          e.g. hallucination 65%<br><br>
+          → <strong>Meta-Improve Loop</strong><br>
+          (see below ↓)
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Meta-Improve Loop ──────────────────────────────────── -->
+<div class="meta-section">
+  <div class="meta-header">
+    <span style="font-size:1.2rem;">🔁</span>
+    <h3>Meta-Improve Loop</h3>
+    <span class="meta-note">— dev only · human must approve every patch · never auto-applies · loop back to Eval Runner after patch</span>
+  </div>
+  <div class="meta-flow">
+    <div class="ms">
+      <div class="icon">📉</div>
+      <div class="lbl">Cluster Failures</div>
+      <div class="sub">Group by pattern<br>pick worst eval type</div>
+    </div>
+    <div class="marr">→</div>
+    <div class="ms sonnet">
+      <div class="icon">🧠</div>
+      <div class="lbl">Auto-Improve</div>
+      <div class="sub">Sonnet reads N failed cases<br>+ current planner.py prompt</div>
+    </div>
+    <div class="marr">→</div>
+    <div class="ms">
+      <div class="icon">📝</div>
+      <div class="lbl">Prompt Patch</div>
+      <div class="sub">Written to<br>staged_patches/</div>
+    </div>
+    <div class="marr">→</div>
+    <div class="ms ok">
+      <div class="icon">👤</div>
+      <div class="lbl">Human Review</div>
+      <div class="sub">EvalLab diff viewer<br>approve or discard</div>
+    </div>
+    <div class="marr">→</div>
+    <div class="ms ok">
+      <div class="icon">✅</div>
+      <div class="lbl">Apply Patch</div>
+      <div class="sub">Merged into<br>agents/planner.py</div>
+    </div>
+    <div class="marr">→</div>
+    <div class="ms">
+      <div class="icon">🔄</div>
+      <div class="lbl">Re-run Benchmark</div>
+      <div class="sub">44 transcripts again<br>↑ back to Eval Runner</div>
+    </div>
+  </div>
+  <div class="meta-footer">
+    Repeat until all 6 evals ≥ 90% pass rate across 44 transcripts · then loop ends · eval harness stays as regression guard only
+  </div>
+</div>
+
+</body>
+</html>

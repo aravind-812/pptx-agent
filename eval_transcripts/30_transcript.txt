@@ -1,0 +1,713 @@
+# Customer 30 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 4
+
+
+====================================================================================================
+Title: Chorus - Customer 30 & ABC Corp Call: Follow-[ORG]
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3679.17
+====================================================================================================
+[TIMESTAMP] Speaker 201: Today, good. Thank you. I like your background. It looks looks like it's from [COUNTRY] or something.
+[TIMESTAMP] Speaker 312: I live in San, so it's pretty southwestern me.
+[TIMESTAMP] Speaker 201: Okay. I live in a buck. I actually. Oh, really. Yeah. Oh, yeah. There's a
+[TIMESTAMP] Speaker 312: We just
+[TIMESTAMP] Speaker 201: Got.
+[TIMESTAMP] Speaker 312: Oh, so I thought I saw pictures of it snowing on. The 17. Yeah, just not.
+[TIMESTAMP] Speaker 201: It is. We actually had hail the other day. So thick, it looked like snow and it's been raining for like 2 3 days and I just went for a lot this morning. It's in the fifties. And I'm like, freezing. Yeah, if it
+[TIMESTAMP] Speaker 312: Gets under seventy, I get cold.
+[TIMESTAMP] Speaker 201: Yeah, same here. Yeah. Oh, my
+[TIMESTAMP] Speaker 312: yeah. Just for for example, Phoenix will sometimes get up to 1 19 1 20. So having weather like, this is really weird.
+[TIMESTAMP] Speaker 201: Yeah. Yeah. And I've only been here like 5 and a half years, I moved from Pennsylvania, but I've already acclimated acclimated. Yeah.
+[TIMESTAMP] Speaker 312: I'm originally from to or from Michigan sorry. So oh, I don't do snow anymore.
+[TIMESTAMP] Speaker 201: Yeah.
+[TIMESTAMP] Speaker 312: Exactly.
+[TIMESTAMP] Speaker 084: Hi, Speaker 070. Hey, Speaker 074, welcome.
+[TIMESTAMP] Speaker: Hey, how are you doing?
+[TIMESTAMP] Speaker 084: Good. You
+[TIMESTAMP] Speaker: Doing well.
+[TIMESTAMP] Speaker: I think I saw provine on a separate call. Let me see if I can't get him to to join here.
+[TIMESTAMP] Speaker 074: I think Speaker 244 is already forwarding on the call, Speaker 070.
+[TIMESTAMP] Speaker: Oh, perfect. Thank you.
+[TIMESTAMP] Speaker 084: Yeah. The only other person I have was Speaker 244. So once we get her on our proven, we can get underway here. So we'll give it just one more second.
+[TIMESTAMP] Speaker 084: Speaker 244. Perfect. Looks like we've got the whole gang here. Hello, everybody?
+[TIMESTAMP] Speaker: Hey.
+[TIMESTAMP] Speaker 084: Good party on a Friday. Hello, hello. Well, it's great to to see you all again. I know this was an initial discussion together back in July. That resulted from one of our cadence calls. You guys had raised your hand to say, hey we'd love to start the topic around an upgrade discussion and we started kind of peeling back that engine with Speaker 312 at the helm. And then we kind of paused it while you guys had some time internally to kind of start the discussion. Will do you want to upgrade to 14 5 also? 15 was on the way. So kind of where did that sit? So you're waiting for the release notes. And now Speaker 074 you raised your hand about a week week and a half ago to say it's really time we start this discussion again and you had some specific information which I put in the calendar invitation that you wanted to talk to Speaker 312 about today. So I brought way back to the hot seat for you that the table. He's our main guy here for you guys to dig. Into that. Great conversation. Ask your questions. We want to help understand kind of what's top of mind and what you guys might need as you look to finalize this path. And then of course, we can set next steps from there. So with that Speaker 074, I will turn it over to you and you can lead the conversation and we'll go from there.
+[TIMESTAMP] Speaker 074: Yeah. Sounds good. Thank you so much, Speaker 084. Yeah. We have we are analyzing all of our installed packages and we'd like to tackle first. And I think we just all need a refresher as to what direction is recommended, what resources we need to plan for both on your side and our side. And how we progress through the packages that are available to [COUNTRY] since our last I guess since our only installation and like, do are we able to jump from one package to the other? from what we currently have to what is the most up to date or do we need to do a stepped approach, et cetera?
+[TIMESTAMP] Speaker 312: Yeah. Makes sense. So actually
+[TIMESTAMP] Speaker 074: Sorry, wait before you. [PERSON], do you mind if I record this?
+[TIMESTAMP] Speaker 312: Yeah. We've already got one recorder, but on the paranoid pm, if you want to start another recorder, that's perfectly fine with me and we know it'll definitely be recorded.
+[TIMESTAMP] Speaker 074: I don't have the permissions to so it's okay. I can
+[TIMESTAMP] Speaker 312: Start it real quick.
+[TIMESTAMP] Speaker 084: I just yeah, I just started a second one as well, Speaker 074.
+[TIMESTAMP] Speaker 312: Okay. Yeah, it's gonna kick everybody out, of course. So
+[TIMESTAMP] Speaker 084: Well, yeah. There we go. Perfect moves everyone off camera. So if you want to pop back on and if you just click on mute and you'll be able to communicate again, but recording is underway.
+[TIMESTAMP] Speaker 312: All right. So here's the scope. I'm gonna address the elephant in the room first. We have a pretty good size queue since basically since 14 came out. And then 15 came out, everybody seems to want this and it's to the point of we're actually enlarging our team. So yeah. I'm just gonna go ahead and say we're looking at at least mid February to get you guys started. So what do you have any thoughts around that?
+[TIMESTAMP] Speaker 312: I'm just gonna say it first just so everybody knows ahead of time, but there's things we can do. So
+[TIMESTAMP] Speaker 244: I mean, I think we just need to talk through what do we need you to help with in terms of an upgrade, right? Because we do upgrades of managed packages with tons of other vendors. So yeah, I understand that. You have a queue, but what does that mean to [COUNTRY]?
+[TIMESTAMP] Speaker 312: Yeah, exactly. So and let me do this. Let me go through the process here. I can show you that. And then I can show you exactly what you guys will need to do during the upgrade.
+[TIMESTAMP] Speaker 312: Share here.
+[TIMESTAMP] Speaker 312: I see Jim's join.
+[TIMESTAMP] Speaker 312: Okay. Can you guys see a a [PRESENTATION_SOFTWARE]?
+[TIMESTAMP] Speaker 201: Yes, we can.
+[TIMESTAMP] Speaker 312: Yeah. Yeah. This is just it's just a template at this point. But the one thing I'm gonna show you is the and when we do the official kickoff meeting, we'll go we'll go through everything here. You can see there's lots and lots of good stuff here. So can you guys see the upgrade workflow?
+[TIMESTAMP] Speaker 312: Yes.
+[TIMESTAMP] Speaker 312: Great. Okay. Uh, we have 3 swim lanes here, CPC. Dev, what this is just a developer sandbox. This is where we do. All of our initial testing in put stands for post upgrade. Configure just just our fancy name for the configurations that we move forward. Do you guys know the software the [PROJECT_SYSTEM] software?
+[TIMESTAMP] Speaker 244: Yes, we use [PROJECT_SYSTEM].
+[TIMESTAMP] Speaker 312: Okay. Perfect. Perfect. So we have all of your configurations. Let me look really quick. See how many configure configurations you have in there, just to see if you guys have a lot
+[TIMESTAMP] Speaker 312: You're gonna have a lot of configurations, excuse me to move forward here. That said we will start testing in a dev sandbox. When I'll do an estimate here and look at all of the configurations that we actually have to move forward. The scope of the upgrade is to move all the configurations that we have forward that have been deployed to prod and you're using. So that's the good list that I get. So I'll check that list to see how many you're probably gonna have. Let me see you've got 203 total CDs, maybe 110 hundred 20 or so. So so so more than usual, but that's not a problem.
+[TIMESTAMP] Speaker 312: We might want to think about maybe testing in a partial or a full copy sandbox, but keep that in the back of your mind and I'll show you what we do here. So whatever sandbox we test in, if it's a dev sandbox we'll create a new sandbox name this. If we do use a partial or full full copy sandbox will refresh that sandbox. But anyhow, we'll have the initial sandbox that we tested. Let me get rid of that because that's gonna drive me not. Okay. We have a sandbox we're testing in. If you guys do have a lot of this we call it CDs because configuration design another fancy term for the work items in in [PROJECT_SYSTEM], we'll see how many you have. We may spend some time doing a pre upgrade impact analysis where we go through all the test classes for the configurations and test them to see what breaks and potentially what we'll need to actually fix. So we'll do that. And then we perform the upgrade. You can see here that um that's clone A C C I C D and C ver. [PERSON]'t worry about that now. That's just how we create a release package to move your configurations forward to the validation testing and prod. So we don't have to worry about that now.
+[TIMESTAMP] Speaker 312: Now, these 5 sand boxes, here are the long. Are these 5 boxes are the long pole in the tent here? This is where we actually test everything. So I you're gonna hear me harp on this. Hit this with everything if you guys have SMS for your different modules that you use involve them in the testing. If you have different profiles for your users, let [COUNTRY] know. We'll log in as them and impersonate them. We want to hit this with everything. The goal of this testing is to make sure we get everything. So when you do your validation and I'm assuming you have validation scripts and everything that this is just a pass through
+[TIMESTAMP] Speaker 312: The common theme for finding items in Val. And even in prod, is items that didn't get tested. So you know, it's you know, it's harder to fix things in Val. And then it's really hard to fix things in production. Especially if there's something that if it's a critical issue or something like that. We rarely see anything like that, but the common theme is things that didn't get tested. So that's why I harp on it. Get everybody in on this.
+[TIMESTAMP] Speaker 312: So we go ahead, we perform the upgrade. And then like I said, these 5 boxes are the long pole in the 10. What we'll do is we go ahead and test the first module. It's usually the easiest module. So we can get you test you guys testing faster, then we turn it over to you. And then we'll do training. We're that we're revamping our training at this point. So that's kind of up in the air. But when we go to the when we do your official kick off I'll tell you exactly what that is. And then you guys start testing while you're testing the first one we were testing. The second one we turn the second one over to you. We're testing the third turn the third one. So it's an iterative process here. We'll also give you a a sheet where you can update any configurations you or any issues you find. You'll find issues you'll have too many configurations to fit, not to find something. But we like I said before, we want to find everything in these 5 boxes here. So yeah. We've gone through these 5 boxes. We've tested everything. We've turned it over to you. Do you guys have any questions around this right here?
+[TIMESTAMP] Speaker 244: So all of this right now everything you're talking about is happening on your side. So you are testing our configuration with whatever release package we're talking about. So we don't like, at that point there's nothing for [COUNTRY] to do. When does it get to a point where we get a package to install in our environment?
+[TIMESTAMP] Speaker 312: Okay. So so let's talk about that. So do you do your own installs for upgrades in that? Okay. So so what we'll do is we'll have our [COUNTRY] upgrader shadow you to make sure that you have everything you need and to answer any questions, that's not a problem because we are doing that. This minute is a matter of fact with another customer. So so we'll have somebody shadow you to make sure that everything is done. Now, in this first sandbox here do we do you still want [COUNTRY] to shadow you? Oh, Speaker 201?
+[TIMESTAMP] Speaker 201: We'll go ahead and finish that thought Speaker 312 with Speaker 244 and then I'll ask my question.
+[TIMESTAMP] Speaker 312: Yeah. A lot of customers in the initial testing here. They're like, whatever go ahead and install ABC Corp the new C version. Do you want to install this in the first sandbox that we're using to test also?
+[TIMESTAMP] Speaker 244: I guess I'm confused. Are the sand boxes you're talking about in the first swim line, our sand boxes or your sandbox?
+[TIMESTAMP] Speaker 312: Is your sandbox, s? So so we'll either have you create a sandbox of this name or and it's usually better will use a partial or a full copy sandbox in your [CRM_PLATFORM] instance to go ahead and install ABC Corp and then do the testing.
+[TIMESTAMP] Speaker 244: Yeah. We already have a couple of C sandbox. We don't have an extra full copy laying around and we don't have the money to pay for an extra one for this. So we already have ABC Corp sand boxes. So it seems like we would just install this in our C sandbox, run regression against it and then push it up through the remainder of our environments. So
+[TIMESTAMP] Speaker 312: So the testing that we do is kind of like, regression testing, but it's not automated. We actually go through and test all of your configure turn it over to you and then and then you test it. If you do you have like regression scripts or anything that you would test this with?
+[TIMESTAMP] Speaker 244: Yes, we do.
+[TIMESTAMP] Speaker 312: That's even better. Yeah. We can pin that down when we get closer or when yeah, when we get closer to the official kickoff, we can make sure that everybody knows how this is gonna get installed and how it's gonna get tested. So that's cool. So
+[TIMESTAMP] Speaker 244: You're the one to do it. You. We need to give you access to our environment so that you can run testing and then we do it as well.
+[TIMESTAMP] Speaker 312: Exactly. Yes, you will be doing testing right here. You'll be doing testing and validation, whatever. Partial or full copy sandbox you have. You'll so so you'd be doing testing here here and then smoke testing. Once we upgrade prod. So that's really your that's really what you guys need to do your involvement. So there's a a lot of upfront work. Then we start turning modules over to you. Then we'll do the validation upgrade. Work with you on the upgrade. And then you'll do whatever testing you do on your side. Also so yeah. So that'll be basically your involvement in it. And then we'll we set up a half hour weekly meeting as a touch base. Of course, if you guys have any questions just ping [COUNTRY] we're not don't wait for that weekly meeting. That's what I'm trying to say. We want to get this moving forward as fast as we can for you. So is that kind of make sense or you do have any more questions around? this
+[TIMESTAMP] Speaker 074: Speaker 312, yeah. I have some questions for the 2 sand boxes in the first lanes. First 2 lanes. Those are recommended to be full or partial, correct?
+[TIMESTAMP] Speaker 074: So so
+[TIMESTAMP] Speaker 312: You're talking about which ones now.
+[TIMESTAMP] Speaker 074: C Q U C D and Val.
+[TIMESTAMP] Speaker 312: Yeah. Um
+[TIMESTAMP] Speaker 312: Are you hold on? Say that again?
+[TIMESTAMP] Speaker 074: So the first 2 columns that sandbox and then Val are those supposed to be full and or I mean or partial sand boxes? Or can they be can the first one be a developer sandbox?
+[TIMESTAMP] Speaker 312: Yeah. So so most customers are probably not as configured as you are. So we use a just a developer sandbox, not a problem. Val needs to be in a partial or full copy sandbox. It's you know, with customers that have a lot of configurations like you do. Then it's beneficial to have records while while we're doing the initial testing. That's basically it. Did you have something [PERSON]?
+[TIMESTAMP] Speaker 212: Yes. So here all will be replaced by a RC and test.
+[TIMESTAMP] Speaker 312: Exactly. Val is just to so customers call this validation sandbox, 93 different names, valve validation, UA, t, test testing whatever. And it would be replaced by the actual name of whatever, whatever partial or full copy sandbox that we use. This is just a generic term for the right. So right in that case, QR can
+[TIMESTAMP] Speaker 212: Test or full packet and full copy.
+[TIMESTAMP] Speaker 312: There you go. So I mean it's you know, it's the initial testing is really up to you a dev developer sandbox would work just fine. We like having records in there. It makes it makes the testing easier, but it's certainly up to you and we can talk about that later. So we've got some time to talk about this. So yeah.
+[TIMESTAMP] Speaker 201: So much wait, this is Speaker 201 and I don't speak all this language.
+[TIMESTAMP] Speaker 201: My questions are a little bit.
+[TIMESTAMP] Speaker 312: Off. Oh, no. No, that's what this is for.
+[TIMESTAMP] Speaker 201: Yeah. And Speaker 244 has got this covered. I'm feel very confident with that, but you had mentioned about the 203 configurations. We are highly configured. We have some very unusual situations with that. Like you said we have to test it in the sandbox to make sure that everything works, right? what I'm wondering because you just touched on it a little bit, is you said this will start around February timeframe, like your part of it. When does Speaker 244 as part of it kick in then?
+[TIMESTAMP] Speaker 312: So what we'll do is I do an estimate where I go through and I get a spreadsheet. There there's a really cool connector in excel that connects with [PROJECT_SYSTEM]. So I can get all of your all of your work items from [PROJECT_SYSTEM]. And then I go through them to see make sure that number one, they're pertinent. We have like deployment CDs. We don't care about that because it's you know, it's just deployment nothing to test. So I go through and just look at the pertinent CDs, the CDs that are in actual configuration, number one. And then they've been deployed to prod and it's extremely common and it's really weird for customers to have a lot of work that's never been deployed to prod. Yeah. It seems counter intuitive. We have one customer that did a million dollars to work and then never took it into prod. It's just I just don't understand it. But so then I make sure that I get that good list. And then that's the list of the CDs going forward. So once I have that, then I can go ahead and work with the team and get a schedule to show you when all this is when all this is planned, excuse me. And then when we'll be turning over the first module for you for first module to you for testing.
+[TIMESTAMP] Speaker 312: So this is all upfront work until until right here, when we're ready to turn over your first module.
+[TIMESTAMP] Speaker 244: So let me clarify that. So you're you have released multiple versions of your functionality, but you will create a specific version for [COUNTRY] configuration. So that's what we have to wait for. We have to determine which release package we want to go with, right? And that gets that goes back to Speaker 074 's questions about like, can we skip do we have to go through all of them? can we just pick the most recent version? And then you create a customized version of that for the Customer 30 and we install it and do our testing and [PERSON]'s your um
+[TIMESTAMP] Speaker 312: So the first thing we'll do and you'll be on 15 5. So you'll be on the latest greatest ABC Corp release by the time that we get you started. So so we install that, then we'll take that good list of the items that we need to fix. And then we'll create another a deployment release. So there's A C release and then there's a deployment release that deployment release and this is what these 2 sand boxes are for. That's actually how when we've done. When Speaker 244 says, hey, wait POC looks great. Let's let's move to a that's how we move your configurations forward into Val and into prod. So it's a release package in [PROJECT_SYSTEM]. So we know every single thing that we have to move forward. So we know that nothing gets missed and we know what to do in our smoke testing when we deploy it in validation whatever whatever sandbox you use for that. So that's 2 different things that we do.
+[TIMESTAMP] Speaker 312: Does that make sense? I'm hearing some crickets here.
+[TIMESTAMP] Speaker 074: Yeah, I think I'm a little lost on the kickoff meeting happens right before we're supposed to start. So that would be in February. Exactly. And then and the kickoff meeting does not mean that something's installed. We just start to discuss
+[TIMESTAMP] Speaker 312: Actually that's a pretty good segue. What we can do is if we can figure out where we want to install into if we want to have sandbox or if you guys do have a partial or full copy sandbox, we can work together get that sandbox either created or refreshed and then we can have ABC Corp installed in that sandbox and ready to go when we do our kickoff meeting. So that's a little bit of pre work.
+[TIMESTAMP] Speaker 312: That said, I can get you guys right now, a version 15 play org. It's basically a [CRM_PLATFORM] instance where we have version 15 out of the box installed. So of course, it's not gonna have your configurations, but you can get an idea how version 15 looks and feels. One thing to note is that when we do the upgrade, all your modules are upgraded, not only the ones you use. So you can take a look in that play org and then hey, maybe we want to maybe we want to implement as after the upgrade. So then you can see the version 15 how [LEGACY_SYSTEM] works and everything in there. So is that something you guys would like, I can get that probably be a Monday.
+[TIMESTAMP] Speaker 074: I think that's a good option. Why not? Yeah.
+[TIMESTAMP] Speaker 312: It's a and you know, the queue is what the queue is. I always say busy is good. Too busy is still good, but a little bit crazy, but I can get that for you. And then I'll does does every do you want me to set up everybody on this call in that play org?
+[TIMESTAMP] Speaker 312: Let me just do that. If you look at it, we have
+[TIMESTAMP] Speaker 244: We already have an org. I don't know if we need like, we have a dev in a CR environment, right proven. We already have 2 2 sandbox dedicated Q. Where yeah, I think I use the ones we have we probably need to refresh them and then install it there.
+[TIMESTAMP] Speaker 312: So here's the deal. You guys have a lot of configurations, right? Right. When we install version 15 if say say that you guys refresh a sandbox for [COUNTRY] today? We got it installed Monday, right? You would probably hit some of your configurations that needed to be migrated over to to from your current version to version 15 and we don't want you to get frustrated. If you had 5 configurations, I'd say, yeah, let's go for it. The chances of them number one being broken would probably be low. And the chances of you even hitting it would probably be low too. But if you're looking at 120 or so, you're probably getting you're probably gonna hit something that needs to be migrated and I don't want to get frustrated. Oh, why is this thing not working? Oh, I hate something like that. So if we get you an out of the box sandbox, then we know that you're not gonna have any any issues with your current current configure. I mean, it's up to you. I could certainly do that, but knowing that you're probably gonna hit one of your configure that doesn't work in version 15. So yeah.
+[TIMESTAMP] Speaker 312: And you don't even have you guys don't have to decide this second either. Which
+[TIMESTAMP] Speaker 244: Makes sense. You're gonna set up a sandbox that's not gonna have it's going to have, I guess, our configurations. But they may not work. It may not work, right? I don't know why we wouldn't install it in one of our own environments where we know everything is correct. Like it has our configuration in it.
+[TIMESTAMP] Speaker 312: Well, it's actually what version are you guys on right now?
+[TIMESTAMP] Speaker: I think it's 13 1 1.
+[TIMESTAMP] Speaker 312: So yeah. So so obviously your configurations work in version 13. If I got you if we just refresh the sandbox and then put C version 15 in there, all of your configurations may not work. That's basically what these 5 boxes are right here is where we go in, get that list of configurations and make sure that they were conversion 15. So that's what these 5 are here. If we just in if we just upgrade that sandbox and without this being done you'll probably hit something and that's not what we want at this point. So does that make sense?
+[TIMESTAMP] Speaker: I believe so. So I guess what I'm understanding is that you we have the option of just updating to 15 and taking the risk that something might still be not configured correctly. Or we wait until February when you guys have time to review all of our configurations and that's everything. That's needed.
+[TIMESTAMP] Speaker 312: Exactly. Exactly. So, I mean, we've I've done this for other customers. I've said what you guys are probably gonna hit something. They hit they got mad at me. So I'm kind of learn about doing something like that. So you could probably imagine. Yeah, but think about it, we don't have to do anything right now. When you know, in the grand scheme of things next week is Thanksgiving. People are really only gonna work the first couple three, maybe weeks in December. So it's you know, it's gonna be pretty slow for the end of the year 2. So think about this if in January, you say, hey, hey, Speaker 312, you know what, let's just go ahead and refresh the sandbox and go in there. We can do that, but I just want to let you guys know that we that until the upgrade start. We can't support it. We just don't have the bandwidth for anybody at that point.
+[TIMESTAMP] Speaker: And I guess Speaker 074, where does update or upgrade fall into our pi planning?
+[TIMESTAMP] Speaker 074: Those are pretty simple, Speaker 070, because they're developer sandbox. S what I'm more worried about and one of my questions is for those full or partial sandbox, is if we go with one of those, do we have to do a refresh before this upgrade?
+[TIMESTAMP] Speaker 312: So here's the deal. Um
+[TIMESTAMP] Speaker 312: We do the refresh because we want to make sure that everything is in sync with prod. We've had lots of instances where other people make changes in prod that affects ABC Corp, but nobody knows about so if we're not refreshed from the very beginning your testing isn't completely valid. Especially if we know you're a validated we know your life science. We know, I used to work for a 5 10 k medical device manufacturer. I know how important that is. So I take no chances. I've had customers that we're doing changes in prod without telling anybody. And when went to prod, we had a lot of problems and then everybody's hat in their life at that point. That's why we always refresh.
+[TIMESTAMP] Speaker 244: Yeah. But refreshing our test environment our full sandbox environments is like a 2 week process. So we can't just like nilly decide we're doing it. Oh, absolutely. Yeah. Not something like if we need to do it, we need to plan ahead for
+[TIMESTAMP] Speaker 312: It. Absolutely, absolutely. You just basically guessed what I was gonna say next. Yeah, we've got time so for decide whether you or not you want to use a developer or a partial copy sandbox. I'll give that. I'll give that. Did that.
+[TIMESTAMP] Speaker 244: I guess I'm sorry. I'm just so confused by this conversation already. We have A C dev and a CR environment. So we already have those sand boxes ready to go. We use them for the project when we implemented this. Yeah, right. Validation, your swim lane that's called Val is our QA arc and our test environments already established again using them for a ton of other stuff. Okay. We already have an environment that we can use for your first swim line. We have 2 environments we can use for that.
+[TIMESTAMP] Speaker 244: So I think we're good there. We don't have to set up anything new. We may have to refresh them and those are easier to refresh the first swim call. Exactly. Okay. So all we're trying to decide here is if we want to try to install the package ourselves or if we want to wait for you for 2 months to do the analysis, actually no. We wait for you to start the analysis in February.
+[TIMESTAMP] Speaker 312: Exactly. Okay. Yeah. In in a little bit of background. So when so we you're working with our implementation team. So we've got the implementation team and then my upgrade team ABC Corp dev and Q V ER, are sandbox that the implementation team uses because they do their work in ABC Corp. Dev they move it to cover and then that's where you test. That's just their process. It's 6 1 half dozen the other. The only reason I keep call this CPC dev is that way we know this is for the upgrade team, but if you want to use those other 2 did 6 1 half dozen another, it does does not bother me at all. So so yeah, if they exist, we can refresh them. Boom, we're good to go.
+[TIMESTAMP] Speaker 074: Yeah. I guess is there an outline of the timing of things I'm still lost on that? I don't understand is there anything that's gonna happen or that we need to do before the kickoff? And then what is the timing after the kickoff of things?
+[TIMESTAMP] Speaker 312: Yeah, we will once I do the estimate here and we get closer to the upgrade, I'll publish a schedule. So we can show everybody what everybody everything that everybody needs to do. So to get started, the first thing you guys will need to do is refresh one of those 2 dev sandbox. We can just use a dev sandbox. That's perfectly fine. Once we've got that. The next thing that you guys will need to do is start testing when we turn over the first module after we've tested it and migrated your con fig to version 15 5. So there's there's a little bit of a lag here, but if we get ABC Corp whatever sandbox refresh beforehand, when we do the kickoff, we're already ready to go. We can have 15 5 installed early and have it in our back pocket for when we do the official kick off.
+[TIMESTAMP] Speaker 074: And then that schedule, when would we see it as to what to expect?
+[TIMESTAMP] Speaker 312: And I'm just going to be honest at least mid February. That's how many we have in the queue right now.
+[TIMESTAMP] Speaker 244: Yeah. That's to kick it off. She's asking when so when you start after, we do the kickoff meeting and you get the sandbox that you have access to, right? To start to create your Customer 30 package of code. What like, how long does this process take for these each of these 3 swim lanes? What's the approximate timeframe for the project to upgrade?
+[TIMESTAMP] Speaker 312: So with your amount of configurations because you're more configured than normal. I would say the total duration of between 3 and 4 months by the time we do a testing, it's a big deal. It's not like updating your your phone. We are working towards a push upgrade, but while not impossible, very difficult is how to handle all customers configurations so is meant to be configurations. It's a blessing and a curse. So so yeah.
+[TIMESTAMP] Speaker 074: And I guess and Speaker 312 my other question to piggyback off of that is all right. So now we know about the schedule. But there was you said once we hang up, you're going to review some stuff and then you'll figure out the schedule of things. Um
+[TIMESTAMP] Speaker 074: That's that piece that I was trying to understand what that timing is because we have we work in safe agile. So we have a big meeting on at the beginning of January where we start to kind of figure out the next 3 months of work. And that's where I'm trying to find out. What do we need to have for that meeting to understand how to prepare for this. If we're gonna do it in that 3 month time span, yes, that would fall in that 3 month time span.
+[TIMESTAMP] Speaker 312: Exactly. So when is that meeting?
+[TIMESTAMP] Speaker 074: Early January, like the first full week of January.
+[TIMESTAMP] Speaker 312: Okay. So right after the holidays. Okay. So then I need to get the estimation done and then get your scheduled before that meeting, then? Is that correct?
+[TIMESTAMP] Speaker 074: Yes. That would be wonderful.
+[TIMESTAMP] Speaker 312: Okay. So so we know that going forward.
+[TIMESTAMP] Speaker 244: Yes, we know we work in 3 month increments, they're called planning intervals, yes. We know that if we can't get this figured out before January that we won't get to work on this again until April.
+[TIMESTAMP] Speaker 312: Gotcha. Makes sense. We're
+[TIMESTAMP] Speaker 244: Locked in on what we work on for 3 months. Hmm.
+[TIMESTAMP] Speaker 074: Perfect.
+[TIMESTAMP] Speaker 074: And then of course, I assume we'd have to have some discussions around it's not just like here's my estimation and the schedule go for it. We probably want to figure out meetings to discuss anything else.
+[TIMESTAMP] Speaker 312: Yeah. It's pretty the process itself is pretty cut and dried. It's cookie cutter this is what we do for every customer. There'll be when will just discussions around when to have the kickoff when we can actually start. But other than that, there's not a ton of stuff to decide.
+[TIMESTAMP] Speaker: All right. And I'll put out there. I know in the past we tried upgrading from 13 1 1 to thirteen, 1 6. I think that was over in August. We
+[TIMESTAMP] Speaker: The way I would like to continue with having things set up is that proven who is our release manager. He's the one that's solely in charge of all these updates, right? any of these development environments not the V.A. Stuff, right? Would still be handled by proving just I would prefer that, right? Just so that he's comfortable with the install and understands what needs to happen. When once he starts getting to the Val swim lane. Right? Absolutely. But yeah, I mean, I guess updating upgrading in the dev is not a deal breaker if C does it, but I would prefer not everything else has to definitely be done by by proven when we did this in August. I think there was a script that you guys have an application that's run and we did not have access to that. So a lot of it was a manual update for like each individual package. It was a little bit time consuming, but I wasn't too too bad. Although we were only upgrading from 13. One one to 13 1 6. However since then we have now have access to the application. That's on that side. Yeah. And I see the other thing for [COUNTRY] to be aware, is that 13 1 6 never made it. Past Q A R C proven. Is that correct? No. It's still in the dev still in depth. Okay. Perfect.
+[TIMESTAMP] Speaker 312: All right. Yeah. So 13 1 6 is a patch, it's our latest patch, like anything else. We'll find bugs. So that's got bug fixes in it's a pretty narrow scope. The actual upgrade itself is it's a lot bigger than just a patch. The patch will take a couple hours, but the upgrade will take longer than that. So so yeah.
+[TIMESTAMP] Speaker 212: So there's an agent which actually
+[TIMESTAMP] Speaker 312: Installs the package. Yeah, we use it. Yeah. That's what we call the deployment agent. We run this agent and then it looks at your current version, the new version you want to go to, as well as any extensions that you may have. And then it automatically goes through and upgrades everything. So that's what our new deployment agent that came out with version 14.
+[TIMESTAMP] Speaker 212: Now, we got that agent for 13 point 1.6
+[TIMESTAMP] Speaker 312: But we proceeded
+[TIMESTAMP] Speaker 212: With manually manual installation.
+[TIMESTAMP] Speaker 312: In our dev environment. Yeah. I mean, it came out itself during version fourteen, but we can use that to go all the way back to I think version 11. If I remember correctly. So like I said, it knows your previous version or your current version. It knows 15 5. So we know. So it's smart enough to know what it needs to upgrade and then move forward with it.
+[TIMESTAMP] Speaker 312: Okay.
+[TIMESTAMP] Speaker 074: And Speaker 312 when you say modules, what does that mean? Is that inside per package? Because we have I put it in the challenge oh, 7 packages that we've had installed for ABC Corp. So I do this
+[TIMESTAMP] Speaker 084: And waiting just to confirm, they only have complaints today.
+[TIMESTAMP] Speaker 312: Oh, you only have complaints? Yes. Oh. Okay. That's gonna make it easier. So so yeah. Okay. That's good. Let me see configure. So this mic. So my mic AI. These are what we call extensions. These are outside of the normal ABC Corp application. So the C application consists of the different modules. What we call DC, control doc training change complaints. So if you only have complaints that will greatly reduce the scope of the upgrade because it's we're not going we're not having to test a bunch of different modules. Yeah, that's good.
+[TIMESTAMP] Speaker 244: Do we need all of these?
+[TIMESTAMP] Speaker 312: Yeah. These
+[TIMESTAMP] Speaker 244: 7 things listed here, do we need all of them?
+[TIMESTAMP] Speaker 312: They'll they'll be automatically upgraded by the agent.
+[TIMESTAMP] Speaker 244: Okay.
+[TIMESTAMP] Speaker 312: And also, normally, when we do the upgrade, let me see. We'll we can install ABC Corp process ABC Corp forms and regulatory reports. And then you can see the functionality in the customer portal and then you can see exactly what they do also. We can install them. We normally do it by default. If you don't want them, we don't have to install them. It would be up to you. But you know, that's something else to think about.
+[TIMESTAMP] Speaker: I am on again.
+[TIMESTAMP] Speaker 312: Say that again.
+[TIMESTAMP] Speaker 074: What were those again, Speaker 312, C process, ABC Corp forms and what?
+[TIMESTAMP] Speaker 312: Regulatory reports. So that's more oh what regulatory reports is part of complaints. Yes.
+[TIMESTAMP] Speaker 074: And Speaker 070, you were gonna say something
+[TIMESTAMP] Speaker: Yeah. I just noticed that Speaker 074 because you had posted here. AI extension are we using it? Is this something that we need to bring before a board just to verify its use?
+[TIMESTAMP] Speaker: And that would be more so for the arc team.
+[TIMESTAMP] Speaker 244: I don't know. I that's why I asked the question. Do we use all of these? Do we need all of these? I understand that they get installed, but do they have to be because yes, we have there is a lot of focus on AI. If we're using AI in any of our tools, we have to get approval for it. That's why it's a valid question. Do we need c.ai extension?
+[TIMESTAMP] Speaker 312: And you're not the only customer to ask that too.
+[TIMESTAMP] Speaker 244: Great. What's the answer?
+[TIMESTAMP] Speaker 312: It's up to you. It's very, very helpful. You can look in the into the customer portal. See exactly what it does for you. And if we can certainly upgrade it. That's up to you. But I would highly recommend talking you know, talking to your board or whoever you talk to explore it. Yeah. That's it. We have a big emphasis on AI now. So look at its functionalities, see what it can do for you and if you're okay with it we can get it upgraded.
+[TIMESTAMP] Speaker 074: And wait, is this something that when you do your estimation, you can see how much we're using of any of these installed packages?
+[TIMESTAMP] Speaker 312: Um
+[TIMESTAMP] Speaker 312: I have a so when I do the estimate I look to see one one of the queries that I run is, I look to see how many records are in each module and ABC Corp. If you're only using complaints, easy PS. I don't have to do that. The query doesn't extend to the extensions. So that I can't see.
+[TIMESTAMP] Speaker 108: So let me take that one on. Let me go look at the how we how you're using the system and what AI if any is currently being utilized and then we can discuss a little bit deeper dive, right? Sometimes customers want to modify contracts. Others just want to know how we are using their data. So it's probably worth definitely scheduling a separate session with our product team to make sure that you guys are comfortable with how we're using the AI and your data.
+[TIMESTAMP] Speaker 074: In general, Jim, like the extent of how much we're using these packages because we have so many flows. I mean, we have to scroll through a couple of like, oh, my gosh, it's just so much to try to find any other flow that we have after Q. And I don't know how much we're using all of those flows, but it definitely becomes a pain in the neck when the team is just trying to find something easily. And that. So I'm just that's kind of peaked my interest as to do we need all of this stuff after now that the business has been using it for a while since 20 24 to better understand where we're at with all of these packages.
+[TIMESTAMP] Speaker 108: Yes. I agree. It's always good to go back and revisit all that. So I'll be out for the next week, but I created a reminder. First thing when I log in on Monday, I'll start pulling folks from our side together to take a look at that. And then we can have a little bit more focused discussion just on the AI side of it and the packages that are installed and which are being used which aren't if there are any but
+[TIMESTAMP] Speaker 074: Wonderful.
+[TIMESTAMP] Speaker 108: I'll put my name on that one.
+[TIMESTAMP] Speaker 074: Thank you. And then wait, sorry. Going back to the modules. The [COUNTRY] upgrader that would shadow proven in this instance would do the first module with him. Then there would be testing some training as well. And then we would move on to the next module depending on how many modules we have to do and again, shadow proven or misunderstanding.
+[TIMESTAMP] Speaker 312: So let me let let me display this again. So it's gonna be easy for you guys. Oh, where am I here? The honor share.
+[TIMESTAMP] Speaker 312: So this process right here. So once the upgrade is done, right? And we do our upgrade post upgrade impact analysis. There's only one module. So if you're only using complaints this isn't really an iteration. We fix complaints. We turn it over to you. We test complaints once you guys are good, then we do go to your validation testing. So that's what I said. That's it's going to make it a lot faster. When we do the upgrade, all modules are upgraded at the same time. So it's not it's you know, all or nothing basically. So we upgrade everything. We'll get your complaints tested and then we'll get you moving forward.
+[TIMESTAMP] Speaker 312: I'm hoping I'm explaining that. Okay. It's Friday. Yeah, no.
+[TIMESTAMP] Speaker 074: I understand. Now, I thought there were many modules, but because we're only using complaints. We just have one
+[TIMESTAMP] Speaker 312: Exactly. And I apologize I wasn't aware of how many you were using. I when I do my estimate, that's when I find out. So yeah.
+[TIMESTAMP] Speaker 312: But just having complaints is gonna be I'm not gonna say, easy, I don't want to say that, but it will be less complicated.
+[TIMESTAMP] Speaker: It's complaints used in each one of those packages. That Speaker 074 had listed on our chat.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker 312: That I don't know. My SCS are the actual experts. They know this, but I couldn't tell you.
+[TIMESTAMP] Speaker: All right. Yeah. Because I would imagine like, maybe what we want to do is just remove any packages that are not in use.
+[TIMESTAMP] Speaker 074: Um
+[TIMESTAMP] Speaker 312: Yeah. I mean we can do that. We can uninstall them.
+[TIMESTAMP] Speaker 074: It's up to you. What I'm hoping. Jim's analysis would help [COUNTRY] with determining like how to move forward.
+[TIMESTAMP] Speaker 312: Yeah. Yeah. Jim will get you set up. But like I said before you remove AI Jim's team will show you everything it does, it's pretty slick. So just keep that in the back of your mind and obviously the decisions up to you, but at least just take a look at it before you make a decision to pull the plug.
+[TIMESTAMP] Speaker 084: Okay. All right. I know we're coming up to the top of the hour. Was this additional call helpful?
+[TIMESTAMP] Speaker 084: A lot of quiet.
+[TIMESTAMP] Speaker: I guess the next steps are to for [COUNTRY] to indicate what version we want to update upgrade to.
+[TIMESTAMP] Speaker 244: It didn't sound like we had an option on that. It sounds like
+[TIMESTAMP] Speaker 244: Oh, well
+[TIMESTAMP] Speaker 312: So so here's the deal. 15 5 will be out in that timeframe. It's the latest greatest version. But we know some people are not early adopters, I get it. It's up to you. 15 has been out for a while. We know what solid 15 5 will be out in your time frame. You probably won't be the first one to be installed with that. So it's really up to you. I always recommend going to the latest greatest version. 15 5 is the minor version that has all the bug fixes and everything. Every software has has bugs in it or you wouldn't get an update on your phone. So yeah. But it's up to you in the grand scheme of things.
+[TIMESTAMP] Speaker 244: Is there a way to tell [COUNTRY] since we only use the complaints module, what is different between the 2 versions?
+[TIMESTAMP] Speaker 312: There. Absolutely. Well, so so right now, we have release notes for everything between your version and version, 15 version 15. The release notes won't be out yet. They'll be out closer to when this actually gets released probably early January. So you could at least do some homework taking a look at the release notes now up to version 15. And then when 15 comes out, you just look at the delta.
+[TIMESTAMP] Speaker 074: And in the release notes is the complaints piece called out specifically? can we just
+[TIMESTAMP] Speaker 312: Yes, it is. Yes, it is. And then also in in the customer portal the user guides are out there. The admin guides for complaints are out there. So there's a wealth of information. I just say, hey go out and check it out.
+[TIMESTAMP] Speaker 312: Nobody does. But I always I always promote that.
+[TIMESTAMP] Speaker 074: And then this would be 15.5 is what you guys call and exactly, yeah.
+[TIMESTAMP] Speaker 312: Yeah. It's like anything else, you know.
+[TIMESTAMP] Speaker 108: I'm sorry, I'm on mute. I still took a minor release. It's a full featured release. There's lots of capabilities, functionalities. When I think of a minor release, I'm thinking of fixes security is not but it's full of functionality and capabilities.
+[TIMESTAMP] Speaker 074: Yeah. By like the wording on your website because it's like there's only one major release and it's in in the summer and then everything else is minor. Well, sure. But I didn't understand that.
+[TIMESTAMP] Speaker 312: Yeah. I'm actually being really bad. The major release right now would be summer 25. The minor release is actually it will be called winter 25. So the distinction there's still a distinction, but I'm really supposed to say winter 20 five, so my bad on that one.
+[TIMESTAMP] Speaker 312: So if I thoroughly confused everybody
+[TIMESTAMP] Speaker 108: And we only got like 3 minutes left. So yeah. Let's be conscious of that.
+[TIMESTAMP] Speaker 312: Yeah. So so if you like, me, you're gonna hit the leave button in the upper right and questions gonna come to your mind? of course, my email is on the meeting. So if you guys have any questions, let me know if you guys want to meet again. Before the kickoff. Not a problem at all. So it should just let me
+[TIMESTAMP] Speaker 244: On the other, are we on the calendar for the kickoff? are we on the schedule?
+[TIMESTAMP] Speaker 312: No. I'm gonna I'm it when we get close. Probably at the first of the year, we're gonna reevaluate the queue and then we'll and then we're gonna start assigning resources to the newer projects. So it'll probably be January mid January when we know exactly when you're gonna start.
+[TIMESTAMP] Speaker 244: Okay. But we're in the queue?
+[TIMESTAMP] Speaker 312: Oh, absolutely. Yes. Yes. Definitely.
+[TIMESTAMP] Speaker 074: Yeah. Because if we're aiming for the pi planning in early January, then we just want to ensure that we're in that February timeframe to be able to even bring this topic up as a as something to discuss.
+[TIMESTAMP] Speaker 312: Exactly. Okay.
+[TIMESTAMP] Speaker 084: So I'm hearing from the arc team. If you have any additional questions for Speaker 312, feel free to send him an email if you could ABC Corp Jim and eye on it just so we make sure in case Speaker 312 takes the day off, we can always follow back up and make sure you guys are getting your answers. That would be great. Jim is going to after he gets back from vacation going to check on those extensions and the AI for you and get back to you either via an email. Or we'll set up a call to talk about that. In the meantime you guys are in the queue for February. And we're going to re circle back in January. If not sooner once, Speaker 312 outlines resources for your project. Did I miss any other? I know you guys also talked about potentially refreshing in the meantime, too. But anything else that I may have missed in regards to next steps Speaker 312 that they need to take in between now and January?
+[TIMESTAMP] Speaker 312: Nope, I think we're good.
+[TIMESTAMP] Speaker 074: Okay. And Speaker 084, did you capture the estimation and schedule before our p?_i planning in a two?
+[TIMESTAMP] Speaker 084: To 3 months by Speaker 312. Yes.
+[TIMESTAMP] Speaker 074: No, no, no. That he was gonna provide [COUNTRY]. Oh, yeah. Yeah.
+[TIMESTAMP] Speaker 084: Once once he puts together the configure for you, he's also gonna put together the timeline as well. Yes.
+[TIMESTAMP] Speaker 312: Definitely, definitely.
+[TIMESTAMP] Speaker: And does it make a difference that we just had a refresh of our test sandbox?
+[TIMESTAMP] Speaker 312: Well, if we're gonna use one of the developer sandbox s you already have, I prefer to get it refreshed right before we do.
+[TIMESTAMP] Speaker: The upgrade absolutely. No, no. This would be for a full in in the ball swim lane. Yeah, we
+[TIMESTAMP] Speaker 312: We don't need it right now. We'll plan. We'll know when we're going to be doing validation so we can plan it a couple of 3 weeks ahead.
+[TIMESTAMP] Speaker: Got it. And to play doubles advocate, wouldn't it make sense just to deploy it as is and see who's breaking the system in production?
+[TIMESTAMP] Speaker 312: Say that again?
+[TIMESTAMP] Speaker: I just nobody should be making changes in production to begin with and I'd rather find out who's making those changes.
+[TIMESTAMP] Speaker: But we can talk more about that later.
+[TIMESTAMP] Speaker 312: Yeah. Exactly. As crazy as it seems. We have customers doing that. I don't do it because I like my job. So yeah.
+[TIMESTAMP] Speaker 312: Right on. Okay. I'll let you guys go have a great weekend. You'll be seeing some stuff from [COUNTRY] soon and we'll talk to you later on to
+[TIMESTAMP] Speaker 074: Speaker 084 dropped a note to please provide these notes with action items to all of [COUNTRY].
+[TIMESTAMP] Speaker 084: [PERSON]'t worry. I will net out for you'll get an email shortly and wait on it.
+[TIMESTAMP] Speaker 074: Thank you.
+[TIMESTAMP] Speaker 084: I'm happy Friday and enjoy your weekend.
+[TIMESTAMP] Speaker 074: Happy day. Giving have a great.
+[TIMESTAMP] Speaker 312: Talk to you soon.
+[TIMESTAMP] Speaker 074: Bye.
+
+
+====================================================================================================
+Title: Customer 30  - ABC Corp v15 upgrade - [ORG]
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 2933.32
+====================================================================================================
+[TIMESTAMP] Speaker 084: So
+[TIMESTAMP] Speaker 253: Good morning.
+[TIMESTAMP] Speaker 084: Good morning. Hello. Hey, Speaker 074.
+[TIMESTAMP] Speaker 084: Hello, good morning. Hey, hello. Speaker 241 welcome. Hi. How are you? Speaker 074, yeah. Doing good. How about you? Yeah, good. Thank you.
+[TIMESTAMP] Speaker 084: Great team members joining, hi, everybody.
+[TIMESTAMP] Speaker 084: Hi, Speaker 244. Hello morning.
+[TIMESTAMP] Speaker 253: Hi, Speaker 244.
+[TIMESTAMP] Speaker 253: Okay. Hello, everyone. Um
+[TIMESTAMP] Speaker 074: Sales price for you, start. Speaker 084, did you get a response from Speaker 275?
+[TIMESTAMP] Speaker 074: Oh, there he is.
+[TIMESTAMP] Speaker 084: I think okay.
+[TIMESTAMP] Speaker 084: I know a few more people are jumping in here, so we'll give it just 30 more seconds here. And then I'll turn it over to you.
+[TIMESTAMP] Speaker 253: Yeah, sure. Sure.
+[TIMESTAMP] Speaker 084: Hope everyone's doing great today. Good to see you all.
+[TIMESTAMP] Speaker 084: So
+[TIMESTAMP] Speaker 084: I think if I look at your list
+[TIMESTAMP] Speaker 084: We've got everyone here. Am I missing anyone?
+[TIMESTAMP] Speaker 084: Speaker 070, I think maybe just Speaker 070.
+[TIMESTAMP] Speaker 074: He's out of the office today. Okay.
+[TIMESTAMP] Speaker 084: The good news is this is being recorded. We can certainly share this with him if that works, best to. So not a problem on that. With that Speaker 253 I believe we have everyone here. So I'm gonna turn it over to you. Let's go ahead and get started to the team. I'm so happy for you that we're at this call and this time frame for you guys to to have this kickoff so excited to get underway, but Speaker 253 over to you.
+[TIMESTAMP] Speaker 253: Hello, everyone. Thank you, Speaker 084. So thank you for joining this call. So today we are doing our kickoff meeting. So since we are upgrading
+[TIMESTAMP] Speaker 253: Customer 30 requests from 13 Document one to our latest version. That would be 15 to 5. And so before we start let me share my screen so that we can move forward.
+[TIMESTAMP] Speaker 074: Speaker 084, on our side, we can't see if the call is being recorded.
+[TIMESTAMP] Speaker 253: Oh, this is like we have here ABC Corp recorder, which is like it automatically records it, but like, let me to be a double shared. Let me record this session.
+[TIMESTAMP] Speaker 074: Thank you. Okay.
+[TIMESTAMP] Speaker 253: Uh
+[TIMESTAMP] Speaker 253: You guys can see my screen?
+[TIMESTAMP] Speaker 084: Yes. We can we all just had to go off really quickly with the recording on, but yes.
+[TIMESTAMP] Speaker 253: Okay. I'm not sure. Why is I'm not able to do like a
+[TIMESTAMP] Speaker 253: Slide. So I'm not sure why it's not being populated over here. There's a present in team option.
+[TIMESTAMP] Speaker: If you look at the top, right?
+[TIMESTAMP] Speaker 253: Um
+[TIMESTAMP] Speaker 253: I'm not able to do. Okay. I think we can
+[TIMESTAMP] Speaker 084: Just go up. Yeah. Right there.
+[TIMESTAMP] Speaker 084: Was the rising where the arrow is?
+[TIMESTAMP] Speaker 253: Yeah. Okay. Okay. Sorry.
+[TIMESTAMP] Speaker 084: Thank you for that note.
+[TIMESTAMP] Speaker 253: Thank you. Of course. It happens to [COUNTRY] all the time.
+[TIMESTAMP] Speaker 253: Okay.
+[TIMESTAMP] Speaker 253: Okay. Now it's starting. Okay. So
+[TIMESTAMP] Speaker 253: Welcome again, so so today, we'll be doing like a Brit kickoff meeting for Customer 30, recruit. So for today's agenda, we would be like we'll be discussing over the scope of our upgrade. And like, what are the modules that was that Customer 30 nets is using and we will be discussing over all of these things like a bit workflow or like what sandbox s we required. So we'll be going on by a slide by slide on this agenda. So before like I just move directly into this our agenda. I just want to introduce myself. So I'm service Speaker 228. I'm working in. It's been like around 11 years now. I've been working as I started my career as a developer and like now I'm like working as a technical project manager in sec. So from our side, we have gone over here. So genes is also a project manager and like, I think everybody knows Speaker 084, right? who will be the like so can can you guys introduce yourself from a Customer 30 request side?
+[TIMESTAMP] Speaker 244: Yeah, we can do that. I'll start Speaker 244 costs. I am the tech director for the [CRM_PLATFORM] team that supports training services. So I have the team of developers and admins and testers, right? That make changes either project changes or like r and m ticket requests to the to our [CRM_PLATFORM] environment and I will turn it over to Speaker 074.
+[TIMESTAMP] Speaker 074: Good morning. Everyone, this is Speaker 074. Hence, I report to Speaker 244. And I work with the administrators on the team, I manage them and I'll go ahead and pass it over to Speaker 275.
+[TIMESTAMP] Speaker 275: Hey, good. Hey, good morning. Everyone I am the [CRM_PLATFORM] admin working with Speaker 074 in this team as part of this project. And I'll be doing any technical changes in the [CRM_PLATFORM] org for this security update update, yeah.
+[TIMESTAMP] Speaker 253: Hi. This is [PERSON]. I'm just on the operational side with with the Customer 30. So I think we're here because it's the first kickoff meeting, but I think Speaker 244 and team are going to be the core folks for this project. I will turn it over a [PERSON].
+[TIMESTAMP] Speaker: Hi. You'll see my name is Speaker 244 [PERSON]. I also go by [PERSON]. So sorry for the confusion. But I am also I'm in training services with Customer 30 and my team utilizes ABC Corp. I believe that's why we're here. But kind of like [PERSON] por said there are some other people who this information may be slightly more pertinent to. But with that I will hand it off to [PERSON] Speaker 159.
+[TIMESTAMP] Speaker 159: [PERSON] Speaker 159. I'm a quality assurance and compliance manager and training services. So yeah, we're the end users.
+[TIMESTAMP] Speaker 253: Of ABC Corp.
+[TIMESTAMP] Speaker 253: And I think that's everybody.
+[TIMESTAMP] Speaker 253: Thank you all for your introduction. So let's move on to our agenda. So
+[TIMESTAMP] Speaker 253: So what's our scope for this upgrade since like
+[TIMESTAMP] Speaker 253: I think this is this the first upgrade that we are had handling for Customer 30?
+[TIMESTAMP] Speaker 253: Yes. Okay. Okay. So since like a Customer 30 request is in like a 50 14 Document one, right now ABC Corp version. So ABC Corp is our latest version is 15 15 to 5. But like so while operating, if we encounter like, any anything like we will be operating into our latest latest version, which that would be released. So uh
+[TIMESTAMP] Speaker 253: So right now we are in 15 to 5 and we will be operating into 15 to 5 for this.
+[TIMESTAMP] Speaker 275: Upgrade
+[TIMESTAMP] Speaker 253: And while
+[TIMESTAMP] Speaker 253: So Q test Q will be resolving all the issues, which are. Which like for example since we have a number of configurations and complain module which which we have already configured. So 6 will be testing and will be verifying all those configurations in our new release and we will be testing it. We'll be resolving those things in this this upgrade. And we'll be doing only delta demonstration for like no for this release. So we won't be going through all the changes, all the modules, but like, we will only be doing only the data demonstration or delta demos for modules which Customer 30 request users.
+[TIMESTAMP] Speaker 253: And like, we will be creating a package and like, we'll be once everything is fixed, we'll be creating a package and we'll be deploying those changes in our higher environment as we move on to hire environments and so
+[TIMESTAMP] Speaker 253: We'll be only be conducting or like, we will be only creating IQ documents for products and environment and like, we'll be doing some smoke test in products and environment only we won't be creating any records, but like, there there will be running some scripts for that.
+[TIMESTAMP] Speaker 253: And like, after the production is operated, then we will be we have 2 weeks of 2 weeks of hyper care after products and upgrade and within that 2 weeks of hyper care. We if we encounter any issues, we'll be fixing those right at the time and we'll be moving those changes from from lower environment to higher environment. But like if we are getting same issues in lower environment, then we have to fix from lower environment and then move to a higher environment. We won't be fixing directly into. We won't be fixing anything into products and directly and like, for a customer like a premium support or like, customer upgrade. So handover will be like a 24-7. We'll be having our support for that time.
+[TIMESTAMP] Speaker 253: Yes.
+[TIMESTAMP] Speaker 244: Yeah, question. In terms of actually doing the production upgrade, I mean, we typically do that ourselves even with other vendors, right? Other managed packages that we have installed in our production environment. So I just want to make sure that we're clear in terms of responsibilities that will we will be doing the upgrade in production. Obviously, you can be on the call with [COUNTRY] and kind of walk [COUNTRY] through it. Okay. I would prefer just from a audit perspective, that the Customer 30 is making the change in production.
+[TIMESTAMP] Speaker 253: Okay. You mean to say both the like a SQL upgrade also that really done from your side? Only right. Am I correct? Yes.
+[TIMESTAMP] Speaker 244: Yes. What I'm saying is we can work with you to install it in lower environments. But once we get it to production, I would like our team to actually be the ones installing it in production.
+[TIMESTAMP] Speaker 253: Okay. Okay. We'll make a note on that one.
+[TIMESTAMP] Speaker 253: Okay. And the for what would be the out of scope for this one? So for this
+[TIMESTAMP] Speaker 253: For this this upgrade, like
+[TIMESTAMP] Speaker 253: We won't be doing any other training or like AQ. So for new functionality or like, we wouldn't be doing anything new modules. We won't be touching anything in our new modules like features or like a consultation or anything. Any new enhancement won't be included in this upgrade and like, as a [CRM_PLATFORM] admin training or support that one. That will also not be included in this scope, [CRM_PLATFORM] training, say training, say, [CRM_PLATFORM] settings, help or support that also won't be included and testing or resolving customer configuration customization not not in the grid scope. So any new modules under this won't be included. So
+[TIMESTAMP] Speaker 253: So so the customer responsibility, like
+[TIMESTAMP] Speaker 253: Whatever like so
+[TIMESTAMP] Speaker 253: Yes. So, Speaker 241, did you raise
+[TIMESTAMP] Speaker 244: Question. I did again. Yeah, I'm sorry. So a question on you said there was no new functionality or no new modules?
+[TIMESTAMP] Speaker 253: I assume no no, no. Rating our modules.
+[TIMESTAMP] Speaker 244: And we would be getting new functionality, right?
+[TIMESTAMP] Speaker 253: Yeah. Yes. No, new modules. And like if there are any new modules which has been changed within this release, then that won't be included. But like, if the modules that currently you guys are using then that will be discussed or that would be in our scope.
+[TIMESTAMP] Speaker 084: I just want to clarify for you Speaker 244, he's saying modules, but think of it as the C suite. You guys have the quality [PRODUCT_SUITE]. So when you upgrade, you're going to get the upgraded functionality within that suite or what he's calling modules. He's just referring to what you don't currently own, which is some of the other suites. So that won't be affected.
+[TIMESTAMP] Speaker 244: Okay. Got it. Thank you, of course.
+[TIMESTAMP] Speaker 253: Okay. The customer responsibility would be like please review, all the release notes materials and communicate communicate. We have all the release notes, documents and everything has already been added in our customer portal. So please go through those things. And like, there will be there are webinars which which we have already offered to you. Please go through those also and like, there are internal documents for SOPs or like, a work instruction or training materials which for new our new releases, new version, please go through those things also as well as like please prepare internal team for like uh
+[TIMESTAMP] Speaker 253: Changes and conduct internal user trainings also and like a test all the customer a configuration and resolve them. Uh
+[TIMESTAMP] Speaker 253: Internally. Unless the scope is under our customer customer upgrade and please please assign new permission set and new permission set groups to their own user also and please follow communicated design free period for internal internal changes. So whenever we are like at the time of operate, please do not make any changes or like, please please free all the cost configurations or customize that you are doing. Please freeze those things. Because like when we operate it it might be like overlap or like, it might be it might be missing after we operate. So please do the design freeze at that moment. And also please for notification to personal to not not to replace a sandbox. Did after products and operate is completed.
+[TIMESTAMP] Speaker 253: Anything in this one slide?
+[TIMESTAMP] Speaker 275: Okay. You're saying so not have any releases, like internal releases during the time, right?
+[TIMESTAMP] Speaker 275: Yes. Okay. Yeah. A certain period, we should not have any releases or is it like only that particular day?
+[TIMESTAMP] Speaker 253: So if you are doing any kinds of changes or any new configurations being configured in products and environment, then like uh, since we will be refreshing our development environment from production for operating purpose. So after that, we won't be knowing like, those conversation are done in production environment, right? So those things we have to like on hold do we have to hold those things.
+[TIMESTAMP] Speaker 244: Yeah. But we're gonna need to understand the time frame for this. Because we make we do production updates. We do a big code release every month and we do configuration changes every week in production. Okay. And we're not we can't just halt that for months, right? We're gonna have to better understand the timeframe. And it may just be a situation where if we make production changes, we push those backwards into whatever sand boxes. We're
+[TIMESTAMP] Speaker 253: Working in. So so the design freeze is only for like, a ABC Corp components only
+[TIMESTAMP] Speaker 253: Not like if you are using any other model or any other application or anything in [CRM_PLATFORM] like that. Okay. That won't be hampered. But like, well, the Q will only be hampered.
+[TIMESTAMP] Speaker 244: Okay. We just have to make sure that if we're working on any other tickets that are related, we put those on hold while this upgrade. Yes. Okay.
+[TIMESTAMP] Speaker 253: Yeah. Yes.
+[TIMESTAMP] Speaker 253: Okay. The next when I like I was going through all the modules like that you guys are using. So right now I could only see the complex module is only module that you guys are actively using, am I correct?
+[TIMESTAMP] Speaker 253: Or is there any other modules that you're using right now?
+[TIMESTAMP] Speaker 253: Compliance
+[TIMESTAMP] Speaker 084: Yeah. Yeah.
+[TIMESTAMP] Speaker 253: Okay. Okay. In complex module. Do you guys use any regular report? Like a for example, [REGULATOR] or met was or mi MIR anything?
+[TIMESTAMP] Speaker 084: I understand. I'm gonna step in here for the Customer 30 Cross team. I understand the answer to be no. But I'd love for the team to confirm that.
+[TIMESTAMP] Speaker 084: Sorry.
+[TIMESTAMP] Speaker 253: I was trying to get off mute. I agree with that. Right now. We're not using any regulatory reports. Yeah. Okay. Okay. Okay. Thank you. Uh
+[TIMESTAMP] Speaker 253: So this is our upgrade workflow. How we are going to work. And so firstly we will be creating CPC dev environment CPC, dev environment, stand for stands for a post upgrade conversion development environment. So we will we need one new press like one new environment development environment which needs to be created or created from products and environment and then in products and environment. We do like we we upgrade that environment. And then like, from there since like since you guys will be moving all the changes. So but still we will be needing like a ABC Corp ABC Corp environment for our like a code to like a tomorrow's or like, to review our codes. We are using C pipelines. So we will be needing that environment also. So we will inform you when to be when that environment to be created from PC dev environment. So we'll let you guys know on that part. And after that we will be we'll be testing ABC Corp all all the SQL. Models like that is only complaints as of now. So we'll be testing compliance module. And then like, we'll be doing a demo on that conference module.
+[TIMESTAMP] Speaker 253: And we will be hand over in that compliant module to you and like, you will be start testing and you will be if you encounter any issues then like you guys can either email [COUNTRY] or like, we do have like an issue log where you can register those issue log and we'll resolve those things as soon as possible. And we'll let you guys know on that object on that also. And once everything is tested and we are good to move forward, then we'll be planning for our validation or a UI environment. But it environment also needs to be rephrase from production before. We start up rate over here. So, I think do you guys are using partial a partial org or like, do you guys have full copy?
+[TIMESTAMP] Speaker 275: We have a full copy sandbox.
+[TIMESTAMP] Speaker 253: Okay. Okay. We'll be we'll start upgrade. We'll be doing upgrade over there also. And we'll be deploying that whatever fixes that we have done. We'll be moving those delta changes into that environment and then like AQ will be doing one round of a smoke test and then we will be handover in that changes to or like the will be handover in that environment to you.
+[TIMESTAMP] Speaker 253: And like, after everything is done. Everything is okay. And validation or environment, then we plan for products and environment.
+[TIMESTAMP] Speaker 253: I think we probably
+[TIMESTAMP] Speaker 244: Want a separate discussion to talk through the environment because we already have A C dev and a CR environment.
+[TIMESTAMP] Speaker 253: And then we'll
+[TIMESTAMP] Speaker 244: Have what my assumption is, we would be using our test environment where everything goes for it. So and that's not something we can just refresh. So I think we'll have to have I think we should that should be an action item to go walk through this the environment structure separately and what we're gonna use for this project.
+[TIMESTAMP] Speaker 253: Hmm. I can make a note.
+[TIMESTAMP] Speaker 253: Okay. We we will have another session or like, we'll have another call to discuss on how to move forward with different environments.
+[TIMESTAMP] Speaker 244: Yeah. And I think we would also want to cover like we're currently using flow. As our deployment tool. We've used it with Q before, right? We just want to make sure that like, we're all on the same [PERSON] about how to move code amongst the environments, what environments we're using what we need in terms of setup. Okay. Okay.
+[TIMESTAMP] Speaker 253: Okay.
+[TIMESTAMP] Speaker 253: Uh
+[TIMESTAMP] Speaker 253: Okay. So moving on to next slide.
+[TIMESTAMP] Speaker 074: Oh, and Speaker 275 has a comment.
+[TIMESTAMP] Speaker 275: Yeah. We also have a new CPU dev sandbox just for created just for the ABC Corp purposes for this project purposes. Yeah.
+[TIMESTAMP] Speaker 253: Okay. So to have you refresh you have refreshed for when did you refresh that environment?
+[TIMESTAMP] Speaker 253: Recently.
+[TIMESTAMP] Speaker 275: Or like recently, like a week ago. Yeah.
+[TIMESTAMP] Speaker 253: Okay. Okay. That's fine. So can you like can you so the next slide is for the same thing. So we just want to have like, what sand boxes are required and like, how so can you please uh
+[TIMESTAMP] Speaker 253: On freeze, our like account and like, I think there would be an invalid in that email. So if you can remove that one, then we can like we will confirm it and we can we will be able to log in in that environment.
+[TIMESTAMP] Speaker 275: Okay. Okay. Sure. Yeah. Okay.
+[TIMESTAMP] Speaker 253: I think we are already in here and we also need one CCD environment. That is like, we won't be fixing anything in that environment. But since we are using like a pipelines to verify our changes also. So we need one secured environment and that needs to be created from
+[TIMESTAMP] Speaker 253: [COUNTRY] Speaker 064 only.
+[TIMESTAMP] Speaker 253: And like I since okay, we can have like, I have a call over this environment later only. So uh
+[TIMESTAMP] Speaker 253: Let's move forward. Okay. These are the testing process that we generally do so general require requirements is like, as I've already mentioned, please have a design freeze for while we do upgrade. And sandbox should not be refreshed till all till after products and operate is signed off on some anti analysts that the products and has been updated. So please do not refresh any environments. And then like a new configuration new upgrade features cannot be changed or removed since they are out of a box. So for example, if we have a few new, if you have new changes in compliance modules, then like, those features
+[TIMESTAMP] Speaker 253: We cannot be we cannot remove those or like, we cannot change those since. Those are out of box functionality. So
+[TIMESTAMP] Speaker 253: And ABC Corp will test post upgrade and resolve any issues within our scope. So we'll be doing or I will test all the scenarios and all the configurations that
+[TIMESTAMP] Speaker 253: That has been configured for. Configure configure. While implementation, we will be testing everything. And those things will only be our scope and like, a user and permission for test testing. So if you can provide [COUNTRY] any specific permission or like, anything any permission sales that needs to be included for testing purposes, then like, please do let [COUNTRY] know. We'll be will be using that permission and we'll be testing we'll be conducting our testing from our side also and testing will be included from both admin as well as platform user also for 2 failure, validate all the configurations.
+[TIMESTAMP] Speaker 253: So testing in POC dev, development sandbox, so customer performs testing and POC dev, after completes that completes the upgrade and testing. So as I've already mentioned you like once everything is completed from our side, then PA then
+[TIMESTAMP] Speaker 253: Sorry, sorry.
+[TIMESTAMP] Speaker 253: Uh
+[TIMESTAMP] Speaker 253: So once like a testing of ABC Corp completes all the testing and like, we hand over we will let you guys know to you guys can jump into a PCI environment and start testing from your side also. And customer will submit all the issues to issue log that that will be provided by. So we will be providing you one document for recording issue logs.
+[TIMESTAMP] Speaker 253: And like a ABC Corp creates development tickets. If A C conversion fix is needed and and fix can be a reset in POC dev environment. So if you encounter any issues, we'll be creating a ticket in our side only and we'll fix it and we'll let you know and you guys can test in positive environment and testing and validation is like we'll be as we'll update it. We'll be taking it and we'll we'll deploy everything in the validation environment and you guys can start here testing in over there also. And we'll be having a different call, as we mentioned earlier.
+[TIMESTAMP] Speaker 253: Any any questions and testing process.
+[TIMESTAMP] Speaker 253: Okay. Uh
+[TIMESTAMP] Speaker 253: Moving on to a production upgrade. So I think generally uh
+[TIMESTAMP] Speaker 253: We are like we do not. Please do not modify or like do not do anything and products and environment. Please do not modify or do not. Create or do not delete any records while we are operating. So uh
+[TIMESTAMP] Speaker 253: Please check the records in approval and move them forward or like, any approval. So please, if you can go through the approvals also please go through that one also and I will so as ABC Corp will.
+[TIMESTAMP] Speaker 253: Upgrade production. So the products and date or like, for this instance we will be we'll be having we will be discussing on like a down downtime of an upgrade and we will discuss on like, a date and duration. And then we will move forward with products and environment upgrade and for customers smoke testing, please assign like a permanent save groups or like a condo smoke test to smoke to smoke test on the environment. And like, as I mentioned, hyper care will be 2 weeks of hyper care will be there. And like, within that time, if there if we encounter any issues, then we'll resolve it at that time. And after 2 weeks, like we we will hand over to our support team who will be taking care and like you will be creating CCs tickets for any other issues which like which will occur after upgrade. But like at this time. So we won't be having any issues, but like a finger crossed. We if there are any, then we like we will. Uh, we will be deleting into our support team.
+[TIMESTAMP] Speaker 253: Any questions in products and upgrade or like a
+[TIMESTAMP] Speaker 253: Okay. Let me move forward. So these are like an items that we would like you guys to go through it. So there are like all the release notes are already added in our customer portal, right? And like, if you guys can go through it if you can you guys can go through the release notes. What changes we have introduced there. Everything is listed in our customer portal. Yes.
+[TIMESTAMP] Speaker 253: Austin.
+[TIMESTAMP] Speaker 074: Release notes. Is it recommended that? because Speaker 275 will be the one working mostly on this project to upgrade. Would it be looking at everything from 13 point one to 15 point five? All those release notes?
+[TIMESTAMP] Speaker 253: Yes. The there is like, all the release notes for all the sec versus okay.
+[TIMESTAMP] Speaker 253: Yeah. And also like a there is like a product to guide also. Super to also so you guys can I can I'll be sharing this with you also. And like, you guys can use this links to for product to product tour and like for like a support ticket access. Also there is our service tech url and you guys can log in through this to register any support ticket.
+[TIMESTAMP] Speaker 074: And then for those release notes for our specific, I think product suite as Speaker 084 mentioned, there's one there's release not specific to what we are upgrading to, correct?
+[TIMESTAMP] Speaker 084: Yeah. Speaker 074 in there. You're gonna want to specifically focus on what's available for complaints. Is that's your main piece and that is called out for you. Okay. And then great question.
+[TIMESTAMP] Speaker 074: Thanks. Would you be able to show [COUNTRY] navigate to it just to make sure we're looking in the right spot?
+[TIMESTAMP] Speaker 074: And you can wait until the end of the call Speaker 253.
+[TIMESTAMP] Speaker 253: I think yes, this is our last slide. So I think we are already at the end. So
+[TIMESTAMP] Speaker 244: I did have a question before you got to that. I was waiting to see if there was gonna be kind of a project plan or gantt chart. Are there approximate time frames for how long this will take like each step?
+[TIMESTAMP] Speaker 253: Yes. I think let me share that with you also.
+[TIMESTAMP] Speaker 253: Stop. Okay. Let me
+[TIMESTAMP] Speaker 253: Okay. Um
+[TIMESTAMP] Speaker 253: Just a minute. So we do have our a uh
+[TIMESTAMP] Speaker 253: Planning that we have done for this one. So
+[TIMESTAMP] Speaker 253: So as of now, like our tentative uh
+[TIMESTAMP] Speaker 253: Sorry. This
+[TIMESTAMP] Speaker 253: So okay. So our tentative plan for this one is like since we have this started it. So uh
+[TIMESTAMP] Speaker 253: So currently, we are in our kickoff meeting. So after that we'll be communicating with like will be so we already got positive environment and like we'll be refreshing. We'll be upgrading positive environment. So all this will be all these and items will be conducted. So these are like a basic uh
+[TIMESTAMP] Speaker 253: Timeframe we are looking at. And as of now, like our our tentative time for UA t environment would be like a uh
+[TIMESTAMP] Speaker 253: March thirty, yes. And like, a production would be uh
+[TIMESTAMP] Speaker 253: 23rd.
+[TIMESTAMP] Speaker 244: Okay. We may need a separate meeting to walk through this too, just because we have to look at our release calendar and see if those dates even work for [COUNTRY].
+[TIMESTAMP] Speaker 253: Okay. Sure. Sure. We can definitely discuss over this date and like, since what we have done is like. So since we have tentatively added like, a around around like a 2 weeks for our secure testing as well as 2 weeks for like a testing from your site. So if these things are completed or like, if we could wrap it up sooner than like a we can always like, move forward with our hiring environment on a hourly basis also
+[TIMESTAMP] Speaker 084: So Speaker 244, just to be clear, I've heard you ask for 2 additional meetings with Speaker 253, one to talk about the environments and then one to walk through this time frame to ensure the line. I am I missing anything else?
+[TIMESTAMP] Speaker 244: Yeah. Those are the 2 I would I think we need I mean, I'll defer the environment conversation to Speaker 074 and Speaker 275. If they've already had these discussions around the environments, I mean, it seems like ABC Corp POC. Dev was already set up. So I guess we're not re using the dev that we already have. So maybe some of that has already been discussed. So that one I'll leave up to Speaker 074, but I definitely think we need to walk through the timeline. Yes.
+[TIMESTAMP] Speaker 084: Okay.
+[TIMESTAMP] Speaker 084: So to do list. And then Speaker 253 can you also share out this document to everyone on this call too so that they can track? Yeah. Yeah, sure.
+[TIMESTAMP] Speaker 253: Yeah. Yeah. What I'll do is like I'll be setting and meeting meeting, update, also. So in that meeting opted, I'll be sharing our the PPC that I just showed you and this seat also and we can have we can schedule another call within this week or like within next week to discuss more in detail.
+[TIMESTAMP] Speaker 084: Perfect. Thank you for doing that.
+[TIMESTAMP] Speaker 253: Before we like is there any other questions or like, any concerns that we might have to discuss now?
+[TIMESTAMP] Speaker 253: Okay. I think
+[TIMESTAMP] Speaker 244: Are you gonna go back to Speaker 074 's question about where did the release notes site? Can you share that with [COUNTRY]?
+[TIMESTAMP] Speaker 253: Uh
+[TIMESTAMP] Speaker 253: Release notes.
+[TIMESTAMP] Speaker 253: So I think uh
+[TIMESTAMP] Speaker 253: Do you guys have access to our customer portal?
+[TIMESTAMP] Speaker 159: I do. Yeah.
+[TIMESTAMP] Speaker 253: But Speaker 244, I think I can send it to you it
+[TIMESTAMP] Speaker 159: Was an email a long time ago from Speaker 249 back in the day?
+[TIMESTAMP] Speaker 244: That, do you have access to it since is having already have
+[TIMESTAMP] Speaker 275: Access to opening tickets sets. Okay.
+[TIMESTAMP] Speaker 244: So then yeah.
+[TIMESTAMP] Speaker 244: So
+[TIMESTAMP] Speaker 244: Some of [COUNTRY]
+[TIMESTAMP] Speaker 275: So we have access to open the tickets. So this is the release notes is in the knowledge portal, right? You're saying yes. Yes. Okay.
+[TIMESTAMP] Speaker 253: Yeah. So please don't get confused over. Since I was maintaining like well, we will be operating to secure version 15 to 5. So we have named our releases as per like winter 25 or like a winter 24. So we have summer 24. We have renamed as per our like a [CRM_PLATFORM] releases also. So currently, we are the our latest version is winter 20 20 five, which is like a versus version 15 Document 5 Document X.
+[TIMESTAMP] Speaker 275: Okay. I think currently 13 version. Then we need to take a look into all of these release notes, right? Not just in 20 25
+[TIMESTAMP] Speaker 253: Okay. So over here, if you can uh
+[TIMESTAMP] Speaker 253: Yes. I think we have to go through. So go to
+[TIMESTAMP] Speaker 253: Just let we
+[TIMESTAMP] Speaker 253: Okay. I couldn't
+[TIMESTAMP] Speaker 253: Where is this?
+[TIMESTAMP] Speaker 253: Okay. Sorry. This is not the one
+[TIMESTAMP] Speaker 253: Let me
+[TIMESTAMP] Speaker 253: So if you can see there's like, a release portals.
+[TIMESTAMP] Speaker 253: Okay. These are the things like what has been released for winter 25. So as the questions like the answer to your question would be like, yes, we have to go through each releases to say a what a new form
+[TIMESTAMP] Speaker 253: Is release
+[TIMESTAMP] Speaker 253: Okay.
+[TIMESTAMP] Speaker 253: Any other queries or any other questions?
+[TIMESTAMP] Speaker 244: So basically, we start with what summer 23
+[TIMESTAMP] Speaker 244: Yeah. We're on version. 13 something we
+[TIMESTAMP] Speaker 253: I think. Yes, we have to now it's winter 20 23 because we are
+[TIMESTAMP] Speaker 253: Yeah. Yes. So winter started winter?
+[TIMESTAMP] Speaker 244: 20 23 and go up from there. Yes. Okay.
+[TIMESTAMP] Speaker 253: Okay. Any other questions?
+[TIMESTAMP] Speaker 253: Okay. Now, yes. Yes, I can. Sorry about that.
+[TIMESTAMP] Speaker 074: When we were discussing earlier, which meetings, we do definitely need the sandbox, one still. We just set up the CPC dev one based on the email that you all requested and because it was a basic developer sandbox and pretty straightforward for [COUNTRY] to set up. But from there we're we'll need guidance on the rest of the steps.
+[TIMESTAMP] Speaker 253: Okay. Sure. Sure. Yeah. I'll schedule another call and we can discuss over that call. What how to move forward with like, a rich environment environment structures. Okay. And like, one more thing we just want to request is like, we would be needing one like a full copy. Or like as you mentioned, you are you guys are using full copy sandbox. We like to have access in that full copy sandbox. For to for like, a reference purpose only. We won't be creating any records or like is it like can be able to create like, are we allowed to create any records in our your full copy sandbox?
+[TIMESTAMP] Speaker 244: We have to pretty tightly control that if you're talking about our test environment, which is where we do at. All of our code goes through that test environment and multiple people are doing it. So we would have to we'd have to be very controlled if you're creating anything in that environment just to make sure it doesn't affect anything else.
+[TIMESTAMP] Speaker 253: Okay. Okay.
+[TIMESTAMP] Speaker 253: The reason I'm asking is like, for a few configurations that we have done, we might have to like, verify in both end, right? in our new environment as well as our in older environment. So to verify those things we might need to create. We might need to create one or like, a 2 records for the that purpose only.
+[TIMESTAMP] Speaker 253: Okay.
+[TIMESTAMP] Speaker 084: Okay. Speaker 055. I'm guessing. That's something that you can verbalize to this team as you come across it for the testing as we're going through the upgrade.
+[TIMESTAMP] Speaker 253: Yes. I think we can do.
+[TIMESTAMP] Speaker 084: Yeah. Okay. Perfect.
+[TIMESTAMP] Speaker 084: Excited.
+[TIMESTAMP] Speaker 084: I know we've been talking about this for about 6 7 months. I hope you guys are excited now that we're officially here.
+[TIMESTAMP] Speaker 074: Yeah. Definitely the time has come to upgrade. So I'm glad we finally have this kickoff meeting and we'll see how it goes.
+[TIMESTAMP] Speaker 084: Yeah, exactly. First step, right? And it sounds like we've got some good initial steps to go and then we'll get that weekly cadence on we'll track the timeline together and we'll just start hitting these milestones together. I'm excited.
+[TIMESTAMP] Speaker 253: Great.
+[TIMESTAMP] Speaker 253: So I think [PERSON] [PERSON], right. So [PERSON] is can you please provide [COUNTRY] the access to our like, PCI dev environment?
+[TIMESTAMP] Speaker 275: So yeah, you can just call me Speaker 275. The thing is in the CPC environment. You want me to create a new user because I don't see any ABC Corp user in that.
+[TIMESTAMP] Speaker 253: Okay. This would be like a ABC Corp support or something like that. ABC Corp support, not ABC Corp, but like a ABC Corp support.
+[TIMESTAMP] Speaker 074: And we don't have to keep everybody on the call.
+[TIMESTAMP] Speaker 275: Tomorrow. Yeah, we can do it. Offline, probably.
+[TIMESTAMP] Speaker 253: Yeah. Yeah, sure. Sure. Sure. If we can do it. So uh
+[TIMESTAMP] Speaker 253: But like, we'll be needing a system admin. Okay.
+[TIMESTAMP] Speaker 275: Okay. Sure.
+[TIMESTAMP] Speaker 074: Okay. And I believe you information in an email, correct? Speaker 253 what you need?
+[TIMESTAMP] Speaker 253: For that user. Sure. I'll uh
+[TIMESTAMP] Speaker 253: Yeah. I'll share all those details in an email.
+[TIMESTAMP] Speaker 074: Okay. Perfect. Thank you.
+[TIMESTAMP] Speaker 253: Okay. Okay. I think like, that will be all for today's stuff meeting, so. Thank you, guys. Thank you for your time. So we will be talking to you very soon. So I'll send an email and like, I'll we'll be scheduling a few calls after that.
+[TIMESTAMP] Speaker 074: Okay. Great. Thank you. Perfect.
+[TIMESTAMP] Speaker 084: I hope you guys have a great day. Take care. Thanks. Thank you. Everyone, thank you.
+[TIMESTAMP] Speaker 074: Thank you, bye everyone.
+
+
+====================================================================================================
+Title: Customer 30 - Project Timeline plan
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1803.0
+====================================================================================================
+[TIMESTAMP] Speaker 084: Guys? Thank you. Esna. Asyut Tauthasцы, Nett, [PERSON], Patry, ап, Yazari, Speaker 171, Redderon access.
+[TIMESTAMP] Speaker 084: Okay. How, are you doing?
+[TIMESTAMP] Speaker 253: I'm doing good. So are we waiting for anyone to join? Yes. Or we can start? Okay.
+[TIMESTAMP] Speaker 084: Hi everybody, how are you?
+[TIMESTAMP] Speaker 253: Hey Speaker 084, good morning.
+[TIMESTAMP] Speaker 084: Hi Speaker 084. Hello.
+[TIMESTAMP] Speaker 084: You guys are great.
+[TIMESTAMP] Speaker 253: Okay, Speaker 070 is also here.
+[TIMESTAMP] Speaker 253: So, I think we are ready to move right? Chaitanya?
+[TIMESTAMP] Speaker 275: Think that's all. [PERSON] is out of office for the whole week. Yeah. So I think we can move forward. You're going to record this right?
+[TIMESTAMP] Speaker 253: Yeah, so Yeah. We already have our compliance question recorder, but like, let me to be like, a double sure. Let me record this one again. Okay.
+[TIMESTAMP] Speaker 253: Okay. I think the recording has just
+[TIMESTAMP] Speaker 253: Started. Yeah, the recording has just started. So we can please unmute yourself. Okay. I think we can start. So MA so since we have already started, our pre impact analysis is already completed for ARC, so let me share my screen to discuss on our project. Timeline. So, okay. Can you guys see my screen?
+[TIMESTAMP] Speaker 253: Yes. Yes, we can. Yep.
+[TIMESTAMP] Speaker 253: Okay, so this was our tentative timeline or like, we can say tentative dates that number of like, duration that we usually take for our process. So I think.
+[TIMESTAMP] Speaker 253: So the main thing will be we can start from here, the post upgrade impact analysis. Which has already been started. Pre Impact Analysis has already been started. So we are here to start with like, a module testing and everything from our side also. So before that, since we need to discuss on this timeline. So as for [COUNTRY], for ABC Corp side, so we need at least like 3 weeks of a time to test and to run all the test scripts that we have and to check all the scenarios for complaint modules to provide you a demo.
+[TIMESTAMP] Speaker 253: Or we can even say to hand over to you guys. So we need at least 15 days for that.
+[TIMESTAMP] Speaker 253: Like after that, we will provide you one demo session for like a what changes that has been made in this upgrade. And then after that, we will hand over that. We will hand over or we will create a user for you guys in our [ENVIRONMENT] environment and you can start testing in that environment and for that like yes. Are those dates, accurate, that I think.
+[TIMESTAMP] Speaker 253: Think you're saying row 19, that the Della demonstration, Delta, Delta demonstration is so is it planned for 3 March? 20th? March? 20th? So I think like, we have just started this one. So we are doing we are working on it. But like, I think we might need to like a move a little bit like a day or so for the weekend. This date can be our tentative date for Delta. Demo. Yes.
+[TIMESTAMP] Speaker 253: Yeah, I'm trying to understand for the dates where you need [COUNTRY] to perform testing or do something, those are the dates that I want to make sure like we have a good idea on because we're going to need to make sure we reserve capacity for someone to do that testing. If you think that date's gonna move what other dates how far do you think it's going to move? If it's a couple days what does that do to the customer testing? I'm concerned about the customer items. Yeah, so this date might like, the reason that this date could move is because like since we will be testing all the impact and like, what all the configurations that has that we have done for you previously at the time of implementation?
+[TIMESTAMP] Speaker 253: Time. So we have to test everything, all the scenarios and like if we encounter any issues, then like we have to fix those before we do this Delta demonstration.
+[TIMESTAMP] Speaker 253: Okay, so it sounds like it's a tentative date. Yes. They're shooting for 320 for March, 20th, but it may move. Not be.
+[TIMESTAMP] Speaker 253: The only thing I would say about the next line then, like customer testing, is we have an IT all hands meeting that week of March 23rd. So we may need to push that out depending on who's doing the testing.
+[TIMESTAMP] Speaker 253: Okay, so then like a will that be what could be the dates that... I mean, I guess what I'm saying is if you require 10 days of testing, I would start it the next week. And again, Gita, jump in. I don't know what else the team has planned, but I would probably move that date to start March 30th instead.
+[TIMESTAMP] Speaker 253: March 30th? And go 10 days from there.
+[TIMESTAMP] Speaker 253: Again, I don't know what the team has planned. Planned. Okay, so
+[TIMESTAMP] Speaker 084: We're full, but we'll make room for it.
+[TIMESTAMP] Speaker 253: Okay, as of now I'll just mark this date as 30th. But like, if we can move forward, then like, within like a 22nd, then like, we will update this after after that also. Also.
+[TIMESTAMP] Speaker 253: Okay, and like a more do you think like a more it this is like the duration is 10 days. So this is our like a tentative 10 days for to like, do all those full round of tests in dev environment. So will that be enough for you guys or like, do we need to extend that one also?
+[TIMESTAMP] Speaker 253: I'd don't know the answer to that. I mean, I think it's a 10 days. Seems like it's enough time, but we would need to talk to the tester. Okay, sure, sure.
+[TIMESTAMP] Speaker 275: So, so from March 30 to April 10, yeah. So, is that customer testing, is it in dev sandbox, like the [ENVIRONMENT] dev sandbox?
+[TIMESTAMP] Speaker 253: Yes. So, we
+[TIMESTAMP] Speaker 275: [PERSON]'t have the ABC Corp full scale, setup. How we have in U80 sandbox. Only in U80 sandbox, we have the full ABC Corp setup and it's working. Yeah.
+[TIMESTAMP] Speaker 253: So Chaitanya, then we just couldn't do full testing. There. We could do smoke testing or as much as we can get through, but we can't do all of our scripts in dev. I think it's what you're saying. Yes, that's
+[TIMESTAMP] Speaker 275: Correct. Yeah. Are doing. All of the testing in the [ENVIRONMENT] Sandbox. Yeah.
+[TIMESTAMP] Speaker 253: Okay. Then like, so if that's the case, then we do have like a UAT round over here. So after like, after everything looks fine in our dev environment, then. We will plan for UAT environment. Then, like at that time, like I think you guys can do your full round of test. In UAT environment.
+[TIMESTAMP] Speaker 253: Okay.
+[TIMESTAMP] Speaker 275: Okay. That sounds good. So how much time we have for the UAT. Testing? Okay. We have like 2 weeks almost.
+[TIMESTAMP] Speaker 253: Okay. Yeah.
+[TIMESTAMP] Speaker 253: Okay, so after everything is done in dev, then like we plan for UAT. So UAT will be upgrading it and we'll deploy all the changes a, so we have to use, we'll provide you a package, whatever changes we have made during like this fixes during this ABC Corp testing. And then like we will. So is it possible to do like a one round of a test [COUNTRY] in your environment or like we are not allowed? We don't have access to that?
+[TIMESTAMP] Speaker 275: Are you talking about the UAT?
+[TIMESTAMP] Speaker 253: Sandbox? Yes, yes, UAT sandbox.
+[TIMESTAMP] Speaker 275: So if you have to do the full round of testing, like you need admin access for that?
+[TIMESTAMP] Speaker 253: Yeah, both admin and
+[TIMESTAMP] Speaker 253: Admin as well as like a standard user.
+[TIMESTAMP] Speaker 275: Yes, I already provided you developer a deadline. Read only, but for admin access, I would request Speaker 070 to chime in on that, if you can give them admin access in the test sandbox or not, yeah.
+[TIMESTAMP] Speaker: Yeah, test will be read only as well. We can do screen sharing.
+[TIMESTAMP] Speaker: We did screen sharing previously, if you'd like. That's not a problem.
+[TIMESTAMP] Speaker 275: Yeah, so probably when you want want to do to go, the UAT smoke testing, so you can probably reach out to me and we can set up a call and then I can screen share and we can go from there.
+[TIMESTAMP] Speaker 253: Yeah. Okay. Okay, sure. Sure, Satina. So then we'll make a note on this one how we move forward at the time of upgrade. Smoke Upgrade, testing. Okay. So after UAT is completed, if everything looks fine in that, then we will plan for our production upgrade. Can I jump in here for a minute? So whenever we do the upgrade in the UAT sandbox, so I think row 24, We would want our release manager to do that, not ABC Corp. So you guys can do it in like the dev environment. By the time we get to UAT. That's kind of our practice run before doing it in production. So we'd like, Praveen, our release manager to do it in UAT because he's going to be the one doing it in production. Okay, So, like this one. So, refreshing UAT. So, this is our best practice practice that we do while we upgrading.
+[TIMESTAMP] Speaker 253: Any clients. So what we usually do is like, so before we upgrade our UAT environment, we refresh from production so that we get a latest copy of production. Yeah, we're not going to be able to do that. Though. Like our refresh for you, our test sandbox is used by customers, it's used by other projects. Projects. We can't just refresh it. It's something that we schedule months in advance to do a refresh. So I doubt that's possible. We're still working. On, we do need to do a test sandbox refresh, but I don't know if it's going to coincide with this project. Plan. So I don't assume that we're going to be able to refresh UAT. OK.
+[TIMESTAMP] Speaker: Better, there have been no updates to ABC Corp since the sandbox was last refreshed, which was maybe like 4 months ago, something like that. So, all the ABC Corp components that are in prod should be identical to what's in this UAT environment.
+[TIMESTAMP] Speaker 253: Okay. Okay. So I was just about to ask the same question. Is the UAT environment, exactly. Copy of production or not? So I think if it's exactly a copy, then I don't think there will be any issues. So we can move forward with an upgrade in UAT.
+[TIMESTAMP] Speaker 253: Okay. Okay. So once we do, like a, once we do our smoke testing and we hand over UAT environment to you and like, you can start doing all the testing from your site. And. Then once we get confirmation from you the UAT is stable and like, we can move forward with production, then we plan for production upgrade. Yeah, but like I said, make sure you change that row 24 to customer doing it. Like what we want. Sure, I'll just do that. Yeah.
+[TIMESTAMP] Speaker 253: Think this would be also. Also Yes. Okay. So, okay. Yeah.
+[TIMESTAMP] Speaker 253: Okay. I think that will be also, is there any a, and like a, so once we upgrade production and we like, we do our smoke testing and everything looks good, then? Like a,
+[TIMESTAMP] Speaker 253: Hyper care for 2 weeks of a time. We'll be in a full support. Upgrade team will be in a full support for 2 weeks of a time. So after that, if you encounter any issues or like, any concerns are there, then like we'll hand over you guys to our support team. Okay, but let's go back to like the prod upgrade, right? So we don't, you probably don't need row 29. We don't need to refresh UAT UHD. Sandbox for prod, right? Okay.
+[TIMESTAMP] Speaker 253: Yeah, sure. I'll just remove this one. Okay. I'm just trying to figure out like, the date initial date that you think we're going to be able to, looks like May? May? hmm.
+[TIMESTAMP] Speaker 253: What, do you think the prod upgrade date would be based on the current schedule?
+[TIMESTAMP] Speaker 253: System. Approximate date.
+[TIMESTAMP] Speaker 253: Would be
+[TIMESTAMP] Speaker 253: Um
+[TIMESTAMP] Speaker 253: Okay. The broad upgrade would be like, approximately it will be May 7th.
+[TIMESTAMP] Speaker 253: Okay, and that's if all the other dates, predecessors are met.
+[TIMESTAMP] Speaker 253: [PERSON]'t have any major concerns with about that. Date. This. I don't know if anybody else on the call does. It doesn't conflict with any kind of... It's a Thursday. It doesn't conflict with any other releases that we have currently, but
+[TIMESTAMP] Speaker 253: Things could change in that respect.
+[TIMESTAMP] Speaker 253: From a business perspective, any concerns with May?
+[TIMESTAMP] Speaker 253: Just because it's during busy season?
+[TIMESTAMP] Speaker 084: I'm okay with it.
+[TIMESTAMP] Speaker 253: Okay, so am I clear on this upgrade hypercure and support?
+[TIMESTAMP] Speaker 253: Yeah, so back, sorry, back to the prod section. So we would upgrade on the 7th. The upgrade in smoke testing would take place on the 7th as well, right? Like we would test the upgrade as we do.
+[TIMESTAMP] Speaker 253: The release. That wouldn't, those wouldn't take extra days, would they? Yeah, so since, so these are like a tentative, so since we are moving from 13 to 15, so we, duration would be around 2 3 business days, but if ABC Corp was doing then we usually upgrade our clients' products and environment on weekends and we do on 3 4 shifts at that time. That's why we added like a 3 days for that one.
+[TIMESTAMP] Speaker 253: Okay that's typically not what we do. So we would be doing it probably like the 7th is a Thursday night. We would probably schedule it off hours, do the upgrade and then do the smoke testing in production that same night.
+[TIMESTAMP] Speaker 253: That's what we did with our previous ABC Corp installations as well. Well. Okay. But like, I'm not sure. If, we could complete our upgrade within a single day since we have like we have to move from 13 to 15. So we might need like a extra day or so for that.
+[TIMESTAMP] Speaker: And I guess we'll
+[TIMESTAMP] Speaker 253: Have to see when we do UAT. I mean we like I said, we typically for any of our package installs we do them at night. Sometimes they do take all night. We've had that recently with a different package upgrade, but
+[TIMESTAMP] Speaker 253: Otherwise production is down. If it takes multiple days to do this, right? Users wouldn't be able to access ABC Corp or there could be some potential issues if you're still upgrading over the span of 2 days. Yeah, so while why we are upgrading you guys can view the records, but like, you cannot move or like a change status of any records in ABC Corp.
+[TIMESTAMP] Speaker 084: So, would that just be then for May 8th that it would be down?
+[TIMESTAMP] Speaker 084: It's one day, I think we can get by, but if it's going to be multiple days, that's would be an issue.
+[TIMESTAMP] Speaker 253: Yes, so I think we might need one day plus to upgrade V13 to V15. How long did it take in the development, environment? We are yet to, so we have scheduled for like this week, week. For dev environment, upgrade. So I'll just let you know how much time it will take for this one.
+[TIMESTAMP] Speaker 253: I mean, if at all, possible, we need to get it done in one night. Okay. Okay. We'll check We really with can't spread our... It across like multiple days. Yeah, sure, sure. I'll just let you guys know how much time it took for [COUNTRY] to operate in our [ENVIRONMENT] environment.
+[TIMESTAMP] Speaker: Yeah, and for what it's worth, I, mean, I know ABC Corp has multiple modules that are available. We're only using one of them, right?
+[TIMESTAMP] Speaker 253: Yeah. Yeah. Even though we are here. Yeah, but like we have all the packages, everything is packages in single. So like it will be be as a whole package as one.
+[TIMESTAMP] Speaker 084: Yeah, so complaints, which is what you utilize as part of our [PRODUCT_SUITE]. Suite. So when he says the whole package is being upgraded, you're getting the entire upgraded [PRODUCT_SUITE] suite.
+[TIMESTAMP] Speaker 084: I hope that helps clarify. That piece. That's why it's not just complaints.
+[TIMESTAMP] Speaker 253: Okay, so back the protesting hopefully we can stick to the 7th, have the upgrade happen, the 7th, the night of the 7th, Testing, happened, the night of the 7th, Customer Acceptance the night of the 7th, and then it sounds like ABC Corp support starts right after that for 2 weeks.
+[TIMESTAMP] Speaker 253: Yes, from the day of like, we hand over to you, so support will start from there.
+[TIMESTAMP] Speaker 253: Then how often do we check in on like the project plan? We going to have more regularly scheduled meetings or is it like what is the plan to keep the dates data on track? So we usually schedule a weekly calls. Sorry, so in the weekly calls we discuss on the project like a status and everything. So we will update at our weekly meetings only.
+[TIMESTAMP] Speaker 275: You also send this updated project schedule timeline sheet to the email? Yeah,
+[TIMESTAMP] Speaker 253: Sure. Sure, then I'll send everyone who has done 2 days call. So I'll send that.
+[TIMESTAMP] Speaker 084: Thank you. Speaker 253, are you starting the weekly calls with this team starting next week? I?
+[TIMESTAMP] Speaker 253: Think do you I think we have just started our ABC Corp testing I guess, like a weekend schedule after like after next week only.
+[TIMESTAMP] Speaker 084: So the week of March 16th?
+[TIMESTAMP] Speaker 253: Yeah, week of the March 16th, yes.
+[TIMESTAMP] Speaker 084: Okay, so does this team have any available dates and times that you want to share with Speaker 253? And? We can get that on the calendar now and we can just lock it down for you?
+[TIMESTAMP] Speaker 253: Since most of our team, like our SCs, our developers are working from ACI time zone, so if it is possible please provide [COUNTRY] like a time a little earlier than this, then that will be very helpful for [COUNTRY].
+[TIMESTAMP] Speaker: Just just so I understand what are you expecting on this call this next call?
+[TIMESTAMP] Speaker 253: So next call. We will have like, we will provide you an update. Like what's going on? Like what's the status of our testing and like if we are ready to how far we have How far, we are in our testing testing. And if we encounter any issues like a while testing, so we might have some questions to you also. So, we'll do those things in that call.
+[TIMESTAMP] Speaker: Okay, so I guess what I, hopefully I understand correctly, you'll need just mostly business and maybe just a couple people from IT. Yes.
+[TIMESTAMP] Speaker 084: Can make whatever time works.
+[TIMESTAMP] Speaker: And Chaitanya, what's?
+[TIMESTAMP] Speaker 275: Yeah, I'm available on 9am to 10am Eastern time on most of the days. Yeah.
+[TIMESTAMP] Speaker 275: So you can add me, [PERSON], and the business member, [PERSON]. Speaker 159, to the call.
+[TIMESTAMP] Speaker 253: Okay, so when, which day will be like available for you guys?
+[TIMESTAMP] Speaker 084: Today is fine for me, if this works for everybody else.
+[TIMESTAMP] Speaker 275: Yeah, it works for me too.
+[TIMESTAMP] Speaker 084: Okay. So, reoccurring call on Wednesdays at 9am? 9am?
+[TIMESTAMP] Speaker 275: 9.30 might be better because I don't know if some people might be joining from the Central Time. Is anyone joining from Central Time or something or Pacific? Time? Yeah?
+[TIMESTAMP] Speaker 084: I'm Mountain, but it's okay. Yeah
+[TIMESTAMP] Speaker 253: Okay. 9.30, yeah. Okay. I'll schedule a call every week from from our 19th. Sorry.
+[TIMESTAMP] Speaker 253: From 16th. So Wednesday, I'll schedule a call and I'll send an invitation to everyone.
+[TIMESTAMP] Speaker 253: Okay, okay, sure.
+[TIMESTAMP] Speaker 275: And we also have a call tomorrow, right? For the sandbox part.
+[TIMESTAMP] Speaker 253: Okay. Yeah. Tomorrow, same time. I think I'll send an email including this updated, object. Our present plan and we can move forward with that. Any other questions regarding this timeline?
+[TIMESTAMP] Speaker 253: No, I'm good.
+[TIMESTAMP] Speaker 253: Okay. Thank you team. Is there any other questions? Like last last questions from anyone.
+[TIMESTAMP] Speaker 253: So, yes, just remember one thing. Sorry. So, as we mentioned you will be using Flowsom to move our chainset into like a UAT or like in production. Am I correct?
+[TIMESTAMP] Speaker 275: Yes, that's correct. So we have a release manager Praveen, so he'll be joining the call tomorrow for the sandbox part. Yeah, we are using Flowsom for that.
+[TIMESTAMP] Speaker 253: Okay. Yeah, I think I did remember at the time of implementation also, I think we used Flosum for that, but like, so we'll be discussing about that tomorrow, right?
+[TIMESTAMP] Speaker 275: Yes, we can discuss that tomorrow. Anything about deployment and sandbox, we can discuss tomorrow. Okay,
+[TIMESTAMP] Speaker 253: Okay, then that's completely fine with me. Okay, we'll have, we'll discuss tomorrow. Okay. Thank you guys. Thank you for your time. We'll see you soon.
+[TIMESTAMP] Speaker 084: Thank you.
+[TIMESTAMP] Speaker 253: Thank you. Bye.
+
+
+====================================================================================================
+Title: Customer 30 - [ORG]
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 967.1
+====================================================================================================
+[TIMESTAMP] Speaker 253: Hello, good morning.
+[TIMESTAMP] Speaker 275: Everyone. Hi, good, morning.
+[TIMESTAMP] Speaker 253: Okay. I think, Shadhan, so are we waiting for someone from I'm just going to recite. Site. How? Can we start Transcription by ESO, Transcription, by ESO, Transcription by —? Our meeting for today?
+[TIMESTAMP] Speaker 275: So Praveen is here, so [PERSON] is out of office and I'm not sure if Speaker 070 is going to join. I. [PERSON]'t think they're going to join. Yeah, that's fine. I think we can start.
+[TIMESTAMP] Speaker 253: Okay, okay, so today basically we're meeting for our discussion on sandboxes and how we're going to upgrade it or how we should move forward with package deployment and everything. Do you want to start, Zaitanya?
+[TIMESTAMP] Speaker 275: Yeah, so I would like to introduce Praveen. Praveen is our release manager. So he's the FlowZoom expert. So he'll be taking care of the deployment to UAT Sandbox and anything to production. Okay. Yeah.
+[TIMESTAMP] Speaker 253: Hello, Praveen.
+[TIMESTAMP] Speaker 253: Hey, Sailesh.
+[TIMESTAMP] Speaker 253: Okay, so to introduce ourselves. So I'm Sailesh. And I'm sorry. Silish Mohorjan. So I'm working as a technical project manager for this upgrade. And we have our SC solution consultant. Stravan is also here. And we have Kamal, who is our technical, who is a senior developer from the, from ABC Corp.
+[TIMESTAMP] Speaker 253: Everyone. I'm [PERSON]. Glad to meet you all.
+[TIMESTAMP] Speaker 253: Okay. So since we are, so as per yesterday's discussion, so we are, the team will be like, I think Prabhu will be the, Praveen will be the one who will be leading like, a upgrade also, right?
+[TIMESTAMP] Speaker 275: Yeah, so for any deployment changes or upgrades, yeah, we need to go through him, yeah, for UAT, Sandbox and production.
+[TIMESTAMP] Speaker 253: Okay, so do we have any other environment that you are using, right? Now? So basically, so since we are using CIC, CD in Zira, so we might need one more environment that to be like a spin off from [ENVIRONMENT] environment for our code verification purpose. So we want that environment also from you guys.
+[TIMESTAMP] Speaker 275: So currently ABC Corp is only full setup in U80 sandbox, apart from production. And we have other environments QA QA, and Dev environment. But the ABC Corp is not set up in those environments or fully functioning those environments. Yeah, just one
+[TIMESTAMP] Speaker 212: Other environment ABC Corp were in ABC Corp Dev, I mean 2.
+[TIMESTAMP] Speaker 275: And they already have ABC Corp, [ENVIRONMENT].
+[TIMESTAMP] Speaker 212: Yeah, they have ABC Corp and they worked, ABC Corp were there and they worked on the previous installations and upgrades happened in ABC Corp were ABC Corp Dev. These 2 environments are available.
+[TIMESTAMP] Speaker 253: So, Speaker 212, so since we are upgrading right now, so basically what we used to do, what we do is we create a new environment from production to be spin off, like a dev environment is fine. So we name that as like a [ENVIRONMENT] environment a post upgrade configuration, development, environment. And like, the and we upgrade over there and we test everything. If anything needs to be fixed and like, we fix over there and then like, we move forward with our higher environment. So what kind of
+[TIMESTAMP] Speaker 212: Sandbox you're looking out for? So for
+[TIMESTAMP] Speaker 253: CI CD also we need development sandbox only. So that is completely fine. So we only need development sandbox so we can use that. But. What we usually do is since we will be upgrading [ENVIRONMENT] and once [ENVIRONMENT] is upgraded, then we spin off CI, CD from that [ENVIRONMENT] environment only, not from production.
+[TIMESTAMP] Speaker 253: That we both are in the same same ABC Corp version. So to verify that.
+[TIMESTAMP] Speaker 253: So we
+[TIMESTAMP] Speaker 212: Are looking out for an environment that needs to be refreshed from broad, which has the latest ABC Corp changes and components.
+[TIMESTAMP] Speaker 212: But I think that was already set.
+[TIMESTAMP] Speaker 253: Up, right? Yeah. Yes. [ENVIRONMENT]? [ENVIRONMENT] is already set up. It's already done. Okay. Yeah. Done. We want one more environment. One more that would be named as CQCICD. We will let you know. Since we are having multiple upgrades right now. Right now we haven't started PUCDEP environment to be upgraded. We haven't upgraded that yet. So, but like next week, like next Monday, we will start [ENVIRONMENT] [ENVIRONMENT], Dev environment, upgrade will be started and once that's done, I'll email, Saitanya and Praveen so that you guys can spin off that environment. Will that be okay?
+[TIMESTAMP] Speaker 275: Yes.
+[TIMESTAMP] Speaker 275: So, when do you, by when do you need this new environment? Sorry, you said next week?
+[TIMESTAMP] Speaker 253: Yeah, next week. Okay. Yeah.
+[TIMESTAMP] Speaker 253: And like, so, to be clear, so, I think previously, you are verifying all the contribution in VAR. Environment, am I correct?
+[TIMESTAMP] Speaker 253: ABC Corp VAR or? Yes, previously.
+[TIMESTAMP] Speaker 244: With the project when we first implemented ABC Corp, we used ABC Corp ABC Corp Dev and [ENVIRONMENT]. VAR was the verification environment. Yes.
+[TIMESTAMP] Speaker 253: Okay. Okay. Now, so we won't be using [ENVIRONMENT]. Since we are only upgrading. So we would be using [ENVIRONMENT] environment. Same [ENVIRONMENT] environment will be like a handover to you once ABC Corp completes all the testing from our side and you guys can log in in [ENVIRONMENT] environment and start testing. Testing. From your site.
+[TIMESTAMP] Speaker 253: But a CQCICD will only be used for like for to verify our code only. So we won't do any testing over there. We won't do any fixing in that environment.
+[TIMESTAMP] Speaker 244: If there's a change that you notice when you're doing testing in your CIS, CI, CD environment. Do you then push it to the [ENVIRONMENT] environment?
+[TIMESTAMP] Speaker 253: No, no. We fixed in [ENVIRONMENT], Dev environment and like when we, so we need to like, since we are using [PROJECT_SYSTEM] from our side, so to, to like, to merge or like, to review everything's, we need CI, CD environment. That is like a first we configure in PC Dev environment and see CI CD we just use that environment as like for to verify our codes only. We don't fix anything or like we don't use anything over there. Only to verify our code base only. Right. So if there's an issue,
+[TIMESTAMP] Speaker 244: You're just fixing it in the [ENVIRONMENT]. Environment. Yes. Which is the same place where we're doing testing. Yes. So that would need to be coordinated because if we're testing and developing in the same environment, we could Step on it. Each other's toes.
+[TIMESTAMP] Speaker 253: Yeah, but since we will hand over this module only after we complete a test from our side. Totally understood, but if we find issues when we do our testing, right, then you're going to go back and you're
+[TIMESTAMP] Speaker 244: Going to make the fix in the [ENVIRONMENT] environment.
+[TIMESTAMP] Speaker 253: Yes. Okay. Yes. And we'll, yeah, we will, we'll let you know if like any, if anything any, has to be like a hold to behold for testing, then we'll definitely let you know.
+[TIMESTAMP] Speaker 253: Okay, sure.
+[TIMESTAMP] Speaker 253: Okay, so after like a [ENVIRONMENT] is like a since after we complete our like a changes. So I think like as per our previous discussion. So you guys are using Flosome to move Delta changes from one from in our higher environment, right?
+[TIMESTAMP] Speaker 275: Yes. Yeah. And like you
+[TIMESTAMP] Speaker 212: Need to provide the list of the components you've worked to [COUNTRY]. So Chaitanya will create the Flowsome branch for me and I'll be moving it to the higher environment.
+[TIMESTAMP] Speaker 253: Okay. Okay. We will to the be only providing this list of changes only, right? Only the component names.
+[TIMESTAMP] Speaker 212: Yes, that'll do.
+[TIMESTAMP] Speaker 253: Okay. Okay. So, and even what are the manual steps?
+[TIMESTAMP] Speaker 212: You've done? You have to provide that in for piece of information to check in. Yeah. Yeah.
+[TIMESTAMP] Speaker 253: Yes. Yeah. Sure. Sure. We will provide you all the, like a pre do, if there are any post development steps or like pre development steps, we'll definitely provide you that also. Also. But like, Sahitan, just to make like a clear, so we want like a package.xml or like a how do you want? Like package.xml will be okay, right? All the all the changes to be listed. Yeah, all the components in package.xml. We need an Excel.
+[TIMESTAMP] Speaker 212: Sheet with the component type, for example, Apex class, the name of the Apex class, APA, name, object, field, feed. The list of components. So he'll just retrieve it from a POC environment.
+[TIMESTAMP] Speaker 253: Okay, okay. Then that's If I going understand to be correctly, fine. I mean the package XML will contain that list of components. Yes. Yes. Yes.
+[TIMESTAMP] Speaker 212: With that he needs to, yeah, of course that is also required for cross checking the components are
+[TIMESTAMP] Speaker 212: And the names and type of components. But the list as well as the package.xml is required.
+[TIMESTAMP] Speaker 275: Okay,
+[TIMESTAMP] Speaker 253: Sure. We'll provide that.
+[TIMESTAMP] Speaker 253: Okay, I think like so after that, like once we provide you everything. So we'll set up a call or like, We select from a our ABC Corp support side we will be closely working with you or like, we will be sharing, like you guys will sharing a screen and we'll start our upgrade, right? For like a UAT environment, for higher upgrade, UAT and prod. Yeah, what we said was we
+[TIMESTAMP] Speaker 244: Wanted Praveen to do the upgrade in UAT because he's going to be the one doing it in prod. So we can screen share, but we want him to be the one doing the actual. Actual. Hands on keyboard, doing the upgrade.
+[TIMESTAMP] Speaker 212: Yeah, so we need the instructions in a document and in the links and post installation steps, documented with screenshots. So I'll be following that, but we'll be doing it in a screen. Share. But as Speaker 244 mentioned, I'll be working on the system.
+[TIMESTAMP] Speaker 253: Okay, so what we usually do is like, since we will be creating an IQ documents when we upgrade to like, from UAT environment or like for in UAT or for production, we create an IQ document. So, do you want to like create a do you want those installation manual steps by step installation? Manual, right?
+[TIMESTAMP] Speaker 253: Okay, okay, Okay, we'll check that. Also.
+[TIMESTAMP] Speaker 212: The actual ABC Corp package, the first ABC Corp package, the master, package, just reinstalled it using the document. So we've been doing this for ABC Corp.
+[TIMESTAMP] Speaker 253: Okay. Sure. We'll provide you those packages. So I think we are clear on that. So, is there any other questions from Kamal or Speaker 273? Do we have any other queries?
+[TIMESTAMP] Speaker 253: Think no from our side. So anything from your side, Saitin, Praveen?
+[TIMESTAMP] Speaker 275: Nothing. So yesterday we haven't received the document topic, for the project. Timelines. Oh, sorry.
+[TIMESTAMP] Speaker 253: Yeah. Okay. Sorry. I'll just send it right away.
+[TIMESTAMP] Speaker 275: Sorry.
+[TIMESTAMP] Speaker 253: Okay. I'll just hear that one also. And like, so apart from this, anything else? So I'll email, like both Chaitanya and Praveen of for creating a new CICD environment for [COUNTRY]. So after that, we can move forward with that.
+[TIMESTAMP] Speaker 275: Okay, sure.
+[TIMESTAMP] Speaker 253: Okay. Anything else, guys? Any last items that we need to discuss?
+[TIMESTAMP] Speaker 253: Okay, I think no. So I think that will
+[TIMESTAMP] Speaker 275: Be all One second. For that. So one last question. So the CACD environment you want is a Dev Sandbox, right?
+[TIMESTAMP] Speaker 253: Yes, Dev Sandbox. Yeah, not from production, from [ENVIRONMENT]. Dev environment, the environment that you provide me previously.
+[TIMESTAMP] Speaker 275: Okay, so from the [ENVIRONMENT] environment, you want. Okay. Yes?
+[TIMESTAMP] Speaker 253: Yeah. I'll, I'll make a, I'll, I'll mention clearly in email also for that.
+[TIMESTAMP] Speaker 275: Okay.
+[TIMESTAMP] Speaker 253: Okay. Anything else? Or else. Like we can end our today's call.
+[TIMESTAMP] Speaker 253: Okay. I think that will be all. Thank you all. Thank you for your time. We'll connect soon. Thank you team.
+[TIMESTAMP] Speaker 275: You guys. Bye.
+[TIMESTAMP] Speaker 253: Thank you. Thanks everyone.
+
+---
+Client resource profile: Validation-led life sciences team.
+Client project resource guidance: Assume a regulated customer with strong quality/validation involvement: validation owner, quality systems owner, document control/training owner, process SMEs, IT admin, and client PM. Validation evidence review, protocol execution, SOP alignment, and approval cycles should be planned as client-owned activities.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

@@ -77,6 +77,7 @@ def run_one(
     template: Path,
     bench_dir: Path,
     timeout_sec: int,
+    provider: str = "",
 ) -> dict:
     tid = transcript_id(transcript)
     run_id = f"{now_id()}_{tid}_langgraph"
@@ -96,6 +97,8 @@ def run_one(
         "--out", str(out_path),
         "--work-dir", str(run_dir / "work"),
     ]
+    if provider:
+        cmd += ["--provider", provider]
 
     start = time.time()
     timed_out = False
@@ -182,8 +185,9 @@ def main() -> int:
     ap.add_argument("--timeout-sec", type=int, default=900)
     ap.add_argument("--benchmark-id", default=f"benchmark_{now_id()}_langgraph")
     ap.add_argument("--transcript-dir", default=str(TRANSCRIPT_DIR),
-                    help="Directory containing *_anonymized_transcript.txt files")
+                    help="Directory containing *_transcript.txt or *_anonymized_transcript.txt files")
     ap.add_argument("--template", default=str(TEMPLATE), help="Base PPTX template path")
+    ap.add_argument("--provider", default="", help="LLM provider: anthropic or openai (default: auto-detect)")
     args = ap.parse_args()
 
     transcript_dir = Path(args.transcript_dir)
@@ -195,6 +199,8 @@ def main() -> int:
         raise SystemExit(f"Template not found: {template}")
 
     all_transcripts = sorted(transcript_dir.glob("*_anonymized_transcript.txt"))
+    if not all_transcripts:
+        all_transcripts = sorted(transcript_dir.glob("*_transcript.txt"))
     if args.transcripts:
         ids = {v.strip().zfill(2) for v in args.transcripts.split(",")}
         all_transcripts = [t for t in all_transcripts if transcript_id(t) in ids]
@@ -215,7 +221,7 @@ def main() -> int:
     for i, t in enumerate(all_transcripts, 1):
         tid = transcript_id(t)
         print(f"=== Job {i}/{len(all_transcripts)}: transcript {tid} ===")
-        result = run_one(t, template, bench_dir, args.timeout_sec)
+        result = run_one(t, template, bench_dir, args.timeout_sec, provider=args.provider)
         rows.append(result)
         with jsonl_path.open("a") as f:
             f.write(json.dumps(result, ensure_ascii=False) + "\n")

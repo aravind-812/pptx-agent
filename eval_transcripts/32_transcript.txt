@@ -1,0 +1,598 @@
+# Customer 32 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 4
+
+
+====================================================================================================
+Title: Chorus - Customer 32 + ABC Corp: Escalation Discussion
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 463.39
+====================================================================================================
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Hey, Speaker 140.
+[TIMESTAMP] Speaker: You
+[TIMESTAMP] Speaker 140: Are on mute. You're well, just gonna I just have to gave take you my the word for warmest it.
+[TIMESTAMP] Speaker: Hello. I believe it.
+[TIMESTAMP] Speaker: A bit under the weather today. So I'm gonna be off Speaker 039. Hey, that's no problem at all.
+[TIMESTAMP] Speaker 140: If it makes you more comfortable, I will happily turn mine off to
+[TIMESTAMP] Speaker: Either works. I'm fine with you there. All right. Fantastic.
+[TIMESTAMP] Speaker 140: Hey, Speaker 131, how's it going?
+[TIMESTAMP] Speaker: Good.
+[TIMESTAMP] Speaker 140: Hey, good morning. Obviously not thrilled with the circumstances that brought [COUNTRY] here, but I definitely wanted to prioritize this and get on the call. I did start reading through that email full disclosure that Speaker 114 sent over. Sorry full disclosure. I was just on a meeting, so I didn't get through all of it, but I think I got to just I'd love to hear it from you all though. So I can get to work on a resolution.
+[TIMESTAMP] Speaker: Yeah. Do you want to kick start?
+[TIMESTAMP] Speaker: Yeah. And then Speaker 131 please, please add. And thanks for getting [COUNTRY] set up. I outlined in the email, just kind of like the dates and the timeline, but I'm just getting quite concerned when we started this on this project and the scoping of it. Our target was to get all this work done before Thanksgiving. And now, it seems like we may not even start before Thanksgiving and the project or the meetings. We keep getting on and scheduled are with brand new people at ABC Corp who have not gotten up to speed on the project. I know internally, I'm bringing Customer 32 team members who are kind of dedicating time and space to join these calls and it's just not a good use of their time. And I'm not sure that message has landed with pianka. And I'm afraid we're gonna continue doing that and then we won't even have this done by end of year.
+[TIMESTAMP] Speaker 140: Okay. Well, I first things first is and I invited him, but it was short notice, so I wasn't able to get him on here, but first things first is I'm gonna talk to the director basically prompt his boss of customer success and we're gonna get that resolved. Hopefully, we
+[TIMESTAMP] Speaker: Is it
+[TIMESTAMP] Speaker: Or is that
+[TIMESTAMP] Speaker 140: It is Jim.
+[TIMESTAMP] Speaker: Yeah. I
+[TIMESTAMP] Speaker: Got to go through proper channels, but also I know that you've been managing your account. So I wanted to start with you and then escalate to Jim if we needed to. Yeah, I'm gonna basically and
+[TIMESTAMP] Speaker 140: And this is not me saying I'm not here for you. [PERSON]'t don't I mean, I'm here right now. So I don't think that I don't hear that, but my primary focus and why I'm kind of a step back is because my primary focus is signing new business. So when it comes to bringing in new features or things like that's when I get brought in. [COUNTRY] should be the main point of contact, otherwise, especially when it comes to support because she has access to all of those different support resources. So in a situation like this, though, absolutely get me involved. Because that's where I'm gonna go next is I'm basically gonna escalate it to Jim and to go who's Jim's boss. And I'm gonna basically get them both on a call. We'll go through this email together as well as what we talk about on this call. And we're gonna put together a plan to get it sorted out as quickly as possible. And I'm gonna let those the timelines that you gave me. We wanted to get this done. By Thanksgiving now we're not sure. It's gonna get done by Thanksgiving. We're bringing in resources. We and Customer 32 are bringing in resources. The resources that CCs bringing to the calls. Most of the time I from what it sounds like is just spent getting up to speed opposed to working on the actual task at hand. Is that accurate Speaker 114?
+[TIMESTAMP] Speaker: Yeah, that's accurate.
+[TIMESTAMP] Speaker 140: Okay. So then I'm gonna have basically that exact conversation with her boss's boss and then see what we can do, whether it's resource realignment, which is what I would be pulling for, but I don't make those decisions. Or if it's just uh
+[TIMESTAMP] Speaker 140: I don't know more her boss joins the calls with her for some amount of time and gets involved until this gets resolved. But either way, I will find that plan out today.
+[TIMESTAMP] Speaker: Really helpful Speaker 140. Thank you. And I'll say I mean, I think the biggest question marks have shown up in this particular project. But things have slowed down a good deal as we start to try to move other projects forward as well. Even in talking to [PERSON] about getting everything transitioned over for our record transition project. Um
+[TIMESTAMP] Speaker: Even just trying to get a response from Speaker 197 on what some of our prior changes, like the overall response would look like if we made certain types of changes, it's just been slow. I don't know if if there's something that we can tell ABC Corp on a bigger hole. But you know, right now we're just not getting a lot of response. We're not seeing a lot of speed. And while I know coby likes to move really, really quickly generally and especially earlier in the year. Tended to to feel like Q was on that same [PERSON].
+[TIMESTAMP] Speaker 140: Yeah. And that's what we want to get back to. I think part of the issue is just as a little context for what might be going on here. I think some of it is that normally we have one customer success manager on an account. In this case, it would be pianka. And because there was some handoff transition. Speaker 139 worked on some things that started then and then ended up now. Speaker 139's typically mainly focused on the rapid start implementation piece. And then it gets handed off to more of like, a standard CSM like price. So I kind of my gut instinct here is that there's some misunderstanding between the 2 of those about who is handling what tasks and account and you know, an email comes in and one of them thinks the you know, this falls under the others per view. I'm not 100%, but I could definitely see how that would cause some creep confusion and delay. So that's what I'm gonna go look into. And that's kind of the first
+[TIMESTAMP] Speaker 140: Clue, I guess that I have that. I'm gonna go track down and investigate. But regardless of what it is, it's unacceptable and I'll work to get it resolved today.
+[TIMESTAMP] Speaker: I appreciate it. Yeah. And don't don't mind working with prank at all. I think at this point, really just looking forward to kind of take it and run really, really be a true project manager and in that regard and meet some of these, I think very reasonable expectations for getting the project kicked off.
+[TIMESTAMP] Speaker 140: Yeah. Absolutely. So and with that in mind I'll also let them know that it's not like, a personal issue with Prince themselves or herself. You know what I mean? They're happy you're happy to continue to work with price. So long as the requirements are being met, essentially. But if we do have to swap somebody out, I'm open to that to whoever is gonna get the job done for you.
+[TIMESTAMP] Speaker: Sounds good.
+[TIMESTAMP] Speaker: Awesome. We appreciate it.
+[TIMESTAMP] Speaker 140: All right. Well, we got a whole lot done in 8 minutes. Is there anything else we wanted to talk about while we're here? Or should I just go and get started on this?
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker 140: Okay. Well then before I let you go, let me just once again, apologize, that we even have to have this call. But let me get some people on the line internally and see what I can do for you. All right.
+[TIMESTAMP] Speaker: Awesome. Thanks Speaker 140.
+[TIMESTAMP] Speaker 140: Thank you both for your time. I'll be in touch shortly with next steps.
+[TIMESTAMP] Speaker: Thanks, Speaker 140. Appreciate it.
+[TIMESTAMP] Speaker 140: Have a great day
+
+
+====================================================================================================
+Title: Customer 32 - [ORG]
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 2100.52
+====================================================================================================
+[TIMESTAMP] Speaker 139: Hey, just
+[TIMESTAMP] Speaker 139: How's it going?
+[TIMESTAMP] Speaker 139: Hello, there you are. Can you hear [COUNTRY]? Can you hear me?
+[TIMESTAMP] Speaker: I can, yeah.
+[TIMESTAMP] Speaker 139: All right. Cool. Deal, good morning, happy. Although Thanksgiving.
+[TIMESTAMP] Speaker: You as well, it's very cool.
+[TIMESTAMP] Speaker 139: Thank you. So we have a call here, who's gonna help with your migration. And we wanted to have this meeting, of course, so you and him they can talk together and get this going and hopefully get it going soon for you and we can get it off our list. Speaker 131, we've been working on this for a little while.
+[TIMESTAMP] Speaker: Yeah. Yeah, absolutely. Absolutely.
+[TIMESTAMP] Speaker 139: Let me record the session and then that way we have it and give me one moment and then you guys can can take it away. Sure. Thanks. Okay.
+[TIMESTAMP] Speaker 139: All right. You'll need to unmute yourselves. It looks like it's gonna do that.
+[TIMESTAMP] Speaker 139: All right.
+[TIMESTAMP] Speaker: Awesome. In the first question on my side, I did send access to the file over. Is just if there are any questions on that specific file or how we are requesting to set things up.
+[TIMESTAMP] Speaker 311: Hi, Speaker 131. Thank you for sharing that. Yeah. Thank you for sharing that document. I gone through the spreadsheet which you shared. Even I was just trying to open that document so I can ask some question. But unfortunately, yeah, I just got the verification code. Let me open that.
+[TIMESTAMP] Speaker 311: Can you see my screen? I just started sharing that sheet.
+[TIMESTAMP] Speaker 139: We can see here. Yes, we can see it now.
+[TIMESTAMP] Speaker 311: Okay. Speaker 131 first question is in this spreadsheet there are sub sheet available. So what is the actual information you want to migrate in the into your production or complaint? What is this? Should I consider this as the final?
+[TIMESTAMP] Speaker: Yeah. This this tab 5 is the final.
+[TIMESTAMP] Speaker 311: File is a final. Okay. Now, let me show you something there. Just one minute. Let me stop sharing.
+[TIMESTAMP] Speaker 311: I am logging into your sandbox. So I can ask the follow up question. Just give me a minute.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: So can you see my screen? I logged in into secure and to your sandbox?
+[TIMESTAMP] Speaker 139: Okay.
+[TIMESTAMP] Speaker 139: We can see it. Okay.
+[TIMESTAMP] Speaker 311: Yeah. The next question is like Speaker 131 you have provided this many columns and field name is account account reporter. And like a lot of fields I can see this description to the description one. So this information is actually is part of your spreadsheet. But when we go to comment module, we do not have any search field in the complete object. So what is your expectation? what is your intent to add those value in this spreadsheet? I will show you the complete
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: Yeah. This is our out of the box compliant module and you are out of the box. I think there is no one in has done. So what we can do is like from this spreadsheet, we have to do the mapping between the field. Okay. So suppose, if this is a column is represent to stage field, column b represent to stage field. So the value of this a and b, we have to map with complaint field. Okay. In compliance, we have state. Okay. And then we have stage so this value we can map with this field. Okay. But here in this spreadsheet, suppose account is, we can map account with account filled here.
+[TIMESTAMP] Speaker 311: Account information. I think we can add that is fine. So what is the additional field? what is what information you want to add in this complaint? because this is too much and all the filter is not available. Description, one, 2 and 3. So how yeah, do you want to me? Is
+[TIMESTAMP] Speaker: I think that's only going to hit for this description. One, two, 3 concept. Um
+[TIMESTAMP] Speaker: The reason why is that we don't have the fields that we wanted to have at this point in time. I think that the 2 options
+[TIMESTAMP] Speaker: Probably the easiest option would be for all 3 areas listed as description to go into the description field.
+[TIMESTAMP] Speaker: But with the sub heading kind of above it as like a
+[TIMESTAMP] Speaker: Indicator of what that information is.
+[TIMESTAMP] Speaker 311: Company suppose communication preferences this to
+[TIMESTAMP] Speaker: So the singular description field.
+[TIMESTAMP] Speaker: In ABC Corp, we would want
+[TIMESTAMP] Speaker: A single sell to, say, event description and then our information from there. Communication, reference and then our information from there, intake personnel and then our information from there.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: And what about this address?
+[TIMESTAMP] Speaker 311: What about what sir address report an address?
+[TIMESTAMP] Speaker 311: We do not have any
+[TIMESTAMP] Speaker: Screen, sorry.
+[TIMESTAMP] Speaker 311: Can you see my like
+[TIMESTAMP] Speaker 139: Yeah, the address.
+[TIMESTAMP] Speaker: Yeah. So that should be under the account information.
+[TIMESTAMP] Speaker 311: Okay. On our account object.
+[TIMESTAMP] Speaker 311: But it will not be available on the compliant means in compliant. We do not have address field. Okay. So
+[TIMESTAMP] Speaker: You'd have to click into account and then see that expanded information. I understand that.
+[TIMESTAMP] Speaker 311: Yeah. So
+[TIMESTAMP] Speaker 311: Okay.
+[TIMESTAMP] Speaker 311: Contact information is also we can map with account.
+[TIMESTAMP] Speaker 311: So this is basically related to account. Okay. So account then this reporter type. Yeah, this is belong. This belong to account object. This is going to be a okay. I will do that and contact. So contact is it from
+[TIMESTAMP] Speaker 311: Meta, conflict. Yeah. So contact I think the initial reporter, right? The contact field should be met with this one. Contact in the complaint. Yep.
+[TIMESTAMP] Speaker 311: And then description, can you please repeat? I didn't understood what you want to say. Suppose we have this description field here. Plan description. So what how do you want to
+[TIMESTAMP] Speaker 311: Update this information.
+[TIMESTAMP] Speaker 311: Yeah.
+[TIMESTAMP] Speaker: So it would be
+[TIMESTAMP] Speaker: Event description.
+[TIMESTAMP] Speaker: And then the actual text from that section from description one
+[TIMESTAMP] Speaker: Then communication graph description to then intake personnel, then description 3.
+[TIMESTAMP] Speaker 311: So you mean to say
+[TIMESTAMP] Speaker 311: Event description.
+[TIMESTAMP] Speaker 311: Communication reference.
+[TIMESTAMP] Speaker 311: And intact person in this 3 value in this one in the description field. And then against each value, you want to have this information yes.
+[TIMESTAMP] Speaker 311: And then
+[TIMESTAMP] Speaker 311: So personally is not available. So that would be planned for this particular company. So this is how we want to. Okay.
+[TIMESTAMP] Speaker 311: Yeah. In that case, we need to update this spreadsheet accordingly. So description field instead of 3 field, we have to make it only one field and then to migrate it accordingly.
+[TIMESTAMP] Speaker 311: Okay. That's that is one of the action item. They did. So cleanup is needed for this sheet in in that case. And compliant code is okay. We can update it. Report it did to report it to be
+[TIMESTAMP] Speaker 311: So do we have any
+[TIMESTAMP] Speaker 311: So do you want means reported to copy? Is report date only? Right, correct. Yeah.
+[TIMESTAMP] Speaker: That's just the name of the field in the other software we were using. And so that was like my translation, if that makes sense. No.
+[TIMESTAMP] Speaker 311: Yeah. No, I just double sure. Maybe making double share to you know, I understand everything correctly. Outcome is you do not want to update anything in the outcome, it should be not applicable, correct?
+[TIMESTAMP] Speaker 311: Okay. And date occurrence date is fine, requested action. I think we have requested action field.
+[TIMESTAMP] Speaker 311: Requested action. Yeah, we have repair replacement and troubleshooting. So what is your it is replacement? Okay. Our date is fine. We have a web date.
+[TIMESTAMP] Speaker 311: And response required.
+[TIMESTAMP] Speaker 311: Some response required.
+[TIMESTAMP] Speaker 311: So what did you mention here, which is not applicable?
+[TIMESTAMP] Speaker 311: Response required. We have pick list so. But it is not in use. So though you need this field because it is not part of our package actually it is removed from the
+[TIMESTAMP] Speaker: Okay. I think this is probably the other question I want to make sure that we hit on today. That current sandbox was set up for a future change that we have not made yet to remove a couple of. Um
+[TIMESTAMP] Speaker: Remove a couple of calls, add a couple of calls and I think change the name of a few of them because of where we're at. I think it may be easier to jump into a different sandbox. Basically just a standard sandbox instead of this updated configured version.
+[TIMESTAMP] Speaker 311: But does that configuration it is done in production?
+[TIMESTAMP] Speaker: No, it has not done.
+[TIMESTAMP] Speaker 311: So we have to see if you have done something in the sandbox. So same thing. We have to replicate into production as well. And I think for that if you have done yourself, you need to provide the component what inform what update you have done and you need to provide me the field name or any new field if you ever added. So that field name so we like from secure side, I have to raise a ticket and then we need to perform the extraction from your sandbox and then deploy to your production. And after that only we can perform this migration. Otherwise, if in the sandbox you have the correct field, but in production if the field is not available, so we cannot migrate that particular information.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker: What I'm saying is that we're not ready to push that sandbox to production yet.
+[TIMESTAMP] Speaker 311: Okay. That means the configuration which you have done is not required in production.
+[TIMESTAMP] Speaker: At this time, no, we'll be in the future.
+[TIMESTAMP] Speaker 311: Okay. Then up card.
+[TIMESTAMP] Speaker: So ideally, what we want to do is keep that sandbox because we are gonna push to that to production at some point. Probably open a new sandbox for these purposes today.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Do all of this because this maps to I think the standard configuration, which is what our production environment is currently configured to. And then we can push that other sandbox at a later time.
+[TIMESTAMP] Speaker 311: Special in a custom agenda.
+[TIMESTAMP] Speaker 311: Unique patient outcome.
+[TIMESTAMP] Speaker 311: Company country, apology.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: For case method of contact.
+[TIMESTAMP] Speaker 311: Is for a
+[TIMESTAMP] Speaker 311: Method of contact we
+[TIMESTAMP] Speaker 311: And in litigation
+[TIMESTAMP] Speaker 311: Okay. We have this here, but I actually deprecated. Okay. Not a
+[TIMESTAMP] Speaker 311: Owner or a business on info.
+[TIMESTAMP] Speaker 311: Not into
+[TIMESTAMP] Speaker 311: Number
+[TIMESTAMP] Speaker 311: I'm just confirming the field which is available, I think part part family is there, but we have to okay. For part and part, [PERSON], it will be like separate migration to be done case and then only we can do the okay. Yeah, this is something
+[TIMESTAMP] Speaker 311: Complaint quantity.
+[TIMESTAMP] Speaker 311: Quantity complaint quantity.
+[TIMESTAMP] Speaker 311: Unique identifier brand name.
+[TIMESTAMP] Speaker 311: Brand name.
+[TIMESTAMP] Speaker 311: Modern number get
+[TIMESTAMP] Speaker 311: Given
+[TIMESTAMP] Speaker 311: Or manufacturing?
+[TIMESTAMP] Speaker 311: Or
+[TIMESTAMP] Speaker 311: Why this for manufacturing multiple time in your data set?
+[TIMESTAMP] Speaker: I don't know that was um
+[TIMESTAMP] Speaker: That was how the template was sent to [COUNTRY].
+[TIMESTAMP] Speaker: I don't
+[TIMESTAMP] Speaker 311: Okay. Yeah. It's a division business in it. Okay. So business in it. So like me
+[TIMESTAMP] Speaker 311: Or business in it, manufacturing business in it, maybe some reason site.
+[TIMESTAMP] Speaker 311: Speaker 034 business division.
+[TIMESTAMP] Speaker 311: Reason and sit manufacturing manufacturing.
+[TIMESTAMP] Speaker 311: Manufacturer date.
+[TIMESTAMP] Speaker 311: The date.
+[TIMESTAMP] Speaker 311: Okay. I think I this is last time I am comparing because I had some questions. So before doing any option, I wanted to check with you. So I will evaluate the ID mapping piece. Okay. And we'll do a simple migration and I will ask you like, whether it is this is how you want to migrate. Okay. And then we can proceed further for the production. But before that, I need update on this description piece.
+[TIMESTAMP] Speaker 311: H I N J instead of 3 field, I need one field so that you need to update. Okay. And for other thing, my opinion and all I will I have to check is although next question is files, do you have any attachment for this or it's just a metadata?
+[TIMESTAMP] Speaker: Yeah, there are files. I think it's at the very far right of the
+[TIMESTAMP] Speaker 311: This column belong to file name and all. Yep.
+[TIMESTAMP] Speaker 311: File name with extension. So where is those files located, actually?
+[TIMESTAMP] Speaker: Because I will I'll send you another link to those specific files that
+[TIMESTAMP] Speaker 311: Okay. And what is this Mr file attachment MD? Is this different with this?
+[TIMESTAMP] Speaker: No. We'll want 2 different file attachments. That's how I separated. But if it's easier for that to just be file attachments. And that's fine.
+[TIMESTAMP] Speaker 311: Yeah. I mean this will be like, separate role for this file. It is a separate row and for investigation attachment, there will be a separate row. So ideally in this spreadsheet, you have 500 lines. So due to these files, it will be doubled. Okay. It will be like 1,000 lines. So each line will have a file name and it would be like, you know
+[TIMESTAMP] Speaker 311: Multiple time. In a migration. First we have to do the best data migration then after that, we need to link the part and compliant account. And then in the last we have to go for this file attachment. So yeah. It would be like a multi step migration. We'll work on this file attachment. I'm not patching for now. I will keep it for the last piece before that. We have to work on this master data set up only. And then once that is done we will go for the file attachment. So what about this to field search file and search file?
+[TIMESTAMP] Speaker: Those aren't relevant, those were how I was looking up the relevant file attachment.
+[TIMESTAMP] Speaker 311: Okay. This is not related to migration. This is for your internal file provision. Yeah. Okay.
+[TIMESTAMP] Speaker 311: Title.
+[TIMESTAMP] Speaker 311: Check in conclusion.
+[TIMESTAMP] Speaker 311: What is this title? Is it file title?
+[TIMESTAMP] Speaker 311: Column b, title belong to the file name.
+[TIMESTAMP] Speaker: No, that's specific to the complaint.
+[TIMESTAMP] Speaker 311: Okay. Is it
+[TIMESTAMP] Speaker 311: Complaint title.
+[TIMESTAMP] Speaker 311: Yeah. I mean, that is a compliant title means we have a title field in the compliance. So you mean to say that's it. Compliant title. Yes.
+[TIMESTAMP] Speaker 311: Let me show you that.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: Yeah. The title. So from that, I'm talking about this title. So you meant to say this title in column b,_u belong to this field title in the complaint, correct?
+[TIMESTAMP] Speaker 311: Okay. Second, the conclusion conclusion coding of the resolution is fine closer comment. So closer comment is also it is the field here. So what should I understand from this color format?
+[TIMESTAMP] Speaker: As what we were talking about for um
+[TIMESTAMP] Speaker 311: Description.
+[TIMESTAMP] Speaker: Description.
+[TIMESTAMP] Speaker 311: So how do you going? how are you going to differentiate? you will use this okay. You have this sub heading, the link I if you review and then hr review and scope review. So you will have this 3 header, like the 3
+[TIMESTAMP] Speaker 311: Okay. 3 section. And then against each section, you will introduce this value. Okay. This is fine actually poor. Okay. This is too much. Uh
+[TIMESTAMP] Speaker 311: I think yeah, most of the like information is okay. But the file needs to be corrected to have the information in a way that we can migrate.
+[TIMESTAMP] Speaker 311: Into the sandbox. So yeah. For now please update this piece column h._i and in one column.
+[TIMESTAMP] Speaker 311: How do you want to migrate event, description, communication and 3 section? And then against each section, just add the value. This is for your description and same thing for outcome also compliant outcome. Please do this correction in this file. And I'll share with me
+[TIMESTAMP] Speaker 311: In the meantime, I will have a look at the other fields and if anything is needed, I will inform you. But for now, please update this accordingly and then we can proceed further.
+[TIMESTAMP] Speaker: And you can get the other sandbox started up.
+[TIMESTAMP] Speaker 311: Do let me check I do and
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: Is entering correct the name? C U B B revive, yeah.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: I don't know. Something is not correct here.
+[TIMESTAMP] Speaker 139: To get the second word. I mean, it's cube beds. So it's 2 words. I don't know if that would make a difference.
+[TIMESTAMP] Speaker 139: When doing the search?
+[TIMESTAMP] Speaker 311: No. When I search by by beds, not working
+[TIMESTAMP] Speaker 311: Yeah.
+[TIMESTAMP] Speaker 139: So
+[TIMESTAMP] Speaker 139: Is it something that we can help with Speaker 311? Or how does he did his sandbox?
+[TIMESTAMP] Speaker 311: Yeah. I'm just checking that. Because once I get the sandbox name, I can provide the access.
+[TIMESTAMP] Speaker: That okay.
+[TIMESTAMP] Speaker 139: While while you're trying that what Speaker 131, when do you think is a good time to meet back together to go over the updated spreadsheet?
+[TIMESTAMP] Speaker: We should be meet soon. I'm off Friday. But this isn't I mean, I could probably have updated this during the meeting. If we wanted to um
+[TIMESTAMP] Speaker: So we we could do Monday or Tuesday or something. Okay.
+[TIMESTAMP] Speaker 311: Okay. So which sandbox you are referring to Speaker 131, secure trend?
+[TIMESTAMP] Speaker: It's called
+[TIMESTAMP] Speaker: I think ABC Corp dev and ABC Corp train. We had basically, I don't know. We put too much data in there and we broke them. So I'm not sure those are the ones. Let me check with my team and I'll get you the name of what it would be
+[TIMESTAMP] Speaker 311: Okay. That the objective object sandbox is like, we will perform the migration in the sandbox for testing purpose. And then once you approve, they will go for production. Is my understanding correct? Correct.
+[TIMESTAMP] Speaker 311: Okay. Yeah. I think you mentioned secure into in one of the e mail from Speaker 139. So that's why I gone through this. But yeah, if it is any other sandbox, please let [COUNTRY] know. I will have a look at this. And then once you provide your data we'll review and then perform the migration in the sandbox and we will go over from there. Yeah. Sure.
+[TIMESTAMP] Speaker: Sure. And so Speaker 139 the this same time around the same time 8 or 8:30 mountain is fine on Monday or Tuesday of next week. I don't know if that works for this the rest of you, but
+[TIMESTAMP] Speaker 139: I
+[TIMESTAMP] Speaker 139: I have 9:00 o'clock central time. That's a good time. That's what we're doing. But she looks like. Are you open Monday? December 1st at the same time?
+[TIMESTAMP] Speaker 311: Yes, I am open on Monday December.
+[TIMESTAMP] Speaker 311: Means Speaker 307. First week I am open and the same time. I think uh
+[TIMESTAMP] Speaker 311: Time is currently it is my 8 to 9.
+[TIMESTAMP] Speaker 311: So yeah. I mean, same time will work for me. Or if you want to push to half an hour late. That is also work for me. Like I am available for next one hour also from now.
+[TIMESTAMP] Speaker 139: Okay. Okay. That Speaker 131, are you good with? I mean, it sounds like 9:00 o'clock works for you, which is I know it's early for you, but are you and I'll just schedule it right now.
+[TIMESTAMP] Speaker: Yeah. Let's actually do Tuesday if Tuesday works.
+[TIMESTAMP] Speaker 139: Tuesday. Okay. Let me look at Tuesday.
+[TIMESTAMP] Speaker: That way, if I'm a little bit slow on getting the sandbox setup thing happening that we don't hit a roadblock.
+[TIMESTAMP] Speaker 139: Yeah, I can do the same time. I do have a hard stop, though. But we got the recording. So 9:00 o'clock Tuesday Speaker 311 looks like you're open at that same time to looking in [EMAIL_SYSTEM] is that I'm gonna book it if that works for everybody. And I'll share this recording with everybody too. So that way you'll have it to refer to in case you need to. Look at it for anything and this will be coming out in just a moment.
+[TIMESTAMP] Speaker: Thank you Speaker 139. I appreciate it.
+[TIMESTAMP] Speaker 139: Thank you, everybody.
+[TIMESTAMP] Speaker: Appreciate it very much.
+[TIMESTAMP] Speaker 311: No problem. Thank you.
+[TIMESTAMP] Speaker 139: Thanks, Speaker 131. Happy Thanksgiving the show. Good weekend. Take care.
+[TIMESTAMP] Speaker 311: Thanks. Very much. Happy Thanksgiving to both of you. Bye.
+[TIMESTAMP] Speaker 139: Bye. Thank you.
+
+
+====================================================================================================
+Title: Customer 32 - Migration Project cont.
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 2253.7
+====================================================================================================
+[TIMESTAMP] Speaker 139: Good morning.
+[TIMESTAMP] Speaker 139: How are you today?
+[TIMESTAMP] Speaker 139: I think you're on mute.
+[TIMESTAMP] Speaker 311: Yes. Yeah. Hi, Speaker 139. Good morning. I am very good today. How are you?
+[TIMESTAMP] Speaker 139: Good. Good. It's evening for you, right? Is it like dinner time main time?
+[TIMESTAMP] Speaker 311: Yeah. I will have the interrupt or one hour. Yeah.
+[TIMESTAMP] Speaker 139: Well, are you ready for the holidays?
+[TIMESTAMP] Speaker 311: Yes. We I am ready for the Christmas holidays, yes.
+[TIMESTAMP] Speaker 139: Good. I'm getting there. I'm not completely there yet.
+[TIMESTAMP] Speaker 311: Okay. Yeah.
+[TIMESTAMP] Speaker 139: How is the micro? I know you and Speaker 131, he message you yesterday and I know you guys have been working on it or look you talking to each other. How do you think it's going so far?
+[TIMESTAMP] Speaker 311: So far, it is going well. Okay. We are about to finalize the that spreadsheet for migration of custom metadata. So this is complicated migration. Okay. Let me tell you. And even I mean mention in my email as well. This is like first we have to perform the meta data migration. Okay. I am ready to do that. Because we have figured out the way and there are some sanity check or clean up is required in the existing spreadsheet, which Justine has shared. So I provided my comment. He has given his response on some of the point. But there is still a couple of points pending to be updated, updated from the Speaker 131. So I want to discuss those points. Once he provided me the update on those couple of points. And if he allow me to perform the metadata migration in production, I am ready to do that. Okay. Because in sandbox we have consumed the space is not available. We cannot do anymore data migration. What we can do is like, yeah, we have to delete the existing record and then again perform with some sample data 10 or 10 record or we can do that is the recorder that's only so yeah. That is the status. And the next day is a file migration. Okay. Once your base record is available now you have complaint available in your product production. So you have attachment for those complaint and that is like really a complex thing.
+[TIMESTAMP] Speaker 311: Because we have to map the individual files with the record in the [CRM_PLATFORM]. So we have to do this mapping with [CRM_PLATFORM] ID and the way
+[TIMESTAMP] Speaker 311: Justine has organized. The files in different folder is quite not clear to me. Okay. I already raised my point. What is the identifier for Speaker 131 to understand suppose I have a file in my computer so that file belong to which complaint in the secure system. How he's going to identify because he has around 1,000 plus file. So that is going to be like, I don't know how we want to manage because but this is totally on Speaker 131 because he has to figure out the nomenclature and then he needs to provide [COUNTRY] the how we want to link the file with an individual record. So that's the question for him, but that is a second phase.
+[TIMESTAMP] Speaker 139: Okay. All right. Very good morning. Speaker 131.
+[TIMESTAMP] Speaker: Morning.
+[TIMESTAMP] Speaker 311: Good morning afternoon.
+[TIMESTAMP] Speaker 139: Are you feeling better? Are you better today?
+[TIMESTAMP] Speaker: Yeah, yeah. Most of these through Monday. So yesterday I got a lot done. Yeah, but happy to keep moving forward.
+[TIMESTAMP] Speaker 139: Good. Good, good. Okay. Well, let me start the recorder. And I know Speaker 183 and I were just talking and catching up on what you got here. So give me one little second and we can go from here.
+[TIMESTAMP] Speaker 139: All right.
+[TIMESTAMP] Speaker 139: There you go. You'll need to unmute yourselves when you are ready.
+[TIMESTAMP] Speaker 139: All right.
+[TIMESTAMP] Speaker 139: So I am gonna go on camera and I will let you guys.
+[TIMESTAMP] Speaker 139: Talk your magic.
+[TIMESTAMP] Speaker 139: And Speaker 183, you're still muted too, just so you know and I don't know if we wanna start with the e mail or how you guys want to do this.
+[TIMESTAMP] Speaker: Yeah. Yeah. I went through the comments. I know you left a number of comments. I think I've been through them all. Um
+[TIMESTAMP] Speaker: Obviously, let me know if I've missed anything, but I don't think I have. So I would be curious about next steps.
+[TIMESTAMP] Speaker 311: Yes. So Speaker 131, I think you have provided the resolution for a couple of points, but there is still there some point in unanswered. Okay. Let me
+[TIMESTAMP] Speaker 311: Share my email.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: I could not find the link for that file, which you have shared me. So currently unable to open, but I can see this I can open. I have opened this email. So based on your last update, I think you have provided your resolution for this field. A lot number serial number. I think you have work on this and you updated this field. Then RMA number I think you mark all it all the RMA number as not applicable or you did some update on this. So I am okay with this. And for resolution also you have provided your updated value, like currently it is plan feedback or inquiry. So I am okay with these three, okay. But
+[TIMESTAMP] Speaker 311: There is one column which is BS column b._s and I have also commented on this report type. So currently
+[TIMESTAMP] Speaker 311: I asked a question. So in your existing [CRM_PLATFORM] case, record sorry compliant. Yeah, it's a account. So on account record, you have one field. So I just ask you like can we use that field to update this reporter type value? And there is a column B S that column has value, but there is no heading for that column. So I am unable to map like, is it needed to migrate in compliant or it is just for your information? Because I can't see anything in the header of that particular column. It is
+[TIMESTAMP] Speaker: Column PS as the reportable event type column. That's what it currently is listed as
+[TIMESTAMP] Speaker 311: Are you able to share your screen and show me?
+[TIMESTAMP] Speaker 311: Please, absolutely.
+[TIMESTAMP] Speaker 311: I don't know if I think I mentioned wrong number.
+[TIMESTAMP] Speaker 311: So can you scroll to the left side?
+[TIMESTAMP] Speaker 311: I think your right side. Yeah. Yeah, continue going. Yeah. So column BX, sorry. My bad. It is column BX this column.
+[TIMESTAMP] Speaker 311: What is the
+[TIMESTAMP] Speaker: I'll figure it out and then I'll let you know. I'm not sure I know right now. I have to do a little bit of hunting. But yeah, I'll check.
+[TIMESTAMP] Speaker 311: Yeah. This is I'm because I if you want to map this information with any of the complaint field, then we can work on it. But first I need to understand what is your expectation with this column because it has data. But there is no, header or there is no compliant field. So I'm just curious to understand about the
+[TIMESTAMP] Speaker 311: And I think it's
+[TIMESTAMP] Speaker: Gonna end up being one of the closure comments. So what will probably happen is that this becomes the first comment in the closure comments area.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Awesome. I apologize. I missed that one. I think probably because that comment was in this lower lower area. Is it?
+[TIMESTAMP] Speaker: Should be good there.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: No, I think closer comment is already there, right? What is different between that and this?
+[TIMESTAMP] Speaker: There will be multiple closure comments. So this is the first first closure comment.
+[TIMESTAMP] Speaker 311: Okay. Have you gone through the sandbox?
+[TIMESTAMP] Speaker 311: So the 2,022 sandbox where I have done some migration where you have are you able to check those migrated records? Because I have
+[TIMESTAMP] Speaker: Not yet, no. No, I've not yet. Seen those records.
+[TIMESTAMP] Speaker 311: Because now, I think we are at this stage where we can proceed for this metadata migration into production, but I need your approval. Okay.
+[TIMESTAMP] Speaker 311: If you verify those recording
+[TIMESTAMP] Speaker 311: Sandbox and provide your acceptance. Okay, you are good with the
+[TIMESTAMP] Speaker 311: Migration, like migrated sample data. So I can profit further with the migrating the same data in production.
+[TIMESTAMP] Speaker: Okay. How did you um
+[TIMESTAMP] Speaker: How did you get to
+[TIMESTAMP] Speaker: Which which ones to do? Did you just do the first first couple or
+[TIMESTAMP] Speaker 311: I think I
+[TIMESTAMP] Speaker 311: Migrated all the complaint. Okay. From this spreadsheet?
+[TIMESTAMP] Speaker 311: But there was some complaint which does not meeting the this field value and has some error. So those complaint is not migrated. So based on that test only, I provided you comment, but like, we have ample data to you know, very it. You can have a look and provide your database. So that will be because in sandbox we have a limited space, we cannot do now or their migration. We either we need to delete and then do the migration again, but that is based on your feedback only. I can do this
+[TIMESTAMP] Speaker 311: That would have
+[TIMESTAMP] Speaker: Been based on the spreadsheet that we had before I made your requested changes.
+[TIMESTAMP] Speaker 311: Correct. Yeah. Because if you in the same in this spreadsheet, if you update the data, that does not impact to the migration steps. Because it remains just we just validated the steps. So the step is okay for my and my point of view. Okay. I just want you to verify the compliant data, which is available for October migration. Is it okay. Or if you want to add anything else if you need any information which is not part of this spreadsheet and still you need this is a must have or something. So that kind of feedback I am looking from you. Okay. Yeah. And that is the one thing and one more question is related to the [CRM_PLATFORM] ID. So I see you have entered the [CRM_PLATFORM] ID. So I want to know how did you identify those ID in in this spreadsheet? You enter [CRM_PLATFORM] ID for
+[TIMESTAMP] Speaker 311: I think it is for contact information.
+[TIMESTAMP] Speaker: Yeah, for the most part. Most of the
+[TIMESTAMP] Speaker: Everything falls into 2 categories, basically. We have cases where the ID the account is going to be under a provider. And that's where I have this de column. If there's a provider, then the [CRM_PLATFORM] ID is specific to that provider.
+[TIMESTAMP] Speaker: If there was no provider which is where the de area is listed as a that was just a search and I compared the name against your the spreadsheet that you provided. And so that just basically
+[TIMESTAMP] Speaker: Did A V lookup of
+[TIMESTAMP] Speaker: Those
+[TIMESTAMP] Speaker 311: Names.
+[TIMESTAMP] Speaker 311: So my question is should I consider those your value for migration? Because I'm not sure because when I did run in your production, you have a 50,000 plus account, okay? And that much context out of this 50,000 lines. And there are all the accounts and contacts are duplicated. Okay, you have for one account, you have 5 or 6 ID. So I'm not sure what is the correct ID, which you want to link for that component you want to migrate. So that is something critical to me. And I want you to provide me the accurate information. So once the migration is done, there will not be any misunderstanding. We can also update the migrated data that is not an issue, but it is better if we do the right in the first time itself.
+[TIMESTAMP] Speaker 311: So for that mapping, I need everything from production to be accurately extracted like your map with the account and contact. If anything is like, account and contact is missing, I am okay to do the migration and then you can like I will provide you the extract again. So you can do the mapping, but that is something I if you can share your screen again and then we can discuss on that piece.
+[TIMESTAMP] Speaker: Just tell me where you want me to go.
+[TIMESTAMP] Speaker 311: Yeah. I am talking about this column a and I think yeah.
+[TIMESTAMP] Speaker 311: No column.
+[TIMESTAMP] Speaker 311: Edge, [CRM_PLATFORM] record ID. Yeah. How is this? so one thing I understood like this is from the production, right?
+[TIMESTAMP] Speaker 311: Correct column edge, column, edge and uh
+[TIMESTAMP] Speaker 311: Do we missing any [CRM_PLATFORM] ID or
+[TIMESTAMP] Speaker 311: What is the
+[TIMESTAMP] Speaker 311: Final outcome, like
+[TIMESTAMP] Speaker: I think there might be one item or a couple there's a couple of specific ones that I think didn't have one. But almost
+[TIMESTAMP] Speaker 311: Okay. This is good. For [COUNTRY]. At least we have this data. So these IDs belong to picture or account or contact. Can you please open, are you able to log in into your production?
+[TIMESTAMP] Speaker 311: Yeah.
+[TIMESTAMP] Speaker 311: Yeah. So at least show me one ID. I want to see
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: Actually you need to to this ID in the url click on back. Just go back.
+[TIMESTAMP] Speaker 311: And open any record open an account record first?
+[TIMESTAMP] Speaker 311: Open this record one and even refer.
+[TIMESTAMP] Speaker 311: Yeah. And in the url instead of this, yeah, plus.
+[TIMESTAMP] Speaker 311: Okay. This is
+[TIMESTAMP] Speaker 311: Does this name matching with your uh
+[TIMESTAMP] Speaker 311: That value, which is available in.
+[TIMESTAMP] Speaker 311: Spreadsheets.
+[TIMESTAMP] Speaker: For ground.
+[TIMESTAMP] Speaker 311: This is no motion.
+[TIMESTAMP] Speaker 311: And here it is. Amber Miller, Amber, Miller.
+[TIMESTAMP] Speaker: Interesting. It does not match.
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker: Why wouldn't it match?
+[TIMESTAMP] Speaker: Let me see.
+[TIMESTAMP] Speaker: So in this case, we're searching the name.
+[TIMESTAMP] Speaker 311: Okay. This is the extract which I have provided to you, right? Correct.
+[TIMESTAMP] Speaker 311: So it is matching with column. What is the header of column?
+[TIMESTAMP] Speaker 311: In this spreadsheet.
+[TIMESTAMP] Speaker 311: Is account name?
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: What is account name in this spreadsheet, like in your master spreadsheet?
+[TIMESTAMP] Speaker: It'd be the same as reporter.
+[TIMESTAMP] Speaker 311: Okay. In that record, can you see that number Miller in? Can you please go to [CRM_PLATFORM] record and see if that value is available?
+[TIMESTAMP] Speaker 311: On any of the field because the name is
+[TIMESTAMP] Speaker 311: In value for
+[TIMESTAMP] Speaker: You said go to [CRM_PLATFORM] and look for which record?
+[TIMESTAMP] Speaker 311: Same record. This record only the one which you have already open.
+[TIMESTAMP] Speaker 311: And see if Miller is available on this for as a contact or any other
+[TIMESTAMP] Speaker: Yeah, to me. It looks like this is a me account when I was intending to search for a contact person. And I just need to be wrong. I just don't know how to get to a better answer.
+[TIMESTAMP] Speaker: I have to go based on contact name instead.
+[TIMESTAMP] Speaker 311: Can we do cash?
+[TIMESTAMP] Speaker 311: Uh
+[TIMESTAMP] Speaker 311: Upload for the all the
+[TIMESTAMP] Speaker 311: Account name and contact you mentioned here in in this red sheet. So
+[TIMESTAMP] Speaker: Okay. This is the right one. So I just have to do the search with a slightly different way. I'll update that calculation in here. Basically right now, it's looking on the wrong column. It did find this person's name, but when they are a non provider, I have to get their name a different way or get their report idea a different way so that shouldn't be too hard.
+[TIMESTAMP] Speaker 311: Okay. Yeah. Because I also did I did run some okay. Let me share my screen now. Yep.
+[TIMESTAMP] Speaker 311: Copy bad, migration.
+[TIMESTAMP] Speaker 311: Okay. Are you able to see my screen?
+[TIMESTAMP] Speaker 311: Um
+[TIMESTAMP] Speaker 311: Okay. I think
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: Yeah. So actually, I also did the look up on the same thing.
+[TIMESTAMP] Speaker 311: So I found the account ID and contact ID, but as for your spreadsheet, it is available for almost all record. But as for my we look up it is available for only few record. Okay. I have very much blank record. I will show you that.
+[TIMESTAMP] Speaker 311: So I have 3 45 accounts which is not available in your [CRM_PLATFORM] currently. I did not find any ID for those. This account actually is duplicated exception, but we have many valid accounts except this one and I did not find any ID. So this is like really a mismatch. So I want you to do it again or
+[TIMESTAMP] Speaker 311: Yeah. And same thing for account also. So what is the action item is the first step is we have to
+[TIMESTAMP] Speaker 311: Identify the account ID for all of these 500 or 600 lines. Okay. Then only we will be able to perform the migration so to achieve this for right now, we have a account ID for
+[TIMESTAMP] Speaker 311: Export this spreadsheet, suppose. I have account ID for 2 51 record out of 5 96. Okay. And another remaining record, which does not have account ID. Those all record are actually
+[TIMESTAMP] Speaker 311: Needs to be created, as I said as a new account in your [CRM_PLATFORM]. Production org. Okay. That is what my understanding. And once we create the new record, we will be able to identify those highly. Okay. So after that, the one step is finished. Same thing. We need to repeat for account. Okay. Once this is done, then only we can perform the migration of all this spreadsheet data. Okay. Because this is a required and we can skip this. But actually, this is important for you, right? Account and contact is important for your compliance purpose.
+[TIMESTAMP] Speaker 311: Correct. Correct. Yeah. So so yeah, that's the reason we have to first perform this. So yeah. Please have a look at this if you provide your confirmation and if you say this is the final I will have a look means we'll verify again. But just please to redo this account and this contact ID from that spreadsheet, which I have shared with you. And once that is finished from your end, we should be able to figure out the number of new account which needs to be migrated. Okay. As for this spreadsheet, I can say 3 45 new account. Okay.
+[TIMESTAMP] Speaker 311: And if I go to an account, sorry, this is
+[TIMESTAMP] Speaker 311: Contact is not working.
+[TIMESTAMP] Speaker 311: Contact contact. So I think contact is also sort the data is not working.
+[TIMESTAMP] Speaker 311: So for contact, we have 3 34 new entry, which we need to do the migration.
+[TIMESTAMP] Speaker 311: So yeah. Please please go through it. Revisit this mapping. And once you're done, update me, I will have a look at it. And also check the migrated data in the sandbox and provide me your feedback. Once you say, okay, migrate to production, I will first migrate this account and contact, okay. Once that is done, then I like, we have to update this spreadsheet again to to update the account ID and contact ID of remaining. Rows. Once that is done, then, I have to again, do the migration for the complete spreadsheet. And then then the you know, your metadata will be available in your production, some plan metadata and the next phase is file migration so that we will discuss later. Are you aligned with this?
+[TIMESTAMP] Speaker: Yeah, yeah. I'll go through it's in [CRM_PLATFORM]. I'm assuming I'll just ignore any comments where it's basically that we haven't updated the spreadsheet yet. And um
+[TIMESTAMP] Speaker: Make some tweaks if we need to and then we can go from there.
+[TIMESTAMP] Speaker 311: Okay. Yes. Thank you.
+[TIMESTAMP] Speaker: Awesome. Well, I have a little bit of work to do on my side. But expect to see some movement hopefully before the end of the week. I can get this all set up and I can give you some feedback on what's in the sandbox.
+[TIMESTAMP] Speaker 139: The end of the week tomorrow. End of the week tomorrow just I'm just okay. Oh, okay.
+[TIMESTAMP] Speaker 139: Do do we need to meet again next week? I know Speaker 183 will need to look at what you send over. So I don't know what your schedule is like next week. Are you in the office?
+[TIMESTAMP] Speaker: I'm on or available on Monday and Tuesday. So we could potentially meet the Monday or Tuesday work, assuming that works for your team. And then we're basically gone until the second.
+[TIMESTAMP] Speaker 139: Until next year. Yeah. Yeah. Yeah. No, I know. Speaker 183, you want to try to meet Monday or Tuesday next week. I'm here, Monday and Tuesday next week as well.
+[TIMESTAMP] Speaker 311: Yeah, we can have a picture means quick discussion on Tuesday, because Monday will be like, I may need to revisit some data from the Speaker 131. So Tuesday would be better for revisit from the data and decide the next stage. Yeah.
+[TIMESTAMP] Speaker 139: Okay. Same time. Work for you guys. 9:00 o'clock central
+[TIMESTAMP] Speaker 139: Okay. All right. Cool. Deal, then I will send the invite to our group here for Tuesday, the 23rd and Speaker 131, when you're done, send it over and then you'll do what you all do and we'll touch base again on Tuesday.
+[TIMESTAMP] Speaker: Sounds good.
+[TIMESTAMP] Speaker 139: All right.
+[TIMESTAMP] Speaker 311: Well, just you Speaker 131, you enter the [CRM_PLATFORM] ID only for account. So please check for the contact also because for contact and account, both, will we have separate IDs? So in that spreadsheet, which I have shared, you will get both [CRM_PLATFORM] ID. So when you perform your v lookup, please replicate the steps for both account and ID. You will be able to different identify the different ID for each one. Once that is done, I will have a look look at the data and then we will decide there.
+[TIMESTAMP] Speaker: I'm not sure.
+[TIMESTAMP] Speaker: There are several. I think that don't have sales. They don't have account IDs. They just have contact IDs.
+[TIMESTAMP] Speaker 311: So that is fine. We can consider those contact. Okay. And we can create the remaining contact, which does not have which he's not available in your production and for account also we will do the same thing. The available record, we will map with the existing [CRM_PLATFORM] ID and those which is not available in your production. We will create a brand new account in your production.
+[TIMESTAMP] Speaker 311: Okay. And yeah. How
+[TIMESTAMP] Speaker: How would I know the difference between an account [CRM_PLATFORM] ID and a contact [CRM_PLATFORM] ID in your spreadsheet?
+[TIMESTAMP] Speaker 311: Yeah. In the spreadsheet. The okay. Let me
+[TIMESTAMP] Speaker 311: Open that spreadsheet.
+[TIMESTAMP] Speaker 311: I think I have
+[TIMESTAMP] Speaker 311: So the column a is your
+[TIMESTAMP] Speaker 311: Is your context ID? Let me
+[TIMESTAMP] Speaker 311: Just give me a contact in the account. This is not
+[TIMESTAMP] Speaker 311: I'm
+[TIMESTAMP] Speaker: From column F of your file, which is the account ID.
+[TIMESTAMP] Speaker 311: Let me see which document I have shared with you.
+[TIMESTAMP] Speaker 311: Okay. I am
+[TIMESTAMP] Speaker 311: Weekly sharing my screen. And we will is this discussion? Okay.
+[TIMESTAMP] Speaker 311: So column is your account ID. Okay.
+[TIMESTAMP] Speaker 311: Just in column e is your account ID and the column b is your contact ID. This is contact ID.
+[TIMESTAMP] Speaker: That does not look like.
+[TIMESTAMP] Speaker: The sheet that I had you had shared with me.
+[TIMESTAMP] Speaker 311: I think I shared this. I just opened that e mail which I shared with you.
+[TIMESTAMP] Speaker: The one that I pull has an a through H.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: Did I share the file again? Okay. Maybe let me look at this.
+[TIMESTAMP] Speaker 311: Okay. Yeah. This is like, actually what I whatever I did like the this is my exercise. I also did the will look up. So if you can confirm this is correct. That is also fine. Like I am okay with this.
+[TIMESTAMP] Speaker 311: Okay. I did the v lookup to identify the account ID and contact ID from this data. Okay. From this column b and column E. So from column b._i identified the context ID and updated in column? H from column e._i
+[TIMESTAMP] Speaker 311: Look for account ID. And I update in this column G again this account. So that is my exercise. So if you can just confirm this is okay, this is correct. That will help me. And after your confirmation, I will have my answer. I will be able to create another record whichever is the is not available. We can create a separate account and separate contact and can generate the another [CRM_PLATFORM] ID for those remaining items. If you can confirm this, that will also help me.
+[TIMESTAMP] Speaker: Okay. Yeah. Sounds
+[TIMESTAMP] Speaker 311: Good. Yeah. Or you can refer to this email. This is like exact as extract if you want to perform yourself.
+[TIMESTAMP] Speaker 311: So this is like your b, is account ID. Sorry, contact ID.
+[TIMESTAMP] Speaker 311: And is your account ID?
+[TIMESTAMP] Speaker 311: This to extract from [CRM_PLATFORM]. Okay. Sounds good. Okay. Yeah. I will wait for your response and then we'll decide the next stage from there. Thank you.
+[TIMESTAMP] Speaker: Sounds good.
+[TIMESTAMP] Speaker 311: Hey, thank you. Bye bye.
+[TIMESTAMP] Speaker: Have a good one, thanks.
+[TIMESTAMP] Speaker 139: Everyone. Take care. Bye, bye.
+
+
+====================================================================================================
+Title: Customer 32 - Migration Project cont.
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1664.52
+====================================================================================================
+[TIMESTAMP] Speaker 139: Hey, Speaker 183, how are you today?
+[TIMESTAMP] Speaker 311: Hi, Speaker 139, I am doing good. How are you today?
+[TIMESTAMP] Speaker 139: I'm good to just trying to start my day and finish so I can be off the rest of the week.
+[TIMESTAMP] Speaker: Or week?
+[TIMESTAMP] Speaker 139: Are you taking some time while are you gonna work all week too?
+[TIMESTAMP] Speaker 311: Yeah. Like for today, I am finishing my day. It is like evening. So but yeah, I didn't took any special up for, you know.
+[TIMESTAMP] Speaker 311: Yeah. Just enjoying the Christmas day and that's it.
+[TIMESTAMP] Speaker 139: And that's it. Well, yes. So time off, because what holiday did you have? Was it in November?
+[TIMESTAMP] Speaker 139: It wasn't there was
+[TIMESTAMP] Speaker 311: A November, it was in November, October or November.
+[TIMESTAMP] Speaker 139: Yeah.
+[TIMESTAMP] Speaker 139: I don't know. We have a lot of family coming in tonight and tomorrow for Christmas. So I took off and I am ready.
+[TIMESTAMP] Speaker 139: Started.
+[TIMESTAMP] Speaker 139: Up to
+[TIMESTAMP] Speaker 311: How much day like you are off?
+[TIMESTAMP] Speaker 139: So I'm taking off Wednesday and then we're off. I think we're off just Christmas day and then I took off Friday. So I took 2 days. Okay. Yeah. Wednesday. And then the holiday and then Friday. And then I'm gonna do the same thing next week too. I'll be off Wednesday, Thursday and Friday next week. Perfect. Yeah, that's actually
+[TIMESTAMP] Speaker 311: A good opportunity to club your holiday and then yeah, even weekend plan.
+[TIMESTAMP] Speaker 139: Yeah. That's what I'm looking forward to and I'll work Monday and Tuesday and it's a little quiet here. I mean a lot of people are off, right? I'm using this time to try to catch up my customers. I have a lot of customers and this is a good time to just use it and not be distracted with lots of calls.
+[TIMESTAMP] Speaker 139: Oh, okay. Yeah. It's okay. But I am ready. Now, at this point I'm ready. There's just it's been going on for so long. I'm ready to call it a day. I'm gonna tell Jim. Hey, do we get out? Do we get to like a little early? He says?
+[TIMESTAMP] Speaker 311: So uh
+[TIMESTAMP] Speaker 311: Your what is your role? I didn't get your role understanding like you work as a project manager for this rapid start customer or
+[TIMESTAMP] Speaker 139: Do you yeah. When they brought I started a little over a year ago and at the time I guess they had tried rapid start at least 2 other times and had not kicked off or it wasn't working. So when I started it was as a senior customer success manager to do now. Customer success and my boss, he's like Speaker 139 you got project management experience. You have your pm, we want to kick off rapid start and we're gonna pitch you. We're gonna you're gonna be the project manager starting it. And that's where we are
+[TIMESTAMP] Speaker 311: Okay. And you work with Jim?
+[TIMESTAMP] Speaker 139: Jim brookshire, yeah.
+[TIMESTAMP] Speaker 311: Okay. Yeah, I had a couple of meeting with Jim with for some other project like a tech and all. So yeah.
+[TIMESTAMP] Speaker 139: He's so he and I worked together at A T and t I don't know, 30 years ago, a long long time ago. Okay. You have a good collaboration?
+[TIMESTAMP] Speaker 311: Previous organization as well.
+[TIMESTAMP] Speaker 139: Yes. I'm talking 30 years ago. Isn't that crazy? But yes, I touch all this time and a year ago when I was looking for something else, I was ready to start a different work with another company and he's like happy I got a position and I said, well, what is it? And here we are a year later. So yes, it's been it's been good. I've learned a lot. It's completely different than what I was doing before, but so much interesting, fun, exciting stuff like
+[TIMESTAMP] Speaker 139: I wish I was more technical. You guys are amazing when I hear you talking about all your ins and outs and connecting and finding the problems and how you fix them. I'm just like an ad with it because that is amazing.
+[TIMESTAMP] Speaker 311: Yeah. We try to help customer by providing the best solution and yeah, there there are some complex requirements. So it's quite interesting.
+[TIMESTAMP] Speaker 311: When compared to reps, I didn't involved in any of the reps that project so far. But like for this migration work team reached out to me to do whatever I can do. So yeah, I'm doing my best.
+[TIMESTAMP] Speaker 139: You know what you're doing, great. You're making great progress. Because I I think Robbie had said in his email that there has been um
+[TIMESTAMP] Speaker 139: There there were times where things will go go and stop go go to go and stop, right? I'm excited to see that. This is moving and continuing on and yeah, and I see all both talking back and forth. So it looks like we're making good progress.
+[TIMESTAMP] Speaker 311: Yes. Yes. So so far we are making good progress. I am confident. We can at least migrate the metadata to production, but I see Justine has done some update in this that master template. So is still not stabilize the data which you want to update or migrate to the production. So because first thing is like, he has to say, yes, I am done with my data. I don't want to add any further data to this lead sheet and when he say you just migrate this data then I am. Okay. But I see he has he added a couple of more columns into the spreadsheet. So I need to rework again and I have to check the mapping, whether it is visible or not. So yeah, let's say like and yesterday I think he e mailed me about some expectations. I replied him. Yeah, we can do this, not an issue. But only thing is I need to redo the things like, re redo the mapping for fields between compliant and your spreadsheet and then place needs to be done. So yeah. So far like I am confident we will be able to at least finish this metadata thing this attachment is going to be
+[TIMESTAMP] Speaker 311: Let [COUNTRY] finish this. Then we will see the attachment because attachment is quite I'm not sure how we want to migrate, because there is no clear you know
+[TIMESTAMP] Speaker 311: Structure for attachment. It is just a [CRM_PLATFORM] ID or some IDs given to that attachment name. So I don't know how we want to migrate this document, but that is anyway going to be in next phase activity. So I'm not touching to that phase because at least if we migrate the meta data, that will be at least we achieve something so far, right? We can say like, we have done this 50% job. The remaining 50% will be we will take it in the next stage. So that is my thought process.
+[TIMESTAMP] Speaker 139: Okay. Let's do it. Let's get it done. I like it. Because yes, he was one of my very first customers with rapid start back in October. Maybe November of 28 24. He was I think he was like number 2 avail was number one and they were number 2. Okay. Here he is.
+[TIMESTAMP] Speaker 139: Good morning, Speaker 131.
+[TIMESTAMP] Speaker: Good morning. How's it going?
+[TIMESTAMP] Speaker 139: Good, good. How are you doing?
+[TIMESTAMP] Speaker: Not too bad. I had to start to restart my computer this morning, but not all good.
+[TIMESTAMP] Speaker 139: All the computer, not a big deal, but it's your car or something. That's a whole notice story. So sure.
+[TIMESTAMP] Speaker 139: All right. Let me start the recorder here and you guys could get started just one quick moment, please.
+[TIMESTAMP] Speaker 139: Here we go.
+[TIMESTAMP] Speaker 139: All right. You can't unmute yourself and take it away.
+[TIMESTAMP] Speaker 139: When you're in
+[TIMESTAMP] Speaker 139: All right.
+[TIMESTAMP] Speaker 139: I think we are good.
+[TIMESTAMP] Speaker 139: Yes, we are.
+[TIMESTAMP] Speaker 311: Good. Can you hear me?
+[TIMESTAMP] Speaker 311: Okay. So Speaker 131 I have gone through your email. You sent me yesterday and you have done some updates into this master sheet. And I think I provided my response to you. So do you have any question to that response? Email response?
+[TIMESTAMP] Speaker: Through it.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: You're saying, no, we can't
+[TIMESTAMP] Speaker: Change numbers. But that numbering is controllable in ABC Corp, right?
+[TIMESTAMP] Speaker 311: That is not supported for a
+[TIMESTAMP] Speaker 311: Compliant module. The numbering is controllable in ABC Corp for control document and some other object, but not for compliance module.
+[TIMESTAMP] Speaker: Six, some
+[TIMESTAMP] Speaker 311: So for that identification purpose because this is common activity, which is we do for most of the customer. And the legacy document is always ask like, how they should be able to understand the legacy document number. So one thing which we do is like, we create a new custom field. We call it as a legacy document number. And then for that field, we import the legacy document number, whether it is a change control complaint or whatever it is. So that is the one approach we follow for our customer. But in your case, you are not looking for any new fields or any configuration. So in that case, we have the this field called as a title field. So in that title field we can enter a common line. We can make it the title is legacy complaint. Okay. And then I want to know about this number, what is the this number? Is it your legacy document number or something else?
+[TIMESTAMP] Speaker: Correct.
+[TIMESTAMP] Speaker 311: Okay. So from that number itself, you can understand like, okay. Yeah, we can re frame this.
+[TIMESTAMP] Speaker 311: Title as like, legacy complaint number and then we can add your number after that. So this way we will utilize this field plus your objective will also achieved. You will be able to understand okay, this is my legacy complaint. And so title is always available in your report and everywhere. This is your first impression for your [CRM_PLATFORM]. So that way you will be able to understand your whether the complaint is legacy complaint or migrated complaint and the new complaint. So that would be our differentiator if you are. Okay, we can do that.
+[TIMESTAMP] Speaker: I we have a couple of different types of legacy. So I'll think of a way to name it, but I like that idea and I'll use some some variety of it and I'll give you a response as to how
+[TIMESTAMP] Speaker 311: No. Problem, you take your time and you can respond to this email, like whatever your expectations. So we will take it forward from there.
+[TIMESTAMP] Speaker: And then it looks like 3 through 6. We're all good. Not a problem. For 7 accounts in create. That makes sense. But when we link whenever we when we do everything in production, that should pop in, right?
+[TIMESTAMP] Speaker 311: Yes. Correct. Because send in sandbox, we did not done anything in the account because there is a storage limit. So we cannot do much account upload and this mapping. So that would be done in the production only we can I will run some couple of 10 to 15 complaint to just validate the spreadsheet. Okay, it is catching the correct information from this migration. So that will be like activity just for the validation purpose. But the actual action will be have fun in production only. Okay.
+[TIMESTAMP] Speaker: Makes sense. On 7 we also had the closed comments blank. I just didn't see a response on that one. I'm sure it's not a problem though.
+[TIMESTAMP] Speaker 311: Yeah. I mean, I need to re check everything because I'm not sure why it is not available. But I think for most of the compliant it is available, but that not a problem. Maybe it is a migration error, which because you specifically mentioned this at this point of time, don't have the that data backup. So I can provide you the reason, but that is we can manage okay. Yeah.
+[TIMESTAMP] Speaker: It is good 9 is like the close by person. We do I mean, no, I think all of these users except one already have accounts in ABC Corp. So one, I guess the question would be how do we handle the one person that doesn't have an account in Q? They're you know, they're 3 3 years old or something like that before? the current cycle of employees.
+[TIMESTAMP] Speaker 311: Yeah. So see because you have this information and that the account is available in [CRM_PLATFORM]. So that's why you are using the actual username. But for migration purpose actually, you can use your ID as well. That's not a big deal. Because anyway in your legacy document the actual person who closed the compliant, his name is maybe reflected in some of the section of that your compliance report. So
+[TIMESTAMP] Speaker 311: Either you can continue with your name.
+[TIMESTAMP] Speaker 311: Or if you want to have the specific username, then we need to create that user's account in sales and then we have to patch that user ID or our migration sheet.
+[TIMESTAMP] Speaker 311: That the only way
+[TIMESTAMP] Speaker: I'll probably just use my name to keep things simple. We have a quality plan that I can note some some of those kind of thing that if we need to
+[TIMESTAMP] Speaker 311: Yeah. You can mean somebody who is all and so responsible for this kind of action in quality management system, maybe you or somebody from your team, you can suggest to the username, okay. If you are not looking at all this activity, but somebody in your team is looking through these sections and responsible for managing this complaint, you can suggest that username because this is just for reporting purpose, right? that this complaint will be available for your trending. And then you can look back for your previous history or through your. So you will be able to understand, okay, this is the compliance occur before 2 year and now this is the recurrence. So like just for a rep recording purpose, we are doing this migration. So you will have the our investigation in place. So you can suggest any username if that's not. Like if you are okay or your user already, I am okay with that as well.
+[TIMESTAMP] Speaker: But you do for all these unit though?
+[TIMESTAMP] Speaker 311: Yeah.
+[TIMESTAMP] Speaker: For all these names.
+[TIMESTAMP] Speaker: You need a user ID instead of a name. Is that what I'm hearing?
+[TIMESTAMP] Speaker 311: Yeah, correct. User ID is needed. So in that spreadsheet here, I think you added the username. So instead of that, you can add the ID.
+[TIMESTAMP] Speaker: Okay. I remember.
+[TIMESTAMP] Speaker: What the format of the user ID is?
+[TIMESTAMP] Speaker 311: User ID can be
+[TIMESTAMP] Speaker 311: Do you know how to identify the user ID?
+[TIMESTAMP] Speaker: I can get in there and I'm sure it's labeled as a user ID. So
+[TIMESTAMP] Speaker 311: If no, no. If it is how many users is this like 3 4 or more than that?
+[TIMESTAMP] Speaker: That are that would be named in that column.
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker: It's 4 3 or four, I think maybe 5.
+[TIMESTAMP] Speaker 311: So that's not a big deal. We can find it in the this call as well. No issue. You can share your risk and I will guide you.
+[TIMESTAMP] Speaker: I mean, I can go into the setup area and pull usernames if they're in there.
+[TIMESTAMP] Speaker 311: No, no, no. No, you're not getting my point. When I say it means it is a [CRM_PLATFORM] ID you need to find from url.
+[TIMESTAMP] Speaker 311: For the person, yeah. That's why I'm saying this share your screen or okay. Let me share my screen and I will guide you out to find the user ID. Okay. Okay.
+[TIMESTAMP] Speaker 311: Okay. I suppose.
+[TIMESTAMP] Speaker 311: Okay. If I want to find my user ID, I am logged in as the support user and I want to enter the user ID of this user into my migration sheet. So what I will do is just I will search by people here.
+[TIMESTAMP] Speaker 311: Okay. And then yeah. In this org, I have 2 user I search for these 2 users, so I will click on this user. So support
+[TIMESTAMP] Speaker 311: Is my ID?
+[TIMESTAMP] Speaker: Yeah. Okay. That's fair enough. So that's not found found in the user area. That's interesting.
+[TIMESTAMP] Speaker 311: No, no. That you cannot find in user under setup you because let's say people actually so that people objects searching by people and suppose if you have any other user. So you can just search for the that user and on that user and you will find here redshift.
+[TIMESTAMP] Speaker 311: Yeah.
+[TIMESTAMP] Speaker: Okay. That's easy. It's not a problem. I can get those.
+[TIMESTAMP] Speaker: Yes.
+[TIMESTAMP] Speaker: Okay. And then the last one was about files. I attached a bunch of file names.
+[TIMESTAMP] Speaker: To
+[TIMESTAMP] Speaker: The sheet those are in CM and can and then the actual like
+[TIMESTAMP] Speaker: File names are in CEO and CPU. So for
+[TIMESTAMP] Speaker 311: File let me clarify Justine. File attachment cannot be completed without completion of this metadata. So at this point of time, I am not looking for a file. Only thing I would say is in your folder, which you have shared. The files are given some IDs. So from that ID. At least I cannot understand what is that ID, meaning? Okay. How you will be able to understand that particular ID or is belong to which complaint in the secure system or which complaint of your legacy title? suppose, you have FBR 0 0 38 compliant. So for that, which I belong to that is quite difficult for me. It looks very different, but I say you have done something in your this spreadsheet. I see C column number co and the cap. You have entered some file ID so that we will discuss in our second phase. Okay. But just for your heads up, I'm giving you the my pain point because that would be like, really difficult for me to understand and if you provide correct information. Here, I will able to upload and actually that the there is a different process you. First of all, I need to download all this file into my computer and then I need to rework all this flow and part.
+[TIMESTAMP] Speaker 311: And also, at this point of time, I want to park that piece because let's say again multi layer and quite complex thing. So we will manage it in the second phase. Once we finish my complete metadata, we will definitely work on this and will upload all these files.
+[TIMESTAMP] Speaker: Okay. Yeah, that for you then absolutely. That's fine.
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker 311: So
+[TIMESTAMP] Speaker 311: I think we are good for now. Only thing is you need to respond to this e mail. Your sandbox review. Okay. Whatever I suggested is acceptable to you and a 4 point number 2. How do you want to manage this legacy complaint? what statement you want to update into that title field so that you can provide me in writing in via this email? And apart from this, I think I accepted all the points. So
+[TIMESTAMP] Speaker 311: No. Action needed on this email, but only thing is like, near your
+[TIMESTAMP] Speaker 311: Feedback for point number 2 and the point number one is not visible. So data is straightforward, given the reason and all the other point is clear to me. So and after that these you can also give me approval to migrate data into production. So I will have some run and we'll perform the migration. We'll start from complaint and sorry account and then we will I will proceed further. Some plant metadata.
+[TIMESTAMP] Speaker: Yeah, yeah. I'll answer the email. If you can basically do updates and then I'll take a look at those updates in the sandbox. And then I think we'll be good there to then move to production.
+[TIMESTAMP] Speaker 311: Okay. No problem. So yeah, you please respond to this I will re work on the final spreadsheet. We'll redo the migration in sandbox again. And I will give you the like, I will ask you to review again. Once you review, you can provide your approval and then we will go from there. No issue. Perfect. Yeah.
+[TIMESTAMP] Speaker: All right. Well, that should cover [COUNTRY].
+[TIMESTAMP] Speaker 139: Do we need to have another meeting next year January next. I don't know.
+[TIMESTAMP] Speaker: We're at Speaker 139. I'm not back. This is my last day until the second. But what I will be doing is popping on to make sure things keep moving and emails and stuff. So I'll answer this and we can just kind of work do a little shadow work in the meantime. And then if we need another meeting, I'm happy to. But for now, we'll see see where we're at when we get to the second.
+[TIMESTAMP] Speaker 139: Sounds good to me. I will then hold off on scheduling anything and we will let you guys go back and forth with your emails and the work and we'll touch base early next year.
+[TIMESTAMP] Speaker: Sounds good.
+[TIMESTAMP] Speaker 139: All right. Well, Speaker 131 merry Christmas have a great holiday and we will see when we see. Speaker 183, thanks so much for all your help. You guys are awesome. And we will anything I'm here today and I'll be here next Monday and Tuesday on and off and you don't know how to reach me.
+[TIMESTAMP] Speaker: Sounds good. Happy all day.
+[TIMESTAMP] Speaker 139: Thank you too. Take care guys. Bye. Bye.
+[TIMESTAMP] Speaker 311: Your day? Bye. Bye.
+[TIMESTAMP] Speaker: Bye.
+
+---
+Client resource profile: Small focused deployment team.
+Client project resource guidance: Assume a small customer project team where individuals cover multiple roles: one project lead, one quality/process owner, one IT/admin contact, one validation approver, and limited SMEs. Proposal should avoid implying a large dedicated team and should call out timely decisions/reviews as a dependency.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

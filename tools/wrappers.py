@@ -6,9 +6,11 @@ from langchain_core.tools import tool
 from .pptx_editor import (
     load, save,
     op_info, op_spatial_map, op_check_overflow,
-    op_set_text, op_set_para, op_remove_slides,
+    op_set_text, op_set_para, op_remove_slides, op_delete_shapes,
     op_set_cell, op_set_position, op_validate, op_render_png, op_precheck,
     op_relayout_slide,
+    op_resolve_shape_name, op_set_text_autofit,
+    op_apply_edits_batch, op_verify_edits, op_placeholder_sweep, op_fit_text_overflow,
 )
 from .font_measurer import measure
 from .layout_solver import solve
@@ -124,6 +126,88 @@ def pptx_validate(pptx_path: str) -> str:
 
 
 @tool
+def pptx_apply_edits_batch(pptx_path: str, edits_json: str, autofit: bool = True) -> str:
+    """
+    Apply many edits in one transaction. ~10× fewer LLM round-trips than per-shape calls.
+    edits_json: JSON array of {slide, op, shape, text [, row, col, para]}.
+    op ∈ {set_text, set_cell, set_para}.
+    autofit: if true, set_text wraps in smart-truncate (preserves bullets + punchline).
+    Auto-resolves fuzzy shape names. Returns JSON with per-edit status.
+    """
+    import json as _json
+    edits = _json.loads(edits_json)
+    return _json.dumps(op_apply_edits_batch(pptx_path, edits, autofit=autofit), indent=2)
+
+
+@tool
+def pptx_set_text_autofit(pptx_path: str, slide: int, shape: str, text: str,
+                           font_size: int = 0) -> str:
+    """
+    Set text on a shape; if text would overflow, smart-truncate while preserving
+    bullets and punchline endings. Does NOT shrink font (preserves template design).
+    Use this instead of pptx_set_text when you're unsure about overflow.
+    font_size=0 means use the shape's existing font size.
+    """
+    import json as _json
+    prs = load(pptx_path)
+    result = op_set_text_autofit(prs, slide, shape, text, font_size=font_size)
+    if result.get("ok"):
+        save(prs, pptx_path)
+    return _json.dumps(result, indent=2)
+
+
+@tool
+def pptx_resolve_shape(pptx_path: str, slide: int, target_name: str) -> str:
+    """
+    Fuzzy-match a target shape name against actual shapes on a slide.
+    Returns the best match + available alternatives. Use when a shape name from
+    your plan doesn't match any actual shape exactly.
+    """
+    import json as _json
+    prs = load(pptx_path)
+    return _json.dumps(op_resolve_shape_name(prs, slide, target_name), indent=2)
+
+
+@tool
+def pptx_verify_edits(pptx_path: str, edits_json: str) -> str:
+    """
+    Re-open PPTX and verify each edit's target shape now contains the expected text.
+    Returns list of mismatches (silent edit failures).
+    edits_json: same format as apply_edits_batch.
+    """
+    import json as _json
+    edits = _json.loads(edits_json)
+    return _json.dumps(op_verify_edits(pptx_path, edits), indent=2)
+
+
+@tool
+def pptx_placeholder_sweep(pptx_path: str, only_slides_json: str = "[]",
+                            replacement: str = "") -> str:
+    """
+    Deterministic sweep — replace any shape containing a leftover placeholder
+    pattern ([X], TODO, Lorem, etc.) with `replacement` (default empty).
+    only_slides_json: JSON array of slide indices, e.g. "[1,3,7]"; empty = all slides.
+    """
+    import json as _json
+    only = _json.loads(only_slides_json) or None
+    return _json.dumps(op_placeholder_sweep(pptx_path, only_slides=only, replacement=replacement), indent=2)
+
+
+@tool
+def pptx_fit_overflow(pptx_path: str, targets_json: str) -> str:
+    """
+    Deterministic safety net — ensure every listed shape's ACTUAL text fits its
+    box by shrinking the font (floor 8pt). Use after applying edits if you're
+    unsure whether text overflows. NEVER truncates content.
+    targets_json: JSON array of [{"slide": int, "shape": "<name>"}, ...].
+    Returns JSON with per-shape from_size/to_size + fitted count.
+    """
+    import json as _json
+    targets = _json.loads(targets_json)
+    return _json.dumps(op_fit_text_overflow(pptx_path, targets), indent=2)
+
+
+@tool
 def pptx_relayout_slide(pptx_path: str, slide: int, shape_order_json: str) -> str:
     """
     Re-distribute shapes on a dense slide vertically using the constraint solver.
@@ -158,6 +242,19 @@ def pptx_render_png(pptx_path: str, output_dir: str) -> str:
     output_dir: directory where slide*.png files will be written.
     """
     return op_render_png(pptx_path, output_dir)
+
+
+@tool
+def pptx_delete_shapes(pptx_path: str, slide: int, shape_names: str) -> str:
+    """
+    Delete named shapes from a slide (text boxes, images, grouped shapes, connectors).
+    Use when a template has more content slots than the source provides — delete the
+    entire shape group (image + text together), not just blank the text.
+    shape_names: JSON array of exact shape name strings, e.g. '["Picture 3","TextBox 7"]'
+    slide: 1-based index.
+    """
+    names = json.loads(shape_names)
+    return json.dumps(op_delete_shapes(pptx_path, slide, names), indent=2)
 
 
 @tool

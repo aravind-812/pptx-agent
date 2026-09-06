@@ -1,0 +1,1215 @@
+# Customer 15 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 7
+
+
+====================================================================================================
+Title: Chorus - Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3279.56
+====================================================================================================
+[TIMESTAMP] Speaker 008: Hey, [PERSON], here.
+[TIMESTAMP] Speaker 008: Hello.
+[TIMESTAMP] Speaker 008: How are you?
+[TIMESTAMP] Speaker 008: Fine. Thank you. Excellent. Excellent.
+[TIMESTAMP] Speaker 008: One I
+[TIMESTAMP] Speaker 008: See
+[TIMESTAMP] Speaker 008: I'm here in
+[TIMESTAMP] Speaker 008: The way
+[TIMESTAMP] Speaker 093: So how can I help you Speaker 008 today?
+[TIMESTAMP] Speaker 093: Sorry, how can I help you today? Do you have any questions for me? Yes.
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker 093: Perfect. Um
+[TIMESTAMP] Speaker 008: Okay. I'm going to start with a risk.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay. Well, I have been seeing how to create it and I have a question because if I can I show you like, how we can how we make a risk because I don't know how to fix
+[TIMESTAMP] Speaker 008: The pen system and my system.
+[TIMESTAMP] Speaker 008: Okay. I'm going to share with you my screen. Okay.
+[TIMESTAMP] Speaker 008: Okay. One moment. I'm going to look for it.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Okay. Waiting for the screen to show
+[TIMESTAMP] Speaker 008: Yeah. Okay.
+[TIMESTAMP] Speaker 008: One moment.
+[TIMESTAMP] Speaker 008: Okay. This is a one example for risk evaluation gate. Okay. And first agree risk model.
+[TIMESTAMP] Speaker 008: The risk model is one that is called me a
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 008: And okay. I create the risk model, but then I don't know how to create the make the risk. Because for example, I create a risk assessment for an equipment, but we don't do just analysis of risk detection and say
+[TIMESTAMP] Speaker 008: Potent 3 variables. We do it. With different steps person step. I make like, different things, then the probability the detection and the severity and then I obtained like a a number. So I don't know how to create these different stages in the same analysis. Risk analysis. Um
+[TIMESTAMP] Speaker 093: Okay. I don't know. Can you send this to me? I'll take a look at it. I need to think I need to think how to how do we do that?
+[TIMESTAMP] Speaker 008: Okay. But I will send you another one. Okay.
+[TIMESTAMP] Speaker 093: Sure. Yeah.
+[TIMESTAMP] Speaker 093: Okay. Because there are 2 ways to do it, right? One is the the risk model and the risk thing that is one thing or this looks like and is this more of an FM where you'll go where you're trying all the different types of failure modes and what will happen and all those things. Then you will need to use me. Not the risk module, the extension of risk module for the FM.
+[TIMESTAMP] Speaker 008: There is an extension module.
+[TIMESTAMP] Speaker 093: Let me just give me one second. Okay. Let me just see if I can.
+[TIMESTAMP] Speaker 093: One second. Let me see if I can log in. Okay.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: One minute.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: See, this is what you're looking in the risk or module, right? So there is a model that you're choosing a model risk model. Okay. You can define qualitative risk or quantitative risk, which you're familiar with it. I'll show you one more thing here. Okay. This is my risk model. If it is high, what do we do on things? And then you have the evaluation? What is my assessment of the risk for each risk? What is my what is my risk prioritization and what is the justification? And then based upon that, it will give you based upon that. You can define different types of risk assessments. This is one way. Okay. The other in things in the system there is something called a second.
+[TIMESTAMP] Speaker 093: See there is also a risk module here. Me, okay. Here, you can define a little more, more details on that. This is based upon every defect, like a product design, right? So from designing a product or if I'm defining a designing a process pdf, that did roll up. So here is where you can see that information a second. It's still loading.
+[TIMESTAMP] Speaker 093: Is my first time opening this screen, you just taking some time?
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Do you see this is another option where you can decide okay, if it is a battery what is my design requirements? And then what is my expected battery failure? And then if this happens when the letter to shut down, if that happens, it's catastrophic. Why did it happen? Why could it happen because of battery degradation and how can I prevent it? Okay. Yes. Our
+[TIMESTAMP] Speaker 008: Our system.
+[TIMESTAMP] Speaker 008: Is like this
+[TIMESTAMP] Speaker 093: Yeah. This is a design. This is an add on solution in the system. Called a designer, famer, family, designer, [PERSON]. This is part of the design control. Okay.
+[TIMESTAMP] Speaker 008: Bad details, yes. But
+[TIMESTAMP] Speaker 008: Is this including our system?
+[TIMESTAMP] Speaker 093: I need to check once in the contract if it is included in your system or not. So this will have 2 things. Again, as I mentioned this ad design for me, then you have a process of design is for your product design processes for your process design. You can define that but exactly this is what I thought. When I looked at your documents, this what I thought, okay, if this is the problem based upon this requirement, what is the failure moved?
+[TIMESTAMP] Speaker 008: Because we use this, mm.
+[TIMESTAMP] Speaker 093: Yeah. Yeah.
+[TIMESTAMP] Speaker 008: Exactly. Yeah. Is there a system that we use and with the other one with a normal risk assessment is the
+[TIMESTAMP] Speaker 008: It's a bit difficult to to
+[TIMESTAMP] Speaker 093: To do 2 different. The risk assessment is for the entire thing. Okay. What is the risk of the entire the process and thing? what could happen if something like that there is more of a tactical. What could happen if my price increases, what could happen if the something like that is the is this is the designing.
+[TIMESTAMP] Speaker 008: Yeah, I think we don't have the
+[TIMESTAMP] Speaker 093: This one it is not installed in your system. No, it is not.
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 093: Yeah. There is a lot more things into it, but these are completely different in the different module itself. It will go and you can start from a design file. You start from a design file. And then you have documents, you publish them, you create a project out of it and you create a process controls that there is a lot more things. If you see these as an example, right? This is my design file. This is what I'm manufacturing, okay. This is what I have. And then these are the assemblies or the products that goes into it to to make that and then this all the processes that goes into it.
+[TIMESTAMP] Speaker 093: This goes into the development of it, every part and every element. How do you develop it and you have a design requirement for all of them. Okay. However design requirements and design inputs. And for each one of them, you can also define this requirement, trace ability metrics and the risk. This is where the FM risk and can see design FM and process FM.
+[TIMESTAMP] Speaker 093: So you do not have this enabled in your system, not not yet.
+[TIMESTAMP] Speaker 093: No, I think
+[TIMESTAMP] Speaker 008: Okay. Because with the other one, I think it's going to be difficult to reach the record. Our risk model. Yeah.
+[TIMESTAMP] Speaker 093: Okay. I'll talk with Speaker 122. I'll come back to you. And this is another example of this is a process that before I showed you design famer this process process of if the what is the preliminary design, it does not meet the endusers, what will happen if it doesn't meet, so it has that based upon that. It will tell you what is the
+[TIMESTAMP] Speaker 008: Yes, then you take action.
+[TIMESTAMP] Speaker 093: Actions and how do you down
+[TIMESTAMP] Speaker 008: Yeah, I know it. Okay.
+[TIMESTAMP] Speaker 093: So it is beautiful very the module here. And if you see here
+[TIMESTAMP] Speaker 093: The design and development this goals. So you need to like this is a different model. We can park this item. I'll come back to you on this design design module. Okay. Okay.
+[TIMESTAMP] Speaker 008: Okay. My order adapt is about a audit program.
+[TIMESTAMP] Speaker 093: Yeah.
+[TIMESTAMP] Speaker 008: Okay. I'm going to share with you my screen.
+[TIMESTAMP] Speaker 093: Thing. Okay. Sure.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: Okay. I moved to sorry. I hear. I moved to audit.
+[TIMESTAMP] Speaker 008: Audit problems.
+[TIMESTAMP] Speaker 008: In
+[TIMESTAMP] Speaker 008: Okay. For example, I'm going to
+[TIMESTAMP] Speaker 008: Create a new one. Um
+[TIMESTAMP] Speaker 008: Okay. First is like I create that calendar. Okay. Yeah. I
+[TIMESTAMP] Speaker 008: Put the calendar.
+[TIMESTAMP] Speaker 008: And then for example, ER
+[TIMESTAMP] Speaker 093: You don't need unless you have divisions, you don't need the divisions that you have just one location, right? Or do you have different locations?
+[TIMESTAMP] Speaker 008: One.
+[TIMESTAMP] Speaker 093: Okay. Then leave it to all those things that you don't need to worry about that.
+[TIMESTAMP] Speaker 008: Okay. And I say save
+[TIMESTAMP] Speaker 008: And it's because it said that. And it's because I can the calendar if I remove the calendar, I can save
+[TIMESTAMP] Speaker 093: Okay. I'll make a note on that. I'll see the calendar should be shared or something. I'll see again. Unless here the reason for calendar is there are if you could as a if you're using [CRM_PLATFORM] or not, you can have multiple calendars. Okay. One calendar for at one calendar, for sales, one calendar for something. That's why it is there. If you're using one if only you are using audit management, you don't need really calendar is really not needed.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay. So here I
+[TIMESTAMP] Speaker 008: Okay. Here. I summit for approval.
+[TIMESTAMP] Speaker 008: Yeah.
+[TIMESTAMP] Speaker 008: But
+[TIMESTAMP] Speaker 093: But did you know
+[TIMESTAMP] Speaker 008: Scope on? Okay. I add scope.
+[TIMESTAMP] Speaker 008: ER I create audit criteria. Okay, document?
+[TIMESTAMP] Speaker 008: I
+[TIMESTAMP] Speaker 008: Say, I create the audits, for example, the audits. I going to create one.
+[TIMESTAMP] Speaker 008: Title test.
+[TIMESTAMP] Speaker 008: Auditory site.
+[TIMESTAMP] Speaker 008: Uh
+[TIMESTAMP] Speaker 008: Here, I can't write anything. I auditor. I don't know why.
+[TIMESTAMP] Speaker 008: Doesn't
+[TIMESTAMP] Speaker 008: Anything up here?
+[TIMESTAMP] Speaker 093: I think it could be coming from once again. The I know why. Give me one second.
+[TIMESTAMP] Speaker 093: Say lead auditor, it's coming from and it should be let's say if there is a setup or setting that is enabled, I'll just confirm one second. I'm in your system 2 2 2.
+[TIMESTAMP] Speaker 093: Once again, I'm just checking something. Okay.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Okay. No. Say lead auditor. I believe it is coming from the category. What categories do you have audit categories? Gonna click on the dropdown?
+[TIMESTAMP] Speaker 093: Audit categories?
+[TIMESTAMP] Speaker 093: Or the second one. The second at the top the second field on the left.
+[TIMESTAMP] Speaker 093: Yeah, those are the categories. Can you cancel this?
+[TIMESTAMP] Speaker 093: Can you cancel this, please?
+[TIMESTAMP] Speaker 093: Can you go to job functions?
+[TIMESTAMP] Speaker 093: So the lead auditor comes from in a
+[TIMESTAMP] Speaker 093: If you open the job function, can you click on that?
+[TIMESTAMP] Speaker 093: Do you see the available in a audit categories? Okay. Okay. They need to be qualified to perform that work perform that activity.
+[TIMESTAMP] Speaker 008: Okay. Okay.
+[TIMESTAMP] Speaker 093: So that's why you do not see them, but again, you need to make sure that the lead auditor is qualified. Okay. If they're not qualified, then they will you will not they will not become a lead they're not available to choose or being a leader or a lead auditor.
+[TIMESTAMP] Speaker 093: But you're not qualified, right? You need to make sure that you are qualified.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 008: So no, yes. No.
+[TIMESTAMP] Speaker 093: You cannot remember you need to finish all your training for you to be a lead auditor.
+[TIMESTAMP] Speaker 093: So the way it works, Speaker 008 is that whoever is a qualified on the qualified meaning the certified on the job function, they will be the lead auditor. Okay. If you want to choose somebody, let's say if you go back to the job function.
+[TIMESTAMP] Speaker 093: Okay. Now you need to for if your site is deleted, right? Like auditor audit category, can you cancel it?
+[TIMESTAMP] Speaker 093: Can open the job function. Yeah. In this the personal job function, the unit there is no personnel. There is a you need to add that person. Can you click on a new personal job function? Can you add your name there?
+[TIMESTAMP] Speaker 093: Make it active.
+[TIMESTAMP] Speaker 008: That one
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Now, yes.
+[TIMESTAMP] Speaker 093: Now, you can go now you can see it, yeah.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Okay. That's because it will only show the people who are qualified to do the that category of an audit if they're not qualified, then they won't be shown
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: Okay. So now I saw it for Apple one, right?
+[TIMESTAMP] Speaker 093: Yes. Now you can submit for approval, that is correct.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: Okay. And this is another problem and is this that I see the report? and it's like
+[TIMESTAMP] Speaker 008: They appear
+[TIMESTAMP] Speaker 008: Under
+[TIMESTAMP] Speaker 093: Okay. It looks like the same problem that is happening in the print option. Okay. I will take a look at that.
+[TIMESTAMP] Speaker 008: Okay. And then okay. Now I approve
+[TIMESTAMP] Speaker 008: Yeah.
+[TIMESTAMP] Speaker 008: I approve and now, this move to in progress, correct? And I stop there right until I complete the audit or no? Okay.
+[TIMESTAMP] Speaker 093: Yes. When you're ready to when you're ready that all the audits are done in the program, you can complete the program.
+[TIMESTAMP] Speaker 008: Okay. So now I moved to audits.
+[TIMESTAMP] Speaker 093: Yes. Now, if you actually there are 2 things you can do that one is now, if you go to schedules, can you click on the now you can go to the calendar. Can you click on the app launcher? Just to show you how you can see it, right? type in a calendar audit calendar view?
+[TIMESTAMP] Speaker 093: It's coming up now, but give it a second first time.
+[TIMESTAMP] Speaker 008: We don't.
+[TIMESTAMP] Speaker 008: Know.
+[TIMESTAMP] Speaker 008: No test.
+[TIMESTAMP] Speaker 093: Now, now, you can see when is the you can remove that program, you don't need anything, just click on schedule view or you can do uh
+[TIMESTAMP] Speaker 093: When is the calendar? When is the audit start remove that it says today to tomorrow today? We need to remove that filter it out
+[TIMESTAMP] Speaker 093: It's just to show you right when it
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 093: It started put today's date and put December date. Is the this one though today? Did choose eleven, eleven, 20 20 five?
+[TIMESTAMP] Speaker 093: And then choose December 31st end date or 20 26. Yeah, that's fine.
+[TIMESTAMP] Speaker 093: Do you know when is the next audit date? What was the audit date that you created? No.
+[TIMESTAMP] Speaker 008: It was in
+[TIMESTAMP] Speaker 008: In fact.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: When we go to not showing you November, go to next in the calendar and you'll see again how to see it or click on spreadsheet view. There is a button called spreadsheet view, you can click on that and then it will show you when it is when it is scheduled or something like that. Let's go back to the audit. I don't know why it's not coming up. Let's take a look at it. Okay.
+[TIMESTAMP] Speaker 008: I but I can't test another one, one moment, yeah.
+[TIMESTAMP] Speaker 093: I'll leave the audit program blank there, leave the audit program blank and then see it though.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Long
+[TIMESTAMP] Speaker 008: It's in black. I don't know why.
+[TIMESTAMP] Speaker 093: No, no. Can you go back to audit program?
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker 093: Yeah, test. Yeah.
+[TIMESTAMP] Speaker 093: Click on audits.
+[TIMESTAMP] Speaker 093: Can I click on audit six?
+[TIMESTAMP] Speaker 093: Scroll down.
+[TIMESTAMP] Speaker 093: The if you see the start date is 20 20 go up a little bit.
+[TIMESTAMP] Speaker 093: Date is 20 25. That's why.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: I but now is
+[TIMESTAMP] Speaker 093: That okay. Continue. That's okay. That no worries. Okay.
+[TIMESTAMP] Speaker 008: But I can change
+[TIMESTAMP] Speaker 093: Okay. That's okay. That's fine. Because it's scheduled or not a problem. You can confirm it.
+[TIMESTAMP] Speaker 008: So I moved to calendar.
+[TIMESTAMP] Speaker 093: No, that's okay. You don't need to go to calendar. That's okay. We'll come back to the calendar later.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay. And then in okay. Here in audit?
+[TIMESTAMP] Speaker 008: I don't know if you can show me a little the flow because I was trying to understand and I'm not able
+[TIMESTAMP] Speaker 093: Sure. Okay. Let's go to audit number 6.
+[TIMESTAMP] Speaker 093: Audit number 6 that you just created? Okay. You created an audit and you schedule it. Okay. Now, you need to confirm the adage see if you on the right hand side, it is asking you to confirm the adage. Okay.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: Now, initiate.
+[TIMESTAMP] Speaker 093: Now, you see, let the flow is like this, right? You scheduled it. You confirmed it saying that yes. I'm confirming think about you scheduled 3 months before and you confirm it one week before that? Yes, I'm coming on. Now you when you're initiating the audit, meaning I'm starting the audit. Okay. Beginning the audit. I'm walking in the lab. I'm walking in the field. I'm asking questions. That is what this audit means. Okay. If you got it.
+[TIMESTAMP] Speaker 008: Yeah. Okay. Audit checklist.
+[TIMESTAMP] Speaker 093: There is nothing did you create any checklist in the criteria?
+[TIMESTAMP] Speaker 093: Can you click on the details?
+[TIMESTAMP] Speaker 008: I think no, that's okay.
+[TIMESTAMP] Speaker 008: No, I tried to understand the audits, but I can understand
+[TIMESTAMP] Speaker 093: No worries. Click on the audit checklist. I'll walk you through another time in the next meeting. Click on one checklist, click on new checklist.
+[TIMESTAMP] Speaker 093: You create one one question here. Okay. Let's say so 4 point one management review or objective, you can create one one example there.
+[TIMESTAMP] Speaker 008: And these or is this
+[TIMESTAMP] Speaker 093: What is your result, right? Whether it is yes. No, true false. Confirming non confirming. You can decide how you want the answers to be. Okay. Okay.
+[TIMESTAMP] Speaker 093: You don't need that right now. Click on save.
+[TIMESTAMP] Speaker 093: So this is your question that you want to ask, right? Yes. Now, you can do 2. You can ask the question, you can contact that it, 2 ways. Okay. One is you are an auditor, you come to this screen. Okay. And if you scroll up a little bit
+[TIMESTAMP] Speaker 093: There is an option. Click click on the dropdown next to edit button.
+[TIMESTAMP] Speaker 093: And then click on rapid audit.
+[TIMESTAMP] Speaker 008: You
+[TIMESTAMP] Speaker 093: In here you can see there is a checklist there limit payers non conformance or not. And then you can go to the results there is if you click on the result field all the way to the right.
+[TIMESTAMP] Speaker 093: You can choose whether it is a pass or fail. Okay. And give a reasoning for that. And let's say if it fails, okay, you can expand that on the all the way to the left. There is an attach a link next to the attached. There is a small arrow. You can expand that arrow.
+[TIMESTAMP] Speaker 093: Go all the yeah. No, no below that.
+[TIMESTAMP] Speaker 093: You can add a picture. Let's say you took a picture or something add a picture or add an objective evidence or if it is a failure, you can add a
+[TIMESTAMP] Speaker 008: Finding
+[TIMESTAMP] Speaker 008: Okay. I
+[TIMESTAMP] Speaker 093: Not the open the checklist.
+[TIMESTAMP] Speaker 093: Yes. Next to attach there is a button open that
+[TIMESTAMP] Speaker 093: Next to attach on the left hand side the one that you have just opened up to the
+[TIMESTAMP] Speaker 008: Left
+[TIMESTAMP] Speaker 093: No, no. To the left. All the way there is an arrow click on the arrow button to the left of attach.
+[TIMESTAMP] Speaker 008: Yes, here.
+[TIMESTAMP] Speaker 093: Yes. Click on that. Yes. Go to finding.
+[TIMESTAMP] Speaker 093: And add a finding for that problem.
+[TIMESTAMP] Speaker 008: At 5. Okay.
+[TIMESTAMP] Speaker 093: See there are 2 types of findings. One, you're adding a funding for the failed checklist. Remember, you're asking 10 questions? Okay. Question. Number one. Good question. Number 2 bad. When you add a finding for the question number 2 that the employee did not know the the employee did not know how to do how to attach and something okay. That is what you're creating a finding.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Or you can always add another finding, which is in the bottom. It could be not a checklist finding, but it could be something unrelated to checklist. The employee was was a late employee like I did not show up on time. An employee was not dressed correctly. You can add a finding there, which is not related to a checklist.
+[TIMESTAMP] Speaker 008: Yeah. No.
+[TIMESTAMP] Speaker 093: Yeah, there that's correct.
+[TIMESTAMP] Speaker 093: Yeah. Okay. Makes sense. Yes. This is how you conduct an audit. And there is also one more capability where you can do go ahead and click on add the finding type on go head and click on save now.
+[TIMESTAMP] Speaker 093: Sorry, I said add the finding type for the second one. The second another findings. You did not add the finding type. Can you yeah, delete the third one.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Okay. No safe. Yes.
+[TIMESTAMP] Speaker 093: Okay. Understood. There is one more option in the system. Rapid audit is one option. The second option is so you see there is a checkout button. Yeah. Okay. You can check out the audit and then you can work offline if you want to. Okay. On your mobile okay. Or you can work or we can work in the system system as well. Okay. Okay. So now, I think the logical thing, right? You created an audit, you confirmed it. You asked a question and you recorded the findings. Okay. The next question is, you need to make sure that can you click on the findings on the left hand side, there is a finding there.
+[TIMESTAMP] Speaker 093: Remember you created 2 findings? Okay. Socio, socio, I don't know how to say and another finding. Okay. Can you click on 0 0 one?
+[TIMESTAMP] Speaker 093: Remember as an auditor, you need to think it. Is it a minor finding? Is it a major finding? Okay. This is like a cap on now like a mini cap. Okay. Can you go to the workflow now?
+[TIMESTAMP] Speaker 093: Okay. You can choose do I require the response from my [HR_SYSTEM]?
+[TIMESTAMP] Speaker 093: Okay. Do I need a containment for this, though? I might do expect an investigation for this particular for this particular finding, you can decide based upon the finding
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Sometimes finding could be just a small finding. You're hitting them saying that they don't do this, but you're still recording it. Again, sometimes you may say, you know what, I need a finding, I want you to investigate why this failed.
+[TIMESTAMP] Speaker 008: Okay. Makes sense. Yes.
+[TIMESTAMP] Speaker 093: So, now, if you go back to the audit now, remember you have 2 findings, right? So one finding is this. There was another finding if you click on the audit number 6 at the top or you can go back and then click on the second one. I'm sorry, the 0 0 zero, you already solved
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Was saying. So now you are 2 findings. Now, you want to make sure that you want what do you want for each finding? Because every finding is important, right? So yes, you need to take a look at it. Now, if you go back to the audit as an auditor, if you're happy with your work. Now, what you're doing is you on the right hand side, you can see there is a generate report, you are generating a report. Okay. Saying that my audit is complete, this is my audit report that you want to share it with your management or share with your manager or somebody
+[TIMESTAMP] Speaker 093: This it shows you audit number six, scroll down. It'll show you the scope. Okay. Then findings there were 2 findings. Remember there were 2 findings. Okay. And you now scroll down
+[TIMESTAMP] Speaker 093: Any notes that you add, this is your audit report.
+[TIMESTAMP] Speaker 093: Okay. Okay. Then you submit for audit for, if you want to approve right 2 options, either you can send the report for approval or you can say that my audit is done.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Okay. Go to click on save.
+[TIMESTAMP] Speaker 093: What this means is that as an auditor my work is complete audit. I created I contacted audit the 2 findings. My work is done.
+[TIMESTAMP] Speaker 008: Okay. And instead of create a cap for it finding, it's possible to create a cap for just for the audit in general?
+[TIMESTAMP] Speaker 093: Scratch. So but everything comes through findings. Okay. Now you have as an auditor, you finished your job? Okay. Now
+[TIMESTAMP] Speaker 093: The auditing will have to respond to those findings. Remember you had 2 findings? Okay. You're auditing. Once you complete your you complete your audit saying that my job is done. Yes. Now, the audit will now come and respond to those findings.
+[TIMESTAMP] Speaker 008: Okay. One moment.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Understood. Now you're a response, the audit. Okay. Before you do that audit will get a message that they need to respond to the findings.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Okay. Now, there are 2 findings. Each finding could be assigned to different auditing. Okay. But in this case, both the findings are same person [PERSON]. Okay, yes. Now [PERSON] will have to like a complete the findings and then submit the response. Okay. Click on submit the response so that, you know what it comes
+[TIMESTAMP] Speaker 093: See if you see this is very similar to your the non confirming and cap a module. Okay. If you see the response click on, there is a button called build a response.
+[TIMESTAMP] Speaker 093: Do you see this is very similar to the cap a module, right? Yes. Currency module. Why did the finding happen? Why what who was responsible the findings? How do you do connect the findings? Okay. What is the root cost for that? Okay. What is the root cost for the finding? You can now go and define all those things.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Am I making sense? Am I clear? Okay. Yes.
+[TIMESTAMP] Speaker 093: So this is for first finding, okay. Then you can click on save on next and add your action plans.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Am I clear? So this is for one finding finding 0. Remember, there are 2 finding
+[TIMESTAMP] Speaker 008: Okay. It's here. You need.
+[TIMESTAMP] Speaker 093: To do for the second finding now.
+[TIMESTAMP] Speaker 008: But this is faster, right?
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 008: Because it's minor.
+[TIMESTAMP] Speaker 093: Yes, it's minor. That's correct. Yeah. Okay.
+[TIMESTAMP] Speaker 008: Now, the response
+[TIMESTAMP] Speaker 093: Now, if you see on the left hand before we do that on the left hand so you can see finding 0. It says ready. Okay, if you see the small button called is ready on the right. Okay.
+[TIMESTAMP] Speaker 093: Ready and if finding 2 is finding one also is ready. Okay. Okay. Because now you can, let's say okay. My work is done. Okay. Now something that responds.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Understood. Now, the fine now. The [PERSON] s work is sent for approval. Okay. Now, if you go back to the audit record, remember your 10 [PERSON] work is done now. If you go up, scroll up and go back to the audit record now.
+[TIMESTAMP] Speaker 008: Here.
+[TIMESTAMP] Speaker 093: Or go to home screen.
+[TIMESTAMP] Speaker 093: Click on the home button or go to audit, whichever way you want to go.
+[TIMESTAMP] Speaker 093: Say now think about as an [PERSON] now. [PERSON], again, [PERSON] is doing both right now as an audit auditor. My I did my audit. I complete my audit. I raised my findings. I completed the audit. It went to [PERSON] for her to respond to the findings. Now, [PERSON] sent it back to you to approve them.
+[TIMESTAMP] Speaker 093: Okay. You may like it and you may not like it if you don't like it, you're going to reject the finding saying that. I don't like your finding. I mean, I don't like your response. You said root cause is user error, but it's not user error root. Cause is something you can approve or you can reject based upon your based upon or as an approval.
+[TIMESTAMP] Speaker 008: Different destinations.
+[TIMESTAMP] Speaker 093: Looks like there is one problem that I'll take a look at that. I don't want the problem is, but
+[TIMESTAMP] Speaker 008: Okay. So now
+[TIMESTAMP] Speaker 093: So now you're approving the work. Do you like the work if you like it you approve it if not you reject it. Okay. Once you approve the work, then it will get a message to complete the action. Remember this nothing but capital. What you're doing now is mini cape. Now, you're not in the cap a module, but you're doing a mini cape within within within an audit module.
+[TIMESTAMP] Speaker 093: If you had an action plans then as an audit, you need to complete those actions.
+[TIMESTAMP] Speaker 008: But here is if I selected
+[TIMESTAMP] Speaker 008: Speaker 307, thank you.
+[TIMESTAMP] Speaker 008: Okay. I have an implement, but only if I select cap, right? Yes.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: If you think you're already doing a mini cap, okay. Yes. Yes. In the system mine cap, if you want that to combine into or I want to go to the cap a module, you can combine findings and go to cap or you can escalate that to cap cap if you want.
+[TIMESTAMP] Speaker 008: To come close.
+[TIMESTAMP] Speaker 093: Okay. Now you are closing an audit saying that everything is complete. If the audit would also be open if there were any action plans, since you did not define an action plans, it is letting you to close, okay. It's asking you. Do you want to do any follow up audit 30 days from now and things?
+[TIMESTAMP] Speaker 008: Like that. Okay. Okay. And now I can close the audit program too, right? Yes. That's correct. Yeah. Okay.
+[TIMESTAMP] Speaker 008: Okay. So now I moved to audit program, right?
+[TIMESTAMP] Speaker 093: You can go to audit program and you can see there, yeah.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 008: This one
+[TIMESTAMP] Speaker 008: Can I
+[TIMESTAMP] Speaker 093: No, wait. It's still catching up. It should show you, can you go to audit?
+[TIMESTAMP] Speaker 093: No, I'm sorry in the audit program. Go back to audit program.
+[TIMESTAMP] Speaker 008: Oh, okay.
+[TIMESTAMP] Speaker 008: Yeah.
+[TIMESTAMP] Speaker 093: Open the audit program. If you see it is complete. Now, it was taking some one minute for it to update if you open that number audit program now.
+[TIMESTAMP] Speaker 093: 3 open the audit program now number audit program, the test?
+[TIMESTAMP] Speaker 008: Test okay. Yeah.
+[TIMESTAMP] Speaker 093: See, now it is complete. It took one minute for it to complete okay. Since all the audits and audit program is closed, audit program got completed. Now you can close the program.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: The
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay. So
+[TIMESTAMP] Speaker 093: At least you if you're comfortable great. If you're not comfortable, I recommend you to you can attend the university for audit so that you learn the whole thing. But if you're comfortable, I know you are so good in the system though. I'm like, wow, she knows so many things and you are so fast in it, but if you want to see the verity, you can do it.
+[TIMESTAMP] Speaker 008: Yeah, I'm going to attend the document.
+[TIMESTAMP] Speaker 008: I don't know how to say, but yes.
+[TIMESTAMP] Speaker 008: I'm trying to learn
+[TIMESTAMP] Speaker 093: Of course. Yeah. Yeah.
+[TIMESTAMP] Speaker 008: Okay. And I think I don't yeah, I don't have more more data.
+[TIMESTAMP] Speaker 093: I'll take my action item to take a look at the reports. All the reports are not getting generated.
+[TIMESTAMP] Speaker 008: Yes, yes.
+[TIMESTAMP] Speaker 093: So I'll address that and then we can connect tomorrow. Okay.
+[TIMESTAMP] Speaker 008: Okay. I'm asking you about the
+[TIMESTAMP] Speaker 008: Model.
+[TIMESTAMP] Speaker 008: The risk, yes.
+[TIMESTAMP] Speaker 093: I will follow up with [PERSON] on that. Yes. I
+[TIMESTAMP] Speaker 008: Will follow up. Yeah, because yeah. Okay. And I think that's so because I need to to test complaints something that I don't use it. I have never used it. So
+[TIMESTAMP] Speaker 008: For the moment, I have never used in my system, so I don't know. I didn't testing is because I don't know how
+[TIMESTAMP] Speaker 093: We can connect and we can walk through it. Okay. Yes.
+[TIMESTAMP] Speaker 008: Okay. Um
+[TIMESTAMP] Speaker 008: Okay. I think tomorrow, I'm going to to try to make an immigration in sandbox. Okay. I can ask you my tabs later in the mission. Yeah. Okay. Nice. Okay.
+[TIMESTAMP] Speaker 093: Thank you.
+[TIMESTAMP] Speaker 008: Okay. Bye. Thank you. Bye.
+
+
+====================================================================================================
+Title: Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 987.81
+====================================================================================================
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Hello.
+[TIMESTAMP] Speaker: How are you doing?
+[TIMESTAMP] Speaker: Fine. Hey, Speaker 008. Thank you.
+[TIMESTAMP] Speaker: We're waiting for Speaker 093 still. Um
+[TIMESTAMP] Speaker: Gina might be a little be late running meeting, but hopefully [PERSON] with this shortly.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: I said we're just waiting for Speaker 093 Joanna is running a bit late, but they should be with [COUNTRY] shortly.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Let me find out where he is. I'll be right back.
+[TIMESTAMP] Speaker 008: Okay. Perfect. I was here.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Right. [PERSON]. I don't know where they are. But we can have a quick update here while we're waiting. I understand you're looking for pricing for what we would call [PRODUCT_SUITE], which is the functionality the support.
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker: Okay. I've submitted my pricing for approval. I'm just waiting for that to come back as soon as I got it. I'll send it over for you.
+[TIMESTAMP] Speaker 008: Okay. Perfect.
+[TIMESTAMP] Speaker: So in general terms, how's how's how's how's the progress you're making so far? I've been seeing the emails and the updates from everyone. Is there anything urgent that we need to be aware of? Okay.
+[TIMESTAMP] Speaker 008: No. I have just on modules in some work and I ask my 10 to Speaker 093. And then Speaker 093 is teach me how to migrate documents. Now, I'm waiting for the to teach me the integration for suppliers and equipment.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 008: And yes. That's all.
+[TIMESTAMP] Speaker: Okay. So Speaker 093 s support is nothing outstanding that we're not delivering for you at the moment. Other than the work that you're gonna have to do to migrate the information, right?
+[TIMESTAMP] Speaker 008: Yeah. I'm testing how to migrate, for example, documents in sandbox and I'm waiting for to have the
+[TIMESTAMP] Speaker 008: The production environment finished and when Speaker 093 advise me that everything is okay I will start migrating documenting in in production environment okay all right good
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Well, I've got nothing more to review. I mean, I'm obviously not a technical person. Is there any questions or any asks you have that I can assist while we're waiting for you to go through the testing on the sandbox?
+[TIMESTAMP] Speaker 008: But I would like to know, but I don't know if you are going to know when and when is going to be ready, the production environment.
+[TIMESTAMP] Speaker: Okay. Let me just step I can quickly find out while we're together. Um
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Hi. Hey, yeah. So sorry I
+[TIMESTAMP] Speaker: Dividing myself is plating myself.
+[TIMESTAMP] Speaker: How's everyone today?
+[TIMESTAMP] Speaker: Yeah. All good. Um
+[TIMESTAMP] Speaker: She's going through the testing in the sandbox and we've spoken about I'm waiting for pricing to be approved and the question
+[TIMESTAMP] Speaker: When
+[TIMESTAMP] Speaker 008: Sorry.
+[TIMESTAMP] Speaker: He was asking when production would be available or as an environment
+[TIMESTAMP] Speaker: Got it okay that's a great question though that will be a Speaker 093 question most likely I think it's once we get all this testing done I think that's when we can proceed to production
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: So we've got to confirm testing successful, right?
+[TIMESTAMP] Speaker: Okay. Cool.
+[TIMESTAMP] Speaker: Yes. Um
+[TIMESTAMP] Speaker: [PERSON], is that your understanding too?
+[TIMESTAMP] Speaker: Sorry.
+[TIMESTAMP] Speaker: The production environment Joanna was just saying will be available once. All the testing is done in the sandbox.
+[TIMESTAMP] Speaker 008: Okay. Yeah. I just all models in sandbox and I think I'm waiting for Speaker 093 to
+[TIMESTAMP] Speaker 008: To fix something that was not okay and yes and also Speaker 093
+[TIMESTAMP] Speaker 008: Task to teach me how to be equipment and suppliers and accounts.
+[TIMESTAMP] Speaker: Yeah and we have a scheduled call next week yeah we're extending the schedule we move it for SaaS today and we will meet with him and he will we will ensure that we'll go over that with you [PERSON] from my understanding the things that are pending from our end and then the issues that are still pending to resolve are the printing error that you get correct as well as the enabling the AI
+[TIMESTAMP] Speaker 008: For example, they enable sigma to to
+[TIMESTAMP] Speaker: Enable the digital signature.
+[TIMESTAMP] Speaker 008: I don't know more about, for example, I remember something similar to
+[TIMESTAMP] Speaker 008: [COUNTRY].
+[TIMESTAMP] Speaker 008: And then we print, for example, in in audit.
+[TIMESTAMP] Speaker 008: Well print yes, but I don't know.
+[TIMESTAMP] Speaker: I'm sorry. Can you come again in regards to the audits?
+[TIMESTAMP] Speaker 008: And business.
+[TIMESTAMP] Speaker 008: [PERSON], please.
+[TIMESTAMP] Speaker: No. You mentioned something about audits and I couldn't hear you. Could you come again? Could you repeat your
+[TIMESTAMP] Speaker 008: Yeah no no but I can't remember I remember something went wrong I think in August but it was I remember Speaker 093 told me that this is something similar to print because it's like the it's not the system it's not able to to create like an inform or something like that but he told me that something similar to print
+[TIMESTAMP] Speaker 008: I think
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 008: Yeah, I can't remember now.
+[TIMESTAMP] Speaker: Okay. Yeah, yeah. I will we will circle back with him on that. Maybe you can walk [COUNTRY] through a word. This scenario is so we can look into it. But yeah, I do have those other those items that we just recently spoke about. And then we should be tackling the migration of showing you how to do the migration of the equipment and the accounts and the suppliers hopefully next week. But apart from that, is there anything else pending?
+[TIMESTAMP] Speaker 008: I think no.
+[TIMESTAMP] Speaker: Speaker 307 I got to share with you. Speaker 008 is becoming a pro in doing a migration of documents. She already has done some migration of documents.
+[TIMESTAMP] Speaker: You deserve a certificate, right?
+[TIMESTAMP] Speaker: I should.
+[TIMESTAMP] Speaker: Work.
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker: Yes. So
+[TIMESTAMP] Speaker 008: Documents, yes.
+[TIMESTAMP] Speaker: That's good. And then I replied back to you is in regards to the training. So once Speaker 139 will be assisting [COUNTRY] in signing you up for the class and once you know, make a decision on the other 2 which one out of those 2 we'll go ahead and share with schedule.
+[TIMESTAMP] Speaker 008: Yeah. I mean, I'm going to to because I know how it works non conformance and caps, but not not as well as document or change control. So I'm going to see one. I have more data. So I will apply for one of 2.
+[TIMESTAMP] Speaker: Okay. Perfect. So once you know, let [COUNTRY] know and then we'll be happy to assist you with that. Okay. And then tomorrow's call will be canceled, right? And then we'll resume Monday at the same time. And that's pretty much what we have from our end. Anything else from your side before we go?
+[TIMESTAMP] Speaker 008: For my side. Okay.
+[TIMESTAMP] Speaker: All right. And then of course, the pricing we will soon as we have it available, okay. With you?
+[TIMESTAMP] Speaker 008: Yeah. Okay. Perfect.
+[TIMESTAMP] Speaker: Thank you. Alright everyone. Well, thank you so much for joining today's call. Okay. Have a wonderful day.
+[TIMESTAMP] Speaker: Thank you. So the good work Speaker 008.
+[TIMESTAMP] Speaker 008: Thank you.
+[TIMESTAMP] Speaker: Thank you. Bye bye.
+[TIMESTAMP] Speaker: Bye. Bye.
+
+
+====================================================================================================
+Title: Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 756.0
+====================================================================================================
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker 093: Hello.
+[TIMESTAMP] Speaker 093: Hi, [PERSON]. Good afternoon. Hi, [PERSON].
+[TIMESTAMP] Speaker 008: Hi.
+[TIMESTAMP] Speaker: All righty.
+[TIMESTAMP] Speaker: Before we start any any questions or issues Alysia from yesterday?
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 093: So Speaker 122, just so you might have heard the in the recording and all those things. So [PERSON] is asking the timeline for the production. Okay. So [PERSON], I'm sort of like I need to share the IQ documentation with you. I will do that production. As I mentioned yesterday that I have initiated I remember the packages that you are configured. They are in the system that in the development we need to from [CRM_PLATFORM]. We are using [CRM_PLATFORM], [CRM_PLATFORM] needs some it's called as a test classes. So we need to write the automated testing classes. Otherwise it won't let [COUNTRY] go into the production. Okay. We are we are wrapping them up. As soon as I wrap them up. We'll have the package and we'll move it into production.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Okay. Otherwise I just sent I sent you a CSV file. I'm sorry, I spent about 2 hours thinking what is wrong, but then I realized the column name should have been different. So the system was checking for some other column and giving me errors. I was thinking what's happening. So I changed it. So now you have 2 CSV, one the account and supplier. So we need to bring all the accounts and we need to bring all the suppliers. Okay.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: And if you can give me the list of the people on the roles.
+[TIMESTAMP] Speaker 008: Yes. Sorry. Yeah. I need to do it.
+[TIMESTAMP] Speaker 093: Yeah. No problem. Yeah, that's the next step.
+[TIMESTAMP] Speaker 008: It yes.
+[TIMESTAMP] Speaker 093: Yeah. The next step we need to do is the people on the roles and so that we can assign them the permissions.
+[TIMESTAMP] Speaker 008: Okay. Perfect.
+[TIMESTAMP] Speaker 008: And well, this morning I was testing well, I was testing training for something that I need and
+[TIMESTAMP] Speaker 008: I realized that I tried to create a new queue, but I don't know if in this version is different, but I'm not able to create the queue.
+[TIMESTAMP] Speaker 093: Okay. I can take a look at it.
+[TIMESTAMP] Speaker 008: Yes. And
+[TIMESTAMP] Speaker 008: Okay. For example. And I'm here. Yeah, in the action. Yeah. And here I say associate queue.
+[TIMESTAMP] Speaker 008: And um
+[TIMESTAMP] Speaker 008: I don't have any queue created.
+[TIMESTAMP] Speaker 008: So I click on new queue.
+[TIMESTAMP] Speaker 008: I'm not able to create
+[TIMESTAMP] Speaker 093: The honest. I do not. I was seeing that associate queue there. One second. Let me just check that. And I was saying that because we always create queues from from the setup. Okay.
+[TIMESTAMP] Speaker 008: He it's here to create the queue or
+[TIMESTAMP] Speaker 093: Go to set up.
+[TIMESTAMP] Speaker 008: And set up, yeah.
+[TIMESTAMP] Speaker 008: Okay. But uh
+[TIMESTAMP] Speaker 008: Okay. I'm here in queue. No.
+[TIMESTAMP] Speaker 093: Yes, the Tuesday, yes.
+[TIMESTAMP] Speaker 008: Yeah. But here
+[TIMESTAMP] Speaker 008: Where
+[TIMESTAMP] Speaker 093: So let me ask a question. What are you creating a queue for what?
+[TIMESTAMP] Speaker 008: For
+[TIMESTAMP] Speaker 008: For this job function.
+[TIMESTAMP] Speaker 008: Why?
+[TIMESTAMP] Speaker 008: I don't know. I don't understand. Well.
+[TIMESTAMP] Speaker 093: That's where the Q is needed. If you want to, let's say during approval. Okay, there are multiple that let me explain one at a time is needed to. First of all, Q meaning you are collecting in a bunch of people. Okay. And when you doing, let's say your control control document or a change order or non conformance or capital, when you do and let's say using queue for 2 reasons. Okay. One yeah. You can assign them to be like, an ownership, okay. That whoever belongs to the queue will own that number one. Okay. Number 2. When you go through approval process, you can assign the approval to a queue. Okay. So whoever is in the queue, the first person will can come and approve it that like you're not like, you don't need to send it to just one person, send it to a queue, whoever approves it. That's good. And the third one if you see there is something a ABC Corp bi non conformance, okay. That we are using for any time. I'm sorry, not non confirmation. One more call this. Uh
+[TIMESTAMP] Speaker 093: Interaction or something. Again, I'll get back. This is to notify people when something changes when something gets completed. Okay. That is the reason for the queue. You don't really need queue. If you don't want to notify everybody together, you don't need a queue there.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 008: Okay. Yes. Well, I don't understand. So
+[TIMESTAMP] Speaker 093: You do need when you need a queue when
+[TIMESTAMP] Speaker 093: You need a queue, you don't need a queue.
+[TIMESTAMP] Speaker 008: Okay. Okay. Okay.
+[TIMESTAMP] Speaker: Go, but if needed to be created, this is the screen where she would have gone to to create it. You'll click on you and then you take it from there, yeah.
+[TIMESTAMP] Speaker 008: Okay. Uh
+[TIMESTAMP] Speaker 008: Okay. Do you have sent to me the CSV for accountants player and I will try and for and I need it for equipment to
+[TIMESTAMP] Speaker 093: Equipment you whatever you sent me is good. You
+[TIMESTAMP] Speaker 008: Already package.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay. Uh, for my side, we can start well, I you I think you told me something at the beginning and I think I don't know if I understand well or not. But you told me yesterday that if I say yes from my side, you have 2 days to move to production, right?
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 008: Okay. Yes, from my side. I think it's okay. Because I have to test everything.
+[TIMESTAMP] Speaker 008: Yeah.
+[TIMESTAMP] Speaker 008: Um
+[TIMESTAMP] Speaker 093: Okay. Perfect. Okay. I have work to do as I mentioned, I have already started the packaging. Okay. Yes. So because if it was out of the box, you could have used it. Okay. We have made some changes. In change order there is a risk and then there is a extension and then you added a couple of fields in the a couple of places on conformance and all those things. That's why we need to just package them. Very simple. Not a problem at all. We'll package them and then we will we'll work on doing it in prod and you'll be good to go so by probably end of this week today's Tuesday, maybe when we meet again on Thursday or something like that Thursday or Friday. We can start loading people into your into production.
+[TIMESTAMP] Speaker 008: Okay. Perfect. So I'm going to make the list.
+[TIMESTAMP] Speaker 093: Yeah. In the meantime, start collecting 2 things. Make the user list. Okay. And then also start creating your master file that is the excel file. Okay. The first documents, the equipment, accounts, suppliers. Okay. And there is one more let me also do this. I'm gonna send you another another list here because we also need to start loading rep adding all your departments, right? Or adding all your defect codes, adding all your root causes. Okay. I'll send you the list.
+[TIMESTAMP] Speaker 008: Okay. Okay. Perfect. So if you send me the list this week, I will I can do it.
+[TIMESTAMP] Speaker 093: Yeah, I'll send you okay that I can tell them I'm done. Done, done. Yes, you have.
+[TIMESTAMP] Speaker 008: Like a checklist. Yeah. Okay. Nice. Yeah.
+[TIMESTAMP] Speaker 008: Okay. Nice.
+[TIMESTAMP] Speaker: All right.
+[TIMESTAMP] Speaker: And then we just have one more thing. Pending 2 was the installation documentation. Go just to confirm that the documents are good to go. And then I can share
+[TIMESTAMP] Speaker 093: That's in this one though. I just check, did you talk with wait on that? If it's right, I didn't get a chance to talk with beta study was not around.
+[TIMESTAMP] Speaker: Okay. I will reach.
+[TIMESTAMP] Speaker 093: Out to him. Again, just check with wade if the IQ can be shared with bid or not. Okay. Okay. And then we can send it out. Perfect. Okay.
+[TIMESTAMP] Speaker: And Speaker 008 more from our side in regards to Speaker 307 has sent you yesterday, the pricing
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 093: Okay. Yeah.
+[TIMESTAMP] Speaker 008: Um
+[TIMESTAMP] Speaker 008: No, I have to revise but because I'm new and I don't know how it is structured the other modules. I don't know if we pay like, a pack of modules with the others or not. I have to see, but I have the contract. So I will see
+[TIMESTAMP] Speaker 093: Any questions? Let me know and I can give you okay. The background to that.
+[TIMESTAMP] Speaker 008: Okay. Nice.
+[TIMESTAMP] Speaker 008: And about the um
+[TIMESTAMP] Speaker 008: The training that they have to choose one more. I will tell you because I have debt now because I don't know the training model is possible to
+[TIMESTAMP] Speaker: Sure. That could be your third third module that is part of what we have mentioned. I have to check with my team. The training schedule for that.
+[TIMESTAMP] Speaker 008: Okay. I have to say because uh
+[TIMESTAMP] Speaker 008: I think it's not very difficult, but I have more the module, which I have more difficulties is with this one. I don't know why, but I don't understand well. So maybe it's a good idea to have training with this module to understand better. But I don't know, I tell you this week. Okay.
+[TIMESTAMP] Speaker: Sure. As soon as you're just in the meantime check on the schedule what that looks like with our department. Absolutely.
+[TIMESTAMP] Speaker 008: Okay. Nice.
+[TIMESTAMP] Speaker 093: All right. Okay. I have some work to do. Let me go get the package ready. Okay.
+[TIMESTAMP] Speaker 008: Okay. Thank you.
+[TIMESTAMP] Speaker: All right. Thank you, everyone. Have a great day. Bye.
+[TIMESTAMP] Speaker 008: Bye. Bye.
+[TIMESTAMP] Speaker: Bye. Bye.
+
+
+====================================================================================================
+Title: Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1128.39
+====================================================================================================
+[TIMESTAMP] Speaker: Morning Speaker 093.
+[TIMESTAMP] Speaker 093: Speaker 122.
+[TIMESTAMP] Speaker: I'm okay.
+[TIMESTAMP] Speaker: Speaker 008 has message, me. Well 2 things. I heard [COUNTRY] wait for the IQ to confirm if the link and if those were the correct and if I can share those
+[TIMESTAMP] Speaker: He said he was going to check. Okay. I had asked him again because she sent me some other documents and like a screenshot. I had shared that with wade and I had asked her to please send me the actual document because that's what he requested. And also she has some questions I had that we can we will go over that with you.
+[TIMESTAMP] Speaker: And a question she has all related to go. Go ahead and made her real quick before custom [CRM_PLATFORM], configurations, risk and extensions of fields.
+[TIMESTAMP] Speaker 093: I'm sorry, I didn't understand.
+[TIMESTAMP] Speaker: Sure. She has questions.
+[TIMESTAMP] Speaker 093: So why don't you let her in? We can
+[TIMESTAMP] Speaker 093: Yeah.
+[TIMESTAMP] Speaker: Hi Speaker 008.
+[TIMESTAMP] Speaker 093: Speaker 008.
+[TIMESTAMP] Speaker 008: Hello.
+[TIMESTAMP] Speaker: So Speaker 008, I was just trying to bring [SOFTWARE_VENDOR] to speak on your message. In regards to your question that you have.
+[TIMESTAMP] Speaker: To understand about custom [CRM_PLATFORM] configurations, referring specifically to risk and extension fields that has been added to change order and non performance records.
+[TIMESTAMP] Speaker: You would like to understand how that works.
+[TIMESTAMP] Speaker 093: I don't remember non conformance. The extension the non conformance. Let me take a look at it. I know we have extended the we have added into the change order, but not the non conformance though.
+[TIMESTAMP] Speaker 008: But yeah, but I would that
+[TIMESTAMP] Speaker 008: Now, I can't remember I would what is it?
+[TIMESTAMP] Speaker 008: To me, yes.
+[TIMESTAMP] Speaker 008: A lot of things. So finally sometimes I forget things.
+[TIMESTAMP] Speaker 093: So you had I'm gonna share my screen. Okay. So there was a configuration where out of the box just as an example. Okay. Out of the box in cape. Okay. In cape you raise actions, right? Saying corrective action, primitive action? Okay. You assign them to me saying that to Speaker 093 please complete the corrective actions with a due date. I can come and ask you. Hey, I'm not ready. I'm sorry, I need more time then I can request an extension.
+[TIMESTAMP] Speaker 093: Okay. Now, that feature you wanted it in when we were when we implemented version ten, remember in the previous version? Okay. When we implemented version ten, you wanted it that. I want 10 we want an extension request in the change order.
+[TIMESTAMP] Speaker 093: Okay. We configure that extension request in the change order so that you can request for you can say that I want more time on things like that.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Okay. That is the configuration that is being done. So when you go to complete your change order, you will see an option called you can request an extension saying that, hey, I need more time. Can you give me more or something like that?
+[TIMESTAMP] Speaker 008: Okay but I think this is the same in cape right
+[TIMESTAMP] Speaker 093: Cap, it's out of the box. Okay. We do not have the change management and non confirming it's not there. We had to custom develop for you.
+[TIMESTAMP] Speaker 093: That in that feature is not there for any other customers. It's only for bi
+[TIMESTAMP] Speaker 008: So now we have extension in data change order and then confirming
+[TIMESTAMP] Speaker 093: Correct. Cap is out of the box change form once it was configured for bi.
+[TIMESTAMP] Speaker 093: Uh
+[TIMESTAMP] Speaker 008: Is there? Okay. And in the non conformance
+[TIMESTAMP] Speaker 093: In non non conformance, you
+[TIMESTAMP] Speaker 093: In non conformance, it was configured as well for you. So in this example, if you see I have implementation here, right? I need to do one implementation. So if I go to implementation, let's say I need to do a new document and I have a due date.
+[TIMESTAMP] Speaker 093: Of 11 4. Okay. Yeah, let me see where
+[TIMESTAMP] Speaker 008: The center is
+[TIMESTAMP] Speaker 093: Can request if you see here, okay. It should automatically show me there should be a button here. I'll come back to you on that one button. So you actually request for extension saying that I need extension for this, you should not you will not be doing from here. It will there should be a button here. Let me take a look at that button here though. It should there should be a button here called as extension requests.
+[TIMESTAMP] Speaker 093: Sorry, that looks like I miss and I'll review that and come back to you. Okay.
+[TIMESTAMP] Speaker 093: But if you don't want extension in change order, then we can remove that so that you become out of the box today. And now you are doing some customization. Okay. That means that you are always you need to make sure that it is work every upgrade we need to test it, we need to test it. Okay. If you think you don't want extension for change order because we don't have it out of the box and we don't we we might introduce as an out of the box in the next release, but we don't have it now. So for you to become out of the box
+[TIMESTAMP] Speaker 093: Maybe we don't even expose that leave it as these let let [COUNTRY] there and use the system.
+[TIMESTAMP] Speaker 093: It's up to you make that you make the choice.
+[TIMESTAMP] Speaker 008: But Joanna.
+[TIMESTAMP] Speaker 008: Joanna
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker 008: It's gonna
+[TIMESTAMP] Speaker: Go back.
+[TIMESTAMP] Speaker 008: Yeah.
+[TIMESTAMP] Speaker: It's not clear to her.
+[TIMESTAMP] Speaker 093: Okay. Speaker 122, let me explain to you.
+[TIMESTAMP] Speaker 093: So one second. Okay. Let me just pull something up here which will make sense. Give me a suggest.
+[TIMESTAMP] Speaker 093: No problem. Okay.
+[TIMESTAMP] Speaker 093: So Speaker 183, my excel sheet. Okay.
+[TIMESTAMP] Speaker 093: There are actions in the system. Okay. The actions in cape, right? Yes. Actions in non conformance and actions in change, many change owner.
+[TIMESTAMP] Speaker 093: Okay. Okay.
+[TIMESTAMP] Speaker 093: Here
+[TIMESTAMP] Speaker 093: Extension requests. So let me put it let me explain it. So the action has a due date. Okay, off. Let me put it there due date.
+[TIMESTAMP] Speaker 093: The due date is November 25th. Okay. And user can request extension.
+[TIMESTAMP] Speaker: Oh, yes.
+[TIMESTAMP] Speaker 093: Okay. This is out of the box.
+[TIMESTAMP] Speaker 093: They can extend request extension saying that I want the extension to be 28 November. Okay. Okay. So new extension.
+[TIMESTAMP] Speaker 093: 28 November. 28th. Okay. Okay.
+[TIMESTAMP] Speaker 093: So this is out of the box that maybe just put it this way, the mode is
+[TIMESTAMP] Speaker 093: In stitch and delete. Okay. Non confirming extension is
+[TIMESTAMP] Speaker 093: Bi configuration. Okay. Okay. Bi configuration.
+[TIMESTAMP] Speaker 093: [PERSON].
+[TIMESTAMP] Speaker 008: FICA, they were like, hey, see these most little out of the work.
+[TIMESTAMP] Speaker: Out of the box as a standard give you and one product, not any
+[TIMESTAMP] Speaker 008: Lower fillers will tell you what I mean. I
+[TIMESTAMP] Speaker: I thank you.
+[TIMESTAMP] Speaker: Come standard is
+[TIMESTAMP] Speaker: Is on
+[TIMESTAMP] Speaker 008: This one
+[TIMESTAMP] Speaker: Sorry, what was what she wants to I wanted to understand is what is out of the box meant and I to her because she has she hears a lot that term. So I was explaining to her
+[TIMESTAMP] Speaker 008: Yeah. I know that I heard a lot of this term, but I have never asked what is that.
+[TIMESTAMP] Speaker: You had another question, Alysia?
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 093: No. Speaker 122 to answer to Speaker 122 to complete this sentence out of the box. Meaning this is a explain to her, right? That's good. Now, there are 2 things we can do. I want bi and all our customers to be as close to out of the box.
+[TIMESTAMP] Speaker: Okay. Right.
+[TIMESTAMP] Speaker 093: So if you keep on configuring like this, okay. Then I need to maintain every let's say engineering, releases this as part of the summing team as an example. Okay. Now, I need to every upgrade from now we need to keep on maintaining that and then testing to make sure it works. Okay. Correct. So what we can do is if this is not used, okay, because none of our customers have this, only bdr has this, yeah. If they're not going to be using it, we can remove this.
+[TIMESTAMP] Speaker 008: No, no. We use the we have in our system.
+[TIMESTAMP] Speaker 008: Extension for a non conformance on the order.
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker 093: Okay. That's okay then that's what we're asking.
+[TIMESTAMP] Speaker 093: Search, then we can remove that, but if you're going to be using it, we will maintain that. Okay. Yeah.
+[TIMESTAMP] Speaker 008: Yeah. We want to maintain
+[TIMESTAMP] Speaker 093: It. Okay. All right. Okay. Yeah. Thank
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: I will confirm that here. I'll make a note. I test I remember testing it will re test.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Any other questions? I know. Speaker 008, see, I need to give you a checklist. We are almost ready with the checklist. I'll view the check. Yes. Okay. We'll give you today. Any other questions? Do you have
+[TIMESTAMP] Speaker 008: No. I have I have created the list with person that are going to be in the system, but my supervisor has to revise it. So I will send to I suppose Friday.
+[TIMESTAMP] Speaker 093: In the
+[TIMESTAMP] Speaker 008: And I have to say I want to text and to test again in sandbox deviation for documentation with the pdf. Because I didn't I haven't tried it and I have to test the supplier and equipment because I didn't have time. So I want to test in I want to test in in sandbox to see how he like, the final result, for example, in documents, how it if it's okay.
+[TIMESTAMP] Speaker 008: But I didn't have time to do anything.
+[TIMESTAMP] Speaker 093: Okay. No problems. I'll be here. Okay. If you need okay. Okay.
+[TIMESTAMP] Speaker 008: Cool.
+[TIMESTAMP] Speaker 008: Yes. Yeah. For the moment.
+[TIMESTAMP] Speaker 008: I have no more
+[TIMESTAMP] Speaker 093: All right. Okay. Thank you. I'll go back and start. I'll complete my work so that I can
+[TIMESTAMP] Speaker 008: All right. Thank you.
+[TIMESTAMP] Speaker: Thank you team.
+[TIMESTAMP] Speaker: Thank you.
+[TIMESTAMP] Speaker 008: Joanna see. I'm not that. Bye. Bye.
+[TIMESTAMP] Speaker 008: Is it or Speaker 301 that area for Mac?
+[TIMESTAMP] Speaker 008: And local format in the case management it matters is okay for Mathew, is it mostly same and it's still be [PERSON]. It's gonna put in my percentage program is the service or any family?
+[TIMESTAMP] Speaker: Okay. Okay. Then go change management. I can make a look at on martis.
+[TIMESTAMP] Speaker: [PERSON], whoever is every
+[TIMESTAMP] Speaker 008: Apple.
+[TIMESTAMP] Speaker: Qualio, okay. Follow them, okay. Maybe [PERSON] this the mer colis.
+[TIMESTAMP] Speaker 008: How to sale assessment.
+[TIMESTAMP] Speaker: What is it?
+[TIMESTAMP] Speaker 008: But I see a new
+[TIMESTAMP] Speaker: Exact equal, thank [COUNTRY]. Notice in this in come in on a moment or but on that. But just the cloud in cal care to them.
+[TIMESTAMP] Speaker: On a platform, I just want more awareness is a super Speaker 122 analysis ones. They say in a super point. I've loved this
+[TIMESTAMP] Speaker 008: Day. So yeah.
+[TIMESTAMP] Speaker 008: I
+[TIMESTAMP] Speaker: I know is a proper cam is latest printing. I can I just I got retain. Oh, okay. Arena, at all we. All all its I will go out the demos is in those [LANGUAGE] is case, but not the telecom. Is
+[TIMESTAMP] Speaker 008: The demand negotiate age, trails, email settings, you assign demo commerce one client, starting the at
+[TIMESTAMP] Speaker 008: Take on it then.
+[TIMESTAMP] Speaker 008: And on the on to have to about the can just
+[TIMESTAMP] Speaker 008: Some Speaker 039 as manual call, but maybe yeah. Maybe yes. Those 3 is to is in non control. Is estimating in the customer per or non control, maybe into season control. They pull over some components. So
+[TIMESTAMP] Speaker 008: They love the trail there, mainly. They like formal in coverage and contractors can point
+[TIMESTAMP] Speaker: Oh, okay. Then the remove, ER, see then Ramos given simplest per for Mandarin mandate, one screenshot, see my quest per for compare them document and
+[TIMESTAMP] Speaker 008: So particularly in
+[TIMESTAMP] Speaker 008: The
+[TIMESTAMP] Speaker 008: The one in the score the one
+[TIMESTAMP] Speaker: And yes. Okay.
+[TIMESTAMP] Speaker 008: That's the
+[TIMESTAMP] Speaker: Document.
+[TIMESTAMP] Speaker 008: Any any
+[TIMESTAMP] Speaker 008: [PERSON] intent. We also have local store. Okay. Bye.
+[TIMESTAMP] Speaker: Speaker 008 demo cost now. Okay. So so and but
+[TIMESTAMP] Speaker: The steam an eastern time zone, then it is a Jama is a regular cadence. And
+[TIMESTAMP] Speaker 008: Most value to
+[TIMESTAMP] Speaker 008: Be a
+[TIMESTAMP] Speaker 008: Stack or all to see. It is cool team. So the very thing.
+[TIMESTAMP] Speaker: Perfect. Easier in data. But uh
+[TIMESTAMP] Speaker 008: This one because I didn't
+[TIMESTAMP] Speaker: Okay. Perfect.
+[TIMESTAMP] Speaker 008: May please, so
+[TIMESTAMP] Speaker: Much.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker: So
+
+
+====================================================================================================
+Title: Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1579.22
+====================================================================================================
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Trying to battle cold or morning, cough Speaker 093 or something.
+[TIMESTAMP] Speaker 093: Hey, good morning. How are you?
+[TIMESTAMP] Speaker: So I have my camera off. Um
+[TIMESTAMP] Speaker: Wait. Sorry, go about quick question. Regards to the packages that we offer in the [PRODUCT_SUITE].
+[TIMESTAMP] Speaker: I have a client that we're in the middle of a negotiation. We have this deck that were used as a reference when we're talking with our customers.
+[TIMESTAMP] Speaker: [PRODUCT_SUITE], training, this training, have the library within this training.
+[TIMESTAMP] Speaker 093: We do a training as library meeting. I'm sorry. Sorry, again.
+[TIMESTAMP] Speaker: Do we have it's training. The training module comes already with the library.
+[TIMESTAMP] Speaker 093: That's what I'm asking you what do you mean by library? You should there should be a reason why you're asking that. What do you mean by library?
+[TIMESTAMP] Speaker: So meaning like we have ability to
+[TIMESTAMP] Speaker: To interact with a third party to bring content.
+[TIMESTAMP] Speaker: Okay. It's an integration, right? So
+[TIMESTAMP] Speaker: We don't offer the content. We do an integration for the content. Right. Right. Okay. So perfect. So this is just a training tool to allow them to track their trainings, but the integration is separately.
+[TIMESTAMP] Speaker 093: Let's stop like
+[TIMESTAMP] Speaker 093: Let's talk and then so we can make sure that okay.
+[TIMESTAMP] Speaker: I'm gonna go ahead and [PERSON].
+[TIMESTAMP] Speaker: Good afternoon Alysia.
+[TIMESTAMP] Speaker: Hello.
+[TIMESTAMP] Speaker 093: Hey Speaker 008. How are you?
+[TIMESTAMP] Speaker 008: Hello fine. Thank you. Awesome.
+[TIMESTAMP] Speaker: One is from yesterday.
+[TIMESTAMP] Speaker: Or issues?
+[TIMESTAMP] Speaker 008: Yes, I have stand ups. Okay. For example, the well, I have test the migration of pdf and the documentation, the word and pdf and it works. So nice.
+[TIMESTAMP] Speaker 008: And I'm testing this migration of suppliers and account and the integration of supplier awards. But I have one tab because yeah. Um
+[TIMESTAMP] Speaker 008: Okay. I don't know. Can I spell it in [LANGUAGE] because
+[TIMESTAMP] Speaker 093: Sure.
+[TIMESTAMP] Speaker 093: Okay. Okay.
+[TIMESTAMP] Speaker 008: Okay. Okay. Thank you.
+[TIMESTAMP] Speaker 008: Um
+[TIMESTAMP] Speaker 008: One one.
+[TIMESTAMP] Speaker 008: Buddy.
+[TIMESTAMP] Speaker 008: Or manage do
+[TIMESTAMP] Speaker 008: We actually
+[TIMESTAMP] Speaker 008: One or the Arenand maintain people do you think on a fit something, like I say provide just a pro is in those many trees?
+[TIMESTAMP] Speaker 008: In the capacity or base it into this is a cookie. So it's a fit name. Speaker 307 lane format in the hospital is a manual it, but yeah, in the provider
+[TIMESTAMP] Speaker 008: You now? Okay. So
+[TIMESTAMP] Speaker 008: Can format the you're pulling through like, you look me time?
+[TIMESTAMP] Speaker: To to get [COUNTRY] call a Carla feature NOLA feature in a case. Okay, common. We part if
+[TIMESTAMP] Speaker: You early that?
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 008: Line on it and look, this will be not features. They look at your memo study done for a nice come kick on your you just in the
+[TIMESTAMP] Speaker 008: Company or the [PERSON]?
+[TIMESTAMP] Speaker 008: Windows is like an
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 008: There's no sign. It is so
+[TIMESTAMP] Speaker: She would like to know how can she she's trying to upload the suppliers. Some of the suppliers has been approved, let's say in 20 23 she's manually uploading them. And she wants to ensure that the original date, the 20 23 reflects in the system.
+[TIMESTAMP] Speaker: You made it a Speaker 093.
+[TIMESTAMP] Speaker 093: I'm sorry. Yeah. The approved date should be 20 23.
+[TIMESTAMP] Speaker 008: Right. Okay. For example, yes. It could be another one, but it's not today. It's like a past date.
+[TIMESTAMP] Speaker 093: I'm trying to see if there is an approved date in the system. There is no approved date in the system though.
+[TIMESTAMP] Speaker 008: I think no. So yeah. No. But yes, because when you do the qualification the supplier qualification there you have
+[TIMESTAMP] Speaker 093: There we have exactly. Yeah. But
+[TIMESTAMP] Speaker 008: The problem is that I upload the suppliers then I'm going to do it manually. I'm going to do the supplier qualification, but the problem is when I do this supplier qualification, the date that is going to appear is the recent date. And I need to put the old date and I don't know if this is possible. Um
+[TIMESTAMP] Speaker 093: I need to check how it is because see qualification you're doing today, right? There is no date in the qualification saying that this was qualified last month or something in the last year. It was in 20 20 something it doesn't do like that because you are bringing the part because we don't usually bring the now. That's not a normal for [COUNTRY] to migrate the old qualifications, right? One thing we could do that. There are 2 things you can do. Okay. Or let me ask you one question. What do you do manually in qualification? What steps are you doing? Are you creating a qualification? Are you doing anything or just closing it?
+[TIMESTAMP] Speaker 008: No. When I have created 3 steps.
+[TIMESTAMP] Speaker 093: One is
+[TIMESTAMP] Speaker 008: One is like, the to evaluate the risk of the supplier and we evaluate if it's the type type speed or type, then second step is to upload the document, the quality documentation. First step is, yeah, is approved the supplier.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Which
+[TIMESTAMP] Speaker 008: I suppose that when people start to use on a system like equals and they upload their suppliers, they have to maintain the original approved date. I suppose. Because for example, maybe I have bought something ER, 3 months ago. And my supplier is approved today. This not valid.
+[TIMESTAMP] Speaker 008: But I don't know how to do it.
+[TIMESTAMP] Speaker 093: Yeah. I need to think about it. Let me see what we can do. Okay. How we can do it because for [COUNTRY] to be able to do that, even if you
+[TIMESTAMP] Speaker 093: In qualification, there is no past qualification, right? So there is no in the that it happened in the past or happened 2 years back or something or we need to go to the for now.
+[TIMESTAMP] Speaker 093: Do the qualification. Let it connect saying this is the qualification record and this is the super qualified. Maybe in this supplier, we can add a field to indicate the qualified date.
+[TIMESTAMP] Speaker 008: Yes, we would be nice as
+[TIMESTAMP] Speaker 093: We add a custom field called qualified data catch.
+[TIMESTAMP] Speaker 093: You know. Yeah, that's the only way that I can think about otherwise I don't see any other option.
+[TIMESTAMP] Speaker 008: Okay. Because for example, can I share with you my screen?
+[TIMESTAMP] Speaker 093: Yes, please. Yeah.
+[TIMESTAMP] Speaker 008: Okay. Uh
+[TIMESTAMP] Speaker 008: I don't know if it's here, but
+[TIMESTAMP] Speaker 008: Can you see these pages of the report? Yes. Okay. I'm trying here to make a I'm learning because I'm not good with reports.
+[TIMESTAMP] Speaker 093: But you're
+[TIMESTAMP] Speaker 008: Good. I'm making this with suppliers like the my I have just upload these three, for example, this morning, like with migration and they have supplier supplier name and qualification status. But I need, for example, in our system, we need like you said, another column that said with day is approved.
+[TIMESTAMP] Speaker 008: And I think this is not possible now.
+[TIMESTAMP] Speaker 093: Can you go to the system? Where is that approved date, see? That's why if you go to the record, can you open date?
+[TIMESTAMP] Speaker 093: No. No, that's I think I can help you with something. Can you go to can you open up a supplier record, which is qualified go to the number 3 or something? Yeah. Okay. This is qualified, right?
+[TIMESTAMP] Speaker 008: No, this is not qualified. No. Because this is one that I have just
+[TIMESTAMP] Speaker 093: Can you open up something disqualified?
+[TIMESTAMP] Speaker 008: Maybe this one I have it has I think 2 qualifications. Yes, this one.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: See, if you see this is the parent is supplier. Child is super qualification, right? The report that you're doing now will not give you that report. You need to create a different report to get the qualification data. Okay.
+[TIMESTAMP] Speaker 093: Yeah. I'll help you. Can you open up the qualification number? Three, number 3 or number four?
+[TIMESTAMP] Speaker 008: Yes. Okay. Yes, I did this morning.
+[TIMESTAMP] Speaker 093: Where which date do we want? Let's take a look at because right?
+[TIMESTAMP] Speaker 008: Now, for example, I sent it manually and I put for November.
+[TIMESTAMP] Speaker 093: That is the initiation date. Let me take a look at what is the initiation date? Give me just a second. Okay.
+[TIMESTAMP] Speaker 008: Yeah, because I can this manually because I do it today, but I was testing because maybe if you can change this manually you have the audit trail, but you can explain that. I don't know.
+[TIMESTAMP] Speaker 093: One moment. Okay.
+[TIMESTAMP] Speaker: So I see created by
+[TIMESTAMP] Speaker: The date started and when he gets submitted.
+[TIMESTAMP] Speaker 093: One second. Look at, yes.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Let me see the initiation date.
+[TIMESTAMP] Speaker 093: Initiation [PERSON].
+[TIMESTAMP] Speaker 093: The initiation date is the date that super qualification started, not when it is approved.
+[TIMESTAMP] Speaker 093: I'm trying to see.
+[TIMESTAMP] Speaker 093: Second, how do I get that from the past? Once again, the qualified we need see the date it approves is the date it's you know, like I it gets them I need to take a look at if there is any option. Um
+[TIMESTAMP] Speaker 093: I'm trying to see what is the
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Okay. I'll make a note, Speaker 008. Let me come back to you. Okay. To see how do we where do we say the like the qualified date? Because the for in hindsight we can take a look at the closed date as the qualified date. Okay. See if they have anything like that.
+[TIMESTAMP] Speaker 093: Oh.
+[TIMESTAMP] Speaker 093: The qualification results and qualification. Okay. I have to get back to you to see how do I get the historical thing.
+[TIMESTAMP] Speaker 008: I have that when I upload the documents with immigration, for example, I upload this one, can I add in the excel row with this sec owner?
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 008: Okay. Because I think it could be nice this and then in the um
+[TIMESTAMP] Speaker 008: In the extent I think this is in a one way. Because here, I say that is active and but this is not completed. So I think maybe I have to to write in the role active instead of a status.
+[TIMESTAMP] Speaker 093: And if you see the active if you click on the edit button
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 093: Yes. Or
+[TIMESTAMP] Speaker 008: No. So maybe maybe in the here, one moment.
+[TIMESTAMP] Speaker 008: In the excel.
+[TIMESTAMP] Speaker 008: I have one moment.
+[TIMESTAMP] Speaker 008: This one uh
+[TIMESTAMP] Speaker 008: Maybe here I can I have to write
+[TIMESTAMP] Speaker 008: Instead of a status active yes or no, right?
+[TIMESTAMP] Speaker 093: Yes. Match.
+[TIMESTAMP] Speaker: It has to match the platform.
+[TIMESTAMP] Speaker 008: Yeah. Yes, correct. Yeah. And then sick owner. No, but it's here record owner.
+[TIMESTAMP] Speaker 093: Yeah.
+[TIMESTAMP] Speaker 008: But it doesn't appear
+[TIMESTAMP] Speaker 093: Okay. When you map it, did you when you map it? You should map it to [CRM_PLATFORM].com ID?
+[TIMESTAMP] Speaker 093: Sorry, when you map it, when you do the mapping, yes. Okay. I remember during import, you need to make sure that you choose record owner. Let's not record owner. It should be ABC Corp owner. Record owner is at the top
+[TIMESTAMP] Speaker 093: To the ABC Corp owner. Yeah.
+[TIMESTAMP] Speaker 008: So now, maybe so if I want to sign of these appear in the excel, I just need to add, right?
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: And uh
+[TIMESTAMP] Speaker 008: Okay. Um
+[TIMESTAMP] Speaker 008: Okay. And I have just sent to you the list of users for one of our last
+[TIMESTAMP] Speaker 008: Conversations tags. I understand that we have one admin 2 processes and 21 admin. So I make a list with this if this is not correct, tell me
+[TIMESTAMP] Speaker 093: Okay. Let me just confirm. Okay, one second.
+[TIMESTAMP] Speaker 008: Because in one of our last talk I have this but I'm not sure if is it, correct? Or is not correct?
+[TIMESTAMP] Speaker 093: Can you share your just
+[TIMESTAMP] Speaker: To process users.
+[TIMESTAMP] Speaker 008: Yes, I'm 21 elites lights.
+[TIMESTAMP] Speaker: 21 process light users.
+[TIMESTAMP] Speaker 008: Okay. Yes. I have just sent you the um
+[TIMESTAMP] Speaker 008: The names the yeah, the list of users with the names. Maybe later we can change because maybe we need more process. But for the moment, just to start to use the system and let's see if it works. We are going to use like that. Okay. And Joanna, yes. Could you serve with me? the like the document where you can see which things can do any of the users. For example, a process can initiate a change order.
+[TIMESTAMP] Speaker 008: Light can just view. Things like the
+[TIMESTAMP] Speaker: Permissions that can each
+[TIMESTAMP] Speaker 008: Because I have one, but I didn't understand very well because okay. I'm going to stay with you.
+[TIMESTAMP] Speaker 008: One moment because I have this
+[TIMESTAMP] Speaker 008: Um
+[TIMESTAMP] Speaker 008: One moment I have.
+[TIMESTAMP] Speaker 008: This one, but I don't understand very well. This because for example here I have like, non conformance, non confirm, a requester. That is a bit weird because a process can be a requester.
+[TIMESTAMP] Speaker 093: It's a light user process. The process can do both both. Okay. Yeah, they can do.
+[TIMESTAMP] Speaker 008: I don't understand this.
+[TIMESTAMP] Speaker 008: The
+[TIMESTAMP] Speaker 093: Look at. If I take a look at non confirm and think we need to send you an updated one. But if you take a look at non confirm and requests or consume a light user license. Okay. Then let me let you let me put it different way. Like a license can create a non conformance both process, right? And admin can create non conformance. Okay. Let [COUNTRY] send you an updated one here.
+[TIMESTAMP] Speaker 008: Okay. Because here I suppose admin can do anything and here is anything so I don't know. It's not clear for me. So I need something the argument.
+[TIMESTAMP] Speaker 093: Can do everything, right? That's what yeah. Yeah. Okay. This is telling you what is the minimum requirement to do non confirm and request a minimum is right? Even process can do it. Okay. We have a newer one. We can share the newer one.
+[TIMESTAMP] Speaker 008: Sure. Okay. Thank you.
+[TIMESTAMP] Speaker 008: Yes. Um
+[TIMESTAMP] Speaker 008: Yes. I think for from my side, I think that anything else I'm just testing the migration. The documents works well and supplier. I think I have to test accounts and I have to test. Um
+[TIMESTAMP] Speaker 008: Equipment, yes.
+[TIMESTAMP] Speaker 008: How to test but yeah. I'm testing. Okay.
+[TIMESTAMP] Speaker: Speaker 008 for yesterday's call. Cadence call that we had with [PERSON]. Your question in regards to the go live? good. She just wanted it to know that we were on target to based upon the user load and her already had a approving just to confirm that Friday. The production side will go live.
+[TIMESTAMP] Speaker 093: Nice. We are packaging now where everything is packaging. If you finish packaging today, then production will be going live. Production is up and running. We can lower users and all those things today. Okay. You can even start the doc control. Something we can even migrate some certain things. Everything is ready. But again, it all depends on the packaging packaging is happening. If the packaging gets ready today, then we can handle tomorrow with the packaging is tomorrow. Then I will know more about in my daily stand up calls, which is afternoon. So if the packaging is cannot be completed today, then it has to then it will be next week. It will be Monday.
+[TIMESTAMP] Speaker 093: So we are working hard to create the package, because all the fixes and everything, we're working to create the package to move it to the production.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Keep all the CSV ready so that we can start loading them. Okay.
+[TIMESTAMP] Speaker 008: Yes. But for example, in the productive environment. For the moment, I'm not going to migrate a lot. We want just to migrate, for example, in document 3 documents, but like a test.
+[TIMESTAMP] Speaker 093: Understand okay. Because
+[TIMESTAMP] Speaker 008: Maybe later we are going to delay these 3 because from the audit trail, we are going to say, okay, it's a test. So but we just want to migrate something just to test.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 008: Okay. The migration for the rest of documents. We need to have a discussion how to do it because we need to talk about it, but first we are going. I have 3 documents to test. So we are going to start with this. Okay.
+[TIMESTAMP] Speaker 093: Okay. Okay. I'll keep you posted. I'll keep you both posted where we are after that meeting today. I'll let you know, Joanna where we are. And then we can our team is working. It's that is developer is assigned dedicated working on the packaging and yes, we are setting up pipelines and everything.
+[TIMESTAMP] Speaker 008: And the question I think you have to send to me something like the list of both cases departments.
+[TIMESTAMP] Speaker 093: Yes, that is what it's coming to you. Yeah. Okay. That you can start collecting them. It should be today this morning. You should be with you there. Okay. Okay.
+[TIMESTAMP] Speaker: And then I owe you the updated roles or permissions. So go ahead and get that for you, Speaker 008.
+[TIMESTAMP] Speaker 008: Okay. Okay. Okay. Perfect. All right. Anything else? Um
+[TIMESTAMP] Speaker 008: Yes. One thing one moment.
+[TIMESTAMP] Speaker 008: Because I have had a last that's one.
+[TIMESTAMP] Speaker 008: Um
+[TIMESTAMP] Speaker 008: One moment.
+[TIMESTAMP] Speaker 008: Because
+[TIMESTAMP] Speaker 008: Is but Joanna, this has changed, right? The name of suppliers now is not that this introduction interaction at the deviations.
+[TIMESTAMP] Speaker 008: Is
+[TIMESTAMP] Speaker 008: Different, right.
+[TIMESTAMP] Speaker 093: In interaction and deviation are correct. It's not introduction. It's qualification.
+[TIMESTAMP] Speaker 008: Okay. Introduction, because maybe this is in the 10 version and now have the
+[TIMESTAMP] Speaker: Correct.
+[TIMESTAMP] Speaker 008: Okay. And introductions and qualifications.
+[TIMESTAMP] Speaker 008: And then I suppose accounts
+[TIMESTAMP] Speaker 008: Let's get them. Supplier escalation now doesn't assist, right? I think now is just suppliers because this is
+[TIMESTAMP] Speaker 093: No, no. No, no. Escalation is still there.
+[TIMESTAMP] Speaker 008: Suppliers
+[TIMESTAMP] Speaker 093: Supplier in the qualification suppliers interaction, supplier deviation, supplier escalation for
+[TIMESTAMP] Speaker 008: Now this works.
+[TIMESTAMP] Speaker 093: Yes. Um
+[TIMESTAMP] Speaker 008: Okay. Okay.
+[TIMESTAMP] Speaker 008: Okay. I will see, okay. Thank you.
+[TIMESTAMP] Speaker 008: Alrighty. Okay. Yes. So from my side, it's everything is
+[TIMESTAMP] Speaker 093: Okay. I'll be sending them out to you okay. Today.
+[TIMESTAMP] Speaker: Thank you team.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker: Bye. Bye.
+
+
+====================================================================================================
+Title: Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1775.11
+====================================================================================================
+[TIMESTAMP] Speaker: Ago they can do mass into this those authors does banners there
+[TIMESTAMP] Speaker: Pensacola documents now [PERSON].
+[TIMESTAMP] Speaker 008: Contacts
+[TIMESTAMP] Speaker: To documents, there. Man says training training as a model on the internal enters.
+[TIMESTAMP] Speaker 008: Format.
+[TIMESTAMP] Speaker: For my son.
+[TIMESTAMP] Speaker: Park it the name as a
+[TIMESTAMP] Speaker 008: Post and then there
+[TIMESTAMP] Speaker 008: Early for a month on the post.
+[TIMESTAMP] Speaker 008: Last per month cycle more notes. It is a lot of
+[TIMESTAMP] Speaker: Training program training sessions.
+[TIMESTAMP] Speaker 008: Speaker 217.
+[TIMESTAMP] Speaker: It and the Academy job, the car training, enjoy training.
+[TIMESTAMP] Speaker: Okay. Um
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker: Particular panthea I said as this one or do this step?
+[TIMESTAMP] Speaker: To you most rely Mira is in a
+[TIMESTAMP] Speaker 008: Deal
+[TIMESTAMP] Speaker 008: It's gonna
+[TIMESTAMP] Speaker 008: Take
+[TIMESTAMP] Speaker 008: A Competitor low job function now, assign, but it's a one is mostly administer. Okay. The
+[TIMESTAMP] Speaker 008: Close look. So then there is much administer. Okay. In the implement the
+[TIMESTAMP] Speaker 008: Voice the lost courses for the time. They to administer come often.
+[TIMESTAMP] Speaker 008: One so
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker: Yeah. Maybe maybe go can help me. Understand. Hi, Speaker 093. Good morning.
+[TIMESTAMP] Speaker: Hi.
+[TIMESTAMP] Speaker 093: Hey, sorry. How was on mute?
+[TIMESTAMP] Speaker: Yes. Yes, yes. We were just talking about the trainings. She has done control exchange control documents is coming up and her third training. She's looking for training on training sessions mainly focus on the admin side of configurations. But I've been asking the training department, which training sessions. So I don't know if there's a different word that we use.
+[TIMESTAMP] Speaker 093: For admin side.
+[TIMESTAMP] Speaker: Yeah, from the admin side.
+[TIMESTAMP] Speaker 093: Um
+[TIMESTAMP] Speaker 093: And I'm trying to understand that. What do we teach from admin side, right? When we say admin? What do you mean?
+[TIMESTAMP] Speaker 008: Yeah. It's like the training part of the [COUNTRY] is the part that is harder for me to understand, but as a user, I think it's easy because you just need to
+[TIMESTAMP] Speaker 008: To train of the
+[TIMESTAMP] Speaker 008: The trainer training, but for the admin side is more to create personal job job solutions to link to create training session to create
+[TIMESTAMP] Speaker 008: Forms to create, but I think it's more for admin part.
+[TIMESTAMP] Speaker 008: Maybe. Okay. And I don't know if there are any course for that.
+[TIMESTAMP] Speaker 093: When you go through regular training, we train you on the data set the data foundation, right? How to create personal, how to create job function, how to assign them, that will do that. But if you want to know more on the technical side that says operate on, I don't know if you want to. It may be too much for you to
+[TIMESTAMP] Speaker 093: The university of technical training we have in the studio and all those things. I don't think so. We need that for [PERSON]. Okay. That will be an overkill and uh
+[TIMESTAMP] Speaker 093: So for you to make some
+[TIMESTAMP] Speaker 093: Changes. So let's do this is let me talk with Speaker 122 come up with a plan. Okay. And how to train you on what you need which will help you in managing your system. Okay. Okay.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 008: Yeah. Because for example, they can management training. Last week. It was nice and I learn new things, but it is just for users. So I need more things for
+[TIMESTAMP] Speaker 008: More admin things to control the
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 008: The system because as a user, I learn new things, but I knew more
+[TIMESTAMP] Speaker 093: Like when you say admin, give me one example.
+[TIMESTAMP] Speaker 008: No, for example, intent management. They don't teach [COUNTRY]. I ask Speaker 301 help me. But for example, they don't teach [COUNTRY] how to make an impact assessment or like, execute tasks, things like that.
+[TIMESTAMP] Speaker 093: Okay. Good to know. Again, the that's why there are 2 2 types of admin functional admin and technical admin. Okay. So functional admin is something that let me talk with Speaker 122, put a plan and then and they help you with that. Okay. So definitely a good definitely good feedback because you do need to know me. If you don't know how to set up an assessment, then you will not be able to use assessment.
+[TIMESTAMP] Speaker 008: Right. I know how to do it.
+[TIMESTAMP] Speaker 093: But you know how to do
+[TIMESTAMP] Speaker 008: No. But I mean for example, I don't know that when you do an impact assessment and your answer is yes. You can have directly on task or things like that. I didn't know, but Speaker 301 is playing me.
+[TIMESTAMP] Speaker 093: Okay. Okay. That's what we'll teach you. So that's what we'll make a note. It's more of a functional admin. So I work with come up with a planner.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: And your production system is ready. Okay. So everything is good. I'm going to create a user for you. Should I make you the admin for first few days and then change it over to [PERSON]? Or should I you do you want to use the same way in production also?
+[TIMESTAMP] Speaker 093: And I know [PERSON] s password in sandbox, right? But in production, do you want to know you don't want to be
+[TIMESTAMP] Speaker 008: No. No, Speaker 184. Speaker 184, [PERSON], admin. I use a password.
+[TIMESTAMP] Speaker 093: Okay. We actually there are 2 types of admin again, right? one is the from the system. You'll still be functional admin. Okay. [PERSON] will be a technical admin will be the functional admin and you can take a look at
+[TIMESTAMP] Speaker 093: So we'll I'll create a user and I'll send an invitation to you.
+[TIMESTAMP] Speaker 093: Okay. And then we'll then we need to go through that excel sheet, one by one for you to start loading and then you can upload your first set of documents.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Let's share my screen.
+[TIMESTAMP] Speaker 093: Do you have um
+[TIMESTAMP] Speaker 093: Do you did you start working on collecting the data that we shared with you?
+[TIMESTAMP] Speaker 008: Yes. But for example, I can upload departments.
+[TIMESTAMP] Speaker 008: But there are other things that maybe if you can explain me how to make it maybe I'll make it later. For example, the well I think this I know how to do it, but for example, the non conformance encompass the type of non conformance type of compas. I think I'm going to upload it later, but just to know how to do it. Um
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Okay. Let's go through that.
+[TIMESTAMP] Speaker 093: I'm gonna share my screen.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Limits on excel, shoot.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: [PERSON] next time remind me to take my mouse when I'm not at home.
+[TIMESTAMP] Speaker 093: Each one.
+[TIMESTAMP] Speaker 093: Okay. Here is my
+[TIMESTAMP] Speaker 093: Okay. Can you see my claim? Yeah, I'm showing my excel sheet.
+[TIMESTAMP] Speaker: Yes. Okay.
+[TIMESTAMP] Speaker 093: Yeah. So Speaker 008, this is what I sent you, right, for everything, right? For document, the training and change and account and supplies and equipment, right? For example, if you start from document control.
+[TIMESTAMP] Speaker 093: Okay. Okay. I can give you what I do is now I can see that. Maybe I can what I'll do is I'll create one more column here, giving you how to get there. Okay. For example, okay. I will not enable it right in the production.
+[TIMESTAMP] Speaker 093: Move this excel to the sign.
+[TIMESTAMP] Speaker 093: I'm gonna use that for my
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Fine. Okay.
+[TIMESTAMP] Speaker 093: So let's get here, right? I'll give you how to get there. For example, first one says e signature, right? We'll go here.
+[TIMESTAMP] Speaker 093: Okay. And there is something call?
+[TIMESTAMP] Speaker 093: Do you see or give you one is? Yeah, signature settings here. Yes. This is where we need to go and then we need to set up. Um
+[TIMESTAMP] Speaker 093: Credit load. It's loading.
+[TIMESTAMP] Speaker 093: Do you see e signature is not enabled within your sandbox? Okay. So e signature is not enabled. You will have some here enable the signature. Okay. Okay. And do you want to use single sign on to log in or do you want to use your password to log into the system?
+[TIMESTAMP] Speaker 093: You understand what single sign on leads, right?
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 093: No. Single sign on meaning you'll be using your laptop. I remember you once you log in your laptop. Okay. Do you log in when you open up your emails and when you open up? So other other applications, do you? It automatically logs you in okay. You don't need to put in your password, another time, username and password. It takes your laptop credentials and then lets you log in.
+[TIMESTAMP] Speaker 093: Okay. If you want to do that, you can do it as well. Otherwise we need to enable electronic signature is needed for all the life sciences companies like you because auditors will ask you for 21. So for part 11 compliance or you need to sign tronic signature for anytime you approve reject and things like that.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Okay. Like that's number one. And then number two, if I go to another option, is that let's say if I go to secure admin.
+[TIMESTAMP] Speaker 093: If you say ABC Corp admin has all the administration functions. Okay. You may not need this all the time. Again, you need to come here, not only when you want to set things up. Okay. Say, for example, you want to 21 CFO part, 11. Okay. You need to click here, which will take you to the same screen. So if I click on this, it takes me to the e signature screen where you can enable these. Okay. I will give you in the excel sheet. I will tell you how to get there. Okay. And the next one we mentioned was that you need to create a if you see the row number five, it just audit trail, enable history tracking. Okay. We will have to come here and then we will have to enable the audit trail. Then when your auditors come in, they will ask you show me audit trail of the of a record or something you need to show who changed what changed and all those things. This is where you can come and say that okay. Okay.
+[TIMESTAMP] Speaker 008: And then
+[TIMESTAMP] Speaker 008: What we can you go back to an audit trail?
+[TIMESTAMP] Speaker 093: Yeah. I'll show you one second.
+[TIMESTAMP] Speaker 093: See here, this is your sandbox. Okay. Just to show you need to let's say a training training session. Okay. Do you see there is a flag here? You need to enable these clients? Do you see enable okay. One by one we should enable what this does is it's going to capture audit trail. If somebody comes in to training session who created it, who edited the training session. If anybody changed it or something we will be able to.
+[TIMESTAMP] Speaker 008: Plan, everything.
+[TIMESTAMP] Speaker 093: Yes, we will do that for in production for you. Okay.
+[TIMESTAMP] Speaker 093: But again, these are the things to be done. I remember yesterday we put that we would need to do it. Did we did that. So we'll we'll take a look at that and we'll send you instructions on how to do it.
+[TIMESTAMP] Speaker 008: Okay. But to do it in production or I have to do it, we will do that.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Yeah. We will I will do that for you. That is a checklist for everybody bidding you and [COUNTRY] together. It's a go live checklist.
+[TIMESTAMP] Speaker 008: Yeah. Okay.
+[TIMESTAMP] Speaker 093: We'll do it together there. That's so you go to the one by one. So what I'll do also is that let [COUNTRY] put the instructions next to them. Okay. How do you get to electronic signature today? I'm just giving you the names, right? how do you get to queues? You should go to set up on queues. How do you get to permissions? How do you do this? Let me give you like a an instructions. So you know how to go and how to do them, especially when it says
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: And the other thing we need to take a look at would be your the user setup and then we'll take it from well, we need to review that user set up. Give me one second. Let me just open up the user setup. Let's make sure everything is correct.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: [PERSON], where is your name?
+[TIMESTAMP] Speaker 008: At the end.
+[TIMESTAMP] Speaker 008: Scroll down.
+[TIMESTAMP] Speaker 008: There
+[TIMESTAMP] Speaker 008: The first one no sale, first of all.
+[TIMESTAMP] Speaker 008: The one, yes.
+[TIMESTAMP] Speaker 093: What is this grant grant said?
+[TIMESTAMP] Speaker 008: This is our departments quality assurance department. People that we are in the department.
+[TIMESTAMP] Speaker 093: Okay. These are the people who will be using SQL, right? Yes. Okay. So there are one admin, 2 process users and then like, when you are you a light user?
+[TIMESTAMP] Speaker 093: Yes.
+[TIMESTAMP] Speaker 093: So many things. How can you be a light user?
+[TIMESTAMP] Speaker 093: Admin.
+[TIMESTAMP] Speaker 008: Yes.
+[TIMESTAMP] Speaker 093: Now, who's who's screening, all these people on the
+[TIMESTAMP] Speaker 008: Meet me.
+[TIMESTAMP] Speaker 093: You okay. Yes. Have you started the training or not yet?
+[TIMESTAMP] Speaker 008: Not yet. I need to know.
+[TIMESTAMP] Speaker 008: A lot of things.
+[TIMESTAMP] Speaker 093: Have you put them have you put a plan? Have you put a plan together?
+[TIMESTAMP] Speaker 008: ER
+[TIMESTAMP] Speaker 093: No.
+[TIMESTAMP] Speaker 008: Not yet. Because I need to write the technical instructions because I know how to manage the system, but now, I need to write it down.
+[TIMESTAMP] Speaker 093: Okay. I understand. Yes.
+[TIMESTAMP] Speaker 093: Now, when do you plan to start migrating in your migrating production? Will you do that starting next week or will you do that? when do you plan to start?
+[TIMESTAMP] Speaker 008: To start, I'm going just to integrate 3 documents to test and then I don't know because
+[TIMESTAMP] Speaker 008: I need to talk with my supervisor. Okay. My supervisors and to to see how to do it.
+[TIMESTAMP] Speaker 008: But as soon as possible because we want to start with the document module so as soon as we can.
+[TIMESTAMP] Speaker 093: But what do you want to see your practice migration in your test sandbox, right? The sandbox?
+[TIMESTAMP] Speaker 008: No. Yes. Maybe I don't need to migrate anything. Just the real document. Yes.
+[TIMESTAMP] Speaker 093: Yes, I would rather you use your sandbox to train people.
+[TIMESTAMP] Speaker 008: Yes. No.
+[TIMESTAMP] Speaker 008: Use sandbox, yes.
+[TIMESTAMP] Speaker 093: Okay. Okay. And just to give you an idea. Okay, one more thing.
+[TIMESTAMP] Speaker 093: Sandbox has limited space.
+[TIMESTAMP] Speaker 008: Okay. Okay.
+[TIMESTAMP] Speaker 093: Let me just show you one thing here or let me see. Let me confirm. Okay.
+[TIMESTAMP] Speaker 093: Okay. This one minute.
+[TIMESTAMP] Speaker 093: One second. I just wanted to show you something.
+[TIMESTAMP] Speaker 093: File.
+[TIMESTAMP] Speaker 093: So this is your production. Okay. So there are no binders. So that's where you get the message. No worries. We'll create the binders. How to do is let's go here. Can you still see my screen?
+[TIMESTAMP] Speaker 093: No.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: Sure.
+[TIMESTAMP] Speaker 093: So
+[TIMESTAMP] Speaker 093: Okay. Speaker 164, Speaker 008.
+[TIMESTAMP] Speaker 093: Here.
+[TIMESTAMP] Speaker 093: We are 2 sand boxes. Okay. One is called training sandbox. One is called development sandbox. Okay. You have access to the development sandbox.
+[TIMESTAMP] Speaker 093: Okay. Now, yes.
+[TIMESTAMP] Speaker 093: What we will do is this development sandbox limit has limited space. Okay. If you upload big documents, then you will run out of space.
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Okay. What we will do is we'll create here.
+[TIMESTAMP] Speaker 093: Do you see there is something called partial copy?
+[TIMESTAMP] Speaker 093: Okay. We'll create a partial copy sandbox for you. Okay. And so that it has more space for you?
+[TIMESTAMP] Speaker 008: Okay. Okay.
+[TIMESTAMP] Speaker 093: So I'll give you access that is where you can train people you can add you can train people how to log in, how to read a document, how to do that. So that is what you can use to train people.
+[TIMESTAMP] Speaker 093: Okay. Okay. What I'll do is I'll create the sandbox today. I'll give you credentials to the sandbox. And then I will set up everything for you. And then you can start either manually loading the documents or you can take or you can create a new one or you can do the data migration there.
+[TIMESTAMP] Speaker 093: Okay. Okay.
+[TIMESTAMP] Speaker 093: I'll do that today and send it out to you problems.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 093: Any like, questions today? What is your next training? Is there any other training happening?
+[TIMESTAMP] Speaker 008: Yes. Next week.
+[TIMESTAMP] Speaker 093: Which one is the next week? What is the next week training?
+[TIMESTAMP] Speaker 008: Is document model?
+[TIMESTAMP] Speaker 093: Module.
+[TIMESTAMP] Speaker: Okay. Document lines. Yeah.
+[TIMESTAMP] Speaker 093: Okay. Good. Okay.
+[TIMESTAMP] Speaker 093: Okay. All right. Okay. I will give you access to the sandbox. Another sandbox it is here, that is where you will see that is where you will see all the information. Okay.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker 093: I would like to use that. I'm sorry.
+[TIMESTAMP] Speaker: Sorry.
+[TIMESTAMP] Speaker 093: I don't know.
+[TIMESTAMP] Speaker: Oh, no. I just wanted to check in in regards to when should we have another call with Speaker 008?
+[TIMESTAMP] Speaker 093: I can talk tomorrow on Thursday, Friday we are off.
+[TIMESTAMP] Speaker 093: We can talk tomorrow. I'm available to talk tomorrow at the same time.
+[TIMESTAMP] Speaker: Okay. Does that time?
+[TIMESTAMP] Speaker 093: Why don't we do this? Let's talk tomorrow at the same time. And over the sandbox. Tell is here so she can use the next 2 days. To to create any to if she wants to upload anything or create anything, she can go back.
+[TIMESTAMP] Speaker 093: Good.
+[TIMESTAMP] Speaker 093: Is that okay?
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: Good. Let me a little
+[TIMESTAMP] Speaker 008: Okay. So to create another some looks just to have another one with more space more
+[TIMESTAMP] Speaker 093: Space.
+[TIMESTAMP] Speaker 008: Yes. Yes. And going to send to me the link to production environment and uh
+[TIMESTAMP] Speaker 093: Sandbox sandbox.
+[TIMESTAMP] Speaker 093: Uh
+[TIMESTAMP] Speaker 008: Okay. And for the production environment
+[TIMESTAMP] Speaker 093: Yes, I'll send a doc and both.
+[TIMESTAMP] Speaker 008: Both. Okay. Okay. Yeah. And in the production going to do all these things, like the design the no.
+[TIMESTAMP] Speaker 008: Yes. Okay.
+[TIMESTAMP] Speaker 093: Okay. And is in production?
+[TIMESTAMP] Speaker 093: I'm going to send it to [PERSON] and Speaker 008, you both. Okay. And once [PERSON] sets up, you need to you get the password from her. Okay. Yes. Okay.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker: Awesome.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: Thank you, Speaker 093. Thank
+[TIMESTAMP] Speaker 008: You [PERSON]? Okay. Thank you.
+[TIMESTAMP] Speaker: Have a great day. Bye, bye. Bye. Bye, bye. Bye.
+
+
+====================================================================================================
+Title: Speaker 175 ABC Corp Upgrade Progress Discussion – Customer 15
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 554.14
+====================================================================================================
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker 093: Hi [PERSON]. Hello.
+[TIMESTAMP] Speaker: Hello, Lina?
+[TIMESTAMP] Speaker: All righty.
+[TIMESTAMP] Speaker: So we can go ahead and start. Any questions, Speaker 008?
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker 093: I'm
+[TIMESTAMP] Speaker 008: I'm waiting for the instructions for to add the users
+[TIMESTAMP] Speaker 093: Oh I thought I sent it let me check I'm so used to
+[TIMESTAMP] Speaker 008: Okay.
+[TIMESTAMP] Speaker 093: Now, Speaker 008, one question the light users you have, right? Do we want to give you do we do you want to give like everybody all the light users in all modules?
+[TIMESTAMP] Speaker 008: Yes. I'm going to
+[TIMESTAMP] Speaker 008: Yeah. Any
+[TIMESTAMP] Speaker 093: For example, is there any specific such as user one will be dock light user? User 2 is a cap light user or everybody one light user is okay.
+[TIMESTAMP] Speaker 008: Yeah. For all modules.
+[TIMESTAMP] Speaker 093: Okay. All right. Okay. It makes it easy. So I can instructions will be much easier for you.
+[TIMESTAMP] Speaker 093: I'll do that today. Sorry, I thought I already sent it. If not, I'll send it.
+[TIMESTAMP] Speaker 093: Is all your training completed?
+[TIMESTAMP] Speaker 008: Um
+[TIMESTAMP] Speaker 008: The training ID, the way the university of ABC Corp or what
+[TIMESTAMP] Speaker 093: Yeah.
+[TIMESTAMP] Speaker 008: Yeah. Yeah. I did the 10th management and the one document management. Very good. And and the third one I don't know if finally it's possible to do a training for admin.
+[TIMESTAMP] Speaker 008: Hmm.
+[TIMESTAMP] Speaker: So so yeah, change. So yeah, you have done those 2 the third one you're looking into, which one is the specific again.
+[TIMESTAMP] Speaker 008: If there are someone about admin
+[TIMESTAMP] Speaker: Oh, that's right. So Speaker 093 in regards to that. Um
+[TIMESTAMP] Speaker: So that will be office hours that we had some discussions with Jim and office hours could work with Speaker 230, helping her on the configuration setup side of it. What are your
+[TIMESTAMP] Speaker 093: Thoughts.
+[TIMESTAMP] Speaker 093: I'm sorry, [PERSON]. I see that again. I'm sorry.
+[TIMESTAMP] Speaker: Perhaps they can leverage the office hours and maybe radio, can I assist in that and that could be the configuration or configuration and then configuration side of things.
+[TIMESTAMP] Speaker 093: Right now, we don't we cannot we don't have any configurations, right. So
+[TIMESTAMP] Speaker: Configurations meaning?
+[TIMESTAMP] Speaker 093: It yes. Yes. Yes, we can do that. Yes.
+[TIMESTAMP] Speaker 093: We can go to do that. My role was to make bring over here from now on. Speaker 230 can take her to the end.
+[TIMESTAMP] Speaker 093: Okay.
+[TIMESTAMP] Speaker: Perfect. At least yes. So yes, the third training, which will be um
+[TIMESTAMP] Speaker: Yeah. We will be I'll be introducing you to Speaker 230 and we will be working with him to help you with the setup.
+[TIMESTAMP] Speaker: And then he can get to you
+[TIMESTAMP] Speaker 008: Okay. Even
+[TIMESTAMP] Speaker 008: Item. I don't understand well. The third training, which we will be with one.
+[TIMESTAMP] Speaker: I'm gonna go ahead and send [LANGUAGE] guys. Just
+[TIMESTAMP] Speaker: Speaker 008 and the looker on most I said is the
+[TIMESTAMP] Speaker: Is the
+[TIMESTAMP] Speaker: Code in apart the configure a in a part the configure a look at the one and okay, to test. But by the goto connected Cornell, then yes. The [PERSON] part they configure a contains on test. Many
+[TIMESTAMP] Speaker 008: Okay. Made. Okay.
+[TIMESTAMP] Speaker: All right. I will schedule that meeting with I will reach out to Speaker 094 and coordinate that.
+[TIMESTAMP] Speaker 008: Okay. And yeah. When I receive the instructions, I will try to
+[TIMESTAMP] Speaker 008: To give the
+[TIMESTAMP] Speaker 008: The users, like the license for the users? Yeah. If I have any data, I will ask to
+[TIMESTAMP] Speaker 093: Sure. Definitely.
+[TIMESTAMP] Speaker 008: Okay. Yeah.
+[TIMESTAMP] Speaker: Okay. Speaker 093 so anything pending from our side?
+[TIMESTAMP] Speaker: Everything my
+[TIMESTAMP] Speaker 093: Side, yeah. Everything is good to go.
+[TIMESTAMP] Speaker: Awesome. Hi, [PERSON], do you have any other questions from your end? Uh
+[TIMESTAMP] Speaker 008: No, no. For the one.
+[TIMESTAMP] Speaker: This is great. Have you been going on the production side?
+[TIMESTAMP] Speaker 008: No.
+[TIMESTAMP] Speaker: Data
+[TIMESTAMP] Speaker 008: No. Not yet. Okay.
+[TIMESTAMP] Speaker: And do we have a plan for deployment yet?
+[TIMESTAMP] Speaker 008: Yes. I mean, we want to upload documents, but first we have to talk with. I have to do with my supervisor.
+[TIMESTAMP] Speaker 008: Okay. Because we have to see how to do it.
+[TIMESTAMP] Speaker 008: So
+[TIMESTAMP] Speaker 008: So yes. We want to upload the documents, but I don't know where.
+[TIMESTAMP] Speaker 008: I suppose soon, but I don't know.
+[TIMESTAMP] Speaker: Okay. But you feel comfortable doing the process is more like, your internal process defining? How are you gonna deploy, correct?
+[TIMESTAMP] Speaker 008: Yeah. Yeah, I feel confidence now. I know how document management works. Well, and yeah, I think in general, I know how it works, well. But now, it's more internal to start to do it to to work with it.
+[TIMESTAMP] Speaker: Yeah. Very good. If you need help, we're here to assist you. Um
+[TIMESTAMP] Speaker: Anything from your side Speaker 093?
+[TIMESTAMP] Speaker 093: No, nothing Speaker 307.
+[TIMESTAMP] Speaker 093: No. Um
+[TIMESTAMP] Speaker: Obviously, keen to get this phase done and then to see if there's the expansion for product request that we've with the looked at.
+[TIMESTAMP] Speaker: A certain thing I had.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 008: Okay. But for the moment, we are going to to try to start with things that we have. Sure that there's no pressure.
+[TIMESTAMP] Speaker 008: If you have any questions.
+[TIMESTAMP] Speaker: Just yes. Okay.
+[TIMESTAMP] Speaker 008: Yeah. Is because we have a lot of modules and we have to implement everything and first we need to start. We will see
+[TIMESTAMP] Speaker: Sure. I understand that's fine. No gaps in your processes. And then we work with you in your timeline. Okay.
+[TIMESTAMP] Speaker: Pretty good. Okay. To your agreed is being completed from our end Speaker 008. Thank you so much going for all your support with this upgrade process. And then Speaker 008. So we will be coordinating with our team with Speaker 230 to get the office hours started.
+[TIMESTAMP] Speaker 008: Okay. Nice. Thank you.
+[TIMESTAMP] Speaker: You're welcome alright everyone well thank you so much for joining today's call have a wonderful day thank you bye bye bye
+
+---
+Client resource profile: Business-led transformation team.
+Client project resource guidance: Assume a business-led rollout with executive sponsor, business process lead, change/training lead, department SMEs, client PM, and part-time IT support. Emphasis should be placed on user readiness, role-based training, communications, and adoption across impacted teams.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

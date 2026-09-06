@@ -1,0 +1,159 @@
+[TIMESTAMP] Speaker 075: So
+[TIMESTAMP] Speaker 075: Hello Speaker 064. Thanks for joining, Speaker 075 lake speaking. How are you?
+[TIMESTAMP] Speaker 064: Hey, how's it going?
+[TIMESTAMP] Speaker 075: Doing well. Thank you. Speaker 064 I'd like to take this time to introduce you to the rest of my team. So joining [COUNTRY] today is Speaker 084. He's one of our senior account executives here at ABC Corp and is gonna be your point of contact moving forward. Also on the line with [COUNTRY] today. Lee blanford. He's the director of our solution engineers and we'll be helping [COUNTRY] out today. Is Speaker 307. Team, Speaker 064, Speaker 307 design engineer from Customer 42 Speaker 084. I'll let you take it from here. Perfect. Thank you, Speaker 075. Hi.
+[TIMESTAMP] Speaker 084: Speaker 064, how are you doing?
+[TIMESTAMP] Speaker 064: Well
+[TIMESTAMP] Speaker 084: Good to meet you. How are things going well?
+[TIMESTAMP] Speaker 064: How's it going with you? Yeah. Yeah, good. Thank you, appreciate.
+[TIMESTAMP] Speaker 084: Your time today, I'm excited to learn more about your project. Yeah.
+[TIMESTAMP] Speaker 064: It.
+[TIMESTAMP] Speaker 064: Should be also getting on hopefully typical not sure. He may not be back yet.
+[TIMESTAMP] Speaker 064: Actually
+[TIMESTAMP] Speaker: Hey, Speaker 307.
+[TIMESTAMP] Speaker: Bring
+[TIMESTAMP] Speaker: Hello. How are you today? Good.
+[TIMESTAMP] Speaker 084: Good. It's great to meet you, Speaker 307. My name is Speaker 084. I am your enterprise account executive here. I've got my colleague Lee lanford, who is our director of solutions engineer. So together, the 2 of [COUNTRY] are gonna kind of learn a little bit more about your project today and dig into the exciting details just to get a good appreciation for what you guys are trying to achieve. What are some of your pain points? How can we might potentially align and help you with that aspect? Speaker 307, maybe we can start with you because I know Speaker 064 in his title, maybe you can share your role at the organization.
+[TIMESTAMP] Speaker: I don't do much.
+[TIMESTAMP] Speaker 084: So I doubt that I doubt
+[TIMESTAMP] Speaker: I am the senior manager of Customer 42 center for additive manufacturing. We basically are just around 2 years in the in existence. We Rico is developing well has developed and markets managed service offering for 3 D printing. So Customer 42 does a lot of managed services in many different areas. But we also now do a 3 D printing. So that is onsite facilitation of 3 D printing labs and hubs. Which are all connected back to our facility, the Rico center for added in manufacturing and we act as an oversight and management entity over those individual managed service sites. We also do a direct 3 D printing for customers. We do overflow production as well. So a lot of different things that we do here at this center, we do design project design and support. We do some r and D work as well. Many different aspects of what we do here for 3 D printing. Yeah. I have ownership of all of this that. Uh, that we've just described and then I have because of the many things that I'm responsible for.
+[TIMESTAMP] Speaker: I've worked with Speaker 064 and Speaker 064 has graciously accepted the task of getting [COUNTRY] up and running with our quality management. And that's what kind of brings [COUNTRY] together. Perfect. Have you both looked at cms?
+[TIMESTAMP] Speaker 084: Systems before in the past.
+[TIMESTAMP] Speaker 064: Yeah. Actively looking at some multiple options and I've worked with a couple at previous roles. So familiar with the use cases of them, but this would be my first time standing one up. Got it. Which other ones?
+[TIMESTAMP] Speaker 084: Have you worked with Speaker 064?
+[TIMESTAMP] Speaker 064: Cms intellect and green, like
+[TIMESTAMP] Speaker 064: Okay.
+[TIMESTAMP] Speaker 084: And then are you looking at all 3 of these in addition to others as well, just because you have the experience? Or are these 3 off the table at this point?
+[TIMESTAMP] Speaker 064: I think they're probably all 3 off the table at this point. Okay.
+[TIMESTAMP] Speaker 084: Are you look? So we would make 4. So how many in total are you looking at?
+[TIMESTAMP] Speaker 084: Um
+[TIMESTAMP] Speaker 064: Yeah. I mean, I'm not really looking at those other three, but probably 3 currently, 2 others that I've looked at and then a nice, are you able to share who that is as well?
+[TIMESTAMP] Speaker 064: I don't see why not. Document, Compliance would be one. And then um
+[TIMESTAMP] Speaker 064: So trackers the other. Okay. Perfect.
+[TIMESTAMP] Speaker 084: That just helps me be better for you when I'm providing data, right? sometimes we're apples to apples, sometimes we're not. So just being able to prove out kind of some of that data. So thank you for sharing that. All right. You've got some experience with cms in the past. This will be your first time setting it up, but we're looking at it for this specific project. I know you are looking for doc training and audits, kind of as your initial jumping off point do I have that information, correct? Uh
+[TIMESTAMP] Speaker 064: Yes. Yeah. Document control training on it. That those would be 3 main ones.
+[TIMESTAMP] Speaker 084: Okay. Tell me what made you choose those 3 kind of what are some of your pain points that you're immediately looking to solve?
+[TIMESTAMP] Speaker 064: I mean, for the most part, it's process regulation. So we're very manual in our processes, right now. And all of those are not clearly written down, track, able traceable. They're the not version controlled at any step of the way. And so having the ability to have one hub for document control where you can go in there and you'll find the most up to date process written down. And you can use that for training purposes. Whenever we're a growing unit here. So whenever new people come in or people move in and out, you want the transfer of knowledge to be quick and painless as possible. Yeah, that brings me to the training aspect of having a place to be able to go through and make sure that every employee that comes through is properly trained on whatever tasks that they're gonna be doing. And you can go back and you can prove that out to
+[TIMESTAMP] Speaker 064: An auditor. So those are the 3 that I came up with.
+[TIMESTAMP] Speaker 064: Here and as well as that, we do work with a an mas um
+[TIMESTAMP] Speaker 064: And currently our goal is to get the whole unit up to so 9,001. So that also were some driving factors for why those 3. Okay. Perfect.
+[TIMESTAMP] Speaker 084: Your system, does it not have the functionality that you're looking for to utilize today?
+[TIMESTAMP] Speaker 064: Not so much on doc control or training or audit. So it does have some NCR and cap capabilities. They are somewhat limited to just the production aspect. So if we did have say some sort of process, NCR or a supplier, NCR or something like that, it may or may not have the ability to track it. But that's something that I have to still look into on its full capabilities. Got it. Okay. They
+[TIMESTAMP] Speaker 084: Potentially could be kind of a fifth vendor that comes into the game here as you guys look at this. Right. Right. Okay. And we have spoken with your organization in the past. We've spoken with Rachel electronics, we've spoken with another division. The
+[TIMESTAMP] Speaker 084: The and all the projects kind of went on on a pause. But have you looked at what some of the other pieces of the organization are utilizing and is there a pool to use those systems as well?
+[TIMESTAMP] Speaker 064: I'm gonna defer that one to you. I have not personally, but I'm not sure if you have. Okay.
+[TIMESTAMP] Speaker: No. We're our own business entity. So okay.
+[TIMESTAMP] Speaker 084: So you have the power to choose whatever you without any pressure. Yeah, that's a lot of power. Speaker 307. I like it.
+[TIMESTAMP] Speaker 084: Good. Good, good. Good. All right. Perfect. So
+[TIMESTAMP] Speaker 084: Tell me you're looking for a solution to start the project in April or are you looking to be live in April?
+[TIMESTAMP] Speaker 064: We'd like to have our solution chosen and started up by April. That would be ideal timeline wise. So our fiscal year rolls over to 20 26 April 1st. So having the solution implemented by them, but you know, obviously, it doesn't need to be completely operational just picked out and at least somewhat functional. Okay. Because
+[TIMESTAMP] Speaker 084: Typically a phase one of an implementation can be anywhere from 8 to 12 weeks. So when you tell me you want it to be live, that's a totally different scenario. Then I want to pick a vendor. I want to appreciate your timeline so I can work for you and make sure I've got a team ready to. One go from the start and 2 will back fill into that date that you need. So tell me when you envision a solution kind of starting what does that date look like versus go live?
+[TIMESTAMP] Speaker 064: Um
+[TIMESTAMP] Speaker 064: Yeah. I mean, like I said, that going live on that April 1st would be ideal, if that's what the 8 to 12. So that would mean having something picked out by mid January to start on February 1st to get it live April 1st, that would be that's the ideal timeline. I love it. Okay.
+[TIMESTAMP] Speaker 084: That kind of timeline is something we could absolutely work on with the idea that dialogue continues on you kind of move towards a POC with ABC Corp. We can have that scoping call. We could put together all those beautiful documents for you and assuming there's no hang up with contracts, we can turn those over quick. I see no issue. And if you picked [COUNTRY] by mid January, why we couldn't start in February. Assuming everything kind of continues on that way. So right now I'm happy to share that with you. Okay. Perfect. All right. I'm just taking that note to make sure here. And my goal, like I said, is to be your advocate here with the team and ensure we keep moving. So my only ask to you would be just continue to keep me in the loop with that timeline. So if there's any changes, I can certainly adjust and work for you on on behalf here.
+[TIMESTAMP] Speaker 064: Yeah. Gotcha. All
+[TIMESTAMP] Speaker 084: Right. Fantastic. Tell me I hear we're looking for 10 users for the solution. Is that correct? Yes. Okay. Perfect. And have you given any thought to how many of those 10 users would be, admins? Are they all full? Read only have you given any thought to that breakdown? Um
+[TIMESTAMP] Speaker 064: Likely 2 admins. What type of users what's the breakdown of the users that are capable there? Yeah, we've got 4.
+[TIMESTAMP] Speaker 084: Different license types here at ABC Corp. We've got admins. We've got a full user. We have a light or read only user and then we've got suppliers. So if you were to look at [COUNTRY] for anything on the supplier management side, kind of those partners, right? A portal, maybe the score cards, et cetera. Those would be where the supplier licenses come in.
+[TIMESTAMP] Speaker 064: Okay.
+[TIMESTAMP] Speaker 064: Yeah. Probably 2 admins, a full user and then the rest would be a light read read only. Okay. Perfect.
+[TIMESTAMP] Speaker 084: That helps me quite a bit, which is great. And are you guys a sales [CRM_PLATFORM] house? Did I read correctly that you have [CRM_PLATFORM] internally?
+[TIMESTAMP] Speaker: Speaker 307.
+[TIMESTAMP] Speaker: Yes, I believe we do. Okay. Perfect. So you're not opposed to
+[TIMESTAMP] Speaker 084: An application that utilizes [CRM_PLATFORM].
+[TIMESTAMP] Speaker: No, but I still have to run that by it. Fair enough, fair.
+[TIMESTAMP] Speaker 084: Enough. We because we
+[TIMESTAMP] Speaker: [PERSON]'t get to decide.
+[TIMESTAMP] Speaker 084: That's fair. The good news is if you are already a [CRM_PLATFORM] house, your it team already has experience with it, right? the beautiful part is that by partnering we're an em top summit partner, right? So being in that pet sweet spot with ABC Corp, it allows [COUNTRY] to provide you with an unbelievable infrastructure for our solution. It looks and feels the same for what your users already use today for it comes with the same security. Same rigor behind it. That gives you guys the chance to kind of excel on that aspect. We have no problem answering questions whatever. We will certainly point them to the usual [CRM_PLATFORM] websites to give them that piece, but we can address anything else that comes up, but just wanted to make sure you guys are comfortable with that aspect for a [CRM_PLATFORM] platform piece, but happy to have that discussion as well. And if they have a document that they need [COUNTRY] to complete, to feel free to send that over to [COUNTRY] and we can get working on that.
+[TIMESTAMP] Speaker 084: We do not shy away from that discussion.
+[TIMESTAMP] Speaker 064: Great to hear.
+[TIMESTAMP] Speaker 084: Yeah. Yeah, of course Lee. I know I've been hogging the discussion so far. What kind of questions do you have for them?
+[TIMESTAMP] Speaker 084: I'm pretty
+[TIMESTAMP] Speaker 153: Good.
+[TIMESTAMP] Speaker 153: Pretty much what wherever I needed to hear.
+[TIMESTAMP] Speaker 084: Perfect. All right. Let's talk about the audits need if you guys don't mind because I know that there was item number 3 that you guys talked about internal audits. External audits. Both tell me a little bit more about that need.
+[TIMESTAMP] Speaker 064: It will be both internal and external, just as that's necessary for is 9,001. Okay. Um
+[TIMESTAMP] Speaker 064: Likely would just be the in the short term just necessary for like a quarterly or yearly review. Just having the ability to have some analytics and metrics to go through for record control and then doing the audit of the actual system and all of our process. So big thing is being able to audit the multiple pathways through which we do production.
+[TIMESTAMP] Speaker 084: Lee any questions there?
+[TIMESTAMP] Speaker 153: Nope. Good. Perfect.
+[TIMESTAMP] Speaker 084: Um
+[TIMESTAMP] Speaker 084: Perfect. All right. Great. And when we talked about that as your phase one, when we talk about a phase 2 would you say non performance and caps will kind of be your phase 2 aspect that you see after that?
+[TIMESTAMP] Speaker 064: I'm not sure that I can give a full answer. A guess would be yeah. The NCR cap. Um
+[TIMESTAMP] Speaker 064: Maybe complaint management would be a phase 2 I would before we get more NCR and capital. Okay.
+[TIMESTAMP] Speaker 084: Cool. Here's the great news. All of that is within our quality [PRODUCT_SUITE]. If you have the ability to decide as it works best for you at any point, which is really great. So if we want to talk about complaints, moving to phase 2 and maybe non performance cap is being a phase 3. We want to do all 3 together, you have that flexibility, which is really nice. Let me ask have you had a chance to check out our product tours from Speaker 075 that he sent you?
+[TIMESTAMP] Speaker 084: A no. Okay. No, I definitely recommend that will give you a quick snapshot into the solution today if you don't have to wait for a demo from Lee. What's also great about it is it'll provide you with a really good platform to come to the table with questions already. And I'll get you really excited about what's possible because it's basically what Lee is going to show just he will be able to provide more in depth and answer questions, obviously live. But highly recommend it I'll resend you the link, just so you have it. But definitely check that out on the particularly in the first 3 areas that you're interested in. Because that would be an area that we would focus on if we were to get together next and I'd want you to just have have kind of what's top of mind, ready to go.
+[TIMESTAMP] Speaker 064: Yeah, absolutely.
+[TIMESTAMP] Speaker 084: Okay. Perfect.
+[TIMESTAMP] Speaker 084: All right. Tell me a little bit about your current ERP that you're using. Do you have a system today?
+[TIMESTAMP] Speaker 064: Um
+[TIMESTAMP] Speaker 064: I don't think so. No, we're not. Okay.
+[TIMESTAMP] Speaker 084: Any other hr systems, analytics systems. Anything else, kind of main systems that you use today?
+[TIMESTAMP] Speaker 064: Um
+[TIMESTAMP] Speaker: Well, I would say that we have some that are being rolled out with our offsite production group, which we are a portion of. We're not currently set up with them, but it is on on our roadmap approved being one of them. And service now another application that we're using.
+[TIMESTAMP] Speaker: Or will be I guess I should say will be. Okay.
+[TIMESTAMP] Speaker 084: Do you have a date for when that would start for service now?
+[TIMESTAMP] Speaker: I honestly I do not. That's okay. Just checking.
+[TIMESTAMP] Speaker 084: We have open APIs here at ABC Corp, which is exciting. When you talk about integrations. We talked a little bit about that at the beginning of the call. That was something that was important to you. Certainly we can look to understand what if any might be important to you right off the bat or if it makes sense. Just to get you up and running first and then do the integrations as a phase two, it can be done either way. And either wait just getting an appreciation for where you stand on there.
+[TIMESTAMP] Speaker: If I think approve is our first and foremost, I would say. Oh, yeah. And you know, we're still in undetermined timeline on that. But it's one that we're focusing on. And unless you got anything front end because we're gonna start on the front end intake development and how you would want to incorporate that into the cms.
+[TIMESTAMP] Speaker 064: Yeah. I would say that just getting started up with the cms and then worrying about integration afterwards, just because we're also trying to figure out the front end integration unit with other applications anyways. So, yeah.
+[TIMESTAMP] Speaker 084: Yeah. We've seen projects be incredibly successful that way, Speaker 064. You don't have to have those integrations right off the bat. Get familiar with the system first, particularly as you're coming from non system, right? Get used to it. Understand what if any configurations you want to make or set it up the way you want to set it up and then integrations can come down the road, but at any time, you could always add that, which is great. Yeah.
+[TIMESTAMP] Speaker 153: Just just to add to that. I mean, we have our own internal electronic approval system to add all the ABC Corp products. So that also has a full field audit trail as well. It'll give you the before and after images of all the updates that doesn't count towards any of your disk space allocation in [CRM_PLATFORM] and they'll keep it online for 10 years for you.
+[TIMESTAMP] Speaker 153: Awesome.
+[TIMESTAMP] Speaker 084: Perfect. All right. So talk to me a little bit about your project. We talked about who you're talking to. We talked a little bit about what you need. We talked about that you want to pick a vendor by mid January. How does ABC Corp become that vendor by mid January? What do you need? What's your process between December 15th and mid mid January to get to POC?
+[TIMESTAMP] Speaker 064: So
+[TIMESTAMP] Speaker 064: I mean, I would say the number one thing that we're looking for is cost just because we're a small unit starting up picking the application that's gonna give [COUNTRY] the most flexibility to to scale up as we do, get bigger. But also at you know, in the initial phase for setup and the small amount of licenses that we need currently. The having that cost be further down is a big portion of it.
+[TIMESTAMP] Speaker 084: Got it. Okay. Fair enough. So you're looking to understand cost. I assume that the has budget been set for this project yet?
+[TIMESTAMP] Speaker 064: Say call that's a new question is
+[TIMESTAMP] Speaker 064: All over to you.
+[TIMESTAMP] Speaker: I want to say yes, but only in a sense that we haven't we haven't given an individual number to it. But just a software cap for apply 26. We which we are one queue off. So RFI 26 starts April 1st. So we will um
+[TIMESTAMP] Speaker: We will obviously be looking for the on on take before our FY 20 six, but we may look to adjust that for that later. So we're below a 20 k._i can tell you that you're below 20 K.
+[TIMESTAMP] Speaker 084: And that's all in for licenses and implementation.
+[TIMESTAMP] Speaker: Yes.
+[TIMESTAMP] Speaker 084: Okay. Well
+[TIMESTAMP] Speaker: I will let me take that back the implementation. Do you roll that into the subscription cost or is that a one time the implementation?
+[TIMESTAMP] Speaker 084: Is a one time additional cost and then the licenses or subscription or the reoccurring yearly cost. Okay.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Yeah. I'll still stick with that below.
+[TIMESTAMP] Speaker 084: Stick with the 20 K. Okay. I will be very upfront with you. The implementation cost. Probably alone is going to be maybe 10 and then the licenses. So we're probably over that 20 k number for you. If it if that's too much for what you're looking for. We can certainly part ways I understand. Just wanted to be very upfront with you that will probably be more than that 20 k number at this point.
+[TIMESTAMP] Speaker: No, that's okay. We can run the numbers.
+[TIMESTAMP] Speaker 084: Yeah. You can run the numbers as then you just want them to for a comparison or that. It'd be as in
+[TIMESTAMP] Speaker: Now, is that I've given a 20 k on my fi 26 already. It's a line item. That's out there that I need to deal with. If we ultimately decide to go with you. And that cost goes over. That's understandable, but I have to do a project update for that. So it's so it doesn't take you off the table. Is what I'm saying? Great. That's great news.
+[TIMESTAMP] Speaker 084: That's all I'm asking for. Let's keep the conversation going. I always find pricing is one of the most easiest discussions to have. Let's keep the dialogue open together. If you're good with that. And certainly just appreciating kind of where that all sits and falls as the conversation continues would be great. So I can work best for you. I will make one additional point on that. We have a great ROI exercise here too that will help validate the spend for the project for you. It's a great exercise. It doesn't take much of your time. It's pulling your data. So your leadership will have your data. It's not just me coming and saying this is what your ROI is. But with your help, I can put that together and that will help aid you in that discussion with leadership to. So certainly something we can put on the table along with a value alignment document I can put together to. Perfect. Perfect. All right. Great. I owe you some official costs. One more thing on the topic while we're talking about costs. Because there are the 2 parts, right? There's the licenses and the implementation piece. What I'm going to do after this is send you over a link sorry, not a link a document to our pre scoping document. Excuse me if you could complete that for me that will allow [COUNTRY] to start get a pulse on what that piece of the project would look like. I can really start putting together what a partnership with Q looks like.
+[TIMESTAMP] Speaker 084: So you'll see that in addition to the link for the product tours in that email together for you. Sound good. Yeah. Yeah. Okay. Fantastic. You've been great about putting up with all of my questions around your project. What kind of questions do you have for me and for Lee around ABC Corp?
+[TIMESTAMP] Speaker 064: Yeah. First does ABC Corp come with
+[TIMESTAMP] Speaker 064: Standard operating procedure documents. Is there an off the shelf solution for is standards that it already comes with as you buy it? Or is that something that will be responsible for filling in the gaps as we get stand up stood up?
+[TIMESTAMP] Speaker 084: We do you want to say that?
+[TIMESTAMP] Speaker 153: The solution comes ready pre built in. It already has workflows in it. That would if you took it out of the box would be compliant with is requirements. You can always change those. So that's where we can't say comes pre validated and you're bound to pass on it audit. But yeah, you'll get the training and the the user manuals to go with that. And then we will maintain that from one version to another for you.
+[TIMESTAMP] Speaker 064: Okay. Yeah. That sounds good.
+[TIMESTAMP] Speaker 153: If you purchase the validation pack, then you'll get the user requirements specs. And also the validation documents that you can then just steal those and rename rename the user and then use those as your validation to show to in order to, this is how it works.
+[TIMESTAMP] Speaker 064: Do you think you'll need validation Speaker 064? currently, no? Okay.
+[TIMESTAMP] Speaker 153: Yeah. That's normally not necessary, that [REGULATOR] regulated.
+[TIMESTAMP] Speaker 084: No, fair enough. I always like to ask though, never like to assume.
+[TIMESTAMP] Speaker 064: Correct. The other thing is the standard out of the box package. Is that is it modular or is it just a one size fits all type purchase?
+[TIMESTAMP] Speaker 153: Uh
+[TIMESTAMP] Speaker 153: Each of the each of the products are we install a number of products as part of the core because they're all inter linked. So you may be starting you said you may move on to complain and then cape well, lots of things will escalate to a cape. A non conformance would go to a cape a a funding from an audit could be escalated to a capital. They could all be dealt with in their respective initial transactions. So you could have all the actions of corrective action and preventive action could be done in the C. It could also be done in the finding depending on your corporate policy. Lots of people like to sweep a number of them up if there are a repeating problems and deal with that with one capital. So this capital is dealing with these findings and these non conformance for [COUNTRY]. So to make sure that's all all in place, the whole thing will be installed in one go. You simply give people what [CRM_PLATFORM] calls, permission sets or permission set groups that switch on your permission to see that particular. Piece of functionality. So caper will be there from day one. If you don't give anybody a permission set with any capital functions in it, they will never know. It's there. They'll never see it. But as you go along. So you're gonna be very granular. I mean, you're all the way down to individual fields and individual [PERSON] layers can be assigned to a particular user. Okay.
+[TIMESTAMP] Speaker 153: We tried to say try to avoid going to that level because you're just creating a bit of an admin nightmare going forward. But yeah, but if you want to it's possible. Yeah. The other thing I would mention is, if we install in your existing org, [CRM_PLATFORM] org, we will not disturb anything that's already in there because we're only using the platform objects. So we will use the customer object. And the customer contacts are really the only 2 [CRM_PLATFORM] things that we use. Everything else is in our own custom objects maintained as a package. You can you know, if you have skilled admins, they can make any configurations to ABC Corp if they need to. So if you have to relay relay out a [PERSON], you can use the standard [CRM_PLATFORM] [PERSON] editor to do just that. You create your own local copy and it will always use your copy first rather than the C Q one.
+[TIMESTAMP] Speaker 064: Awesome. I am not a [CRM_PLATFORM] guru. So
+[TIMESTAMP] Speaker 064: Run that by someone that is to tell me.
+[TIMESTAMP] Speaker 153: We chose it because they manage all this for [COUNTRY]. We don't need to worry about database servers and [ERP_SYSTEM] instances and sequencing and performance. That's all part of [CRM_PLATFORM] as far as we're concerned and all the security parameters and certifications that they maintain. We automatically acquire because we're using their platform.
+[TIMESTAMP] Speaker 153: Their service cloud, their sales cloud although lots of them don't realize that they are applications that are written using their same tool set that sit on the [CRM_PLATFORM] platform. So do we use exactly the same tool set and you know, there's no integration required to service or the sales it's already there natively. And if somebody is looking at, for instance say customers unless they've got a sales or sorry, a ABC Corp license, they won't see attached to that customer record, all the complaints or non conformance or capers associated with them. If you got a ABC Corp license and you went to look at an account, miraculously, all those related objects will appear for you. But if you're just an account exec, you're just dealing with that commercial side of things. They have no need to get tangled up in the quality piece. They'll never see it.
+[TIMESTAMP] Speaker 084: It's great to know.
+[TIMESTAMP] Speaker 084: Sure. I know we're coming up on the last call together. Anything else that we can answer for you?
+[TIMESTAMP] Speaker 064: Um
+[TIMESTAMP] Speaker 064: No. I think just after you send the product tours and the one document that we need to fill out would be next steps after that.
+[TIMESTAMP] Speaker 084: So once you share back the document completed to me, I'm going to work with our third team member who runs the services piece of the discussion. And I'll be able to put together pricing for you, which will match that need that you had verbalize saying that's how we're gonna get to POC. I will be able to turn that over for you. Once I get that from back, okay.
+[TIMESTAMP] Speaker 153: Perfect. Perfect. Yeah. And the product to [COUNTRY] are actually the live software with an electronic guide. So you can forward the guide. It'll take you through the steps or if you prefer. You can go off and start clicking on the various hyperlinks and explore the software. So it's not a like a can Speaker 039. You have to follow it through. You can actually guide yourself, should you need to
+[TIMESTAMP] Speaker 064: I think you'll really enjoy it sounds great. Yeah, yeah.
+[TIMESTAMP] Speaker 084: Yeah, I'm really excited. And then certainly if you have more feedback, I'm sorry, if you have more questions following after you read through it just certainly let Lee. And I know you'll have my email and you can certainly put the questions in and we're happy to address those for you.
+[TIMESTAMP] Speaker 064: Yeah. We'll do. I will likely have some more I
+[TIMESTAMP] Speaker 064: Just missed that was a capability. Yeah.
+[TIMESTAMP] Speaker 084: We like questions, please keep them coming. All right. Good stuff. With that, I am going to start putting together my action item email to you with this data that we talked about. As soon as I hear back from you, I will get working on the cost aspect and we'll go from there. And then we can circle back around outlining additional questions that you might have and next steps to get going here.
+[TIMESTAMP] Speaker 064: Okay. Perfect. Thank you. So, of course.
+[TIMESTAMP] Speaker 084: I hope you have a great day. Thanks again for sharing more about your project.
+[TIMESTAMP] Speaker 084: You take care. Bye, bye.
+
+---
+Client resource profile: Mid-size cross-functional quality team.
+Client project resource guidance: Assume a mid-size customer with a core project team: client PM, executive sponsor, quality systems owner, IT/admin owner, validation lead, training/change lead, and process owners for each in-scope module. SMEs are available part-time for requirements, UAT, and go-live readiness.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

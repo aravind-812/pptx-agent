@@ -1,0 +1,163 @@
+[TIMESTAMP] Speaker 033: Hey, Chandran. Hello, Gann.
+[TIMESTAMP] Speaker 033: Hi, guys.
+[TIMESTAMP] Speaker 033: I am checking with Gann as well.
+[TIMESTAMP] Speaker: Hello, Ben. How are you all? Hello. Hi, I'm good. How are you all? Hi, Ken. Good, good. Hi, Tom.
+[TIMESTAMP] Speaker 298: Hello.
+[TIMESTAMP] Speaker 033: All right. Let me just pull up the SOW as well. That we can go through the comments and knock it out. Save as.
+[TIMESTAMP] Speaker 033: Second.
+[TIMESTAMP] Speaker 033: Sorry, sharing my screen. So, Kara, I know you had a question around the supplier functionality, so do we, sorry, do you want to wait for anybody before we can begin or?
+[TIMESTAMP] Speaker 183: No, Speaker 183 just joined, that's the last one that we have on our list.
+[TIMESTAMP] Speaker 033: Okay, awesome. I didn't realize that. So I was going to pull up the subscription. Now, Tom, I don't know if you know this off the top of your head, do we if Qtm is subscribed for [PRODUCT_SUITE]?
+[TIMESTAMP] Speaker 298: Yes. So just because of the... Yeah, I think Curium became a Customer 39 39 and off the top of my head, I think the date was 2021. Year. Okay. Yeah. So they had that, the whole supplier capability included as part of [PRODUCT_SUITE].
+[TIMESTAMP] Speaker 033: Oh, okay. Okay. So there's no… But then what about the supplier licenses?
+[TIMESTAMP] Speaker 298: Yeah. No, that's the only thing that as far as the Curium team goes, I didn't know if that was a… I. [PERSON]'t know if that's a consideration for where you're headed with relation to supplier. Management. There is a… We do offer a supplier. Portal. We… The supplier portal is a separate license. You basically license it per supplier. Not Thank you. Something that you have to do, but something that's often people will consider depending upon what they're looking to implement from a supplier management perspective. So. Yeah. And.
+[TIMESTAMP] Speaker 033: I think the point, yeah. Sorry, go ahead, Speaker 142.
+[TIMESTAMP] Speaker: No, I was just going to say I went through the modules yesterday because I hadn't really explored that one much. And it looks like a lot of the supplier module functionality is, built upon your signing actions to your supplier, them responding, issuing NCs to your supplier, them, responding. So without the supplier involved, how does that work?
+[TIMESTAMP] Speaker 033: I mean, the way it works... Go ahead, Rob.
+[TIMESTAMP] Speaker 298: No, you're good, [PERSON], and you could probably answer it better than I.
+[TIMESTAMP] Speaker 033: Yeah, no. So I think the way it works is that if there is a component that requires a supplier to respond, then the way it works, is that
+[TIMESTAMP] Speaker 033: It goes to the supplier central or the supplier portal and they respond from there. In the absence of the supplier portal or the supplier. Licenses, that record would be assigned to an internal record and you would be communicating with the supplier through emails, right? So you would send an email email from within ABC Corp to that supplier. And then the supplier would probably respond to that email and then you would manually update that record to whatever response you got from the supplier. So. If you had an NC, for example, you send them an NC, they would they would provide your response and you would just copy paste it over. That's how it would be.
+[TIMESTAMP] Speaker: So, okay, that was my next question is so it's basically it's creating more manual work on Curium side because you're then having to copy and paste what they're providing. So, it's not going to create forms that are conducive to your supplier. Responding. So how, I guess, what would the NC look like and how would it go over to the supplier outside of the system and how would they be responding? Because like right now with the manual system there's a form that's provided provided to them that they can then respond within.
+[TIMESTAMP] Speaker 033: Okay. Yeah. But ABC Corp,
+[TIMESTAMP] Speaker: Like you email them the NC, but they wouldn't be able to respond within, like even manually, right?
+[TIMESTAMP] Speaker 033: They would be able to. So, I, guess. What you're saying is that let's say you have like a word form, right, that they would fill out, and it pre populates with some of the information that you would get from the NC record. Right. Is let's say if a supplier would fill out that word form and send it back to you or an excel form, then send it back to you, then that excel is where you would you use the data from the excel and populate it into into that object within or that record within [CRM_PLATFORM]. Is that the ask?
+[TIMESTAMP] Speaker: Yeah, I was just wondering how, what would go over to them? would they get a word form from ABC Corp, like to respond or to fill in through that module? Or no?
+[TIMESTAMP] Speaker: Or, is that something we're going to have to generate outside the system to create for them to respond?
+[TIMESTAMP] Speaker 033: No, no. It's your choice. So you can define what goes into that form. If we went that route of creating an offline form for them to fill out, then you can define what they would fill in that form. And then only that kind of information would go there. Whatever fields you want them to fill out. You would just provide that detail in there and then it would automatically map it to the system. So it would be, I want to say an office based form like a report if you will. That would create.
+[TIMESTAMP] Speaker 033: And it's a fillable report that basically once you send it to the supplier fills it out and then they send it back Right. And it imports that file and then it maps the data from those files into the fields in the system.
+[TIMESTAMP] Speaker: Speaker 183, do you know, are they planning to get licenses to all our suppliers for this module? Or are we going to have to do the workarounds?
+[TIMESTAMP] Speaker 183: I think we're going to have to do the workarounds. There's no way we're going to… Yeah.
+[TIMESTAMP] Speaker: It didn't seem like we would. That's. Why I'm wondering how beneficial. Okay.
+[TIMESTAMP] Speaker 183: So, Speaker 033, in your response there on the screen, you talk about SCARs. Is that separate than the NCs. You're talking about? What's the SCARs involved? Does that involve the
+[TIMESTAMP] Speaker 033: Licenses? Yeah. I think this might be a terminology difference as well. So, NCs are product or process. Non conformances that occur. In house. And that product non conformance could be, let's say, you have a bad shipment that you received from a supplier, right? Or raw material shipment, right? Or you received a bad product from a supplier, right? Either way, raw material or product. So usually when there is an inspection, that inspection can trigger a non conformance because if you have a failed inspection, now we have a non conforming product on hand. So that's what we term as a NC. In the pharma space.
+[TIMESTAMP] Speaker 033: Often it's used in both the contexts. So you might have a product non conformance and you also might have a process. Non conformance. And in either case or either situation, it may result into a supplier corrective action. So you might have a process, non conformance and the process non conformance was because of a supplier fault where they provided you with the wrong material. And now it broke your process, right? Down the way. So that could also be a trigger trend for a supplier. Corrective action. So either situation is possible in the pharma, space. So when there.
+[TIMESTAMP] Speaker 033: Is a non conformance you can use the word deviation or non conformance interchangeably. When there is a product or a process deviation or a non conformance, if it's determined to be a supplier fault, we would issue a supplier corrective action to that supplier so that they could provide you with the response on what they're going to do to fix that problem.
+[TIMESTAMP] Speaker 183: And does that require them to have a license in ABC Corp for that connectivity?
+[TIMESTAMP] Speaker 033: So those are the 2 options we're talking about, right? So one is the option where we give them an offline form, like a Word or Excel, right? They will fill that out. And then upload it, right? You manually upload it, and then it kind of goes into the system. The other option is the portal, right, where they would get an assignment record from the system to say, Hey, you've been assigned to a SCARF from Curium, right? Fill out the details. So they would log in, they would provide the response, provide the corrective actions that they took, and hit submit, and now it automatically comes back into your….
+[TIMESTAMP] Speaker 183: And what is the pricing of having a number of suppliers have access to that portal? How much? Does that cost?
+[TIMESTAMP] Speaker 033: Yeah, I think that's a Tom question. Tom, go ahead.
+[TIMESTAMP] Speaker 298: Speaker 183, it's really based on the number of suppliers that you would need access to. So. Let me start. There. Do you have, as far as Curium is concerned, is there a, usually companies will play kind of with the 80 20 rule where they're focused on the more critical suppliers through the portal. Is that number like 100, 500, 1000? Can you give me any background?
+[TIMESTAMP] Speaker 183: Let's assume 100. What would that look like?
+[TIMESTAMP] Speaker 298: Yeah. It's like, literally when you're talking about those numbers, it's like $10 a supplier. So if you're talking about 100, it's like $10,000 a year.
+[TIMESTAMP] Speaker 033: No, $1,000 a year year.
+[TIMESTAMP] Speaker 033: Hmm. Is it $1,000 or $10,000, Tom?
+[TIMESTAMP] Speaker 298: If you did $100, Vavin, it's $1,000 a month or $12,000?
+[TIMESTAMP] Speaker 033: A Oh, $1,000. Okay. Year. Got you. Okay. Sorry. We have,
+[TIMESTAMP] Speaker: Like right. Now, Speaker 183, we have $240 on our ASL. Hmm.
+[TIMESTAMP] Speaker 183: We'll need to understand that and take take this back. A look at that.
+[TIMESTAMP] Speaker 033: Yeah. So, Tom, do you want to send them some indicator pricing on, I? Think you said 240, right, on the ASL?
+[TIMESTAMP] Speaker: Right, but we always have new ones coming. Yeah, that's fine. Yeah, 240 is our number right now.
+[TIMESTAMP] Speaker 033: Yeah, yeah.
+[TIMESTAMP] Speaker 298: Yeah, and even, again, just to throw ideas out, if you were to say to yourself, I mean, 240 is full boat, right? Right? If you were to say, hey if we kind of looked at it from a level of engagement perspective, maybe we're going to look at focusing on Speaker 183's number and say we're going to start with 100. So there's options there. I can absolutely share with you. I can share budgetary pricing with you. I can share some more detail on that, what that portal capability looks like. We can even go as far as providing you know, [PERSON] Bavit's and talking about some different options for you, which is great. We could even go so far as to providing you some a demo on what those different options might look like.
+[TIMESTAMP] Speaker 183: And, how do those licenses work? Is it just you have a bucket of them and you assign them as you need?
+[TIMESTAMP] Speaker 298: Yes, yes. And I'll tell you this, it's almost, so the supplier license, it has a little more flexibility to it, meaning and I think that customers are typically saying I'm going to purchase purchase a supplier portal license for Customer 39 39 A and it's there might be more than one person at Customer 39 39 A that uses that license depending upon how they're responding. But yes.
+[TIMESTAMP] Speaker 183: So we could potentially have 100 of them, but not so share them as needed, right? So is it fair to say that? we wouldn't be communicating with all of them at once right?
+[TIMESTAMP] Speaker: Okay. Right, that's what I was thinking. If you have somebody like, okay, this year. We have 50 suppliers that need to be re qualified, so we're going to give licenses to those 50. We have SCARs out there with 10. Others those are the ones that would get the licenses. And then as you move into year, two, you remove them from the ones that got re qualified, you move to the ones that need to be qualified. It's a lot of administrative stuff. And like you said, a lot of times you're communicating with more than one person. [PERSON]'t know who's going to be the one who's actually responding. So
+[TIMESTAMP] Speaker: One supplier is taking more than one license as well. Yeah, yeah. So
+[TIMESTAMP] Speaker 298: There's there's you know, they can just just like an internal license, right? If that supplier were to go away or your interactions with them, you decided, hey, we're going to move that license to a different supplier. You can do that. But yeah, I mean we're happy to talk it for a
+[TIMESTAMP] Speaker: Minute. So, [PERSON], and back to you did mention SCARS. When I went through the module, I didn't see that. There are actual SCARS. Are they truly NCs? And if they're only listed as NCs and not actual SCARS, how are they distinguished from other NCs? And I ask that because we have internal NCs that the cause is root cause is, lands. Amazon, it's a supplier issue. So then you would generate another NC specifically for that supplier. And then how do you decide like which like from a metricing perspective, what's truly a SCAR versus what's truly an NC?
+[TIMESTAMP] Speaker 033: I want to say SCAR is a separate object, but I want to confirm that.
+[TIMESTAMP] Speaker: Okay I didn't see that in the demo.
+[TIMESTAMP] Speaker 033: That's a bit of a surprise for me. Okay. Let me go ahead and confirm that. For you. My understanding is that SCOT is a separate object by itself. But, maybe it's tied to supply interaction or supply deviation. So I'm just gonna go through it and make sure I confirm it. Yeah, yeah. Okay.
+[TIMESTAMP] Speaker: Yeah, that was one of the questions I had as well. Is that issued straight from the supplier quality module or is it issued from the NC module?
+[TIMESTAMP] Speaker 033: It would be issued from the NC module, module. But I want to just confirm. That. Okay. And if it is issued from the NC modules, it's going into supply and interaction or supply deviation. So that is the only piece that I want to confirm, but I'll speak to the team and confirm that for you.
+[TIMESTAMP] Speaker 033: So, yeah, I mean, in any case, right, I mean, I think that's what we're looking. At. So, So I see that the point that you need supply qualifications, cars, supply deviations, right? So these are things that you would like to implement. So I can update the pricing to reflect that. And. Then from a licensing. Perspective, Tom can give you the pricing for, let's say how many 100 licenses, right? Whatever you guys discussed. And. Then we can give you both. And. Then you can kind of use that as your baseline to have a conversations internally, right? Whether it makes sense to allow suppliers to, interact. Directly with the supplier, allow users to interact directly with the supplier, or is it just a offline, online communication?
+[TIMESTAMP] Speaker 183: Okay, that'd be great. If you gave [COUNTRY] those different options. Yeah. So we're probably talking then at that point over 100 grand.
+[TIMESTAMP] Speaker 033: All right.
+[TIMESTAMP] Speaker 033: Yeah, a little bit. Unless you want to take over the validation piece, piece. Then that brings it. Down. Because I think the validation component is, I mean, we can provide you the validation documentation anyway, and then you can do the risk assessment and the PQs.
+[TIMESTAMP] Speaker 183: We can do the validation.
+[TIMESTAMP] Speaker 033: Yeah. So then that can help bring it down. And even though I have to increase some configuration cost, which is fine, but that would still keep it lower. And the fees whatever Tom comes back with, we can still keep both under 100K, total. Okay.
+[TIMESTAMP] Speaker: So I'm sorry, I haven't seen this SOW before and I'm just kind of coming in onto the slate. So, Speaker 183, I'm assuming this is supposed to replace the current [ERP_SYSTEM] database at Maryland Heights. So do we have interfaces built into the SOWs where it's interfacing with our receiving, application, incoming inspection, applications, and ERP systems? No. To make it work?
+[TIMESTAMP] Speaker 183: That's not in scope of this.
+[TIMESTAMP] Speaker: So we would be doing work in yet. Another SIS. So we'd be keeping [ERP_SYSTEM] doing this additionally?
+[TIMESTAMP] Speaker 183: We need to ask him that question. Okay. If that was part of her expectation for this. Okay,
+[TIMESTAMP] Speaker: Because otherwise we're gonna to be maintaining suppliers in another system beyond what we're already what I'm saying? Like. It should replace it shouldn't be an addition. But.
+[TIMESTAMP] Speaker 183: I don't think we're planning.
+[TIMESTAMP] Speaker: On interfacing this.
+[TIMESTAMP] Speaker 183: Yeah, I don't think we're planning on interfacing with any other system.
+[TIMESTAMP] Speaker: But that's how we, that's, the ASL is what communicates to receiving whether suppliers approved and to allow something to hit the
+[TIMESTAMP] Speaker 033: Dock. Yeah, exactly.
+[TIMESTAMP] Speaker: Yeah. So it's got an interface to say whether, it can be received and it's got an interface to incoming inspection to say whether the supplier's approved or conditional and whether they're full testing or reduced, whether there's a scar out there on a supplier.
+[TIMESTAMP] Speaker 183: Can you guys add that to your scoping here for your budget?
+[TIMESTAMP] Speaker 033: The integration for the ASL? Okay, got Got it.
+[TIMESTAMP] Speaker: Okay. It's 3 different…. It's ERP system, a receiving application… Hang on a second. Let me take another …and incoming inspection. Question. That I know of. Yeah. Three different ones.
+[TIMESTAMP] Speaker 033: Okay. So I'm going to….
+[TIMESTAMP] Speaker 033: Add integrations for ERP systems. So… which are they again? Sorry.
+[TIMESTAMP] Speaker: The ERP system.
+[TIMESTAMP] Speaker 033: Okay. What data are we pushing to ERP?
+[TIMESTAMP] Speaker: ERP is where all the materials come from and purchasing. So purchasing should have a trigger to say whether a supplier is approved before they put a PO out on a GXP item. Okay.
+[TIMESTAMP] Speaker 033: So the approved supplier list, so when a supplier is approved within ABC Corp, it should send a note to your ERP to say, hey, this is an approved supplier.
+[TIMESTAMP] Speaker: Correct. Yes.
+[TIMESTAMP] Speaker 033: Hang on a second. Let me write that down. Down. So when a supplier is approved in ABC Corp, ERP should know that. ERP should know about it.
+[TIMESTAMP] Speaker 033: Okay, all right, what's the next one?
+[TIMESTAMP] Speaker: Receiving, so receiving needs to know if a supplier is approved for each item.
+[TIMESTAMP] Speaker 033: Is receiving a separate system or is it part of the same ERP?
+[TIMESTAMP] Speaker: Yes, it's separate. Right?
+[TIMESTAMP] Speaker 033: Now. Okay, gotcha. Okay. And. Now does the receiving system already connect with [ERP_SYSTEM]?
+[TIMESTAMP] Speaker: It connects with [ERP_SYSTEM],
+[TIMESTAMP] Speaker 033: Yes. Oh, it connects with [ERP_SYSTEM], okay. So if a supplier is approved. Supplier. Okay. All right. And then the third one is?
+[TIMESTAMP] Speaker: Incoming inspection.
+[TIMESTAMP] Speaker 033: Incoming inspection.
+[TIMESTAMP] Speaker: Yeah. Because it needs to know, supplier, status, approval, status, and then SCAR also.
+[TIMESTAMP] Speaker 033: Wow, okay. Yeah, 3 systems. I think just these two, right, just out of the gate. I mean, ideally, once you're kind of in that journey with ABC Corp, you can literally replace these 2 with the inspection module within and ABC Corp. ABC Corp. So.
+[TIMESTAMP] Speaker: Yeah, yeah. And I don't know if anyone's looked at that yet. Yet. But yeah, if we're doing supplier in ABC Corp, it makes sense to do that. But yeah. Yeah, exactly.
+[TIMESTAMP] Speaker 033: Okay, sounds good. So I can include these integrations in the pricing. And. So for
+[TIMESTAMP] Speaker: Incoming, they also need to know if there's a scar, like if anything, yeah, a scar on.
+[TIMESTAMP] Speaker 183: Kim, do you have any similar concerns for audits, if we're looking at the audit module?
+[TIMESTAMP] Speaker: It looked like I did look at that one also? Just because I had it before and it looks like, yeah, I mean it's interactive with your supplier as well. In that they can respond to corrective actions and stuff. So without that portal. It kind of limits the ability. And I just had some questions on how flexible it is or if it's… It would be good to see that one a little bit more. But it looked I. [PERSON]'t know that it's going to streamline audits as much as we'd like it to maybe.
+[TIMESTAMP] Speaker: Like the audit programs and which I think that's more optional. It's kind of set up that you use audit programs, but you don't need to issue, but it seems like an extra step. That's not necessarily necessary. And I didn't really see. Like right now we have like like summary of like an executive summary and we write about each topic and it's more focused on the findings.
+[TIMESTAMP] Speaker 298: Just well and Kim I'll just throw this out there. Again, I mean similar to perhaps some the of the areas you might have questions on. If you want to walk through that process and just make sure that you're thinking of it the way that it's actually would have to be implemented. I'm happy to set that up for you.
+[TIMESTAMP] Speaker: Okay, yeah. I don't know how far along we are in this and I don't know Speaker 183 if there's an order of which these are going. If we're trying to do supplier keyed in audits or vice versa.
+[TIMESTAMP] Speaker 183: There's no order been defined yet. Yet.
+[TIMESTAMP] Speaker: Okay. Right. Yeah. And. Then one thing with audits, I think it said, like you have to say upfront if the audit is like, pass or fail, like we don't do that so is that an out of box thing where we're going to get into customizations because we don't say like, oh, your audit failed. It's, hey, here are your findings. So your response we'll see if your corrective action plan is acceptable, but we don't assign a pass fail Fair up, upfront. Front. Front and I wouldn't I don't think we would want to do that. I mean we're open to change, but that's a very oh, your audit failed. That doesn't look good. You know.
+[TIMESTAMP] Speaker 033: Yeah I agree, 100 percent. So and I think that's just an out of the box field. So we can take it outage, you know what I mean I share.
+[TIMESTAMP] Speaker: Yeah. Okay.
+[TIMESTAMP] Speaker 033: Sounds good. So I think I have my key pieces of information. So just one last question on the supplier. If we start. So from a supplier. Perspective, we're going to focus on the approved supplier. List, supplier, qualification. Did we say we're going to do SCARS as well, or no?
+[TIMESTAMP] Speaker 033: Yes. Okay. I.
+[TIMESTAMP] Speaker 183: Mean, could you just line item those out? So we having a menu of choices here. So if we want to Okay. The whole thing, we would pay this. If we didn't do SCARS, it would be this.
+[TIMESTAMP] Speaker 033: Yeah. Okay. You got it. Let me, let me line item those out for you and then we can kind of work. Thank you. Okay. Sounds.
+[TIMESTAMP] Speaker 183: Good.
+[TIMESTAMP] Speaker 183: And is this conversation just about, this is just about supplier module, not the other modules?
+[TIMESTAMP] Speaker 033: No, I mean, the other modules, I mean, if you have any questions, you're more than happy to answer those as well. Not be initiated. Do we
+[TIMESTAMP] Speaker 183: Have the quotes, complete quotes for complaints and audits and risk?
+[TIMESTAMP] Speaker 033: Yeah, so the licensing component of it is already covered in your [PRODUCT_SUITE]. Subscription. So you already are subscribed to that. So. This would be the implementation of these 3 modules along with the supplier module. So that.
+[TIMESTAMP] Speaker 183: Cost is for all the modules? Modules?
+[TIMESTAMP] Speaker 033: Correct. This cost right here is for all the modules,
+[TIMESTAMP] Speaker 183: Yes. Got it. Thank you. Yeah.
+[TIMESTAMP] Speaker 183: Okay. That's easier to digest.
+[TIMESTAMP] Speaker 033: This wouldn't be just for the supplier. That would mean that you have a lot of configurations. Yes.
+[TIMESTAMP] Speaker 033: Okay. All right. Okay. Any other questions?
+[TIMESTAMP] Speaker 183: What you need to add then and you'll get that back to Kara and Kim?
+[TIMESTAMP] Speaker 033: Yes, I will. Yes, absolutely. Okay. And I'll send you the list of functionalities, Kara and Kim, so that from a supplier perspective, what exists and then we can kind of pick and choose, right, cherry pick which ones you need and then I'll update the hours accordingly. So I'm going to take out the validation specialist. So that goes away. The only thing I have to concern, keep you know, in mind about is the configuration aspect. So, once you identify which functionalities you need from the supplier capabilities that I send you can then kind of we can then adjust the hours accordingly.
+[TIMESTAMP] Speaker: One last question I had is I noticed on the walkthrough, it said suppliers are qualified on a product by product basis or service. Basis. I'm curious about the product by product product basis. So I didn't see how that was managed or
+[TIMESTAMP] Speaker: How that worked in the system, the product by product?
+[TIMESTAMP] Speaker 033: Yeah. So an example there would be is right. You have a supplier and that supplier is qualified to supply chips for you, right? I'll just use chips as an example. But then you have that same supplier that could also be providing soda to you. So there might be different levels of qualification or different requirements depending on the type of product that you're getting from.
+[TIMESTAMP] Speaker 033: The supplier. So that's where that conversation comes into play, is that you might have you will supply you will qualify supplier on a product by product basis. Now, if you don't do that, and if you just qualify the supplier as a whole, right? That's that's okay, too. We just don't do the product level qualification. But some customers have that option, right, where they do product qualification along with supplier qualification to make sure that the supplier is not only qualified themselves overall, but they're also qualified for the individual products.
+[TIMESTAMP] Speaker: Can it be done by group, like a love so we qualify based on level of products, but then we also have a listing of which like, each item that the
+[TIMESTAMP] Speaker: Each supplier that item is qualified for. So on the ASL would it show like the supply like
+[TIMESTAMP] Speaker: Where do you see that product by product you or how does that look I didn't really see that and
+[TIMESTAMP] Speaker: The system is that a different view than what the actual ASL is? Your ASL is going to truly show you like a supplier one time or is it going to show you a supplier? Multiple
+[TIMESTAMP] Speaker 033: Times for each product. Product. Yeah, if I remember it right, I think the ASL shows you a supplier. One time. Okay. And then once again, I'm going to pull up one of my sandboxes and see what does it do. Hang on a second.
+[TIMESTAMP] Speaker: But you can qualify them by like a group. Like. Right now, we have like a material type classification. And based on that, a supplier is assigned a risk level. And based on that risk level,
+[TIMESTAMP] Speaker: That's where it drives the qualification requirements. Essentially. Correct.
+[TIMESTAMP] Speaker: And are those like, modifiable or is that going to be a customization? is that high low medium risk? Like right now we have no.
+[TIMESTAMP] Speaker 033: Those are one level one.
+[TIMESTAMP] Speaker: Two, three, four, 5 you know.
+[TIMESTAMP] Speaker 033: Yeah as long as so if the levels drive a functionality which I think is true in this Case to some extent. Extent. It's modifiable. It's a configuration customization. So I think the functionality driven by the levels will decide whether it's a configuration or a customization. Either way. So for example, if it's a level 5 and you need an additional workflow step, right, then that's one thing. And. If it's a level one, then you don't need a workflow. Step, right? I might be messing up the levels, but I'm just giving an example. Example.
+[TIMESTAMP] Speaker 033: I don't think it's a
+[TIMESTAMP] Speaker: Workflow step. It's just like you build your criteria of what's needed. So you would just have different criteria built for each one. Got it. Yeah. Okay.
+[TIMESTAMP] Speaker 033: Yeah. Then I think that's fairly easy. I don't think... I mean, it's a configuration still, but it's a fairly easy configuration compared to like a complicated workflow, right, depending on the levels.
+[TIMESTAMP] Speaker: Okay, so there is still a way though, like the product by product. So there is still a way to say for items A, B, and C or item A it can come from suppliers one, two, or 3. And then, okay. There is a way to do that in there.
+[TIMESTAMP] Speaker 033: Sounds good. I know we're at the top of the hour. Any questions? Any more questions, [PERSON]?
+[TIMESTAMP] Speaker: No, not right. Now. Thank.
+[TIMESTAMP] Speaker 033: You. Okay. All right. Sounds good. So let me get that information to you as soon as I can and then we'll take it from there on the SOW.
+[TIMESTAMP] Speaker 298: Sounds good. I'll follow.
+[TIMESTAMP] Speaker 033: Up with the process and stuff.
+[TIMESTAMP] Speaker 298: Bye. Thank you. Thank.
+[TIMESTAMP] Speaker 183: You. Good day. Bye.
+
+---
+Client resource profile: Business-led transformation team.
+Client project resource guidance: Assume a business-led rollout with executive sponsor, business process lead, change/training lead, department SMEs, client PM, and part-time IT support. Emphasis should be placed on user readiness, role-based training, communications, and adoption across impacted teams.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT Agent — System Architecture</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #F4F6FF;
+  background-image:
+    radial-gradient(circle at 15% 15%, rgba(167,139,250,0.10) 0%, transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(248,113,113,0.07) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(52,211,153,0.05) 0%, transparent 60%);
+  min-height: 100vh;
+  padding: 28px 32px 40px;
+  color: #1e293b;
+}
+
+/* ── Animations ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-dashed {
+  0%, 100% { border-color: #F87171; }
+  50%       { border-color: #FCA5A5; }
+}
+.section { animation: fadeUp 0.4s ease both; }
+.section:nth-child(1) { animation-delay: 0.05s; }
+.section:nth-child(2) { animation-delay: 0.12s; }
+.section:nth-child(3) { animation-delay: 0.19s; }
+
+/* ── Page header ─────────────────────────────────────────── */
+.page-header { text-align: center; margin-bottom: 30px; }
+.page-header h1 {
+  font-size: 1.85rem; font-weight: 800; letter-spacing: -0.6px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.page-header p { color: #64748b; font-size: 0.875rem; margin-top: 5px; }
+.header-chips { display: flex; gap: 8px; justify-content: center; margin-top: 10px; flex-wrap: wrap; }
+.header-chip {
+  background: white; border: 1px solid #e2e8f0; border-radius: 20px;
+  padding: 4px 13px; font-size: 0.72rem; font-weight: 500; color: #475569;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* ── Main grid ───────────────────────────────────────────── */
+.main-grid {
+  display: grid;
+  grid-template-columns: 195px 1fr 1.05fr;
+  gap: 16px;
+  max-width: 1380px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ── Section cards ───────────────────────────────────────── */
+.section {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+}
+.section-header {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 16px; padding-bottom: 12px;
+  border-bottom: 1.5px solid #f1f5f9;
+}
+.section-icon { font-size: 1.2rem; }
+.section-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.3px; color: #334155; }
+.section-sub { margin-left: auto; font-size: 0.63rem; color: #94a3b8; font-weight: 500; font-family: monospace; }
+
+.mini-title {
+  font-size: 0.67rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 1px; color: #94a3b8; margin: 10px 0 7px;
+}
+.divider { height: 1px; background: #f1f5f9; margin: 13px 0; }
+
+/* ── Input chips ─────────────────────────────────────────── */
+.input-item {
+  display: flex; align-items: center; gap: 9px;
+  padding: 9px 12px; border-radius: 10px; margin-bottom: 7px;
+  font-size: 0.81rem; font-weight: 500; border: 1px solid;
+}
+.input-item.transcript { background: #EEF2FF; color: #3730a3; border-color: #C7D2FE; }
+.input-item.template   { background: #F0FDF4; color: #14532d; border-color: #86EFAC; }
+.input-item.corpus     { background: #FFF7ED; color: #9a3412; border-color: #FED7AA; }
+.input-count {
+  margin-left: auto; font-size: 0.67rem; font-weight: 700;
+  padding: 2px 8px; border-radius: 10px; background: rgba(0,0,0,0.08);
+}
+
+/* ── Agent / eval cards ──────────────────────────────────── */
+.card {
+  border-radius: 12px; padding: 12px 14px; margin-bottom: 6px;
+  display: flex; align-items: center; gap: 10px;
+  border: 1.5px solid; cursor: default;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 5px 18px rgba(0,0,0,0.11); }
+.card.compact { padding: 9px 12px; }
+
+.card-icon { font-size: 1.25rem; flex-shrink: 0; }
+.card.compact .card-icon { font-size: 1rem; }
+.card-body { flex: 1; min-width: 0; }
+.card-title { font-size: 0.85rem; font-weight: 600; }
+.card.compact .card-title { font-size: 0.8rem; }
+.card-desc { font-size: 0.71rem; color: #64748b; margin-top: 2px; line-height: 1.35; }
+.card-badge {
+  font-size: 0.62rem; font-weight: 700; padding: 3px 9px;
+  border-radius: 10px; white-space: nowrap; flex-shrink: 0;
+}
+
+/* Card colour themes */
+.c-haiku   { background: #FFFBEB; border-color: #FDE68A; }
+.c-haiku   .card-badge { background: #FDE68A; color: #92400e; }
+.c-sonnet  { background: #F5F3FF; border-color: #DDD6FE; }
+.c-sonnet  .card-badge { background: #DDD6FE; color: #5b21b6; }
+.c-output  { background: #F0FDF4; border-color: #86EFAC; }
+.c-output  .card-badge { background: #86EFAC; color: #14532d; }
+.c-det     { background: #EFF6FF; border-color: #BFDBFE; }
+.c-det     .card-badge { background: #BFDBFE; color: #1e40af; }
+.c-llmeval { background: #FDF2F8; border-color: #F9A8D4; }
+.c-llmeval .card-badge { background: #F9A8D4; color: #9d174d; }
+.c-semi    { background: #FFFBEB; border-color: #FEF08A; }
+.c-semi    .card-badge { background: #FEF08A; color: #713f12; }
+.c-runner  { background: #F0FDFA; border-color: #99F6E4; }
+.c-runner  .card-badge { background: #99F6E4; color: #134e4a; }
+.c-bench   { background: #FFF7ED; border-color: #FDBA74; }
+.c-bench   .card-badge { background: #FDBA74; color: #9a3412; }
+
+/* ── Flow connector ──────────────────────────────────────── */
+.flow-connector {
+  display: flex; flex-direction: column; align-items: center;
+  margin: 3px 0; gap: 2px;
+}
+.flow-line { width: 2px; height: 11px; background: linear-gradient(to bottom, #C7D2FE, #DDD6FE); }
+.flow-tag {
+  background: #EEF2FF; border: 1px solid #C7D2FE; color: #4338CA;
+  font-family: monospace; font-size: 0.59rem; font-weight: 600;
+  padding: 1px 7px; border-radius: 4px;
+}
+
+/* ── Fix loop ────────────────────────────────────────────── */
+.fix-loop {
+  display: flex; align-items: center; gap: 8px;
+  background: #FFF1F2; border: 1.5px dashed #F87171; border-radius: 10px;
+  padding: 8px 12px; margin: 7px 0; font-size: 0.72rem; color: #b91c1c;
+  font-weight: 500; animation: pulse-dashed 2.4s ease-in-out infinite;
+}
+.fix-loop-note { margin-left: auto; font-size: 0.63rem; opacity: 0.65; }
+
+/* ── Bridge note ─────────────────────────────────────────── */
+.bridge-note {
+  font-size: 0.69rem; color: #64748b; background: #F8FAFF;
+  border: 1px solid #E0E7FF; border-radius: 8px;
+  padding: 8px 10px; margin: 10px 0 0; text-align: center; line-height: 1.5;
+}
+
+/* ── Eval group separators ───────────────────────────────── */
+.eval-group {
+  display: flex; align-items: center; gap: 6px;
+  margin: 11px 0 7px; font-size: 0.66rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px; color: #64748b;
+}
+.eval-group::before, .eval-group::after { content: ''; flex: 1; height: 1px; background: #e2e8f0; }
+
+/* ── Meta-improve ────────────────────────────────────────── */
+.meta-section {
+  max-width: 1380px; margin: 16px auto 0;
+  background: linear-gradient(135deg, #fff5f5 0%, #fff7ed 50%, #fffbeb 100%);
+  border: 2px dashed #FCA5A5; border-radius: 20px; padding: 18px 22px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+  animation: fadeUp 0.4s ease 0.28s both;
+}
+.meta-header {
+  display: flex; align-items: center; gap: 9px; margin-bottom: 14px;
+}
+.meta-header h3 {
+  font-size: 0.77rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.3px; color: #dc2626;
+}
+.meta-note { font-size: 0.68rem; color: #9ca3af; font-weight: 400; }
+.meta-steps { display: flex; align-items: stretch; }
+.meta-step {
+  background: white; border-radius: 12px; padding: 11px 14px;
+  text-align: center; flex: 1; border: 1.5px solid #FED7AA; min-width: 0;
+  transition: transform 0.12s ease;
+}
+.meta-step:hover { transform: translateY(-2px); }
+.meta-step.s-sonnet { border-color: #DDD6FE; background: #F5F3FF; }
+.meta-step.s-ok     { border-color: #86EFAC; background: #F0FDF4; }
+.meta-step-icon { font-size: 1.3rem; margin-bottom: 4px; }
+.meta-step-label { font-size: 0.77rem; font-weight: 600; color: #1e293b; }
+.meta-step-sub { font-size: 0.64rem; color: #64748b; margin-top: 3px; line-height: 1.35; }
+.meta-arrow { display: flex; align-items: center; padding: 0 5px; font-size: 1.1rem; color: #f87171; flex-shrink: 0; }
+
+/* ── Frontend + Backend row ──────────────────────────────── */
+.lower-row {
+  max-width: 1380px; margin: 16px auto 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  animation: fadeUp 0.4s ease 0.35s both;
+}
+.lower-card {
+  background: white; border-radius: 16px; padding: 18px 20px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+}
+.lower-card h3 {
+  font-size: 0.77rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.2px; color: #334155; margin-bottom: 13px;
+  padding-bottom: 10px; border-bottom: 1px solid #f1f5f9;
+  display: flex; align-items: center; gap: 7px;
+}
+.ui-tabs { display: flex; gap: 7px; flex-wrap: wrap; }
+.ui-tab {
+  background: #EEF2FF; border: 1px solid #C7D2FE; border-radius: 8px;
+  padding: 6px 13px; font-size: 0.74rem; font-weight: 500; color: #3730a3;
+  transition: background 0.12s;
+}
+.ui-tab:hover { background: #E0E7FF; }
+.api-route {
+  display: flex; align-items: center; gap: 8px;
+  padding: 7px 10px; border-radius: 8px; margin-bottom: 6px;
+  font-family: monospace; font-size: 0.74rem; background: #F8FAFF;
+  border: 1px solid #E0E7FF;
+}
+.method {
+  font-weight: 700; padding: 2px 7px; border-radius: 5px; font-size: 0.65rem;
+}
+.method-post { background: #DCFCE7; color: #14532d; }
+.method-get  { background: #DBEAFE; color: #1e3a8a; }
+.route-path { color: #334155; }
+.route-desc { margin-left: auto; color: #94a3b8; font-size: 0.65rem; font-family: sans-serif; }
+
+/* ── Infrastructure bar ──────────────────────────────────── */
+.infra-bar {
+  max-width: 1380px; margin: 14px auto 0;
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  animation: fadeUp 0.4s ease 0.42s both;
+}
+.infra-label { font-size: 0.71rem; font-weight: 600; color: #64748b; white-space: nowrap; }
+.infra-chip {
+  background: white; border: 1px solid #e2e8f0; border-radius: 16px;
+  padding: 5px 13px; font-size: 0.71rem; font-weight: 500; color: #475569;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+/* ── Legend ──────────────────────────────────────────────── */
+.legend {
+  max-width: 1380px; margin: 12px auto 0;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  padding: 11px 18px; background: white; border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  animation: fadeUp 0.4s ease 0.48s both;
+}
+.legend-lbl { font-size: 0.69rem; font-weight: 700; color: #64748b; }
+.legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.69rem; color: #475569; }
+.ldot { width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────── -->
+<div class="page-header">
+  <h1>PPT Agent — System Architecture</h1>
+  <p>Transcript + PPTX Template → 4-agent LangGraph pipeline → Faithful edited deck · Eval flywheel for rapid quality iteration</p>
+  <div class="header-chips">
+    <span class="header-chip">⚡ LangGraph StateGraph</span>
+    <span class="header-chip">🤖 Anthropic Haiku + Sonnet</span>
+    <span class="header-chip">📊 python-pptx</span>
+    <span class="header-chip">🔬 44 eval transcripts</span>
+    <span class="header-chip">🔁 Binary LLM judges</span>
+    <span class="header-chip">👤 Human-in-the-loop improve</span>
+  </div>
+</div>
+
+<!-- ── Main 3-column grid ──────────────────────────────────── -->
+<div class="main-grid">
+
+  <!-- Column 1: Inputs -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📥</span>
+      <span class="section-title">Inputs</span>
+    </div>
+
+    <div class="mini-title">Production run</div>
+    <div class="input-item transcript">
+      <span>📄</span> Transcript
+      <span class="input-count">1 file</span>
+    </div>
+    <div class="input-item template">
+      <span>📊</span> PPTX Template
+      <span class="input-count">any</span>
+    </div>
+
+    <div class="divider"></div>
+    <div class="mini-title">Eval corpus</div>
+    <div class="input-item corpus">
+      <span>📁</span> Transcripts
+      <span class="input-count">44 files</span>
+    </div>
+    <div class="input-item corpus">
+      <span>🗂️</span> Templates
+      <span class="input-count">N files</span>
+    </div>
+
+    <div class="divider"></div>
+    <div style="font-size:0.69rem;color:#94a3b8;line-height:1.65;">
+      Corpus: 12 KB – 1.3 MB<br>
+      Sales · scoping · proposal calls<br>
+      TXT format · anonymized · 2025
+    </div>
+  </div>
+
+  <!-- Column 2: Core Pipeline -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⚡</span>
+      <span class="section-title">Core Pipeline</span>
+      <span class="section-sub">agents/ · LangGraph</span>
+    </div>
+
+    <div class="card c-haiku">
+      <div class="card-icon">🔍</div>
+      <div class="card-body">
+        <div class="card-title">Extractor</div>
+        <div class="card-desc">Structured fact extraction from raw transcript</div>
+      </div>
+      <span class="card-badge">Haiku</span>
+    </div>
+
+    <div class="flow-connector">
+      <div class="flow-line"></div>
+      <span class="flow-tag">extracted_facts JSON</span>
+      <div class="flow-line"></div>
+    </div>
+
+    <div class="card c-sonnet">
+      <div class="card-icon">🗺️</div>
+      <div class="card-body">
+        <div class="card-title">Planner</div>
+        <div class="card-desc">Edit plan from facts + shape inventory · template vision thumbnails</div>
+      </div>
+      <span class="card-badge">Sonnet</span>
+    </div>
+
+    <div class="flow-connector">
+      <div class="flow-line"></div>
+      <span class="flow-tag">edit_plan JSON</span>
+      <div class="flow-line"></div>
+    </div>
+
+    <div class="card c-haiku">
+      <div class="card-icon">⚙️</div>
+      <div class="card-body">
+        <div class="card-title">Executor</div>
+        <div class="card-desc">Applies edits via python-pptx · placeholder sweep · shape deletion</div>
+      </div>
+      <span class="card-badge">Haiku</span>
+    </div>
+
+    <div class="flow-connector">
+      <div class="flow-line"></div>
+      <span class="flow-tag">executor_log</span>
+      <div class="flow-line"></div>
+    </div>
+
+    <div class="card c-haiku">
+      <div class="card-icon">🔎</div>
+      <div class="card-body">
+        <div class="card-title">Reviewer</div>
+        <div class="card-desc">10-point QA: overflow · grounding · sanitization · layout · hallucination</div>
+      </div>
+      <span class="card-badge">Haiku</span>
+    </div>
+
+    <div class="fix-loop">
+      🔁&nbsp; Fix loop · max 2 attempts
+      <span class="fix-loop-note">FIX NEEDED → re-execute flagged slides</span>
+    </div>
+
+    <div class="card c-output">
+      <div class="card-icon">✅</div>
+      <div class="card-body">
+        <div class="card-title">Edited PPTX</div>
+        <div class="card-desc">Faithful · grounded · QA-passed output</div>
+      </div>
+      <span class="card-badge">Output</span>
+    </div>
+
+    <div class="bridge-note">
+      ↕ Eval runner calls <code style="font-size:0.65rem;background:#EEF2FF;padding:1px 4px;border-radius:3px;">graph.invoke()</code> directly<br>
+      captures full PipelineState per transcript
+    </div>
+  </div>
+
+  <!-- Column 3: Eval Flywheel -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🔬</span>
+      <span class="section-title">Eval Flywheel</span>
+      <span class="section-sub">eval_agent/</span>
+    </div>
+
+    <div class="card c-haiku">
+      <div class="card-icon">🎯</div>
+      <div class="card-body">
+        <div class="card-title">Scenario Generator</div>
+        <div class="card-desc">Ground-truth fixtures · expected_facts · forbidden_phrases · tone</div>
+      </div>
+      <span class="card-badge">Haiku · 1×</span>
+    </div>
+
+    <div class="flow-connector">
+      <div class="flow-line"></div>
+      <span class="flow-tag">scenarios/{id}.json</span>
+      <div class="flow-line"></div>
+    </div>
+
+    <div class="card c-runner">
+      <div class="card-icon">🏃</div>
+      <div class="card-body">
+        <div class="card-title">Eval Runner</div>
+        <div class="card-desc">graph.invoke() per transcript → state + PPTX text extraction</div>
+      </div>
+      <span class="card-badge">Direct</span>
+    </div>
+
+    <!-- Deterministic evals -->
+    <div class="eval-group">Deterministic · $0 · instant</div>
+
+    <div class="card c-det compact">
+      <div class="card-icon">☑️</div>
+      <div class="card-body">
+        <div class="card-title">Placeholder Check</div>
+        <div class="card-desc">[X] / TODO / Enter / Lorem still in PPTX?</div>
+      </div>
+      <span class="card-badge">Free</span>
+    </div>
+
+    <div class="card c-det compact" style="margin-top:5px;">
+      <div class="card-icon">📐</div>
+      <div class="card-body">
+        <div class="card-title">Shape Coverage</div>
+        <div class="card-desc">applied edits / total edits > 90%?</div>
+      </div>
+      <span class="card-badge">Free</span>
+    </div>
+
+    <!-- LLM eval judges -->
+    <div class="eval-group">LLM Judge · Haiku · ~$0.003/run</div>
+
+    <div class="card c-llmeval compact">
+      <div class="card-icon">🎯</div>
+      <div class="card-body">
+        <div class="card-title">Faithfulness</div>
+        <div class="card-desc">Key facts from transcript present in PPTX?</div>
+      </div>
+      <span class="card-badge">Haiku</span>
+    </div>
+
+    <div class="card c-llmeval compact" style="margin-top:5px;">
+      <div class="card-icon">🚫</div>
+      <div class="card-body">
+        <div class="card-title">Hallucination</div>
+        <div class="card-desc">Numbers / names in PPTX NOT in source?</div>
+      </div>
+      <span class="card-badge">Haiku</span>
+    </div>
+
+    <div class="card c-llmeval compact" style="margin-top:5px;">
+      <div class="card-icon">🎭</div>
+      <div class="card-body">
+        <div class="card-title">Sanitization</div>
+        <div class="card-desc">Generic filler user never wrote?</div>
+      </div>
+      <span class="card-badge">Haiku</span>
+    </div>
+
+    <div class="card c-semi compact" style="margin-top:5px;">
+      <div class="card-icon">✓</div>
+      <div class="card-body">
+        <div class="card-title">Completeness</div>
+        <div class="card-desc">&gt; 80% of all_key_facts used in deck?</div>
+      </div>
+      <span class="card-badge">Semi-det</span>
+    </div>
+
+    <!-- Aggregate -->
+    <div class="eval-group" style="margin-top:11px;">Aggregate</div>
+
+    <div class="card c-bench compact">
+      <div class="card-icon">📊</div>
+      <div class="card-body">
+        <div class="card-title">Benchmark</div>
+        <div class="card-desc">Pass rate table · benchmark.jsonl · per-eval history</div>
+      </div>
+      <span class="card-badge">Agg</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── Meta-Improve Loop ────────────────────────────────────── -->
+<div class="meta-section">
+  <div class="meta-header">
+    <span style="font-size:1.2rem;">🔁</span>
+    <h3>Meta-Improve Loop</h3>
+    <span class="meta-note">— dev only · human approval required · never auto-applies</span>
+  </div>
+  <div class="meta-steps">
+    <div class="meta-step">
+      <div class="meta-step-icon">📉</div>
+      <div class="meta-step-label">Low Pass Rate</div>
+      <div class="meta-step-sub">e.g. hallucination 65%<br>sanitization 72%</div>
+    </div>
+    <div class="meta-arrow">→</div>
+    <div class="meta-step">
+      <div class="meta-step-icon">🔍</div>
+      <div class="meta-step-label">Cluster Failures</div>
+      <div class="meta-step-sub">Group by failure pattern<br>pick worst eval type</div>
+    </div>
+    <div class="meta-arrow">→</div>
+    <div class="meta-step s-sonnet">
+      <div class="meta-step-icon">🧠</div>
+      <div class="meta-step-label">Auto-Improve</div>
+      <div class="meta-step-sub">Sonnet: N failed cases<br>+ current planner prompt</div>
+    </div>
+    <div class="meta-arrow">→</div>
+    <div class="meta-step">
+      <div class="meta-step-icon">📝</div>
+      <div class="meta-step-label">Prompt Patch</div>
+      <div class="meta-step-sub">Saved to<br>staged_patches/</div>
+    </div>
+    <div class="meta-arrow">→</div>
+    <div class="meta-step s-ok">
+      <div class="meta-step-icon">👤</div>
+      <div class="meta-step-label">Human Review</div>
+      <div class="meta-step-sub">EvalLab diff viewer<br>approve or reject</div>
+    </div>
+    <div class="meta-arrow">→</div>
+    <div class="meta-step s-ok">
+      <div class="meta-step-icon">✅</div>
+      <div class="meta-step-label">Apply Patch</div>
+      <div class="meta-step-sub">Update planner.py<br>re-run benchmark</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Frontend + Backend ──────────────────────────────────── -->
+<div class="lower-row">
+  <div class="lower-card">
+    <h3>⚛️ EvalLab UI <span style="font-size:0.65rem;color:#94a3b8;font-weight:400;text-transform:none;letter-spacing:0;">frontend/src/EvalLab.jsx</span></h3>
+    <div class="ui-tabs">
+      <div class="ui-tab">▶ Run (44 transcripts)</div>
+      <div class="ui-tab">📊 Results heatmap</div>
+      <div class="ui-tab">🔬 Calibrate (F1 score)</div>
+      <div class="ui-tab">💡 Improve (diff view)</div>
+    </div>
+    <div style="font-size:0.69rem;color:#94a3b8;margin-top:10px;line-height:1.6;">
+      Live SSE progress per transcript · click cell → see reasoning · manual label for calibration
+    </div>
+  </div>
+  <div class="lower-card">
+    <h3>⚡ Backend API <span style="font-size:0.65rem;color:#94a3b8;font-weight:400;text-transform:none;letter-spacing:0;">backend.py (FastAPI)</span></h3>
+    <div class="api-route">
+      <span class="method method-post">POST</span>
+      <span class="route-path">/api/eval/run</span>
+      <span class="route-desc">SSE stream · per-transcript events</span>
+    </div>
+    <div class="api-route">
+      <span class="method method-get">GET</span>
+      <span class="route-path">/api/eval/results</span>
+      <span class="route-desc">Latest benchmark.jsonl results</span>
+    </div>
+    <div class="api-route">
+      <span class="method method-post">POST</span>
+      <span class="route-path">/api/eval/improve</span>
+      <span class="route-desc">Cluster failures → patch suggestion</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Infrastructure ─────────────────────────────────────── -->
+<div class="infra-bar">
+  <span class="infra-label">Infrastructure:</span>
+  <span class="infra-chip">🔗 LangGraph StateGraph</span>
+  <span class="infra-chip">⚡ FastAPI + SSE streaming</span>
+  <span class="infra-chip">⚛️ React frontend</span>
+  <span class="infra-chip">📊 python-pptx</span>
+  <span class="infra-chip">🖨️ LibreOffice (PNG render)</span>
+  <span class="infra-chip">🤖 Anthropic API</span>
+  <span class="infra-chip">💾 JSONL history</span>
+  <span class="infra-chip">🐍 Python 3.11+</span>
+</div>
+
+<!-- ── Legend ─────────────────────────────────────────────── -->
+<div class="legend">
+  <span class="legend-lbl">Legend:</span>
+  <div class="legend-item"><div class="ldot" style="background:#FDE68A;"></div>Haiku (fast, cheap)</div>
+  <div class="legend-item"><div class="ldot" style="background:#DDD6FE;"></div>Sonnet (planner / improve)</div>
+  <div class="legend-item"><div class="ldot" style="background:#BFDBFE;"></div>Deterministic (free, instant)</div>
+  <div class="legend-item"><div class="ldot" style="background:#F9A8D4;"></div>LLM eval judge (Haiku)</div>
+  <div class="legend-item"><div class="ldot" style="background:#FEF08A;"></div>Semi-deterministic eval</div>
+  <div class="legend-item"><div class="ldot" style="background:#86EFAC;"></div>Output / human-approved</div>
+  <div class="legend-item"><div class="ldot" style="background:#FCA5A5;border:1.5px dashed #F87171;"></div>Dev-only · not production</div>
+</div>
+
+</body>
+</html>

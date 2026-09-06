@@ -1,0 +1,185 @@
+[TIMESTAMP] Speaker 014: Official ABC Corp shirt on, ready to go.
+[TIMESTAMP] Speaker 211: Feeling corporate. We all need virtual shirts that looks like ABC Corp shirt all the time. Oh, that's a good idea. That's right. Hey, they've figured out how to put makeup on you. I'm sure they can figure out how to put a shirt on you, right? 100%. Absolutely. If they can get the makeup to automatically shave me, I would even be happier. Happier. That.
+[TIMESTAMP] Speaker 033: Would be nice.
+[TIMESTAMP] Speaker 211: We are expecting 2 people to be joining the call from their side, Speaker 045 and Speaker 115. Speaker 115 is the IT Speaker 191 and Speaker 045 is the Continuous Improvement Coordinator. And. So they shared their data collection template, which they call that is the batch record. So it is a very classic manufacturing, inspection. Inspection centric record movement. So they just want to verify that every step of the way that everything is measured correctly, that it's doing what it needs to do. Nothing even remotely close to what we would call a batch record in a regulated manufacturing.
+[TIMESTAMP] Speaker 033: Yeah, it's very straightforward.
+[TIMESTAMP] Speaker 211: Yeah. You all received it? Yeah. Okay. So the intent, is that we'll get the discovery going to make sure that we don't take it for granted. It is that simple. We'll find out if there is anything that is unknown.
+[TIMESTAMP] Speaker 211: I let them in? Yep.
+[TIMESTAMP] Speaker 211: And can you go and record the call as well? It is being recorded. Thank you.
+[TIMESTAMP] Speaker 211: Good afternoon, Speaker 045.
+[TIMESTAMP] Speaker 014: Thank you for your sample, today. Is Speaker 115 going to join [COUNTRY]?
+[TIMESTAMP] Speaker 045: Possibly. I'm not sure.
+[TIMESTAMP] Speaker 014: Should we wait a minute or should we get started, Speaker 045?
+[TIMESTAMP] Speaker 045: We can just get started.
+[TIMESTAMP] Speaker 211: Well, thank you, Speaker 045. Appreciate. You joining [COUNTRY]. We have a few questions, just to be sure that we comprehend the sample record that you shared with [COUNTRY] and also understand one more time the overall process you have for this data collection and precisely how do you end up storing the data at the end of the day, right? So that way we have an idea as to what we should consider as part of the implementation scope.
+[TIMESTAMP] Speaker 211: Just for the sake of this conversation, Speaker 045, if you can just sort of like give [COUNTRY] an understanding of the
+[TIMESTAMP] Speaker 211: Base of information, how many products do you have and typically, how many batches do you produce in a given day? And I know the call is getting recorded. So a bit of this we spoke last time, but it'd be helpful for the rest of the team members to hear it. I will also utilize that as part of the scope of this conversation.
+[TIMESTAMP] Speaker 045: I think we have like, 30 to 50 products. A couple of main ones and a bunch of different variations of them.
+[TIMESTAMP] Speaker 045: We currently have 20 open work orders that are all open. At different stages of production.
+[TIMESTAMP] Speaker 211: And that 20 work orders in different stages of production is considered a per day number or is that more like a per month number?
+[TIMESTAMP] Speaker 045: Yeah, probably per month.
+[TIMESTAMP] Speaker 211: So it's reasonable to say between 20 to 30 work orders a month that you route it and collect the data for?
+[TIMESTAMP] Speaker 211: So the sample you sent, I know, it's a template for at least one of the products, is that template exactly the same for all products?
+[TIMESTAMP] Speaker 211: And so with respect to filling out what goes in it, you have the header part, which says as to what the part number is and the serial number of work order is, and then you have sequences defined. And the other thing that we find is what goes in the template in terms of that specific product handwritten as it goes through from work cell to work cell?
+[TIMESTAMP] Speaker 045: No, it's put in on
+[TIMESTAMP] Speaker 211: It's printed on a computer. Okay. So your sequence number is printed on the computer and also the measurements to take is printed on the computer. So they know what to take as measurements. Is that correct?
+[TIMESTAMP] Speaker 211: Okay. The quantity is filled based upon the lot quantity I suppose?
+[TIMESTAMP] Speaker 045: Yeah the quantity is just the standard amount for that inspection procedure.
+[TIMESTAMP] Speaker 211: And that's determined up front in the work order when the job starts?
+[TIMESTAMP] Speaker 045: Yeah those are determined ahead of time by QA.
+[TIMESTAMP] Speaker 211: By QA. Will the quantity ever change depending upon the work cell you are at?
+[TIMESTAMP] Speaker 045: No, that's a standard procedure for any given operation.
+[TIMESTAMP] Speaker 211: Okay, so if it's a, if we say for that specific work order, we are going to sample 5 pieces, 5 units, then it will remain 5 units for all operations?
+[TIMESTAMP] Speaker 045: No, it's the other way around. Each operation will have its own inspection procedure and the quantity quantity taken to inspect will be the same across every work order.
+[TIMESTAMP] Speaker 211: I see. Can you have multiple such data collection steps within the same work cell? Because right now. You have like in your template, you have a table one, table two, and each table has got like a bunch of rows. So if you walk [COUNTRY] through how the data is collected, that would be helpful.
+[TIMESTAMP] Speaker 045: Yeah, okay. Given the operation, some operations have more than one inspection. Procedure. They could be checking multiple things. And. So yeah, those templates are already set. Up. Each table will have its inspection procedure there.
+[TIMESTAMP] Speaker 045: So when they get to that operation, they perform those procedures.
+[TIMESTAMP] Speaker 211: Okay. So for this specific one, the row one will be first inspection procedure, row. 2 will be the second inspection procedure?
+[TIMESTAMP] Speaker 211: Okay. Typically, how many such operations you may have for a given product?
+[TIMESTAMP] Speaker 211: 20. 20 or so?
+[TIMESTAMP] Speaker 211: Okay. So highly likely that you could be looking at multiple sheets of this paper, that it's going to be captured for a single work order? Yes. Okay. Question? Yeah, just one moment. So if you're printing this work order with the operations defined and the relevant quantities defined. And you are now giving that to the operator to take it from step one to step 2 to step 3 and they're filling it out in that worksheet. And the worksheet comes back at the end back to QA for check, or do they check it at the end of every operation?
+[TIMESTAMP] Speaker 045: That's at the end of every operation.
+[TIMESTAMP] Speaker 211: Speaker 033, go ahead.
+[TIMESTAMP] Speaker 033: Yeah. So, I see the reference to inspection procedure. Where. Do you give them the instruction to perform a certain measurement, meaning how to perform that measurement? Is that done? Do they reference the procedure every single time? let's say if they're supposed to measure like the temperature, for example, right? Are they pulling up the procedure and saying, well, well, here's my measurement based on that? Or. Is there like a guide in within this sheet where it tells them that this is the measurement they're supposed to take?
+[TIMESTAMP] Speaker 045: I know when they're viewing that sheet, there's also a link there that will take them to the procedure. If needed. A lot of the times they don't feel the procedure because they're seasoned operators making established parts, so they don't even need their eyes. Open. Yeah.
+[TIMESTAMP] Speaker 033: Okay. And then often, is it just a measurement? Like what it is? Or sometimes is it a visual inspection? As well? Inspection is probably a bad choice of word, but is it a visual attribute as well, right? So sometimes it could be a numerical measurement of whatever you're doing. Or is it say, for example, during your process, the color of the product at this point should be brown, right? As an example, do you have a a measurement or an attribute? Like that?
+[TIMESTAMP] Speaker 045: Yeah, some of them are visual checks, some are measurements, others are like a hardness or a tensile test that they have to withstand.
+[TIMESTAMP] Speaker 033: Understood. So in this case, the example that you shared is purely the measurements, but there are variations as well to account for where you might have tensile strategies for example, or visual attributes as well, and they would have to be captured differently compared to a capturing a regular standard. Measurement. Correct. Okay, got it. Is there any…so I see that there is an OK and there is a signature. I'm assuming there is a workflow associated with each of these steps. Is it reviewed on a step by step basis or is it reviewed as a whole package? How do you sign off on it? Yeah, it's step by step. Okay. So now? Is there a dependency between the steps?
+[TIMESTAMP] Speaker 033: Like you cannot go to the next step until the first step has been signed off on? Or is it doesn't matter how it processes?
+[TIMESTAMP] Speaker 045: Sometimes. Some operations are parallel. So if one gets held up, the others can go. But eventually, yeah, they are serial. So if you fail one, you can't move forward. Forward. Thank you.
+[TIMESTAMP] Speaker 033: OK, so there is dependency between the first one and the next? Yeah,
+[TIMESTAMP] Speaker 211: OK. Speaker 045, with respect to the measurement data. Collection, give me an example of the kinds of measurements you take, and what do you use to take that before they get recorded?
+[TIMESTAMP] Speaker 045: Sometimes they're like diameters or lengths or thickness. Are most common. They have calipers and gauges that they use.
+[TIMESTAMP] Speaker 211: Okay. Do they need to record which caliper or gauge they used?
+[TIMESTAMP] Speaker 211: And that's recorded where in the sheet? Is that just entered in the same row?
+[TIMESTAMP] Speaker 045: Sorry, no, they don't record, but yeah, we have standard calipers and gauges that are calibrated and maintained by QA.
+[TIMESTAMP] Speaker 211: Okay. And your inspection procedure would call that out?
+[TIMESTAMP] Speaker 211: So we don't need to specify in the measurement taking part which caliper you used because that's coming from the procedure. QA will validate that. It's always been maintained. The operator just takes the measurement of using the caliper and then recording the data.
+[TIMESTAMP] Speaker 211: Continue, Speaker 033.
+[TIMESTAMP] Speaker 033: No, I was going to say, I think the next question is, so, from a reporting perspective, is there any way you report on this data? Right? So you've captured all this data that you've gone through the process? Of through a batch record. Do you report on this data at all?
+[TIMESTAMP] Speaker 045: Unless there's like a rejection? No.
+[TIMESTAMP] Speaker 033: And, if there is a rejection, how does it, how do you handle that rejection? Do you, is there a corrective action? what's the process there from a rejection perspective? Perspective?
+[TIMESTAMP] Speaker 045: Yeah, there can be corrective action, depends on how many fail, how severe the failure. But yeah, it could trigger, like an AD investigation or corrective action. Or they just grab that part and we go on.
+[TIMESTAMP] Speaker 033: Okay. And does it go through some sort of a product disposition first before it goes into corrective action? Or? Does it go straight to corrective action? Or do you have have both these activities going in parallel?
+[TIMESTAMP] Speaker 045: Yeah, sometimes we do have material rejection. So it could be.
+[TIMESTAMP] Speaker 033: Could be both. Yeah. Okay, got it. And then when it goes to a dispositioning process, I'm assuming you go through like a material review board, is that how you do it or how do you handle whether you want to scrap that product that you've made so far, right? Or you know, go away. Does that apply here?
+[TIMESTAMP] Speaker 045: Yep, sometimes. We'll have a material review and then we'll be in contact with the vendor.
+[TIMESTAMP] Speaker 211: Okay, understood. So, Speaker 045, on the measurement that you take, right, and the inspection checks you do, so there is the OK and the signature, and the OK and the signature is actually done by QA?
+[TIMESTAMP] Speaker 211: The operator is says, saying, I'm done with it. Then that pulls the QA to come in and verify it. And then they sign off. So what, how do they verify? Do they retake the measurement of that step? What. Do they do?
+[TIMESTAMP] Speaker 045: Yep. They take the parts to the lab and they verify with their own measurements. I.
+[TIMESTAMP] Speaker 211: See. So if the operator has taken 5 samples out of it, the QA will take the same 5 samples, check in the lab Lab and then then come come back? Back? Back. You said that means it's 100% inspection or I know you said sample to begin. With, I just want to validate what are they checking?
+[TIMESTAMP] Speaker 045: Yeah, it'll be the same samples that the operator had.
+[TIMESTAMP] Speaker 211: Okay, so the QA checking is a double check at that point in time. Validating what the operator is set?
+[TIMESTAMP] Speaker 045: Yeah, some of them are double checks, some of them when they get to that point they take the, they just go straight to QA for a check. QA has tools to measure.
+[TIMESTAMP] Speaker 211: Okay. They're
+[TIMESTAMP] Speaker 045: Not always out of the floor.
+[TIMESTAMP] Speaker 211: Are you recording the measurements taken by QA as well?
+[TIMESTAMP] Speaker 211: So in the same row, you will have the operator measurement and the QA measurement side by side?
+[TIMESTAMP] Speaker 045: No, they record on their own?
+[TIMESTAMP] Speaker 211: Form. They create their own form. Okay. And so so is that form attached back to this?
+[TIMESTAMP] Speaker 045: It's linked to it, but it's not attached.
+[TIMESTAMP] Speaker 211: It's linked to it. Okay. Okay. But by design, every operational step that you have in the work order will have a QA step to it.
+[TIMESTAMP] Speaker 211: Okay.
+[TIMESTAMP] Speaker 211: And you mentioned about the failure. Failure. So do you have some kind of a, I know, you said you take the sampling plan that the QA tells you to take. Is that based upon a C equals zero? You're basing it upon Z1.4, 105E. What. Is that based upon in terms of acceptance and rejection criteria?
+[TIMESTAMP] Speaker 045: It's usually based on engineering, tolerance. Comperage.
+[TIMESTAMP] Speaker 211: That's at the measurement level, but at the overall, let's say, at the five, 5 the if one of them does not conform, do you assume that the entire batch is bad and you have to go through inspection of further and figure out what to do and you put a stop to the batch and take it to MRB at that point?
+[TIMESTAMP] Speaker 045: Yeah the failure will trigger further measurement or investigation.
+[TIMESTAMP] Speaker 211: So you have a C equals 0 in your case, because if it's even one failure, you consider the backfile batch to be bad because you're taking samples rather than 100%, inspection, correct?
+[TIMESTAMP] Speaker 045: Yeah, well, it may not be bad, it just needs to be verified.
+[TIMESTAMP] Speaker 211: Verified, okay. And how many operators are there on the floor, performing the function and inspecting?
+[TIMESTAMP] Speaker 211: How many total? Yeah.
+[TIMESTAMP] Speaker 045: About 20.
+[TIMESTAMP] Speaker 211: 20 Operators.
+[TIMESTAMP] Speaker 211: Okay. Is it 20 operators or 20 operations per worker? I know you said 20 in that number as well. Just wanted to make sure we are speaking the same.
+[TIMESTAMP] Speaker 045: Yeah, there's about 20 operators and then on the sample I have, there's 25 operations.
+[TIMESTAMP] Speaker 211: I see. Okay. And is it 20 operators per shift? And? Do you do multiple shifts?
+[TIMESTAMP] Speaker 045: Just one shift. One shift. Okay.
+[TIMESTAMP] Speaker 211: All right. Recapping. Right now, in this case, is you're looking between 30 to 50 SKUs and you're processing between 20 and 30 work orders a month and your operations are going to be somewhere in 20 and 30 operations per work order. Each operation will have a corresponding QA step and what gets measured in terms of their operation comes from the inspection procedure, which is linked. The measurements are primarily of attribute type, type. Sorry, variable type, which is more like thickness, length, diameter, which is checked through calipers and gauges.
+[TIMESTAMP] Speaker 211: And you also have visual attributes that you capture and if there is a failure of even one you either will re verify and or that work order will now be MRB'd and disposition will be taken accordingly and the disposition could potentially lead into an 8D if required.
+[TIMESTAMP] Speaker 211: That's correct.
+[TIMESTAMP] Speaker 045: That's, yeah.
+[TIMESTAMP] Speaker 033: Okay. And then one last question from my side.
+[TIMESTAMP] Speaker 033: Do the—do you cross check the operators before they record their measurements to determine that whether they have been trained on that procedure or not? So do you have a mechanism in place to verify that operator is trained to be able to take the measurement correctly in some system or some format.
+[TIMESTAMP] Speaker 115: There is no system in place, but there's nothing, but it would be nice to have.
+[TIMESTAMP] Speaker 033: Okay, okay, I understand.
+[TIMESTAMP] Speaker 211: Generally, are these people been there for a long? Time? The operators? Yes,
+[TIMESTAMP] Speaker 115: So they are shop knowledge, yep.
+[TIMESTAMP] Speaker 211: Yeah, okay. So they have a tribal knowledge and they know what they're doing. So their training and certification is inherently in the skill set already.
+[TIMESTAMP] Speaker 115: Yeah, but recently, we've been hiring a lot of new hires, so this will come in play if we have very important, if we have these in place. Okay.
+[TIMESTAMP] Speaker 033: Speaker 239 has a question. Go ahead, Speaker 239. Yes. So.
+[TIMESTAMP] Speaker 239: For the work orders, let's say you start with a quantity 20, 30. By the end of it, are your work orders billed to the number of quantity, that is defined or you start with the number of quantities? But the end it may be less than what you started. How? Do you operate it at the moment?
+[TIMESTAMP] Speaker 045: The work order quantity is based on the order and we have to produce that.
+[TIMESTAMP] Speaker 239: Even, if there are rejections you would then add extra material to it and you would fulfill it. Yep.
+[TIMESTAMP] Speaker 211: You got what you needed, Speaker 239? Okay. Yes. Gentlemen from a language wise, is it just [LANGUAGE]?
+[TIMESTAMP] Speaker 115: Well, mostly.
+[TIMESTAMP] Speaker 045: But not quite.
+[TIMESTAMP] Speaker 115: Yeah, we have Vietnamese, [LANGUAGE], Vietnamese, [LANGUAGE], and [LANGUAGE] for the most part. Right, Speaker 045? And Tagali.
+[TIMESTAMP] Speaker 211: And these are primary for inspection procedures that they need to have access to in the language or do they also need to see the UI in those corresponding languages?
+[TIMESTAMP] Speaker 115: You know what, I don't think it's a big deal because we've been using [LANGUAGE] all this time. Not saying [LANGUAGE] is not their first language, but they They understand. Understand.
+[TIMESTAMP] Speaker 211: They understand. Okay. Got it. Last time we spoke briefly about integration to your current manufacturing software and because you sort of like entering the data back into it from what I understood, right? And, at least from a quantity perspective. But there was also a talk about, well, this doesn't really need to integrate. It's okay. For it to be separate from the other system. Maybe you can just spend a couple of minutes talking about that requirement. If there is any requirement at all.
+[TIMESTAMP] Speaker 045: I don't think we have much requirement there.
+[TIMESTAMP] Speaker 211: All right. No, that's great. So that's useful. That's helpful as well. So. Just one last thing that I have related to the workflow and the process.
+[TIMESTAMP] Speaker 211: If you have to sort of look through your work orders that you run through for that 20 to 30 work orders in a given month, what is the quantity of non conformances that get raised. And how many Kappas do you raise as a result of this kind of a flow?
+[TIMESTAMP] Speaker 211: I don't know, it might be
+[TIMESTAMP] Speaker 045: Too hard, it's not that.
+[TIMESTAMP] Speaker 211: Question. Very few, right?
+[TIMESTAMP] Speaker 211: Okay, so couple to 3 a month on the non conformance and I presume can Kappa. So ADs would be maybe one or 2 similarly?
+[TIMESTAMP] Speaker 211: And QA staff what is the quantity of the QA staff you have?
+[TIMESTAMP] Speaker 045: We have 4.
+[TIMESTAMP] Speaker 211: And so So, 5
+[TIMESTAMP] Speaker 115: In total.
+[TIMESTAMP] Speaker 115: Five in total, okay? Okay?
+[TIMESTAMP] Speaker 211: Okay, 5 in total?
+[TIMESTAMP] Speaker 211: So the expectation would be is you would need the system to be used by the operators, also by the QA, right? Who else would need to be using the system outside of these 2 folks?
+[TIMESTAMP] Speaker 115: Production people. Production, right? Engineering.
+[TIMESTAMP] Speaker 045: Yeah, bit of engineering and our production controller and Informant. Form Good it. For me.
+[TIMESTAMP] Speaker 211: So collectively you're looking about maybe 30 people?
+[TIMESTAMP] Speaker 211: Yeah.
+[TIMESTAMP] Speaker 211: That would be the fair number? Okay.
+[TIMESTAMP] Speaker 211: All right. Sounds good. I think we have a pretty decent idea of the overall scope of what you're looking for, right? So with respect to giving this thing a try for the implementation, Do you have a specific timeline in mind as to to when we could look to start this?
+[TIMESTAMP] Speaker 115: Well I can understand that. I can answer that. So the timeline is for implementation and trial and testing. Hopefully. If you can get it by the end of the year, early next year.
+[TIMESTAMP] Speaker 211: Okay. And that's for the batch record system right? Or you're talking about the QMS as well? Thank you.
+[TIMESTAMP] Speaker 211: Batch record system. Batch records? Okay.
+[TIMESTAMP] Speaker 115: That's the most important part. But. What we have been seeing is that most of the system, they're not all in one what we used to, but you know, what? And we, it's just maybe all the industries now, so we just have to find some other attachment to work with. Every department working together. But what we think the batch system so far. We like it. I think Speaker 045 and I it, but we still need more demo to see how well it works. I think you guys get in the scope, right? So you can present it.
+[TIMESTAMP] Speaker 211: To [COUNTRY]. We get the scope. What we would like if it's possible is if you can take one of your actual data for a product product and just make some changes to it. We don't really need to know what it is. So if you want to change the product name. And if you want to change a few things here and there, give [COUNTRY] something real that we are able to mock up according to what it is, just so that we can show back to you what's appropriate.
+[TIMESTAMP] Speaker 115: Right? We should be able to do that by providing NDA. So if we can do that, we can send that over and so on. That shouldn't be a problem.
+[TIMESTAMP] Speaker 211: Yeah. Okay. Can take care of sending the mutual NDA, right? Away, that would be great.
+[TIMESTAMP] Speaker 014: Absolutely. Speaker 115, I have a question. Has your executive team approved the budget yet? Have you gone through that?
+[TIMESTAMP] Speaker 115: We're in the process and we have a number, but it hasn't been signed off yet. All right. So, go ahead. It's close to sign for the budget. Okay and
+[TIMESTAMP] Speaker 014: So you had mentioned mentioned that you want to have implementation by the end of the year, so that would mean that you would be signing an agreement within the next say 30 days, so you can be implemented by the end of the year?
+[TIMESTAMP] Speaker 115: If all, if a demo goes well and everybody's on board, yes. Okay, to
+[TIMESTAMP] Speaker 014: Our team, how long would it take to get the implementation for EBR back to him? Yeah,
+[TIMESTAMP] Speaker 211: There are 2 parts to
+[TIMESTAMP] Speaker 033: This. Yeah, there's 2 parts.
+[TIMESTAMP] Speaker 211: Yeah, 2 parts to this. First part is we have to get the data from Speaker 115 and Speaker 045 with respect to what it is. So. If we can get the NDA taken care of in the next 2 to 3 days, [PERSON], and then if the Horseman team can get that data that we need within the next 2 to 3 days, I would say, probably give [COUNTRY] a week or so for [COUNTRY] to get it set up. We will show you what it is. And if you save not make sense, we'll like it. Then you can move into the execution of the contract. And after that, we go into the formal implementation.
+[TIMESTAMP] Speaker 115: Yes, so by Wednesday, we should be able to provide that NDA for you okay? I'll send you the NDA over today.
+[TIMESTAMP] Speaker 014: Yeah? Then you can send. Yep. And then you can give that to legal.
+[TIMESTAMP] Speaker 115: We normally like to send hours over, but That's fine. Okay.
+[TIMESTAMP] Speaker 211: Speaker 115, send yours, it'll make it easy for you since then. If there is anything that we need to change, it'll be minor compared to [COUNTRY] sending you something that could be taking longer to get the changed.
+[TIMESTAMP] Speaker 115: Exactly, yeah, agreed.
+[TIMESTAMP] Speaker 211: Okay. So we'll work towards the velocity that we are trying to get all of the actions completed by end of May, right, and for [COUNTRY] to move into an actual implementation mode. If
+[TIMESTAMP] Speaker 115: I all goes well.
+[TIMESTAMP] Speaker 211: Yep, understood. All goes well. That's a clear expectation.
+[TIMESTAMP] Speaker 115: Okay.
+[TIMESTAMP] Speaker 211: So that is one question I have related to the floor level digital usage. Will they be using a laptop? Will they be having an [MOBILE_DEVICE]? What, will they be using?
+[TIMESTAMP] Speaker 115: Floor more. So we're going to be using tablets eventually, but for now, we're going to be using computers.
+[TIMESTAMP] Speaker 211: Okay, sounds good. Because. The reason we ask is we can demonstrate to you exactly in the same fashion. And obviously, it's capable of working in both, but we will use the desktop to be able to do this.
+[TIMESTAMP] Speaker 115: So is it only [SOFTWARE_VENDOR] works only on other platforms? Yeah, we work both.
+[TIMESTAMP] Speaker 211: On [SOFTWARE_VENDOR] and platform as [SOFTWARE_VENDOR]. Well as Mac. Okay.
+[TIMESTAMP] Speaker 211: Yeah, thank you. Are you a mixed bag environment or you are all [SOFTWARE_VENDOR]?
+[TIMESTAMP] Speaker 115: All [SOFTWARE_VENDOR]. Okay. We have backend other application backend, but for the frontend, it's all [SOFTWARE_VENDOR].
+[TIMESTAMP] Speaker 211: Do you currently have single sign on enabled for any of your other applications?
+[TIMESTAMP] Speaker 115: No, but we have 3 factor.
+[TIMESTAMP] Speaker 211: You said 2 factor authentication? Yeah. Okay. We do support both, right? So typically, what we tend to find is when it comes to enterprise deployments you all, people prefer single sign, on, right? So that way, when they just access the [PERSON], it knows exactly who you are from that specific PC, avoids that one additional step of needing to log in, and just makes the experience a little bit more seamless, right? Yeah, I.
+[TIMESTAMP] Speaker 115: Yeah, yeah, agree. I agree, but the parent company, we right? Sign off on their domain is not doable at the moment. MFA is what we use.
+[TIMESTAMP] Speaker 211: Sounds good. For the sake of this demonstration, we won't have the MFA turned on just so that we can get through the process quicker, but when it comes to implementation, we will do that. Sounds good. Okay. All right. So Speaker 014, the ball's in your court, the velocity you want to take it. So follow through with Speaker 115 to get the engine. NDA from them. Then we'll have a legal review and get the thing taken care of. As soon as that's done, if you guys in the meantime start preparing the data that you can send [COUNTRY], as soon as NDA is signed, we will get it so we can save some time and we'll get to work on trying to get that configured.
+[TIMESTAMP] Speaker 045: Sounds good.
+[TIMESTAMP] Speaker 211: Thank you, Speaker 115. We really appreciate your time.
+[TIMESTAMP] Speaker 115: A good one. Take care. Bye.
+[TIMESTAMP] Speaker 211: Thank you. Bye, everybody. Exactly. You. Thank, you.
+
+---
+Client resource profile: Integration and IT-led customer model.
+Client project resource guidance: Assume a technically engaged customer team with client PM, IT/platform owner, security/SSO owner, integration/API owner, reporting/analytics contact, and business SMEs. Technical dependencies, environment access, and interface testing should be explicitly assigned to client-side owners.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

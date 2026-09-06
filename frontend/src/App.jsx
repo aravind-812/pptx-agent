@@ -2,8 +2,10 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import {
   Upload, FileText, Download, X, Brain, Cpu, Eye,
   CheckCircle2, XCircle, AlertTriangle, ArrowRight,
-  ChevronLeft, ChevronRight, ZoomIn, Zap
+  ChevronLeft, ChevronRight, ZoomIn, Zap, FlaskConical, Columns
 } from 'lucide-react'
+import EvalLab from './EvalLab'
+import DiffLab from './DiffLab'
 
 // ─── Node metadata ─────────────────────────────────────────────
 const NODE_META = {
@@ -226,10 +228,11 @@ function Dropzone({ accept, label, hint, file, onFile, disabled }) {
   )
 }
 
-// ─── Slide viewer ──────────────────────────────────────────────
-function SlideViewer({ fileId, slideCount }) {
+// ─── Slide viewer (before/after diff) ─────────────────────────
+function SlideViewer({ fileId, slideCount, beforeCount }) {
   const [active, setActive] = useState(0)
   const [modal, setModal] = useState(false)
+  const [compare, setCompare] = useState(true)
 
   if (!fileId || !slideCount) return null
 
@@ -238,6 +241,8 @@ function SlideViewer({ fileId, slideCount }) {
   const next = () => setActive(a => Math.min(slideCount - 1, a + 1))
 
   const slideUrl = (i) => `/api/slides/${fileId}/${i}`
+  const beforeUrl = (i) => `/api/diff/before/${fileId}/${i}`
+  const hasBefore = beforeCount > 0
 
   return (
     <div className="mt-6 animate-in">
@@ -245,17 +250,52 @@ function SlideViewer({ fileId, slideCount }) {
         <h3 className="font-display font-bold text-sm uppercase tracking-widest" style={{ color: '#c8f135' }}>
           ✦ Slide Preview
         </h3>
-        <span className="text-xs" style={{ color: '#5a5a6a' }}>{slideCount} slides</span>
+        <div className="flex items-center gap-2">
+          {hasBefore && (
+            <div className="flex items-center gap-1 p-0.5 rounded-lg" style={{ background: '#0a0a0f', border: '1px solid #1e1e28' }}>
+              <button onClick={() => setCompare(true)}
+                style={{
+                  padding: '3px 10px', borderRadius: 6, fontSize: 11, fontWeight: 700, fontFamily: 'monospace',
+                  background: compare ? '#c8f13518' : 'transparent',
+                  color: compare ? '#c8f135' : '#5a5a6a', cursor: 'pointer', border: 'none',
+                }}>DIFF</button>
+              <button onClick={() => setCompare(false)}
+                style={{
+                  padding: '3px 10px', borderRadius: 6, fontSize: 11, fontWeight: 700, fontFamily: 'monospace',
+                  background: !compare ? '#c8f13518' : 'transparent',
+                  color: !compare ? '#c8f135' : '#5a5a6a', cursor: 'pointer', border: 'none',
+                }}>AFTER</button>
+            </div>
+          )}
+          <span className="text-xs" style={{ color: '#5a5a6a' }}>{slideCount} slides</span>
+        </div>
       </div>
 
       {/* Active slide large view */}
       <div className="relative rounded-xl overflow-hidden mb-3"
         style={{ background: '#0a0a0f', border: '1px solid #1e1e28', aspectRatio: '16/9' }}>
-        <img
-          src={slideUrl(active)} alt={`Slide ${active + 1}`}
-          className="w-full h-full object-contain"
-          style={{ imageRendering: 'crisp-edges' }}
-        />
+        {compare && hasBefore ? (
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: '100%' }}>
+            <div style={{ position: 'relative' }}>
+              <img src={beforeUrl(active)} alt={`Before ${active + 1}`}
+                className="w-full h-full object-contain" style={{ opacity: 0.9 }} />
+              <span className="absolute top-2 left-2 px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider"
+                style={{ background: 'rgba(10,10,15,0.8)', color: '#7a7a8a', border: '1px solid #1e1e28' }}>Before</span>
+            </div>
+            <div style={{ position: 'relative' }}>
+              <img src={slideUrl(active)} alt={`After ${active + 1}`}
+                className="w-full h-full object-contain" />
+              <span className="absolute top-2 right-2 px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider"
+                style={{ background: 'rgba(10,10,15,0.8)', color: '#4ade80', border: '1px solid #1e1e28' }}>After</span>
+            </div>
+          </div>
+        ) : (
+          <img
+            src={slideUrl(active)} alt={`Slide ${active + 1}`}
+            className="w-full h-full object-contain"
+            style={{ imageRendering: 'crisp-edges' }}
+          />
+        )}
         <button onClick={() => setModal(true)}
           className="absolute top-2 right-2 p-1.5 rounded-lg transition-all hover:scale-105"
           style={{ background: 'rgba(10,10,15,0.8)', border: '1px solid #1e1e28', color: '#c8f135' }}>
@@ -331,8 +371,119 @@ function SlideViewer({ fileId, slideCount }) {
   )
 }
 
+// ─── Planned changes (decided from the transcript) ─────────────
+function PlanPointsCard({ planInfo }) {
+  if (!planInfo) return null
+  const points = planInfo.points || []
+  return (
+    <div className="mt-6 animate-in">
+      <div className="card p-4" style={{ borderLeft: '2px solid #a78bfa' }}>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="font-display font-bold text-sm uppercase tracking-widest" style={{ color: '#a78bfa' }}>
+            ✦ Planned Changes
+          </h3>
+          <span className="text-xs" style={{ color: '#5a5a6a' }}>
+            from your content · {points.length} point{points.length !== 1 ? 's' : ''}
+          </span>
+        </div>
+
+        {(planInfo.insight || planInfo.recommendation) && (
+          <div className="mb-3 p-3 rounded-lg"
+            style={{ border: '1px solid #a78bfa30', background: '#a78bfa08' }}>
+            {planInfo.insight && (
+              <p className="text-xs leading-relaxed" style={{ color: '#c4b5fd' }}>
+                <span className="font-bold uppercase tracking-wider" style={{ fontSize: 10 }}>Key insight · </span>
+                {planInfo.insight}
+              </p>
+            )}
+            {planInfo.recommendation && (
+              <p className="text-xs leading-relaxed mt-1" style={{ color: '#8f83c9' }}>
+                <span className="font-bold uppercase tracking-wider" style={{ fontSize: 10 }}>Recommendation · </span>
+                {planInfo.recommendation}
+              </p>
+            )}
+          </div>
+        )}
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          {points.map((p, i) => (
+            <div key={i} className="flex items-start gap-2.5" style={{ fontSize: 12 }}>
+              <span className="shrink-0 px-1.5 py-0.5 rounded font-mono"
+                style={{ fontSize: 10, background: p.op === 'add_slide' ? '#a78bfa18' : '#c8f13518',
+                         color: p.op === 'add_slide' ? '#a78bfa' : '#c8f135',
+                         border: `1px solid ${p.op === 'add_slide' ? '#a78bfa30' : '#c8f13530'}`,
+                         minWidth: 52, textAlign: 'center' }}>
+                {p.op === 'add_slide' ? 'NEW' : (p.slide != null ? `S${p.slide}` : '—')}
+              </span>
+              <span className="shrink-0 font-mono" style={{ color: '#7dd3fc', fontSize: 11, marginTop: 1, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                {p.target}
+              </span>
+              <ArrowRight size={11} className="shrink-0" style={{ color: '#3e3e4e', marginTop: 3 }} />
+              <span style={{ color: '#c8c8d4', wordBreak: 'break-word', flex: 1 }}>
+                {p.text || <i style={{ color: '#3e3e4e' }}>(remove)</i>}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {planInfo.summary && (
+          <p className="mt-3 pt-3 text-xs italic" style={{ color: '#5a5a6a', borderTop: '1px solid #1e1e28' }}>
+            {planInfo.summary}
+          </p>
+        )}
+      </div>
+    </div>
+  )
+}
+
+// ─── Text before/after diff (fallback when PNG render unavailable) ──
+function TextDiffView({ diffSlides }) {
+  if (!diffSlides || diffSlides.length === 0) return null
+  return (
+    <div className="mt-6 animate-in">
+      <h3 className="font-display font-bold text-sm uppercase tracking-widest mb-3" style={{ color: '#c8f135' }}>
+        ✦ Edit Diff
+      </h3>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+        {diffSlides.map(s => (
+          <div key={s.slide} className="card p-4">
+            <div className="flex items-center gap-2 mb-2">
+              <span style={{
+                fontSize: 11, fontWeight: 800, fontFamily: 'monospace', color: '#000',
+                background: '#c8f135', padding: '2px 9px', borderRadius: 6,
+              }}>SLIDE {s.slide}</span>
+              <span style={{ fontSize: 11, color: '#5a5a6a' }}>{s.edits.length} change{s.edits.length !== 1 ? 's' : ''}</span>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {s.edits.map((e, i) => (
+                <div key={i} style={{ borderTop: '1px solid #1e1e28', paddingTop: 8 }}>
+                  <span style={{ fontSize: 10, fontFamily: 'monospace', color: '#c8f135' }}>{e.shape}</span>
+                  <span style={{ fontSize: 9, color: '#3e3e4e', fontFamily: 'monospace', marginLeft: 6 }}>{e.op}</span>
+                  {(e.before_text || e.after_text) && (
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: 6, fontSize: 12 }}>
+                      <span style={{ flex: 1, color: '#7a7a8a', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+                        {e.before_text || <i style={{ color: '#3e3e4e' }}>(empty)</i>}
+                      </span>
+                      <ArrowRight size={13} style={{ color: '#5a5a6a', marginTop: 2, flexShrink: 0 }} />
+                      <span style={{ flex: 1, color: '#e8e8f0', whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+                        {e.after_text || <i style={{ color: '#3e3e4e' }}>(empty)</i>}
+                      </span>
+                    </div>
+                  )}
+                  {e.evidence && <p style={{ fontSize: 9, color: '#5a5a6a', marginTop: 4 }}>{e.evidence}</p>}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 // ─── App ───────────────────────────────────────────────────────
 export default function App() {
+  const [appTab, setAppTab] = useState('pipeline')  // 'pipeline' | 'evallab'
   const [template, setTemplate] = useState(null)
   const [txText, setTxText] = useState('')
   const [txFile, setTxFile] = useState(null)
@@ -340,6 +491,9 @@ export default function App() {
   const [log, setLog] = useState([])
   const [fileId, setFileId] = useState(null)
   const [slideCount, setSlideCount] = useState(0)
+  const [beforeCount, setBeforeCount] = useState(0)
+  const [diffSlides, setDiffSlides] = useState(null)
+  const [planInfo, setPlanInfo] = useState(null)
   const [verdict, setVerdict] = useState(null)
   const [providers, setProviders] = useState([])
   const [selProvider, setSelProvider] = useState('')
@@ -374,6 +528,9 @@ export default function App() {
     setLog([])
     setFileId(null)
     setSlideCount(0)
+    setBeforeCount(0)
+    setDiffSlides(null)
+    setPlanInfo(null)
     setVerdict(null)
     setActiveModels(null)
 
@@ -387,7 +544,7 @@ export default function App() {
     abortRef.current = ctrl
 
     try {
-      const res = await fetch('/api/generate', { method: 'POST', body: fd, signal: ctrl.signal })
+      const res = await fetch('/api/diff/generate', { method: 'POST', body: fd, signal: ctrl.signal })
       if (!res.ok) { push({ type: 'error', msg: `HTTP ${res.status}` }); return }
 
       const reader = res.body.getReader()
@@ -405,7 +562,17 @@ export default function App() {
           try {
             const ev = JSON.parse(line.slice(6))
             if (ev.type === 'done') { setFileId(ev.file_id) }
-            if (ev.type === 'slides_ready') { setSlideCount(ev.count) }
+            if (ev.type === 'before_ready') { setFileId(ev.file_id); setBeforeCount(ev.count) }
+            if (ev.type === 'slides_ready') { setFileId(ev.file_id); setSlideCount(ev.count) }
+            if (ev.type === 'diff_ready') { setFileId(ev.file_id); setDiffSlides(ev.slides) }
+            if (ev.type === 'plan_summary') {
+              setPlanInfo({
+                points: ev.points || [],
+                insight: ev.insight || '',
+                recommendation: ev.recommendation || '',
+                summary: ev.summary || '',
+              })
+            }
             if (ev.type === 'reviewer_done') { setVerdict(ev.verdict) }
             if (ev.type === 'model_info') { setActiveModels({ provider: ev.provider, planner: ev.planner_model, executor: ev.executor_model }) }
             push(ev)
@@ -443,6 +610,29 @@ export default function App() {
             </span>
           </div>
           <div className="mt-6 h-px" style={{ background: 'linear-gradient(90deg, #c8f135 0%, #c8f13540 30%, transparent 70%)' }} />
+
+          {/* ── App tab selector ── */}
+          <div className="mt-5 flex gap-2">
+            {[
+              { id: 'pipeline', label: 'Pipeline', icon: Brain },
+              { id: 'difflab', label: 'Diff Lab', icon: Columns },
+              { id: 'evallab', label: 'Eval Lab', icon: FlaskConical },
+            ].map(({ id, label, icon: Icon }) => {
+              const active = appTab === id
+              return (
+                <button key={id} onClick={() => setAppTab(id)}
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+                  style={{
+                    background: active ? '#c8f13515' : '#0a0a0f',
+                    border: `1px solid ${active ? '#c8f13540' : '#1e1e28'}`,
+                    color: active ? '#c8f135' : '#5a5a6a',
+                    cursor: 'pointer',
+                  }}>
+                  <Icon size={11} />{label}
+                </button>
+              )
+            })}
+          </div>
 
           {/* ── Model selector ── */}
           {providers.length > 0 && (
@@ -492,6 +682,17 @@ export default function App() {
           )}
         </header>
 
+        {/* ── EvalLab tab ── */}
+        {appTab === 'evallab' && (
+          <EvalLab providers={providers} selProvider={selProvider} setSelProvider={setSelProvider} />
+        )}
+
+        {/* ── DiffLab tab ── */}
+        {appTab === 'difflab' && (
+          <DiffLab providers={providers} selProvider={selProvider} setSelProvider={setSelProvider} />
+        )}
+
+        {appTab === 'pipeline' && <>
         {/* ── Steps legend ── */}
         <div className="flex items-center gap-0 mb-6 overflow-x-auto">
           {[
@@ -679,17 +880,25 @@ export default function App() {
           </div>
         </div>
 
+        {/* ── Planned changes (shown as soon as the planner decides) ── */}
+        <PlanPointsCard planInfo={planInfo} />
+
         {/* ── Slide viewer ── */}
         {fileId && slideCount > 0 && (
-          <SlideViewer fileId={fileId} slideCount={slideCount} />
+          <SlideViewer fileId={fileId} slideCount={slideCount} beforeCount={beforeCount} />
         )}
-        {fileId && slideCount === 0 && (
+        {fileId && slideCount === 0 && diffSlides && diffSlides.length > 0 && (
+          <TextDiffView diffSlides={diffSlides} />
+        )}
+        {fileId && slideCount === 0 && (!diffSlides || diffSlides.length === 0) && (
           <div className="mt-6 p-4 rounded-xl text-xs text-center animate-in"
             style={{ border: '1px solid #1e1e28', color: '#3e3e4e', fontFamily: 'JetBrains Mono, monospace' }}>
             Slide preview requires LibreOffice — install with{' '}
             <code className="px-1" style={{ color: '#5a5a6a' }}>brew install --cask libreoffice</code>
           </div>
         )}
+
+        </> /* end pipeline tab */}
 
         {/* ── Footer ── */}
         <footer className="mt-12 flex items-center justify-between">

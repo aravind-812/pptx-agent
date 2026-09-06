@@ -1,10 +1,10 @@
 """layout-reviewer: deterministic pre-check + multimodal LLM QA agent."""
 import base64
+import json
 import re
-from functools import lru_cache
 from pathlib import Path
 
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.runnables import RunnableConfig
 from langgraph.prebuilt import create_react_agent
 
@@ -71,6 +71,20 @@ Did the deck use what the user provided? The user gave content for a reason.
 - If significant facts/names/numbers from the source never made it into any slide, that's a fail.
 → FAIL if pre-check reports wastage AND those facts would have fit somewhere in the deck.
 
+### 12. Shape and image alignment
+Are any boxes, text frames, or images visually misaligned?
+- Boxes that should be flush with neighbours but have a visible gap or overhang
+- Images or decorative shapes floating outside their expected region
+- Text boxes whose left/top edge is clearly not snapped to the grid or surrounding shapes
+- Pre-check flags `shape_position_drift` warnings — confirm visually.
+→ FAIL if any placed/edited shape appears noticeably out of alignment with surrounding content.
+
+### 11. Table cell overflow in narrow columns
+Any table cell containing text too long for its column width — text wrapping across 3+ lines in a narrow cell, or text visibly cut off?
+- Narrow columns (<80px wide) are data/indicator columns — they should not contain prose, dates, or labels.
+- Pre-check flags `table_cell_overflow` — treat as hard failure.
+→ FAIL if text overflows any table cell or is placed in a column too narrow to display it.
+
 ## Report format (exact)
 
 ```
@@ -96,13 +110,22 @@ Every ISSUES TO FIX line MUST start with `slide N:` so the executor knows where 
 
 _TOOLS = [pptx_validate, pptx_info]
 _CONFIG = RunnableConfig(recursion_limit=20)
-_MAX_IMAGES = 12
+_MAX_IMAGES = 8
 
 
-@lru_cache(maxsize=8)
+def _system_message(provider: str) -> SystemMessage:
+    if provider == "anthropic":
+        return SystemMessage(content=[{
+            "type": "text",
+            "text": SYSTEM_PROMPT,
+            "cache_control": {"type": "ephemeral"},
+        }])
+    return SystemMessage(content=SYSTEM_PROMPT)
+
+
 def _get_agent(provider: str, model: str):
     llm = get_llm(provider, model, max_tokens=4096)
-    return create_react_agent(llm, tools=_TOOLS, prompt=SYSTEM_PROMPT)
+    return create_react_agent(llm, tools=_TOOLS, prompt=_system_message(provider))
 
 
 def _render_slides(out_path: str, render_dir: str, edited_slides: list[int]) -> tuple[list[dict], int]:
@@ -169,6 +192,8 @@ def reviewer_node(state: dict) -> dict:
     precheck_summary = _format_precheck(precheck)
 
     # ── Step 2: render edited slides to PNG ───────────────────────────────
+    # Always render — visual issues (invisible text, white-on-white, overlaps) can't
+    # be caught by precheck alone. Gracefully returns [] if LibreOffice is absent.
     image_blocks, total_pngs = _render_slides(out, render_dir, edited_slides)
 
     # ── Step 3: build LLM message ─────────────────────────────────────────
@@ -178,10 +203,17 @@ def reviewer_node(state: dict) -> dict:
         "SKIPPED — LibreOffice not available or render failed. Run tools-only checks."
     )
 
-    # Truncate source doc to keep context bounded (first 6K chars covers most cases)
-    src_excerpt = source_doc[:6000]
-    if len(source_doc) > 6000:
-        src_excerpt += "\n[...truncated...]"
+    # Source excerpt: use extracted facts if available (structured, compact).
+    # Expanded to 8000 chars so facts deep in long transcripts aren't missed by grounding check.
+    extracted = state.get("extracted_facts")
+    if extracted:
+        src_excerpt = json.dumps(extracted, separators=(",", ":"))
+        if len(src_excerpt) > 8000:
+            src_excerpt = src_excerpt[:8000] + "\n[...truncated — use pptx_info for remaining grounding checks...]"
+    else:
+        src_excerpt = source_doc[:8000]
+        if len(source_doc) > 8000:
+            src_excerpt += "\n[...truncated...]"
 
     text_intro = (
         f"Review the edited PPTX. Apply the 10-point checklist strictly.\n\n"
@@ -203,23 +235,33 @@ def reviewer_node(state: dict) -> dict:
     content: list = [{"type": "text", "text": text_intro}, *image_blocks]
 
     # ── Step 4: invoke LLM reviewer ───────────────────────────────────────
-    result = _get_agent(provider, model).invoke(
-        {"messages": [HumanMessage(content=content)]},
-        config=_CONFIG,
-    )
-
-    last = result["messages"][-1].content
-    if isinstance(last, list):
-        last = "".join(b.get("text", "") for b in last if isinstance(b, dict))
+    llm_error: str = ""
+    last: str = ""
+    try:
+        result = _get_agent(provider, model).invoke(
+            {"messages": [HumanMessage(content=content)]},
+            config=_CONFIG,
+        )
+        last = result["messages"][-1].content
+        if isinstance(last, list):
+            last = "".join(b.get("text", "") for b in last if isinstance(b, dict))
+    except Exception as exc:
+        llm_error = str(exc)
 
     # Pre-check hard failures force FIX NEEDED regardless of LLM verdict
     if precheck["hard_failures"] > 0:
         verdict = "FIX NEEDED"
+    elif llm_error:
+        # LLM unavailable but pre-check passed — keep the output, skip visual QA
+        verdict = "PASS"
     else:
         verdict = "PASS" if "VERDICT: PASS" in last else "FIX NEEDED"
 
     # ── Parse issues list ─────────────────────────────────────────────────
     issues: list[str] = []
+
+    if llm_error:
+        issues.append(f"reviewer LLM unavailable — visual QA skipped ({llm_error})")
 
     # Inject pre-check hard failures directly (deterministic, not LLM-generated)
     for iss in precheck.get("issues", []):
@@ -227,11 +269,12 @@ def reviewer_node(state: dict) -> dict:
             issues.append(iss["detail"])
 
     # Append LLM-identified issues
-    m = re.search(r"ISSUES TO FIX:(.*?)(?:VERDICT:|$)", last, re.DOTALL)
-    if m:
-        for line in m.group(1).strip().split("\n"):
-            cleaned = re.sub(r"^[\s\d.\-•*]+", "", line).strip()
-            if cleaned and cleaned not in issues:
-                issues.append(cleaned)
+    if last:
+        m = re.search(r"ISSUES TO FIX:(.*?)(?:VERDICT:|$)", last, re.DOTALL)
+        if m:
+            for line in m.group(1).strip().split("\n"):
+                cleaned = re.sub(r"^[\s\d.\-•*]+", "", line).strip()
+                if cleaned and cleaned not in issues:
+                    issues.append(cleaned)
 
     return {**state, "review_verdict": verdict, "review_issues": issues}

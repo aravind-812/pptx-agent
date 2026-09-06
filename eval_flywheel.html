@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT Agent — Eval Flywheel Architecture</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0a0c14; --surface: #111827; --surface2: #1a2035; --border: #1e2d4a;
+  --blue: #3b82f6; --purple: #8b5cf6; --green: #22c55e; --amber: #f59e0b;
+  --red: #ef4444; --cyan: #06b6d4; --pink: #ec4899; --indigo: #6366f1;
+  --text: #e2e8f0; --muted: #64748b; --dimmed: #334155;
+}
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
+
+/* ── TOP BAR ── */
+.topbar { background: #0d1117; border-bottom: 1px solid var(--border); padding: 10px 20px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 200; }
+.topbar h1 { font-size: 14px; font-weight: 700; color: var(--indigo); }
+.tabs { display: flex; gap: 2px; margin-left: auto; }
+.tab-btn { padding: 6px 14px; font-size: 11px; border: none; border-radius: 6px; cursor: pointer; background: transparent; color: var(--muted); transition: all .15s; }
+.tab-btn.active { background: var(--indigo); color: #fff; }
+.tab-btn:hover:not(.active) { background: var(--surface2); color: var(--text); }
+
+/* ── VIEWS ── */
+.view { display: none; padding: 24px; min-height: calc(100vh - 53px); }
+.view.active { display: block; }
+
+/* ── SECTION HEADER ── */
+.section-title { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 14px; }
+
+/* ══════════════════════════════════════════════
+   VIEW 1 — ARCHITECTURE
+═══════════════════════════════════════════════ */
+#view-arch { padding: 0; overflow: hidden; }
+.arch-canvas { width: 100%; min-height: calc(100vh - 53px); display: flex; flex-direction: column; align-items: center; padding: 32px 24px 60px; gap: 0; overflow-y: auto; }
+
+/* LAYER LABELS */
+.layer-wrap { width: 100%; max-width: 1300px; position: relative; }
+.layer-label { font-size: 9px; text-transform: uppercase; letter-spacing: 2px; color: var(--dimmed); margin-bottom: 8px; padding-left: 4px; }
+
+/* PIPELINE ROW */
+.pipe-row { display: flex; align-items: center; gap: 0; margin-bottom: 0; }
+.arrow-h { width: 44px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.arrow-h svg { width: 44px; height: 20px; }
+
+/* NODE */
+.node { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all .2s; flex-shrink: 0; position: relative; }
+.node:hover { transform: translateY(-2px); }
+.node.active { box-shadow: 0 0 0 2px var(--indigo); }
+.node-tag { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 3px; }
+.node-name { font-size: 13px; font-weight: 700; }
+.node-sub { font-size: 10px; color: var(--muted); margin-top: 2px; }
+.node-badge { position: absolute; top: -7px; right: -7px; font-size: 9px; font-weight: 700; padding: 2px 5px; border-radius: 99px; }
+
+/* EVAL LAYER */
+.eval-layer { background: linear-gradient(135deg, rgba(99,102,241,.06) 0%, rgba(139,92,246,.06) 100%); border: 1.5px dashed rgba(99,102,241,.3); border-radius: 14px; padding: 20px; width: 100%; max-width: 1300px; margin: 0; }
+.eval-layer-header { font-size: 11px; font-weight: 700; color: var(--indigo); display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
+.eval-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.eval-card { background: var(--surface2); border: 1.5px solid var(--border); border-radius: 8px; padding: 10px 12px; cursor: pointer; transition: all .15s; flex: 1; min-width: 130px; }
+.eval-card:hover { border-color: var(--indigo); }
+.eval-card.active { border-color: var(--indigo); background: rgba(99,102,241,.1); }
+.eval-type { font-size: 9px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.eval-name { font-size: 11px; font-weight: 600; }
+.eval-cost { font-size: 9px; margin-top: 4px; }
+
+/* CONNECTOR LINES */
+.connector-down { width: 2px; height: 28px; margin: 0 auto; position: relative; }
+.connector-down::after { content: '▼'; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); font-size: 9px; }
+
+.connector-wrap { display: flex; justify-content: center; align-items: center; height: 36px; width: 100%; max-width: 1300px; position: relative; }
+
+/* FIX LOOP */
+.fix-loop { width: 100%; max-width: 1300px; background: rgba(245,158,11,.05); border: 1.5px dashed rgba(245,158,11,.3); border-radius: 10px; padding: 12px 18px; display: flex; align-items: center; gap: 14px; margin: 0; }
+.fix-loop-text { font-size: 11px; }
+.fix-loop-label { font-size: 10px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: .5px; }
+
+/* IMPROVE LOOP */
+.improve-loop { width: 100%; max-width: 1300px; background: rgba(139,92,246,.05); border: 1.5px dashed rgba(139,92,246,.35); border-radius: 10px; padding: 14px 18px; margin: 0; }
+.improve-loop-header { font-size: 10px; font-weight: 700; color: var(--purple); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
+.improve-steps { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.improve-step { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; font-size: 10px; color: var(--text); }
+.improve-arrow { font-size: 11px; color: var(--purple); }
+
+/* RESULT PANEL */
+.result-panel { position: fixed; right: 0; top: 53px; width: 360px; height: calc(100vh - 53px); background: var(--surface); border-left: 1px solid var(--border); overflow-y: auto; z-index: 150; transform: translateX(100%); transition: transform .25s; }
+.result-panel.open { transform: translateX(0); }
+.rp-header { padding: 16px 18px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+.rp-title { font-size: 14px; font-weight: 700; }
+.rp-close { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 18px; }
+.rp-body { padding: 16px 18px; }
+.rp-section { margin-bottom: 18px; }
+.rp-section-title { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+.rp-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 6px 0; border-bottom: 1px solid rgba(30,45,74,.5); font-size: 11px; gap: 8px; }
+.rp-key { color: var(--muted); font-family: monospace; flex-shrink: 0; }
+.rp-val { color: var(--cyan); text-align: right; }
+.code-block { background: #070b11; border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; font-size: 10px; font-family: monospace; line-height: 1.6; color: #94a3b8; overflow-x: auto; white-space: pre; }
+.tag { display: inline-block; padding: 2px 7px; border-radius: 99px; font-size: 9px; font-weight: 700; margin-right: 4px; }
+.tag-green { background: #14532d; color: #4ade80; }
+.tag-blue { background: #1e3a5f; color: #60a5fa; }
+.tag-purple { background: #2e1065; color: #c4b5fd; }
+.tag-amber { background: #431407; color: #fbbf24; }
+.tag-red { background: #450a0a; color: #f87171; }
+
+/* ══════════════════════════════════════════════
+   VIEW 2 — FLYWHEEL DEMO
+═══════════════════════════════════════════════ */
+#view-demo { max-width: 1100px; margin: 0 auto; }
+.demo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+.demo-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 18px; }
+.demo-card-title { font-size: 13px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.transcript-list { display: flex; flex-direction: column; gap: 4px; max-height: 280px; overflow-y: auto; }
+.transcript-item { display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 5px; font-size: 11px; background: var(--surface2); }
+.t-status { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.t-id { font-family: monospace; color: var(--cyan); min-width: 28px; }
+.t-bar { flex: 1; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.t-fill { height: 100%; background: var(--green); border-radius: 2px; transition: width .5s; }
+.t-score { font-size: 10px; color: var(--muted); min-width: 32px; text-align: right; }
+
+.pass-rate-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 3px; }
+.pr-header { font-size: 9px; color: var(--muted); text-align: center; padding: 4px 2px; }
+.pr-cell { font-size: 10px; text-align: center; padding: 5px 2px; border-radius: 4px; font-weight: 600; cursor: pointer; }
+.pr-cell:hover { opacity: .8; }
+
+.run-btn { background: var(--indigo); color: #fff; border: none; padding: 10px 22px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all .15s; }
+.run-btn:hover { background: #4f46e5; }
+.run-btn:disabled { opacity: .5; cursor: not-allowed; }
+.run-btn.running { background: var(--amber); color: #000; }
+
+.improve-btn { background: var(--purple); color: #fff; border: none; padding: 8px 18px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }
+
+.log-panel { background: #060a10; border: 1px solid var(--border); border-radius: 8px; padding: 10px; font-family: monospace; font-size: 10px; height: 160px; overflow-y: auto; line-height: 1.6; }
+.log-line { padding: 1px 0; }
+.log-line.ok { color: var(--green); }
+.log-line.fail { color: var(--red); }
+.log-line.info { color: var(--cyan); }
+.log-line.warn { color: var(--amber); }
+.log-line.dim { color: var(--dimmed); }
+
+/* HEATMAP */
+.heatmap-wrap { overflow-x: auto; }
+.heatmap { border-collapse: collapse; width: 100%; font-size: 10px; }
+.heatmap th { padding: 5px 8px; text-align: left; font-weight: 600; color: var(--muted); border-bottom: 1px solid var(--border); white-space: nowrap; }
+.heatmap td { padding: 3px 6px; border-bottom: 1px solid rgba(30,45,74,.4); }
+.hm-cell { width: 60px; text-align: center; border-radius: 4px; padding: 2px 0; font-size: 10px; font-weight: 700; cursor: pointer; }
+.hm-cell:hover { opacity: .8; }
+
+/* ══════════════════════════════════════════════
+   VIEW 3 — EVALS DETAIL
+═══════════════════════════════════════════════ */
+#view-evals { max-width: 900px; margin: 0 auto; }
+.eval-detail-grid { display: flex; flex-direction: column; gap: 12px; }
+.eval-detail-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 18px; cursor: pointer; transition: all .2s; }
+.eval-detail-card:hover { border-color: var(--indigo); }
+.eval-detail-card.expanded { border-color: var(--indigo); }
+.ed-header { display: flex; align-items: center; gap: 12px; }
+.ed-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+.ed-name { font-size: 14px; font-weight: 700; }
+.ed-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.ed-badges { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.ed-body { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); }
+.eval-detail-card.expanded .ed-body { display: block; }
+.ed-row { display: grid; grid-template-columns: 120px 1fr; gap: 8px; margin-bottom: 8px; font-size: 11px; }
+.ed-label { color: var(--muted); }
+.ed-val { color: var(--text); }
+
+/* ══════════════════════════════════════════════
+   VIEW 4 — SELF-IMPROVE
+═══════════════════════════════════════════════ */
+#view-improve { max-width: 1000px; margin: 0 auto; }
+.improve-flow { display: flex; flex-direction: column; gap: 14px; }
+.if-step { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; }
+.if-num { width: 28px; height: 28px; border-radius: 50%; background: var(--indigo); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+.if-title { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+.if-desc { font-size: 11px; color: var(--muted); line-height: 1.6; }
+.if-arrow { text-align: center; color: var(--purple); font-size: 18px; }
+.diff-view { background: #060a10; border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-family: monospace; font-size: 10px; line-height: 1.7; }
+.diff-add { color: #4ade80; background: rgba(34,197,94,.06); display: block; padding: 0 4px; }
+.diff-rem { color: #f87171; background: rgba(239,68,68,.06); display: block; padding: 0 4px; text-decoration: line-through; }
+.diff-ctx { color: var(--dimmed); display: block; padding: 0 4px; }
+.approve-btn { background: var(--green); color: #000; border: none; padding: 8px 18px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; margin-top: 10px; }
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* SPACERS */
+.gap-10 { height: 10px; }
+.gap-16 { height: 16px; }
+.gap-24 { height: 24px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>⚡ PPT Agent — Eval Flywheel</h1>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchView('arch')">Architecture</button>
+    <button class="tab-btn" onclick="switchView('demo')">Live Demo</button>
+    <button class="tab-btn" onclick="switchView('evals')">Evaluations</button>
+    <button class="tab-btn" onclick="switchView('improve')">Self-Improve</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+  VIEW 1: ARCHITECTURE
+════════════════════════════════════════ -->
+<div id="view-arch" class="view active">
+<div class="arch-canvas">
+
+  <!-- EXISTING PIPELINE -->
+  <div class="layer-wrap">
+    <div class="layer-label">Existing pipeline (unchanged)</div>
+    <div class="pipe-row">
+      <!-- EXTRACTOR -->
+      <div class="node" style="width:148px;border-color:#0e4429;" onclick="showPanel('extractor')">
+        <div class="node-tag">Stage 1</div>
+        <div class="node-name" style="color:#4ade80;">Extractor</div>
+        <div class="node-sub">Haiku · optional</div>
+        <div class="node-badge" style="background:#14532d;color:#4ade80;">→ facts</div>
+      </div>
+      <div class="arrow-h"><svg viewBox="0 0 44 20"><line x1="0" y1="10" x2="34" y2="10" stroke="#1e3a5f" stroke-width="1.5"/><polygon points="34,5 44,10 34,15" fill="#1e3a5f"/></svg></div>
+      <!-- PLANNER -->
+      <div class="node" style="width:148px;border-color:#1e3a5f;" onclick="showPanel('planner')">
+        <div class="node-tag">Stage 2</div>
+        <div class="node-name" style="color:#60a5fa;">Planner</div>
+        <div class="node-sub">Sonnet · 32K tokens</div>
+        <div class="node-badge" style="background:#1e3a5f;color:#60a5fa;">→ plan</div>
+      </div>
+      <div class="arrow-h"><svg viewBox="0 0 44 20"><line x1="0" y1="10" x2="34" y2="10" stroke="#1e3a5f" stroke-width="1.5"/><polygon points="34,5 44,10 34,15" fill="#1e3a5f"/></svg></div>
+      <!-- EXECUTOR -->
+      <div class="node" style="width:180px;border-color:#1e3a5f;" onclick="showPanel('executor')">
+        <div class="node-tag">Stage 3</div>
+        <div class="node-name" style="color:#a78bfa;">Executor</div>
+        <div class="node-sub">P1-P4 hybrid · Haiku/Sonnet</div>
+        <div class="node-badge" style="background:#2e1065;color:#c4b5fd;">→ pptx</div>
+      </div>
+      <div class="arrow-h"><svg viewBox="0 0 44 20"><line x1="0" y1="10" x2="34" y2="10" stroke="#1e3a5f" stroke-width="1.5"/><polygon points="34,5 44,10 34,15" fill="#1e3a5f"/></svg></div>
+      <!-- REVIEWER -->
+      <div class="node" style="width:158px;border-color:#1e3a5f;" onclick="showPanel('reviewer')">
+        <div class="node-tag">Stage 4</div>
+        <div class="node-name" style="color:#f472b6;">Reviewer</div>
+        <div class="node-sub">Haiku · vision · 10-pt</div>
+        <div class="node-badge" style="background:#500724;color:#f9a8d4;">→ verdict</div>
+      </div>
+      <div class="arrow-h" style="width:80px;">
+        <svg viewBox="0 0 80 20" width="80" height="20">
+          <line x1="0" y1="10" x2="50" y2="10" stroke="#22c55e" stroke-width="1.5"/>
+          <polygon points="50,5 60,10 50,15" fill="#22c55e"/>
+          <text x="63" y="14" font-size="8" fill="#22c55e">PASS</text>
+        </svg>
+      </div>
+      <!-- OUTPUT -->
+      <div class="node" style="width:100px;border-color:#0e4429;cursor:default;" >
+        <div class="node-tag">Output</div>
+        <div class="node-name" style="color:#4ade80;font-size:11px;">edited.pptx</div>
+        <div class="node-sub">↓ to evals</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIX LOOP -->
+  <div class="gap-10"></div>
+  <div class="layer-wrap">
+    <div class="fix-loop">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/><path d="M3 3v5h5" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/></svg>
+      <div class="fix-loop-text">
+        <div class="fix-loop-label">Level 1 fix loop (existing)</div>
+        <div style="font-size:10px;color:var(--muted);margin-top:2px;">REVIEWER → FIX NEEDED → executor re-runs (Sonnet) scoped to flagged slides · max 2 attempts</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector-wrap">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0;">
+      <div style="width:1.5px;height:20px;background:linear-gradient(to bottom,#1e3a5f,#6366f1);"></div>
+      <div style="font-size:9px;color:var(--indigo);letter-spacing:1px;text-transform:uppercase;">output pptx + edit_plan + executor_log</div>
+      <div style="width:1.5px;height:12px;background:var(--indigo);"></div>
+      <div style="font-size:14px;color:var(--indigo);">▼</div>
+    </div>
+  </div>
+
+  <!-- EVAL LAYER -->
+  <div class="layer-wrap">
+    <div class="eval-layer">
+      <div class="eval-layer-header">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="#6366f1" stroke-width="2"/></svg>
+        NEW — Eval Flywheel Layer · runs after every batch · 44 transcripts × 6 binary judges
+      </div>
+
+      <!-- SCENARIO GEN -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div class="node" style="width:160px;border-color:#164e63;" onclick="showPanel('scenarios')">
+          <div class="node-tag">Setup (one-time)</div>
+          <div class="node-name" style="color:#67e8f9;font-size:12px;">Scenario Generator</div>
+          <div class="node-sub">Haiku · per transcript</div>
+        </div>
+        <div style="font-size:10px;color:var(--muted);">→ ground truth fixtures<br/>(expected_facts, critical_numbers,<br/>forbidden_phrases) saved as JSON</div>
+      </div>
+
+      <!-- RUNNER -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div class="node" style="width:160px;border-color:#1e3a5f;" onclick="showPanel('runner')">
+          <div class="node-tag">eval_agent/runner.py</div>
+          <div class="node-name" style="color:#60a5fa;font-size:12px;">Eval Runner</div>
+          <div class="node-sub">graph.invoke() direct</div>
+        </div>
+        <div style="font-size:10px;color:var(--muted);">→ captures full PipelineState<br/>+ extracts PPTX text (all slides)<br/>+ passes to judges</div>
+      </div>
+
+      <!-- 6 EVALS -->
+      <div class="section-title" style="margin-bottom:8px;">6 binary evaluations — each returns true/false + reasoning</div>
+      <div class="eval-row">
+        <div class="eval-card" onclick="showEvalPanel('faithfulness')">
+          <div class="eval-type" style="color:#4ade80;">LLM judge · Haiku</div>
+          <div class="eval-name">FAITHFULNESS</div>
+          <div class="eval-cost" style="color:var(--muted);">Key facts from transcript → PPTX?</div>
+        </div>
+        <div class="eval-card" onclick="showEvalPanel('hallucination')">
+          <div class="eval-type" style="color:#f87171;">LLM judge · Haiku</div>
+          <div class="eval-name">HALLUCINATION</div>
+          <div class="eval-cost" style="color:var(--muted);">Numbers/names NOT in transcript?</div>
+        </div>
+        <div class="eval-card" onclick="showEvalPanel('sanitization')">
+          <div class="eval-type" style="color:#fbbf24;">LLM judge · Haiku</div>
+          <div class="eval-name">SANITIZATION</div>
+          <div class="eval-cost" style="color:var(--muted);">Generic filler user never wrote?</div>
+        </div>
+        <div class="eval-card" onclick="showEvalPanel('completeness')">
+          <div class="eval-type" style="color:#a78bfa;">Semi-det · Haiku</div>
+          <div class="eval-name">COMPLETENESS</div>
+          <div class="eval-cost" style="color:var(--muted);">&gt;80% of all_key_facts used?</div>
+        </div>
+        <div class="eval-card" onclick="showEvalPanel('placeholder')">
+          <div class="eval-type" style="color:#22c55e;">Deterministic · free</div>
+          <div class="eval-name">PLACEHOLDER</div>
+          <div class="eval-cost" style="color:var(--muted);">Any [X]/TODO remaining?</div>
+        </div>
+        <div class="eval-card" onclick="showEvalPanel('shape_coverage')">
+          <div class="eval-type" style="color:#22c55e;">Deterministic · free</div>
+          <div class="eval-name">SHAPE COVERAGE</div>
+          <div class="eval-cost" style="color:var(--muted);">executor_log applied &gt;90%?</div>
+        </div>
+      </div>
+
+      <!-- PASS RATE OUTPUT -->
+      <div style="margin-top:14px;display:flex;align-items:center;gap:10px;">
+        <div class="node" style="border-color:#1e3a5f;cursor:default;width:170px;">
+          <div class="node-tag">eval_agent/benchmark.py</div>
+          <div class="node-name" style="font-size:11px;color:#60a5fa;">Pass Rate Table</div>
+          <div class="node-sub">6 evals × 44 transcripts</div>
+        </div>
+        <div style="font-size:10px;color:var(--muted);">→ JSONL history preserved<br/>→ diff vs previous baseline<br/>→ flags regressions instantly</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector-wrap">
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <div style="width:1.5px;height:16px;background:var(--purple);"></div>
+      <div style="font-size:14px;color:var(--purple);">▼</div>
+    </div>
+  </div>
+
+  <!-- META-IMPROVE LOOP -->
+  <div class="layer-wrap">
+    <div class="improve-loop">
+      <div class="improve-loop-header">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="#8b5cf6" stroke-width="2"/></svg>
+        Level 2 — Meta-Improve Loop (new · auto_improve.py)
+      </div>
+      <div class="improve-steps">
+        <div class="improve-step">Pass rate &lt; threshold?</div>
+        <div class="improve-arrow">→</div>
+        <div class="improve-step">Cluster FAIL cases by eval type</div>
+        <div class="improve-arrow">→</div>
+        <div class="improve-step">Sonnet reads failures + current prompt</div>
+        <div class="improve-arrow">→</div>
+        <div class="improve-step">Suggests targeted patch</div>
+        <div class="improve-arrow">→</div>
+        <div class="improve-step" style="border-color:var(--amber);color:var(--amber);">Human reviews in EvalLab UI</div>
+        <div class="improve-arrow">→</div>
+        <div class="improve-step" style="border-color:var(--green);color:var(--green);">Apply → re-run → compare</div>
+      </div>
+      <div style="margin-top:10px;font-size:10px;color:var(--muted);">Patches staged to <code style="color:var(--purple);">eval_agent/staged_patches/</code> — never auto-applied. Human approval required.</div>
+    </div>
+  </div>
+
+  <!-- BACKEND + FRONTEND -->
+  <div class="gap-16"></div>
+  <div class="layer-wrap">
+    <div class="layer-label">Integration points</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <div class="node" style="width:200px;border-color:#1e3a5f;cursor:default;">
+        <div class="node-tag">backend.py (3 new endpoints)</div>
+        <div class="node-name" style="font-size:11px;">POST /api/eval/run</div>
+        <div class="node-sub">POST /api/eval/improve</div>
+        <div class="node-sub" style="margin-top:1px;">GET /api/eval/results</div>
+      </div>
+      <div class="node" style="width:220px;border-color:#1e3a5f;cursor:default;">
+        <div class="node-tag">frontend/src/EvalLab.jsx (new tab)</div>
+        <div class="node-name" style="font-size:11px;">Eval Lab Tab</div>
+        <div class="node-sub">Run · Results · Calibrate · Improve</div>
+      </div>
+      <div class="node" style="width:190px;border-color:#1e3a5f;cursor:default;">
+        <div class="node-tag">eval_agent/calibrate.py</div>
+        <div class="node-name" style="font-size:11px;">Judge Calibration</div>
+        <div class="node-sub">Human labels → F1 per eval</div>
+        <div class="node-sub" style="margin-top:1px;">Trust only evals with F1 &gt; 0.85</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- DETAIL PANEL -->
+<div class="result-panel" id="result-panel">
+  <div class="rp-header">
+    <div class="rp-title" id="rp-title">Details</div>
+    <button class="rp-close" onclick="closePanel()">✕</button>
+  </div>
+  <div class="rp-body" id="rp-body"></div>
+</div>
+</div>
+
+<!-- ════════════════════════════════════════
+  VIEW 2: LIVE DEMO
+════════════════════════════════════════ -->
+<div id="view-demo" class="view">
+<div style="max-width:1100px;margin:0 auto;">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
+    <div>
+      <div class="section-title">Simulated batch eval run</div>
+      <div style="font-size:12px;color:var(--muted);">44 transcripts · 1 PPTX template · Anthropic Haiku judges</div>
+    </div>
+    <div style="display:flex;gap:10px;">
+      <button class="run-btn" id="run-btn" onclick="startDemo()">▶ Run Eval Batch</button>
+      <button class="improve-btn" onclick="showImproveDemo()" id="improve-btn" style="display:none;">✦ Auto-Improve</button>
+    </div>
+  </div>
+
+  <div class="demo-grid">
+    <!-- Transcript Progress -->
+    <div class="demo-card">
+      <div class="demo-card-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#60a5fa" stroke-width="2"/><polyline points="14 2 14 8 20 8" stroke="#60a5fa" stroke-width="2"/></svg>
+        Transcript Progress
+        <span id="progress-count" style="font-size:11px;color:var(--muted);margin-left:auto;">0 / 44</span>
+      </div>
+      <div class="transcript-list" id="transcript-list">
+        <!-- populated by JS -->
+      </div>
+    </div>
+
+    <!-- Live Log -->
+    <div class="demo-card">
+      <div class="demo-card-title">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#a78bfa" stroke-width="2"/><line x1="8" y1="8" x2="16" y2="8" stroke="#a78bfa" stroke-width="2"/><line x1="8" y1="12" x2="14" y2="12" stroke="#a78bfa" stroke-width="2"/></svg>
+        Eval Log
+      </div>
+      <div class="log-panel" id="log-panel">
+        <div class="log-line dim">— press Run Eval Batch to start —</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pass Rate Heatmap -->
+  <div class="demo-card" style="margin-bottom:16px;">
+    <div class="demo-card-title">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="#22c55e" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="#22c55e" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="#ef4444" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="#22c55e" stroke-width="2"/></svg>
+      Pass Rate Heatmap — click any cell to see reasoning
+    </div>
+    <div class="heatmap-wrap">
+      <table class="heatmap" id="heatmap">
+        <thead>
+          <tr>
+            <th>Transcript</th>
+            <th>FAITHFUL</th>
+            <th>NO-HALLUC</th>
+            <th>NO-SANIT</th>
+            <th>COMPLETE</th>
+            <th>PLACEHOLDER</th>
+            <th>SHAPE COV</th>
+          </tr>
+        </thead>
+        <tbody id="heatmap-body">
+          <tr><td colspan="7" style="color:var(--muted);font-size:11px;text-align:center;padding:20px;">Run eval batch to populate</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Aggregate row -->
+    <div style="margin-top:10px;padding-top:10px;border-top:1px solid var(--border);display:flex;gap:8px;flex-wrap:wrap;" id="aggregate-row"></div>
+  </div>
+
+  <!-- Improve suggestion -->
+  <div id="improve-demo" style="display:none;">
+    <div class="demo-card">
+      <div class="demo-card-title" style="color:var(--purple);">✦ Auto-Improve Suggestion (Sonnet)</div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:12px;">14 failures on SANITIZATION eval. Sonnet analyzed failure patterns and suggests this patch to planner.py system prompt:</div>
+      <div class="diff-view">
+<span class="diff-ctx">  ## Hard rules (deterministic checks will fail you if violated)</span>
+<span class="diff-ctx">  </span>
+<span class="diff-rem">  - NEVER write "industry-leading", "best-in-class", "world-class", "robust"</span>
+<span class="diff-add">  - NEVER write "industry-leading", "best-in-class", "world-class", "robust",</span>
+<span class="diff-add">    "comprehensive", "end-to-end", "holistic", "streamlined", "optimized"</span>
+<span class="diff-add">    unless the user literally used those exact words in their source document.</span>
+<span class="diff-ctx">  </span>
+<span class="diff-add">  - COMPANY NAME RULE: If the source document contains a company name, product name,</span>
+<span class="diff-add">    or person name, use it VERBATIM everywhere it's relevant. Never replace proper</span>
+<span class="diff-add">    nouns with generics like "the customer", "your organization", or "the platform".</span></div>
+      <div style="display:flex;gap:10px;margin-top:12px;align-items:center;">
+        <button class="approve-btn">✓ Apply Patch</button>
+        <span style="font-size:10px;color:var(--muted);">Writes to agents/planner.py after your approval. Re-runs affected transcripts automatically.</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ════════════════════════════════════════
+  VIEW 3: EVALUATIONS
+════════════════════════════════════════ -->
+<div id="view-evals" class="view">
+<div class="section-title" style="padding:0 0 16px 0;">6 binary evaluations — inputs, prompts, outputs, calibration targets</div>
+<div class="eval-detail-grid" id="eval-detail-grid">
+  <!-- populated by JS -->
+</div>
+</div>
+
+<!-- ════════════════════════════════════════
+  VIEW 4: SELF-IMPROVE
+════════════════════════════════════════ -->
+<div id="view-improve" class="view">
+<div class="section-title" style="padding:0 0 16px 0;">Meta-improve loop — how the system patches itself based on batch failures</div>
+<div class="improve-flow">
+  <div class="if-step">
+    <div class="if-num">1</div>
+    <div>
+      <div class="if-title">Batch run completes — failures collected</div>
+      <div class="if-desc"><code style="color:var(--cyan);">eval_agent/benchmark.py</code> runs all 44 transcripts through the full pipeline + 6 evals. Appends results to <code style="color:var(--cyan);">eval_agent/results/benchmark.jsonl</code> with timestamp. Each line: transcript_id, all 6 eval results (passed/reasoning), executor_log summary, review_verdict.</div>
+    </div>
+  </div>
+  <div class="if-arrow">↓</div>
+  <div class="if-step">
+    <div class="if-num">2</div>
+    <div>
+      <div class="if-title">Failure threshold check</div>
+      <div class="if-desc">If any eval's pass rate drops below threshold (configurable per eval — e.g. hallucination &gt;95%, sanitization &gt;85%), auto_improve.py is triggered for that eval. Multiple failing evals → ranked by severity, worst first. Regressions vs previous baseline also flagged.</div>
+      <div class="code-block" style="margin-top:8px;">thresholds = {
+  "hallucination":    0.95,  # hard — never tolerate
+  "placeholder":      0.99,  # deterministic — should be near-perfect
+  "faithfulness":     0.80,  # key content must land
+  "sanitization":     0.85,  # no filler
+  "completeness":     0.75,  # most facts used
+  "shape_coverage":   0.90,  # executor must apply edits
+}</div>
+    </div>
+  </div>
+  <div class="if-arrow">↓</div>
+  <div class="if-step">
+    <div class="if-num">3</div>
+    <div>
+      <div class="if-title">Failure clustering</div>
+      <div class="if-desc">All FAIL cases for the target eval are collected. LLM reasoning strings are grouped by pattern (exact string matching + semantic clustering via Haiku). Cluster labels extracted: "company name replaced by generic", "percentage rounded", "filler phrase 'comprehensive' added", etc. Top 3 clusters passed to improvement step.</div>
+    </div>
+  </div>
+  <div class="if-arrow">↓</div>
+  <div class="if-step">
+    <div class="if-num">4</div>
+    <div>
+      <div class="if-title">Sonnet prompt surgeon</div>
+      <div class="if-desc"><code style="color:var(--purple);">auto_improve.py</code> sends to Sonnet: (a) current planner system prompt, (b) top 3 failure clusters with 3 example cases each, (c) instruction: "suggest a minimal, targeted addition to the prompt that would prevent these failures without over-constraining passing cases." Returns patch + reasoning + estimated affected count.</div>
+      <div class="diff-view" style="margin-top:8px;">
+<span class="diff-ctx">Prompt: agents/planner.py:SYSTEM_PROMPT</span>
+<span class="diff-ctx">Cluster: "company name replaced by generic" (14 cases)</span>
+<span class="diff-ctx"></span>
+<span class="diff-add">+ COMPANY NAME RULE: If source contains company/product/person name,</span>
+<span class="diff-add">+ use it VERBATIM. Never replace with "the customer" / "the platform".</span></div>
+    </div>
+  </div>
+  <div class="if-arrow">↓</div>
+  <div class="if-step" style="border-color:var(--amber);">
+    <div class="if-num" style="background:var(--amber);color:#000;">5</div>
+    <div>
+      <div class="if-title" style="color:var(--amber);">Human review in EvalLab UI (REQUIRED)</div>
+      <div class="if-desc">Patch is written to <code style="color:var(--amber);">eval_agent/staged_patches/TIMESTAMP_sanitization.diff</code>. Never auto-applied. EvalLab "Improve" tab shows the diff with all supporting failure cases. Reviewer approves or rejects. Rejected patches are archived for future reference.</div>
+    </div>
+  </div>
+  <div class="if-arrow">↓</div>
+  <div class="if-step" style="border-color:var(--green);">
+    <div class="if-num" style="background:var(--green);color:#000;">6</div>
+    <div>
+      <div class="if-title" style="color:var(--green);">Apply + re-run + compare</div>
+      <div class="if-desc">Approved patch applied to <code>agents/planner.py</code>. Benchmark re-runs only the previously-failing transcripts (not all 44 — saves cost). Pass rate compared to pre-patch baseline. If target eval improved AND no regressions on other evals → accepted. If regression → patch reverted, staged again with regression context.</div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:24px;background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:18px;">
+  <div style="font-size:12px;font-weight:700;margin-bottom:10px;color:var(--purple);">What the pipeline self-fixes vs what needs human review</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:11px;">
+    <div>
+      <div style="color:var(--green);font-weight:700;margin-bottom:6px;">✓ Fully automated (no human)</div>
+      <div style="color:var(--muted);line-height:1.8;">Level 1 fix loop per run<br/>Placeholder sweep<br/>Empty title restore<br/>Shape relayout<br/>Eval batch runs<br/>Failure clustering<br/>Calibration F1 scores</div>
+    </div>
+    <div>
+      <div style="color:var(--amber);font-weight:700;margin-bottom:6px;">⚠ Human approval required</div>
+      <div style="color:var(--muted);line-height:1.8;">Prompt patches from auto_improve<br/>Eval judge prompt changes<br/>Threshold adjustments<br/>New eval types<br/>Staged patch application</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+// ── View switching ──────────────────────────
+function switchView(id) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('view-' + id).classList.add('active');
+  event.target.classList.add('active');
+  closePanel();
+}
+
+// ── Detail panel data ──────────────────────
+const PANELS = {
+  extractor: {
+    title: 'Extractor',
+    sections: [
+      { title: 'Role in eval', rows: [
+        ['Purpose', 'Distils large transcripts to structured JSON facts before planner'],
+        ['Output', 'extracted_facts dict → passed through pipeline state'],
+        ['Eval relevance', 'Scenario generator uses same Haiku + same schema'],
+        ['File', 'agents/extractor.py'],
+      ]},
+      { title: 'What eval captures', rows: [
+        ['scenario.expected_facts', 'Ground truth facts extracted from transcript'],
+        ['scenario.critical_numbers', 'Numbers/dates that MUST appear in output'],
+        ['FAITHFULNESS eval', 'Checks expected_facts appear in PPTX text'],
+      ]}
+    ]
+  },
+  planner: {
+    title: 'Planner',
+    sections: [
+      { title: 'Eval signal from planner', rows: [
+        ['edit_plan.strategic_context.all_key_facts', 'Used by COMPLETENESS eval'],
+        ['edit_plan.edits[].evidence', 'Cross-ref against transcript for grounding'],
+        ['edit_plan.edits[].text', 'Scanned for generic phrases by SANITIZATION eval'],
+        ['File', 'agents/planner.py · SYSTEM_PROMPT is the patch target'],
+      ]},
+      { title: 'Auto-improve target', rows: [
+        ['Primary target', 'SYSTEM_PROMPT is where prompt patches apply'],
+        ['Patch format', 'Addition to "Hard rules" section or new rule block'],
+        ['Staged at', 'eval_agent/staged_patches/*.diff'],
+      ]}
+    ]
+  },
+  executor: {
+    title: 'Executor',
+    sections: [
+      { title: 'SHAPE COVERAGE eval inputs', rows: [
+        ['executor_log.phases[1].resolved', 'Count of shapes successfully resolved'],
+        ['executor_log.phases[2].applied', 'Count of edits batch-applied'],
+        ['executor_log.phases[2].failed', 'Count that fell to LLM fallback'],
+        ['Pass threshold', '>90% of edits applied in Phase 1-2 (deterministic)'],
+      ]},
+      { title: 'PLACEHOLDER eval inputs', rows: [
+        ['executor_log.phases[4b].swept', 'Count of placeholders found + cleared'],
+        ['op_validate(output_path)', 'Deterministic scan for remaining [X]/TODO'],
+        ['Cost', '$0 — no LLM call needed'],
+      ]}
+    ]
+  },
+  reviewer: {
+    title: 'Reviewer',
+    sections: [
+      { title: 'Relationship to eval layer', rows: [
+        ['Per-run QA', 'Reviewer catches per-run visual issues (overflow, blank slides)'],
+        ['Eval layer', 'Catches cross-run quality trends (sanitization, faithfulness)'],
+        ['Overlap', 'Both check grounding — reviewer per-slide, eval per-run'],
+        ['Key diff', 'Reviewer triggers fix loop; eval layer triggers prompt patches'],
+      ]},
+      { title: 'Review verdict in eval', rows: [
+        ['review_verdict', 'Logged per transcript in benchmark.jsonl'],
+        ['review_issues', 'Included in eval result for error analysis'],
+        ['FIX NEEDED rate', 'Meta-metric: if >20% of runs need fix, prompt has structural issue'],
+      ]}
+    ]
+  },
+  scenarios: {
+    title: 'Scenario Generator',
+    sections: [
+      { title: 'What it generates', rows: [
+        ['expected_facts[]', 'Key facts that MUST appear in output PPTX'],
+        ['critical_numbers[]', 'Specific numbers/dates (verbatim check)'],
+        ['forbidden_phrases[]', 'Words that should never appear (generic filler)'],
+        ['key_names[]', 'Company/person/product names from transcript'],
+        ['tone[]', 'Expected tone signals (confident, urgent, technical)'],
+      ]},
+      { title: 'Implementation', rows: [
+        ['Model', 'Haiku 4.5 (same as extractor — reuses get_llm())'],
+        ['Run', 'One-time per transcript · skips if scenarios/{id}.json exists'],
+        ['Storage', 'eval_agent/scenarios/01.json … 44.json'],
+        ['Cost', '~$0.002/transcript · $0.09 total for 44'],
+      ]}
+    ]
+  },
+  runner: {
+    title: 'Eval Runner',
+    sections: [
+      { title: 'vs run_benchmark.py', rows: [
+        ['run_benchmark.py', 'Subprocess call · only checks pptx validity + forbidden strings'],
+        ['eval runner', 'graph.invoke() direct · captures full PipelineState'],
+        ['Extra data', 'edit_plan, executor_log, extracted_facts all accessible'],
+        ['PPTX text', 'extract_pptx_text() reads all shapes from output PPTX'],
+      ]},
+      { title: 'Output per transcript', rows: [
+        ['state', 'Full PipelineState dict'],
+        ['pptx_text', '{slide_1: {ShapeName: text}, ...}'],
+        ['all_text', 'Flat concat for LLM judge context window'],
+        ['duration_sec', 'Pipeline runtime'],
+        ['error', 'Exception if pipeline failed (counted as all evals FAIL)'],
+      ]}
+    ]
+  }
+};
+
+const EVAL_PANELS = {
+  faithfulness: {
+    title: '✅ FAITHFULNESS',
+    color: '#4ade80',
+    type: 'LLM judge (Haiku)',
+    inputs: 'transcript text + pptx_text.all_text + scenario.expected_facts',
+    question: 'Does the output PPTX contain all key facts that appear in the source transcript?',
+    binary: 'true = all expected facts present · false = one or more missing',
+    threshold: '80%',
+    calibration: 'Label 20 transcripts manually → target F1 > 0.85',
+    cost: '~$0.003/transcript',
+    prompt: `Transcript (source of truth):
+{transcript[:3000]}
+
+Key facts that MUST appear in output:
+{expected_facts}
+
+Output PPTX text:
+{pptx_text}
+
+Task: Did the PPTX capture all the key facts listed above?
+If ANY fact is missing or significantly changed, respond false.
+Respond with JSON: {"passed": true/false, "reasoning": "...", "missing": [...]}`
+  },
+  hallucination: {
+    title: '🚫 HALLUCINATION',
+    color: '#f87171',
+    type: 'LLM judge (Haiku)',
+    inputs: 'transcript text + pptx_text.all_text',
+    question: 'Does the PPTX contain any number, date, name, or percentage NOT present in the source transcript?',
+    binary: 'true = no hallucination · false = invented content found',
+    threshold: '95%',
+    calibration: 'Easiest to calibrate — clear binary signal. Target F1 > 0.92',
+    cost: '~$0.003/transcript',
+    prompt: `Source transcript (ground truth):
+{transcript}
+
+Output PPTX text (what was generated):
+{pptx_text}
+
+Task: Check every number, date, percentage, company name, and proper noun in the PPTX.
+Does each one appear verbatim in the source transcript?
+If ANY value was invented or modified, respond false.
+Respond: {"passed": true/false, "reasoning": "...", "hallucinated": [...]}`
+  },
+  sanitization: {
+    title: '🧼 SANITIZATION',
+    color: '#fbbf24',
+    type: 'LLM judge (Haiku)',
+    inputs: 'transcript text + pptx_text.all_text',
+    question: 'Did the model paraphrase user specifics into generic corporate filler?',
+    binary: 'true = no sanitization · false = user voice stripped',
+    threshold: '85%',
+    calibration: 'Requires expert labeler — subtle. Target F1 > 0.80',
+    cost: '~$0.003/transcript',
+    prompt: `Source transcript (the user's actual voice):
+{transcript[:4000]}
+
+Output PPTX text:
+{pptx_text}
+
+Watch for these sanitization signals:
+- Generic phrases: "industry-leading", "best-in-class", "comprehensive", "robust",
+  "world-class", "end-to-end", "holistic" — only fail if user never used them
+- Hedging: "may", "could", "potentially" replacing user's definite verbs
+- Proper noun replacement: company/person name → "the customer"/"the platform"
+- Number softening: "$2.4M" → "significant investment"
+
+Respond: {"passed": true/false, "reasoning": "...", "violations": [...]}`
+  },
+  completeness: {
+    title: '📋 COMPLETENESS',
+    color: '#a78bfa',
+    type: 'Semi-deterministic (Haiku)',
+    inputs: 'edit_plan.strategic_context.all_key_facts + pptx_text.all_text',
+    question: 'Did >80% of the facts identified in strategic_context.all_key_facts make it into the deck?',
+    binary: 'true = ≥80% used · false = <80% (significant content wastage)',
+    threshold: '75%',
+    calibration: 'Facts list comes from planner itself — check if planner under-identifies. Target F1 > 0.82',
+    cost: '~$0.002/transcript (structured input = cheap)',
+    prompt: `Facts the planner identified from source (all_key_facts):
+{all_key_facts}
+
+Output PPTX text:
+{pptx_text}
+
+Task: For each fact, check if it appears in the PPTX (exact or paraphrase OK).
+Count: appeared / total.
+Pass if ≥80% appeared.
+Respond: {"passed": true/false, "rate": 0.xx, "missing_facts": [...]}`
+  },
+  placeholder: {
+    title: '🔲 PLACEHOLDER CLEAN',
+    color: '#22c55e',
+    type: 'Deterministic (op_validate)',
+    inputs: 'output_pptx_path only',
+    question: 'Does the output PPTX contain any unfilled placeholder patterns?',
+    binary: 'true = clean · false = [X]/TODO/Enter/Lorem found',
+    threshold: '99%',
+    calibration: 'Deterministic — no calibration needed. F1 = 1.0 by definition.',
+    cost: '$0.00 — no LLM call',
+    prompt: `Uses op_validate(output_pptx_path) from tools/pptx_editor.py:684
+Scans all text frames via XML for PLACEHOLDER_PATTERNS:
+  - [.*?]   {{.*?}}   <Enter X>   Enter \\w   Click to edit
+  - Lorem ipsum   TODO   Your X here   Sample X   Type here
+Returns: {"passed": bool, "hits": [...]}`
+  },
+  shape_coverage: {
+    title: '⚙️ SHAPE COVERAGE',
+    color: '#22c55e',
+    type: 'Deterministic (executor_log)',
+    inputs: 'executor_log.phases (from PipelineState)',
+    question: 'Did the executor apply >90% of planned edits via deterministic phases (no LLM)?',
+    binary: 'true = ≥90% coverage · false = too many fell to LLM fallback or failed',
+    threshold: '90%',
+    calibration: 'Deterministic — reads from executor_log directly.',
+    cost: '$0.00 — log is already in PipelineState',
+    prompt: `Reads from executor_log:
+  phases[1].resolved   = shapes matched by fuzzy resolver
+  phases[2].applied    = edits applied by deterministic batch
+  phases[2].failed     = fell to LLM fallback (Phase 3)
+  phases[4c].mismatches = edits that didn't verify correctly
+
+coverage = (resolved - failed - mismatches) / total_edits
+passed = coverage >= 0.90`
+  }
+};
+
+function showPanel(id) {
+  const d = PANELS[id];
+  if (!d) return;
+  document.getElementById('rp-title').textContent = d.title;
+  let html = '';
+  for (const sec of d.sections) {
+    html += `<div class="rp-section"><div class="rp-section-title">${sec.title}</div>`;
+    for (const [k, v] of sec.rows) {
+      html += `<div class="rp-row"><span class="rp-key">${k}</span><span class="rp-val">${v}</span></div>`;
+    }
+    html += '</div>';
+  }
+  document.getElementById('rp-body').innerHTML = html;
+  document.getElementById('result-panel').classList.add('open');
+  document.querySelectorAll('.node').forEach(n => n.classList.remove('active'));
+}
+
+function showEvalPanel(id) {
+  const d = EVAL_PANELS[id];
+  if (!d) return;
+  document.getElementById('rp-title').innerHTML = `<span style="color:${d.color}">${d.title}</span>`;
+  const html = `
+    <div class="rp-section">
+      <div class="rp-section-title">Evaluation spec</div>
+      <div class="rp-row"><span class="rp-key">Type</span><span class="rp-val">${d.type}</span></div>
+      <div class="rp-row"><span class="rp-key">Inputs</span><span class="rp-val" style="font-size:10px;">${d.inputs}</span></div>
+      <div class="rp-row"><span class="rp-key">Question</span><span class="rp-val" style="font-size:10px;">${d.question}</span></div>
+      <div class="rp-row"><span class="rp-key">Output</span><span class="rp-val" style="font-size:10px;">${d.binary}</span></div>
+      <div class="rp-row"><span class="rp-key">Threshold</span><span class="rp-val" style="color:#f59e0b;">${d.threshold} pass rate</span></div>
+      <div class="rp-row"><span class="rp-key">Cost</span><span class="rp-val" style="color:#4ade80;">${d.cost}</span></div>
+      <div class="rp-row"><span class="rp-key">Calibration</span><span class="rp-val" style="font-size:10px;">${d.calibration}</span></div>
+    </div>
+    <div class="rp-section">
+      <div class="rp-section-title">Judge prompt / logic</div>
+      <div class="code-block">${d.prompt}</div>
+    </div>`;
+  document.getElementById('rp-body').innerHTML = html;
+  document.getElementById('result-panel').classList.add('open');
+  document.querySelectorAll('.eval-card').forEach(c => c.classList.remove('active'));
+  event.currentTarget && event.currentTarget.classList.add('active');
+}
+
+function closePanel() {
+  document.getElementById('result-panel').classList.remove('open');
+  document.querySelectorAll('.node,.eval-card').forEach(n => n.classList.remove('active'));
+}
+
+// ── Demo simulation ─────────────────────────
+const EVAL_NAMES = ['FAITHFUL','NO-HALLUC','NO-SANIT','COMPLETE','PLACEHOLDER','SHAPE COV'];
+const EVAL_FAIL_RATES = [0.12, 0.05, 0.18, 0.14, 0.03, 0.08]; // realistic fail rates
+
+let demoRunning = false;
+let demoResults = [];
+
+function getCell(passed) {
+  const bg = passed ? 'rgba(34,197,94,.15)' : 'rgba(239,68,68,.15)';
+  const color = passed ? '#4ade80' : '#f87171';
+  const label = passed ? 'PASS' : 'FAIL';
+  return `<td><div class="hm-cell" style="background:${bg};color:${color};" onclick="showCellReason('${label}')">${label}</div></td>`;
+}
+
+const FAIL_REASONS = {
+  'FAITHFUL': 'expected_fact "Q3 2025 go-live" not found in any slide text',
+  'NO-HALLUC': 'slide 4: "98% uptime" — not in source transcript',
+  'NO-SANIT': 'slide 2: "industry-leading platform" — user never used this phrase',
+  'COMPLETE': 'all_key_facts: 8 of 11 facts appeared (73% < 80% threshold)',
+  'PLACEHOLDER': 'slide 7 TextBox 3: "[CLIENT_LOGO]" still present after sweep',
+  'SHAPE COV': 'Phase 2: 6 applied, 2 failed (75% < 90% threshold)',
+};
+
+function showCellReason(label) {
+  if (label === 'PASS') {
+    alert('PASS — no issues found by this evaluation.');
+    return;
+  }
+  const reasons = Object.values(FAIL_REASONS);
+  alert('FAIL — ' + reasons[Math.floor(Math.random() * reasons.length)]);
+}
+
+function startDemo() {
+  if (demoRunning) return;
+  demoRunning = true;
+  demoResults = [];
+  document.getElementById('run-btn').textContent = '⏳ Running…';
+  document.getElementById('run-btn').classList.add('running');
+  document.getElementById('heatmap-body').innerHTML = '';
+  document.getElementById('aggregate-row').innerHTML = '';
+  document.getElementById('log-panel').innerHTML = '';
+  document.getElementById('improve-btn').style.display = 'none';
+  document.getElementById('improve-demo').style.display = 'none';
+
+  // Populate transcript list
+  const list = document.getElementById('transcript-list');
+  list.innerHTML = '';
+  for (let i = 1; i <= 44; i++) {
+    const id = String(i).padStart(2, '0');
+    list.innerHTML += `<div class="transcript-item" id="t${id}">
+      <div class="t-status" id="ts${id}" style="background:var(--dimmed)"></div>
+      <span class="t-id">${id}</span>
+      <div class="t-bar"><div class="t-fill" id="tf${id}" style="width:0%"></div></div>
+      <span class="t-score" id="tsc${id}">—</span>
+    </div>`;
+  }
+
+  const log = document.getElementById('log-panel');
+  function addLog(msg, cls) {
+    log.innerHTML += `<div class="log-line ${cls}">${msg}</div>`;
+    log.scrollTop = log.scrollHeight;
+  }
+
+  addLog('[eval] Starting batch run — 44 transcripts', 'info');
+  addLog('[eval] Loading scenarios from eval_agent/scenarios/', 'dim');
+  addLog('[eval] Provider: anthropic · Judge: claude-haiku-4-5', 'dim');
+
+  let idx = 0;
+  let completedCount = 0;
+  const hBody = document.getElementById('heatmap-body');
+
+  function runNext() {
+    if (idx >= 44) {
+      finishDemo();
+      return;
+    }
+    const i = idx + 1;
+    const id = String(i).padStart(2, '0');
+    idx++;
+
+    document.getElementById('ts' + id).style.background = 'var(--amber)';
+    document.getElementById('tf' + id).style.width = '50%';
+
+    const delay = 180 + Math.random() * 220;
+    setTimeout(() => {
+      // Generate results
+      const results = EVAL_FAIL_RATES.map(fr => Math.random() > fr);
+      const passCount = results.filter(Boolean).length;
+      const pct = Math.round(passCount / 6 * 100);
+
+      document.getElementById('ts' + id).style.background = pct >= 83 ? 'var(--green)' : pct >= 50 ? 'var(--amber)' : 'var(--red)';
+      document.getElementById('tf' + id).style.width = pct + '%';
+      document.getElementById('tsc' + id).textContent = pct + '%';
+
+      completedCount++;
+      document.getElementById('progress-count').textContent = completedCount + ' / 44';
+
+      // Add to heatmap
+      let row = `<tr><td style="font-family:monospace;color:var(--cyan);">${id}</td>`;
+      results.forEach(p => { row += getCell(p); });
+      row += '</tr>';
+      hBody.insertAdjacentHTML('beforeend', row);
+
+      // Log notable failures
+      results.forEach((p, ei) => {
+        if (!p) addLog(`[t${id}] FAIL — ${EVAL_NAMES[ei]}: ${Object.values(FAIL_REASONS)[ei]}`, 'fail');
+      });
+      if (results.every(Boolean)) addLog(`[t${id}] ALL PASS ✓`, 'ok');
+
+      demoResults.push({ id, results });
+      runNext();
+    }, delay);
+  }
+
+  runNext();
+}
+
+function finishDemo() {
+  demoRunning = false;
+  const btn = document.getElementById('run-btn');
+  btn.textContent = '▶ Run Again';
+  btn.classList.remove('running');
+
+  const log = document.getElementById('log-panel');
+  log.innerHTML += `<div class="log-line info">─────────────────────────────</div>`;
+
+  // Compute aggregates
+  const totals = [0,0,0,0,0,0];
+  demoResults.forEach(r => r.results.forEach((p, i) => { if(p) totals[i]++; }));
+  const n = demoResults.length;
+
+  const agg = document.getElementById('aggregate-row');
+  agg.innerHTML = '<div style="font-size:10px;color:var(--muted);width:100%;margin-bottom:6px;">Overall pass rates:</div>';
+  let worstEval = 0, worstRate = 1;
+  EVAL_NAMES.forEach((name, i) => {
+    const rate = totals[i] / n;
+    if (rate < worstRate) { worstRate = rate; worstEval = i; }
+    const color = rate >= 0.9 ? '#4ade80' : rate >= 0.75 ? '#fbbf24' : '#f87171';
+    agg.innerHTML += `<div style="background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:6px 10px;text-align:center;">
+      <div style="font-size:9px;color:var(--muted);">${name}</div>
+      <div style="font-size:16px;font-weight:700;color:${color};">${Math.round(rate*100)}%</div>
+    </div>`;
+  });
+
+  log.innerHTML += `<div class="log-line warn">[eval] Worst eval: ${EVAL_NAMES[worstEval]} at ${Math.round(worstRate*100)}%</div>`;
+  if (worstRate < 0.85) {
+    log.innerHTML += `<div class="log-line warn">[eval] Below threshold — triggering auto_improve for ${EVAL_NAMES[worstEval]}</div>`;
+    document.getElementById('improve-btn').style.display = 'inline-block';
+  }
+  log.innerHTML += `<div class="log-line ok">[eval] Results saved → eval_agent/results/benchmark.jsonl</div>`;
+  log.scrollTop = log.scrollHeight;
+}
+
+function showImproveDemo() {
+  document.getElementById('improve-demo').style.display = 'block';
+  document.getElementById('improve-demo').scrollIntoView({ behavior: 'smooth' });
+}
+
+// ── Eval detail view ──────────────────────
+function buildEvalDetails() {
+  const evals = [
+    { id: 'faithfulness', icon: '✅', bg: '#14532d', desc: 'Checks that every key fact from the transcript appears in the output PPTX. Ground truth comes from scenario generator.', why: 'Most important quality signal — are we actually putting the user\'s content in the deck?' },
+    { id: 'hallucination', icon: '🚫', bg: '#450a0a', desc: 'Verifies no number, date, percentage, or proper noun appears in the PPTX that was not present in the source transcript.', why: 'Fabricated facts destroy trust. This is the hardest failure to recover from.' },
+    { id: 'sanitization', icon: '🧼', bg: '#431407', desc: 'Detects when the model replaced the user\'s specific voice with generic corporate filler ("industry-leading", "best-in-class", etc.).', why: 'A sanitized deck is useless — the user\'s actual point is lost.' },
+    { id: 'completeness', icon: '📋', bg: '#2e1065', desc: 'Counts what fraction of all_key_facts (identified by the planner\'s strategic_context) made it into the deck. Threshold: 80%.', why: 'Content wastage — user provided 12 facts, deck uses 4. Needs detection.' },
+    { id: 'placeholder', icon: '🔲', bg: '#14532d', desc: 'Deterministic scan of output PPTX XML for unfilled placeholder patterns. Uses op_validate() — no LLM needed.', why: 'Visible placeholders make the deck unprofessional. Zero tolerance.' },
+    { id: 'shape_coverage', icon: '⚙️', bg: '#14532d', desc: 'Reads executor_log to check how many planned edits were applied by deterministic phases vs fell to LLM fallback.', why: 'If >10% need LLM fallback, planner is generating bad shape names — structural issue.' },
+  ];
+
+  const grid = document.getElementById('eval-detail-grid');
+  grid.innerHTML = evals.map(e => {
+    const d = EVAL_PANELS[e.id];
+    return `<div class="eval-detail-card" onclick="toggleEvalDetail(this)">
+      <div class="ed-header">
+        <div class="ed-icon" style="background:${e.bg};">${e.icon}</div>
+        <div>
+          <div class="ed-name">${d.title}</div>
+          <div class="ed-sub">${e.desc}</div>
+        </div>
+        <div class="ed-badges">
+          <span class="tag ${d.type.includes('Det') ? 'tag-green' : 'tag-blue'}">${d.type.includes('Det') ? 'NO LLM' : 'LLM'}</span>
+          <span class="tag tag-amber">${d.threshold}</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" class="chevron"><path d="M6 9l6 6 6-6" stroke="#64748b" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="ed-body">
+        <div class="ed-row"><div class="ed-label">Why it matters</div><div class="ed-val">${e.why}</div></div>
+        <div class="ed-row"><div class="ed-label">Inputs</div><div class="ed-val" style="font-size:10px;font-family:monospace;">${d.inputs}</div></div>
+        <div class="ed-row"><div class="ed-label">Threshold</div><div class="ed-val" style="color:var(--amber);">${d.threshold} pass rate · below = auto_improve triggered</div></div>
+        <div class="ed-row"><div class="ed-label">Cost</div><div class="ed-val" style="color:var(--green);">${d.cost}</div></div>
+        <div class="ed-row"><div class="ed-label">Calibration</div><div class="ed-val" style="font-size:10px;">${d.calibration}</div></div>
+        <div style="margin-top:10px;">
+          <div class="rp-section-title">Judge prompt</div>
+          <div class="code-block" style="margin-top:6px;">${d.prompt}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleEvalDetail(card) {
+  card.classList.toggle('expanded');
+}
+
+buildEvalDetails();
+</script>
+</body>
+</html>

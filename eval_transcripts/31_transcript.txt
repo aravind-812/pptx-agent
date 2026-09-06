@@ -1,0 +1,782 @@
+# Customer 31 — anonymized implementation/scoping/proposal calls
+
+Calls merged: 4
+
+
+====================================================================================================
+Title: QMS Project Weekly Updates
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1536.73
+====================================================================================================
+[TIMESTAMP] Speaker 058: How are you? Yeah. I'm very well yourself.
+[TIMESTAMP] Speaker 058: Yeah. Not keeping that well. But yeah. Yeah.
+[TIMESTAMP] Speaker 058: I get well. Thank you.
+[TIMESTAMP] Speaker 058: Maybe after this call, I'll have to go to the doctors. Um
+[TIMESTAMP] Speaker 058: Yeah, you need to get yourself sorted out. Yeah.
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker 058: Hi, Speaker 051.
+[TIMESTAMP] Speaker 058: Hello, everyone?
+[TIMESTAMP] Speaker 058: Hey, Speaker 051.
+[TIMESTAMP] Speaker 146: Hello, Speaker 307?
+[TIMESTAMP] Speaker 146: Hi Speaker 051. Hi everyone.
+[TIMESTAMP] Speaker 051: Okay. Speaker 058 and Speaker 307 only costing it
+[TIMESTAMP] Speaker 146: Because of the recorded there are too many people.
+[TIMESTAMP] Speaker 058: Hi early.
+[TIMESTAMP] Speaker 058: I
+[TIMESTAMP] Speaker 058: Will wait for submit to join as well. So there are 2 items that we would want to cover. During today's call. One is we had sent some response on the query. We will review that together and then we will quickly cover the status update on the tickets so that the plan. So I think he's finishing another meeting. So he'll be here shortly.
+[TIMESTAMP] Speaker 058: I using
+[TIMESTAMP] Speaker 058: No problem. Sorry, we're not coming on camera. I'm not keeping that well.
+[TIMESTAMP] Speaker 058: Are you in [COUNTRY]? No, I'm not keeping well. So
+[TIMESTAMP] Speaker 146: Nobody is in [COUNTRY]. I'm keeping the nowadays. So because of the change, whether change, that's okay.
+[TIMESTAMP] Speaker 146: Okay.
+[TIMESTAMP] Speaker 058: Let me bring it a second.
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker 058: Yeah. Submit this here from big Customer 31, are we waiting on?
+[TIMESTAMP] Speaker: Yes, we are waiting for me. But I think we can start
+[TIMESTAMP] Speaker 058: Yeah, sure.
+[TIMESTAMP] Speaker: I will enjoy.
+[TIMESTAMP] Speaker 058: Yeah, sure. Not a problem. So as to me I just explain the agenda. So if you want to maybe you review the technical queries, but Customer 31 [PERSON] and team, we can do that first if you want to share your screen or maybe
+[TIMESTAMP] Speaker 058: Just ask you questions, that will be fine.
+[TIMESTAMP] Speaker 058: You might be on mute Speaker 042.
+[TIMESTAMP] Speaker 146: So can you hear [COUNTRY]?
+[TIMESTAMP] Speaker 285: Yes. Sorry. Uh
+[TIMESTAMP] Speaker 285: Screener, it's not along.
+[TIMESTAMP] Speaker 285: So yes. We had some email conversation going on with the Speaker 026 and model regarding that stuff and all. So, I just want to check with them if they got the answer or do we need to discuss more or do we do that in more detail on that one?
+[TIMESTAMP] Speaker 285: On the C issues.
+[TIMESTAMP] Speaker: Yeah. I think we should wait for [COUNTRY], but because he is the one making the component, but he told me I did not manage to set up a NBA. So we need some help about that.
+[TIMESTAMP] Speaker 285: Okay. And you need help? Okay. Definitely help you there. I thought I had all the details. And maybe you'll be able to do that. Not an issue. So because I don't know the actual thing, which you have a developer deployed in the system. So if I get more details on that maybe I can help you to create and for that. So just to give you an example of which one I shall start with and maybe we can refer it for the other required. I think we are doing it for sub complete reach or closure review, the NBA piece.
+[TIMESTAMP] Speaker: For closure.
+[TIMESTAMP] Speaker 285: Closure review, correct? Okay. Let me have a note of it.
+[TIMESTAMP] Speaker 285: So
+[TIMESTAMP] Speaker 285: We had to set it up as the end and non confirmed, right?
+[TIMESTAMP] Speaker 285: Yeah.
+[TIMESTAMP] Speaker 285: And I heard you had made the same changes. So I'm not for the computer age or the closer view in change order as well.
+[TIMESTAMP] Speaker 285: Or maybe I misread something
+[TIMESTAMP] Speaker 285: So yeah. We'll focus on I think a non conformance our review part. We need to put that end and there is another issue where when we are doing a project, so we are getting some error.
+[TIMESTAMP] Speaker: As far as I understand the priorities or non conformance for the closure review.
+[TIMESTAMP] Speaker 285: Yes, that was the edition in the workflow. Right. So yes, I checked something. I checked out of the box issues and all but was not able to pinpoint where the actual issues occurring. Um
+[TIMESTAMP] Speaker 285: So it is it will be related to some permission set or maybe some activity which was added by mold and Speaker 026. Because that was the new state in between, right? For that. I was doing some POC. But I was not able to reach that point where I'm facing the same error. So I have the record with me to go and deeper more on that to to get the means root cost for the error.
+[TIMESTAMP] Speaker: Maybe we should plan a technical call for that.
+[TIMESTAMP] Speaker 285: Yes. Yes. I need to understand the complete approach. What we did in the background and if we missed any step there.
+[TIMESTAMP] Speaker 285: So we can discuss whenever we have time after discussing all of the steps.
+[TIMESTAMP] Speaker: What I can do is to send you some slots this week and then we can talk about it. Uh
+[TIMESTAMP] Speaker: On a
+[TIMESTAMP] Speaker: Dedicated session?
+[TIMESTAMP] Speaker 285: We can meet tomorrow morning your time.
+[TIMESTAMP] Speaker: Okay. And
+[TIMESTAMP] Speaker 285: We can discuss and like, identify that third cost for that.
+[TIMESTAMP] Speaker 285: Okay. The tool on the [CLOUD_PLATFORM] side and apart from that the other 2 items, which is there with me. So yeah, that is planning from my end. And just keep jumping from here and there was not able to complete it last week and today itself. I'm still not able to complete that one and being some POC for the approval piece because we are that is a different component we had to create. As soon as I complete it, I will implement the same change here in our by again or that all the approvals should be submitted or approved at once. And the reopen of the cap audit and I think change order record.
+[TIMESTAMP] Speaker 285: So that's for mind.
+[TIMESTAMP] Speaker: That you are still working on the 2 tickets 54 and 50 three, right?
+[TIMESTAMP] Speaker 285: Wait, one second. Yes.
+[TIMESTAMP] Speaker: Yes. Yes.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Okay. Here is made
+[TIMESTAMP] Speaker: Uh
+[TIMESTAMP] Speaker 051: How complicated are the these tickets?
+[TIMESTAMP] Speaker 051: Because we
+[TIMESTAMP] Speaker 051: We should finish next week, the planning so
+[TIMESTAMP] Speaker 051: Uh
+[TIMESTAMP] Speaker 051: It takes to
+[TIMESTAMP] Speaker 051: Fix
+[TIMESTAMP] Speaker 051: To
+[TIMESTAMP] Speaker 058: Be done before the end of this week. So some will be on to on December 12th. So before he leaves he'll be planning to complete everything.
+[TIMESTAMP] Speaker 051: Okay. By the end of the week, right?
+[TIMESTAMP] Speaker 058: Yeah. That's correct.
+[TIMESTAMP] Speaker 285: Yeah. By tomorrow I can complete one item and the other one is still pending. I will deliver it by 11th and 11th also like let's have a meeting. So I'll send an invite to and just to review that. The implementation of the configuration, which I did, which I'll do so
+[TIMESTAMP] Speaker 058: So do you
+[TIMESTAMP] Speaker 051: Do you have the list of the pending tickets? Just to visually where we are? Because we are talking about tickets, but it's difficult to understand where we are exactly without seeing anything. So can you share the list of the
+[TIMESTAMP] Speaker 285: Let me share my screen. So there are 2 things. Paste this email chain is going on for the issues with Speaker 026 and yeah, for this we can we'll meet tomorrow and find a fix for this. Okay. Or maybe resolve the problem. So this is going for a long. One, we are fixing one thing and then maybe going forward with the next step. So that's what is happening. And here, there are 2 tickets which I
+[TIMESTAMP] Speaker 285: Have to work on. One is this one in change order? We have to eat. All the implementation changes in one click. So right now, all the tasks will get created for each, I think deviation or action and initially a user has to go and approve. So what was the ask was to approve everything at once. So no need to do approval like one at a time. That's built a new component where we can list on all the approvals there and approve everything at once and background automation will complete the task. So this is one item. Uh
+[TIMESTAMP] Speaker 051: At
+[TIMESTAMP] Speaker 285: 4 53. The other one is 4 54. We are here to enable the reopen functionality for Speaker 307 and audit record, which is not there. It was not recommended from ABC Corp because of like, the tool for some reason, right? For the compliance. But this is a ask the request coming from the customers from your end. So yes, we will build that one. But for that reopen and again process the same record, we have to do a 3 star
+[TIMESTAMP] Speaker 051: So yeah.
+[TIMESTAMP] Speaker 051: Okay.
+[TIMESTAMP] Speaker 285: So so overall in the it looks like we had to just have a button which will just change the status to drop for 2 years later. But behind the scene for the reopen, we have to maintain some of the fields reopen date, how many times it is, reopening and all. And if there is a age field or target date field or something, do we need to reset those fields or not? Those things also? We have to check. So I will check with the that like complaint we have complaint with a non conformance where we open option is there. I will see for follow the same approach, which we implemented there as part of our managed package.
+[TIMESTAMP] Speaker: I don't think we need to.
+[TIMESTAMP] Speaker: To blank some fields. It's I suppose it should be reopen at the just the review stage. Uh
+[TIMESTAMP] Speaker: With a value, but already are existing because they want to reopen, I think to complete what has been done.
+[TIMESTAMP] Speaker 051: Yeah. Just just in case they need to change something or add something.
+[TIMESTAMP] Speaker 285: When we reopen, you have to again go through the investigation and again, do go through the approval route. It's not like just a bit once we close it directly. It will not like that. When you reopen any recording system you have to go through the workflow again. It will open in create or in progress. Then you have to maybe, again, add a new do the investigation or revise the investigation to add a new action action, deviation, anything like that, then you have to send it for approval review and again, approve.
+[TIMESTAMP] Speaker: To open and like, do all the process from the very beginning?
+[TIMESTAMP] Speaker 051: Yeah. Maybe we can just follow the same workflow as for non conformance, for example, for non conformance, we can reopen the non conformance and then they ask you if you want to reopen an investigation. So maybe we can do the same steps for those
+[TIMESTAMP] Speaker 285: So that's what we re opens up a non performance. Isn't closed. We reopen it will come to either triage or disposer investigate. So here, do we have the option to either reopen investigation or just
+[TIMESTAMP] Speaker: It should be in the investigation.
+[TIMESTAMP] Speaker 285: Then you have to do that. You have to move to the implement verification again if that is there a change order audit in cape, yes. Get the approval again and then it will get closer again.
+[TIMESTAMP] Speaker 285: Yes. So yeah. Investigation can be optional. But there should be a proper reason why we are reopening mostly we reopen it to add. If you forget some actions or investigation, then we have to add those things and complete those things when we reopen and then go for forward from the close here.
+[TIMESTAMP] Speaker 051: I think if there was some change change something in investigation stage, they would like to change into investigation investigation and not in action. They want to really use action, I think.
+[TIMESTAMP] Speaker: They should be able to create some actions, but we don't have to be blocked if they don't create new ones. Um
+[TIMESTAMP] Speaker: Maybe we can just ask the key users if it's okay to go back to triage step.
+[TIMESTAMP] Speaker: No. We won't use triage.
+[TIMESTAMP] Speaker: Because with the is the step the design the coordinator in charge, there is no reason to change that.
+[TIMESTAMP] Speaker: They want to complete.
+[TIMESTAMP] Speaker: It won't be blank. It will be it will be um
+[TIMESTAMP] Speaker: Complete
+[TIMESTAMP] Speaker: I suppose it should be done from the investigation and you should have the option to open or not the investigation.
+[TIMESTAMP] Speaker 285: I'll align to make this one. So sorry.
+[TIMESTAMP] Speaker 051: You need to create a decent.
+[TIMESTAMP] Speaker 285: Oh.
+[TIMESTAMP] Speaker 285: Okay.
+[TIMESTAMP] Speaker: Justification field. Yeah. The cape
+[TIMESTAMP] Speaker: Just create a
+[TIMESTAMP] Speaker 285: Cap.
+[TIMESTAMP] Speaker 058: So I know we have 15 more minutes, but technically if you need to meet with them to have all these discussions, maybe we can set up some separate time.
+[TIMESTAMP] Speaker 285: Yeah. What I'm telling this like, the approach will be similar. What we see here, not like create copies must or not. But when we reopen, it will go to investigate stage and then there will be option for you reopen investigation or just bypass the investigation. I go for the regular closure today. Yeah.
+[TIMESTAMP] Speaker 285: It's the same thing, or do I need to complete the copper?
+[TIMESTAMP] Speaker: This one is also complete a cap.
+[TIMESTAMP] Speaker 285: Okay. I will check it later. Um
+[TIMESTAMP] Speaker 058: So this is a new item, right? So which we want to track and close.
+[TIMESTAMP] Speaker 285: This is the existing item, but we are discussing what the approach for this one, like reopening
+[TIMESTAMP] Speaker 285: So in the out of the box solution, we don't have reopen option available for non conformance complaint and maybe one or 2 more, we have the reopen option. So what an wants the same green available in these 3 level, these 3 objects and I'm just showing them. It should be the same approach because it's a record.
+[TIMESTAMP] Speaker 285: And we have to track the reopen activity also when we do any activity way to track the activity in the history. Also, like reopen them by this and the time
+[TIMESTAMP] Speaker 285: Please. So I will add that to them also
+[TIMESTAMP] Speaker 285: And the reopen I will only will allow from here not will show will not show as the NBA.
+[TIMESTAMP] Speaker 051: Okay. Yeah. That's all right.
+[TIMESTAMP] Speaker: Yes, the same. It should be the same process when the over things. But
+[TIMESTAMP] Speaker 285: Which is not a common action, right? We have to keep it in a quick action dropped. Yes. Yeah.
+[TIMESTAMP] Speaker 285: So that's what so so thing is you can see when we do reopen. So we have we'll have this reopen first. This reopen like reopen non conformance, we will have this activity. And in that we have to we have reopen investigation and reopen implementation also. So if the same activities are there in cap on audit, we can easily implement that. If not, I add that and make sure that is also the correct.
+[TIMESTAMP] Speaker 285: Okay. This is regarding your reopen.
+[TIMESTAMP] Speaker 285: Sorry.
+[TIMESTAMP] Speaker 285: And this was the one, I think already change order one. If I open a change or let's see
+[TIMESTAMP] Speaker 285: Not that one.
+[TIMESTAMP] Speaker 285: [PERSON].
+[TIMESTAMP] Speaker 285: Tomorrow.
+[TIMESTAMP] Speaker 285: So so in progress, implementation date
+[TIMESTAMP] Speaker 285: So
+[TIMESTAMP] Speaker 285: Uh
+[TIMESTAMP] Speaker 285: So this is already compared. So the ask was I think if you have multiple implementation tasks here. And then the for the approval, we had to get the task here as the NBA task for individual implementation records here. And the user has to review and approve individually. So the request was to have a different way to approve at all at once. Not go like one by one. If there are 5 or more than five, for example. We will have the approve all tasks like that button, which will open a window and in a table it will show all the similar details and just you have to click the approve button. It will approve all all at once.
+[TIMESTAMP] Speaker 285: Okay. And behind the scene, what was the what was happening for the individual task approval and review? We will just add into the background automation so the for the workflow will not get impacted?
+[TIMESTAMP] Speaker 285: So that's the one. So I did some I'm doing some POC. It's not ready for you to show it to you, but I'm planning for that as a table. A show and you approve everything will happen and in the background, everything will get completed and it will move forward to complete from implementation to complete.
+[TIMESTAMP] Speaker 285: And history also should be captured, right? This one
+[TIMESTAMP] Speaker 285: Like this I had to capture the activity history also. All the implementation will get approved.
+[TIMESTAMP] Speaker 285: Okay. These are the 2 thing and that lightning web component thing is under C bucket. Okay.
+[TIMESTAMP] Speaker 051: But it's really again, it's mandatory to up these tickets fix this week because we need to start to go go live really soon. So we can't wait more than
+[TIMESTAMP] Speaker 051: The end of the week.
+[TIMESTAMP] Speaker 058: Sure. Yeah. We will keep track of everything.
+[TIMESTAMP] Speaker 051: Thank you.
+[TIMESTAMP] Speaker 285: Yeah. Yeah. In the same time, I just want to check with Speaker 026 and no, no. That do do you are you facing any issues and email translations, the print option? Yes, I think we have some issue in print translation. What [PERSON] of sync is not working, right? And is that fixed?
+[TIMESTAMP] Speaker: Nope.
+[TIMESTAMP] Speaker 285: Okay. I think to
+[TIMESTAMP] Speaker: Check. We'll need I'm sending you some possible time slots in the chat. I think we need to plan one hour to see the different points that are still pending.
+[TIMESTAMP] Speaker 285: Yeah, sure. Sure. Sure. Definitely.
+[TIMESTAMP] Speaker 285: Those items?
+[TIMESTAMP] Speaker 285: Shoes.
+[TIMESTAMP] Speaker 285: Okay. Then yes. And let's schedule a call tomorrow.
+[TIMESTAMP] Speaker 285: Technical challenges, what we're having
+[TIMESTAMP] Speaker 285: Yeah.
+[TIMESTAMP] Speaker 058: Okay. So
+[TIMESTAMP] Speaker 058: Anything else to be reviewed today?
+[TIMESTAMP] Speaker 051: Okay. That's all right. Please let me know by mail. When these tickets are fixed. Sure.
+[TIMESTAMP] Speaker 058: Keep you updated, thank you all.
+[TIMESTAMP] Speaker 051: Thank you. All.
+[TIMESTAMP] Speaker: Thank you. Bye.
+[TIMESTAMP] Speaker 058: Thanks.
+[TIMESTAMP] Speaker 285: Bye, thank you.
+
+
+====================================================================================================
+Title: QMS Project Weekly Updates
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1904.39
+====================================================================================================
+[TIMESTAMP] Speaker: Everyone.
+[TIMESTAMP] Speaker: Hello, Speaker 307?
+[TIMESTAMP] Speaker: Hello. How are you?
+[TIMESTAMP] Speaker: Fine. And you
+[TIMESTAMP] Speaker: Everyone, thank you.
+[TIMESTAMP] Speaker 058: Morning, sorry. Good afternoon, everyone. Hey, Speaker 058. Hi.
+[TIMESTAMP] Speaker: [PERSON], hey.
+[TIMESTAMP] Speaker 058: Just wait for Speaker 042 also to join then well
+[TIMESTAMP] Speaker: I know that Speaker 051 I won't be able to join.
+[TIMESTAMP] Speaker 058: Yeah. Yeah, I think we saw Speaker 051 message.
+[TIMESTAMP] Speaker 058: Maybe 30 seconds somebody's at the door, right back.
+[TIMESTAMP] Speaker: No worries.
+[TIMESTAMP] Speaker: Waiting for submit.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Hey, Speaker 172.
+[TIMESTAMP] Speaker: Hi.
+[TIMESTAMP] Speaker 172: Speaker 267: Everyone Speaker 058 Speaker 058. Are we waiting?
+[TIMESTAMP] Speaker: For some
+[TIMESTAMP] Speaker 058: Yeah. Waiting for some it is finishing on the meeting, but I think uh
+[TIMESTAMP] Speaker 058: Let me quickly keep in mind.
+[TIMESTAMP] Speaker 172: Speaker 267: We don't have the bug house team either at least well Speaker 051.
+[TIMESTAMP] Speaker: Speaker 051. Yes, we will come today. Okay.
+[TIMESTAMP] Speaker 058: So
+[TIMESTAMP] Speaker 058: Yeah. I think we can go ahead and get started. Uh
+[TIMESTAMP] Speaker 058: Let me might be in another meeting, but we can go ahead and get started. So I think with a reference to the 2 open tickets that we have one is for reopening a closed record. There are some technical challenges that we are facing right now, which is not allowing [COUNTRY] to accomplish what you have asked for. I think so it has been in touch with the engineering team as well, but reopening a closed and see change. And audit records is kind of, very unlikely to happen. So that's what the update that I got from him and the team.
+[TIMESTAMP] Speaker: About a ticket 54.
+[TIMESTAMP] Speaker 058: Yeah. 54. That is correct.
+[TIMESTAMP] Speaker: So you
+[TIMESTAMP] Speaker: You think now that it won't be able to you won't be able to to achieve it, right?
+[TIMESTAMP] Speaker 058: Yeah, that is correct.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: And for the 53.
+[TIMESTAMP] Speaker 058: 50 three, he is working on it. And I think it's at the
+[TIMESTAMP] Speaker 058: Last stages, right now that's still being worked on.
+[TIMESTAMP] Speaker: So can we tell the business it would be delivered this week?
+[TIMESTAMP] Speaker 058: Yeah. I think that's the right statement.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: We also had some issues concerning the error message in approve reject closure review. Do you have any news about that?
+[TIMESTAMP] Speaker 058: So so that one b and two, right? We don't have the actual root cost, right?
+[TIMESTAMP] Speaker 285: Yes. No, Speaker 058.
+[TIMESTAMP] Speaker 058: So I think those are also Customer 31 environment, specific issues. So we are still trying to find the road cost, but we have not yet found any costs yet. Our team is still working on it.
+[TIMESTAMP] Speaker: And do you think you will find it this week?
+[TIMESTAMP] Speaker 058: Speaker 042, what do you think?
+[TIMESTAMP] Speaker 285: I'm not sure. I'm trying to debug it. I'm not getting anything there. Um
+[TIMESTAMP] Speaker 285: We do do we have any other org from Customer 31 where we can try the sandbox?
+[TIMESTAMP] Speaker: We can provide one
+[TIMESTAMP] Speaker: Another sandbox to
+[TIMESTAMP] Speaker: For submit.
+[TIMESTAMP] Speaker 285: Yeah, it's it should be like a fresh sandbox. Not that loan from the existing one. Uh
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: No, it would be difficult because you won't have the
+[TIMESTAMP] Speaker: The set up
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Yeah. Create a new if you if we create a new sandbox you won't have anything on it.
+[TIMESTAMP] Speaker 285: Okay. Let's try to have a clone one and tried there.
+[TIMESTAMP] Speaker: Why do you need to close one?
+[TIMESTAMP] Speaker 285: Those the so those approve reject error and the other [PERSON] in your sync issue. I tried debug a lot and try to change something there. But it's still I'm not able to reap sorry. Find the actual root cause it's a permission issue or some setup issue like that. And the similar thing was done in other customer org. And when we tried there's no issue with the [PERSON] of sync and the approval check and the project to the [CRM_PLATFORM] for the specific functionality also. So it should is it easy to implement and it works everywhere. But in this case, it's not working
+[TIMESTAMP] Speaker: Maybe you can try with another user with you can have the right. Yeah, you can change the right of user if you want. And we
+[TIMESTAMP] Speaker 285: Try with system admin with all the production. It's similar getting that same error.
+[TIMESTAMP] Speaker: Because I don't see the point of having a over inbox with this change.
+[TIMESTAMP] Speaker 285: If it is there? No problem. So if it is there it was okay. But we need to try this in any other or not on the same.
+[TIMESTAMP] Speaker: Scope.
+[TIMESTAMP] Speaker: Format, we have the same problem in another organ which is the
+[TIMESTAMP] Speaker: UI.
+[TIMESTAMP] Speaker: So we don't know if it would be better in another org.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: Okay. Uh
+[TIMESTAMP] Speaker: We have a question concerning non conformance. The possibility to my past, just a question, the business asked for a specific type of non conformance. We want to change the steps and bypass the 3 step. What do you recommend? like to do that?
+[TIMESTAMP] Speaker: Is it complex or is it uh
+[TIMESTAMP] Speaker: Possible.
+[TIMESTAMP] Speaker 285: So in Q2, we don't have any record type, right? Do you have introduce the record types there?
+[TIMESTAMP] Speaker: Is already set up.
+[TIMESTAMP] Speaker 285: Yes. So so how the compliance flow works, whatever you want to move. We cat from one stage to another stage, you have to perform that activity either from the UI or from the background. So if you want to bypass that triage so by passing trains, when you do submit three, as you have to fill some details to move to triage, right? If you can put that information available and you can post that I think triage or that take ownership and initiate activity, which is in to the train activity. The system will take care of the restaurants, background automation and the recording automatically will move to triage. But we need to check what other automations if you have added when you do create from the UI more, if there's any automation that should automatically hit when you post it in the background. So everything moment run through the activity codes in ABC Corp workflow. So from the flow or trigger, you have to post that activity when you want to move the record from one to another stage.
+[TIMESTAMP] Speaker: Okay. I have no additional steps then the submit triage. We we have done like the non one. I just need to create an activity and change the stage and the stages.
+[TIMESTAMP] Speaker 285: Activity is already direct because it's a managed package, one draft and
+[TIMESTAMP] Speaker: Yeah.
+[TIMESTAMP] Speaker 285: Yeah. So so you can just call that. Maybe update the activity code into the record field activity code field. And the system will automatically move the record from draft to the
+[TIMESTAMP] Speaker: Just as
+[TIMESTAMP] Speaker 285: I'm sorry.
+[TIMESTAMP] Speaker: I just need to update the activity code and the stage and status and everything else.
+[TIMESTAMP] Speaker 285: Yes. Yeah. Those automation will be done by the
+[TIMESTAMP] Speaker 285: SQL trigger finance trigger, you just need to post that activity and there is more automation if something is not working, you can let me know. I know if you had some custom thing that functionality will not work. Otherwise out of the box will automatically take care of those.
+[TIMESTAMP] Speaker: Okay. I will try to.
+[TIMESTAMP] Speaker 285: Make sure the activity code in the non confirm. Okay. Not the activities object, non confirmation.
+[TIMESTAMP] Speaker: Thank you.
+[TIMESTAMP] Speaker: Okay. Um
+[TIMESTAMP] Speaker: To
+[TIMESTAMP] Speaker: Summarize what we say. You are still working on the change order.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: The ticket 53 the ticket 54 and 53 will be delivered this week. 54 is unfortunately not possible to to deliver.
+[TIMESTAMP] Speaker: Um
+[TIMESTAMP] Speaker: And there was also the print issue. Yeah, I don't know what. Okay.
+[TIMESTAMP] Speaker: Sorry to interrupt just for ticket.
+[TIMESTAMP] Speaker 172: Speaker 268: Number 54. How critical is it for? And is there any work around is it more? More question for compliance question. Is there any workaround to resolve this ticket? Or
+[TIMESTAMP] Speaker 172: Speaker 268: Like I'm wondering if this is gonna be a booking point for you for going into tester?
+[TIMESTAMP] Speaker 285: Yes. The that the ticket was to enable the reopen on cap auditing change order, right? So yes, I tried the workaround. I was able to show that action on the UI. But background automation will is not allowing you blocking you to make some of the things changes there. So I try to reopen and there's no dedicated workflow for reopening when I adding that. So it's just blanking the flow and automatically closing the record as of now because tool does not support the opening of all those things. So if you want to go further and found more work around to enable the reopen thing says we have to do a lot more than a simple enabling of reopening change. Since we had to redesign the workflow on those 3 objects.
+[TIMESTAMP] Speaker 285: It's not that.
+[TIMESTAMP] Speaker 285: Audit totally blocked. I think it you cannot do reopen at all.
+[TIMESTAMP] Speaker 285: Document where I made some changes and when I tested it, I was not able to move forward. So I'm looking for the option suppose if I enable reopen and because reopen shouldn't
+[TIMESTAMP] Speaker 285: Should open and I
+[TIMESTAMP] Speaker 285: Tried a couple of ways. It's automatically closing.
+[TIMESTAMP] Speaker 285: Because it was closed already.
+[TIMESTAMP] Speaker 285: In
+[TIMESTAMP] Speaker 285: A good cop audit.
+[TIMESTAMP] Speaker 285: So that challenge I face
+[TIMESTAMP] Speaker 285: Is very critical to make those changes and definitely posting workflow.
+[TIMESTAMP] Speaker 285: Okay. Let me just check.
+[TIMESTAMP] Speaker 172: Speaker 267: This with Speaker 051 on this point. Or maybe early, you have some more context around it. But I need to check if this would be critical.
+[TIMESTAMP] Speaker: I think it is critical about the business, but I'm not the business, but they prioritize this this ticket. Um
+[TIMESTAMP] Speaker: Maybe another option would be to clone the
+[TIMESTAMP] Speaker: For example which which kind of we call you. They are asking to reopen the
+[TIMESTAMP] Speaker: For example, it would be fine to to clone the audit. I don't know that we didn't have the opportunity to to talk about the other alternative options for these tickets.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: Yes.
+[TIMESTAMP] Speaker: Yeah. I just want to ask why this is now something that is required. I would say when we do our presentations, we get asked this question a lot and we say right from the beginning that you can't reopen a closed record because one systems integrity and add a secondary is compliance to a close record that you can't amend once it's been closed for a good reason.
+[TIMESTAMP] Speaker: Luckily, why the business is asking for the ability to reopen the records. But they told [COUNTRY] we need to do some times and it is possible on some other objects.
+[TIMESTAMP] Speaker: Because you have a button to reopen.
+[TIMESTAMP] Speaker: Yes. The records that you can't are done for a very good reason. For making sure that the result is not changed and it's compliant to regulations and to the audit trail. So they're done for very good reasons that you can't open some of these records. So I think we need to understand why that is an issue for the business. Because either you're closing them when they're not ready to be closed or you're trying to open a record that is not fundamentally right thing to do from a business perspective.
+[TIMESTAMP] Speaker 058: Yeah. And again in addition to that, why the closing again, if you need a second pair of eyes, you can always have approvals or reviews enabled so that somebody can check truly verify that all the actions are closed and then close the record. So again, as Speaker 307 said, it is like a compliance thing, especially from an audit standpoint on confirm and where we have asked we have been asked the same question by by several of our customers. But again, for compliance reasons, we our engineering team has actually locked it down.
+[TIMESTAMP] Speaker 058: That's the main challenge that we're having here.
+[TIMESTAMP] Speaker: I mean, if you can imagine that you didn't you were audited by your customer or a body, then they came back early later and said you reopen that record that really invalidate that audit at that point in time, right?
+[TIMESTAMP] Speaker: That said, I understand you need to do a review, but maybe you shouldn't be closing them unless they're not ready to be closed yet.
+[TIMESTAMP] Speaker 058: Yeah. And also I think within audit
+[TIMESTAMP] Speaker 058: The audit will only allow to be closed only after all, the open actions are completed. If there is an open [LEGACY_SYSTEM] or anything which is open, the system won't allow you to close. So
+[TIMESTAMP] Speaker: About it. Some time to have some additional documents whether joined after we close, but it and that's why we need to reopen because it can change what is inside the audit.
+[TIMESTAMP] Speaker: So you're saying of finding after a closed audit?
+[TIMESTAMP] Speaker: Why was the audit closed if there is an open finding or an open action or something potentially could happen?
+[TIMESTAMP] Speaker: Like some additional finger in an investigation.
+[TIMESTAMP] Speaker: Okay. It shouldn't be closed.
+[TIMESTAMP] Speaker: Yeah, my job so one thing Speaker 307.
+[TIMESTAMP] Speaker 285: Yeah. We cannot reopen a closed record most of the cases, but you can attach more evidences in the closed records. If you have that specific permission supervisor permission. So you can attach more evidences, attachment files and all which was missing or something introductory call, reopening and again, updating the details. That's not going to be a work here.
+[TIMESTAMP] Speaker: Maybe what we could do is if you can provide the business cases that are affected, we can review them with you and find a workaround or way forward. But we don't know your business that well, at this point to make some judgments, maybe there is about what better way of doing things. But given we're up to against the deadline to get your system validated these kind of things are possible to do, right? In the short period of time.
+[TIMESTAMP] Speaker: Okay. We will check with the business.
+[TIMESTAMP] Speaker: We wanna have a dialogue around this. We want to explore some of the issues here and so we're not saying no and never talk about it again. We are saying not at this point, but let's talk about the business flow and some of the challenges.
+[TIMESTAMP] Speaker: All right.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: And submit, we also had a question on the print or download. Because we had the synchronized.
+[TIMESTAMP] Speaker: Issue with synchronizing the yes, which keeps loading without finishing.
+[TIMESTAMP] Speaker: If you have the opportunity to check this
+[TIMESTAMP] Speaker 285: Yes. The thing I tried to debug it more to get some some errors or something. It's not happening. And if I tried the same create a new report and do the print syncs and all it's working in other org. So only in this Customer 31, Customer 31, sorry, or sandbox org, it's not working. So if he I was there a call with Speaker 172 last week? So, if you do the changes in the default [PERSON] layout, it's acting there because of the print or sync is not functioning properly. It's not competing at all. So we can't do any much there because it should be done by the automated process, not by a manual process. So that's what I'm also thinking sometimes what happens if we manually change something and that will break the automation flow. And I'm not getting any error and not seeing any error at which point it's failing the sync. So that's where Amazon stuck there.
+[TIMESTAMP] Speaker 285: Formatted print and download option.
+[TIMESTAMP] Speaker: Okay. Well, at this stage of the project, it's difficult to provide another sandbox. Uh
+[TIMESTAMP] Speaker: So we'll discuss it with the one tomorrow, but not sure if we can do that.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: How you don't need another technical call this week? No. It's okay. Yeah. All right.
+[TIMESTAMP] Speaker 058: So that's
+[TIMESTAMP] Speaker 058: Yeah. If you can see my screen, this is just the summary. Number one is closed, right? To meet
+[TIMESTAMP] Speaker 285: No, I was waiting for
+[TIMESTAMP] Speaker 285: The check in. I was able to see that and mark now.
+[TIMESTAMP] Speaker: I think for a it's it's okay. Has to work on it. It's the solution is working, just plays a little bit to be changed, but I think it's okay for
+[TIMESTAMP] Speaker 058: Okay.
+[TIMESTAMP] Speaker 058: So this one and this one or specific. And we have requested for another sandbox. Let [COUNTRY] know, we will figure that out translation. It is going well, right?
+[TIMESTAMP] Speaker: It's well, we do what we can do, for example. Mainly it is about the email templates. Because for the rest, we don't have any package or any file that we can um
+[TIMESTAMP] Speaker: Upload to translate or at once so we do it. We do what we can do, but we don't have a
+[TIMESTAMP] Speaker: A version in [LANGUAGE] of real issues that the activities that are created in the next section are still in [LANGUAGE] and we don't know how to translate them.
+[TIMESTAMP] Speaker 058: Activities
+[TIMESTAMP] Speaker: Logged, I don't know.
+[TIMESTAMP] Speaker: They can be translated. Nice to be part of triggers trigger, but we don't have access to them and
+[TIMESTAMP] Speaker: Well, there are lots of things that we are not able to translate because it's part of uh
+[TIMESTAMP] Speaker: You see triggers, greed, etc, in sender code.
+[TIMESTAMP] Speaker: Love to set without like, by passing everything that has been set up.
+[TIMESTAMP] Speaker 285: So so yes. Uh
+[TIMESTAMP] Speaker 285: Action for translation. So like in whenever we have any quick action created and show it under NBA, right? So and when we generate the NBA from the system, it's coming from a label. Um
+[TIMESTAMP] Speaker 285: Yes. Custom label.
+[TIMESTAMP] Speaker 285: How to show you. So, suppose?
+[TIMESTAMP] Speaker 285: Suppose I open a copy suppose, copy close, right? So there is a label where like for the close one and maybe we can do the translation so what you can do, you know? So I think I had given the file for [LANGUAGE], right? And we have to convert it to [LANGUAGE] for everything. So I think you can do retrieve all the custom labels from the system and translate. And maybe to the custom label translations, then it will work for the end is because it is showing from the label the purpose, the title the label everything is coming from the activity code. Not the purpose because pop thing with the activity code, but the title label, anything warning and the message also just quickly check and confirm
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: So I need to translate the activity.
+[TIMESTAMP] Speaker: Translate automatically.
+[TIMESTAMP] Speaker 285: Yes. No labels. Only custom labels.
+[TIMESTAMP] Speaker: Labels labels. Okay.
+[TIMESTAMP] Speaker 285: Yeah. Pick list value labels. I know you did it will not show on the NB for NBA. It is coming from the custom labels only. You have to you on the custom labels. Do the translation and import it. Okay. Whatever I mean is easy for you and then check it.
+[TIMESTAMP] Speaker: And the what is logged as an activity will also be translated, because it's also a custom label.
+[TIMESTAMP] Speaker 285: The activity that API name should stay the same as [LANGUAGE], but the label will show [COUNTRY] translated values, right? Yes. Okay. And all the activity labels you have the activity object where we have the activity is that that API name and the labels are configured in [LANGUAGE] so you can update the label also, right from a translate work, bench the list value labels. So if you update the label, it will show you the translated label. Also there whenever it is it is means capturing the activity for any of the performed ones.
+[TIMESTAMP] Speaker 285: Yeah.
+[TIMESTAMP] Speaker 285: All these I think can be part of the that language translation which which maybe you want to perform.
+[TIMESTAMP] Speaker: Well, check this point, yes.
+[TIMESTAMP] Speaker 058: Yeah. I think I have to leave now, but I'll send this update to the team. This one yeah, it will continue to work and this one. As we already discussed yeah. Technically a little bit challenging. And as Speaker 307 said, we will review the business use case and take it back to the engineering team.
+[TIMESTAMP] Speaker 058: All right. I think that's all from my side. I have to drop. Anything else? Any last questions?
+[TIMESTAMP] Speaker 058: No.
+[TIMESTAMP] Speaker 058: Right. Thank you all for your time.
+[TIMESTAMP] Speaker: Thank you.
+[TIMESTAMP] Speaker 058: Everybody. Thanks, everyone. Bye. Bye. Bye. Bye. Bye.
+[TIMESTAMP] Speaker 285: Thank you so much. Bye.
+
+
+====================================================================================================
+Title: Customer 31 ABC Corp call - Requirements vs Config discussion
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 3113.18
+====================================================================================================
+[TIMESTAMP] Speaker 146: So
+[TIMESTAMP] Speaker: I Speaker 121 Speaker 246.
+[TIMESTAMP] Speaker: Hey, good morning. How are you? Good.
+[TIMESTAMP] Speaker 102: Good, good. How are you morning? Everyone very well.
+[TIMESTAMP] Speaker 146: Is
+[TIMESTAMP] Speaker 146: Assistant
+[TIMESTAMP] Speaker 146: Hi, Loic. Hi, Speaker 146. How are you?
+[TIMESTAMP] Speaker 146: Good, good. Doing good.
+[TIMESTAMP] Speaker 146: I'm expecting Sue as well on this call.
+[TIMESTAMP] Speaker 146: Who is
+[TIMESTAMP] Speaker 102: So
+[TIMESTAMP] Speaker 102: I don't believe she. Yeah, she was invited and accepted, so I believe she should.
+[TIMESTAMP] Speaker 146: Oh, awesome. But do you want me I sit in this meeting, what really happened on Wednesday meeting are the configurations given to Customer 31 and they missed it up or what happened?
+[TIMESTAMP] Speaker 102: So [PERSON]. Yeah, I don't know that you need to be on this call, but Customer 31 should be joining and we can review kind of next steps with them. That's where we're going. I think with this call today, this was set up by Vineet.
+[TIMESTAMP] Speaker 102: Hi Sue. Thanks for joining.
+[TIMESTAMP] Speaker 102: Hi there.
+[TIMESTAMP] Speaker 284: Hi, everyone.
+[TIMESTAMP] Speaker 146: Good morning.
+[TIMESTAMP] Speaker 284: Morning. Good morning Speaker 121.
+[TIMESTAMP] Speaker: Good morning.
+[TIMESTAMP] Speaker 146: So ping me if you want anything is with regards to the contract or any clarifications, otherwise I will drop out. Is it? Okay.
+[TIMESTAMP] Speaker 102: Yeah, I think that sounds fine. Thanks. [PERSON] for being available. Bye.
+[TIMESTAMP] Speaker: Hi, Speaker 307.
+[TIMESTAMP] Speaker: Hey, I'm just joined. Just in case there's any things I can contribute to. But I'll leave it to you guys.
+[TIMESTAMP] Speaker 284: Thanks, all.
+[TIMESTAMP] Speaker 146: Yeah. Besides
+[TIMESTAMP] Speaker 146: Speaker 051.
+[TIMESTAMP] Speaker 146: Speaker 051, you're on mute if you're saying something.
+[TIMESTAMP] Speaker 146: Hello, everyone? Hello. Hello.
+[TIMESTAMP] Speaker: So
+[TIMESTAMP] Speaker: Hello, everybody.
+[TIMESTAMP] Speaker 146: Hi, Ali. Hi.
+[TIMESTAMP] Speaker 146: So we need I mean all of a sudden, he had some emergency, he went on emergency. So I have just replaced him for this call. I mean, see where to start from. I mean I'm not sure about what had discussed last time and it's more about the requirements and the configurations which is didn't go through, I guess, so. What are the challenges? Probably we can hear and we can pay a path forward that how we can take this ad
+[TIMESTAMP] Speaker: Speaker 146, if I may just set the scene, what's been agreed from the last meeting as he wasn't on the last call? So we met with by garren and they've asked her to meet with Customer 31 to understand what the challenges are in terms of the issues with the configuration. So what we're after today is to run through those configuration issues with Customer 31 and understand the reasons for them.
+[TIMESTAMP] Speaker 146: Okay. Okay.
+[TIMESTAMP] Speaker: So we really would like to open the floor, really to I guess looking at what the configurations look like, what the challenges are and why they've been put in place the way they had been so. The common goal here is to get everybody understood what the configurations are. We can then decide what the best next action is. Great.
+[TIMESTAMP] Speaker: All right. So my suggestion will be that. We have a log of issues that if if the Customer 31 team can share with [COUNTRY] what those challenges are and why those challenges are now been escalated. We can understand the reasons why they have done those configurations, why they have done. And if there's anything we can help assist fix or come up with another resolution. So Customer 31 team, do you want to lead [COUNTRY] on on reviewing those challenges?
+[TIMESTAMP] Speaker: I'm sorry. But I think there's a misunderstanding. You asked [COUNTRY] to organize the call with you to answer your questions. So maybe if you can show [COUNTRY] your questions, we can talk about it, but we didn't have any material to prepare this call.
+[TIMESTAMP] Speaker: Okay. Let's let's put the elephant in the room to to one side. There are problems with the configuration at by garon. We're here. You must know there are problems because the systems not going not gone through final testing because there are configurations issues and by garren can't use the system as they are today. So let's be clear what the issues that we're not gonna hide around that. This is a meeting to discuss questions. We're asking you there is a problem with the configuration at by Arena. We need to work together to bring that to resolution. Is that clear?
+[TIMESTAMP] Speaker: What I'm sorry, but I don't understand what you want to do now. Because we didn't have any information about the items that we would discuss today. So we can show you if you want the app and what we have done to walk around the application. But we don't have any items to to share with you.
+[TIMESTAMP] Speaker: Speaker 051, have you not spoken to Customer 31 about the issues?
+[TIMESTAMP] Speaker 051: We talk about the issues, text, all this. There is something mid development. So what we did we send you the features because as we said on the previous call, we need these features to be understand that. Because we don't want to have any problems on the next release so. That's why we wanted to talk with you about these features. So
+[TIMESTAMP] Speaker: Okay. Then how do we have no knowledge of how Customer 31 has put this together. Like we said in the last call.
+[TIMESTAMP] Speaker: If we have done this work, we might have approached it differently. And that's not to say that is not respecting the work that text is done. We just don't know what the problem is. So how do we understand what the problem is, if nothing? nothing shared with [COUNTRY]. Clearly
+[TIMESTAMP] Speaker: Text you're saying to there is an issue with the software or the configuration or the training and we're saying share that with [COUNTRY]. So we can understand without sharing that information. We can't move to resolution.
+[TIMESTAMP] Speaker 051: Yeah, I agree. So that's why we send you the email. I think on the email, it's quite clear. So maybe let's share the items I sent you. And then on each items we can go through the configuration to see what happened on these features.
+[TIMESTAMP] Speaker: Okay. So before we do that
+[TIMESTAMP] Speaker: Customer 31 team. Do you realize that there are a problem with the configurations?
+[TIMESTAMP] Speaker: I wouldn't say that.
+[TIMESTAMP] Speaker: Right.
+[TIMESTAMP] Speaker: Well, the challenge is if we don't recognize there's an issue, how do we fix them?
+[TIMESTAMP] Speaker: Well, we can go through what Speaker 051 talked about earlier and we can see what the request of Customer 31.
+[TIMESTAMP] Speaker 284: Yeah. I mean I'm
+[TIMESTAMP] Speaker: I'm a little bit flat gated that we're both talking individually about an issue and there is no acceptance that there is an issue from your side.
+[TIMESTAMP] Speaker 246: We don't know what the root cause is here. So the root cause could be like I mentioned that the requirement wasn't clear or it could be that the configuration may have been done, but it does not meet the business use case. I mean, there are plenty of options here as to what has failed. So without pointing fingers. I mean, I think if we go through if we go through the email, can I ask a couple of questions about what was done to potentially configure that?
+[TIMESTAMP] Speaker: Sure. Yeah. Sure.
+[TIMESTAMP] Speaker 246: Okay. I have to find the email. Give me a second. So
+[TIMESTAMP] Speaker 246: Let's see.
+[TIMESTAMP] Speaker 246: And just for reference I'm a solution architect with ABC Corp. I'm here to help and try and understand where we can fix these issues regardless of kind of where they came from.
+[TIMESTAMP] Speaker 246: So I came up with the general worksheet of the emails in the non conformance module.
+[TIMESTAMP] Speaker 246: We have a containment deadline is not enforced, doesn't auto calculate or validate a 7 day window from receipt. I also have this excel sheet that you sent over. So where in this excel sheet, can we look for that requirement?
+[TIMESTAMP] Speaker: I think the requirements you have were not implemented.
+[TIMESTAMP] Speaker: Can you show the again, the requirements? Sure.
+[TIMESTAMP] Speaker 246: I know it's small.
+[TIMESTAMP] Speaker: Containment deadline not enforced.
+[TIMESTAMP] Speaker: How was that implemented? I don't think so.
+[TIMESTAMP] Speaker: No.
+[TIMESTAMP] Speaker 051: No.
+[TIMESTAMP] Speaker 051: Just just to make it clear, all all these items were not implemented because it requires development.
+[TIMESTAMP] Speaker 051: And what we need Customer 31 need is to fix these.
+[TIMESTAMP] Speaker 051: Without any impact for the next release. But if it takes the develop a specific features above the standard, they will have a problem on the next release. So they didn't say they can't do it. The program is, we need to fix this without having any impact on the next release.
+[TIMESTAMP] Speaker 246: You won't. So if it's clear that they've done configuration here. I mean, there are flows. There are permission sets. They're creating new fields. I don't think it's a capability issue. I think that they are capable of creating a deadline for this 7 day window of receipt. But I'm unclear about the concern of next release future release. This shouldn't impact anything in a future release.
+[TIMESTAMP] Speaker 284: Speaker 246, I'm not sure they understand that. Even if you do a configuration because it looks at least from my viewpoint and by the way, I'm Sue. And I'm the director of projects. It looks like
+[TIMESTAMP] Speaker 284: You're concerned and didn't implement it from Customer 31. Because you thought that it was it needed to be configured. And we needed to quote, fix the package, the base package. We configure we're not putting in a new fix. That's gonna go out to everybody that buys this module. So in what Speaker 246 was alluding to is even if you do configurations when there is another release another, let's say another version of the package coming out. It will not it's not like it's gonna wipe it out. It's going to be there. You can keep building on it. I think there's a misunderstanding about you can't make this change and then make another change later now or you can upgrade later. No, all all of the these. We do on a daily basis. So it can be managed.
+[TIMESTAMP] Speaker 284: Because if I think Speaker 246 is right.
+[TIMESTAMP] Speaker 284: That you could probably have done this because we're not gonna go out and make a change to our base product.
+[TIMESTAMP] Speaker 284: And help me if I'm not addressing your concern about the next release.
+[TIMESTAMP] Speaker 051: So for all these items, we can configure it won't be in understand because not all of your clients are gonna use it, but correct. But you can confirm if we develop all these features, no impact on the next release, correct?
+[TIMESTAMP] Speaker 246: When we do an upgrade or a release, we I'm in the middle of one right now. So you actually do an impact assessment. So I will take everything that or Customer 31 would take everything that's listed here in these in these requirements and do kind of like an end to end test and say, okay, what broke and if anything broke in that upgrade, they would fix it or we would fix it. So there are stop gaps to future state where if something from our product changes, then we'll make sure that everything that you are still requiring still exists.
+[TIMESTAMP] Speaker 051: Yeah. So so for me, there is an impact, because if you need at each release to check, everything you develop obviously takes time and require more time and more tests and that we don't want because we already developed specific things in the September. So we already have a lot of specific on the application and we don't want more specific for basic features for the team. That's the problem.
+[TIMESTAMP] Speaker 246: So we do have an internal way of suggesting product enhancements to our product. It goes through our product team. I can commit to reviewing the requirements that you have and of them where I think that they are valid. And they will be accepted by the product team. I can raise those as enhancements. I can never though guarantee that they will be in the product within the next 6 months or a year or if they're ever going to be accepted into our product. Because we do have a large scale of clients, whether it's pharma or manufacturing or any I mean, we have lots of different clouds now. So it's unfortunately not a catch all in some instances. So we have to keep that in mind.
+[TIMESTAMP] Speaker 051: Okay. Okay. I understand your points. And that's why maybe I think it's better for ABC Corp to take these points on your side because it's based on space on basic things. So you can check at every release these points and take care. We'll check all the other specific they did at each release. So it's we sharing the word basically for the basics, you will check at every release and for the really specific Customer 31 will check everything on the next release.
+[TIMESTAMP] Speaker 051: Are you aligned with that?
+[TIMESTAMP] Speaker 246: I can't that one's over my head, so I can't commit to that one. So any thoughts?
+[TIMESTAMP] Speaker 284: I'm thinking about it because normally when as Speaker 246 said, when you're getting ready to do a an upgrade, we'll just say an upgrade. Um
+[TIMESTAMP] Speaker 284: Then it would be we would do the impact.
+[TIMESTAMP] Speaker 284: We would, as she said and rightly so, if it breaks something that's currently working, we'll make sure that it's fixed so that your system continues to work whether you're at 15 or 17 or nineteen a couple of years down the road. But we also expect that once we turn it over to you that you will test everything not just things that you've
+[TIMESTAMP] Speaker 284: Changed or things that we've changed. We will go through it and check it, but we always expect that the customer will also run through it. So if you're running through it, you're gonna be running through the entire system just because you're probably touching a lot of different points. Um
+[TIMESTAMP] Speaker 284: So I
+[TIMESTAMP] Speaker 284: But if you need these to do your business then again, as Speaker 246 mentioned, she can do the what we call an if for to get it included. But we cannot guarantee when it would be included or if ever um
+[TIMESTAMP] Speaker 284: So
+[TIMESTAMP] Speaker 284: To me, you should be testing it. Once we do an upgrade anyway, whether we do these or you just say no, we don't need them.
+[TIMESTAMP] Speaker 146: Um
+[TIMESTAMP] Speaker 284: So I guess that's the point because you're talking about the work and the time. I think that's time you're gonna spend anyway.
+[TIMESTAMP] Speaker 051: So do you think about it?
+[TIMESTAMP] Speaker 284: Yeah, because I mean, I know from my viewpoint and I've set in your seat before when I had somebody give me an upgrade.
+[TIMESTAMP] Speaker 284: I wanted to test it to make sure that everything still looked good. Um
+[TIMESTAMP] Speaker 284: Because that's just the nature of my brain, but yeah. So
+[TIMESTAMP] Speaker 284: Yeah.
+[TIMESTAMP] Speaker 051: The only problem we have is in [COUNTRY] there is qualification stage. That mean at every release they need to test. And if a test is is wrong. You need to raise a specific tickets with a really specific workflow and it takes a long time to go through. It's not like, all the application. We have we could have in supply or we could have in a CRM because it's a qualification application. It requires a specific workflow and it's really long. So that's why we are a bit worried about the next release. Because if there is something going wrong, it will take a lot of time to fix it.
+[TIMESTAMP] Speaker 051: And that's why at the beginning, we wanted to use the standard application.
+[TIMESTAMP] Speaker 051: So in September, just for the context in September, we had a steering committee and we accepted some specific features because they were a mandatory for the business. So we accepted some specific features. But the ones I raised on the email are not specific features for the team the basics.
+[TIMESTAMP] Speaker 051: That's the problem.
+[TIMESTAMP] Speaker 102: So maybe can I just ask a question and Sue maybe you or Speaker 246 might have a little bit more information on this. I haven't been involved in too many upgrades recently, but these basic features that we're looking at that Speaker 246 had on her screen. It seems like if we did configuration to fix them the way that Customer 31 needed have we seen many failures with that type of configuration just to maybe help give Speaker 051 and the Customer 31 team a level of comfort that once we configure I it seems like those are pretty rare in my experience, but I wanted to get some of your input to see. If you thought we'd seen many failures after we do upgrades. I know that we can never guarantee that 100% we want to test yet. We encourage customers to test. But just thought I'd get your input there.
+[TIMESTAMP] Speaker 284: I don't usually get involved in those. But hold on just a second Speaker 246. I know you're going through one right now and I know you've probably gone through more before.
+[TIMESTAMP] Speaker 246: Yeah.
+[TIMESTAMP] Speaker 246: The more honestly, the more complicated the workflow, the more likely we are to run into issues. Nothing that I've seen here is like a significant change to a workflow a standard workflow that we have that could cause issues. Again, not a guarantee. There could always be something that we didn't realize was part of this flow in the system that is now impacted because we've changed that flow again. With these it's it seems like some of them are either error messages or permissions which very rarely get over. I mean, they don't get overwritten, especially if you their custom and when we do the upgrade. So what happens is you take your standard org that you have right now and you upgrade the system. And then again, you can redeploy the code that could potentially cause issues to see where your failures are. So you can identify where those failures are specifically. We are working internally on process improvement there as well. To help our team do this a little bit quicker. But no, I don't see too many failures happening. Based on what I've seen in either of these documents.
+[TIMESTAMP] Speaker 102: So Speaker 051, does that give you any more level of comfort if we were to proceed? I think the problem we have here is that you have a system that we want to fix for you know, whether it's through Q or through Customer 31 help we want to give you a working product. I you know, my suggestion would be to address these with configuration and then continue down the upgrade path. But I think that's your decision Speaker 051 as far as kind of the next steps as far as how we proceed best to help. Yeah.
+[TIMESTAMP] Speaker 051: Yeah. I think it can help to be more confident about it, but I need an e mail writing for that. Because I have we have a pressure about the pressure with with the team because we should be already in go live right now. So that's why they are in a difficult situation. So I need writings to know you are confident about it. And also we what we need really quickly is a plan. And when can we fix these? If it's you take? I don't know. But what we need it's dates.
+[TIMESTAMP] Speaker 102: Okay. I see we have maybe a half an hour left of this call. Is it worth our time to dive into some of these details a little bit more Speaker 246 with the Customer 31 team and take a look at what configurations we're done? and how we can maybe address them? And then maybe we can get a look at what the root cause is and what it's going to take to fix them and then we can drive towards a date to to give the Customer 31 team what they need?
+[TIMESTAMP] Speaker 246: Sure. I mean, most of these are relatively clear. I I'm not sure if
+[TIMESTAMP] Speaker 246: We are we going to be doing this work or is Customer 31 going to be doing this work?
+[TIMESTAMP] Speaker 102: That's a valid question. And Speaker 051, Speaker 307 I don't know how you want to address that. I know Sue s contract is with the Customer 31 team. Speaker 051, I don't know what your preference would be there if we work with Customer 31 to resolve this and get this wrapped up. But let's make sure we're clear on a path forward.
+[TIMESTAMP] Speaker 051: To be honest, I don't mind. I just want these items to be fixed because time is running and we don't have any more time. So okay.
+[TIMESTAMP] Speaker 102: So I think probably the quickest way to resolve this and maybe Speaker 246 and our really please tell me your input as well, is if we ABC Corp team works with Customer 31 to provide support in the current contract rather than creating a new contract and fixing things out. But I'm happy to or go a different way route Speaker 307. I see your hand as well.
+[TIMESTAMP] Speaker: Yeah. I just think we need clarity on.
+[TIMESTAMP] Speaker: Just they realized that there is an issue for by are because I'm not sure that is obvious to everyone.
+[TIMESTAMP] Speaker 102: So maybe that's a question more towards you. Are you willing to
+[TIMESTAMP] Speaker: Sorry, I didn't get the question.
+[TIMESTAMP] Speaker: The question is this does Customer 31 recognize there are issues for Customer 31?
+[TIMESTAMP] Speaker: There are issues for Customer 31, yes.
+[TIMESTAMP] Speaker: And do you have the understanding of how to fix those issues?
+[TIMESTAMP] Speaker: But it's not me to have this understanding. There are some requests to the question is who is going to implement this. And this is not clear for me now.
+[TIMESTAMP] Speaker: So Speaker 051, I'm a little bit confused. Yeah. We have a system integrator the
+[TIMESTAMP] Speaker: Is not realizing what the issues are or how to fix them. How do we help that scenario?
+[TIMESTAMP] Speaker: We have
+[TIMESTAMP] Speaker: President.
+[TIMESTAMP] Speaker: Everybody my engagement manager. Nice to meet you all the it team. My question is we can work together Sue and issue by issue and see if we are able to fix it or if we need assistance from
+[TIMESTAMP] Speaker: There is another matter. He's we're going to to to ensure the warranty of the feature. Okay. I propose first of all to meet and dispute issue by issue. And then if we have some issue that text is not able to fix, we're going to decide if it will be a set to do this. How do you think about this?
+[TIMESTAMP] Speaker: Team ABC Corp team. What's your response?
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 284: As far as I can see, that would be fine with me. The fact being that if I understand correctly, the changes or the requirements that are listed, that we're not implemented because Customer 31 and Customer 31 thought that there was a misunderstanding on what would happen when we did a release. Now that we're straightening that out. If Customer 31 feels they can go ahead and get these done in a timely manner to fit Customer 31 timeline then
+[TIMESTAMP] Speaker 284: I'm okay with it. I do know that probably ABC Corp could probably do it faster because we know the systems better. But that again
+[TIMESTAMP] Speaker 284: Snap, my call to make that determination. That's Customer 31. Um
+[TIMESTAMP] Speaker 284: But I don't see a problem with the plan that was outlined. The only thing I see is potentially time spent.
+[TIMESTAMP] Speaker 284: Hmm.
+[TIMESTAMP] Speaker 284: Because Q is contracted to support Customer 31. So if Customer 31 runs into something that they can't handle, then we step up and we support them, however, they need it.
+[TIMESTAMP] Speaker: Sure. Sure. But we have to understand why are we not able to fix some issue? Is it? Because we are limited by the system or we are limited by how our capacity to do it. That's why I want to go to the issue.
+[TIMESTAMP] Speaker 051: For me, you need to work together uh
+[TIMESTAMP] Speaker 051: Deeply on each items. Because for me, there is different category. Some category are just configuration, for example, the first line was to add the 7 days. I don't remember exactly, but there is something else, but the data integrity for example. And that point is really different. It could be fixed differently. So that's why we need to work deeply on each item. Now now we are we have like 30 more minutes. Just go through on each items. Um
+[TIMESTAMP] Speaker 102: Okay.
+[TIMESTAMP] Speaker 102: Okay. So why don't we take some some time right now to go through each of these items and see where we can get through with the time we have and we can set up subsequent time to follow up. Yeah. I don't know Speaker 246 if you want to drive, maybe
+[TIMESTAMP] Speaker 102: Sure. Thank you.
+[TIMESTAMP] Speaker 246: Are you are we okay with this?
+[TIMESTAMP] Speaker 246: Layout that I have.
+[TIMESTAMP] Speaker: Well, I'm sorry because we didn't have the opportunity to prepare. So I don't know what it's going to be like well that we can try
+[TIMESTAMP] Speaker 246: I think step one is. Speaker 051, are all of these requirements listed somewhere in that url document?
+[TIMESTAMP] Speaker 051: I think yes.
+[TIMESTAMP] Speaker 246: Okay. So
+[TIMESTAMP] Speaker 051: Except AB the data integrity gap. I raised the last one. So I think it's the line. Yeah, 5. Otherwise, fingers on the
+[TIMESTAMP] Speaker 246: Okay. If those details are included in the [COUNTRY], then Customer 31 should have plenty of details to sufficiently understand what those requirements are.
+[TIMESTAMP] Speaker 246: This here is related to the fact that we have an out of box [PERSON] that can be edited and you can set the status of it to something else and then delete it. So in my opinion, it's a very simple permission fix. I guess what kind of details do you need from [COUNTRY] in this call, outside of what's in that url that we can help provide? Because I don't
+[TIMESTAMP] Speaker 246: I mean, I don't know that we can be any more clear than what's in that url and I can't retrench at the moment. So
+[TIMESTAMP] Speaker 246: I mean, I think at this point, it's as simple as Customer 31 can review what's in the [COUNTRY] because it already exists there. I can send an email. I can follow up with this and say, hey, this data integrity, contingency contingency, excuse me, contingency measure issue is related to one specific thing. I can include screenshots where that needs to be fixed and what actually needs to be fixed. But beyond that, I don't know that I can give too many other details that are gonna be more insightful than that url that you guys have.
+[TIMESTAMP] Speaker: Hi, this is Speaker 121 upset. If I can just step in. I'm gonna actually, for those who I haven't had an opportunity to introduce myself. Speaker 307 is transitioning into a new position within ABC Corp. So I'm gonna be the new POC and point of contact moving forward. So I appreciate everybody's time on this call and I know it's very consuming, but I think the priority here is to just get everybody on the same [PERSON], which I understand that we are trying to do. So I'm gonna ask Customer 31, everything that Speaker 246 just went through. How do you feel about that? Because I just I'm not hearing a response.
+[TIMESTAMP] Speaker: What do you mean? How do we feel about that?
+[TIMESTAMP] Speaker: Speaker 246 you just went through very generously with your time a couple of points here.
+[TIMESTAMP] Speaker: Can you just very quickly recap for [COUNTRY]?
+[TIMESTAMP] Speaker 246: So or and I can send this entire list if that would be helpful as well. But what exists here with the exception of this one should also exist in that url document. So somewhere, there is a requirement in that ours that's related to these here. I got this these details from an email. So I didn't translate a requirement. I don't have any more details. Then the url would have. So [COUNTRY] going through it, I don't know is the best use of our time. Are you comfortable taking this list and reviewing that url and saying, okay, this is what they needed for the containment deadline, not enforced requirement and fulfilling that requirement?
+[TIMESTAMP] Speaker: You mean fulfilling what is the technical solution?
+[TIMESTAMP] Speaker 246: Yes.
+[TIMESTAMP] Speaker: Yes. Sure. We could do that. If we have this list. This excel sheet, we don't have it. So we didn't have the opportunity to read it them to
+[TIMESTAMP] Speaker: And to prepare something to talk about it with you.
+[TIMESTAMP] Speaker 246: No, no, that's okay. What I think needs to happen is I can send this list and if they exist in that url document, then you have more details than this one sentence is going to give you. So I think identifying which of those URLs requirements were missed in this list because of this miscommunication or misunderstanding and then fulfilling those requirements based on what's in that url with those details, I think is the next step forward.
+[TIMESTAMP] Speaker: Yes. Okay.
+[TIMESTAMP] Speaker 246: So I can share this list. And then again, this highlighted one will not be in that url, but I can give you screenshots and kind of a technical solution that I think would work.
+[TIMESTAMP] Speaker 246: Okay.
+[TIMESTAMP] Speaker 146: Okay.
+[TIMESTAMP] Speaker 146: Okay. I have a question which is the sheet which you have shared over the email. What's what's that sheet?
+[TIMESTAMP] Speaker: It's
+[TIMESTAMP] Speaker: It's a recap of all the configuration we have made. So here in the specific [LANGUAGE], you have everything we have changed that is not standards and what we are met to answer Customer 31 needs.
+[TIMESTAMP] Speaker 146: Okay. This is we have already done, right? This is not something which is pending. Yes.
+[TIMESTAMP] Speaker: This is already done. And for the other list you showed there, something I know to do, but there are some lines, for instance, I'm not sure on. Oh, we can do that. Because I don't know if we it will have an impact on something that is already standard by Q, for instance. Could you please show the documents? for instance, the
+[TIMESTAMP] Speaker: Extension, request, everything. What is related to extension request and the action due date can exit change order due date. If I for instance create a validation to prevent this I will have a problem with the extension request because we cannot like, use the extension request default functionality to ask for a longer time to do the action. A time that will be after the end of the change order for instance. So for some of the I need to talk to you to understand oh, it should be implemented because some we tried and we had some error
+[TIMESTAMP] Speaker 246: Yeah, we need technical support on this. Is that what you're saying?
+[TIMESTAMP] Speaker: Yeah. For instance, is 2 1. I'm not sure of all all over one, I think some not a problem. For instance, all the notification. I think it's clear for me to do, but sometimes when there is impact on dates I cannot just put a validation because it will impact, for instance, some overall features.
+[TIMESTAMP] Speaker 246: Yeah.
+[TIMESTAMP] Speaker 246: I hear you this is coming that I just heard this morning. This request extension on change order should be in our product in summer of 26. So I can ask our product team, how they managed it and get we can get some technical expertise there. If there's if there are questions or concerns like that about how to implement this, I think that's what we're here for. Okay. Anything beyond that obviously we can have a discussion with you guys and make sure that you have what you need from either me or our technical team to to get all of these configured.
+[TIMESTAMP] Speaker 246: Okay.
+[TIMESTAMP] Speaker: So just to recap what do you think should be the next steps? Do we like, do you send [COUNTRY] this list and we just write what we think we need to do for configuration and then you validate that during the call, for instance.
+[TIMESTAMP] Speaker 246: I can I do.
+[TIMESTAMP] Speaker: Want one or 2. I can we work together online first of all, on a file chart and then we can put all the remark detail etc. And the elsewhere. For example, if for today for the time lifting, we talk just about one request. We fill the group together or you can say how do you do you intend to process or the your limitation for this request? And then we will complete it together because we will take a lot of time. If we communicate by email.
+[TIMESTAMP] Speaker: Yeah. We need to share the document and maybe add some comments or add some columns to write what we intend to do. And what are our question regarding these issues?
+[TIMESTAMP] Speaker 246: Sure. If you need [COUNTRY] to do a technical review before you work on these, we can do that. But I'm I would need some time to review these to understand what you guys are doing as well. Okay. I don't know that the next 15 minutes. We're gonna get even one of these done. I mean, I can tell you how I wouldn't you create a validation rule for this. I mean, some of these are relatively simple, but again, I don't I can't read [LANGUAGE]. So I don't know what the actual requirement is. You guys have those requirements in that url document. I think step one is I send this list. Step 2 is you find it in that url. And if you have questions about what that requirement is in that document, then you can reach out to [COUNTRY] and say hey, I have questions otherwise. You can continue on because it seems like you are more than competent to do work, as you've demonstrated here.
+[TIMESTAMP] Speaker 246: Okay. I'm not concerned about the quality of work at this point. I'm concerned that unfortunately these were missed because of one gap or another and we just need them done. I don't think that you can't do it. I'm not trying to be a gatekeeper and say, hey, you need to sign off with me before you do configuration, but I don't want to slow [COUNTRY] down.
+[TIMESTAMP] Speaker: Okay. Do you have any uh
+[TIMESTAMP] Speaker: Any idea about
+[TIMESTAMP] Speaker: Well, I think that the proposition to send [COUNTRY] the file and to let [COUNTRY] check what each item talks about and to fit in first configuration solution would be nice and then to talk with you later, when we are ready about each of these these items.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: Can we like right now schedule the next call? So
+[TIMESTAMP] Speaker: So we are sure we have the next step that is planned just the time we want to meet for the next step.
+[TIMESTAMP] Speaker: Absolutely.
+[TIMESTAMP] Speaker: Can anybody everybody just take a quick look at their calendars for [COUNTRY] and we can put a placeholder in place or confirm a time right now. How much time do you think will be needed between today's meeting and the next?
+[TIMESTAMP] Speaker: I think at least one week, but um
+[TIMESTAMP] Speaker: Yes. Okay. We're looking at the week of the 23rd. I'm out of office the 26 27th, but don't wait on me. Is there a specific date that works best for all?
+[TIMESTAMP] Speaker 246: I'm out of office until the first week of March.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker: We probably need you on the call, right?
+[TIMESTAMP] Speaker 246: Yeah. Probably.
+[TIMESTAMP] Speaker: All right. Why don't we push out to the first week of March? Is that all right?
+[TIMESTAMP] Speaker: So let's take a look at the week of the second.
+[TIMESTAMP] Speaker: The specific date and time and one wants to jump in.
+[TIMESTAMP] Speaker: Just the free.
+[TIMESTAMP] Speaker: But anytime it's okay for me for the week of the second. Okay.
+[TIMESTAMP] Speaker: How about we do Tuesday the third, same time, 11:00 o'clock a.m. Eastern. Does that work for all?
+[TIMESTAMP] Speaker: I'm not I'm not here referred.
+[TIMESTAMP] Speaker: I'm sorry?
+[TIMESTAMP] Speaker: Sorry.
+[TIMESTAMP] Speaker: In the week, I'm not here.
+[TIMESTAMP] Speaker: Oh. Oh, okay. How about the fourth Wednesday the fourth at 11:00 a.m. Eastern?
+[TIMESTAMP] Speaker: Talking
+[TIMESTAMP] Speaker: Yeah, that works. All right. I've been in.
+[TIMESTAMP] Speaker: For which time
+[TIMESTAMP] Speaker: Yeah. For which time area because we are in Paris, is it eleven?
+[TIMESTAMP] Speaker 146: Am the
+[TIMESTAMP] Speaker: Same time, now. Eastern time. Yeah. And I get everybody's email in the previous.
+[TIMESTAMP] Speaker: Calendar invite. All right.
+[TIMESTAMP] Speaker: All right. Great. So I'll put excuse me. I'll put a calendar together for everybody on the call and expect to see that shortly. Thank you very much. Our goal obviously is to get some clarification here and make this as seamless as possible. And I'm quite confident that we're gonna get over this hump. So it's a pleasure to meet you all. And I'm looking forward to supporting you all. Does anyone have any further questions before we wrap?
+[TIMESTAMP] Speaker: Outstanding. Thank you very much. Everybody enjoy the rest of your week.
+[TIMESTAMP] Speaker 051: Yeah. Just before ending, if you can send me an image just to reassure reassure them the team that the release won't be a problem. If you can just send me an image just to confirm it won't be a problem because of experience and so on. It would be perfect.
+[TIMESTAMP] Speaker: Are you asking me to send you an email?
+[TIMESTAMP] Speaker 051: I don't know. Not not specifically about ABC Corp about the next release and about the points we raised.
+[TIMESTAMP] Speaker 284: I don't know. I Speaker 121 I can handle this one. We can send you that Speaker 051. I just want to make sure that we're talking the same thing. When you say a release, you're talking about an upgrade from version. Let's say you're on 15 right now to version 16. Yeah. Yeah, that is what you're talking. You're not talking about a release for a go live where you get more work done and you're still in 15
+[TIMESTAMP] Speaker 051: No, no. I'm talking about the next release. We are actually on the 14 point five, I think.
+[TIMESTAMP] Speaker 284: Okay. You'll be going to probably 15 at some point or 16. Okay. I just wanted to make sure we were talking about a version change versus a regular deployment. Okay. That's all I cared about, but yes, we can provide you that. Okay.
+[TIMESTAMP] Speaker: Great. Excellent. Thank you're welcome. Thank you very much, everybody.
+[TIMESTAMP] Speaker 284: Thanks.
+[TIMESTAMP] Speaker: Nice day.
+[TIMESTAMP] Speaker: Take care.
+
+
+====================================================================================================
+Title: ABC Corp:  Customer 31/Customer 31 Follow Up Discussion
+Engagement ID: [ID]
+URL: [URL]
+Date: [DATE]
+Duration: 1888.49
+====================================================================================================
+[TIMESTAMP] Speaker 284: Hi, Speaker 121.
+[TIMESTAMP] Speaker: Hi, Sue. How are you today?
+[TIMESTAMP] Speaker 284: Good. How are you doing?
+[TIMESTAMP] Speaker: I'm fine. Thank you.
+[TIMESTAMP] Speaker 284: Hey, Speaker 102.
+[TIMESTAMP] Speaker: Hi, Speaker 102.
+[TIMESTAMP] Speaker 102: Good morning. How's everyone doing today?
+[TIMESTAMP] Speaker 284: Good.
+[TIMESTAMP] Speaker: Very well. Thank you.
+[TIMESTAMP] Speaker 102: Good. Thank you.
+[TIMESTAMP] Speaker: So, you guys are driving, right? I'm just going to be in the background. Right? I'm.
+[TIMESTAMP] Speaker 102: Yeah, well, Speaker 246 talked, mostly to those 2 items. I think that's the majority of the discussion there.
+[TIMESTAMP] Speaker 284: Sounds good. Hopefully it is, yeah.
+[TIMESTAMP] Speaker: I think you're turning the [PERSON], don't you think?
+[TIMESTAMP] Speaker: Yes.
+[TIMESTAMP] Speaker 102: Hello, everyone.
+[TIMESTAMP] Speaker: Hi. Hi, good morning.
+[TIMESTAMP] Speaker 284: Good morning.
+[TIMESTAMP] Speaker: Do you all know that, forgive me, Speaker 010? Yes, that's right. Speaker 010 is going to be the new assigned CSM, right? That's right.
+[TIMESTAMP] Speaker 284: Yes.
+[TIMESTAMP] Speaker: Hi Speaker 102.
+[TIMESTAMP] Speaker 284: Yeah, I have to get Jim to send out the actual table because a lot of the CSMs have been moved around and because oh, there he is. There he.
+[TIMESTAMP] Speaker: Is. Speak of the devil.
+[TIMESTAMP] Speaker 284: Yes, speak of the devil. Jim, can we get a new list of who belongs to which projects so that come Monday when the PMs are doing their weekly status reports, they know who they're supposed to be sending them to?
+[TIMESTAMP] Speaker 051: Yeah, I can send that out.
+[TIMESTAMP] Speaker 284: Okay, great. Thanks.
+[TIMESTAMP] Speaker 284: Hi, Speaker 246.
+[TIMESTAMP] Speaker 284: Hi, good. Morning. Good morning. Morning. Hi, Speaker 246.
+[TIMESTAMP] Speaker 284: Good afternoon.
+[TIMESTAMP] Speaker: Hi, Aureli. Hello, everyone.
+[TIMESTAMP] Speaker 284: Hello. Good.
+[TIMESTAMP] Speaker: Afternoon.
+[TIMESTAMP] Speaker 102: Good to see you today.
+[TIMESTAMP] Speaker 102: Speaker 121, did you hear anything back from Cédric or Speaker 070?
+[TIMESTAMP] Speaker: No, let me see if they have confirmed. I haven't heard anything back.
+[TIMESTAMP] Speaker 284: Yeah, it shows that Cédric had accepted.
+[TIMESTAMP] Speaker: But
+[TIMESTAMP] Speaker 284: I didn't see Speaker 070 on the actual invite.
+[TIMESTAMP] Speaker 284: Speaker 070?
+[TIMESTAMP] Speaker 284: I don't see him listed here.
+[TIMESTAMP] Speaker: Okay, which one's Speaker 070?
+[TIMESTAMP] Speaker 102: I just showed no response. Anyway,
+[TIMESTAMP] Speaker: I just wanted to make sure. He's on there. Speaker 070 Gautier.
+[TIMESTAMP] Speaker 284: From Fire
+[TIMESTAMP] Speaker: Garen, yeah. Sorry, Speaker 102, excuse me.
+[TIMESTAMP] Speaker 102: No, no. Problem. I was just wondering if we wanted to wait for them. I think he's the one who requested the meeting. Thanks, Speaker 024 and the Texie team. Is there. Anyone else from the Texie that we need to wait for?
+[TIMESTAMP] Speaker: I can reach out to him also.
+[TIMESTAMP] Speaker: It would be just the 2 of [COUNTRY]. But I think Cédric is going to join. Okay. Okay. I.
+[TIMESTAMP] Speaker 102: Know we only only have the… have a question.
+[TIMESTAMP] Speaker: Cédric's in the waiting room now, Speaker 102.
+[TIMESTAMP] Speaker 102: Cédric?
+[TIMESTAMP] Speaker 102: Can you hear [COUNTRY]?
+[TIMESTAMP] Speaker 051: Hi, Hi everyone, everyone.
+[TIMESTAMP] Speaker 051: Sorry to be late. I'm with Speaker 070 and Julien. We are trying to connect the room. So just give [COUNTRY] 2 more minutes, please. Thank you.
+[TIMESTAMP] Speaker 102: Problem.
+[TIMESTAMP] Speaker 102: Let [COUNTRY] know, when you're ready, Cédric. I think we only have a couple items, but there's only 30 minutes or so for the team today, so I wanted to make sure that we tried to get through them as best as possible.
+[TIMESTAMP] Speaker 051: Okay.
+[TIMESTAMP] Speaker: You're on mute.
+[TIMESTAMP] Speaker 051: Okay, let's start. It doesn't work, so let's start the They can't hear you. Anyway. So.
+[TIMESTAMP] Speaker 102: Great. Speaker 121, since this is your meeting, do you want to start kick [COUNTRY] off or would you like me to?
+[TIMESTAMP] Speaker: Speaker 102, please feel free. Thank you. And. Thank you. Very much. Hi, Speaker 051. Nice to see you. And thank you for joining, guys. On your end. You're welcome.
+[TIMESTAMP] Speaker 102: Yeah. Thank you. So, Speaker 051, I believe what we wanted to focus. Our discussion on today was line. 8 8, 12 in the requirements. Spreadsheet, the [SOFTWARE_VENDOR] Sheet that was sent out or shared with the team back a while ago. So that's where I want to focus. Just a couple of housekeeping items. I know, Speaker 121 was kind enough to get this meeting set up for [COUNTRY]. As the CSM. We have Aaliyah on the call. She is actually going to be taking over as the CSM for the TexeBiogaran account. Okay. So just wanted to introduce you. To her if you haven't already met her. And I'll continue. I'll just
+[TIMESTAMP] Speaker 010: Take a moment. I'm so sorry. I'll just take a moment. Hi, everyone. So I'll be the newly appointed CSM provider and I'm really excited to work on this project. And if there is anything that you would like any assistance with, so I'll be here. So right after the implementation is when I'll be your main point of contact. Until, then, you have eyesight on the team to assist you with anything and anything anything that's required. Required. Required. But I'll anyway be overlooking the project. Thank you. Okay.
+[TIMESTAMP] Speaker 051: Thank you. Nice to meet you. Did you already meet Customer 31 or is it the first time as well? Oh, no.
+[TIMESTAMP] Speaker 010: This is the first time. I'm meeting everyone here.
+[TIMESTAMP] Speaker 051: So I'm Cédric, IT project manager in Customer 31. I'm in charge of the Q&S projects. And with me we have a Hello, little I am Julien Donaud, I am the process owner for ABC Corp.
+[TIMESTAMP] Speaker 010: Wonderful to meet you.
+[TIMESTAMP] Speaker 051: Nice to meet you. And there is Speaker 070. Hello, hi, Speaker 070. I am a manager of Cédric. Hi, Speaker 070.
+[TIMESTAMP] Speaker 010: I already have seen Cédric and Speaker 070's team pop up a lot, so nice to meet you, everyone.
+[TIMESTAMP] Speaker 051: Nice to meet you.
+[TIMESTAMP] Speaker 102: Then on the Customer 31 side, Speaker 010, we have Speaker 024 and Aurora. I'm apologizing. Yes. And Mylene.
+[TIMESTAMP] Speaker 010: Hello, Lady. Nice to meet you.
+[TIMESTAMP] Speaker: Hi. Nice to meet you.
+[TIMESTAMP] Speaker: I'm the project manager in the Customer 31 team.
+[TIMESTAMP] Speaker 010: Okay. Wonderful. And I'm also a project manager in Texeït. Team.
+[TIMESTAMP] Speaker 102: Okay.
+[TIMESTAMP] Speaker 102: Thank you for your help.
+[TIMESTAMP] Speaker 010: Yes, thank you. So much, Speaker 102. I just tried to talk to you for this real quick introduction.
+[TIMESTAMP] Speaker 102: Over to you. Okay, thank you. So, back to the spreadsheet. Speaker 246, maybe I'll let you go ahead and share and we can talk through the couple of items that we have. I think we wanted to focus on line 8 and line 12 today. And see if we can come to a good conclusion, give the team the information that they need to move forward. Yeah.
+[TIMESTAMP] Speaker 051: Just for information, we had a meeting with Customer 31. They shared with [COUNTRY] a schedule for the 12 other items with delivery dates. So. We are happy for that part. And. Now, the goal of this meeting, we would like to have a scheduled date as well for the 2 remaining points, so the line 8 and line 12.
+[TIMESTAMP] Speaker 246: So, for line 8, let's just share real I received this email that you sent as well with the screenshots for line 8 specifically. I I am in the process of creating a bug internally to fix this. That said, there is a way for Customer 31 to fix this with permissions instead of waiting for the product to fix it, if you need it now.
+[TIMESTAMP] Speaker 246: If it's fixed in our product, then it could be a future patch and I do don't know what when that could potentially be delivered to you. Guys. So I would recommend using a configuring something as like a temporary workaround until we can fix that in our product.
+[TIMESTAMP] Speaker 246: Or so before you
+[TIMESTAMP] Speaker 051: Are talking about the line 8 rights,
+[TIMESTAMP] Speaker 246: That's correct. Yep. Yep.
+[TIMESTAMP] Speaker 051: Let's see an investigation on the NC. Correct. The example. We shared.
+[TIMESTAMP] Speaker 051: Okay, so we would like to know how you're gonna fix that. And same question as any other items. If, if we will have any impact on the next release. And also a delivery date for that. Because what we want is to show to our team every point will be fixed at that date and we will be ready at that date to go live.
+[TIMESTAMP] Speaker 246: So, Customer 31 can fix this with a workaround if you would like them to just by removing permissions to that field so that you don't have to wait for a ABC Corp. Product fix. That means that you could get a fix as early as 2 weeks from now, instead of having to wait until our product has a patch that fixes it and we can release a fix. That said, we will fix it in our product.
+[TIMESTAMP] Speaker 246: So future there won't be an impact to an upgrade because we're doing the work work to fix it in our product. But at the moment, that is future state of our product, it won't be as quickly as Customer 31 can complete the configuration.
+[TIMESTAMP] Speaker 051: Yeah, okay, understood. That means it's only a question of permissions? So there is a specific permission set for this point? Oh, it's several...
+[TIMESTAMP] Speaker: Think we just need to remove the right to change this field value.
+[TIMESTAMP] Speaker 246: Yep. Or...
+[TIMESTAMP] Speaker 051: I think we can also do that.
+[TIMESTAMP] Speaker: Directly on the [PERSON], just making the field read only, or we can make a validation that triggers an error. If we change the field that is already completed. Yep. Think it's not a big deal. It's very quick to do.
+[TIMESTAMP] Speaker 246: Yeah. There are multiple ways you could do. This. So yes, you can remove permissions or you can make the field read only so that no one can edit it on the actual [PERSON]. So again, taxi fixing. This will be much quicker than [COUNTRY] fixing it.
+[TIMESTAMP] Speaker 051: Okay, or did you see my explication by mail? Mail?
+[TIMESTAMP] Speaker: Yes, I made the test also again and I had the same problem. So I think we can just make the field read only. I suppose it will be okay.
+[TIMESTAMP] Speaker 051: Okay, so now we know how to fix it. Maybe Aurelien, Or can you add this on the schedule you shared with [COUNTRY]? Yesterday? I mean, few days ago, but we shared again yesterday to the team at this point. And what about the point 12 then?
+[TIMESTAMP] Speaker 246: Yep. So, for 12, there is nothing out of box that exists. We've already discussed. This. My recommendation is to wait for this to come in a future. Release. That said, I have escalated to our product team to find out a specific date. I don't know if this is summer 26 or winter 26. It should be sometime this year that we are going to implement this in the product. I. Just don't know when specifically. Our product team is already working on this out of box, but unfortunately, I don't have an answer as to when.
+[TIMESTAMP] Speaker 051: Because for [COUNTRY], it was a mandatory thing to have to go live, so if we are not able to have that point in the next month, we will be forced to wait summer or winter to go live only for that point.
+[TIMESTAMP] Speaker 051: Okay.
+[TIMESTAMP] Speaker 051: So,
+[TIMESTAMP] Speaker 051: There is any way to accelerate the process to include that on the next release? And also for me, there is an impact which is if you include this on the next release for [COUNTRY] to be able to add these points, we will be forced to do the next release as well. So for me, it's not that...
+[TIMESTAMP] Speaker 051: We'll have to validate it again. Yeah. Yeah. Mm. Just after the qualification. Yeah. But can you wait for that? Point? It's on the air. We have no date. It could be also 27. Yeah, but what I mean is we can't go live without that point. Yes, we will discuss it internally, but I think Celine won't be okay. Okay. Get.
+[TIMESTAMP] Speaker 051: If you are not able to give [COUNTRY] a date when you will add that on the next release,
+[TIMESTAMP] Speaker 051: Are you able to give [COUNTRY] a date when you will know the date of
+[TIMESTAMP] Speaker 051: The development for the next release?
+[TIMESTAMP] Speaker 246: I will find out. By tomorrow. Okay.
+[TIMESTAMP] Speaker 284: Speaker 246, can we, can you and I have a talk right after this call? Real? Quick. Okay, thanks.
+[TIMESTAMP] Speaker 051: That's all we wanted to know about the 14 items. And when we will have the answer for the line. 12, we will be able to have a date for the go live. So we'll be happy if we can have that in the next days.
+[TIMESTAMP] Speaker 246: So if we are not implementing it into our products soon. Enough, are you interested in doing this customization with ABC Corp and our product team, just so that I have an idea of what we should be designing? If you need me to start thinking about it, I can. But again, I just need to know if that's something that you guys would be looking looking to for do instead of waiting.
+[TIMESTAMP] Speaker 051: Yeah, yeah. Obviously, it will be a good thing. But. If we do that, way, we need to make sure it won't impact the next release as well.
+[TIMESTAMP] Speaker 246: So if we do things like this that are customizations, that will be out of box, It would be so that we don't have any technical debt. We would roll back the customization and implement whatever we have out of box as part of that upgrade process. So there should not be an impact. You will just move to out of box whenever we have that in the product.
+[TIMESTAMP] Speaker 051: Okay. Again, we will have to validate the new release. But. It's a temporary process for that specific part and then you will remove that temporary process and move to the... Okay. Yes, on devra. Être sur, LA zone du, coup... Sur l'annexe, Sur, l'annexe, release. Release. Il Y A peut être en Xe... Oui, voilà, c'est ça.
+[TIMESTAMP] Speaker 051: Contre, si nous l'en faisons.
+[TIMESTAMP] Speaker 051: Dans LA foulée, on aura UN foulée spécifique, pour, tout de suite, on devra re re valider sur le... Okay, if you do that, way, the only thing is, it's a good thing to fix this that way, because it will be quicker, but in that situation we will prefer to have that point fixed on the next release later. If we are able to manage that point point with the specific configuration, we can keep the specific configuration for a month and then it can be included on the release in one year or one year and a
+[TIMESTAMP] Speaker 051: I don't know if I was clear on that. Me too.
+[TIMESTAMP] Speaker 246: If
+[TIMESTAMP] Speaker 284: I understood you correctly, if we can't do it with a fix right now and we do a customization for you, what you're looking at is you would prefer [COUNTRY] to have it included in our out of the box space model further down the road than have it in the next actual version upgrade.
+[TIMESTAMP] Speaker 051: Yeah, exactly. Exactly. Because each release will make [COUNTRY] doing a lot of tests and qualification. So if you change a process on the next release, we will need to test again. So. That's why if the customization works, we can wait.
+[TIMESTAMP] Speaker 051: The release later.
+[TIMESTAMP] Speaker 284: Right. We can't guarantee that the company will wait for that piece to be fixed. But you need to retest anyway. And I believe this is, and Speaker 246, tell me if I'm wrong, I believe this is a small piece. It's not something that's a massive validation requirement.
+[TIMESTAMP] Speaker 246: No, we already support extension requests on some of these things anyway, so it shouldn't be too complicated.
+[TIMESTAMP] Speaker 284: Right, okay.
+[TIMESTAMP] Speaker 051: If we can have the 2 options, the first option, you are not able to fix this before summer or winter, then... No,
+[TIMESTAMP] Speaker 246: We will not. Be able to fix this in a custom patch for you. Guys. We don't do custom releases. So it would be either Summer 26 or Winter 26. Again, I don't know for sure. Okay,
+[TIMESTAMP] Speaker 051: But just for [COUNTRY] to take a decision on how we want to do this, because maybe one possibility could be okay. We go live without this. If we know it's only for a few months, but maybe not. So to take a decision. We need to know the date for 2 options. So that's why it's important anyway to know when it will be taken on the next release.
+[TIMESTAMP] Speaker 246: Yep, I can get that to you by tomorrow.
+[TIMESTAMP] Speaker 051: Okay, thank you.
+[TIMESTAMP] Speaker 051: Okay, perfect.
+[TIMESTAMP] Speaker 051: So, if we have the 2 options tomorrow, we'll be really happy and we will be able to move forward.
+[TIMESTAMP] Speaker 051: Just have a question. Not about the 14 items, but we talked about it yesterday with Customer 31.
+[TIMESTAMP] Speaker 051: We would like to know what happens when [CRM_PLATFORM] forced a release because we know that we can do the release manually, the secure release. But what about the [CRM_PLATFORM] release? Because the [CRM_PLATFORM] release are automatic. Automatic. So, we would like to understand the impacts of that.
+[TIMESTAMP] Speaker 246: So [CRM_PLATFORM] has release notes very similar to how we have release notes. And usually we do work on our side to ensure that there aren't any impacts to what ABC Corp managed package has.
+[TIMESTAMP] Speaker 246: If you are managing other things within with the [CRM_PLATFORM], then it's on you guys to review the release notes and make sure that there is no impact to other workflows that you have. But, ABC Corp and [CRM_PLATFORM] upgrades play nicely with one another. Those release notes are available to you. Online on [CRM_PLATFORM]. I'm sure it's on help.[CRM_PLATFORM].com.
+[TIMESTAMP] Speaker 246: But again, there's very limited, if any, impact. Impact And if there is an impact, we would have already done the work to fix that. Okay.
+[TIMESTAMP] Speaker 051: Okay. So you check the release note before it happened? And you let [COUNTRY] know if there is any impact to work on it?
+[TIMESTAMP] Speaker 051: Can you confirm that by mail? Mail? Because our quality manager wants to have that by mail if it's possible.
+[TIMESTAMP] Speaker 246: Yeah, I'm sure someone on the team can do that. Yeah.
+[TIMESTAMP] Speaker 051: Okay, perfect. Thank you.
+[TIMESTAMP] Speaker 051: There are other questions? No, it's okay.
+[TIMESTAMP] Speaker 051: Okay, so. Yeah, our financial team sent [COUNTRY] 2 bills, invoices, and we don't know what was about. About. So I can send you the invoice numbers by mail after the meeting. But basically, we received 2 invoices and we don't know what is about.
+[TIMESTAMP] Speaker: Yeah, go ahead and send that to [COUNTRY]. We'll be sure to follow up. Okay. I'll take a look at that for you, no, problem. Et
+[TIMESTAMP] Speaker 051: Revoir une facture sans être yeah, au cours.
+[TIMESTAMP] Speaker 051: The basically the process we can't receive an invoice before agreements with [COUNTRY] IT team, because the problem is when you send an invoice directly on our finance system. If it's not an invoice that we have to pay, you need to send again something to remove the invoice you sent previously. So it's a bit long and a specific process for everyone. So.
+[TIMESTAMP] Speaker: Okay. Will you be my point of contact to work through that?
+[TIMESTAMP] Speaker: Okay. Should I have questions? All right. Great. Thank you.
+[TIMESTAMP] Speaker: Yeah, I'd be happy to take a look. Okay, thank you.
+[TIMESTAMP] Speaker 051: Of course. For tomorrow? Sure. Okay, perfect. So... Remind you that we have 24 decisions. Yeah, just for your information, and that's why we need to have the answer tomorrow. We have a steering committee on the next next week, slide.
+[TIMESTAMP] Speaker 051: And, we'll take the decision if we want to go live at that moment. So. That's why we need to have all the information before the dates.
+[TIMESTAMP] Speaker: Okay. Sounds good. Thank you for that.
+[TIMESTAMP] Speaker: Okay.
+[TIMESTAMP] Speaker 051: Perfect. Thank you very much.
+[TIMESTAMP] Speaker: We appreciate it. So is everybody okay. For next steps? I'll be…go ahead and send the invoice information to me and then we'll we can work through it from there together.
+[TIMESTAMP] Speaker 051: Okay. Thank you very much. Okay?
+[TIMESTAMP] Speaker: Great. Thank you, Speaker 246.
+[TIMESTAMP] Speaker 051: Bye. Thank
+[TIMESTAMP] Speaker: You. All right.
+
+---
+Client resource profile: Business-led transformation team.
+Client project resource guidance: Assume a business-led rollout with executive sponsor, business process lead, change/training lead, department SMEs, client PM, and part-time IT support. Emphasis should be placed on user readiness, role-based training, communications, and adoption across impacted teams.
+Use this context to tailor the Client Project Resources slide and related assumptions. Keep wording conservative, avoid named individuals, and adjust based on any stronger evidence elsewhere in the transcript.
+---

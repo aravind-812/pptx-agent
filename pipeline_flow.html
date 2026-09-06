@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPT Agent — Pipeline Flow</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #0f1117; color: #e2e8f0; min-height: 100vh; }
+
+  /* TOP BAR */
+  .topbar { background: #1a1d2e; border-bottom: 1px solid #2d3154; padding: 12px 24px; display: flex; align-items: center; gap: 16px; position: sticky; top: 0; z-index: 100; }
+  .topbar h1 { font-size: 16px; font-weight: 700; color: #818cf8; letter-spacing: .5px; }
+  .legend { display: flex; gap: 14px; margin-left: auto; font-size: 11px; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 5px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-green { background: #22c55e; }
+  .dot-yellow { background: #f59e0b; }
+  .dot-red { background: #ef4444; }
+  .dot-blue { background: #60a5fa; }
+
+  /* LAYOUT */
+  .container { display: flex; height: calc(100vh - 57px); }
+  .canvas { flex: 1; overflow: auto; padding: 40px; position: relative; }
+  .sidebar { width: 420px; background: #1a1d2e; border-left: 1px solid #2d3154; overflow-y: auto; flex-shrink: 0; }
+
+  /* PIPELINE */
+  .pipeline { display: flex; align-items: flex-start; gap: 0; min-width: 1100px; }
+  .pipe-step { display: flex; flex-direction: column; align-items: center; }
+  .arrow { display: flex; align-items: center; padding-top: 48px; }
+  .arrow svg { width: 50px; height: 30px; }
+
+  /* NODE CARDS */
+  .node { background: #1e2235; border: 2px solid #2d3154; border-radius: 14px; width: 180px; cursor: pointer; transition: all .2s; position: relative; overflow: visible; }
+  .node:hover { border-color: #818cf8; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(129,140,248,.2); }
+  .node.active { border-color: #818cf8; box-shadow: 0 0 0 3px rgba(129,140,248,.2); }
+
+  .node-header { padding: 14px 16px 10px; }
+  .node-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 4px; }
+  .node-title { font-size: 15px; font-weight: 700; color: #e2e8f0; }
+  .node-model { font-size: 10px; color: #475569; margin-top: 3px; }
+
+  .node-body { padding: 8px 16px 14px; border-top: 1px solid #2d3154; }
+  .phase-list { list-style: none; }
+  .phase-item { font-size: 11px; color: #94a3b8; padding: 3px 0; display: flex; align-items: center; gap: 6px; }
+  .phase-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #3b82f6; flex-shrink: 0; }
+  .phase-item.warn::before { background: #f59e0b; }
+  .phase-item.free::before { background: #22c55e; }
+
+  .warn-badge { position: absolute; top: -8px; right: -8px; background: #ef4444; color: #fff; font-size: 10px; font-weight: 700; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 8px rgba(239,68,68,.6); }
+
+  /* FIX LOOP */
+  .fix-loop-container { margin-top: 32px; min-width: 1100px; position: relative; }
+  .fix-loop-line { border: 2px dashed #f59e0b; border-radius: 12px; padding: 16px 24px; display: flex; align-items: center; gap: 16px; position: relative; background: rgba(245,158,11,.04); }
+  .fix-loop-label { font-size: 11px; color: #f59e0b; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+  .fix-loop-desc { font-size: 11px; color: #78716c; }
+
+  /* SIDEBAR CONTENT */
+  .sidebar-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #334155; text-align: center; gap: 8px; padding: 40px; }
+  .sidebar-empty svg { opacity: .3; }
+  .sidebar-empty p { font-size: 13px; }
+
+  .detail-panel { padding: 24px; }
+  .detail-title { font-size: 18px; font-weight: 700; color: #818cf8; margin-bottom: 4px; }
+  .detail-subtitle { font-size: 11px; color: #475569; margin-bottom: 20px; }
+
+  .section { margin-bottom: 24px; }
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #64748b; margin-bottom: 10px; border-bottom: 1px solid #2d3154; padding-bottom: 6px; }
+
+  .phase-block { background: #131625; border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; border-left: 3px solid #3b82f6; }
+  .phase-block.llm { border-left-color: #a78bfa; }
+  .phase-block.free { border-left-color: #22c55e; }
+  .phase-name { font-size: 12px; font-weight: 600; color: #e2e8f0; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+  .phase-desc { font-size: 11px; color: #64748b; line-height: 1.5; }
+  .badge { font-size: 9px; padding: 2px 6px; border-radius: 4px; font-weight: 700; text-transform: uppercase; }
+  .badge-green { background: #14532d; color: #4ade80; }
+  .badge-purple { background: #2e1065; color: #c4b5fd; }
+  .badge-yellow { background: #451a03; color: #fbbf24; }
+
+  /* WARNINGS */
+  .warning-item { background: #1c1410; border: 1px solid #78350f; border-radius: 8px; padding: 12px 14px; margin-bottom: 8px; }
+  .warning-item.critical { border-color: #7f1d1d; background: #1c1010; }
+  .warning-item.medium { border-color: #78350f; background: #1c1410; }
+  .warning-item.low { border-color: #1e3a5f; background: #0c1a2e; }
+  .warning-header { font-size: 11px; font-weight: 700; display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+  .warning-header.critical { color: #f87171; }
+  .warning-header.medium { color: #fbbf24; }
+  .warning-header.low { color: #60a5fa; }
+  .warning-body { font-size: 11px; color: #64748b; line-height: 1.5; }
+  .warning-fix { font-size: 10px; color: #22c55e; margin-top: 6px; font-weight: 600; }
+  .warning-loc { font-size: 10px; color: #475569; margin-bottom: 4px; font-family: monospace; }
+
+  /* DATA FLOW */
+  .data-flow { display: flex; flex-direction: column; gap: 6px; }
+  .flow-item { background: #131625; border-radius: 6px; padding: 8px 12px; font-size: 11px; display: flex; justify-content: space-between; align-items: center; }
+  .flow-key { color: #94a3b8; font-family: monospace; }
+  .flow-val { color: #60a5fa; font-size: 10px; }
+
+  /* TABS */
+  .tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid #2d3154; padding-bottom: 0; }
+  .tab { padding: 8px 14px; font-size: 12px; cursor: pointer; border-radius: 6px 6px 0 0; color: #64748b; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all .15s; }
+  .tab:hover { color: #e2e8f0; }
+  .tab.active { color: #818cf8; border-bottom-color: #818cf8; background: rgba(129,140,248,.05); }
+
+  /* OVERVIEW PANEL */
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+  .stat-card { background: #131625; border-radius: 8px; padding: 12px; }
+  .stat-val { font-size: 22px; font-weight: 700; color: #818cf8; }
+  .stat-label { font-size: 11px; color: #64748b; margin-top: 2px; }
+
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 10px; font-weight: 600; }
+  .pill-green { background: #14532d; color: #4ade80; }
+  .pill-red { background: #450a0a; color: #f87171; }
+  .pill-yellow { background: #431407; color: #fb923c; }
+
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2d3154; border-radius: 3px; }
+
+  /* END NODE */
+  .end-node { width: 80px; height: 80px; border-radius: 50%; background: #1e2235; border: 2px solid #2d3154; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: default; }
+  .end-node span { font-size: 11px; color: #475569; }
+
+  /* CONNECTOR ARROWS */
+  .cond-arrow { display: flex; flex-direction: column; align-items: center; padding-top: 48px; gap: 4px; }
+  .cond-label { font-size: 9px; color: #22c55e; font-weight: 600; text-transform: uppercase; }
+  .cond-label.fail { color: #ef4444; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>⚡ PPT Agent — Pipeline Flow</h1>
+  <div class="legend">
+    <div class="legend-item"><div class="dot dot-green"></div><span>No LLM cost</span></div>
+    <div class="legend-item"><div class="dot dot-blue"></div><span>LLM call</span></div>
+    <div class="legend-item"><div class="dot dot-yellow"></div><span>Warning</span></div>
+    <div class="legend-item"><div class="dot dot-red"></div><span>Failure risk</span></div>
+    <span style="font-size:11px;color:#475569;margin-left:8px;">Click any node for details</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="canvas">
+
+    <!-- MAIN PIPELINE -->
+    <div class="pipeline">
+
+      <!-- EXTRACTOR -->
+      <div class="pipe-step">
+        <div class="node" id="node-extractor" onclick="showNode('extractor')">
+          <div class="warn-badge">2</div>
+          <div class="node-header">
+            <div class="node-label">Stage 1</div>
+            <div class="node-title">Extractor</div>
+            <div class="node-model">Haiku 4.5 · optional</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item free">Size check (30K threshold)</li>
+              <li class="phase-item">Chunk transcript (60K/chunk)</li>
+              <li class="phase-item">Extract structured JSON</li>
+              <li class="phase-item free">Merge chunk extractions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 50 30" fill="none"><line x1="0" y1="15" x2="40" y2="15" stroke="#3b82f6" stroke-width="2"/><polygon points="40,9 50,15 40,21" fill="#3b82f6"/></svg>
+      </div>
+
+      <!-- PLANNER -->
+      <div class="pipe-step">
+        <div class="node" id="node-planner" onclick="showNode('planner')">
+          <div class="warn-badge">4</div>
+          <div class="node-header">
+            <div class="node-label">Stage 2</div>
+            <div class="node-title">Planner</div>
+            <div class="node-model">Sonnet 4.6 · max_tokens=16K</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item free">Load shape inventory</li>
+              <li class="phase-item free">Slim inventory (−58% tokens)</li>
+              <li class="phase-item">Render thumbnails (LibreOffice)</li>
+              <li class="phase-item">LLM → JSON edit plan</li>
+              <li class="phase-item free">Parse + validate plan</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 50 30" fill="none"><line x1="0" y1="15" x2="40" y2="15" stroke="#3b82f6" stroke-width="2"/><polygon points="40,9 50,15 40,21" fill="#3b82f6"/></svg>
+      </div>
+
+      <!-- EXECUTOR -->
+      <div class="pipe-step">
+        <div class="node" id="node-executor" onclick="showNode('executor')">
+          <div class="warn-badge">5</div>
+          <div class="node-header">
+            <div class="node-label">Stage 3</div>
+            <div class="node-title">Executor</div>
+            <div class="node-model">Haiku 4.5 (fix: Sonnet)</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item free">P0: Remove slides/shapes</li>
+              <li class="phase-item free">P1: Preflight resolve (fuzzy)</li>
+              <li class="phase-item free">P2: Batch apply (deterministic)</li>
+              <li class="phase-item warn">P3: LLM fallback (if needed)</li>
+              <li class="phase-item free">P4a: Relayout dense slides</li>
+              <li class="phase-item free">P4b: Placeholder sweep</li>
+              <li class="phase-item free">P4c: Verify edits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 50 30" fill="none"><line x1="0" y1="15" x2="40" y2="15" stroke="#3b82f6" stroke-width="2"/><polygon points="40,9 50,15 40,21" fill="#3b82f6"/></svg>
+      </div>
+
+      <!-- REVIEWER -->
+      <div class="pipe-step">
+        <div class="node" id="node-reviewer" onclick="showNode('reviewer')">
+          <div class="warn-badge">3</div>
+          <div class="node-header">
+            <div class="node-label">Stage 4</div>
+            <div class="node-title">Reviewer</div>
+            <div class="node-model">Haiku 4.5 · vision</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item free">S1: Deterministic pre-check</li>
+              <li class="phase-item warn">S2: Render PNGs (LibreOffice)</li>
+              <li class="phase-item">S3: 10-point LLM QA</li>
+              <li class="phase-item free">S4: Parse verdict</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONDITIONAL EDGES -->
+      <div class="cond-arrow">
+        <svg viewBox="0 0 50 30" fill="none"><line x1="0" y1="15" x2="40" y2="15" stroke="#22c55e" stroke-width="2"/><polygon points="40,9 50,15 40,21" fill="#22c55e"/></svg>
+        <div class="cond-label">PASS</div>
+      </div>
+
+      <!-- END -->
+      <div class="pipe-step">
+        <div class="end-node">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="margin-top:4px;">END</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FIX LOOP -->
+    <div class="fix-loop-container">
+      <div class="fix-loop-line">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3v5h5" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div>
+          <div class="fix-loop-label">Fix Loop (max 2 attempts)</div>
+          <div class="fix-loop-desc">REVIEWER verdict = FIX NEEDED → re-enter EXECUTOR with Sonnet, scoped to flagged slides only. After 2 attempts, pipeline ends regardless of verdict.</div>
+        </div>
+        <div style="margin-left:auto;display:flex;gap:12px;align-items:center;">
+          <div style="text-align:center;">
+            <div style="font-size:18px;font-weight:700;color:#f59e0b;">2</div>
+            <div style="font-size:10px;color:#64748b;">max retries</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-size:18px;font-weight:700;color:#a78bfa;">Sonnet</div>
+            <div style="font-size:10px;color:#64748b;">on fix pass</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACKEND / INFRA -->
+    <div style="margin-top:36px;min-width:1100px;">
+      <div style="font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Infrastructure Layer</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <div class="node" style="width:160px;cursor:pointer;" onclick="showNode('backend')">
+          <div class="warn-badge">4</div>
+          <div class="node-header">
+            <div class="node-label">API</div>
+            <div class="node-title">FastAPI Backend</div>
+            <div class="node-model">SSE streaming</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item warn">In-memory file store</li>
+              <li class="phase-item warn">Unbounded thread pool</li>
+              <li class="phase-item free">PDF text extraction</li>
+              <li class="phase-item warn">180s SSE timeout</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="node" style="width:160px;cursor:pointer;" onclick="showNode('tools')">
+          <div class="warn-badge">3</div>
+          <div class="node-header">
+            <div class="node-label">Tools</div>
+            <div class="node-title">PPTX Editor</div>
+            <div class="node-model">python-pptx + lxml</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item free">Batch edit engine</li>
+              <li class="phase-item free">Fuzzy shape resolve</li>
+              <li class="phase-item warn">LibreOffice (optional)</li>
+              <li class="phase-item free">Pre-check / verify</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="node" style="width:160px;cursor:pointer;" onclick="showNode('graph')">
+          <div class="warn-badge" style="background:#f59e0b;">2</div>
+          <div class="node-header">
+            <div class="node-label">Orchestration</div>
+            <div class="node-title">LangGraph</div>
+            <div class="node-model">StateGraph</div>
+          </div>
+          <div class="node-body">
+            <ul class="phase-list">
+              <li class="phase-item free">State propagation</li>
+              <li class="phase-item warn">Max 2 fix loops</li>
+              <li class="phase-item free">Conditional routing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-empty" id="sidebar-empty">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/><rect x="9" y="3" width="6" height="4" rx="1" stroke="#334155" stroke-width="1.5"/><line x1="9" y1="12" x2="15" y2="12" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/><line x1="9" y1="16" x2="13" y2="16" stroke="#334155" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <p>Click a node to see internals,<br>warnings, and fix suggestions</p>
+    </div>
+    <div id="sidebar-content" style="display:none;"></div>
+  </div>
+</div>
+
+<script>
+const DATA = {
+  extractor: {
+    title: 'Extractor',
+    subtitle: 'agents/extractor.py · Haiku 4.5 · Pre-planner transcript distiller',
+    overview: 'Distils raw sales-call transcripts into structured JSON facts. Runs BEFORE planner. Solves: (1) large transcripts >60K chars exceeding planner context, (2) smalltalk/logistics polluting planner input.',
+    cost: 'Zero LLM cost on short transcripts (<30K chars). Haiku on larger ones.',
+    phases: [
+      { name: 'Size check', type: 'free', desc: 'If transcript ≤30,000 chars → skip LLM entirely, return {}. Planner handles raw text directly. Threshold hardcoded in extractor.py:17.' },
+      { name: 'Chunk splitting', type: 'free', desc: 'Splits on ====...==== separators (20+ = signs). If no separators found, uses raw as single chunk. Chunk target: 60,000 chars.' },
+      { name: 'LLM extraction (Haiku)', type: 'llm', desc: 'Calls Haiku per chunk with SYSTEM_PROMPT requesting structured JSON with: customer_profile, project, timeline, budget, stakeholders, key_decisions, modules_features, pain_points, success_criteria, verbatim_highlights, all_facts.' },
+      { name: 'Merge extractions', type: 'free', desc: 'Merges list keys (union, dedup by JSON serialization). Merges dict keys (first non-null wins). Returns single merged dict.' },
+    ],
+    dataOut: [
+      { key: 'extracted_facts', val: 'dict | {}' },
+    ],
+    warnings: [
+      {
+        sev: 'critical',
+        title: 'Silent chunk failure — data loss',
+        loc: 'extractor.py:119',
+        body: 'If LLM call fails for any chunk, the except block does `pass`. That chunk\'s facts are silently dropped. Planner never knows. Large transcripts with LLM errors produce partial or empty extracted_facts.',
+        fix: 'Log the failure, count missed chunks, pass warning to planner state.'
+      },
+      {
+        sev: 'medium',
+        title: 'Hardcoded 30K bypass threshold',
+        loc: 'extractor.py:17',
+        body: 'Transcripts ≤30K chars skip extraction entirely. A 29K char transcript dense with structured data gets zero extraction. Threshold is not configurable at runtime.',
+        fix: 'Make threshold a parameter. Or remove it — Haiku on a 29K transcript costs <$0.01.'
+      },
+    ]
+  },
+
+  planner: {
+    title: 'Planner',
+    subtitle: 'agents/planner.py · Sonnet 4.6 · Edit plan generator',
+    overview: 'Core intelligence. Reads shape inventory + source content, outputs a JSON edit plan with edits[], slides_to_remove[], delete_shapes[], dense_slides[], strategic_context. Has prompt caching on Anthropic (90% off cached tokens).',
+    cost: 'Most expensive step. Sonnet 4.6 with up to 16K output tokens. ~$0.15–0.25/deck.',
+    phases: [
+      { name: 'Load + slim inventory', type: 'free', desc: 'Loads PPTX, calls op_info() to get all shape names/types/text. Strips width_emu, height_emu, shape_id (−58% tokens). Keeps width_px for narrow-column checks.' },
+      { name: 'Render thumbnails', type: 'free', desc: 'Renders up to 8 slides to PNG via LibreOffice. Encodes as base64. Injected as image_url blocks into HumanMessage for layout-aware planning. Gracefully returns [] if LibreOffice absent — planner works text-only.' },
+      { name: 'LLM call (Sonnet)', type: 'llm', desc: 'System prompt (~2500 tokens, cached). Human message: source_content + shape_inventory + optional thumbnails. max_tokens=16000. Returns JSON edit plan in ```json block.' },
+      { name: 'JSON extraction', type: 'free', desc: 'Regex extracts ```json block. Falls back to first { found in output (handles truncated responses). json.loads() then validates. Raises ValueError with hint on parse failure.' },
+    ],
+    dataOut: [
+      { key: 'edit_plan.edits', val: 'list[{slide, op, shape, text, evidence}]' },
+      { key: 'edit_plan.slides_to_remove', val: 'list[int]' },
+      { key: 'edit_plan.delete_shapes', val: 'list[{slide, shapes[], reason}]' },
+      { key: 'edit_plan.dense_slides', val: 'list[int]' },
+      { key: 'edit_plan.strategic_context', val: 'dict' },
+    ],
+    warnings: [
+      {
+        sev: 'critical',
+        title: 'max_tokens=16000 can truncate large plan JSON',
+        loc: 'planner.py:214',
+        body: 'Large templates (50+ shapes) produce big JSON. With thumbnails also consuming tokens, the plan can be truncated mid-JSON. The fallback parser grabs first { which may produce partial/invalid plan that passes json.loads() but has missing edits.',
+        fix: 'Increase max_tokens to 32000 (Sonnet supports it). Or split into two calls: strategic analysis then edits.'
+      },
+      {
+        sev: 'critical',
+        title: 'Fallback JSON parser grabs wrong { if plan is truncated',
+        loc: 'planner.py:279-281',
+        body: 'If ```json block is absent, regex grabs first { onward. If LLM output reasoning text before the JSON block, this grabs the wrong object. json.loads() may succeed on partial JSON if it happens to be valid.',
+        fix: 'Add a check: if the parsed plan has 0 edits and 0 slides_to_remove, raise a warning rather than silently proceeding.'
+      },
+      {
+        sev: 'medium',
+        title: 'Thumbnails capped at 8 slides',
+        loc: 'planner.py:13',
+        body: 'Only first 8 slides rendered for planner vision context. Slides 9+ get no visual layout analysis. Planner may misplace content or misjudge column widths on later slides.',
+        fix: 'Render all slides but send only the slides that have shapes needing edits. Or increase cap to 16.'
+      },
+      {
+        sev: 'medium',
+        title: 'Raw transcript fallback sends up to first 3000 chars only',
+        loc: 'planner.py:221',
+        body: 'When extracted_facts exists, planner gets full extracted JSON + only first 3000 chars of raw transcript. Critical facts buried after char 3000 in the raw transcript are invisible to planner.',
+        fix: 'If extracted_facts is populated, skip raw excerpt entirely — the structured facts are sufficient. Sending 3K chars of raw is redundant noise.'
+      },
+    ]
+  },
+
+  executor: {
+    title: 'Executor',
+    subtitle: 'agents/executor.py · Haiku 4.5 (fix: Sonnet) · 4-phase hybrid executor',
+    overview: 'Applies the edit plan. Goal: zero LLM cost on happy path. Phase 1-2 and 4 are fully deterministic. Phase 3 (LLM fallback) fires only when shape names don\'t match or batch fails. On fix pass: uses Sonnet, filters edits to flagged slides only.',
+    cost: 'Happy path: $0. LLM fallback: Haiku per failed edit group. Fix pass: Sonnet.',
+    phases: [
+      { name: 'P0: Slide/shape removal', type: 'free', desc: 'Removes slides_to_remove (descending index order to avoid offset shift). Deletes delete_shapes groups (image + textbox + border). Only on first pass — never re-attempted on fix.' },
+      { name: 'P1: Preflight resolve', type: 'free', desc: 'Opens PPTX once. For every edit, calls op_resolve_shape_name (fuzzy match: exact → case-insensitive → word-overlap → Levenshtein). Returns resolved list + unresolvable list. No LLM. Adds _original_shape metadata for audit.' },
+      { name: 'P2: Batch apply', type: 'free', desc: 'op_apply_edits_batch: applies all resolved edits in one transaction with autofit=True. Handles set_text, set_cell, set_para. Collects failed results by index for phase 3.' },
+      { name: 'P3: LLM fallback (ReAct)', type: 'llm', desc: 'Only fires for unresolvable_preflight + failed_in_batch. Sends failed edits + available shape names to Haiku (or Sonnet on fix). Uses create_react_agent with 18 tools. recursion_limit=40. LLM should use pptx_apply_edits_batch for efficiency.' },
+      { name: 'P4a: Dense relayout', type: 'free', desc: 'For dense_slides: checks if shapes vertically overlap. Skips column/grid layouts (would break design). Only relflows if actual overlap detected. Uses op_relayout_slide.' },
+      { name: 'P4b: Placeholder sweep', type: 'free', desc: 'Scans edited slides for leftover placeholders ([X], TODO, Enter, Lorem, etc.). Replaces with empty string. Note: sweep_targets = edited slides only (not all slides).' },
+      { name: 'P4c: Verify edits', type: 'free', desc: 'op_verify_edits: checks if resolved edits actually made it into the file. Reports mismatches. Does NOT re-apply — just reports for reviewer.' },
+    ],
+    dataOut: [
+      { key: 'fix_attempts', val: 'int (incremented)' },
+      { key: 'executor_log', val: 'dict (phase trace)' },
+      { key: 'executor_llm_used', val: 'bool' },
+    ],
+    warnings: [
+      {
+        sev: 'critical',
+        title: 'lru_cache on _get_agent — stale state across concurrent requests',
+        loc: 'executor.py:125-128',
+        body: 'create_react_agent is cached by (provider, model). ReAct agents are NOT stateless — they hold message history. Multiple concurrent requests share the same agent instance. This causes state bleed: one request\'s tool calls contaminate another\'s context.',
+        fix: 'Remove lru_cache. create_react_agent is cheap (just binds llm+tools). Create fresh instance per request.'
+      },
+      {
+        sev: 'critical',
+        title: 'P4b sweep replaces placeholder with empty string → master placeholder exposed',
+        loc: 'executor.py:432',
+        body: 'op_placeholder_sweep(out, only_slides=sweep_targets, replacement=""). Setting text to "" on a shape removes its text run but exposes PowerPoint\'s master placeholder text ("CLICK TO EDIT MASTER TITLE STYLE"). The reviewer detects this, but it triggers a fix loop that may not help.',
+        fix: 'If placeholder found in a shape, either (a) delete the shape, or (b) set a meaningful default from the shape\'s context instead of empty string.'
+      },
+      {
+        sev: 'medium',
+        title: 'Fix pass skips slides_to_remove but plan still has them',
+        loc: 'executor.py:309',
+        body: 'On fix_attempts > 0, slides_to_remove = []. Good — avoids double-removal. But delete_shapes is also silently skipped. If first pass partially deleted shapes and left orphans, fix pass cannot clean them up.',
+        fix: 'On fix pass, re-run delete_shapes for slides that are still in review_issues.'
+      },
+      {
+        sev: 'medium',
+        title: 'Phase 3 recursion_limit=40 may hit on complex templates',
+        loc: 'executor.py:121',
+        body: 'ReAct agent for fallback has limit=40 iterations. Templates with many ambiguous shapes (15+ failed edits) plus tool-call overhead can exceed 40 steps. Exception is caught and logged, edits silently not applied.',
+        fix: 'Increase to 60. Or split failed edits into batches of 10 for the LLM.'
+      },
+      {
+        sev: 'low',
+        title: 'P4c verification uses resolved[] not all edits',
+        loc: 'executor.py:441',
+        body: 'verify_edits runs only on Phase 1 resolved edits. Edits handled by Phase 3 LLM (the most likely to fail) are NOT verified. Reviewer sees passed verification but LLM edits may have silently failed.',
+        fix: 'Re-read shape text after Phase 3 and include LLM-handled edits in verification.'
+      },
+    ]
+  },
+
+  reviewer: {
+    title: 'Reviewer',
+    subtitle: 'agents/reviewer.py · Haiku 4.5 + vision · 10-point QA agent',
+    overview: 'Two-step QA: (1) deterministic pre-check (op_precheck) catches structural issues without LLM, (2) multimodal LLM QA on rendered PNGs checks visual quality, grounding, sanitization, content wastage. Pre-check hard failures bypass LLM and force FIX NEEDED.',
+    cost: 'Haiku 4.5 + up to 8 slide images. ~$0.02–0.05/review.',
+    phases: [
+      { name: 'S1: Deterministic pre-check', type: 'free', desc: 'op_precheck: checks placeholder remnants, ungrounded numbers, content wastage, table cell overflow, empty title shapes, shape position drift. Returns hard failures (→ FIX NEEDED) and warnings (→ LLM confirms).' },
+      { name: 'S2: PNG render', type: 'free', desc: 'SKIPPED if precheck is fully clean (zero hard failures, zero warnings). Otherwise renders up to 8 edited slides via LibreOffice. Gracefully skips if LibreOffice absent.' },
+      { name: 'S3: LLM QA (Haiku)', type: 'llm', desc: '10-point checklist: overflow, out-of-bounds, overlap, invisible text, blank slides, placeholders, broken layout, grounding, sanitization, content wastage, alignment, table overflow. Sends source excerpt (4000 chars), precheck results, slide PNGs.' },
+      { name: 'S4: Verdict parse', type: 'free', desc: 'Extracts ISSUES TO FIX: block via regex. Parses slide N: lines so executor knows what to fix. Pre-check hard failures always override verdict to FIX NEEDED. LLM unavailable + precheck pass → PASS (skips visual QA gracefully).' },
+    ],
+    dataOut: [
+      { key: 'review_verdict', val: '"PASS" | "FIX NEEDED"' },
+      { key: 'review_issues', val: 'list[str] (slide N: format)' },
+    ],
+    warnings: [
+      {
+        sev: 'critical',
+        title: 'Same lru_cache stale-agent bug as executor',
+        loc: 'reviewer.py:127-130',
+        body: 'reviewer._get_agent is also lru_cached. Same concurrent request contamination issue. Reviewer\'s tool calls from one job appear in another job\'s context.',
+        fix: 'Remove lru_cache from reviewer._get_agent as well.'
+      },
+      {
+        sev: 'medium',
+        title: 'Source excerpt truncated to 4000 chars for grounding check',
+        loc: 'reviewer.py:217-219',
+        body: 'Grounding check (check 8) compares slide content against source[:4000]. Facts buried in a long transcript (char 4001+) appear "ungrounded" even if they\'re valid. This could trigger false-positive FIX NEEDED loops.',
+        fix: 'Use extracted_facts (structured JSON, much smaller) for grounding when available. Already done for the json branch — but extracted_facts[:4000] still truncates on large extractions.'
+      },
+      {
+        sev: 'medium',
+        title: 'precheck_clean skips visual render — misses visual-only issues',
+        loc: 'reviewer.py:198-201',
+        body: 'If pre-check is fully clean, LibreOffice render is skipped. Reviewer runs LLM without images. But pre-check cannot detect: invisible text (white-on-white), overlapping shapes that are structural but not shape-drift, or misaligned positioned elements. These visual-only issues are completely invisible.',
+        fix: 'Always render PNGs (skip only if LibreOffice absent). The render cost is low vs. the false PASS risk.'
+      },
+    ]
+  },
+
+  backend: {
+    title: 'FastAPI Backend',
+    subtitle: 'backend.py · FastAPI + SSE + uvicorn',
+    overview: 'Exposes /api/generate (SSE streaming), /api/slides/, /api/download/. Runs the LangGraph pipeline in a thread pool executor. Streams node_start, thinking, tool_call, tool_result, reviewer_done, done events to frontend.',
+    phases: [
+      { name: 'File upload handling', type: 'free', desc: 'Accepts template (PPTX) + transcript (text or file). If transcript_file is PDF, runs pdf_parser.extract_pdf_text. Writes to tmpdir.' },
+      { name: 'Pipeline execution', type: 'llm', desc: 'loop.run_in_executor(None, run) — runs pipeline in default thread pool. _LogHandler bridges sync callbacks to async SSE queue. graph.stream() yields per-node state updates.' },
+      { name: 'SSE streaming', type: 'free', desc: 'asyncio.Queue bridges thread→async. 180s timeout per event (sends ping to keep connection alive). Terminates on "done" or "error" event type.' },
+      { name: 'Output storage', type: 'free', desc: 'On pipeline completion: copies output.pptx to tempdir with uuid filename. Stores in _outputs dict. Renders preview PNGs, stores in _slide_dirs. tmpdir cleaned in finally.' },
+    ],
+    warnings: [
+      {
+        sev: 'critical',
+        title: '_outputs and _slide_dirs are in-memory — lost on restart',
+        loc: 'backend.py:36-37',
+        body: 'Generated files are referenced by UUID in Python dicts. Server restart = all file_ids invalid, 404 on download. Also: no eviction policy — memory grows unbounded in long-running server under load.',
+        fix: 'Write file_id→path mapping to a tmp index file on disk. Or use a proper cache (Redis/shelve) with TTL. Minimum: set a max size and evict LRU.'
+      },
+      {
+        sev: 'critical',
+        title: 'Unbounded thread pool — no concurrency limit',
+        loc: 'backend.py:199',
+        body: 'run_in_executor(None, run) uses the default ThreadPoolExecutor with no size limit. 20 concurrent requests = 20 parallel Sonnet calls. This can: (a) exceed API rate limits and cause cascading failures, (b) exhaust system RAM with 20 PPTX files + 20 tmpdir render directories.',
+        fix: 'Create a bounded ThreadPoolExecutor (max_workers=4) and pass it to run_in_executor.'
+      },
+      {
+        sev: 'medium',
+        title: 'tmpdir cleanup races with SSE stream and preview render',
+        loc: 'backend.py:197',
+        body: 'finally: shutil.rmtree(tmpdir) runs immediately after pipeline ends — but the SSE generator may still be sending events, and the preview PNG render copies to a separate tempdir. Race condition: tmpdir deleted before all events consumed.',
+        fix: 'Move cleanup to after "done" event is confirmed consumed. Or do cleanup in a background task with a 60s delay.'
+      },
+      {
+        sev: 'medium',
+        title: '180s SSE timeout can drop long-running planner',
+        loc: 'backend.py:204',
+        body: 'asyncio.wait_for(async_q.get(), timeout=180.0) sends a ping on timeout. But if Sonnet with vision takes >180s between events (e.g., reasoning over 8 slide thumbnails), frontend receives only pings — no progress. Some proxies/load balancers drop idle SSE connections despite pings.',
+        fix: 'Emit progress events more frequently from the planner (e.g., "analyzing slide N of M").'
+      },
+    ]
+  },
+
+  tools: {
+    title: 'PPTX Editor Tools',
+    subtitle: 'tools/pptx_editor.py + tools/wrappers.py · Deterministic ops',
+    overview: 'Core deterministic layer. python-pptx + lxml for all PPTX manipulation. Fuzzy shape resolver. Batch edit engine. Pre-check engine. LibreOffice integration for PNG rendering.',
+    phases: [
+      { name: 'op_resolve_shape_name', type: 'free', desc: 'Fuzzy match pipeline: (1) exact name, (2) case-insensitive, (3) word-overlap score, (4) Levenshtein distance. Returns match confidence. Used by executor Phase 1.' },
+      { name: 'op_apply_edits_batch', type: 'free', desc: 'Transactional batch apply. Handles set_text (with autofit truncation), set_cell (table), set_para (paragraph-level). Collects per-edit results with ok/error.' },
+      { name: 'op_precheck', type: 'free', desc: 'Scans output PPTX against edit plan + source doc. Checks: placeholder remnants (HARD), ungrounded numbers (WARN), content wastage (WARN), table cell overflow (HARD), empty title shapes (HARD), shape position drift (WARN).' },
+      { name: 'op_render_png', type: 'free', desc: 'Shells out to LibreOffice: libreoffice --headless --convert-to png. Required for both planner thumbnails and reviewer visual QA. Optional — all code paths gracefully handle absence.' },
+    ],
+    warnings: [
+      {
+        sev: 'medium',
+        title: 'LibreOffice dependency — no fallback rendering',
+        loc: 'pptx_editor.py:op_render_png',
+        body: 'Without LibreOffice, both planner thumbnails AND reviewer visual QA are skipped. Planner works text-only (worse layout decisions). Reviewer skips visual checks (misses overflow, overlap, invisible text). System still works but at reduced quality.',
+        fix: 'Document the LibreOffice requirement prominently. Consider adding a python-pptx→PIL fallback renderer for basic slide rendering without LibreOffice.'
+      },
+      {
+        sev: 'medium',
+        title: 'op_placeholder_sweep replacement="" can corrupt slides',
+        loc: 'pptx_editor.py:op_placeholder_sweep',
+        body: 'Sweeping a shape text to "" removes content but leaves an empty text frame. In PowerPoint, empty text frames on master-linked shapes fall back to master placeholder text ("CLICK TO EDIT..."). This creates a new type of placeholder the next sweep won\'t catch.',
+        fix: 'Detect if the shape is master-linked. If so, delete the shape rather than clearing it, OR keep the existing text and only clear if replacement text is available.'
+      },
+      {
+        sev: 'low',
+        title: 'Fuzzy resolver word-overlap can pick wrong shape on similar names',
+        loc: 'pptx_editor.py:op_resolve_shape_name',
+        body: '"TextBox 1 Title" and "TextBox 1 Subtitle" have high overlap with "Title". Resolver may return wrong shape if plan uses short shape names. Confidence is logged but executor doesn\'t gate on confidence threshold.',
+        fix: 'Add a confidence floor (e.g., 0.7). Below floor, treat as unresolvable and route to LLM Phase 3.'
+      },
+    ]
+  },
+
+  graph: {
+    title: 'LangGraph Orchestration',
+    subtitle: 'graph.py · StateGraph · Pipeline wiring',
+    overview: 'Thin orchestration layer. StateGraph with 4 nodes. Conditional edge from reviewer: PASS → END, fix_attempts < 2 → executor (fix pass), fix_attempts >= 2 → END regardless.',
+    phases: [
+      { name: 'PipelineState (TypedDict)', type: 'free', desc: 'Shared state: transcript_path, template_path, output_path, work_dir, provider, planner_model, executor_model, extracted_facts, edit_plan, review_verdict, review_issues, fix_attempts.' },
+      { name: 'Routing logic', type: 'free', desc: '_route(): PASS → end, fix_attempts >= MAX_FIX_ATTEMPTS → end, else → fix. MAX_FIX_ATTEMPTS = 2.' },
+    ],
+    warnings: [
+      {
+        sev: 'medium',
+        title: 'MAX_FIX_ATTEMPTS=2 may not be enough for complex templates',
+        loc: 'graph.py:11',
+        body: 'Complex decks can need 3 fix passes: (1) fix obvious issues, (2) fix issues introduced by fix 1, (3) final cleanup. 2 attempts leaves some decks in FIX NEEDED state that could have been fixed.',
+        fix: 'Increase to 3, or make it configurable per request.'
+      },
+      {
+        sev: 'low',
+        title: 'State dict grows unbounded across fix loops',
+        loc: 'graph.py:14-26',
+        body: 'Each node does {**state, ...new_keys}. On each fix loop iteration, executor_log gets replaced (OK) but executor_llm_used accumulates stale value. On fix 2, executor_llm_used reflects only the most recent executor run, not both.',
+        fix: 'Track executor_log as a list of per-attempt logs. More useful for debugging.'
+      },
+    ]
+  },
+};
+
+let activeNode = null;
+
+function showNode(id) {
+  const d = DATA[id];
+  if (!d) return;
+
+  // Update active node highlight
+  document.querySelectorAll('.node').forEach(n => n.classList.remove('active'));
+  const nodeEl = document.getElementById('node-' + id);
+  if (nodeEl) nodeEl.classList.add('active');
+  activeNode = id;
+
+  const totalWarnings = d.warnings ? d.warnings.length : 0;
+  const critCount = d.warnings ? d.warnings.filter(w => w.sev === 'critical').length : 0;
+  const medCount = d.warnings ? d.warnings.filter(w => w.sev === 'medium').length : 0;
+  const lowCount = d.warnings ? d.warnings.filter(w => w.sev === 'low').length : 0;
+
+  const phaseHTML = (d.phases || []).map(p => `
+    <div class="phase-block ${p.type === 'llm' ? 'llm' : p.type === 'free' ? 'free' : ''}">
+      <div class="phase-name">
+        ${p.name}
+        ${p.type === 'free' ? '<span class="badge badge-green">NO LLM</span>' : ''}
+        ${p.type === 'llm' ? '<span class="badge badge-purple">LLM</span>' : ''}
+      </div>
+      <div class="phase-desc">${p.desc}</div>
+    </div>
+  `).join('');
+
+  const warnHTML = (d.warnings || []).map(w => `
+    <div class="warning-item ${w.sev}">
+      <div class="warning-header ${w.sev}">
+        ${w.sev === 'critical' ? '🔴' : w.sev === 'medium' ? '🟡' : '🔵'}
+        ${w.title}
+      </div>
+      ${w.loc ? `<div class="warning-loc">${w.loc}</div>` : ''}
+      <div class="warning-body">${w.body}</div>
+      ${w.fix ? `<div class="warning-fix">→ Fix: ${w.fix}</div>` : ''}
+    </div>
+  `).join('');
+
+  const dataHTML = (d.dataOut || []).map(item => `
+    <div class="flow-item">
+      <span class="flow-key">${item.key}</span>
+      <span class="flow-val">${item.val}</span>
+    </div>
+  `).join('');
+
+  const html = `
+    <div class="detail-panel">
+      <div class="detail-title">${d.title}</div>
+      <div class="detail-subtitle">${d.subtitle}</div>
+
+      <div class="tabs">
+        <div class="tab active" onclick="switchTab(this, 'overview-${id}')">Overview</div>
+        <div class="tab" onclick="switchTab(this, 'phases-${id}')">Internals</div>
+        <div class="tab" onclick="switchTab(this, 'warnings-${id}')">
+          Warnings
+          ${critCount > 0 ? `<span style="background:#ef4444;color:#fff;font-size:9px;padding:1px 5px;border-radius:99px;margin-left:4px;">${critCount}</span>` : ''}
+        </div>
+        ${d.dataOut && d.dataOut.length ? '<div class="tab" onclick="switchTab(this, \'data-' + id + '\')">Data Flow</div>' : ''}
+      </div>
+
+      <div id="overview-${id}" class="tab-panel">
+        <div class="section">
+          <div class="section-title">What it does</div>
+          <div style="font-size:12px;color:#94a3b8;line-height:1.6;">${d.overview}</div>
+          ${d.cost ? `<div style="margin-top:10px;font-size:11px;color:#64748b;background:#131625;padding:8px 12px;border-radius:6px;">💰 Cost: ${d.cost}</div>` : ''}
+        </div>
+        <div class="section">
+          <div class="section-title">Warning summary</div>
+          <div style="display:flex;gap:8px;">
+            ${critCount > 0 ? `<span class="pill pill-red">🔴 ${critCount} critical</span>` : ''}
+            ${medCount > 0 ? `<span class="pill pill-yellow">🟡 ${medCount} medium</span>` : ''}
+            ${lowCount > 0 ? `<span class="pill" style="background:#1e3a5f;color:#93c5fd;">🔵 ${lowCount} low</span>` : ''}
+            ${totalWarnings === 0 ? '<span class="pill pill-green">✓ No warnings</span>' : ''}
+          </div>
+        </div>
+      </div>
+
+      <div id="phases-${id}" class="tab-panel" style="display:none;">
+        <div class="section">
+          <div class="section-title">Execution phases</div>
+          ${phaseHTML || '<div style="font-size:12px;color:#475569;">No phases defined.</div>'}
+        </div>
+      </div>
+
+      <div id="warnings-${id}" class="tab-panel" style="display:none;">
+        <div class="section">
+          <div class="section-title">Warnings &amp; failure points</div>
+          ${warnHTML || '<div style="font-size:12px;color:#22c55e;">No warnings — this component is solid.</div>'}
+        </div>
+      </div>
+
+      ${d.dataOut && d.dataOut.length ? `
+      <div id="data-${id}" class="tab-panel" style="display:none;">
+        <div class="section">
+          <div class="section-title">Data passed to next stage</div>
+          <div class="data-flow">${dataHTML}</div>
+        </div>
+      </div>` : ''}
+
+    </div>
+  `;
+
+  document.getElementById('sidebar-empty').style.display = 'none';
+  document.getElementById('sidebar-content').style.display = 'block';
+  document.getElementById('sidebar-content').innerHTML = html;
+}
+
+function switchTab(el, panelId) {
+  const allTabs = el.closest('.tabs').querySelectorAll('.tab');
+  const allPanels = el.closest('.detail-panel').querySelectorAll('.tab-panel');
+  allTabs.forEach(t => t.classList.remove('active'));
+  allPanels.forEach(p => p.style.display = 'none');
+  el.classList.add('active');
+  document.getElementById(panelId).style.display = 'block';
+}
+
+// Show overview by default
+showNode('extractor');
+</script>
+</body>
+</html>

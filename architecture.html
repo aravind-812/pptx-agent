@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PPT Agent — Architecture Playground</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #080812;
+  --panel: #0e0e1a;
+  --card: #14141f;
+  --border: #202035;
+  --text: #e0e0f0;
+  --muted: #555570;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+header {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0 18px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-shrink: 0;
+}
+.logo { font-size: 15px; font-weight: 700; }
+.logo .p { color: #a78bfa; }
+.logo .sub { color: var(--muted); font-weight: 400; font-size: 11px; margin-left: 8px; }
+
+.tabs { display: flex; gap: 2px; background: #ffffff08; border-radius: 7px; padding: 3px; }
+.tab {
+  padding: 4px 12px; border-radius: 5px; font-size: 11.5px;
+  cursor: pointer; color: var(--muted); background: none; border: none; transition: all 0.12s;
+}
+.tab.on { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+
+.hright { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.leg { display: flex; gap: 8px; font-size: 10px; color: var(--muted); }
+.li { display: flex; align-items: center; gap: 3px; }
+.ld { width: 7px; height: 7px; border-radius: 50%; }
+.hint { font-size: 10.5px; color: var(--muted); }
+
+/* ── Layout ── */
+.main { display: flex; flex: 1; overflow: hidden; }
+
+/* Diagram */
+.diag { flex: 1; position: relative; overflow: hidden; background: var(--bg); }
+svg#g { width: 100%; height: 100%; cursor: grab; }
+svg#g:active { cursor: grabbing; }
+
+.zctrl { position: absolute; bottom: 12px; left: 12px; display: flex; gap: 3px; }
+.zb {
+  background: var(--card); border: 1px solid var(--border);
+  color: var(--text); width: 26px; height: 26px; border-radius: 5px;
+  cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center;
+}
+.zb:hover { background: var(--border); }
+
+/* Detail panel */
+.dpanel {
+  width: 370px; flex-shrink: 0;
+  background: var(--panel);
+  border-left: 1px solid var(--border);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.dempty {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  color: var(--muted); gap: 8px; text-align: center; padding: 30px;
+}
+.dempty .ico { font-size: 38px; }
+.dempty h3 { font-size: 13px; color: #aaa; }
+.dempty p { font-size: 11.5px; line-height: 1.6; }
+.dempty .keys { margin-top: 14px; font-size: 11px; color: #888; line-height: 1.7; }
+
+.dhead {
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.dcat { font-size: 9.5px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 3px; }
+.dname { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
+.drole {
+  display: inline-block; font-size: 10px; padding: 2px 8px;
+  border-radius: 10px; border: 1px solid var(--border); color: var(--muted);
+}
+
+.dscroll { flex: 1; overflow-y: auto; padding: 14px 16px; }
+.dscroll::-webkit-scrollbar { width: 3px; }
+.dscroll::-webkit-scrollbar-thumb { background: var(--border); }
+
+.sec { margin-bottom: 15px; }
+.slbl {
+  font-size: 9px; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; color: var(--muted);
+  margin-bottom: 5px; display: flex; align-items: center; gap: 5px;
+}
+.slbl::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.sbody { font-size: 11.5px; color: #b8b8d0; line-height: 1.65; }
+.sbody b { color: var(--text); }
+
+.iogrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.iobox {
+  background: #ffffff04; border: 1px solid var(--border);
+  border-radius: 6px; padding: 7px 9px; font-size: 10.5px;
+}
+.iolbl { font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 3px; font-weight: 700; }
+.ioitem { color: #b0b0c8; margin: 1.5px 0; }
+
+.dlist { list-style: none; }
+.dlist li {
+  padding: 4px 0 4px 10px; font-size: 11px; color: #b8b8d0;
+  border-left: 2px solid var(--border); margin-bottom: 3px; line-height: 1.5;
+}
+
+.tbox {
+  background: #ffffff04; border: 1px solid var(--border);
+  border-radius: 5px; padding: 8px 10px;
+  font-size: 11px; color: #b0b0c8; line-height: 1.55;
+}
+
+.costrow { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 5px; }
+.cbadge {
+  display: inline-flex; align-items: center; padding: 3px 9px;
+  border-radius: 5px; font-size: 10.5px; font-weight: 600;
+}
+.cdetail { font-size: 11px; color: #b0b0c8; }
+.cdetail b { color: var(--text); }
+
+/* CSS animated flow lines */
+@keyframes flow {
+  to { stroke-dashoffset: -24; }
+}
+.flow-anim {
+  animation: flow 1.2s linear infinite;
+  stroke-dasharray: 5 7;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="p">PPT</span>Agent<span class="sub">Architecture Playground</span></div>
+  <div class="tabs">
+    <button class="tab on" data-v="full">Full System</button>
+    <button class="tab" data-v="pipeline">Pipeline</button>
+    <button class="tab" data-v="eval">Eval Flywheel</button>
+    <button class="tab" data-v="cost">Cost Model</button>
+  </div>
+  <div class="hright">
+    <div class="leg">
+      <div class="li"><div class="ld" style="background:#818cf8"></div>UI</div>
+      <div class="li"><div class="ld" style="background:#60a5fa"></div>Backend</div>
+      <div class="li"><div class="ld" style="background:#a78bfa"></div>Agents</div>
+      <div class="li"><div class="ld" style="background:#34d399"></div>Infra</div>
+      <div class="li"><div class="ld" style="background:#fbbf24"></div>Eval</div>
+      <div class="li"><div class="ld" style="background:#f87171"></div>Control</div>
+    </div>
+    <span class="hint">click component · drag to pan · scroll to zoom</span>
+  </div>
+</header>
+
+<div class="main">
+  <div class="diag">
+    <svg id="g" viewBox="0 0 960 610"></svg>
+    <div class="zctrl">
+      <button class="zb" id="zi">+</button>
+      <button class="zb" id="zo">−</button>
+      <button class="zb" id="zr">⌂</button>
+    </div>
+  </div>
+  <div class="dpanel">
+    <div class="dempty" id="de">
+      <div class="ico">🏛</div>
+      <h3>Architecture Playground</h3>
+      <p>Click any component to explore its design rationale, interfaces, and trade-offs.</p>
+      <div class="keys">
+        <b style="color:#aaa">15 components</b><br>
+        LangGraph pipeline · 4-phase hybrid executor<br>
+        Eval flywheel · Binary LLM judges<br>
+        Auto-improve loop · Human-gated patches
+      </div>
+    </div>
+    <div id="dc" style="display:none; flex-direction:column; height:100%; overflow:hidden;"></div>
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// Component data
+// ─────────────────────────────────────────────────────────────────────────────
+const COMPS = [
+  {
+    id: 'browser', label: 'Browser / Frontend', sub: 'React SPA · SSE Consumer',
+    color: '#818cf8', cat: 'User Interface', role: 'Presentation & Input Layer',
+    what: 'React single-page app with two tabs: <b>Pipeline</b> (generate PPTX) and <b>Eval Lab</b> (run quality evals). Connects to backend via Server-Sent Events for real-time streaming of pipeline progress and eval results.',
+    why: '<b>SSE not WebSockets</b> — data flows one-direction only (server→client). SSE is HTTP-native, works through any proxy, auto-reconnects on drop, and needs no upgrade handshake. WebSockets add complexity for zero benefit here.',
+    inputs: ['PPTX template file (FormData upload)', 'Transcript text or PDF upload', 'Provider/model selection'],
+    outputs: ['POST /api/generate → receives SSE stream', 'POST /api/eval/run → receives SSE stream', 'GET /api/download/{id} → PPTX file'],
+    decisions: [
+      'EventSource API (SSE) — not WebSockets; unidirectional, HTTP-native, proxy-transparent',
+      'Single events[] array in App.jsx — all SSE events appended, drives entire UI state',
+      'FormData uploads — handles binary PPTX files without base64 overhead',
+      'Two tabs share provider state at root — EvalLab gets same model selection as Pipeline',
+      'No client-side routing — two tabs are sufficient, zero bundle weight added',
+    ],
+    tradeoff: 'SSE cannot push binary data. Workaround: pipeline emits {type:"done", file_id} → browser calls GET /api/download/{id} for PPTX. Slide previews served as PNG via /api/slides/{id}/{n}.',
+    cost: null,
+  },
+  {
+    id: 'backend', label: 'FastAPI Backend', sub: 'asyncio · SSE · File Lifecycle',
+    color: '#60a5fa', cat: 'API Layer', role: 'Async Event Gateway',
+    what: 'FastAPI server bridging the synchronous Python pipeline with async SSE streaming. Manages temp file lifecycle (upload → tmpdir → stable copy → cleanup). Exposes 10 endpoints covering generation, slide preview, eval orchestration, and patch management.',
+    why: '<b>asyncio.Queue bridges sync and async</b>. LangGraph pipeline is blocking (runs in thread pool via run_in_executor). FastAPI is async (event loop). The Queue lets the thread post events; the async generator drains them as SSE frames. No threading locks needed.',
+    inputs: ['POST /api/generate (multipart: template + transcript)', 'POST /api/eval/run (multipart: template + provider)', 'GET /api/eval/results'],
+    outputs: ['text/event-stream SSE responses', 'FileResponse for PPTX download', 'JSON for transcripts, results, patch suggestions'],
+    decisions: [
+      'asyncio.Queue — thread-safe bridge from sync pipeline to async SSE generator',
+      'run_in_executor(None, run) — pipeline in default thread pool; event loop stays responsive',
+      'Temp dir per request (mkdtemp) — isolated; cleaned in finally: shutil.rmtree()',
+      'Stable copy: output PPTX moved to tempdir/{file_id}.pptx after pipeline done',
+      'CORS allow_origins=["*"] — dev tool, not multi-tenant; tighten for external exposure',
+      'Static mount at "/" — serves React dist/ in production (single-process deploy, no nginx needed)',
+    ],
+    tradeoff: 'No auth layer. Intentional: internal dev tool for one team. Adding auth = Bearer token middleware + validation without needing user management.',
+    cost: null,
+  },
+  {
+    id: 'langgraph', label: 'LangGraph Runtime', sub: 'StateGraph · Conditional Routing · Streaming',
+    color: '#a78bfa', cat: 'Orchestration', role: 'Pipeline State Machine',
+    what: 'Compiles 4 agent nodes into a directed state graph with conditional routing. Manages PipelineState (TypedDict) flowing through each node. Handles the reviewer→executor fix loop via conditional edges — no manual loop code needed.',
+    why: '<b>LangGraph vs plain Python</b>: gives typed state passing (TypedDict validation), conditional routing (add_conditional_edges), built-in streaming (stream_mode="updates"), callback hooks for SSE events, and recursion_limit guard. Manual orchestration would re-implement all of this with more bugs.',
+    inputs: ['Initial PipelineState dict (from backend)', 'RunnableConfig(callbacks=[LogHandler], recursion_limit=200)'],
+    outputs: ['Final PipelineState after all nodes complete', 'stream_mode="updates" → per-node state deltas for SSE'],
+    decisions: [
+      'stream_mode="updates" — emits {node_name: state_delta} per node completion, not per token',
+      'recursion_limit=200 — safety guard against infinite routing loops',
+      'MAX_FIX_ATTEMPTS=2 — _route() returns "end" after 2 fix cycles regardless of verdict',
+      'StateGraph.compile() at import time — validates wiring at startup (fail fast)',
+      'PipelineState TypedDict — IDE autocomplete + mypy + LangGraph schema validation',
+    ],
+    tradeoff: 'LangGraph adds ~100ms startup on first compile. Mitigated: graph compiled once at module load (import time), shared across all requests.',
+    cost: null,
+  },
+  {
+    id: 'pstate', label: 'PipelineState', sub: 'TypedDict · 13 Fields · Immutable Pattern',
+    color: '#64748b', cat: 'Data Contract', role: 'Shared Mutable State',
+    what: 'The TypedDict threading through every agent node. Each node receives the full state and returns a partial update: {**state, new_key: value}. Serves as the single source of truth for one pipeline run.',
+    why: '<b>TypedDict not plain dict</b> — LangGraph requires a typed state schema for validation. TypedDict provides IDE autocomplete, mypy type checking, and explicit interface contract. Every field is intentional — no hidden state.',
+    inputs: ['Initialized by backend.py with paths + provider + model names + empty defaults'],
+    outputs: ['Final state read by eval runner for edit_plan, executor_log, review_verdict, fix_attempts'],
+    decisions: [
+      'Paths not bytes — transcript/template/output stored as paths; large files stay on disk',
+      'extracted_facts: Optional[dict] — None signals extractor was skipped (short transcript)',
+      'edit_plan: dict — planner JSON; executor reads edits[], slides_to_remove[], delete_shapes[]',
+      'review_verdict: str — "PASS" | "FIX NEEDED"; _route() checks this for fix loop decision',
+      'fix_attempts: int — incremented by executor; _route() compares to MAX_FIX_ATTEMPTS',
+      'executor_log: dict — phases[] used by shape_coverage eval to compute applied/total ratio',
+    ],
+    tradeoff: 'State passed by value between nodes (LangGraph merges dicts on update). Large extracted_facts dicts add minor copy overhead — acceptable since extraction is one-time per run.',
+    cost: null,
+  },
+  {
+    id: 'extractor', label: 'Extractor', sub: 'Haiku · Chunk + Merge · Free for Short',
+    color: '#a78bfa', cat: 'Agent — Pre-processor', role: 'Transcript Distiller',
+    what: 'Converts long raw transcripts into structured JSON facts before the planner sees them. Splits on call boundaries (===...=== separators), runs Haiku on each chunk, deduplicates and merges. Short transcripts skip LLM entirely.',
+    why: '<b>Transcripts exceed planner context</b>. A 90K-char multi-call transcript with scheduling chatter fills Sonnet\'s context with noise. Extractor compresses: only facts, numbers, decisions, stakeholders, verbatim highlights survive. Planner gets signal, not raw chatter.',
+    inputs: ['transcript_path (raw .txt, possibly >60K chars)', 'State: provider, executor_model (Haiku)'],
+    outputs: ['extracted_facts: {customer_profile, project, timeline, budget, stakeholders, all_facts, ...}'],
+    decisions: [
+      'SHORT_CIRCUIT at 30K chars — transcripts below this skip LLM entirely; planner handles raw',
+      'Haiku not Sonnet — pure structured extraction, no reasoning needed; 30× cheaper',
+      'Chunk at 60K chars, split on ===...=== — preserves call context boundaries in each chunk',
+      'Merge: list fields dedup by JSON key; dict fields first non-null value wins',
+      'all_facts: exhaustive list — every number, date, name, %, proper noun verbatim',
+      'Chunk failure is non-fatal — skip that chunk; planner falls back to raw transcript',
+    ],
+    tradeoff: 'Adds ~3-5s and ~$0.001 per long transcript. For short transcripts: $0. Net positive: planner gets cleaner input → fewer fix-loop retries.',
+    cost: { model: 'Haiku 4.5', per: '~$0.001 (long) · $0 (short)', rate: '$0.25/M in · $1.25/M out' },
+  },
+  {
+    id: 'planner', label: 'Planner', sub: 'Sonnet · Vision · 32K Output · JSON Plan',
+    color: '#a78bfa', cat: 'Agent — Strategic', role: 'Edit Plan Generator',
+    what: 'Most critical agent. Given extracted facts + template shape inventory + optional rendered slide PNGs, produces a complete JSON edit plan: which shapes on which slides get what text. One call per run.',
+    why: '<b>Sonnet not Haiku</b> — planning requires: understanding template layout from PNGs (vision), distributing content across shapes intelligently, avoiding sanitization while respecting text constraints. Haiku makes ~40% more sanitization errors on planning tasks.',
+    inputs: ['extracted_facts (or raw transcript <30K)', 'Template shape inventory JSON (op_info output)', 'Optional: slide PNGs as base64 image blocks (vision context)'],
+    outputs: ['edit_plan: {edits[], slides_to_remove[], delete_shapes[], strategic_context.all_key_facts}'],
+    decisions: [
+      'Sonnet (not Haiku) — planning quality determines deck quality; one call is acceptable cost',
+      'max_tokens=32000 — complete plans for large templates without truncation',
+      'Vision input via op_render_png — planner sees layout before planning edits',
+      'Two hard-blocked failure modes: Fabrication (inventing facts) + Sanitization (genericizing specifics)',
+      'strategic_context.all_key_facts — planner inventories facts it plans to include; drives completeness eval',
+      'Ephemeral cache_control on system prompt (Anthropic) — prompt cache hit after first call',
+    ],
+    tradeoff: 'Vision (slide PNGs) requires LibreOffice. If absent: planner works text-only, slightly lower layout quality. Graceful: if op_render_png fails, thumbnail_blocks = [] and planning continues.',
+    cost: { model: 'Sonnet 4.6', per: '~$0.02–0.08', rate: '$3/M in · $15/M out' },
+  },
+  {
+    id: 'executor', label: 'Executor', sub: '4-Phase Hybrid · LLM Fallback Only',
+    color: '#a78bfa', cat: 'Agent — Executor', role: 'Hybrid PPTX Editor',
+    what: '4-phase executor minimizing LLM cost. Phase 1: Python preflight (fuzzy shape resolution, overflow prediction). Phase 2: deterministic batch apply (python-pptx transaction). Phase 3: LLM fallback for failures only. Phase 4: auto-relayout, placeholder sweep, verification. Happy path: zero LLM calls.',
+    why: '<b>Most edits are mechanical</b> — set_text on a named shape is pure python-pptx, no intelligence needed. LLM is expensive ($0.002) and slow. Hybrid approach: Python for 85-90% of edits, Haiku only when shape name is ambiguous or batch fails.',
+    inputs: ['edit_plan.edits[] from planner', 'output_path (PPTX to modify)', 'review_issues[] from previous reviewer (fix-loop context)'],
+    outputs: ['Modified output.pptx on disk', 'executor_log.phases[] for shape_coverage eval', 'Updated fix_attempts in state'],
+    decisions: [
+      'Phase 1 (Python preflight) — fuzzy shape name match, overflow prediction. Cost: $0.',
+      'Phase 2 (batch apply) — op_apply_edits_batch: all edits in one transaction. Cost: $0.',
+      'Phase 3 (LLM fallback) — ReAct agent with tool set. Only for failed edits. Cost: ~$0.002.',
+      'Phase 4a (auto-relayout) — op_relayout_slide on dense slides. Cost: $0.',
+      'Phase 4b (placeholder sweep) — regex replace [X]/TODO. Cost: $0.',
+      'Phase 4c (verify) — op_verify_edits confirms edits applied. Cost: $0.',
+      'recursion_limit=60 for fallback agent — prevents runaway LLM loops on ambiguous cases',
+    ],
+    tradeoff: 'Batch apply (Phase 2) uses single python-pptx transaction — malformed PPTX can fail the whole batch. Mitigation: Phase 1 preflight catches shape mismatches before batch executes.',
+    cost: { model: 'Haiku 4.5 (Phase 3 only)', per: '~$0.002 typical · $0 if no LLM needed', rate: '$0.25/M in · $1.25/M out' },
+  },
+  {
+    id: 'reviewer', label: 'Reviewer', sub: 'Haiku · Multimodal · 12 Checks',
+    color: '#a78bfa', cat: 'Agent — QA', role: 'Visual Quality Auditor',
+    what: 'Multimodal QA agent. Runs deterministic Python pre-checks first (zero LLM cost), then invokes Haiku with rendered slide PNGs for visual review. 12 checks: layout, grounding, faithfulness, sanitization, content wastage.',
+    why: '<b>Text analysis misses visual failures</b> — text overflow, invisible text, misalignment, blank slides require seeing the actual rendered slide. PNG rendering + vision catches these. Pre-check first avoids wasting LLM tokens on already-failed slides.',
+    inputs: ['output_path (edited PPTX)', 'transcript_path (grounding + sanitization checks)', 'review_issues from prior attempt (fix loop)'],
+    outputs: ['review_verdict: "PASS" | "FIX NEEDED"', 'review_issues: [str] — specific problems passed to executor on retry'],
+    decisions: [
+      'Deterministic pre-check first — op_precheck catches placeholder text, ungrounded numbers, position drift. $0.',
+      'Hard failures short-circuit — if pre-check fails, skip LLM (already know verdict)',
+      'Haiku not Sonnet — binary verdict; upgrade to Sonnet only if calibration F1 < 0.85',
+      '12 checks: overflow, bounds, overlap, invisible text, blank, placeholders, broken layout, grounding, sanitization, wastage, alignment',
+      'Check 9 (sanitization): flags generic corporate filler user never wrote',
+      'Check 10 (wastage): confirms distinctive source facts appear in at least one slide',
+      'LibreOffice absent → skip visual checks; text-only pre-check continues (graceful degradation)',
+    ],
+    tradeoff: 'PNG rendering requires LibreOffice. Without it: visual overflow and alignment issues are missed. Acceptable for dev environments; production should install LibreOffice.',
+    cost: { model: 'Haiku 4.5', per: '~$0.003', rate: '$0.25/M in · $1.25/M out' },
+  },
+  {
+    id: 'fixloop', label: 'Fix Loop', sub: 'Conditional Edge · Max 2 Attempts',
+    color: '#f87171', cat: 'Control Flow', role: 'Level-1 Self-Repair',
+    what: 'After each reviewer run, _route() checks verdict + fix_attempts. PASS → END. FIX NEEDED + attempts < 2 → back to executor with issues list. attempts ≥ 2 → END anyway (graceful output despite issues). This is Level-1 self-fix (per-run).',
+    why: '<b>Single-pass editing fails ~20% of the time</b>. Reviewer catches issues executor could not foresee: overflow from longer-than-expected text, placeholder escapes, shape misalignment. Second attempt with specific issues resolves ~70% of first-pass failures.',
+    inputs: ['review_verdict: "PASS" | "FIX NEEDED"', 'fix_attempts: int from state', 'review_issues: [str] — passed to executor on retry'],
+    outputs: ['Routing decision: "fix" (→ executor) or "end" (→ END node)'],
+    decisions: [
+      'MAX_FIX_ATTEMPTS = 2 — empirically optimal; diminishing returns after 2 attempts',
+      'Graceful exit at limit — produce best-effort output; never hard-fail the run',
+      'Issues list in state — executor reads review_issues[] to focus repair on specific problems',
+      'LangGraph conditional edge — zero manual loop code; routing is declarative',
+    ],
+    tradeoff: 'Max 2 attempts = up to 2× executor + 2× reviewer cost if both attempts fail. Total fix-loop penalty: ~$0.010. Acceptable for quality gain. Level-2 (eval flywheel) handles systematic failures.',
+    cost: { model: 'Up to 2× executor + reviewer', per: '~$0.010 worst case', rate: 'Same as executor + reviewer' },
+  },
+  {
+    id: 'pptx', label: 'PPTX Engine', sub: 'python-pptx · ~30 Ops · LibreOffice',
+    color: '#34d399', cat: 'Infrastructure', role: 'PPTX Manipulation Layer',
+    what: '~1340-line wrapper around python-pptx exposing ~30 operations: shape info, text editing, table cells, delete/remove, batch apply, overflow detection, spatial maps, placeholder cleanup, precheck, validate, and PNG rendering via LibreOffice subprocess.',
+    why: '<b>python-pptx is the only mature Python PPTX library</b>. Centralizing all PPTX operations here means agents never import python-pptx directly — the engine is swappable without touching agent code.',
+    inputs: ['PPTX file path (all ops take path, not Presentation object, for consistency)'],
+    outputs: ['Modified PPTX on disk', 'JSON dicts (shape inventories, op results)', 'PNG slide files (via LibreOffice)'],
+    decisions: [
+      'All ops take path not Presentation object — prevents stale in-memory state bugs',
+      'op_apply_edits_batch — single load/save for many edits; 10× faster than one-at-a-time',
+      'Fuzzy shape name resolution — SequenceMatcher ratio > 0.6 for planner name variations',
+      'op_precheck — deterministic Python overflow detection via EMU math; no LLM',
+      'op_render_png — LibreOffice subprocess; graceful return of [] if absent',
+      'op_placeholder_sweep — regex scan + replace for [X] / TODO / "Enter" patterns',
+    ],
+    tradeoff: 'LibreOffice as external process: ~3-5s startup, requires system install. No pure-Python PPTX→PNG alternative mature enough. Decision: accept dependency, handle graceful absence.',
+    cost: null,
+  },
+  {
+    id: 'llmf', label: 'LLM Factory', sub: 'Anthropic · OpenAI · Role-Based · Cached',
+    color: '#34d399', cat: 'Infrastructure', role: 'Provider Abstraction',
+    what: 'Centralized model registry. Selects models by role: Sonnet for planning (quality critical, one call), Haiku for execution/review (speed + cost, many calls). @lru_cache avoids re-instantiating models per call.',
+    why: '<b>Role-based model selection</b> — planner needs complex reasoning (Sonnet); executor fallback + reviewer + eval judges need speed and low cost (Haiku). Same pipeline code runs on OpenAI by changing provider string. No model names hardcoded in agents.',
+    inputs: ['provider: "anthropic" | "openai"', 'model: str (model ID)', 'max_tokens: int'],
+    outputs: ['Cached LangChain ChatAnthropic or ChatOpenAI instance'],
+    decisions: [
+      'Anthropic-first priority — better quality for long-form reasoning (planner)',
+      'planner_model() → Sonnet 4.6 | gpt-4o; executor_model() → Haiku 4.5 | gpt-4o-mini',
+      '@lru_cache(maxsize=16) — one instance per (provider, model, max_tokens) tuple',
+      'available_providers() reads .env at runtime — no hardcoded key check at import',
+      'Eval judges also use executor_model() — Haiku for binary verdicts (cheap, sufficient)',
+    ],
+    tradeoff: 'lru_cache means model instances shared across requests. Safe: LangChain models are stateless. If per-request API key overrides needed (multi-tenant), switch to per-request instantiation.',
+    cost: null,
+  },
+  {
+    id: 'erunner', label: 'Eval Runner', sub: 'graph.invoke() · Full State Capture',
+    color: '#fbbf24', cat: 'Eval — Execution', role: 'Eval Pipeline Invoker',
+    what: 'Calls graph.invoke() directly to run the full pipeline for one (transcript, template) pair. Captures the complete final PipelineState — including edit_plan, executor_log, and review_verdict — for eval consumption.',
+    why: '<b>Direct invocation, not subprocess</b> — subprocess cannot capture internal state. Evals need edit_plan (completeness eval), executor_log.phases (shape_coverage eval), and review_verdict. Only direct graph.invoke() provides these.',
+    inputs: ['transcript_path, template_path', 'provider (optional, auto-detect)', 'run_dir (shared across benchmark transcripts)'],
+    outputs: ['state: final PipelineState dict', 'pptx_text: {slide_N: {shape: text}, all_text: str}', 'output_path, duration_sec, error'],
+    decisions: [
+      'Evals run AFTER full pipeline completes — including fix loop; evaluate final output only',
+      'Shared run_dir per benchmark batch — each transcript writes {id}_output.pptx; no collision',
+      'extract_pptx_text() on final PPTX — slide text for LLM eval judges',
+      'Error capture: exceptions stored in result.error; LLM evals skipped on pipeline error',
+    ],
+    tradeoff: 'Full pipeline cost per transcript per eval run. 44 transcripts × ~$0.03 = ~$1.30 per full benchmark. Acceptable for a dev-time quality gate run occasionally, not continuously.',
+    cost: { model: '= full pipeline cost', per: '~$0.02–0.10 per transcript', rate: 'Same as production pipeline' },
+  },
+  {
+    id: 'ejudges', label: '6 Evaluations', sub: '2 Deterministic · 3 LLM-Haiku · 1 Semi-det',
+    color: '#fbbf24', cat: 'Eval — Judges', role: 'Binary Quality Judges',
+    what: 'Six binary (pass/fail) evaluations per transcript after pipeline completes. Two are free (deterministic Python). Three call Haiku for nuanced judgment. One uses string matching with LLM fallback for borderline cases only.',
+    why: '<b>Binary LLM-as-judge pattern</b> (DoorDash eval flywheel). Structured binary questions produce reliable verdicts from Haiku. Deterministic evals run first — if they fail, skip LLM evals to save cost.',
+    inputs: ['Varies by eval: PPTX path, pptx_text, PipelineState, scenario facts, transcript text'],
+    outputs: ['EvalResult: {passed: bool, reasoning: str, confidence: float, details: dict}'],
+    decisions: [
+      'placeholder (det) — op_validate() regex scan. 0 LLM calls. Always correct.',
+      'shape_coverage (det) — executor_log.phases batch_apply.applied / total ≥ 0.90',
+      'faithfulness (LLM) — Haiku: do key facts from transcript appear in PPTX?',
+      'hallucination (LLM) — Haiku: does PPTX contain numbers/names NOT in transcript?',
+      'sanitization (LLM) — pre-check _FORBIDDEN phrases, then Haiku for subtle cases',
+      'completeness (semi-det) — string match first; LLM only if 50-80% match rate',
+      'Calibration target: F1 ≥ 0.85 vs human labels; upgrade to Sonnet if below',
+    ],
+    tradeoff: 'LLM judges can disagree with humans. Calibration step (calibrate.py) measures F1 against 20 human-labeled transcripts. Trust threshold: F1 ≥ 0.85. Below threshold: iterate judge prompt → consider Sonnet upgrade.',
+    cost: { model: 'Haiku 4.5 (LLM evals)', per: '~$0.003 per transcript (4 LLM evals)', rate: '$0.25/M in · $1.25/M out' },
+  },
+  {
+    id: 'benchmark', label: 'Benchmark Orchestrator', sub: 'Batch · SSE Progress · JSONL History',
+    color: '#fbbf24', cat: 'Eval — Orchestration', role: 'Batch Quality Tracker',
+    what: 'Runs all 6 evals across N transcripts, fires SSE progress events per transcript, computes pass_rates, appends results to benchmark.jsonl. JSONL is append-only — every run preserved for trend analysis.',
+    why: '<b>Pass rate trends catch regressions</b>. A single run tells current quality. The JSONL history reveals: did a prompt change improve faithfulness but regress sanitization? The Eval Lab Results tab visualizes pass rates over time.',
+    inputs: ['template_path, transcript_paths[], provider', 'on_progress callback — fires SSE events to browser'],
+    outputs: ['pass_rates: {eval_name: 0.0–1.0}', 'eval_agent/results/benchmark.jsonl (appended)'],
+    decisions: [
+      'Serial evaluation (not parallel) — avoids API rate limits; 44 pipelines + evals in sequence',
+      'JSONL append-only — never overwrites; full audit trail; load_all_results() returns history',
+      'Shared run_dir with try/finally cleanup — no temp file leaks on errors or keyboard interrupt',
+      'Skip LLM evals if pipeline errored — no PPTX output means nothing to evaluate',
+      'SSE: eval_transcript_done fires per transcript with live results for progress table',
+    ],
+    tradeoff: 'Serial = 44 transcripts takes ~30-45 minutes. Parallel would be 5× faster but risks rate limit throttling. Design choice: predictable slow over unpredictable fast with retries.',
+    cost: null,
+  },
+  {
+    id: 'aimprove', label: 'Auto-Improve', sub: 'Sonnet · Prompt Surgery · Human Gate',
+    color: '#fbbf24', cat: 'Eval — Meta-Improve', role: 'Prompt Patch Generator',
+    what: 'Clusters failures for a specific eval from latest benchmark.jsonl, reads current planner SYSTEM_PROMPT, sends both to Sonnet for a targeted patch suggestion. Saves patch to staged_patches/ — NEVER auto-applies. Human approves in Eval Lab Improve tab.',
+    why: '<b>Human-gated prompt surgery</b>. Auto-applying LLM-suggested prompt changes is dangerous — a patch might fix 5 failures but introduce 10 regressions. Human reviews the patch diff and explicitly clicks Apply in the UI.',
+    inputs: ['eval_name (which eval to improve)', 'Latest benchmark failures from benchmark.jsonl', 'Current SYSTEM_PROMPT from agents/planner.py'],
+    outputs: ['staged_patches/{patch_id}_{eval}.json', '{patch_text, insert_after, reasoning, affected_pattern}'],
+    decisions: [
+      'Sonnet not Haiku — prompt surgery requires understanding existing prompt structure and side effects',
+      'ADD-only patches — never suggest removing existing text; reduces regression risk',
+      'insert_after field — precise insertion point preserves surrounding prompt structure',
+      'Human gate: apply_patch() only via POST /api/eval/apply-patch (Eval Lab "Apply" button)',
+      'Backup first: planner_backup_{patch_id}.py created before any modification',
+      'Cluster ≤20 failures — enough signal for pattern detection without exceeding token budget',
+    ],
+    tradeoff: 'Sonnet for patch generation costs ~$0.05 per call. Acceptable: manual, developer-triggered, not automatic per benchmark. Human review step prevents prompt regressions.',
+    cost: { model: 'Sonnet 4.6', per: '~$0.05 per improve call', rate: '$3/M in · $15/M out' },
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Layout: {x, y, w, h} in 960×610 viewBox
+// ─────────────────────────────────────────────────────────────────────────────
+const L = {
+  // Production pipeline (left half)
+  browser:   { x: 18,  y: 22,  w: 455, h: 52 },
+  backend:   { x: 18,  y: 98,  w: 455, h: 46 },
+  // LangGraph container
+  _lg_box:   { x: 18,  y: 165, w: 455, h: 215 },
+  pstate:    { x: 22,  y: 356, w: 450, h: 32 },
+  extractor: { x: 34,  y: 188, w: 102, h: 50 },
+  planner:   { x: 157, y: 188, w: 102, h: 50 },
+  executor:  { x: 280, y: 188, w: 102, h: 50 },
+  reviewer:  { x: 350, y: 263, w: 102, h: 50 },
+  fixloop:   { x: 60,  y: 263, w: 270, h: 34 },
+  langgraph: { x: 18,  y: 165, w: 455, h: 215 }, // virtual (same as _lg_box)
+  // Infrastructure
+  pptx:      { x: 18,  y: 406, w: 235, h: 50 },
+  llmf:      { x: 268, y: 406, w: 205, h: 50 },
+
+  // Eval flywheel (right half)
+  erunner:   { x: 512, y: 98,  w: 180, h: 46 },
+  benchmark: { x: 512, y: 165, w: 180, h: 46 },
+  aimprove:  { x: 720, y: 165, w: 222, h: 65 },
+  ejudges:   { x: 512, y: 230, w: 430, h: 100 },
+  _calib:    { x: 720, y: 98,  w: 222, h: 46 },
+};
+
+// calibrate as a real component
+const calibrateComp = {
+  id: 'calibrate', label: 'Calibrator', sub: 'F1 vs Human Labels · Trust Scoring',
+  color: '#fbbf24', cat: 'Eval — Calibration', role: 'Judge Reliability Measurer',
+  what: 'Computes precision, recall, and F1 for each LLM eval judge by comparing verdicts against human-labeled ground truth. Flags evals "untrusted" when F1 < 0.85.',
+  why: '<b>LLM judges can be systematically wrong</b>. A faithfulness judge that always says PASS has perfect recall but 0 precision. F1 against human labels catches both. Trust threshold = 0.85 ensures the eval signal is reliable before driving prompt changes.',
+  inputs: ['eval_name', 'human_labels: [{transcript_id, passed: bool}]', 'Latest benchmark.jsonl (LLM judge verdicts)'],
+  outputs: ['precision, recall, f1, trusted: bool', 'confusion matrix {tp, fp, fn, tn}', 'disagreements list'],
+  decisions: [
+    'Minimum 20 human-labeled transcripts per eval for statistical reliability',
+    'Trust threshold F1 ≥ 0.85 — below this, pass rates mislead prompt engineering decisions',
+    'Workflow: human labels 20 → calibrate → if F1 < 0.85 → edit judge prompt → re-calibrate',
+    'If F1 stays < 0.85 after prompt iteration: upgrade that eval judge to Sonnet',
+    'Human labels saved to eval_agent/human_labels/{eval}.json — persistent across runs',
+  ],
+  tradeoff: 'Human labeling 20 transcripts per eval = 2-3 hours of work. One-time cost. Labels remain valid until the eval task definition changes.',
+  cost: null,
+};
+COMPS.push(calibrateComp);
+L['calibrate'] = { x: 720, y: 98, w: 222, h: 46 };
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Connections
+// ─────────────────────────────────────────────────────────────────────────────
+const CONNS = [
+  // Browser ↔ backend/eval
+  { f: 'browser',   t: 'backend',   label: 'SSE /api/generate',  color: '#818cf8', anim: true },
+  { f: 'browser',   t: 'erunner',   label: 'SSE /api/eval/run',  color: '#fbbf24', anim: true },
+
+  // Backend → pipeline / eval
+  { f: 'backend',   t: 'langgraph', label: 'graph.invoke()',      color: '#60a5fa', anim: true },
+  { f: 'backend',   t: 'benchmark', label: 'run_benchmark()',     color: '#fbbf24', anim: true },
+
+  // Agent sequence (horizontal)
+  { f: 'extractor', t: 'planner',   label: 'extracted_facts',    color: '#a78bfa', anim: true, horiz: true },
+  { f: 'planner',   t: 'executor',  label: 'edit_plan',          color: '#a78bfa', anim: true, horiz: true },
+  { f: 'executor',  t: 'reviewer',  label: 'output.pptx',        color: '#a78bfa', anim: true },
+
+  // Fix loop (special curved)
+  { f: 'reviewer',  t: 'fixloop',   label: 'FIX NEEDED',         color: '#f87171', anim: false, fixloop: true },
+
+  // Tools
+  { f: 'executor',  t: 'pptx',     label: '', color: '#34d39960', dash: true },
+  { f: 'reviewer',  t: 'pptx',     label: '', color: '#34d39960', dash: true },
+  { f: 'planner',   t: 'pptx',     label: '', color: '#34d39960', dash: true },
+  { f: 'extractor', t: 'llmf',     label: '', color: '#34d39960', dash: true },
+  { f: 'planner',   t: 'llmf',     label: '', color: '#34d39960', dash: true },
+  { f: 'executor',  t: 'llmf',     label: '', color: '#34d39960', dash: true },
+  { f: 'reviewer',  t: 'llmf',     label: '', color: '#34d39960', dash: true },
+
+  // Eval flow
+  { f: 'erunner',   t: 'benchmark', label: 'run result',         color: '#fbbf24', anim: true },
+  { f: 'benchmark', t: 'ejudges',   label: '6 evals',            color: '#fbbf24', anim: true },
+  { f: 'benchmark', t: 'aimprove',  label: 'failures',           color: '#fbbf2480', dash: true },
+  { f: 'benchmark', t: 'calibrate', label: 'verdicts',           color: '#fbbf2480', dash: true },
+
+  // Auto-improve → planner (level 2 feedback)
+  { f: 'aimprove',  t: 'planner',   label: 'prompt patch (human gate)', color: '#f8717160', dash: true },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SVG Rendering
+// ─────────────────────────────────────────────────────────────────────────────
+const NS = 'http://www.w3.org/2000/svg';
+const svg = document.getElementById('g');
+let root;
+let tx = { x: 8, y: 8, s: 1 };
+let dragging = false, ds = { x: 0, y: 0 };
+let selId = null;
+
+function mk(tag, a = {}) {
+  const e = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(a)) e.setAttribute(k, String(v));
+  return e;
+}
+
+function mid(comp) {
+  const l = L[comp];
+  if (!l) return { x: 0, y: 0 };
+  return { x: l.x + l.w / 2, y: l.y + l.h / 2 };
+}
+
+function drawArrow(x1, y1, x2, y2, color, dashed, anim, label) {
+  // Curved path
+  const dx = x2 - x1, dy = y2 - y1;
+  const cx1 = x1 + dx * 0.5, cy1 = y1;
+  const cx2 = x1 + dx * 0.5, cy2 = y2;
+  const d = `M ${x1} ${y1} C ${cx1} ${cy1} ${cx2} ${cy2} ${x2} ${y2}`;
+
+  // Static path
+  const p = mk('path', { d, stroke: color, 'stroke-width': '1.5', fill: 'none',
+    ...(dashed ? { 'stroke-dasharray': '4 4' } : {}) });
+  root.appendChild(p);
+
+  // Arrowhead (small triangle at end)
+  const angle = Math.atan2(y2 - cy2, x2 - cx2);
+  const aLen = 7;
+  const ax1 = x2 - aLen * Math.cos(angle - 0.4);
+  const ay1 = y2 - aLen * Math.sin(angle - 0.4);
+  const ax2 = x2 - aLen * Math.cos(angle + 0.4);
+  const ay2 = y2 - aLen * Math.sin(angle + 0.4);
+  const arr = mk('polygon', {
+    points: `${x2},${y2} ${ax1},${ay1} ${ax2},${ay2}`,
+    fill: color, opacity: '0.8',
+  });
+  root.appendChild(arr);
+
+  // Animated overlay
+  if (anim) {
+    const ap = mk('path', { d, stroke: color, 'stroke-width': '2.5', fill: 'none',
+      'stroke-dasharray': '5 14', class: 'flow-anim',
+      style: `animation-delay: ${(Math.random() * 1.5).toFixed(2)}s` });
+    root.appendChild(ap);
+  }
+}
+
+function buildSVG() {
+  svg.innerHTML = '';
+  root = mk('g', { id: 'root' });
+  svg.appendChild(root);
+
+  // ── Background zones ──
+  const zones = [
+    { x: 10, y: 14, w: 470, h: 450, color: '#818cf806', label: '' },
+    { x: 500, y: 82, w: 450, h: 290, color: '#fbbf2406', label: '' },
+  ];
+  zones.forEach(({ x, y, w, h, color }) => {
+    root.appendChild(mk('rect', { x, y, width: w, height: h, rx: '12', fill: color }));
+  });
+
+  // Zone labels
+  [
+    { x: 18, y: 12, text: 'PRODUCTION PIPELINE', color: '#818cf830' },
+    { x: 508, y: 92, text: 'EVAL FLYWHEEL', color: '#fbbf2430' },
+  ].forEach(({ x, y, text, color }) => {
+    const t = mk('text', { x, y, fill: color, 'font-size': '8', 'font-weight': '700',
+      'letter-spacing': '1', 'font-family': 'system-ui' });
+    t.textContent = text;
+    root.appendChild(t);
+  });
+
+  // Divider
+  root.appendChild(mk('line', { x1: 498, y1: 15, x2: 498, y2: 580,
+    stroke: '#ffffff12', 'stroke-width': '1', 'stroke-dasharray': '6 5' }));
+
+  // LangGraph container box
+  const lg = L['_lg_box'];
+  const lgBox = mk('rect', { x: lg.x, y: lg.y, width: lg.w, height: lg.h,
+    rx: '10', fill: '#a78bfa06', stroke: '#a78bfa40', 'stroke-width': '1',
+    'stroke-dasharray': '5 4' });
+  root.appendChild(lgBox);
+  const lgLbl = mk('text', { x: lg.x + 10, y: lg.y + 13,
+    fill: '#a78bfa50', 'font-size': '8', 'font-weight': '700',
+    'letter-spacing': '0.5', 'font-family': 'system-ui' });
+  lgLbl.textContent = 'LANGGRAPH STATEGRAPH';
+  root.appendChild(lgLbl);
+
+  // ── Connections ──
+  CONNS.forEach(conn => {
+    const fl = L[conn.f], tl = L[conn.t];
+    if (!fl || !tl) return;
+
+    if (conn.fixloop) {
+      // Fix loop: curved arrow from reviewer left side → fixloop top
+      const x1 = fl.x;
+      const y1 = fl.y + fl.h / 2;
+      const fl2 = L['fixloop'];
+      const x2 = fl2.x + fl2.w * 0.7;
+      const y2 = fl2.y + fl2.h;
+      const d = `M ${x1} ${y1} C ${x1 - 50} ${y1} ${x2} ${y2 + 40} ${x2} ${y2}`;
+      const p = mk('path', { d, stroke: conn.color, 'stroke-width': '1.8',
+        fill: 'none', 'stroke-dasharray': '5 3' });
+      root.appendChild(p);
+      return;
+    }
+
+    if (conn.horiz) {
+      // Horizontal: right edge → left edge
+      const x1 = fl.x + fl.w, y1 = fl.y + fl.h / 2;
+      const x2 = tl.x, y2 = tl.y + tl.h / 2;
+      drawArrow(x1, y1, x2, y2, conn.color, conn.dash, conn.anim, conn.label);
+      return;
+    }
+
+    // Vertical or diagonal: bottom → top, or bottom → left
+    const fcx = fl.x + fl.w / 2, fcy = fl.y + fl.h;
+    const tcx = tl.x + tl.w / 2, tcy = tl.y;
+
+    // If target is to the right, connect right→left edges
+    if (tl.x > fl.x + fl.w + 20) {
+      drawArrow(fl.x + fl.w, fl.y + fl.h / 2, tl.x, tl.y + tl.h / 2,
+        conn.color, conn.dash, conn.anim, conn.label);
+    } else if (tl.x + tl.w < fl.x - 20) {
+      // Target is to the left
+      drawArrow(fl.x, fl.y + fl.h / 2, tl.x + tl.w, tl.y + tl.h / 2,
+        conn.color, conn.dash, conn.anim, conn.label);
+    } else {
+      // Vertical
+      drawArrow(fcx, fcy, tcx, tcy, conn.color, conn.dash, conn.anim, conn.label);
+    }
+  });
+
+  // ── Component boxes ──
+  COMPS.forEach(comp => {
+    const l = L[comp.id];
+    if (!l) return;
+
+    const isFixloop = comp.id === 'fixloop';
+    const isPState = comp.id === 'pstate';
+
+    const g = mk('g', { 'data-id': comp.id, style: 'cursor:pointer' });
+
+    // Background rect
+    const bg = mk('rect', {
+      x: l.x, y: l.y, width: l.w, height: l.h,
+      rx: isFixloop ? '6' : '9',
+      fill: isFixloop ? '#f8717115' : (isPState ? '#64748b12' : comp.color + '20'),
+      stroke: isFixloop ? '#f87171' : (isPState ? '#64748b60' : comp.color),
+      'stroke-width': isFixloop ? '1.5' : '1.3',
+      ...(isFixloop ? { 'stroke-dasharray': '4 3' } : {}),
+      ...(isPState ? { 'stroke-dasharray': '3 3' } : {}),
+      class: 'cbg',
+    });
+    g.appendChild(bg);
+
+    // Label
+    const hasSub = !!comp.sub && l.h >= 44;
+    const lY = hasSub ? l.y + l.h / 2 - 5 : l.y + l.h / 2 + 4;
+
+    const lbl = mk('text', { x: l.x + l.w / 2, y: lY,
+      'text-anchor': 'middle', fill: isFixloop ? '#f87171' : '#e0e0f0',
+      'font-size': isPState ? '9.5' : (isFixloop ? '10' : '11.5'),
+      'font-weight': '600', 'font-family': 'system-ui' });
+    lbl.textContent = comp.label;
+    g.appendChild(lbl);
+
+    if (hasSub) {
+      const sub = mk('text', { x: l.x + l.w / 2, y: lY + 13,
+        'text-anchor': 'middle', fill: 'rgba(255,255,255,0.38)',
+        'font-size': '8.5', 'font-family': 'system-ui' });
+      sub.textContent = comp.sub;
+      g.appendChild(sub);
+    }
+
+    // Color indicator dot (top-left corner)
+    if (!isFixloop && !isPState) {
+      const dot = mk('circle', { cx: l.x + 10, cy: l.y + 10, r: '3',
+        fill: comp.color, opacity: '0.8' });
+      g.appendChild(dot);
+    }
+
+    g.addEventListener('click', () => selectComp(comp.id));
+    root.appendChild(g);
+  });
+
+  // Fix loop arrow label
+  const fl2 = L['fixloop'];
+  const fla = mk('text', { x: fl2.x + fl2.w / 2, y: fl2.y + fl2.h / 2 + 4,
+    'text-anchor': 'middle', fill: '#f87171cc',
+    'font-size': '10', 'font-weight': '600', 'font-family': 'system-ui' });
+  fla.textContent = '↺  Fix Loop — max 2 attempts (Level-1 self-repair)';
+  root.appendChild(fla);
+
+  // PipelineState label
+  const psl = L['pstate'];
+  const psLbl = mk('text', { x: psl.x + psl.w / 2, y: psl.y + psl.h / 2 + 4,
+    'text-anchor': 'middle', fill: '#94a3b8cc',
+    'font-size': '9.5', 'font-weight': '600', 'font-family': 'system-ui' });
+  psLbl.textContent = '⟶  PipelineState (TypedDict) flows through all nodes  ⟶';
+  root.appendChild(psLbl);
+
+  // Connection labels for key edges
+  const keyLabels = [
+    { x: 248, y: 93, text: 'SSE /api/generate', color: '#818cf8' },
+    { x: 248, y: 103, text: 'graph.invoke()', color: '#60a5fa' },
+    { x: 600, y: 93, text: 'SSE /api/eval/run  →  run_benchmark()', color: '#fbbf24' },
+    { x: 87, y: 211, text: 'extracted_facts', color: '#a78bfa80', fs: '8' },
+    { x: 210, y: 211, text: 'edit_plan', color: '#a78bfa80', fs: '8' },
+    { x: 330, y: 250, text: 'output.pptx', color: '#a78bfa80', fs: '8' },
+  ];
+  // Skip labels for cleanliness (too cluttered with arrows)
+
+  applyT();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Detail Panel
+// ─────────────────────────────────────────────────────────────────────────────
+function selectComp(id) {
+  selId = id;
+
+  // Highlight selected, dim others
+  document.querySelectorAll('[data-id]').forEach(g => {
+    const gid = g.getAttribute('data-id');
+    g.style.opacity = (gid === id) ? '1' : '0.35';
+  });
+
+  const comp = COMPS.find(c => c.id === id);
+  if (!comp) return;
+
+  document.getElementById('de').style.display = 'none';
+  const dc = document.getElementById('dc');
+  dc.style.display = 'flex';
+  dc.style.flexDirection = 'column';
+  dc.style.height = '100%';
+  dc.style.overflow = 'hidden';
+
+  dc.innerHTML = `
+    <div class="dhead">
+      <div class="dcat" style="color:${comp.color}">${comp.cat}</div>
+      <div class="dname">${comp.label}</div>
+      <span class="drole">${comp.role}</span>
+    </div>
+    <div class="dscroll">
+      <div class="sec">
+        <div class="slbl">What it does</div>
+        <div class="sbody">${comp.what}</div>
+      </div>
+      <div class="sec">
+        <div class="slbl">Why it exists</div>
+        <div class="sbody">${comp.why}</div>
+      </div>
+      <div class="sec">
+        <div class="slbl">Interface</div>
+        <div class="iogrid">
+          <div class="iobox">
+            <div class="iolbl">Inputs</div>
+            ${(comp.inputs||[]).map(i=>`<div class="ioitem">· ${i}</div>`).join('')}
+          </div>
+          <div class="iobox">
+            <div class="iolbl">Outputs</div>
+            ${(comp.outputs||[]).map(o=>`<div class="ioitem">· ${o}</div>`).join('')}
+          </div>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="slbl">Key decisions</div>
+        <ul class="dlist">
+          ${(comp.decisions||[]).map(d=>`<li>${d}</li>`).join('')}
+        </ul>
+      </div>
+      ${comp.tradeoff ? `
+      <div class="sec">
+        <div class="slbl">Trade-offs</div>
+        <div class="tbox">${comp.tradeoff}</div>
+      </div>` : ''}
+      ${comp.cost ? `
+      <div class="sec">
+        <div class="slbl">Cost</div>
+        <div class="costrow">
+          <span class="cbadge" style="background:${comp.color}18;border:1px solid ${comp.color}40;color:${comp.color}">
+            ${comp.cost.model}
+          </span>
+        </div>
+        <div class="cdetail"><b>${comp.cost.per}</b> per run<br><span style="color:var(--muted);font-size:10px">${comp.cost.rate}</span></div>
+      </div>` : ''}
+    </div>
+  `;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// View tabs
+// ─────────────────────────────────────────────────────────────────────────────
+const VIEWS = {
+  full:     null,
+  pipeline: ['browser','backend','langgraph','pstate','extractor','planner','executor','reviewer','fixloop','pptx','llmf'],
+  eval:     ['browser','backend','erunner','benchmark','ejudges','aimprove','calibrate'],
+  cost:     ['extractor','planner','executor','reviewer','fixloop','ejudges','aimprove','erunner'],
+};
+
+document.querySelectorAll('.tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    const focus = VIEWS[btn.dataset.v];
+    document.querySelectorAll('[data-id]').forEach(g => {
+      const gid = g.getAttribute('data-id');
+      g.style.opacity = (!focus || focus.includes(gid)) ? '1' : '0.15';
+    });
+  });
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Pan & Zoom
+// ─────────────────────────────────────────────────────────────────────────────
+function applyT() {
+  if (root) root.setAttribute('transform', `translate(${tx.x},${tx.y}) scale(${tx.s})`);
+}
+
+svg.addEventListener('mousedown', e => {
+  if (e.target.closest('[data-id]')) return;
+  dragging = true;
+  ds = { x: e.clientX - tx.x, y: e.clientY - tx.y };
+  svg.style.cursor = 'grabbing';
+});
+window.addEventListener('mousemove', e => {
+  if (!dragging) return;
+  tx.x = e.clientX - ds.x;
+  tx.y = e.clientY - ds.y;
+  applyT();
+});
+window.addEventListener('mouseup', () => { dragging = false; svg.style.cursor = 'grab'; });
+svg.addEventListener('wheel', e => {
+  e.preventDefault();
+  const r = svg.getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  const d = e.deltaY > 0 ? 0.88 : 1.14;
+  const ns = Math.max(0.25, Math.min(4, tx.s * d));
+  tx.x = mx - (mx - tx.x) * (ns / tx.s);
+  tx.y = my - (my - tx.y) * (ns / tx.s);
+  tx.s = ns;
+  applyT();
+}, { passive: false });
+
+document.getElementById('zi').onclick = () => { tx.s = Math.min(4, tx.s * 1.2); applyT(); };
+document.getElementById('zo').onclick = () => { tx.s = Math.max(0.25, tx.s / 1.2); applyT(); };
+document.getElementById('zr').onclick = () => { tx = { x: 8, y: 8, s: 1 }; applyT(); };
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Init
+// ─────────────────────────────────────────────────────────────────────────────
+try {
+  buildSVG();
+} catch(e) {
+  document.querySelector('.diag').innerHTML =
+    `<div style="color:#f87171;padding:40px;font-family:monospace;font-size:13px">
+      SVG render error: ${e.message}<br><pre>${e.stack}</pre>
+    </div>`;
+  console.error(e);
+}
+</script>
+</body>
+</html>
